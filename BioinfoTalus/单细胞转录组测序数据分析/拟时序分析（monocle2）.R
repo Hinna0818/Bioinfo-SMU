@@ -15,10 +15,10 @@ load("Data/subgroups.Rda")
 # 赋值给临时变量，以便于后续无需修改变量名
 pbmc <- subgroups
 
-#创建CellDataSet对象
+# 创建CellDataSet对象
 # CellDataSet对象是Monocle用于存储单细胞转录组数据的核心数据结构
 #获取表达矩阵
-data <- GetAssayData(pbmc, assay = "RNA", slot = "counts")
+data <- GetAssayData(pbmc, assay = "RNA", layer = "counts")
 #获取细胞注释信息，表型信息
 pd <- new('AnnotatedDataFrame', data = pbmc@meta.data)
 #获取基因名
@@ -32,13 +32,13 @@ monocle_cds <- newCellDataSet(as(as.matrix(data),"sparseMatrix"),
                               lowerDetectionLimit = 0.5,
                               expressionFamily = negbinomial.size())
 
-#数据预处理，估计size factor和离散度，类似归一化，标准化
-#运行时间较长，可修改核心数
+# 数据预处理，估计size factor和离散度，类似归一化，标准化
+# 运行时间较长，可修改核心数
 monocle_cds <- estimateSizeFactors(monocle_cds)
 monocle_cds <- estimateDispersions(monocle_cds, cores=12)
 
 
-#细胞过滤
+# 细胞过滤
 # 检测在至少0.1表达量以上的基因，这些基因会被保留用于后续分析
 monocle_cds <- detectGenes(monocle_cds, min_expr = 0.1)
 # 输出一些基因特征信息
@@ -70,7 +70,7 @@ mycds <- orderCells(mycds)
 # 算法无法确定细胞分化的起点，需人工设定（根据绘图结果选择根节点）
 mycds <- orderCells(mycds,root_state = 3) # Naïve_T_cells为分化起点
 
-#画图
+# 画图
 # cell_trajectory
 # color_by参数可选State，Pseudotime，celltype，orig.ident
 plot_cell_trajectory(mycds, color_by = "State")
@@ -94,27 +94,28 @@ pData(mycds)$CNN1 = log2(exprs(mycds)["CCR7",] +1)
 plot_cell_trajectory(mycds,color_by = "CCR7") + 
   scale_color_continuous(type = "viridis")
 
-#将结果保存至seurat对象
+# 将结果保存至seurat对象
 pdata <- Biobase::pData(mycds)
 pbmc <- AddMetaData(pbmc, metadata = pdata[,c("Pseudotime","State")])
 
-#通过monocle2算法寻找拟时差异基因
+# 通过monocle2算法寻找拟时差异基因
 Time_diff <- differentialGeneTest(mycds, cores = 10,
                                   fullModelFormulaStr = "~sm.ns(Pseudotime)")
 write.csv(Time_diff, "./Data/Time_diff_all.csv", row.names = F)
-#画图，按qval排序，选取前100个
+# 画图，按qval排序，选取前100个
 Time_genes <- Time_diff[order(Time_diff$qval), "gene_short_name"][1:100]
-#num_clusters按行聚类，聚为多少类
+# num_clusters按行聚类，聚为多少类
 p <- plot_pseudotime_heatmap(mycds[Time_genes,], num_clusters=6, 
                              show_rownames=T, return_heatmap=T)
 p
-#保存
+# 保存
 hp.genes <- p$tree_row$labels[p$tree_row$order]
 Time_diff_sig <- Time_diff[hp.genes, c("gene_short_name", "pval", "qval")]
 write.csv(Time_diff_sig, "./Data/Time_diff_sig.csv", row.names = F)
 
 subgroups <- pbmc
 save(subgroups, file="./Data/subgroups.Rda")
+
 
 
 

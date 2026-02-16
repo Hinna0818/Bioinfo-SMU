@@ -101,11 +101,11 @@ DotPlot(subgroups, features = unique(as.vector(unlist(marker))), scale = FALSE, 
 
 # 如果不好注释，可调整聚类分辨率重新聚类（仅需要运行下面的代码即可）
 # 例如某个簇同时表达两种细胞类型的marker，则可以尝试提高聚类分辨率，看能否将其聚为不同的两类再进行注释
-DefaultAssay(pbmc) = "SCT"
-pbmc <- FindClusters(pbmc, resolution = 0.8, algorithm = 4)
+DefaultAssay(subgroups) = "SCT"
+subgroups <- FindClusters(subgroups, resolution = 0.8, algorithm = 4)
 # 除了看marker的显著程度，还可以观察两个簇在umap降维散点图中的位置
 # 如果两个簇相距较近则细胞类型可能比较相似，相距较远则细胞类型可能相差较大
-DimPlot(pbmc, reduction = "umap.harmony", label = T)
+DimPlot(subgroups, reduction = "umap.harmony", label = T)
 
 subgroups$celltype <- recode(subgroups@meta.data$seurat_clusters,
                              "1" = "Regulatory_T_cells",
@@ -124,6 +124,7 @@ DimPlot(subgroups, reduction = "umap", label = T, label.size = 3.5)+theme_classi
 DimPlot(subgroups, reduction = "tsne", label = T, label.size = 3.5)+theme_classic()+theme(panel.border = element_rect(fill=NA,color="black", size=0.5, linetype="solid"),legend.position = "right")
 
 save(subgroups, file="Data/subgroups.Rda")
+
 
 
 

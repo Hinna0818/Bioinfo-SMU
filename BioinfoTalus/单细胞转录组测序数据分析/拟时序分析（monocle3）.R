@@ -19,40 +19,43 @@ pbmc <- subgroups
 DimPlot(pbmc, group.by = "celltype", label = T)
 
 
-#获取表达矩阵
+# 获取表达矩阵
 data <- GetAssayData(pbmc, assay = 'RNA', layer  = 'counts')
-#细胞注释信息
+# 细胞注释信息
 cell_metadata <- pbmc@meta.data
-#基因名
+# 基因名
 gene_annotation <- data.frame(gene_short_name = rownames(data), row.names = rownames(data))
-#创建一个新的 cell_data_set 对象
+# 创建一个新的 cell_data_set 对象
 cds <- new_cell_data_set(data, cell_metadata = cell_metadata, gene_metadata = gene_annotation)
-#预处理cds
+# 预处理cds
 cds <- preprocess_cds(cds, method = "PCA")
-#降维
+# 降维
 cds <- reduce_dimension(cds, reduction_method = "UMAP",preprocess_method = 'PCA')
-#画图
+# 画图
 plot_cells(cds, reduction_method="UMAP", color_cells_by="seurat_clusters", show_trajectory_graph = FALSE) + ggtitle('cds.umap')
 
 
-#将seurat对象的UMAP导入
+# 将seurat对象的UMAP导入
 int.embed <- Embeddings(pbmc, reduction = "umap")
-#排序
+# 排序
 int.embed <- int.embed[rownames(cds@int_colData$reducedDims$UMAP),]
-#导入
+# 导入
 cds@int_colData$reducedDims$UMAP <- int.embed
-#画图
+# 画图
 plot_cells(cds, reduction_method="UMAP", color_cells_by="seurat_clusters", show_trajectory_graph = FALSE) + ggtitle('seurat.umap')
 
 
-#聚类分区，不同分区的细胞会进行单独的轨迹分析
+# 聚类分区，不同分区的细胞会进行单独的轨迹分析
 cds <- cluster_cells(cds, resolution = 1e-3)
-#画图
+# 画图
 plot_cells(cds, color_cells_by = "partition", show_trajectory_graph = FALSE) + ggtitle("partition")
 
-#构建细胞轨迹
-cds <- learn_graph(cds, learn_graph_control = list(euclidean_distance_ratio = 0.8), use_partition = TRUE)
-#画图
+# 构建细胞轨迹
+cds <- learn_graph(cds, 
+                   learn_graph_control = list(euclidean_distance_ratio = 0.8), # 如果希望分化路径更复杂可以调小euclidean_distance_ratio
+                   use_partition = TRUE # 如果希望分化路径为一个整体可设置为FALSE
+                  )
+# 画图
 plot_cells(cds, color_cells_by = "partition",label_groups_by_cluster = FALSE, label_leaves = FALSE, label_branch_points = FALSE)
 
 
@@ -81,7 +84,7 @@ cds <- order_cells(cds) # 如果不能交互选定发育起点，请尝试如下
 # # 根据图中标注的节点名称指定发育起始点
 # cds <- order_cells(cds, root_pr_nodes = "Y_14") # 把Y_14换成你想要的端点
 
-#画图
+# 画图
 plot_cells(cds, color_cells_by = "pseudotime", label_cell_groups = FALSE, 
            label_leaves = FALSE,  label_branch_points = FALSE)
 save(cds, file = "Data/cell developmental trajectories.Rda")
@@ -92,17 +95,17 @@ keep_genes <- rowMeans(expr_mat > 0) > 0.10
 sum(keep_genes)       # 看看还剩多少基因
 cds <- cds[keep_genes, ]
 
-#寻找拟时轨迹差异基因
+# 寻找拟时轨迹差异基因
 Track_genes <- graph_test(cds, neighbor_graph="knn", cores=16, verbose = TRUE)
-#导出
+# 导出
 write.csv(Track_genes, "Data/Track_genes.csv", row.names = F)
 
 
-#拟时基因热图
+# 拟时基因热图
 genes <- row.names(subset(Track_genes, morans_I > 0.5))
-#选取合适的clusters
+# 选取合适的clusters
 num_clusters = 3
-#画图
+# 画图
 pt.matrix <- exprs(cds)[match(genes,rownames(rowData(cds))),order(pseudotime(cds))]
 pt.matrix <- t(apply(pt.matrix,1,function(x){smooth.spline(x,df=3)$y}))
 pt.matrix <- t(apply(pt.matrix,1,function(x){(x-mean(x))/sd(x)}))
@@ -117,26 +120,26 @@ ComplexHeatmap::Heatmap(
 dev.off()
 
 
-#基因展示,选取morans_I排名前10的基因，可自定义
+# 基因展示,选取morans_I排名前10的基因，可自定义
 genes = rownames(top_n(Track_genes, n=10, morans_I))[3]
-#画图（画一个）
+# 画图（画一个）
 monocle3::plot_genes_in_pseudotime(cds[genes,], color_cells_by="celltype", min_expr=0.5) #min_expr 设置了基因表达的最低阈值，只有表达量 ≥ 0.5 的细胞才会在图中显示
 plot_cells(cds, genes=genes, show_trajectory_graph=FALSE,
            label_cell_groups=FALSE,  label_leaves=FALSE)
 
-#寻找共表达基因模块
+# 寻找共表达基因模块
 genelist <- row.names(subset(Track_genes, morans_I > 0.1))
 gene_module <- find_gene_modules(cds[genelist,], resolution=1e-2, cores = 6)
 table(gene_module$module)
 # write.csv(gene_module, "Data/PseudotimeGenes_Module.csv", row.names = F)
 
-#热图
+# 热图
 cell_group <- tibble(cell=row.names(colData(cds)), cell_group=colData(cds)$celltype)
 agg_mat <- aggregate_gene_expression(cds, gene_module, cell_group)
 row.names(agg_mat) <- str_c("Module ", row.names(agg_mat))
 pheatmap::pheatmap(agg_mat, scale="column", clustering_method="ward.D2")
 
-#散点图（基因模块得分）
+# 散点图（基因模块得分）
 ME.list <- lapply(1:length(unique(gene_module$module)), function(i){subset(gene_module,module==i)$id})
 # 过滤ME.list，只保留存在的基因
 ME.list <- lapply(ME.list, function(module_genes) {
@@ -145,7 +148,7 @@ ME.list <- lapply(ME.list, function(module_genes) {
 names(ME.list) <- paste0("module", 1:length(unique(gene_module$module)))
 
 
-#pbmc <- AddModuleScore(pbmc, features = ME.list, name = "module")
+# pbmc <- AddModuleScore(pbmc, features = ME.list, name = "module")
 # 计算模块分数（替代AddModuleScore）
 expr_data <- as.matrix(GetAssayData(pbmc, slot = "data"))
 
@@ -170,3 +173,4 @@ p
 # 将临时变量赋值回原始变量
 Tcell_subgroup <- pbmc
 save(Tcell_subgroup, "Data/subgroups.Rda")
+

@@ -2,6 +2,7 @@ library(Seurat)
 library(ggplot2)
 library(dplyr)
 library(CytoTRACE2)
+library(scop)
 load("Data/subgroups.Rda")
 
 sce <- subgroups
@@ -76,3 +77,4 @@ ggplot(df, aes(x = phenotype, y = score, color = phenotype, fill = phenotype)) +
 
 subgroups <- sce
 save(subgroups, file="./Data/subgroups.Rda")
+

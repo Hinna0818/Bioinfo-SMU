@@ -19,24 +19,23 @@ load("Data/pbmc.Rda")
 # anno <- subgroups@meta.data[, "celltype", drop = FALSE]
 # # 找到主文件中亚群所属的细胞类型
 # cells <- rownames(
-#   pbmc@meta.data[pbmc@meta.data$celltype == "Epithelial_cells", ] # 这里改成亚群在主文件中所属的细胞类型
+#   pbmc@meta.data[pbmc@meta.data$celltype == "T_cells", ] # 这里改成亚群在主文件中所属的细胞类型
 # )
-# # 取交集防止不一致
+# # 取交集防止不一致T
 # common_cells <- intersect(cells, rownames(anno))
 # # 映射
-# pbmc@meta.data$celltype <- as.character(scTumor@meta.data$celltype)
+# pbmc@meta.data$celltype <- as.character(pbmc@meta.data$celltype)
 # sub_labels <- as.character(anno[common_cells, "celltype"])
-# pbmc@meta.data[common_cells, "celltype"] <-
-#   sub_labels
-# pbmc@meta.data$celltype <- factor(scTumor@meta.data$celltype)
+# pbmc@meta.data[common_cells, "celltype"] <- sub_labels
+# pbmc@meta.data$celltype <- factor(pbmc@meta.data$celltype)
 
 
 # 创建CellChat对象
 cellchat = createCellChat(object = pbmc,
-                          group.by = "celltype")#通过 group.by 定义分组
+                          group.by = "celltype") # 通过 group.by 定义分组
 
 # 设置配体受体交互数据库 
-CellChatDB <- CellChatDB.human #如果是小鼠的话使用内置“CellChatDB.mouse”数据
+CellChatDB <- CellChatDB.human # 如果是小鼠的话使用内置“CellChatDB.mouse”数据
 
 
 # 自分泌/旁分泌信号相互作用
@@ -158,36 +157,37 @@ for(pathways.show in mypathways){
 }
 dev.off()
 
-#显示所有的细胞间配体-受体互作
+# 显示所有的细胞间配体-受体互作
 netVisual_bubble(cellchat, sources.use = 1:length(levels(cellchat@idents)), 
                  targets.use = 1:length(levels(cellchat@idents)), remove.isolate = FALSE)
 
 
-#指定细胞间的配体-受体互作
+# 指定细胞间的配体-受体互作
 netVisual_bubble(cellchat, sources.use = 1:3, targets.use = 4:5, remove.isolate = FALSE) #sources.use指定配体，targets.use指定受体
 
 
-#指定细胞和信号通路的配体-受体互作
+# 指定细胞和信号通路的配体-受体互作
 netVisual_bubble(cellchat, sources.use = 1:3, targets.use = 4:5, signaling = c("CCL","TNF"), remove.isolate = FALSE) #signaling指定信号通路
 
-#指定细胞和信号通路的特定配体-受体互作
+# 指定细胞和信号通路的特定配体-受体互作
 pairLR.use <- c("CCL3_CCR1","CCL4_CCR5","CCL5_CCR3","TNF_TNFRSF1A","TNF_TNFRSF1B") #指定配体受体对，配体_受体
 pairLR.use <- data.frame(interaction_name = pairLR.use)
 netVisual_bubble(cellchat, sources.use = 1:3, targets.use = 4:5, pairLR.use =  pairLR.use, remove.isolate = FALSE)
 
-#配体、受体基因表达小提琴图
+# 配体、受体基因表达小提琴图
 plotGeneExpression(cellchat, signaling = "CCL")
 plotGeneExpression(cellchat, signaling = "CCL", enriched.only = FALSE)
 
-#细胞通信网络系统分析
-#计算每个细胞组的多个网络中心测量
-#随时识别细胞间通信网络中占主导地位的发送者、接收者、调解者和影响者。
+# 细胞通信网络系统分析
+# 计算每个细胞组的多个网络中心测量
+# 随时识别细胞间通信网络中占主导地位的发送者、接收者、调解者和影响者。
 net_Centrality <- netAnalysis_computeCentrality(cellchat, slot.name = "netP")
 for(pathways.show in mypathways){
   netAnalysis_signalingRole_network(net_Centrality, signaling=pathways.show,
                                     width=8,height=2.5,font.size=10)
 }
 dev.off()
+
 
 
 
