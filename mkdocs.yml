@@ -100,6 +100,7 @@ nav:
   - R 语言教程:
       - Rbase/index.md
       - L6 - R 函数与包开发: Rbase/L6_functions.md
+      - L7 - ggplot2 数据可视化: Rbase/L7_ggplot2.md
   - 生信流程:
       - BioinfoTalus/index.md
   - 学习资源:

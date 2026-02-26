@@ -17,7 +17,8 @@
 | **第三课** | R 基础数据结构 | [📖 查看教程](https://github.com/Hinna0818/Bioinfo-SMU/blob/main/Rbase/L3.pdf) \| [💻 下载](L3.pdf) |
 | **第四课** | Tidyverse 数据处理 | [📖 查看教程](https://github.com/Hinna0818/Bioinfo-SMU/blob/main/Rbase/L4.pdf) \| [💻 下载](L4.pdf) |
 | **第五课** | R 流程控制 | [📖 查看教程](https://github.com/Hinna0818/Bioinfo-SMU/blob/main/Rbase/L5.pdf) \| [💻 下载](L5.pdf) |
-| **第六课** | R 函数与包开发 | [📖 查看教程] \|[💻 下载](L6.pdf) ](https://github.com/Hinna0818/Bioinfo-SMU/blob/main/Rbase/L6.pdf) |
+| **第六课** | R 函数与包开发 | [📖 在线阅读](L6_functions.md) \| [💻 下载](https://github.com/Hinna0818/Bioinfo-SMU/blob/main/Rbase/L6.pdf) |
+| **第七课** | ggplot2 数据可视化 | [📖 在线阅读](L7_ggplot2.md) \| [💻 下载](https://github.com/Hinna0818/Bioinfo-SMU/blob/main/Rbase/L7.pdf) |
 
 ---
 
@@ -114,14 +115,28 @@
 
 ---
 
+### 第七课：ggplot2 数据可视化
+
+!!! info "学习重点"
+    - ggplot2 图形语法（Grammar of Graphics）
+    - 常用几何对象（散点图、箱线图、柱状图、密度图等）
+    - 美学映射（颜色、大小、透明度）
+    - 分面（facet_wrap / facet_grid）
+    - 标度与主题定制
+    - 生信实战：火山图、MA 图、PCA 图
+
+[:material-book-open: 在线阅读](L7_ggplot2.md){ .md-button } [:material-download: 下载 Rmd](https://github.com/Hinna0818/Bioinfo-SMU/blob/main/Rbase/L7.Rmd){ .md-button }
+
+---
+
 ## 💡 学习建议
 
 !!! tip "学习路线"
-    1. **第一步**：按顺序学习六节课程，理解基础概念
+    1. **第一步**：按顺序学习七节课程，理解基础概念
     2. **第二步**：动手实践每个代码示例
     3. **第三步**：尝试用真实的生信数据进行练习
     4. **第四步**：尝试编写自己的函数和 R 包
-    5. **第五步**：深入学习 tidyverse 生态（ggplot2 等）
+    5. **第五步**：用 ggplot2 绑定数据分析与可视化
 
 !!! success "学习资源"
     - [R for Data Science](https://r4ds.hadley.nz/) - 经典 R 语言数据分析书籍
