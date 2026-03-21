@@ -103,6 +103,8 @@ nav:
       - L7 - ggplot2 数据可视化: Rbase/L7_ggplot2.md
   - 生信流程:
       - BioinfoTalus/index.md
+  - 流行病学数据库:
+      - UK Biobank: Epidemiology/UK_Biobank.md
   - 学习资源:
       - 学习路线: learning-path.md
       - 常用工具: tools.md
