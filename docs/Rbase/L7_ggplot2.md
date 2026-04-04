@@ -1,33 +1,31 @@
-# ggplot2 数据可视化
+# Data Visualization with ggplot2
 
-## 1. 引言
+## 1. Introduction
 
-在前面的课程中，我们学习了 R 的数据结构、数据处理（tidyverse）、流程控制和函数编写。现在我们来学习如何用 `ggplot2` 创建优雅、专业的数据可视化图表。
+In the previous sections, we introduced R data structures, data manipulation (tidyverse), control flow, and function writing. Now let's learn how to create elegant and professional data visualizations using `ggplot2`.
 
-`ggplot2` 是 tidyverse 生态系统的核心包之一，基于 Leland Wilkinson 的《图形语法》（Grammar of Graphics）理论。它的核心思想是：**将图形拆解为独立的图层**，通过组合这些图层来构建复杂的可视化。
-
-本节目标：掌握 ggplot2 的基本语法、常用图层类型、美学映射、分面和主题定制，能够绘制生物信息学常见的图表（散点图、箱线图、热图、火山图等）。
+`ggplot2` is a core package of the tidyverse ecosystem, based on Leland Wilkinson's *Grammar of Graphics*. Its core idea is: **Deconstruct graphs into independent layers**, and build complex visualizations by combining them.
 
 <br>
 
-## 2. ggplot2 的图形语法
+## 2. Grammar of Graphics in ggplot2
 
-### 2.1 核心概念
+### 2.1 Core Concepts
 
-ggplot2 将一个图形分解为以下组件：
+`ggplot2` decomposes a plot into the following components:
 
-1. **数据（Data）**：要可视化的数据框
-2. **美学映射（Aesthetics, aes）**：数据变量到视觉属性的映射（x、y、颜色、大小等）
-3. **几何对象（Geoms）**：数据的几何表示（点、线、柱状图等）
-4. **统计变换（Stats）**：对数据的统计转换（计数、平滑等）
-5. **标度（Scales）**：控制美学映射的细节（颜色方案、坐标轴范围等）
-6. **坐标系统（Coordinate systems）**：数据到平面的映射方式
-7. **分面（Facets）**：将数据分组并创建多个子图
-8. **主题（Themes）**：控制图形的整体外观
+1. **Data**: The data frame to visualize
+2. **Aesthetics (aes)**: Mapping of data variables to visual properties (x, y, color, size, etc.)
+3. **Geometries (Geoms)**: The geometric representation of data (points, lines, bars, etc.)
+4. **Statistics (Stats)**: Statistical transformations of the data (counting, smoothing, etc.)
+5. **Scales**: Controls the details of aesthetic mappings (color schemes, axis limits, etc.)
+6. **Coordinate systems**: How data points are mapped to the 2D plane
+7. **Facets**: Grouping data to create multiple subplots
+8. **Themes**: Controls the overall appearance of the plot
 
 <br>
 
-### 2.2 基本语法结构
+### 2.2 Basic Syntax Structure
 
 ```r
 ggplot(data = <DATA>, mapping = aes(<MAPPINGS>)) +
@@ -37,83 +35,80 @@ ggplot(data = <DATA>, mapping = aes(<MAPPINGS>)) +
   <THEME_FUNCTION>()
 ```
 
-**关键点**：
-- 使用 `+` 号连接各个图层（不是管道符 `%>%` 或 `|>`）
-- `ggplot()` 初始化图形，指定数据和全局美学映射
-- 每个 `geom_*()` 函数添加一个几何图层
+**Key Points**:
+- Use the `+` sign to chain layers together (not the pipe operator `%>%` or `|>`)
+- `ggplot()` initializes the plot object and specifies global data/aesthetics
+- Each `geom_*()` function adds a new geometric layer
 
 <br>
 
-## 3. 第一个 ggplot2 图形
+## 3. Your First ggplot2 Plot
 
-### 3.1 安装与加载
+### 3.1 Installation and Loading
 
 ```r
-# 安装（如果尚未安装）
+# Install (if not already installed)
 # install.packages("ggplot2")
-# 或安装整个 tidyverse
-# install.packages("tidyverse")
 
 library(ggplot2)
-library(dplyr)  # 数据处理
+library(dplyr)  
 ```
 
 <br>
 
-### 3.2 使用内置数据集 - 散点图
+### 3.2 Using Built-in Datasets - Scatter Plot
 
-我们使用 ggplot2 内置的 `mpg` 数据集（汽车燃油效率数据）作为示例。
+We use the built-in `mpg` dataset (car fuel efficiency data) as an example.
 
 ```r
-# 查看数据
+# View data
 head(mpg)
 
-# 基础散点图：发动机排量 vs 高速公路油耗
+# Basic scatter plot: Engine displacement vs Highway MPG
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) +
   geom_point()
 ```
 
-**解读**：
-- `ggplot()`：初始化图形对象
-- `aes(x = displ, y = hwy)`：将 `displ` 映射到 x 轴，`hwy` 映射到 y 轴
-- `geom_point()`：用点表示数据
+**Explanation**:
+- `ggplot()`: Initializes the plot
+- `aes(x = displ, y = hwy)`: Maps `displ` to the x-axis and `hwy` to the y-axis
+- `geom_point()`: Represents data as points
 
 <br>
 
-### 3.3 添加颜色映射
+### 3.3 Adding Color Mapping
 
 ```r
-# 按车辆类型着色
+# Color by vehicle class
 ggplot(mpg, aes(x = displ, y = hwy, color = class)) +
   geom_point()
 ```
 
-颜色自动按 `class` 变量分组，并生成图例。
+Colors are automatically grouped by the `class` variable, generating a legend.
 
 <br>
 
-### 3.4 添加大小和透明度
+### 3.4 Adding Size and Transparency
 
 ```r
-# 按气缸数设置点大小，添加透明度
+# Map dot size to number of cylinders, add transparency
 ggplot(mpg, aes(x = displ, y = hwy, color = class, size = cyl)) +
   geom_point(alpha = 0.6)
 ```
 
-**注意**：
-- `alpha` 控制透明度（0-1），可以放在 `aes()` 内映射变量，也可以作为固定参数
-- `size` 映射到数值变量时，点的大小会随数值变化
+**Note**:
+- `alpha` controls transparency (0-1). It can be mapped in `aes()` or passed as a fixed parameter.
+- When `size` is mapped to a numeric variable, the point size will scale with the values.
 
 <br>
 
-## 4. 常用几何对象（Geoms）
+## 4. Common Geometries (Geoms)
 
-### 4.1 散点图（geom_point）
+### 4.1 Scatter Plot (geom_point)
 
-适用于展示两个连续变量的关系。
+Ideal for displaying the relationship between two continuous variables.
 
 ```r
-# 生物信息学示例：基因表达散点图
 set.seed(123)
 gene_expr <- data.frame(
   gene = paste0("Gene", 1:100),
@@ -125,7 +120,7 @@ gene_expr <- data.frame(
 ggplot(gene_expr, aes(x = sample_A, y = sample_B, color = significant)) +
   geom_point(size = 2, alpha = 0.7) +
   geom_abline(slope = 1, intercept = 0, linetype = "dashed", color = "gray50") +
-  labs(title = "基因表达相关性",
+  labs(title = "Gene Expression Correlation",
        x = "Sample A (log2 expression)",
        y = "Sample B (log2 expression)") +
   theme_bw()
@@ -133,12 +128,12 @@ ggplot(gene_expr, aes(x = sample_A, y = sample_B, color = significant)) +
 
 <br>
 
-### 4.2 线图（geom_line）
+### 4.2 Line Plot (geom_line)
 
-适用于时间序列或有序数据。
+Ideal for time series or ordered data.
 
 ```r
-# 示例：qPCR 时间序列
+# Example: qPCR timeseries
 time_series <- data.frame(
   time = rep(0:10, 3),
   expression = c(1 * 2^(0:10 * 0.3),  # Gene1
@@ -150,8 +145,8 @@ time_series <- data.frame(
 ggplot(time_series, aes(x = time, y = expression, color = gene)) +
   geom_line(linewidth = 1) +
   geom_point(size = 2) +
-  scale_y_log10() +  # 对数坐标
-  labs(title = "基因表达时间序列",
+  scale_y_log10() +  # Log scale
+  labs(title = "Gene Expression Time Series",
        x = "Time (hours)",
        y = "Expression (log scale)") +
   theme_minimal()
@@ -159,21 +154,21 @@ ggplot(time_series, aes(x = time, y = expression, color = gene)) +
 
 <br>
 
-### 4.3 柱状图（geom_bar / geom_col）
+### 4.3 Bar Plot (geom_bar / geom_col)
 
-- `geom_bar()`：自动计数，用于分类变量
-- `geom_col()`：直接使用 y 值，用于已汇总数据
+- `geom_bar()`: Automatically counts occurrences, used for categorical variables
+- `geom_col()`: Uses raw y values directly, used for pre-summarized data
 
 ```r
-# geom_bar：自动计数
+# geom_bar: Automatic counting
 ggplot(mpg, aes(x = class)) +
   geom_bar(fill = "steelblue") +
-  labs(title = "车辆类型分布", x = "类型", y = "数量") +
+  labs(title = "Vehicle Class Distribution", x = "Class", y = "Count") +
   theme_classic()
 ```
 
 ```r
-# geom_col：使用预先计算的值
+# geom_col: Using pre-calculated values
 pathway_counts <- data.frame(
   pathway = c("MAPK", "PI3K-AKT", "WNT", "Notch", "TGF-beta"),
   gene_count = c(45, 38, 25, 18, 22)
@@ -181,19 +176,19 @@ pathway_counts <- data.frame(
 
 ggplot(pathway_counts, aes(x = reorder(pathway, gene_count), y = gene_count)) +
   geom_col(fill = "coral") +
-  coord_flip() +  # 水平柱状图
-  labs(title = "信号通路基因数量", x = NULL, y = "基因数") +
+  coord_flip() +  # Horizontal bar plot
+  labs(title = "Signal Pathway Gene Counts", x = NULL, y = "Gene Count") +
   theme_minimal()
 ```
 
 <br>
 
-### 4.4 箱线图（geom_boxplot）
+### 4.4 Boxplot (geom_boxplot)
 
-展示数据分布、中位数、四分位数和异常值。
+Displays data distribution, median, quartiles, and outliers.
 
 ```r
-# 示例：不同组织的基因表达
+# Example: Gene expression across tissues
 tissue_expr <- data.frame(
   tissue = rep(c("Liver", "Brain", "Muscle", "Heart"), each = 50),
   expression = c(rnorm(50, 8, 2), rnorm(50, 6, 1.5), 
@@ -202,120 +197,120 @@ tissue_expr <- data.frame(
 
 ggplot(tissue_expr, aes(x = tissue, y = expression, fill = tissue)) +
   geom_boxplot(alpha = 0.7) +
-  geom_jitter(width = 0.2, alpha = 0.3, size = 1) +  # 添加原始数据点
-  labs(title = "不同组织的基因表达水平",
-       x = "组织类型", y = "Expression (log2)") +
+  geom_jitter(width = 0.2, alpha = 0.3, size = 1) +  # Add raw data points
+  labs(title = "Gene Expression by Tissue",
+       x = "Tissue Type", y = "Expression (log2)") +
   theme_bw() +
   theme(legend.position = "none")
 ```
 
 <br>
 
-### 4.5 小提琴图（geom_violin）
+### 4.5 Violin Plot (geom_violin)
 
-结合了箱线图和密度图的优点。
+Combines advantages of boxplots and density plots.
 
 ```r
 ggplot(tissue_expr, aes(x = tissue, y = expression, fill = tissue)) +
   geom_violin(alpha = 0.7) +
   geom_boxplot(width = 0.1, fill = "white", outlier.shape = NA) +
-  labs(title = "基因表达分布（小提琴图）",
-       x = "组织类型", y = "Expression (log2)") +
+  labs(title = "Gene Expression Distribution (Violin Plot)",
+       x = "Tissue Type", y = "Expression (log2)") +
   theme_minimal() +
   theme(legend.position = "none")
 ```
 
 <br>
 
-### 4.6 直方图（geom_histogram）
+### 4.6 Histogram (geom_histogram)
 
-展示单个连续变量的分布。
+Displays the distribution of a single continuous variable.
 
 ```r
 ggplot(gene_expr, aes(x = sample_A)) +
   geom_histogram(bins = 20, fill = "skyblue", color = "black", alpha = 0.7) +
   geom_vline(xintercept = mean(gene_expr$sample_A), 
              linetype = "dashed", color = "red", linewidth = 1) +
-  labs(title = "基因表达分布",
+  labs(title = "Gene Expression Distribution",
        x = "Expression (log2)", y = "Frequency") +
   theme_classic()
 ```
 
 <br>
 
-### 4.7 密度图（geom_density）
+### 4.7 Density Plot (geom_density)
 
-平滑的分布曲线。
+A smoothed version of the histogram.
 
 ```r
 ggplot(tissue_expr, aes(x = expression, fill = tissue)) +
   geom_density(alpha = 0.5) +
-  labs(title = "各组织基因表达密度分布",
+  labs(title = "Gene Expression Density by Tissue",
        x = "Expression (log2)", y = "Density") +
   theme_minimal()
 ```
 
 <br>
 
-## 5. 美学映射（Aesthetics）
+## 5. Aesthetics Mappings
 
-### 5.1 全局映射 vs 局部映射
+### 5.1 Global vs Local Mapping
 
 ```r
-# 全局映射：所有图层共享
+# Global mapping: Shared across all layers
 ggplot(mpg, aes(x = displ, y = hwy, color = class)) +
   geom_point() +
-  geom_smooth(method = "lm", se = FALSE)  # 继承 color 映射
+  geom_smooth(method = "lm", se = FALSE)  # Inherits color mapping
 
-# 局部映射：仅特定图层
+# Local mapping: Applied to a specific layer
 ggplot(mpg, aes(x = displ, y = hwy)) +
-  geom_point(aes(color = class)) +  # 只有点有颜色
-  geom_smooth(method = "lm", se = FALSE, color = "black")  # 统一黑色趋势线
+  geom_point(aes(color = class)) +  # Only points have colors
+  geom_smooth(method = "lm", se = FALSE, color = "black")  # Fixed black line
 ```
 
 <br>
 
-### 5.2 固定属性 vs 映射属性
+### 5.2 Fixed vs Mapped Properties
 
 ```r
-# 错误示例：将固定值放在 aes() 内
+# Incorrect example: Fixed value inside aes()
 ggplot(mpg, aes(x = displ, y = hwy)) +
-  geom_point(aes(color = "blue"))  # 错误！会被当作变量
+  geom_point(aes(color = "blue"))  # Error! Will be treated as a variable mapping
 
-# 正确示例：固定值在 aes() 外
+# Correct example: Fixed value outside aes()
 ggplot(mpg, aes(x = displ, y = hwy)) +
   geom_point(color = "blue", size = 3)
 ```
 
 <br>
 
-### 5.3 常用美学属性
+### 5.3 Common Aesthetic Properties
 
-| 属性 | 说明 | 适用 Geom |
+| Property | Description | Applicable Geom |
 |------|------|-----------|
-| `x`, `y` | 坐标轴位置 | 所有 |
-| `color` | 点/线的颜色 | point, line, text |
-| `fill` | 填充颜色 | bar, boxplot, violin, area |
-| `size` | 点/线的大小 | point, line, text |
-| `alpha` | 透明度（0-1） | 所有 |
-| `shape` | 点的形状 | point |
-| `linetype` | 线型 | line, smooth |
+| `x`, `y` | Coordinate axis position | All |
+| `color` | Point/line color | point, line, text |
+| `fill` | Fill color | bar, boxplot, violin, area |
+| `size` | Point/line size | point, line, text |
+| `alpha` | Transparency (0-1) | All |
+| `shape` | Point shape | point |
+| `linetype` | Line pattern | line, smooth |
 
 <br>
 
-## 6. 分面（Facets）
+## 6. Facets
 
-分面可以将数据按分类变量拆分为多个子图。
+Faceting creates multiple subplots based on a categorical variable.
 
 ### 6.1 facet_wrap()
 
-按单个变量分面，子图自动排列。
+Wraps subplots based on a single variable into multiple rows/cols.
 
 ```r
 ggplot(mpg, aes(x = displ, y = hwy)) +
   geom_point() +
   facet_wrap(~ class, nrow = 2) +
-  labs(title = "按车辆类型分面") +
+  labs(title = "Faceted by Vehicle Class") +
   theme_bw()
 ```
 
@@ -323,40 +318,40 @@ ggplot(mpg, aes(x = displ, y = hwy)) +
 
 ### 6.2 facet_grid()
 
-按两个变量组合分面，形成网格。
+Creates a grid based on two categorical variables.
 
 ```r
 ggplot(mpg, aes(x = displ, y = hwy)) +
   geom_point() +
   facet_grid(drv ~ cyl) +
-  labs(title = "按驱动类型和气缸数分面") +
+  labs(title = "Faceted by Drive Type and Cylinders") +
   theme_minimal()
 ```
 
 <br>
 
-## 7. 标度（Scales）
+## 7. Scales
 
-标度控制数据值如何映射到视觉属性。
+Scales define how data values are mapped to visual properties.
 
-### 7.1 坐标轴标度
+### 7.1 Axis Scales
 
 ```r
-# 对数标度
+# Log scale
 ggplot(mpg, aes(x = displ, y = hwy)) +
   geom_point() +
   scale_x_log10() +
   scale_y_continuous(breaks = seq(10, 50, by = 5)) +
-  labs(title = "对数 x 轴") +
+  labs(title = "Log10 x-axis") +
   theme_bw()
 ```
 
 <br>
 
-### 7.2 颜色标度
+### 7.2 Color Scales
 
 ```r
-# 手动指定颜色
+# Manually assigned colors
 ggplot(tissue_expr, aes(x = tissue, y = expression, fill = tissue)) +
   geom_boxplot() +
   scale_fill_manual(values = c("Liver" = "#E64B35", 
@@ -365,7 +360,7 @@ ggplot(tissue_expr, aes(x = tissue, y = expression, fill = tissue)) +
                                 "Heart" = "#F39B7F")) +
   theme_minimal()
 
-# 使用 ColorBrewer 调色板
+# ColorBrewer palettes
 ggplot(mpg, aes(x = displ, y = hwy, color = class)) +
   geom_point(size = 3) +
   scale_color_brewer(palette = "Set1") +
@@ -374,10 +369,10 @@ ggplot(mpg, aes(x = displ, y = hwy, color = class)) +
 
 <br>
 
-### 7.3 渐变色标度
+### 7.3 Gradient Color Scales
 
 ```r
-# 连续变量的颜色渐变
+# Continuous variable color gradients
 gene_heatmap_data <- expand.grid(
   gene = paste0("Gene", 1:20),
   sample = paste0("Sample", 1:10)
@@ -388,45 +383,45 @@ ggplot(gene_heatmap_data, aes(x = sample, y = gene, fill = expression)) +
   geom_tile() +
   scale_fill_gradient2(low = "blue", mid = "white", high = "red", 
                        midpoint = 5) +
-  labs(title = "基因表达热图") +
+  labs(title = "Gene Expression Heatmap") +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
 
 <br>
 
-## 8. 主题（Themes）
+## 8. Themes
 
-### 8.1 内置主题
+### 8.1 Built-in Themes
 
 ```r
 p <- ggplot(mpg, aes(x = class, fill = class)) +
   geom_bar() +
-  labs(title = "不同主题示例")
+  labs(title = "Different Themes Example")
 
-# theme_gray()（默认）
+# theme_gray() (default)
 p + theme_gray()
 
-# theme_bw()（黑白，推荐用于论文）
+# theme_bw() (black and white, good for papers)
 p + theme_bw()
 
-# theme_minimal()（极简）
+# theme_minimal() (minimalist)
 p + theme_minimal()
 
-# theme_classic()（经典，无网格线）
+# theme_classic() (classic plot with no gridlines)
 p + theme_classic()
 ```
 
 <br>
 
-### 8.2 自定义主题元素
+### 8.2 Custom Theme Elements
 
 ```r
 ggplot(mpg, aes(x = displ, y = hwy, color = class)) +
   geom_point(size = 3) +
-  labs(title = "自定义主题示例",
-       x = "发动机排量 (L)",
-       y = "高速公路油耗 (mpg)") +
+  labs(title = "Custom Theme Example",
+       x = "Engine Displacement (L)",
+       y = "Highway MPG") +
   theme_bw() +
   theme(
     plot.title = element_text(size = 16, face = "bold", hjust = 0.5),
@@ -440,12 +435,12 @@ ggplot(mpg, aes(x = displ, y = hwy, color = class)) +
 
 <br>
 
-## 9. 生物信息学实战案例
+## 9. Bioinformatics Real-world Examples
 
-### 9.1 火山图（Volcano Plot）
+### 9.1 Volcano Plot
 
 ```r
-# 模拟差异表达基因数据
+# Simulate differentially expressed gene data
 set.seed(456)
 n_genes <- 5000
 volcano_data <- data.frame(
@@ -456,7 +451,7 @@ volcano_data <- data.frame(
 volcano_data$padj <- p.adjust(volcano_data$pvalue, method = "BH")
 volcano_data$neg_log10_padj <- -log10(volcano_data$padj)
 
-# 分类：显著上调、下调、不显著
+# Categorization: Significant Up/Down/Not Sig
 volcano_data <- volcano_data %>%
   mutate(
     diff_expressed = case_when(
@@ -466,7 +461,7 @@ volcano_data <- volcano_data %>%
     )
   )
 
-# 绘制火山图
+# Draw Volcano Plot
 ggplot(volcano_data, aes(x = log2FC, y = neg_log10_padj, color = diff_expressed)) +
   geom_point(alpha = 0.5, size = 1.5) +
   scale_color_manual(values = c("Up-regulated" = "red",
@@ -474,7 +469,7 @@ ggplot(volcano_data, aes(x = log2FC, y = neg_log10_padj, color = diff_expressed)
                                  "Not significant" = "gray")) +
   geom_vline(xintercept = c(-1, 1), linetype = "dashed", color = "gray40") +
   geom_hline(yintercept = -log10(0.05), linetype = "dashed", color = "gray40") +
-  labs(title = "Volcano Plot - 差异表达基因",
+  labs(title = "Volcano Plot - Differentially Expressed Genes",
        x = "Log2 Fold Change",
        y = "-Log10(Adjusted P-value)",
        color = "Status") +
@@ -484,10 +479,10 @@ ggplot(volcano_data, aes(x = log2FC, y = neg_log10_padj, color = diff_expressed)
 
 <br>
 
-### 9.2 MA 图（MA Plot）
+### 9.2 MA Plot
 
 ```r
-# 模拟数据
+# Simulated Data
 ma_data <- data.frame(
   gene = paste0("Gene", 1:n_genes),
   baseMean = 10^runif(n_genes, 0, 4),
@@ -509,10 +504,10 @@ ggplot(ma_data, aes(x = log10(baseMean), y = log2FC, color = significant)) +
 
 <br>
 
-### 9.3 PCA 图（主成分分析）
+### 9.3 PCA Plot (Principal Component Analysis)
 
 ```r
-# 模拟 PCA 结果
+# Simulated PCA Results
 set.seed(789)
 pca_data <- data.frame(
   sample = paste0("S", 1:30),
@@ -523,7 +518,7 @@ pca_data <- data.frame(
 
 ggplot(pca_data, aes(x = PC1, y = PC2, color = group, shape = group)) +
   geom_point(size = 4, alpha = 0.8) +
-  stat_ellipse(level = 0.95, linewidth = 1) +  # 添加置信椭圆
+  stat_ellipse(level = 0.95, linewidth = 1) +  # Add confidence ellipses
   labs(title = "PCA Plot",
        x = "PC1 (45.3% variance)",
        y = "PC2 (23.7% variance)") +
@@ -534,9 +529,9 @@ ggplot(pca_data, aes(x = PC1, y = PC2, color = group, shape = group)) +
 
 <br>
 
-## 10. 组合图形
+## 10. Combining Plots
 
-### 10.1 使用 patchwork 包
+### 10.1 Using patchwork
 
 ```r
 # install.packages("patchwork")
@@ -558,44 +553,44 @@ p3 <- ggplot(mpg, aes(x = hwy)) +
   labs(title = "Plot 3") +
   theme_bw()
 
-# 组合布局
+# Combine layout
 (p1 | p2) / p3 + 
-  plot_annotation(title = "组合图形示例", 
+  plot_annotation(title = "Combined Plots Layout Example", 
                   tag_levels = "A")
 ```
 
 <br>
 
-## 11. 保存图形
+## 11. Saving Plots
 
 ```r
-# 保存当前图形
+# Save current plot
 ggsave("my_plot.png", width = 8, height = 6, dpi = 300)
 ggsave("my_plot.pdf", width = 8, height = 6)
 
-# 保存指定图形对象
+# Save specific plot object
 p <- ggplot(mpg, aes(x = displ, y = hwy)) + geom_point()
 ggsave("scatter.png", plot = p, width = 10, height = 8, dpi = 300)
 ```
 
 <br>
 
-## 12. 最佳实践与技巧
+## 12. Best Practices & Tips
 
-### 12.1 数据准备
+### 12.1 Data Preparation
 
 ```r
-# 使用 tidyverse 准备数据
+# Prepare data using tidyverse
 library(tidyr)
 
-# 长格式 vs 宽格式
+# Wide format vs Long format
 wide_data <- data.frame(
   sample = c("S1", "S2", "S3"),
   GeneA = c(5.2, 6.1, 5.8),
   GeneB = c(7.3, 6.9, 7.5)
 )
 
-# 转为长格式用于 ggplot2
+# Convert to long format for ggplot2
 long_data <- wide_data %>%
   pivot_longer(cols = c(GeneA, GeneB), 
                names_to = "gene", 
@@ -608,10 +603,10 @@ ggplot(long_data, aes(x = sample, y = expression, fill = gene)) +
 
 <br>
 
-### 12.2 代码组织
+### 12.2 Code Organization
 
 ```r
-# 将 ggplot 代码分行，便于阅读和调试
+# Formatting ggplot code across lines for readability 
 ggplot(mpg, aes(x = displ, y = hwy, color = class)) +
   geom_point(size = 3, alpha = 0.6) +
   scale_color_brewer(palette = "Set2") +
@@ -631,9 +626,9 @@ ggplot(mpg, aes(x = displ, y = hwy, color = class)) +
 
 <br>
 
-### 12.3 常见问题
+### 12.3 Frequently Asked Questions
 
-**问题 1**：中文字体显示
+**Issue 1**: Rendering CJK Fonts
 ```r
 # macOS / Linux
 theme(text = element_text(family = "STHeiti"))
@@ -642,14 +637,14 @@ theme(text = element_text(family = "STHeiti"))
 theme(text = element_text(family = "SimHei"))
 ```
 
-**问题 2**：坐标轴标签重叠
+**Issue 2**: Overlapping axis labels
 ```r
 ggplot(mpg, aes(x = manufacturer, y = hwy)) +
   geom_boxplot() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
 
-**问题 3**：图例位置调整
+**Issue 3**: Legend Position Adjustment
 ```r
 ggplot(mpg, aes(x = displ, y = hwy, color = class)) +
   geom_point() +
@@ -658,38 +653,38 @@ ggplot(mpg, aes(x = displ, y = hwy, color = class)) +
 
 <br>
 
-## 13. 扩展包推荐
+## 13. Recommended Extension Packages
 
-- **ggpubr**：发表级图形（带统计检验）
-- **ggsci**：科学期刊配色方案
-- **ggrepel**：自动避免文本标签重叠
-- **patchwork**：组合多个图形
-- **plotly**：交互式图形（`ggplotly()`）
-- **gganimate**：动画图形
+- **ggpubr**: Publication-ready plots (with statistical testing)
+- **ggsci**: Color palettes matching scientific journals
+- **ggrepel**: Automatically repels text labels away from data points
+- **patchwork**: Combining multiple plots
+- **plotly**: Interactive graphics (`ggplotly()`)
+- **gganimate**: Animated plots
 
 <br>
 
-## 14. 小结
+## 14. Summary
 
-本节介绍了 ggplot2 的核心概念和使用方法：
+This section covered the core concepts and usage of ggplot2:
 
-1. **图形语法**：数据 + 美学映射 + 几何对象 + ...
-2. **常用 Geoms**：点、线、柱状图、箱线图、小提琴图、热图
-3. **美学映射**：全局 vs 局部、固定 vs 映射
-4. **分面**：`facet_wrap()` 和 `facet_grid()`
-5. **标度**：坐标轴、颜色、渐变
-6. **主题**：内置主题和自定义
-7. **生信案例**：火山图、MA 图、PCA 图
+1. **Grammar of Graphics**: Data + Aesthetics + Geometries + ...
+2. **Common Geoms**: Points, lines, bars, boxplots, violins, heatmaps
+3. **Aesthetics Mappings**: Global vs Local, Fixed vs Mapped
+4. **Facets**: `facet_wrap()` and `facet_grid()`
+5. **Scales**: Axis, color palettes, gradients
+6. **Themes**: Built-in themes and custom themes
+7. **Bioinformatics Cases**: Volcano plots, MA plots, PCA plots
 
-下一步学习建议：
-- 阅读 [ggplot2 官方文档](https://ggplot2.tidyverse.org/)
-- 浏览 [R Graph Gallery](https://r-graph-gallery.com/) 获取灵感
-- 练习用真实数据集绘图
-- 探索 ggplot2 扩展包生态
+Next Steps:
+- Read the [ggplot2 Official Documentation](https://ggplot2.tidyverse.org/)
+- Browse the [R Graph Gallery](https://r-graph-gallery.com/) for inspiration
+- Practice by visualizing real datasets
+- Explore the ggplot2 extension ecosystem
 
 ---
 
-**参考资源**：
+**References**:
 - [ggplot2: Elegant Graphics for Data Analysis](https://ggplot2-book.org/)
 - [R for Data Science - Data Visualization](https://r4ds.hadley.nz/data-visualize)
 - [ggplot2 Cheatsheet](https://github.com/rstudio/cheatsheets/blob/master/data-visualization.pdf)
