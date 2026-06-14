@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Bioinfo-SMU</title>
+<title>contributing – Bioinfo-SMU</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -67,7 +67,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./Grade2/index.html" rel="next">
+<link href="./about.html" rel="next">
+<link href="./resources.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -397,7 +398,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">首页</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./contributing.html">贡献指南</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -419,7 +420,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">首页</span></a>
   </div>
 </li>
@@ -650,7 +651,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./contributing.html" class="sidebar-item-text sidebar-link">
+  <a href="./contributing.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">贡献指南</span></a>
   </div>
 </li>
@@ -670,14 +671,37 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#bioinfo-smu" id="toc-bioinfo-smu" class="nav-link active" data-scroll-target="#bioinfo-smu">Bioinfo-SMU</a></li>
-  <li><a href="#主要内容" id="toc-主要内容" class="nav-link" data-scroll-target="#主要内容">主要内容</a></li>
-  <li><a href="#快速开始" id="toc-快速开始" class="nav-link" data-scroll-target="#快速开始">快速开始</a></li>
-  <li><a href="#项目统计" id="toc-项目统计" class="nav-link" data-scroll-target="#项目统计">项目统计</a></li>
-  <li><a href="#课程概览" id="toc-课程概览" class="nav-link" data-scroll-target="#课程概览">课程概览</a></li>
+  <li><a href="#贡献指南" id="toc-贡献指南" class="nav-link active" data-scroll-target="#贡献指南">贡献指南</a>
+  <ul class="collapse">
+  <li><a href="#贡献方式" id="toc-贡献方式" class="nav-link" data-scroll-target="#贡献方式">贡献方式</a>
+  <ul class="collapse">
+  <li><a href="#学习资料" id="toc-学习资料" class="nav-link" data-scroll-target="#学习资料">学习资料</a></li>
+  <li><a href="#代码贡献" id="toc-代码贡献" class="nav-link" data-scroll-target="#代码贡献">代码贡献</a></li>
+  <li><a href="#文档改进" id="toc-文档改进" class="nav-link" data-scroll-target="#文档改进">文档改进</a></li>
+  </ul></li>
+  <li><a href="#快速开始" id="toc-快速开始" class="nav-link" data-scroll-target="#快速开始">快速开始</a>
+  <ul class="collapse">
+  <li><a href="#fork-仓库" id="toc-fork-仓库" class="nav-link" data-scroll-target="#fork-仓库">1. Fork 仓库</a></li>
+  <li><a href="#克隆到本地" id="toc-克隆到本地" class="nav-link" data-scroll-target="#克隆到本地">2. 克隆到本地</a></li>
+  <li><a href="#创建新分支" id="toc-创建新分支" class="nav-link" data-scroll-target="#创建新分支">3. 创建新分支</a></li>
+  <li><a href="#进行修改" id="toc-进行修改" class="nav-link" data-scroll-target="#进行修改">4. 进行修改</a></li>
+  <li><a href="#提交更改" id="toc-提交更改" class="nav-link" data-scroll-target="#提交更改">5. 提交更改</a></li>
+  <li><a href="#推送到-github" id="toc-推送到-github" class="nav-link" data-scroll-target="#推送到-github">6. 推送到 GitHub</a></li>
+  <li><a href="#创建-pull-request" id="toc-创建-pull-request" class="nav-link" data-scroll-target="#创建-pull-request">7. 创建 Pull Request</a></li>
+  </ul></li>
+  <li><a href="#内容规范" id="toc-内容规范" class="nav-link" data-scroll-target="#内容规范">内容规范</a>
+  <ul class="collapse">
+  <li><a href="#代码规范" id="toc-代码规范" class="nav-link" data-scroll-target="#代码规范">代码规范</a></li>
+  <li><a href="#文档规范" id="toc-文档规范" class="nav-link" data-scroll-target="#文档规范">文档规范</a></li>
+  <li><a href="#文件组织" id="toc-文件组织" class="nav-link" data-scroll-target="#文件组织">文件组织</a></li>
+  </ul></li>
+  <li><a href="#提交检查清单" id="toc-提交检查清单" class="nav-link" data-scroll-target="#提交检查清单">提交检查清单</a></li>
+  <li><a href="#代码审查" id="toc-代码审查" class="nav-link" data-scroll-target="#代码审查">代码审查</a></li>
   <li><a href="#联系方式" id="toc-联系方式" class="nav-link" data-scroll-target="#联系方式">联系方式</a></li>
   <li><a href="#注意事项" id="toc-注意事项" class="nav-link" data-scroll-target="#注意事项">注意事项</a></li>
+  <li><a href="#贡献者" id="toc-贡献者" class="nav-link" data-scroll-target="#贡献者">贡献者</a></li>
   <li><a href="#许可证" id="toc-许可证" class="nav-link" data-scroll-target="#许可证">许可证</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -688,128 +712,297 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<section id="bioinfo-smu" class="level1 hero">
-<h1>Bioinfo-SMU</h1>
-<p>南方医科大学生物信息学专业学习资源库</p>
-<div class="subtitle">
-<p>面向课程学习、实验代码、考试复习和科研入门的开放资料库，帮助生物信息学同学更系统地管理学习路径与实践材料。</p>
-</div>
-<div class="hero-actions">
-<p><a href="./learning-path.html" class="button primary">开始学习</a> <a href="./Grade4/index.html" class="button">查看课程</a> <a href="./contributing.html" class="button">参与贡献</a></p>
-</div>
+<section id="贡献指南" class="level1">
+<h1>贡献指南</h1>
+<p>感谢你有意向为 Bioinfo-SMU 项目贡献！本指南将帮助你了解如何参与项目。</p>
+<hr>
+<section id="贡献方式" class="level2">
+<h2 class="anchored" data-anchor-id="贡献方式">贡献方式</h2>
+<p>我们欢迎以下类型的贡献：</p>
+<section id="学习资料" class="level3">
+<h3 class="anchored" data-anchor-id="学习资料">学习资料</h3>
+<ul>
+<li>课程笔记和总结</li>
+<li>实验代码和报告</li>
+<li>考试重点和复习资料</li>
+<li>学习心得和经验分享</li>
+</ul>
 </section>
-<section id="主要内容" class="level2">
-<h2 class="anchored" data-anchor-id="主要内容">主要内容</h2>
-<div class="feature-grid">
-<section id="课程资料" class="level3 feature-card">
-<h3 class="anchored" data-anchor-id="课程资料">课程资料</h3>
-<p>各门专业课程的实验报告、作业、笔记和复习材料。</p>
+<section id="代码贡献" class="level3">
+<h3 class="anchored" data-anchor-id="代码贡献">代码贡献</h3>
+<ul>
+<li>实验代码优化</li>
+<li>Bug 修复</li>
+<li>新功能实现</li>
+<li>代码注释完善</li>
+</ul>
 </section>
-<section id="实验代码" class="level3 feature-card">
-<h3 class="anchored" data-anchor-id="实验代码">实验代码</h3>
-<p>整理生物信息学课程和分析流程中常用的 R/Python 代码。</p>
+<section id="文档改进" class="level3">
+<h3 class="anchored" data-anchor-id="文档改进">文档改进</h3>
+<ul>
+<li>文档内容补充</li>
+<li>错别字修正</li>
+<li>格式优化</li>
+<li>翻译工作</li>
+</ul>
+<hr>
 </section>
-<section id="考试资料" class="level3 feature-card">
-<h3 class="anchored" data-anchor-id="考试资料">考试资料</h3>
-<p>收集往届考试重点、题型经验和复习建议。</p>
 </section>
-<section id="科研工具" class="level3 feature-card">
-<h3 class="anchored" data-anchor-id="科研工具">科研工具</h3>
-<p>汇总常用数据库、分析工具和可复用脚本。</p>
+<section id="快速开始" class="level2">
+<h2 class="anchored" data-anchor-id="快速开始">快速开始</h2>
+<section id="fork-仓库" class="level3">
+<h3 class="anchored" data-anchor-id="fork-仓库">1. Fork 仓库</h3>
+<p>点击仓库页面右上角的 “Fork” 按钮，将项目复制到你的 GitHub 账号下。</p>
 </section>
-</div>
-<div class="callout callout-style-simple callout-tip callout-titled" title="宗旨">
+<section id="克隆到本地" class="level3">
+<h3 class="anchored" data-anchor-id="克隆到本地">2. 克隆到本地</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/你的用户名/Bioinfo-SMU.git</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> Bioinfo-SMU</span></code></pre></div>
+</section>
+<section id="创建新分支" class="level3">
+<h3 class="anchored" data-anchor-id="创建新分支">3. 创建新分支</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> feature/your-contribution-name</span></code></pre></div>
+<div class="callout callout-style-simple callout-tip callout-titled" title="分支命名建议">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>宗旨
+<span class="screen-reader-only">Tip</span>分支命名建议
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>帮助生信专业的同学们更好地学习和科研，共同进步。</p>
+<ul>
+<li><code>feature/xxx</code> - 新功能</li>
+<li><code>fix/xxx</code> - Bug修复</li>
+<li><code>docs/xxx</code> - 文档更新</li>
+<li><code>refactor/xxx</code> - 代码重构</li>
+</ul>
 </div>
 </div>
 </section>
-<section id="快速开始" class="level2">
-<h2 class="anchored" data-anchor-id="快速开始">快速开始</h2>
-<div class="course-grid">
-<section id="浏览文档" class="level3 course-card">
-<h3 class="anchored" data-anchor-id="浏览文档">浏览文档</h3>
-<p>通过顶部导航或左侧目录进入不同课程与主题页面。</p>
+<section id="进行修改" class="level3">
+<h3 class="anchored" data-anchor-id="进行修改">4. 进行修改</h3>
+<p>在本地编辑文件，添加你的贡献内容。</p>
 </section>
-<section id="克隆仓库" class="level3 course-card">
-<h3 class="anchored" data-anchor-id="克隆仓库">克隆仓库</h3>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/Hinna0818/Bioinfo-SMU.git</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> Bioinfo-SMU</span></code></pre></div>
-</section>
-<section id="参与贡献" class="level3 course-card">
-<h3 class="anchored" data-anchor-id="参与贡献">参与贡献</h3>
-<p>欢迎同学补充课程资料、实验代码和学习经验。贡献前请阅读 <a href="./contributing.html">贡献指南</a>。</p>
-</section>
+<section id="提交更改" class="level3">
+<h3 class="anchored" data-anchor-id="提交更改">5. 提交更改</h3>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"描述你的更改"</span></span></code></pre></div>
+<div class="callout callout-style-simple callout-tip callout-titled" title="Commit Message 建议">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Commit Message 建议
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>使用清晰的提交信息，例如：</p>
+<ul>
+<li><code>Add: 添加计算生物学实验5代码</code></li>
+<li><code>Fix: 修复WGCNA分析脚本的错误</code></li>
+<li><code>Docs: 完善学习路线文档</code></li>
+<li><code>Update: 更新README中的联系方式</code></li>
+</ul>
+</div>
 </div>
 </section>
-<section id="项目统计" class="level2">
-<h2 class="anchored" data-anchor-id="项目统计">项目统计</h2>
-<div class="stat-grid">
-<section id="课程层级" class="level3 stat-card">
-<h3 class="anchored" data-anchor-id="课程层级">课程层级</h3>
-<p><strong>4</strong> <span>覆盖大二到大四课程资料</span></p>
+<section id="推送到-github" class="level3">
+<h3 class="anchored" data-anchor-id="推送到-github">6. 推送到 GitHub</h3>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin feature/your-contribution-name</span></code></pre></div>
 </section>
-<section id="r-教程" class="level3 stat-card">
-<h3 class="anchored" data-anchor-id="r-教程">R 教程</h3>
-<p><strong>7</strong> <span>从基础语法到数据可视化</span></p>
+<section id="创建-pull-request" class="level3">
+<h3 class="anchored" data-anchor-id="创建-pull-request">7. 创建 Pull Request</h3>
+<ol type="1">
+<li>访问你 Fork 的仓库页面</li>
+<li>点击 “Pull Request” 按钮</li>
+<li>填写 PR 标题和描述</li>
+<li>提交 PR 等待审核</li>
+</ol>
+<hr>
 </section>
-<section id="分析流程" class="level3 stat-card">
-<h3 class="anchored" data-anchor-id="分析流程">分析流程</h3>
-<p><strong>3</strong> <span>Bulk、单细胞和空间转录组</span></p>
 </section>
+<section id="内容规范" class="level2">
+<h2 class="anchored" data-anchor-id="内容规范">内容规范</h2>
+<section id="代码规范" class="level3">
+<h3 class="anchored" data-anchor-id="代码规范">代码规范</h3>
+<section id="r-代码" class="level4">
+<h4 class="anchored" data-anchor-id="r-代码">R 代码</h4>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 使用清晰的变量名</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>gene_expression_data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"data.csv"</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 添加必要的注释</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 进行差异表达分析</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>results <span class="ot">&lt;-</span> DESeq2<span class="sc">::</span><span class="fu">DESeq</span>(dds)</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="co"># 使用一致的代码风格</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>plot_data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">gene =</span> <span class="fu">rownames</span>(results),</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">log2fc =</span> results<span class="sc">$</span>log2FoldChange,</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">pvalue =</span> results<span class="sc">$</span>pvalue</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
+</section>
+<section id="python-代码" class="level4">
+<h4 class="anchored" data-anchor-id="python-代码">Python 代码</h4>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 遵循 PEP 8 规范</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 使用类型注解</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> calculate_expression(data: pd.DataFrame) <span class="op">-&gt;</span> pd.DataFrame:</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="co">    计算基因表达值</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="co">    </span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="co">    Args:</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="co">        data: 原始表达数据</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="co">    </span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="co">    Returns:</span></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="co">        标准化后的表达数据</span></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> data <span class="op">/</span> data.<span class="bu">sum</span>()</span></code></pre></div>
+</section>
+</section>
+<section id="文档规范" class="level3">
+<h3 class="anchored" data-anchor-id="文档规范">文档规范</h3>
+<section id="markdown-格式" class="level4">
+<h4 class="anchored" data-anchor-id="markdown-格式">Markdown 格式</h4>
+<div class="sourceCode" id="cb7"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># 一级标题</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">## 二级标题</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="fu">### 三级标题</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>列表项1</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>列表项2</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>有序列表1</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>有序列表2</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>**粗体** *斜体*</span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">链接文字</span><span class="co">](URL)</span></span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a><span class="al">![图片描述](图片URL)</span></span></code></pre></div>
+</section>
+<section id="使用-admonitions" class="level4">
+<h4 class="anchored" data-anchor-id="使用-admonitions">使用 Admonitions</h4>
+<div class="sourceCode" id="cb8"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>::: {.callout-note title="提示"}</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>这是一个提示信息</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>::: {.callout-warning title="警告"}</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>这是一个警告信息</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip title="建议"}</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>这是一个建议</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>::: {.callout-note title="信息"}</span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>这是一个信息框</span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div>
+<p>效果：</p>
+<div class="callout callout-style-simple callout-note callout-titled" title="提示">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>提示
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>这是一个提示信息</p>
+</div>
+</div>
+<div class="callout callout-style-simple callout-warning callout-titled" title="警告">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>警告
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>这是一个警告信息</p>
+</div>
+</div>
+<div class="callout callout-style-simple callout-tip callout-titled" title="建议">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>建议
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>这是一个建议</p>
+</div>
 </div>
 </section>
-<section id="课程概览" class="level2">
-<h2 class="anchored" data-anchor-id="课程概览">课程概览</h2>
-<div class="course-grid">
-<section id="r-语言教程" class="level3 course-card">
-<h3 class="anchored" data-anchor-id="r-语言教程">R 语言教程</h3>
-<p>系统学习 R 语言基础知识和生物信息学数据分析方法。</p>
-<p><a href="./Rbase/index.html">进入教程</a></p>
 </section>
-<section id="生信流程" class="level3 course-card">
-<h3 class="anchored" data-anchor-id="生信流程">生信流程</h3>
-<p>面向转录组数据分析的 R 脚本集合，覆盖 Bulk、单细胞与空间转录组。</p>
-<p><a href="./BioinfoTalus/index.html">查看流程</a></p>
+<section id="文件组织" class="level3">
+<h3 class="anchored" data-anchor-id="文件组织">文件组织</h3>
+<pre><code>Bioinfo-SMU/
+├── docs/                      # 文档目录
+│   ├── index.md              # 首页
+│   ├── Grade4/               # 大四课程
+│   │   ├── computational_biology/
+│   │   │   ├── index.md
+│   │   │   ├── exp1.md
+│   │   │   └── ...
+│   │   └── ...
+│   └── ...
+├── Grade4/                   # 实际代码和数据
+│   ├── computational_biology/
+│   │   └── experiments/
+│   │       ├── Exp1/
+│   │       │   ├── Exp1.PPI.Rmd
+│   │       │   └── ...
+│   │       └── ...
+│   └── ...
+└── mkdocs.yml               # MkDocs 配置文件</code></pre>
+<hr>
 </section>
-<section id="计算生物学" class="level3 course-card">
-<h3 class="anchored" data-anchor-id="计算生物学">计算生物学</h3>
-<p>涵盖 PPI 网络分析、WGCNA、网络聚类、随机游走和 qPCR 数据分析。</p>
-<p><a href="./Grade4/computational_biology/index.html">查看课程</a></p>
 </section>
-<section id="计算机辅助药物设计" class="level3 course-card">
-<h3 class="anchored" data-anchor-id="计算机辅助药物设计">计算机辅助药物设计</h3>
-<p>学习使用计算方法进行药物设计、虚拟筛选和 QSAR 建模。</p>
-<p><a href="./Grade4/CADD/index.html">查看课程</a></p>
+<section id="提交检查清单" class="level2">
+<h2 class="anchored" data-anchor-id="提交检查清单">提交检查清单</h2>
+<p>在提交 Pull Request 之前，请确保：</p>
+<ul>
+<li>[] 代码可以正常运行</li>
+<li>[] 添加了必要的注释</li>
+<li>[] 文档格式正确</li>
+<li>[] 没有拼写错误</li>
+<li>[] 遵循项目的代码风格</li>
+<li>[] Commit message 清晰明确</li>
+<li>[] 已经测试过你的更改</li>
+</ul>
+<hr>
 </section>
-<section id="计算分子生物学" class="level3 course-card">
-<h3 class="anchored" data-anchor-id="计算分子生物学">计算分子生物学</h3>
-<p>整理序列比对、概率模型和分子层面计算方法相关内容。</p>
-<p><a href="./Grade4/computational_molecular_biology/index.html">查看课程</a></p>
-</section>
-<section id="学习资源" class="level3 course-card">
-<h3 class="anchored" data-anchor-id="学习资源">学习资源</h3>
-<p>整理学习路线、常用工具、数据库和参考书目。</p>
-<p><a href="./resources.html">查看资源</a></p>
-</section>
-</div>
+<section id="代码审查" class="level2">
+<h2 class="anchored" data-anchor-id="代码审查">代码审查</h2>
+<p>提交 PR 后，维护者会进行代码审查。可能会：</p>
+<ul>
+<li>直接合并 - 如果一切正常</li>
+<li>提出建议 - 需要进行一些修改</li>
+<li>拒绝 - 不符合项目要求</li>
+</ul>
+<p>请及时回应审查意见，根据反馈进行修改。</p>
+<hr>
 </section>
 <section id="联系方式" class="level2">
 <h2 class="anchored" data-anchor-id="联系方式">联系方式</h2>
+<p>如果你有任何问题或建议：</p>
 <ul>
-<li><strong>作者</strong>：Nan He</li>
-<li><strong>邮箱</strong>：<a href="mailto:hinna01@163.com">hinna01@163.com</a></li>
-<li><strong>GitHub</strong>：<a href="https://github.com/Hinna0818"><span class="citation" data-cites="Hinna0818">@Hinna0818</span></a></li>
+<li><strong>邮箱</strong>：hinna01@163.com</li>
+<li><strong>Discussions</strong>：<a href="https://github.com/Hinna0818/Bioinfo-SMU/discussions">参与讨论</a></li>
+<li><strong>Issues</strong>：<a href="https://github.com/Hinna0818/Bioinfo-SMU/issues">提交问题</a></li>
 </ul>
-<p>有任何问题或建议，欢迎 <a href="https://github.com/Hinna0818/Bioinfo-SMU/issues">提交 Issue</a> 或参与 <a href="https://github.com/Hinna0818/Bioinfo-SMU/discussions">Discussions</a>。</p>
+<hr>
 </section>
 <section id="注意事项" class="level2">
 <h2 class="anchored" data-anchor-id="注意事项">注意事项</h2>
@@ -823,28 +1016,63 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>本仓库资料仅供学习参考，请勿直接抄袭。</p>
+<ul>
+<li>不要上传未经授权的考试题目或答案</li>
+<li>尊重他人的知识产权</li>
+<li>标注资料来源</li>
+</ul>
 </div>
 </div>
-<div class="callout callout-style-simple callout-note callout-titled" title="版权声明">
+<div class="callout callout-style-simple callout-warning callout-titled" title="隐私保护">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>版权声明
+<span class="screen-reader-only">Warning</span>隐私保护
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>尊重知识产权，注明资料来源。如有侵权，请联系删除。</p>
+<ul>
+<li>不要上传包含个人敏感信息的文件</li>
+<li>不要上传他人的个人作业（未经同意）</li>
+</ul>
 </div>
 </div>
+<div class="callout callout-style-simple callout-note callout-titled" title="文件大小">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>文件大小
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>单个文件不超过 10MB</li>
+<li>大文件请使用 Git LFS 或外部链接</li>
+</ul>
+</div>
+</div>
+<hr>
+</section>
+<section id="贡献者" class="level2">
+<h2 class="anchored" data-anchor-id="贡献者">贡献者</h2>
+<p>感谢所有为本项目做出贡献的同学！</p>
+<p><a href="https://github.com/Hinna0818/Bioinfo-SMU/graphs/contributors"> <img src="https://contrib.rocks/image?repo=Hinna0818/Bioinfo-SMU"> </a></p>
+<hr>
 </section>
 <section id="许可证" class="level2">
 <h2 class="anchored" data-anchor-id="许可证">许可证</h2>
-<p>本项目采用 <a href="https://github.com/Hinna0818/Bioinfo-SMU/blob/main/LICENSE">MIT License</a> 开源协议。</p>
+<p>通过向本项目贡献，你同意你的贡献将在 <a href="https://github.com/Hinna0818/Bioinfo-SMU/blob/main/LICENSE">MIT License</a> 下发布。</p>
+<hr>
+<div data-align="center">
+<p><strong>感谢你的贡献！让我们一起让这个项目变得更好！</strong></p>
+</div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -1206,10 +1434,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./resources.html" class="pagination-link" aria-label="参考资料">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">参考资料</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./Grade2/index.html" class="pagination-link" aria-label="大二课程总览">
-        <span class="nav-page-text">大二课程总览</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./about.html" class="pagination-link" aria-label="关于">
+        <span class="nav-page-text">关于</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

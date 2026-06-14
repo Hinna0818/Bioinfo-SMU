@@ -1,0 +1,2412 @@
+[
+  {
+    "objectID": "tools.html",
+    "href": "tools.html",
+    "title": "常用工具",
+    "section": "",
+    "text": "生物信息学分析常用的工具和资源汇总。\n\n\n\n\n\n\nR：https://www.r-project.org/\nRStudio：https://posit.co/download/rstudio-desktop/\nBioconductor：https://www.bioconductor.org/\n\n\n\n\n\nPython：https://www.python.org/\nAnaconda：https://www.anaconda.com/\nJupyter：https://jupyter.org/\n\n\n\n\n\n\n\n\n\nBLAST：https://blast.ncbi.nlm.nih.gov/\nClustal Omega：https://www.ebi.ac.uk/Tools/msa/clustalo/\nEMBOSS：http://emboss.sourceforge.net/\n\n\n\n\n\nIGV：https://software.broadinstitute.org/software/igv/\nUCSC Genome Browser：https://genome.ucsc.edu/\nEnsembl：https://www.ensembl.org/\n\n\n\n\n\nDESeq2：Bioconductor package\nedgeR：Bioconductor package\nlimma：Bioconductor package\n\n\n\n\n\nCytoscape：https://cytoscape.org/\nigraph：R/Python package\nNetworkX：Python package\n\n\n\n\n\nPyMOL：https://pymol.org/\nSWISS-MODEL：https://swissmodel.expasy.org/\nAlphaFold：https://alphafold.ebi.ac.uk/\n\n\n\n\n\n\n\n\n\nNCBI GenBank：https://www.ncbi.nlm.nih.gov/genbank/\nUniProt：https://www.uniprot.org/\nEnsembl：https://www.ensembl.org/\n\n\n\n\n\nGEO：https://www.ncbi.nlm.nih.gov/geo/\nArrayExpress：https://www.ebi.ac.uk/arrayexpress/\nGTEx：https://gtexportal.org/\n\n\n\n\n\nSTRING：https://string-db.org/\nBioGRID：https://thebiogrid.org/\nIntAct：https://www.ebi.ac.uk/intact/\n\n\n\n\n\nKEGG：https://www.kegg.jp/\nReactome：https://reactome.org/\nGene Ontology：http://geneontology.org/\n\n\n\n\n\n\n\n\n\nDAVID：https://david.ncifcrf.gov/\nEnrichr：https://maayanlab.cloud/Enrichr/\nMetascape：https://metascape.org/\n\n\n\n\n\nGSEA：https://www.gsea-msigdb.org/\nMSigDB：https://www.gsea-msigdb.org/gsea/msigdb/\n\n\n\n\n\n\n\n\n\n生信技能树：https://www.biotrainee.com/\nBiostars：https://www.biostars.org/\nGalaxy Training：https://training.galaxyproject.org/\n\n\n\n\n\n《生物信息学》\n《R语言实战》\n《Python for Data Analysis》\n\n\n返回首页",
+    "crumbs": [
+      "首页",
+      "学习资源",
+      "常用工具"
+    ]
+  },
+  {
+    "objectID": "tools.html#编程环境",
+    "href": "tools.html#编程环境",
+    "title": "常用工具",
+    "section": "",
+    "text": "R：https://www.r-project.org/\nRStudio：https://posit.co/download/rstudio-desktop/\nBioconductor：https://www.bioconductor.org/\n\n\n\n\n\nPython：https://www.python.org/\nAnaconda：https://www.anaconda.com/\nJupyter：https://jupyter.org/",
+    "crumbs": [
+      "首页",
+      "学习资源",
+      "常用工具"
+    ]
+  },
+  {
+    "objectID": "tools.html#生物信息学工具",
+    "href": "tools.html#生物信息学工具",
+    "title": "常用工具",
+    "section": "",
+    "text": "BLAST：https://blast.ncbi.nlm.nih.gov/\nClustal Omega：https://www.ebi.ac.uk/Tools/msa/clustalo/\nEMBOSS：http://emboss.sourceforge.net/\n\n\n\n\n\nIGV：https://software.broadinstitute.org/software/igv/\nUCSC Genome Browser：https://genome.ucsc.edu/\nEnsembl：https://www.ensembl.org/\n\n\n\n\n\nDESeq2：Bioconductor package\nedgeR：Bioconductor package\nlimma：Bioconductor package\n\n\n\n\n\nCytoscape：https://cytoscape.org/\nigraph：R/Python package\nNetworkX：Python package\n\n\n\n\n\nPyMOL：https://pymol.org/\nSWISS-MODEL：https://swissmodel.expasy.org/\nAlphaFold：https://alphafold.ebi.ac.uk/",
+    "crumbs": [
+      "首页",
+      "学习资源",
+      "常用工具"
+    ]
+  },
+  {
+    "objectID": "tools.html#数据库",
+    "href": "tools.html#数据库",
+    "title": "常用工具",
+    "section": "",
+    "text": "NCBI GenBank：https://www.ncbi.nlm.nih.gov/genbank/\nUniProt：https://www.uniprot.org/\nEnsembl：https://www.ensembl.org/\n\n\n\n\n\nGEO：https://www.ncbi.nlm.nih.gov/geo/\nArrayExpress：https://www.ebi.ac.uk/arrayexpress/\nGTEx：https://gtexportal.org/\n\n\n\n\n\nSTRING：https://string-db.org/\nBioGRID：https://thebiogrid.org/\nIntAct：https://www.ebi.ac.uk/intact/\n\n\n\n\n\nKEGG：https://www.kegg.jp/\nReactome：https://reactome.org/\nGene Ontology：http://geneontology.org/",
+    "crumbs": [
+      "首页",
+      "学习资源",
+      "常用工具"
+    ]
+  },
+  {
+    "objectID": "tools.html#在线工具",
+    "href": "tools.html#在线工具",
+    "title": "常用工具",
+    "section": "",
+    "text": "DAVID：https://david.ncifcrf.gov/\nEnrichr：https://maayanlab.cloud/Enrichr/\nMetascape：https://metascape.org/\n\n\n\n\n\nGSEA：https://www.gsea-msigdb.org/\nMSigDB：https://www.gsea-msigdb.org/gsea/msigdb/",
+    "crumbs": [
+      "首页",
+      "学习资源",
+      "常用工具"
+    ]
+  },
+  {
+    "objectID": "tools.html#学习资源",
+    "href": "tools.html#学习资源",
+    "title": "常用工具",
+    "section": "",
+    "text": "生信技能树：https://www.biotrainee.com/\nBiostars：https://www.biostars.org/\nGalaxy Training：https://training.galaxyproject.org/\n\n\n\n\n\n《生物信息学》\n《R语言实战》\n《Python for Data Analysis》\n\n\n返回首页",
+    "crumbs": [
+      "首页",
+      "学习资源",
+      "常用工具"
+    ]
+  },
+  {
+    "objectID": "learning-path.html",
+    "href": "learning-path.html",
+    "title": "学习路线建议",
+    "section": "",
+    "text": "本页面为生物信息学专业同学提供系统的学习路线建议，帮助大家循序渐进地掌握相关知识和技能。\n\n\n\n\n\n\n\n\n基础语法：变量、数据类型、控制结构\n数据结构：向量、矩阵、数据框、列表\n数据处理：dplyr、tidyr 包的使用\n数据可视化：ggplot2 绘图\n\n\n\n\n\n\n\nTip推荐资源\n\n\n\n\nR for Data Science\nggplot2 官方文档\n\n\n\n\n\n\n\n基础语法：变量、数据类型、控制结构\n数据结构：列表、字典、集合、元组\n常用库：NumPy、Pandas、Matplotlib\n科学计算：SciPy、Scikit-learn\n\n\n\n\n\n\n\nTip推荐资源\n\n\n\n\nPython for Biologists\nBiopython Tutorial\n\n\n\n\n\n\n\n\n分子生物学：DNA、RNA、蛋白质的结构与功能\n测序技术：Sanger测序、NGS、三代测序\n实验设计：对照实验、统计学基础\n常用技术：PCR、qPCR、Western Blot等\n\n\n\n\n\n描述性统计：均值、方差、分布\n概率论：概率分布、贝叶斯定理\n假设检验：t检验、卡方检验、方差分析\n回归分析：线性回归、逻辑回归\n\n\n\n\n\n\n\n\n\n\n\n序列比对：BLAST、Bowtie2、BWA\n变异检测：SNP calling、INDEL检测\n基因组注释：基因预测、功能注释\n进化分析：系统发育树、选择压力分析\n\n\n\n\n\nRNA-seq 分析：\n\n数据预处理（质控、比对）\n差异表达分析（DESeq2、edgeR）\n功能富集分析（GO、KEGG）\n\n单细胞测序：\n\n数据降维（PCA、t-SNE、UMAP）\n细胞聚类与注释\n轨迹推断\n\n\n\n\n\n\n\n蛋白质组：质谱数据分析、蛋白质鉴定\n代谢组：代谢物鉴定、代谢通路分析\n多组学整合：关联分析、网络构建\n\n\n\n\n\n\n\n\n\n\nNote本课程重点\n\n\n\n这是我们大四计算生物学课程的核心内容！\n\n\n\nPPI 网络：蛋白质相互作用网络构建与分析\n基因调控网络：转录因子-靶基因关系\n代谢网络：代谢通路的网络表示\nWGCNA：加权基因共表达网络分析\n网络算法：\n\n社区检测（MCL、Louvain）\n随机游走（RWR）\n中心性分析\n\n\n\n\n\n\n\n\n\n\n\n\n监督学习：\n\n分类：SVM、随机森林、XGBoost\n回归：线性回归、岭回归、Lasso\n\n无监督学习：\n\n聚类：K-means、层次聚类、DBSCAN\n降维：PCA、t-SNE、UMAP\n\n模型评估：交叉验证、ROC曲线、混淆矩阵\n\n\n\n\n\n神经网络基础：感知机、反向传播\n常用架构：\n\nCNN（卷积神经网络）\nRNN/LSTM（循环神经网络）\nTransformer\n\n生物信息应用：\n\n蛋白质结构预测（AlphaFold）\n基因组序列分析\n药物-靶点预测\n\n\n\n\n\n\n\n蛋白质结构：\n\n结构预测（同源建模、从头预测）\n结构比对与分析\n分子对接\n\n分子动力学模拟：GROMACS、AMBER\n药物设计：虚拟筛选、QSAR建模\n\n\n\n\n\n\n\n\n\n确定研究方向\n\n疾病机制研究\n药物靶点发现\n生物标志物筛选\n进化生物学\n\n文献调研\n\nPubMed 检索\n阅读综述文章\n追踪最新进展\n\n\n\n\n\n\n\n\n\n\n数据库\n用途\n网址\n\n\n\n\nGEO\n基因表达数据\nhttps://www.ncbi.nlm.nih.gov/geo/\n\n\nTCGA\n癌症基因组数据\nhttps://portal.gdc.cancer.gov/\n\n\nGTEx\n正常组织表达数据\nhttps://gtexportal.org/\n\n\nSTRING\n蛋白质相互作用\nhttps://string-db.org/\n\n\nUniProt\n蛋白质序列与功能\nhttps://www.uniprot.org/\n\n\nKEGG\n代谢通路\nhttps://www.kegg.jp/\n\n\n\n\n\n\n\n\n数据预处理\n\n质量控制\n标准化\n批次效应校正\n\n统计分析\n\n差异分析\n相关性分析\n生存分析\n\n功能分析\n\n富集分析\n通路分析\n网络分析\n\n\n\n\n\n\n计算验证：使用其他数据集验证\n实验验证：qPCR、Western Blot等\n文献支持：查找相关研究支持\n\n\n\n\n\n论文结构\n\nIntroduction（引言）\nMethods（方法）\nResults（结果）\nDiscussion（讨论）\n\n数据可视化\n\n使用 ggplot2 制作出版级图表\n注意配色和布局\n添加必要的统计信息\n\n投稿准备\n\n选择合适的期刊\n准备补充材料\n代码和数据分享\n\n\n\n\n\n\n\n\n\n\nCoursera - Bioinformatics Specialization\nedX - Data Analysis for Life Sciences\n生信技能树\n\n\n\n\n\n《生物信息学》- 李霞、雷健波\n《Bioinformatics Data Skills》- Vince Buffalo\n《An Introduction to Statistical Learning》- James et al.\n\n\n\n\n\nGalaxy：图形化分析平台\nBioconductor：R 语言生物信息学包集合\nBiopython：Python 生物信息学工具库\n\n\n\n\n\n\n\n\n\n\n\n\nTip循序渐进\n\n\n\n不要急于求成，扎实掌握每个阶段的知识再进入下一阶段。\n\n\n\n\n\n\n\n\nTip理论与实践结合\n\n\n\n学习理论知识的同时，多动手实践，完成实际项目。\n\n\n\n\n\n\n\n\nTip积极交流\n\n\n\n多与同学、老师交流，参加学术会议和研讨会。\n\n\n\n\n\n\n\n\nTip持续学习\n\n\n\n生物信息学发展迅速，保持学习的热情，关注最新技术和方法。\n\n\n\n\n\n\n\n\n\n掌握 R 和 Python 编程\n学习统计学基础\n了解分子生物学知识\n\n\n\n\n\n学习基因组学、转录组学分析\n掌握常用生物信息学工具\n完成课程项目\n\n\n\n\n\n深入学习特定方向（网络分析、机器学习等）\n参与科研项目\n准备毕业论文\n\n\n\n\n\n独立完成科研项目\n发表学术论文\n参加国际会议\n\n\n有问题欢迎在 Discussions 中讨论！",
+    "crumbs": [
+      "首页",
+      "学习资源",
+      "学习路线"
+    ]
+  },
+  {
+    "objectID": "learning-path.html#新生入门",
+    "href": "learning-path.html#新生入门",
+    "title": "学习路线建议",
+    "section": "",
+    "text": "基础语法：变量、数据类型、控制结构\n数据结构：向量、矩阵、数据框、列表\n数据处理：dplyr、tidyr 包的使用\n数据可视化：ggplot2 绘图\n\n\n\n\n\n\n\nTip推荐资源\n\n\n\n\nR for Data Science\nggplot2 官方文档\n\n\n\n\n\n\n\n基础语法：变量、数据类型、控制结构\n数据结构：列表、字典、集合、元组\n常用库：NumPy、Pandas、Matplotlib\n科学计算：SciPy、Scikit-learn\n\n\n\n\n\n\n\nTip推荐资源\n\n\n\n\nPython for Biologists\nBiopython Tutorial\n\n\n\n\n\n\n\n\n分子生物学：DNA、RNA、蛋白质的结构与功能\n测序技术：Sanger测序、NGS、三代测序\n实验设计：对照实验、统计学基础\n常用技术：PCR、qPCR、Western Blot等\n\n\n\n\n\n描述性统计：均值、方差、分布\n概率论：概率分布、贝叶斯定理\n假设检验：t检验、卡方检验、方差分析\n回归分析：线性回归、逻辑回归",
+    "crumbs": [
+      "首页",
+      "学习资源",
+      "学习路线"
+    ]
+  },
+  {
+    "objectID": "learning-path.html#进阶学习",
+    "href": "learning-path.html#进阶学习",
+    "title": "学习路线建议",
+    "section": "",
+    "text": "序列比对：BLAST、Bowtie2、BWA\n变异检测：SNP calling、INDEL检测\n基因组注释：基因预测、功能注释\n进化分析：系统发育树、选择压力分析\n\n\n\n\n\nRNA-seq 分析：\n\n数据预处理（质控、比对）\n差异表达分析（DESeq2、edgeR）\n功能富集分析（GO、KEGG）\n\n单细胞测序：\n\n数据降维（PCA、t-SNE、UMAP）\n细胞聚类与注释\n轨迹推断\n\n\n\n\n\n\n\n蛋白质组：质谱数据分析、蛋白质鉴定\n代谢组：代谢物鉴定、代谢通路分析\n多组学整合：关联分析、网络构建\n\n\n\n\n\n\n\n\n\n\nNote本课程重点\n\n\n\n这是我们大四计算生物学课程的核心内容！\n\n\n\nPPI 网络：蛋白质相互作用网络构建与分析\n基因调控网络：转录因子-靶基因关系\n代谢网络：代谢通路的网络表示\nWGCNA：加权基因共表达网络分析\n网络算法：\n\n社区检测（MCL、Louvain）\n随机游走（RWR）\n中心性分析",
+    "crumbs": [
+      "首页",
+      "学习资源",
+      "学习路线"
+    ]
+  },
+  {
+    "objectID": "learning-path.html#高级应用",
+    "href": "learning-path.html#高级应用",
+    "title": "学习路线建议",
+    "section": "",
+    "text": "监督学习：\n\n分类：SVM、随机森林、XGBoost\n回归：线性回归、岭回归、Lasso\n\n无监督学习：\n\n聚类：K-means、层次聚类、DBSCAN\n降维：PCA、t-SNE、UMAP\n\n模型评估：交叉验证、ROC曲线、混淆矩阵\n\n\n\n\n\n神经网络基础：感知机、反向传播\n常用架构：\n\nCNN（卷积神经网络）\nRNN/LSTM（循环神经网络）\nTransformer\n\n生物信息应用：\n\n蛋白质结构预测（AlphaFold）\n基因组序列分析\n药物-靶点预测\n\n\n\n\n\n\n\n蛋白质结构：\n\n结构预测（同源建模、从头预测）\n结构比对与分析\n分子对接\n\n分子动力学模拟：GROMACS、AMBER\n药物设计：虚拟筛选、QSAR建模",
+    "crumbs": [
+      "首页",
+      "学习资源",
+      "学习路线"
+    ]
+  },
+  {
+    "objectID": "learning-path.html#科研应用",
+    "href": "learning-path.html#科研应用",
+    "title": "学习路线建议",
+    "section": "",
+    "text": "确定研究方向\n\n疾病机制研究\n药物靶点发现\n生物标志物筛选\n进化生物学\n\n文献调研\n\nPubMed 检索\n阅读综述文章\n追踪最新进展\n\n\n\n\n\n\n\n\n\n\n数据库\n用途\n网址\n\n\n\n\nGEO\n基因表达数据\nhttps://www.ncbi.nlm.nih.gov/geo/\n\n\nTCGA\n癌症基因组数据\nhttps://portal.gdc.cancer.gov/\n\n\nGTEx\n正常组织表达数据\nhttps://gtexportal.org/\n\n\nSTRING\n蛋白质相互作用\nhttps://string-db.org/\n\n\nUniProt\n蛋白质序列与功能\nhttps://www.uniprot.org/\n\n\nKEGG\n代谢通路\nhttps://www.kegg.jp/\n\n\n\n\n\n\n\n\n数据预处理\n\n质量控制\n标准化\n批次效应校正\n\n统计分析\n\n差异分析\n相关性分析\n生存分析\n\n功能分析\n\n富集分析\n通路分析\n网络分析\n\n\n\n\n\n\n计算验证：使用其他数据集验证\n实验验证：qPCR、Western Blot等\n文献支持：查找相关研究支持\n\n\n\n\n\n论文结构\n\nIntroduction（引言）\nMethods（方法）\nResults（结果）\nDiscussion（讨论）\n\n数据可视化\n\n使用 ggplot2 制作出版级图表\n注意配色和布局\n添加必要的统计信息\n\n投稿准备\n\n选择合适的期刊\n准备补充材料\n代码和数据分享",
+    "crumbs": [
+      "首页",
+      "学习资源",
+      "学习路线"
+    ]
+  },
+  {
+    "objectID": "learning-path.html#推荐资源",
+    "href": "learning-path.html#推荐资源",
+    "title": "学习路线建议",
+    "section": "",
+    "text": "Coursera - Bioinformatics Specialization\nedX - Data Analysis for Life Sciences\n生信技能树\n\n\n\n\n\n《生物信息学》- 李霞、雷健波\n《Bioinformatics Data Skills》- Vince Buffalo\n《An Introduction to Statistical Learning》- James et al.\n\n\n\n\n\nGalaxy：图形化分析平台\nBioconductor：R 语言生物信息学包集合\nBiopython：Python 生物信息学工具库",
+    "crumbs": [
+      "首页",
+      "学习资源",
+      "学习路线"
+    ]
+  },
+  {
+    "objectID": "learning-path.html#学习建议",
+    "href": "learning-path.html#学习建议",
+    "title": "学习路线建议",
+    "section": "",
+    "text": "Tip循序渐进\n\n\n\n不要急于求成，扎实掌握每个阶段的知识再进入下一阶段。\n\n\n\n\n\n\n\n\nTip理论与实践结合\n\n\n\n学习理论知识的同时，多动手实践，完成实际项目。\n\n\n\n\n\n\n\n\nTip积极交流\n\n\n\n多与同学、老师交流，参加学术会议和研讨会。\n\n\n\n\n\n\n\n\nTip持续学习\n\n\n\n生物信息学发展迅速，保持学习的热情，关注最新技术和方法。",
+    "crumbs": [
+      "首页",
+      "学习资源",
+      "学习路线"
+    ]
+  },
+  {
+    "objectID": "learning-path.html#阶段性目标",
+    "href": "learning-path.html#阶段性目标",
+    "title": "学习路线建议",
+    "section": "",
+    "text": "掌握 R 和 Python 编程\n学习统计学基础\n了解分子生物学知识\n\n\n\n\n\n学习基因组学、转录组学分析\n掌握常用生物信息学工具\n完成课程项目\n\n\n\n\n\n深入学习特定方向（网络分析、机器学习等）\n参与科研项目\n准备毕业论文\n\n\n\n\n\n独立完成科研项目\n发表学术论文\n参加国际会议\n\n\n有问题欢迎在 Discussions 中讨论！",
+    "crumbs": [
+      "首页",
+      "学习资源",
+      "学习路线"
+    ]
+  },
+  {
+    "objectID": "contributing.html",
+    "href": "contributing.html",
+    "title": "贡献指南",
+    "section": "",
+    "text": "感谢你有意向为 Bioinfo-SMU 项目贡献！本指南将帮助你了解如何参与项目。\n\n\n\n我们欢迎以下类型的贡献：\n\n\n\n课程笔记和总结\n实验代码和报告\n考试重点和复习资料\n学习心得和经验分享\n\n\n\n\n\n实验代码优化\nBug 修复\n新功能实现\n代码注释完善\n\n\n\n\n\n文档内容补充\n错别字修正\n格式优化\n翻译工作\n\n\n\n\n\n\n\n\n点击仓库页面右上角的 “Fork” 按钮，将项目复制到你的 GitHub 账号下。\n\n\n\ngit clone https://github.com/你的用户名/Bioinfo-SMU.git\ncd Bioinfo-SMU\n\n\n\ngit checkout -b feature/your-contribution-name\n\n\n\n\n\n\nTip分支命名建议\n\n\n\n\nfeature/xxx - 新功能\nfix/xxx - Bug修复\ndocs/xxx - 文档更新\nrefactor/xxx - 代码重构\n\n\n\n\n\n\n在本地编辑文件，添加你的贡献内容。\n\n\n\ngit add .\ngit commit -m \"描述你的更改\"\n\n\n\n\n\n\nTipCommit Message 建议\n\n\n\n使用清晰的提交信息，例如：\n\nAdd: 添加计算生物学实验5代码\nFix: 修复WGCNA分析脚本的错误\nDocs: 完善学习路线文档\nUpdate: 更新README中的联系方式\n\n\n\n\n\n\ngit push origin feature/your-contribution-name\n\n\n\n\n访问你 Fork 的仓库页面\n点击 “Pull Request” 按钮\n填写 PR 标题和描述\n提交 PR 等待审核\n\n\n\n\n\n\n\n\n\n\n# 使用清晰的变量名\ngene_expression_data &lt;- read.csv(\"data.csv\")\n\n# 添加必要的注释\n# 进行差异表达分析\nresults &lt;- DESeq2::DESeq(dds)\n\n# 使用一致的代码风格\nplot_data &lt;- data.frame(\n  gene = rownames(results),\n  log2fc = results$log2FoldChange,\n  pvalue = results$pvalue\n)\n\n\n\n# 遵循 PEP 8 规范\nimport pandas as pd\nimport numpy as np\n\n# 使用类型注解\ndef calculate_expression(data: pd.DataFrame) -&gt; pd.DataFrame:\n    \"\"\"\n    计算基因表达值\n    \n    Args:\n        data: 原始表达数据\n    \n    Returns:\n        标准化后的表达数据\n    \"\"\"\n    return data / data.sum()\n\n\n\n\n\n\n# 一级标题\n\n## 二级标题\n\n### 三级标题\n\n- 列表项1\n- 列表项2\n\n1. 有序列表1\n2. 有序列表2\n\n**粗体** *斜体*\n\n[链接文字](URL)\n\n![图片描述](图片URL)\n\n\n\n::: {.callout-note title=\"提示\"}\n这是一个提示信息\n\n:::\n::: {.callout-warning title=\"警告\"}\n这是一个警告信息\n\n:::\n::: {.callout-tip title=\"建议\"}\n这是一个建议\n\n:::\n::: {.callout-note title=\"信息\"}\n这是一个信息框\n:::\n效果：\n\n\n\n\n\n\nNote提示\n\n\n\n这是一个提示信息\n\n\n\n\n\n\n\n\nWarning警告\n\n\n\n这是一个警告信息\n\n\n\n\n\n\n\n\nTip建议\n\n\n\n这是一个建议\n\n\n\n\n\n\nBioinfo-SMU/\n├── docs/                      # 文档目录\n│   ├── index.md              # 首页\n│   ├── Grade4/               # 大四课程\n│   │   ├── computational_biology/\n│   │   │   ├── index.md\n│   │   │   ├── exp1.md\n│   │   │   └── ...\n│   │   └── ...\n│   └── ...\n├── Grade4/                   # 实际代码和数据\n│   ├── computational_biology/\n│   │   └── experiments/\n│   │       ├── Exp1/\n│   │       │   ├── Exp1.PPI.Rmd\n│   │       │   └── ...\n│   │       └── ...\n│   └── ...\n└── mkdocs.yml               # MkDocs 配置文件\n\n\n\n\n\n在提交 Pull Request 之前，请确保：\n\n[] 代码可以正常运行\n[] 添加了必要的注释\n[] 文档格式正确\n[] 没有拼写错误\n[] 遵循项目的代码风格\n[] Commit message 清晰明确\n[] 已经测试过你的更改\n\n\n\n\n\n提交 PR 后，维护者会进行代码审查。可能会：\n\n直接合并 - 如果一切正常\n提出建议 - 需要进行一些修改\n拒绝 - 不符合项目要求\n\n请及时回应审查意见，根据反馈进行修改。\n\n\n\n\n如果你有任何问题或建议：\n\n邮箱：hinna01@163.com\nDiscussions：参与讨论\nIssues：提交问题\n\n\n\n\n\n\n\n\n\n\n\nWarning学术诚信\n\n\n\n\n不要上传未经授权的考试题目或答案\n尊重他人的知识产权\n标注资料来源\n\n\n\n\n\n\n\n\n\nWarning隐私保护\n\n\n\n\n不要上传包含个人敏感信息的文件\n不要上传他人的个人作业（未经同意）\n\n\n\n\n\n\n\n\n\nNote文件大小\n\n\n\n\n单个文件不超过 10MB\n大文件请使用 Git LFS 或外部链接\n\n\n\n\n\n\n\n感谢所有为本项目做出贡献的同学！\n  \n\n\n\n\n通过向本项目贡献，你同意你的贡献将在 MIT License 下发布。\n\n\n感谢你的贡献！让我们一起让这个项目变得更好！",
+    "crumbs": [
+      "首页",
+      "贡献指南"
+    ]
+  },
+  {
+    "objectID": "contributing.html#贡献方式",
+    "href": "contributing.html#贡献方式",
+    "title": "贡献指南",
+    "section": "",
+    "text": "我们欢迎以下类型的贡献：\n\n\n\n课程笔记和总结\n实验代码和报告\n考试重点和复习资料\n学习心得和经验分享\n\n\n\n\n\n实验代码优化\nBug 修复\n新功能实现\n代码注释完善\n\n\n\n\n\n文档内容补充\n错别字修正\n格式优化\n翻译工作",
+    "crumbs": [
+      "首页",
+      "贡献指南"
+    ]
+  },
+  {
+    "objectID": "contributing.html#快速开始",
+    "href": "contributing.html#快速开始",
+    "title": "贡献指南",
+    "section": "",
+    "text": "点击仓库页面右上角的 “Fork” 按钮，将项目复制到你的 GitHub 账号下。\n\n\n\ngit clone https://github.com/你的用户名/Bioinfo-SMU.git\ncd Bioinfo-SMU\n\n\n\ngit checkout -b feature/your-contribution-name\n\n\n\n\n\n\nTip分支命名建议\n\n\n\n\nfeature/xxx - 新功能\nfix/xxx - Bug修复\ndocs/xxx - 文档更新\nrefactor/xxx - 代码重构\n\n\n\n\n\n\n在本地编辑文件，添加你的贡献内容。\n\n\n\ngit add .\ngit commit -m \"描述你的更改\"\n\n\n\n\n\n\nTipCommit Message 建议\n\n\n\n使用清晰的提交信息，例如：\n\nAdd: 添加计算生物学实验5代码\nFix: 修复WGCNA分析脚本的错误\nDocs: 完善学习路线文档\nUpdate: 更新README中的联系方式\n\n\n\n\n\n\ngit push origin feature/your-contribution-name\n\n\n\n\n访问你 Fork 的仓库页面\n点击 “Pull Request” 按钮\n填写 PR 标题和描述\n提交 PR 等待审核",
+    "crumbs": [
+      "首页",
+      "贡献指南"
+    ]
+  },
+  {
+    "objectID": "contributing.html#内容规范",
+    "href": "contributing.html#内容规范",
+    "title": "贡献指南",
+    "section": "",
+    "text": "# 使用清晰的变量名\ngene_expression_data &lt;- read.csv(\"data.csv\")\n\n# 添加必要的注释\n# 进行差异表达分析\nresults &lt;- DESeq2::DESeq(dds)\n\n# 使用一致的代码风格\nplot_data &lt;- data.frame(\n  gene = rownames(results),\n  log2fc = results$log2FoldChange,\n  pvalue = results$pvalue\n)\n\n\n\n# 遵循 PEP 8 规范\nimport pandas as pd\nimport numpy as np\n\n# 使用类型注解\ndef calculate_expression(data: pd.DataFrame) -&gt; pd.DataFrame:\n    \"\"\"\n    计算基因表达值\n    \n    Args:\n        data: 原始表达数据\n    \n    Returns:\n        标准化后的表达数据\n    \"\"\"\n    return data / data.sum()\n\n\n\n\n\n\n# 一级标题\n\n## 二级标题\n\n### 三级标题\n\n- 列表项1\n- 列表项2\n\n1. 有序列表1\n2. 有序列表2\n\n**粗体** *斜体*\n\n[链接文字](URL)\n\n![图片描述](图片URL)\n\n\n\n::: {.callout-note title=\"提示\"}\n这是一个提示信息\n\n:::\n::: {.callout-warning title=\"警告\"}\n这是一个警告信息\n\n:::\n::: {.callout-tip title=\"建议\"}\n这是一个建议\n\n:::\n::: {.callout-note title=\"信息\"}\n这是一个信息框\n:::\n效果：\n\n\n\n\n\n\nNote提示\n\n\n\n这是一个提示信息\n\n\n\n\n\n\n\n\nWarning警告\n\n\n\n这是一个警告信息\n\n\n\n\n\n\n\n\nTip建议\n\n\n\n这是一个建议\n\n\n\n\n\n\nBioinfo-SMU/\n├── docs/                      # 文档目录\n│   ├── index.md              # 首页\n│   ├── Grade4/               # 大四课程\n│   │   ├── computational_biology/\n│   │   │   ├── index.md\n│   │   │   ├── exp1.md\n│   │   │   └── ...\n│   │   └── ...\n│   └── ...\n├── Grade4/                   # 实际代码和数据\n│   ├── computational_biology/\n│   │   └── experiments/\n│   │       ├── Exp1/\n│   │       │   ├── Exp1.PPI.Rmd\n│   │       │   └── ...\n│   │       └── ...\n│   └── ...\n└── mkdocs.yml               # MkDocs 配置文件",
+    "crumbs": [
+      "首页",
+      "贡献指南"
+    ]
+  },
+  {
+    "objectID": "contributing.html#提交检查清单",
+    "href": "contributing.html#提交检查清单",
+    "title": "贡献指南",
+    "section": "",
+    "text": "在提交 Pull Request 之前，请确保：\n\n[] 代码可以正常运行\n[] 添加了必要的注释\n[] 文档格式正确\n[] 没有拼写错误\n[] 遵循项目的代码风格\n[] Commit message 清晰明确\n[] 已经测试过你的更改",
+    "crumbs": [
+      "首页",
+      "贡献指南"
+    ]
+  },
+  {
+    "objectID": "contributing.html#代码审查",
+    "href": "contributing.html#代码审查",
+    "title": "贡献指南",
+    "section": "",
+    "text": "提交 PR 后，维护者会进行代码审查。可能会：\n\n直接合并 - 如果一切正常\n提出建议 - 需要进行一些修改\n拒绝 - 不符合项目要求\n\n请及时回应审查意见，根据反馈进行修改。",
+    "crumbs": [
+      "首页",
+      "贡献指南"
+    ]
+  },
+  {
+    "objectID": "contributing.html#联系方式",
+    "href": "contributing.html#联系方式",
+    "title": "贡献指南",
+    "section": "",
+    "text": "如果你有任何问题或建议：\n\n邮箱：hinna01@163.com\nDiscussions：参与讨论\nIssues：提交问题",
+    "crumbs": [
+      "首页",
+      "贡献指南"
+    ]
+  },
+  {
+    "objectID": "contributing.html#注意事项",
+    "href": "contributing.html#注意事项",
+    "title": "贡献指南",
+    "section": "",
+    "text": "Warning学术诚信\n\n\n\n\n不要上传未经授权的考试题目或答案\n尊重他人的知识产权\n标注资料来源\n\n\n\n\n\n\n\n\n\nWarning隐私保护\n\n\n\n\n不要上传包含个人敏感信息的文件\n不要上传他人的个人作业（未经同意）\n\n\n\n\n\n\n\n\n\nNote文件大小\n\n\n\n\n单个文件不超过 10MB\n大文件请使用 Git LFS 或外部链接",
+    "crumbs": [
+      "首页",
+      "贡献指南"
+    ]
+  },
+  {
+    "objectID": "contributing.html#贡献者",
+    "href": "contributing.html#贡献者",
+    "title": "贡献指南",
+    "section": "",
+    "text": "感谢所有为本项目做出贡献的同学！",
+    "crumbs": [
+      "首页",
+      "贡献指南"
+    ]
+  },
+  {
+    "objectID": "contributing.html#许可证",
+    "href": "contributing.html#许可证",
+    "title": "贡献指南",
+    "section": "",
+    "text": "通过向本项目贡献，你同意你的贡献将在 MIT License 下发布。\n\n\n感谢你的贡献！让我们一起让这个项目变得更好！",
+    "crumbs": [
+      "首页",
+      "贡献指南"
+    ]
+  },
+  {
+    "objectID": "Rbase/index.html",
+    "href": "Rbase/index.html",
+    "title": "R 语言入门与进阶",
+    "section": "",
+    "text": "教程简介：系统学习 R 语言基础知识和生物信息学数据分析方法。\n\n\n\n本系列教程由浅入深，从 R 语言基础到数据分析实战，适合生物信息学初学者。\n\n\n\n\n\n课程\n内容\n链接\n\n\n\n\n第一课\nR 语言基础入门\n查看教程 | 下载\n\n\n第二课\nR 向量操作\n查看教程 | 下载\n\n\n第三课\nR 基础数据结构\n查看教程 | 下载\n\n\n第四课\nTidyverse 数据处理\n查看教程 | 下载\n\n\n第五课\nR 流程控制\n查看教程 | 下载\n\n\n第六课\nR 函数与包开发\n在线阅读 | 下载\n\n\n第七课\nggplot2 数据可视化\n在线阅读 | 下载\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote学习重点\n\n\n\n\nR Studio 编辑器的高效使用\nR 包的下载、读取和卸载（CRAN、Bioconductor、GitHub）\n文件的读取与写入\nR 源文件的使用方法\n\n\n\n公众号推文链接：https://mp.weixin.qq.com/s/ekygBz43ILxO4ne0mCjDxA\n在 GitHub 查看 下载 PDF\n\n\n\n\n\n\n\n\n\n\nNote学习重点\n\n\n\n\n向量的创建与查看\n向量的索引与子集提取\n向量的运算与函数\n缺失值的处理\n常用向量相关函数\n\n\n\n公众号推文链接：https://mp.weixin.qq.com/s/bB5lOeqRQVGA4n284Pzt0A\n在 GitHub 查看 下载 PDF\n\n\n\n\n\n\n\n\n\n\nNote学习重点\n\n\n\n\n矩阵（Matrix）的创建与操作\n列表（List）的使用与索引\n数据框（Data Frame）的清洗与整理\n三种结构的差异与应用场景\nBase R 数据清洗范式\n\n\n\n公众号推文链接：https://mp.weixin.qq.com/s/QGyuHDArCZ7j4NeVdbDRpg\n在 GitHub 查看 下载 PDF\n\n\n\n\n\n\n\n\n\n\nNote学习重点\n\n\n\n\ntidyverse 生态系统概述\ndplyr 数据操作（select, filter, mutate, summarise 等）\ntidyr 数据整理（pivot_longer, pivot_wider 等）\n管道操作符 %&gt;% 的使用\n数据处理实战案例\n\n\n\n公众号推文链接：https://mp.weixin.qq.com/s/1Kj_bql-KEJBGdLt8_Quiw\n在 GitHub 查看 下载 PDF\n\n\n\n\n\n\n\n\n\n\nNote学习重点\n\n\n\n\n条件判断（if/else、ifelse、switch）\n循环结构（for、while、repeat）\n循环控制（break、next）\napply 函数族（apply、lapply、sapply 等）\n函数式编程基础\n\n\n\n公众号推文链接：https://mp.weixin.qq.com/s/thm_qtawHiSJJO_OP_xwCA\n在 GitHub 查看 下载 PDF\n\n\n\n\n\n\n\n\n\n\nNote学习重点\n\n\n\n\nR 函数的定义与参数设计\n返回值与作用域（Scope）\n闭包（Closure）与高阶函数\nroxygen2 注释规范与文档生成\n使用 source() 和 debug() 调试函数\nR 包开发流程（devtools、testthat）\n\n\n\n公众号推文链接：https://mp.weixin.qq.com/s/bDzhc05GRaGZ5ADIclrsjA\n在线阅读 下载 Rmd\n\n\n\n\n\n\n\n\n\n\nNote学习重点\n\n\n\n\nggplot2 图形语法（Grammar of Graphics）\n常用几何对象（散点图、箱线图、柱状图、密度图等）\n美学映射（颜色、大小、透明度）\n分面（facet_wrap / facet_grid）\n标度与主题定制\n生信实战：火山图、MA 图、PCA 图\n\n\n\n在线阅读 下载 Rmd\n\n\n\n\n\n\n\n\n\n\n\nTip学习路线\n\n\n\n\n第一步：按顺序学习七节课程，理解基础概念\n第二步：动手实践每个代码示例\n第三步：尝试用真实的生信数据进行练习\n第四步：尝试编写自己的函数和 R 包\n第五步：用 ggplot2 绑定数据分析与可视化\n\n\n\n\n\n\n\n\n\nTip学习资源\n\n\n\n\nR for Data Science - 经典 R 语言数据分析书籍\nBioconductor - 生物信息学 R 包集合\nggplot2 官方文档 - 数据可视化\n\n\n\n\n\n\n\n\n实用导向：面向生物信息学实际分析场景\n代码示例：每个知识点配有完整代码\n循序渐进：从零基础到数据分析实战\n持续更新：后续会添加更多高级主题\n\n\n\n\n\n所有课程的源代码（Rmd 文件）和 HTML 版本都存放在 Rbase/ 目录中。\n你可以： - 直接在线查看 HTML 版本 - 下载 Rmd 文件在 RStudio 中运行 - Fork 仓库进行修改和练习\n\n\n\n\n如果你在学习过程中遇到问题，或者有任何建议，欢迎：\n\n提交 Issue\n参与讨论\n\n\n返回首页",
+    "crumbs": [
+      "首页",
+      "R 语言教程",
+      "教程总览"
+    ]
+  },
+  {
+    "objectID": "Rbase/index.html#课程目录",
+    "href": "Rbase/index.html#课程目录",
+    "title": "R 语言入门与进阶",
+    "section": "",
+    "text": "本系列教程由浅入深，从 R 语言基础到数据分析实战，适合生物信息学初学者。\n\n\n\n\n\n课程\n内容\n链接\n\n\n\n\n第一课\nR 语言基础入门\n查看教程 | 下载\n\n\n第二课\nR 向量操作\n查看教程 | 下载\n\n\n第三课\nR 基础数据结构\n查看教程 | 下载\n\n\n第四课\nTidyverse 数据处理\n查看教程 | 下载\n\n\n第五课\nR 流程控制\n查看教程 | 下载\n\n\n第六课\nR 函数与包开发\n在线阅读 | 下载\n\n\n第七课\nggplot2 数据可视化\n在线阅读 | 下载",
+    "crumbs": [
+      "首页",
+      "R 语言教程",
+      "教程总览"
+    ]
+  },
+  {
+    "objectID": "Rbase/index.html#课程内容概览",
+    "href": "Rbase/index.html#课程内容概览",
+    "title": "R 语言入门与进阶",
+    "section": "",
+    "text": "Note学习重点\n\n\n\n\nR Studio 编辑器的高效使用\nR 包的下载、读取和卸载（CRAN、Bioconductor、GitHub）\n文件的读取与写入\nR 源文件的使用方法\n\n\n\n公众号推文链接：https://mp.weixin.qq.com/s/ekygBz43ILxO4ne0mCjDxA\n在 GitHub 查看 下载 PDF\n\n\n\n\n\n\n\n\n\n\nNote学习重点\n\n\n\n\n向量的创建与查看\n向量的索引与子集提取\n向量的运算与函数\n缺失值的处理\n常用向量相关函数\n\n\n\n公众号推文链接：https://mp.weixin.qq.com/s/bB5lOeqRQVGA4n284Pzt0A\n在 GitHub 查看 下载 PDF\n\n\n\n\n\n\n\n\n\n\nNote学习重点\n\n\n\n\n矩阵（Matrix）的创建与操作\n列表（List）的使用与索引\n数据框（Data Frame）的清洗与整理\n三种结构的差异与应用场景\nBase R 数据清洗范式\n\n\n\n公众号推文链接：https://mp.weixin.qq.com/s/QGyuHDArCZ7j4NeVdbDRpg\n在 GitHub 查看 下载 PDF\n\n\n\n\n\n\n\n\n\n\nNote学习重点\n\n\n\n\ntidyverse 生态系统概述\ndplyr 数据操作（select, filter, mutate, summarise 等）\ntidyr 数据整理（pivot_longer, pivot_wider 等）\n管道操作符 %&gt;% 的使用\n数据处理实战案例\n\n\n\n公众号推文链接：https://mp.weixin.qq.com/s/1Kj_bql-KEJBGdLt8_Quiw\n在 GitHub 查看 下载 PDF\n\n\n\n\n\n\n\n\n\n\nNote学习重点\n\n\n\n\n条件判断（if/else、ifelse、switch）\n循环结构（for、while、repeat）\n循环控制（break、next）\napply 函数族（apply、lapply、sapply 等）\n函数式编程基础\n\n\n\n公众号推文链接：https://mp.weixin.qq.com/s/thm_qtawHiSJJO_OP_xwCA\n在 GitHub 查看 下载 PDF\n\n\n\n\n\n\n\n\n\n\nNote学习重点\n\n\n\n\nR 函数的定义与参数设计\n返回值与作用域（Scope）\n闭包（Closure）与高阶函数\nroxygen2 注释规范与文档生成\n使用 source() 和 debug() 调试函数\nR 包开发流程（devtools、testthat）\n\n\n\n公众号推文链接：https://mp.weixin.qq.com/s/bDzhc05GRaGZ5ADIclrsjA\n在线阅读 下载 Rmd\n\n\n\n\n\n\n\n\n\n\nNote学习重点\n\n\n\n\nggplot2 图形语法（Grammar of Graphics）\n常用几何对象（散点图、箱线图、柱状图、密度图等）\n美学映射（颜色、大小、透明度）\n分面（facet_wrap / facet_grid）\n标度与主题定制\n生信实战：火山图、MA 图、PCA 图\n\n\n\n在线阅读 下载 Rmd",
+    "crumbs": [
+      "首页",
+      "R 语言教程",
+      "教程总览"
+    ]
+  },
+  {
+    "objectID": "Rbase/index.html#学习建议",
+    "href": "Rbase/index.html#学习建议",
+    "title": "R 语言入门与进阶",
+    "section": "",
+    "text": "Tip学习路线\n\n\n\n\n第一步：按顺序学习七节课程，理解基础概念\n第二步：动手实践每个代码示例\n第三步：尝试用真实的生信数据进行练习\n第四步：尝试编写自己的函数和 R 包\n第五步：用 ggplot2 绑定数据分析与可视化\n\n\n\n\n\n\n\n\n\nTip学习资源\n\n\n\n\nR for Data Science - 经典 R 语言数据分析书籍\nBioconductor - 生物信息学 R 包集合\nggplot2 官方文档 - 数据可视化",
+    "crumbs": [
+      "首页",
+      "R 语言教程",
+      "教程总览"
+    ]
+  },
+  {
+    "objectID": "Rbase/index.html#课程特色",
+    "href": "Rbase/index.html#课程特色",
+    "title": "R 语言入门与进阶",
+    "section": "",
+    "text": "实用导向：面向生物信息学实际分析场景\n代码示例：每个知识点配有完整代码\n循序渐进：从零基础到数据分析实战\n持续更新：后续会添加更多高级主题",
+    "crumbs": [
+      "首页",
+      "R 语言教程",
+      "教程总览"
+    ]
+  },
+  {
+    "objectID": "Rbase/index.html#课程材料",
+    "href": "Rbase/index.html#课程材料",
+    "title": "R 语言入门与进阶",
+    "section": "",
+    "text": "所有课程的源代码（Rmd 文件）和 HTML 版本都存放在 Rbase/ 目录中。\n你可以： - 直接在线查看 HTML 版本 - 下载 Rmd 文件在 RStudio 中运行 - Fork 仓库进行修改和练习",
+    "crumbs": [
+      "首页",
+      "R 语言教程",
+      "教程总览"
+    ]
+  },
+  {
+    "objectID": "Rbase/index.html#反馈与建议",
+    "href": "Rbase/index.html#反馈与建议",
+    "title": "R 语言入门与进阶",
+    "section": "",
+    "text": "如果你在学习过程中遇到问题，或者有任何建议，欢迎：\n\n提交 Issue\n参与讨论\n\n\n返回首页",
+    "crumbs": [
+      "首页",
+      "R 语言教程",
+      "教程总览"
+    ]
+  },
+  {
+    "objectID": "Rbase/L6_functions.html",
+    "href": "Rbase/L6_functions.html",
+    "title": "R 中的函数（function）与包内函数编写规范",
+    "section": "",
+    "text": "本节我们将系统介绍如何在 R 中定义和使用函数、函数参数与返回值的设计、作用域（scope）问题；随后介绍在 R 包中撰写函数的规范（使用 roxygen2 注释生成文档、@export 等），并给出用 source() 和调试工具单步调试函数的实用流程。\n\n\n\nR 中最基本的函数定义形式：\nfn_name &lt;- function(arg1, arg2 = 1, ...) {\n  # 函数体\n  result &lt;- arg1 + arg2\n  return(result)\n}\n要点：\n\n函数由 function() 创建，参数可以有默认值；\n... 用于接收额外可变参数，常用于透传给其它函数（例如绘图或 read_* 系列）；\n如果没有显式 return()，函数会返回最后一个求值表达式的值。\n\n下面用一个生信常见的小函数举例：计算 TPM（Transcripts Per Million）从基因计数和基因长度（单位 bp）得到 TPM 值。\ncompute_tpm &lt;- function(counts, length_bp) {\n  # counts: 命名向量或数值向量，表示原始计数\n  # length_bp: 与 counts 对应的基因长度，单位 bp\n  if (length(counts) != length(length_bp)) stop(\"counts 与 length_bp 长度不一致\")\n\n  length_kb &lt;- length_bp / 1000\n  rpk &lt;- counts / length_kb\n  tpm &lt;- rpk / sum(rpk, na.rm = TRUE) * 1e6\n  return(tpm)\n}\n\n# 测试\ncounts &lt;- c(GeneA = 500, GeneB = 1000, GeneC = 50)\nlength_bp &lt;- c(GeneA = 2000, GeneB = 1000, GeneC = 1500)\ncompute_tpm(counts, length_bp)\n这段代码展示了常见的参数检查（长度一致性）、单位转换、以及向量化操作（避免循环）。\n\n\n\n\n良好的参数设计可以提高函数的可用性与可维护性。\n建议：\n\n把必须提供的参数放在最前面；带有合理默认值的参数放后面；\n使用具说明性的参数名（如 counts, length_bp, method）；\n对可能为 NULL 或 NA 的参数，要在函数内部处理或给出明确定义；\n使用 ... 以支持可扩展性，但在文档中明确说明 ... 会传递给哪个底层函数。\n\n示例：为 compute_tpm 添加 na.rm 与 min_counts 两个参数。\ncompute_tpm2 &lt;- function(counts, length_bp, na.rm = TRUE, min_counts = 0) {\n  if (length(counts) != length(length_bp)) stop(\"counts 与 length_bp 长度不一致\")\n  if (na.rm) {\n    keep &lt;- !is.na(counts) & !is.na(length_bp)\n    counts &lt;- counts[keep]\n    length_bp &lt;- length_bp[keep]\n  }\n  counts[counts &lt; min_counts] &lt;- 0\n  length_kb &lt;- length_bp / 1000\n  rpk &lt;- counts / length_kb\n  tpm &lt;- rpk / sum(rpk, na.rm = TRUE) * 1e6\n  return(tpm)\n}\n\ncompute_tpm2(counts, length_bp, min_counts = 10)\n\n\n\n\n函数应尽量返回明确且易用的数据结构：\n\n简单计算返回向量或标量；\n复杂处理返回 list 或 data.frame，并在文档中说明每个字段含义；\n如果函数会改变全局变量，尽量避免——优先返回结果并让调用者决定是否赋值。\n\n示例：一个返回多个结果的统计函数。\nsummary_stats &lt;- function(x) {\n  x &lt;- as.numeric(x)\n  res &lt;- list(\n    n = length(x),\n    mean = mean(x, na.rm = TRUE),\n    sd = sd(x, na.rm = TRUE)\n  )\n  return(res)\n}\n\nsummary_stats(c(1,2,3,NA,5))\n\n\n\n\nR 中的变量作用域遵循词法作用域（lexical scope）。函数内部创建的变量默认是局部的；若想修改外部变量，需显式使用 &lt;&lt;- 或 assign()，一般不推荐。\n示例：局部变量与修改全局变量对比\nglobal_var &lt;- 0\n\nfn_local &lt;- function(x) {\n  y &lt;- x + 1  # 局部变量 y\n  return(y)\n}\n\nfn_modify_global &lt;- function(x) {\n  global_var &lt;&lt;- x  # 修改外部变量（不推荐）\n}\n\nfn_local(2)\nglobal_var\nfn_modify_global(5)\nglobal_var\n说明：除非确有必要，否则不要让函数产生副作用（修改外部状态）。函数应当是”纯函数”（相对纯粹）：相同输入应返回相同输出。\n闭包（closure）是 R 的一个重要特性：函数返回另一个函数，并保留创建时的环境。举例：创建一个带默认正则化参数的 scaler。\nmake_scaler &lt;- function(center = TRUE, scale = TRUE) {\n  function(x) {\n    x &lt;- as.numeric(x)\n    if (center) x &lt;- x - mean(x, na.rm = TRUE)\n    if (scale) x &lt;- x / sd(x, na.rm = TRUE)\n    x\n  }\n}\n\nsc &lt;- make_scaler(center = TRUE, scale = FALSE)\nsc(c(1,2,3,4))\n\n\n\n\n小结性的建议：\n\n单一职责：函数只做一件事；\n输入验证：对输入类型、长度、NA 等进行检查并给出明确错误信息；\n明确返回值类型和结构；\n写示例与单元测试（测试框架如 testthat）；\n注释清楚但不要冗余；函数复杂时拆分为小函数。\n\n示例：改写一个更健壮的 TPM 计算函数（带参数检查与文档示例）。\ncompute_tpm_safe &lt;- function(counts, length_bp, min_counts = 0, na.rm = TRUE) {\n  if (!is.numeric(counts)) stop(\"counts 必须为数值向量\")\n  if (!is.numeric(length_bp)) stop(\"length_bp 必须为数值向量\")\n  if (length(counts) != length(length_bp)) stop(\"counts 与 length_bp 长度不一致\")\n\n  if (na.rm) {\n    keep &lt;- !is.na(counts) & !is.na(length_bp)\n    counts &lt;- counts[keep]\n    length_bp &lt;- length_bp[keep]\n  }\n\n  counts[counts &lt; min_counts] &lt;- 0\n  length_kb &lt;- length_bp / 1000\n  if (any(length_kb == 0)) stop(\"基因长度不能为 0\")\n\n  rpk &lt;- counts / length_kb\n  denom &lt;- sum(rpk, na.rm = TRUE)\n  if (denom == 0) return(rep(0, length(rpk)))\n  tpm &lt;- rpk / denom * 1e6\n  names(tpm) &lt;- names(counts)\n  return(tpm)\n}\n\ncompute_tpm_safe(counts, length_bp)\n\n\n\n\n在日常分析中，我们通常把一组相关函数放在单独的脚本文件，如 R/functions_tpm.R，然后在主脚本中 source() 加载：\n# 在主脚本中\nsource('R/functions_tpm.R')\nres &lt;- compute_tpm_safe(my_counts, my_lengths)\n调试技巧：\n\ndebug(func)：在下一次调用 func() 时进入交互调试，可以单步执行；\ndebugonce(func)：仅调试下一次调用；\n在函数内部插入 browser()：运行到这里会进入交互式调试；\ntraceback()：当出错后查看调用栈；\ntrace()：在函数运行时插入临时代码（如打印变量）；\n\n示例：演示 debug() 与 browser()。\ntmp_fn &lt;- function(x) {\n  a &lt;- sqrt(x)\n  b &lt;- log(a)\n  return(b)\n}\n\n# 使用 debug()：下次调用时会进入调试模式\ndebug(tmp_fn)\ntmp_fn(10)\nundebug(tmp_fn)\n\n# 在函数中插入 browser()\ntmp_fn2 &lt;- function(x) {\n  a &lt;- sqrt(x)\n  browser()\n  b &lt;- log(a)\n  return(b)\n}\ntry(tmp_fn2(10))\n\n# 出错后的 traceback()\nbad_fn &lt;- function(x) {\n  stop(\"故意出错\")\n}\ntryCatch(bad_fn(1), error = function(e) message(\"出错: \", e$message))\n# 如果没有 catch，运行后可用 traceback() 查看\n在 source() 调试时常见问题：\n\nsource() 默认为全局环境执行（local = FALSE），如果想把函数载入某个环境可以设置 local = TRUE 或指定环境；\n推荐把函数脚本放到项目 R/ 目录并使用 devtools::load_all() 进行开发加载，模拟包加载环境。\n\n示例：使用 devtools（开发包时）\n# 在包开发目录下\ndevtools::load_all()\ndevtools::document()  # 生成 roxygen 文档\n\n\n\n\n当需要把函数分发或重复复用时，建议把函数放入 R 包中。R 包中的函数放在 R/ 目录中，每个函数文件应尽量小而聚焦。使用 roxygen2 注释可以直接在源代码上方写注释，随后用 devtools::document() 自动生成 NAMESPACE 和 Rd 文档。\nroxygen2 注释模板示例：\n#' 计算 TPM\n#'\n#' 读取原始计数与基因长度，返回 TPM 向量。\n#'\n#' @param counts 数值向量或命名向量，原始计数\n#' @param length_bp 数值向量，与 counts 对应，单位 bp\n#' @param na.rm 布尔，是否移除 NA\n#' @param min_counts 数值，小于该值的计数将视为 0\n#' @return 命名数值向量，TPM\n#' @examples\n#' counts &lt;- c(G1 = 100, G2 = 50)\n#' length_bp &lt;- c(G1 = 2000, G2 = 1000)\n#' compute_tpm_safe(counts, length_bp)\n#' @export\ncompute_tpm_safe &lt;- function(counts, length_bp, min_counts = 0, na.rm = TRUE) {\n  # 函数体同上（为示例重复定义）\n  if (!is.numeric(counts)) stop(\"counts 必须为数值向量\")\n  if (!is.numeric(length_bp)) stop(\"length_bp 必须为数值向量\")\n  if (length(counts) != length(length_bp)) stop(\"counts 与 length_bp 长度不一致\")\n  if (na.rm) {\n    keep &lt;- !is.na(counts) & !is.na(length_bp)\n    counts &lt;- counts[keep]\n    length_bp &lt;- length_bp[keep]\n  }\n  counts[counts &lt; min_counts] &lt;- 0\n  length_kb &lt;- length_bp / 1000\n  if (any(length_kb == 0)) stop(\"基因长度不能为 0\")\n  rpk &lt;- counts / length_kb\n  denom &lt;- sum(rpk, na.rm = TRUE)\n  if (denom == 0) return(rep(0, length(rpk)))\n  tpm &lt;- rpk / denom * 1e6\n  names(tpm) &lt;- names(counts)\n  return(tpm)\n}\n关键点：\n\n#' 开头的注释会被 roxygen2 解析；\n常用标签：@title（可选）、@description、@param、@return、@examples、@export、@importFrom；\n@export 会在 NAMESPACE 中添加 export()，使函数对包用户可见；\n@importFrom pkg fun 可用于在 NAMESPACE 中声明函数依赖，避免在运行时使用 pkg::fun。但在包内部代码中推荐使用 pkg::fun 或在 DESCRIPTION 中 Declare Imports。\n\n生成文档与安装流程（简要）：\n\n在包工程根目录下，编辑 DESCRIPTION（填写 Package, Title, Version, Authors@R, Depends/Imports）；\n把函数放到 R/ 目录；\n运行 devtools::document() 自动生成 man/ 下的 Rd 文件和 NAMESPACE；\n运行 devtools::check() 检查包规范；\ndevtools::install() 或 remotes::install_local() 安装包。\n\n示例命令（开发者机器上执行）：\ndevtools::document()\ndevtools::check()\ndevtools::install()\n\n\n\n\n步骤演示（本地项目）：\n\n在项目 R/ 下创建 tpm.R，把 compute_tpm_safe() 与 roxygen 注释放入其中；\n在 DESCRIPTION 中写明包名和依赖（如 Imports: dplyr）；\n使用 devtools::load_all() 调试并在交互中测试；\n写 tests/testthat/test-tpm.R 做单元测试。\n\n示例 tests（简要）:\n# tests/testthat/test-tpm.R\nlibrary(testthat)\ntest_that(\"TPM 计算基本正确\", {\n  counts &lt;- c(G1 = 10, G2 = 0)\n  lengths &lt;- c(G1 = 1000, G2 = 1000)\n  t &lt;- compute_tpm_safe(counts, lengths)\n  expect_equal(sum(t), 1e6)\n})\n\n\n\n\n\n注意参数向量的命名和对齐（names()），不要依赖顺序匹配；\n小心 ... 的透传导致参数被错误地传给下游函数；\n写示例时要包含边界条件（零向量、全 NA、长度不匹配）；\n使用 testthat 保持回归稳定性；\ndevtools::check() 会捕捉到文档错误、未导出的符号等问题，务必在发布前运行。\n\n调试流程建议：\n\n在交互式环境用 source() 或 devtools::load_all() 加载函数；\n使用 debugonce() 或在函数中插入 browser() 单步调试；\n出错后用 traceback() 查找调用栈，并使用 rlang::last_error() 获取更详细信息（若使用 rlang）；\n写最小可复现示例，方便定位问题并写测试。\n\n\n\n\n\n本节覆盖了：\n\nR 函数定义与参数设计；\n返回值与作用域（避免副作用）；\n闭包与高阶函数的简单示例；\n在脚本中组织函数并用 source()/debug() 调试；\n将函数写入 R 包、roxygen2 注释与文档自动生成；\n单元测试与 devtools 流程建议。",
+    "crumbs": [
+      "首页",
+      "R 语言教程",
+      "L6 - R 函数与包开发"
+    ]
+  },
+  {
+    "objectID": "Rbase/L6_functions.html#函数的基本形式",
+    "href": "Rbase/L6_functions.html#函数的基本形式",
+    "title": "R 中的函数（function）与包内函数编写规范",
+    "section": "",
+    "text": "R 中最基本的函数定义形式：\nfn_name &lt;- function(arg1, arg2 = 1, ...) {\n  # 函数体\n  result &lt;- arg1 + arg2\n  return(result)\n}\n要点：\n\n函数由 function() 创建，参数可以有默认值；\n... 用于接收额外可变参数，常用于透传给其它函数（例如绘图或 read_* 系列）；\n如果没有显式 return()，函数会返回最后一个求值表达式的值。\n\n下面用一个生信常见的小函数举例：计算 TPM（Transcripts Per Million）从基因计数和基因长度（单位 bp）得到 TPM 值。\ncompute_tpm &lt;- function(counts, length_bp) {\n  # counts: 命名向量或数值向量，表示原始计数\n  # length_bp: 与 counts 对应的基因长度，单位 bp\n  if (length(counts) != length(length_bp)) stop(\"counts 与 length_bp 长度不一致\")\n\n  length_kb &lt;- length_bp / 1000\n  rpk &lt;- counts / length_kb\n  tpm &lt;- rpk / sum(rpk, na.rm = TRUE) * 1e6\n  return(tpm)\n}\n\n# 测试\ncounts &lt;- c(GeneA = 500, GeneB = 1000, GeneC = 50)\nlength_bp &lt;- c(GeneA = 2000, GeneB = 1000, GeneC = 1500)\ncompute_tpm(counts, length_bp)\n这段代码展示了常见的参数检查（长度一致性）、单位转换、以及向量化操作（避免循环）。",
+    "crumbs": [
+      "首页",
+      "R 语言教程",
+      "L6 - R 函数与包开发"
+    ]
+  },
+  {
+    "objectID": "Rbase/L6_functions.html#参数设计与默认值",
+    "href": "Rbase/L6_functions.html#参数设计与默认值",
+    "title": "R 中的函数（function）与包内函数编写规范",
+    "section": "",
+    "text": "良好的参数设计可以提高函数的可用性与可维护性。\n建议：\n\n把必须提供的参数放在最前面；带有合理默认值的参数放后面；\n使用具说明性的参数名（如 counts, length_bp, method）；\n对可能为 NULL 或 NA 的参数，要在函数内部处理或给出明确定义；\n使用 ... 以支持可扩展性，但在文档中明确说明 ... 会传递给哪个底层函数。\n\n示例：为 compute_tpm 添加 na.rm 与 min_counts 两个参数。\ncompute_tpm2 &lt;- function(counts, length_bp, na.rm = TRUE, min_counts = 0) {\n  if (length(counts) != length(length_bp)) stop(\"counts 与 length_bp 长度不一致\")\n  if (na.rm) {\n    keep &lt;- !is.na(counts) & !is.na(length_bp)\n    counts &lt;- counts[keep]\n    length_bp &lt;- length_bp[keep]\n  }\n  counts[counts &lt; min_counts] &lt;- 0\n  length_kb &lt;- length_bp / 1000\n  rpk &lt;- counts / length_kb\n  tpm &lt;- rpk / sum(rpk, na.rm = TRUE) * 1e6\n  return(tpm)\n}\n\ncompute_tpm2(counts, length_bp, min_counts = 10)",
+    "crumbs": [
+      "首页",
+      "R 语言教程",
+      "L6 - R 函数与包开发"
+    ]
+  },
+  {
+    "objectID": "Rbase/L6_functions.html#返回值设计",
+    "href": "Rbase/L6_functions.html#返回值设计",
+    "title": "R 中的函数（function）与包内函数编写规范",
+    "section": "",
+    "text": "函数应尽量返回明确且易用的数据结构：\n\n简单计算返回向量或标量；\n复杂处理返回 list 或 data.frame，并在文档中说明每个字段含义；\n如果函数会改变全局变量，尽量避免——优先返回结果并让调用者决定是否赋值。\n\n示例：一个返回多个结果的统计函数。\nsummary_stats &lt;- function(x) {\n  x &lt;- as.numeric(x)\n  res &lt;- list(\n    n = length(x),\n    mean = mean(x, na.rm = TRUE),\n    sd = sd(x, na.rm = TRUE)\n  )\n  return(res)\n}\n\nsummary_stats(c(1,2,3,NA,5))",
+    "crumbs": [
+      "首页",
+      "R 语言教程",
+      "L6 - R 函数与包开发"
+    ]
+  },
+  {
+    "objectID": "Rbase/L6_functions.html#作用域scope与副作用",
+    "href": "Rbase/L6_functions.html#作用域scope与副作用",
+    "title": "R 中的函数（function）与包内函数编写规范",
+    "section": "",
+    "text": "R 中的变量作用域遵循词法作用域（lexical scope）。函数内部创建的变量默认是局部的；若想修改外部变量，需显式使用 &lt;&lt;- 或 assign()，一般不推荐。\n示例：局部变量与修改全局变量对比\nglobal_var &lt;- 0\n\nfn_local &lt;- function(x) {\n  y &lt;- x + 1  # 局部变量 y\n  return(y)\n}\n\nfn_modify_global &lt;- function(x) {\n  global_var &lt;&lt;- x  # 修改外部变量（不推荐）\n}\n\nfn_local(2)\nglobal_var\nfn_modify_global(5)\nglobal_var\n说明：除非确有必要，否则不要让函数产生副作用（修改外部状态）。函数应当是”纯函数”（相对纯粹）：相同输入应返回相同输出。\n闭包（closure）是 R 的一个重要特性：函数返回另一个函数，并保留创建时的环境。举例：创建一个带默认正则化参数的 scaler。\nmake_scaler &lt;- function(center = TRUE, scale = TRUE) {\n  function(x) {\n    x &lt;- as.numeric(x)\n    if (center) x &lt;- x - mean(x, na.rm = TRUE)\n    if (scale) x &lt;- x / sd(x, na.rm = TRUE)\n    x\n  }\n}\n\nsc &lt;- make_scaler(center = TRUE, scale = FALSE)\nsc(c(1,2,3,4))",
+    "crumbs": [
+      "首页",
+      "R 语言教程",
+      "L6 - R 函数与包开发"
+    ]
+  },
+  {
+    "objectID": "Rbase/L6_functions.html#编写可测试可读的函数最佳实践",
+    "href": "Rbase/L6_functions.html#编写可测试可读的函数最佳实践",
+    "title": "R 中的函数（function）与包内函数编写规范",
+    "section": "",
+    "text": "小结性的建议：\n\n单一职责：函数只做一件事；\n输入验证：对输入类型、长度、NA 等进行检查并给出明确错误信息；\n明确返回值类型和结构；\n写示例与单元测试（测试框架如 testthat）；\n注释清楚但不要冗余；函数复杂时拆分为小函数。\n\n示例：改写一个更健壮的 TPM 计算函数（带参数检查与文档示例）。\ncompute_tpm_safe &lt;- function(counts, length_bp, min_counts = 0, na.rm = TRUE) {\n  if (!is.numeric(counts)) stop(\"counts 必须为数值向量\")\n  if (!is.numeric(length_bp)) stop(\"length_bp 必须为数值向量\")\n  if (length(counts) != length(length_bp)) stop(\"counts 与 length_bp 长度不一致\")\n\n  if (na.rm) {\n    keep &lt;- !is.na(counts) & !is.na(length_bp)\n    counts &lt;- counts[keep]\n    length_bp &lt;- length_bp[keep]\n  }\n\n  counts[counts &lt; min_counts] &lt;- 0\n  length_kb &lt;- length_bp / 1000\n  if (any(length_kb == 0)) stop(\"基因长度不能为 0\")\n\n  rpk &lt;- counts / length_kb\n  denom &lt;- sum(rpk, na.rm = TRUE)\n  if (denom == 0) return(rep(0, length(rpk)))\n  tpm &lt;- rpk / denom * 1e6\n  names(tpm) &lt;- names(counts)\n  return(tpm)\n}\n\ncompute_tpm_safe(counts, length_bp)",
+    "crumbs": [
+      "首页",
+      "R 语言教程",
+      "L6 - R 函数与包开发"
+    ]
+  },
+  {
+    "objectID": "Rbase/L6_functions.html#在-r-脚本中组织函数并用-source-调试",
+    "href": "Rbase/L6_functions.html#在-r-脚本中组织函数并用-source-调试",
+    "title": "R 中的函数（function）与包内函数编写规范",
+    "section": "",
+    "text": "在日常分析中，我们通常把一组相关函数放在单独的脚本文件，如 R/functions_tpm.R，然后在主脚本中 source() 加载：\n# 在主脚本中\nsource('R/functions_tpm.R')\nres &lt;- compute_tpm_safe(my_counts, my_lengths)\n调试技巧：\n\ndebug(func)：在下一次调用 func() 时进入交互调试，可以单步执行；\ndebugonce(func)：仅调试下一次调用；\n在函数内部插入 browser()：运行到这里会进入交互式调试；\ntraceback()：当出错后查看调用栈；\ntrace()：在函数运行时插入临时代码（如打印变量）；\n\n示例：演示 debug() 与 browser()。\ntmp_fn &lt;- function(x) {\n  a &lt;- sqrt(x)\n  b &lt;- log(a)\n  return(b)\n}\n\n# 使用 debug()：下次调用时会进入调试模式\ndebug(tmp_fn)\ntmp_fn(10)\nundebug(tmp_fn)\n\n# 在函数中插入 browser()\ntmp_fn2 &lt;- function(x) {\n  a &lt;- sqrt(x)\n  browser()\n  b &lt;- log(a)\n  return(b)\n}\ntry(tmp_fn2(10))\n\n# 出错后的 traceback()\nbad_fn &lt;- function(x) {\n  stop(\"故意出错\")\n}\ntryCatch(bad_fn(1), error = function(e) message(\"出错: \", e$message))\n# 如果没有 catch，运行后可用 traceback() 查看\n在 source() 调试时常见问题：\n\nsource() 默认为全局环境执行（local = FALSE），如果想把函数载入某个环境可以设置 local = TRUE 或指定环境；\n推荐把函数脚本放到项目 R/ 目录并使用 devtools::load_all() 进行开发加载，模拟包加载环境。\n\n示例：使用 devtools（开发包时）\n# 在包开发目录下\ndevtools::load_all()\ndevtools::document()  # 生成 roxygen 文档",
+    "crumbs": [
+      "首页",
+      "R 语言教程",
+      "L6 - R 函数与包开发"
+    ]
+  },
+  {
+    "objectID": "Rbase/L6_functions.html#在-r-包中撰写函数的标准与-roxygen2-注释",
+    "href": "Rbase/L6_functions.html#在-r-包中撰写函数的标准与-roxygen2-注释",
+    "title": "R 中的函数（function）与包内函数编写规范",
+    "section": "",
+    "text": "当需要把函数分发或重复复用时，建议把函数放入 R 包中。R 包中的函数放在 R/ 目录中，每个函数文件应尽量小而聚焦。使用 roxygen2 注释可以直接在源代码上方写注释，随后用 devtools::document() 自动生成 NAMESPACE 和 Rd 文档。\nroxygen2 注释模板示例：\n#' 计算 TPM\n#'\n#' 读取原始计数与基因长度，返回 TPM 向量。\n#'\n#' @param counts 数值向量或命名向量，原始计数\n#' @param length_bp 数值向量，与 counts 对应，单位 bp\n#' @param na.rm 布尔，是否移除 NA\n#' @param min_counts 数值，小于该值的计数将视为 0\n#' @return 命名数值向量，TPM\n#' @examples\n#' counts &lt;- c(G1 = 100, G2 = 50)\n#' length_bp &lt;- c(G1 = 2000, G2 = 1000)\n#' compute_tpm_safe(counts, length_bp)\n#' @export\ncompute_tpm_safe &lt;- function(counts, length_bp, min_counts = 0, na.rm = TRUE) {\n  # 函数体同上（为示例重复定义）\n  if (!is.numeric(counts)) stop(\"counts 必须为数值向量\")\n  if (!is.numeric(length_bp)) stop(\"length_bp 必须为数值向量\")\n  if (length(counts) != length(length_bp)) stop(\"counts 与 length_bp 长度不一致\")\n  if (na.rm) {\n    keep &lt;- !is.na(counts) & !is.na(length_bp)\n    counts &lt;- counts[keep]\n    length_bp &lt;- length_bp[keep]\n  }\n  counts[counts &lt; min_counts] &lt;- 0\n  length_kb &lt;- length_bp / 1000\n  if (any(length_kb == 0)) stop(\"基因长度不能为 0\")\n  rpk &lt;- counts / length_kb\n  denom &lt;- sum(rpk, na.rm = TRUE)\n  if (denom == 0) return(rep(0, length(rpk)))\n  tpm &lt;- rpk / denom * 1e6\n  names(tpm) &lt;- names(counts)\n  return(tpm)\n}\n关键点：\n\n#' 开头的注释会被 roxygen2 解析；\n常用标签：@title（可选）、@description、@param、@return、@examples、@export、@importFrom；\n@export 会在 NAMESPACE 中添加 export()，使函数对包用户可见；\n@importFrom pkg fun 可用于在 NAMESPACE 中声明函数依赖，避免在运行时使用 pkg::fun。但在包内部代码中推荐使用 pkg::fun 或在 DESCRIPTION 中 Declare Imports。\n\n生成文档与安装流程（简要）：\n\n在包工程根目录下，编辑 DESCRIPTION（填写 Package, Title, Version, Authors@R, Depends/Imports）；\n把函数放到 R/ 目录；\n运行 devtools::document() 自动生成 man/ 下的 Rd 文件和 NAMESPACE；\n运行 devtools::check() 检查包规范；\ndevtools::install() 或 remotes::install_local() 安装包。\n\n示例命令（开发者机器上执行）：\ndevtools::document()\ndevtools::check()\ndevtools::install()",
+    "crumbs": [
+      "首页",
+      "R 语言教程",
+      "L6 - R 函数与包开发"
+    ]
+  },
+  {
+    "objectID": "Rbase/L6_functions.html#实战把函数写在脚本中并转为包函数的最小实践",
+    "href": "Rbase/L6_functions.html#实战把函数写在脚本中并转为包函数的最小实践",
+    "title": "R 中的函数（function）与包内函数编写规范",
+    "section": "",
+    "text": "步骤演示（本地项目）：\n\n在项目 R/ 下创建 tpm.R，把 compute_tpm_safe() 与 roxygen 注释放入其中；\n在 DESCRIPTION 中写明包名和依赖（如 Imports: dplyr）；\n使用 devtools::load_all() 调试并在交互中测试；\n写 tests/testthat/test-tpm.R 做单元测试。\n\n示例 tests（简要）:\n# tests/testthat/test-tpm.R\nlibrary(testthat)\ntest_that(\"TPM 计算基本正确\", {\n  counts &lt;- c(G1 = 10, G2 = 0)\n  lengths &lt;- c(G1 = 1000, G2 = 1000)\n  t &lt;- compute_tpm_safe(counts, lengths)\n  expect_equal(sum(t), 1e6)\n})",
+    "crumbs": [
+      "首页",
+      "R 语言教程",
+      "L6 - R 函数与包开发"
+    ]
+  },
+  {
+    "objectID": "Rbase/L6_functions.html#常见陷阱与调试建议",
+    "href": "Rbase/L6_functions.html#常见陷阱与调试建议",
+    "title": "R 中的函数（function）与包内函数编写规范",
+    "section": "",
+    "text": "注意参数向量的命名和对齐（names()），不要依赖顺序匹配；\n小心 ... 的透传导致参数被错误地传给下游函数；\n写示例时要包含边界条件（零向量、全 NA、长度不匹配）；\n使用 testthat 保持回归稳定性；\ndevtools::check() 会捕捉到文档错误、未导出的符号等问题，务必在发布前运行。\n\n调试流程建议：\n\n在交互式环境用 source() 或 devtools::load_all() 加载函数；\n使用 debugonce() 或在函数中插入 browser() 单步调试；\n出错后用 traceback() 查找调用栈，并使用 rlang::last_error() 获取更详细信息（若使用 rlang）；\n写最小可复现示例，方便定位问题并写测试。",
+    "crumbs": [
+      "首页",
+      "R 语言教程",
+      "L6 - R 函数与包开发"
+    ]
+  },
+  {
+    "objectID": "Rbase/L6_functions.html#小结",
+    "href": "Rbase/L6_functions.html#小结",
+    "title": "R 中的函数（function）与包内函数编写规范",
+    "section": "",
+    "text": "本节覆盖了：\n\nR 函数定义与参数设计；\n返回值与作用域（避免副作用）；\n闭包与高阶函数的简单示例；\n在脚本中组织函数并用 source()/debug() 调试；\n将函数写入 R 包、roxygen2 注释与文档自动生成；\n单元测试与 devtools 流程建议。",
+    "crumbs": [
+      "首页",
+      "R 语言教程",
+      "L6 - R 函数与包开发"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_molecular_biology/index.html",
+    "href": "Grade4/computational_molecular_biology/index.html",
+    "title": "计算分子生物学",
+    "section": "",
+    "text": "课程简介：学习生物信息学中的核心算法与计算方法。\n\n\n\n本课程主要内容包括：\n\n序列比对 - 双序列比对、多序列比对算法\n系统进化树 - 进化树的构建方法与分析\n概率模型 - 马尔可夫链及其应用\n\n\n\n\n\n\n\n\n资料\n说明\n\n\n\n\n考试说明\n成绩构成、复习重点\n\n\n\n\n\n\n\n资料正在整理中…如果你有相关资料，欢迎贡献！\n\n返回上级",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算分子生物学",
+      "课程主页"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_molecular_biology/index.html#课程内容",
+    "href": "Grade4/computational_molecular_biology/index.html#课程内容",
+    "title": "计算分子生物学",
+    "section": "",
+    "text": "本课程主要内容包括：\n\n序列比对 - 双序列比对、多序列比对算法\n系统进化树 - 进化树的构建方法与分析\n概率模型 - 马尔可夫链及其应用",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算分子生物学",
+      "课程主页"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_molecular_biology/index.html#考试相关",
+    "href": "Grade4/computational_molecular_biology/index.html#考试相关",
+    "title": "计算分子生物学",
+    "section": "",
+    "text": "资料\n说明\n\n\n\n\n考试说明\n成绩构成、复习重点",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算分子生物学",
+      "课程主页"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_molecular_biology/index.html#其他资料",
+    "href": "Grade4/computational_molecular_biology/index.html#其他资料",
+    "title": "计算分子生物学",
+    "section": "",
+    "text": "资料正在整理中…如果你有相关资料，欢迎贡献！\n\n返回上级",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算分子生物学",
+      "课程主页"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/index.html",
+    "href": "Grade4/computational_biology/index.html",
+    "title": "计算系统生物学",
+    "section": "",
+    "text": "课程代码：待补充\n学分：待补充\n学期：大四上学期\n\n\n\n计算系统生物学是生物信息学专业的核心课程，主要学习使用计算方法分析生物数据。本课程涵盖了网络生物学、基因表达分析、聚类算法等多个重要主题。\n\n\n\n掌握生物网络分析的基本方法\n学会使用 R 语言进行数据分析\n理解常用网络算法的原理\n培养独立分析生物数据的能力\n\n\n\n\n\n\n\n\n主要内容：\n\n蛋白质相互作用网络的构建\n网络拓扑性质分析\n中心性指标计算\n网络可视化\n\n技术栈：R, igraph\n代码位置：Grade4/computational_biology/experiments/Exp1/\n\n\n\n\n主要内容：\n\n基因表达数据预处理\n共表达网络构建\n模块识别和特征基因提取\n模块与表型关联分析\n\n技术栈：R, WGCNA\n代码位置：Grade4/computational_biology/experiments/Exp2/\n\n\n\n\n主要内容：\n\nMCL (Markov Cluster Algorithm) 聚类分析\nRWR (Random Walk with Restart) 算法\nKEGG 通路富集分析\n应用案例：克罗恩病相关基因分析\n\n技术栈：R, clusterProfiler\n代码位置：Grade4/computational_biology/experiments/Exp3/\n\n\n\n\n主要内容：\n\nqPCR 原理和数据格式\nCt 值处理和标准化\n相对表达量计算（ΔΔCt 方法）\n统计检验和可视化\n\n技术栈：R, ggplot2\n代码位置：Grade4/computational_biology/experiments/Exp4/\n\n\n\n\n\n\n\n准备考试？这里有学长学姐整理的考试资料：\n\n课程核心知识点总结\n考试题型分析与经验\n复习建议和重点标注\nPDF 资料下载\n\n查看考试资料 →\n\n\n\n\n\n\n\n\n网络生物学\n\nBarabási, A. L., & Oltvai, Z. N. (2004). Network biology: understanding the cell’s functional organization. Nature Reviews Genetics, 5(2), 101-113.\n\nWGCNA\n\nLangfelder, P., & Horvath, S. (2008). WGCNA: an R package for weighted correlation network analysis. BMC Bioinformatics, 9(1), 559.\n\n网络聚类\n\nVan Dongen, S. (2000). Graph clustering by flow simulation. PhD thesis, University of Utrecht.\n\n\n\n\n\n\nWGCNA 官方教程\nigraph 文档\nSTRING 数据库\n\n\n\n\n\n\n\n\n推荐使用 R &gt;= 4.0.0\n\n\n\n# 基础包\ninstall.packages(c(\"tidyverse\", \"ggplot2\", \"dplyr\"))\n\n# 生物信息学包\nif (!require(\"BiocManager\", quietly = TRUE))\n    install.packages(\"BiocManager\")\n\nBiocManager::install(c(\n    \"WGCNA\",\n    \"igraph\",\n    \"clusterProfiler\",\n    \"org.Hs.eg.db\"\n))\n\n\n\n推荐使用 RStudio 作为开发环境，可以更方便地编写和运行 R Markdown 文件。\n\n\n\n\n\n\n\n\n\n\n数据库\n用途\n网址\n\n\n\n\nSTRING\n蛋白质相互作用\nhttps://string-db.org/\n\n\nGEO\n基因表达数据\nhttps://www.ncbi.nlm.nih.gov/geo/\n\n\nKEGG\n代谢通路\nhttps://www.kegg.jp/\n\n\nUniProt\n蛋白质信息\nhttps://www.uniprot.org/\n\n\n\n\n\n\n\n\n\n\n\n实验目的：简要说明实验要解决的问题\n实验原理：介绍相关算法和方法\n实验步骤：详细记录分析流程\n结果分析：展示结果并进行解读\n讨论：总结实验收获和思考\n\n\n\n\n\n代码清晰易读，有适当的注释\n使用有意义的变量名\n结果可重现\n图表美观，标注清晰\n\n\n\n\n\n\n\nTip报告撰写建议\n\n\n\n\n使用 R Markdown 编写报告\n代码和文字结合，便于理解\n注意图表的标题和坐标轴标签\n对结果进行充分的生物学解释\n\n\n\n\n\n\n\n\n\n平时作业：20%\n实验报告：40%\n期末考试：40%\n\n\n\n通常包括：\n\n理论知识（算法原理、概念解释）\n代码阅读和填空\n简单的数据分析题\n\n\n\n\n\n\n\n\nA: 尝试以下方法：\n# 1. 更换 CRAN 镜像\noptions(repos = c(CRAN = \"https://mirrors.tuna.tsinghua.edu.cn/CRAN/\"))\n\n# 2. 使用 Bioconductor 镜像\noptions(BioC_mirror = \"https://mirrors.tuna.tsinghua.edu.cn/bioconductor\")\n\n# 3. 更新 R 和 RStudio 到最新版本\n\n\n\nA: 1. 检查数据文件路径是否正确 2. 确认所有必需的包都已安装 3. 查看错误信息，搜索解决方案 4. 在 Discussions 中提问\n\n\n\nA: 实验数据通常包含在代码文件夹中，或从指定的数据库下载。\n\n\n\n\n\n\nDiscussions\nIssues\nEmail: hinna01@163.com\n\n\n\n祝学习顺利！如有问题欢迎交流！\n返回上级 | 查看实验详情",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "课程主页"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/index.html#课程简介",
+    "href": "Grade4/computational_biology/index.html#课程简介",
+    "title": "计算系统生物学",
+    "section": "",
+    "text": "计算系统生物学是生物信息学专业的核心课程，主要学习使用计算方法分析生物数据。本课程涵盖了网络生物学、基因表达分析、聚类算法等多个重要主题。\n\n\n\n掌握生物网络分析的基本方法\n学会使用 R 语言进行数据分析\n理解常用网络算法的原理\n培养独立分析生物数据的能力",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "课程主页"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/index.html#实验列表",
+    "href": "Grade4/computational_biology/index.html#实验列表",
+    "title": "计算系统生物学",
+    "section": "",
+    "text": "主要内容：\n\n蛋白质相互作用网络的构建\n网络拓扑性质分析\n中心性指标计算\n网络可视化\n\n技术栈：R, igraph\n代码位置：Grade4/computational_biology/experiments/Exp1/\n\n\n\n\n主要内容：\n\n基因表达数据预处理\n共表达网络构建\n模块识别和特征基因提取\n模块与表型关联分析\n\n技术栈：R, WGCNA\n代码位置：Grade4/computational_biology/experiments/Exp2/\n\n\n\n\n主要内容：\n\nMCL (Markov Cluster Algorithm) 聚类分析\nRWR (Random Walk with Restart) 算法\nKEGG 通路富集分析\n应用案例：克罗恩病相关基因分析\n\n技术栈：R, clusterProfiler\n代码位置：Grade4/computational_biology/experiments/Exp3/\n\n\n\n\n主要内容：\n\nqPCR 原理和数据格式\nCt 值处理和标准化\n相对表达量计算（ΔΔCt 方法）\n统计检验和可视化\n\n技术栈：R, ggplot2\n代码位置：Grade4/computational_biology/experiments/Exp4/",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "课程主页"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/index.html#考试资料",
+    "href": "Grade4/computational_biology/index.html#考试资料",
+    "title": "计算系统生物学",
+    "section": "",
+    "text": "准备考试？这里有学长学姐整理的考试资料：\n\n课程核心知识点总结\n考试题型分析与经验\n复习建议和重点标注\nPDF 资料下载\n\n查看考试资料 →",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "课程主页"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/index.html#学习资源",
+    "href": "Grade4/computational_biology/index.html#学习资源",
+    "title": "计算系统生物学",
+    "section": "",
+    "text": "网络生物学\n\nBarabási, A. L., & Oltvai, Z. N. (2004). Network biology: understanding the cell’s functional organization. Nature Reviews Genetics, 5(2), 101-113.\n\nWGCNA\n\nLangfelder, P., & Horvath, S. (2008). WGCNA: an R package for weighted correlation network analysis. BMC Bioinformatics, 9(1), 559.\n\n网络聚类\n\nVan Dongen, S. (2000). Graph clustering by flow simulation. PhD thesis, University of Utrecht.\n\n\n\n\n\n\nWGCNA 官方教程\nigraph 文档\nSTRING 数据库",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "课程主页"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/index.html#环境配置",
+    "href": "Grade4/computational_biology/index.html#环境配置",
+    "title": "计算系统生物学",
+    "section": "",
+    "text": "推荐使用 R &gt;= 4.0.0\n\n\n\n# 基础包\ninstall.packages(c(\"tidyverse\", \"ggplot2\", \"dplyr\"))\n\n# 生物信息学包\nif (!require(\"BiocManager\", quietly = TRUE))\n    install.packages(\"BiocManager\")\n\nBiocManager::install(c(\n    \"WGCNA\",\n    \"igraph\",\n    \"clusterProfiler\",\n    \"org.Hs.eg.db\"\n))\n\n\n\n推荐使用 RStudio 作为开发环境，可以更方便地编写和运行 R Markdown 文件。",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "课程主页"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/index.html#数据来源",
+    "href": "Grade4/computational_biology/index.html#数据来源",
+    "title": "计算系统生物学",
+    "section": "",
+    "text": "数据库\n用途\n网址\n\n\n\n\nSTRING\n蛋白质相互作用\nhttps://string-db.org/\n\n\nGEO\n基因表达数据\nhttps://www.ncbi.nlm.nih.gov/geo/\n\n\nKEGG\n代谢通路\nhttps://www.kegg.jp/\n\n\nUniProt\n蛋白质信息\nhttps://www.uniprot.org/",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "课程主页"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/index.html#实验报告要求",
+    "href": "Grade4/computational_biology/index.html#实验报告要求",
+    "title": "计算系统生物学",
+    "section": "",
+    "text": "实验目的：简要说明实验要解决的问题\n实验原理：介绍相关算法和方法\n实验步骤：详细记录分析流程\n结果分析：展示结果并进行解读\n讨论：总结实验收获和思考\n\n\n\n\n\n代码清晰易读，有适当的注释\n使用有意义的变量名\n结果可重现\n图表美观，标注清晰\n\n\n\n\n\n\n\nTip报告撰写建议\n\n\n\n\n使用 R Markdown 编写报告\n代码和文字结合，便于理解\n注意图表的标题和坐标轴标签\n对结果进行充分的生物学解释",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "课程主页"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/index.html#考核方式",
+    "href": "Grade4/computational_biology/index.html#考核方式",
+    "title": "计算系统生物学",
+    "section": "",
+    "text": "平时作业：20%\n实验报告：40%\n期末考试：40%\n\n\n\n通常包括：\n\n理论知识（算法原理、概念解释）\n代码阅读和填空\n简单的数据分析题",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "课程主页"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/index.html#常见问题",
+    "href": "Grade4/computational_biology/index.html#常见问题",
+    "title": "计算系统生物学",
+    "section": "",
+    "text": "A: 尝试以下方法：\n# 1. 更换 CRAN 镜像\noptions(repos = c(CRAN = \"https://mirrors.tuna.tsinghua.edu.cn/CRAN/\"))\n\n# 2. 使用 Bioconductor 镜像\noptions(BioC_mirror = \"https://mirrors.tuna.tsinghua.edu.cn/bioconductor\")\n\n# 3. 更新 R 和 RStudio 到最新版本\n\n\n\nA: 1. 检查数据文件路径是否正确 2. 确认所有必需的包都已安装 3. 查看错误信息，搜索解决方案 4. 在 Discussions 中提问\n\n\n\nA: 实验数据通常包含在代码文件夹中，或从指定的数据库下载。",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "课程主页"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/index.html#联系方式",
+    "href": "Grade4/computational_biology/index.html#联系方式",
+    "title": "计算系统生物学",
+    "section": "",
+    "text": "Discussions\nIssues\nEmail: hinna01@163.com\n\n\n\n祝学习顺利！如有问题欢迎交流！\n返回上级 | 查看实验详情",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "课程主页"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp3.html",
+    "href": "Grade4/computational_biology/exp3.html",
+    "title": "实验三：网络聚类与随机游走",
+    "section": "",
+    "text": "本实验学习两种重要的网络分析算法：MCL（Markov Cluster Algorithm）和 RWR（Random Walk with Restart），并应用于疾病基因预测。\n\n\n\n\n\n理解 MCL 聚类算法原理\n掌握 RWR 算法的实现\n学会进行 KEGG 通路富集分析\n应用网络算法解决实际生物学问题\n\n\n\n\n\n\n\nMCL (Markov Cluster Algorithm) 通过模拟流在网络中的传播来识别密集连接的区域（簇）。\n基本步骤： 1. Expansion：矩阵乘法（随机游走） 2. Inflation：逐元素幂运算（促进流聚集） 3. 迭代：重复上述步骤直至收敛\n\n\n\nRWR 是一种在网络上进行随机游走的算法，从起始节点出发，每步以一定概率返回起始点。\n应用： - 候选疾病基因预测 - 药物靶点发现 - 功能相似性度量\n\n\n\n\n\n\n\n\n\nlibrary(igraph)\nlibrary(MCL)\n\n# 读取 PPI 网络\nppi_data &lt;- read.table(\"ppi_network.txt\", header = TRUE)\ng &lt;- graph_from_data_frame(ppi_data, directed = FALSE)\n\n# 获取邻接矩阵\nadj_matrix &lt;- as_adjacency_matrix(g, sparse = FALSE)\n\n\n\n# MCL 聚类\n# inflation 参数控制簇的粒度，通常取 2-5\nmcl_result &lt;- mcl(adj_matrix,\n                  addLoops = TRUE,\n                  inflation = 2,\n                  allow1 = FALSE)\n\n# 查看聚类结果\ntable(mcl_result$Cluster)\n\n# 添加簇信息到图对象\nV(g)$cluster &lt;- mcl_result$Cluster\n\n\n\n# 为不同簇分配颜色\ncluster_colors &lt;- rainbow(max(V(g)$cluster))\nV(g)$color &lt;- cluster_colors[V(g)$cluster]\n\n# 绘制网络\nplot(g,\n     vertex.size = 5,\n     vertex.label = NA,\n     vertex.color = V(g)$color,\n     main = \"MCL Clustering Result\")\n\n# 添加图例\nlegend(\"topright\",\n       legend = paste(\"Cluster\", 1:max(V(g)$cluster)),\n       col = cluster_colors,\n       pch = 19,\n       cex = 0.8)\n\n\n\nlibrary(clusterProfiler)\nlibrary(org.Hs.eg.db)\n\n# 选择一个簇进行功能富集分析\ncluster_id &lt;- 1\ncluster_genes &lt;- V(g)$name[V(g)$cluster == cluster_id]\n\n# KEGG 富集分析\nkegg_enrich &lt;- enrichKEGG(gene = cluster_genes,\n                          organism = \"hsa\",\n                          pvalueCutoff = 0.05,\n                          qvalueCutoff = 0.05)\n\n# 可视化\nbarplot(kegg_enrich, showCategory = 10)\ndotplot(kegg_enrich, showCategory = 10)\n\n\n\n\n\n\n\n# RWR 函数\nrandom_walk_with_restart &lt;- function(adj_matrix, seed_nodes, restart_prob = 0.7, max_iter = 100, tol = 1e-6) {\n  n &lt;- nrow(adj_matrix)\n  \n  # 标准化邻接矩阵（列归一化）\n  col_sums &lt;- colSums(adj_matrix)\n  col_sums[col_sums == 0] &lt;- 1  # 避免除以0\n  trans_matrix &lt;- t(t(adj_matrix) / col_sums)\n  \n  # 初始化概率向量\n  p0 &lt;- rep(0, n)\n  p0[seed_nodes] &lt;- 1 / length(seed_nodes)\n  \n  # 迭代\n  p &lt;- p0\n  for (i in 1:max_iter) {\n    p_new &lt;- (1 - restart_prob) * trans_matrix %*% p + restart_prob * p0\n    \n    # 检查收敛\n    if (sum(abs(p_new - p)) &lt; tol) {\n      break\n    }\n    p &lt;- p_new\n  }\n  \n  return(as.vector(p))\n}\n\n\n\n# 读取已知疾病基因\ndisease_genes &lt;- read.table(\"Crohn's_disease.txt\", header = FALSE)$V1\n\n# 找到种子基因在网络中的索引\nseed_indices &lt;- which(V(g)$name %in% disease_genes)\n\n# 执行 RWR\nrwr_scores &lt;- random_walk_with_restart(adj_matrix,\n                                       seed_nodes = seed_indices,\n                                       restart_prob = 0.7)\n\n# 添加分数到图对象\nV(g)$rwr_score &lt;- rwr_scores\n\n# 按分数排序，找到候选基因\ngene_scores &lt;- data.frame(\n  gene = V(g)$name,\n  score = rwr_scores,\n  is_seed = V(g)$name %in% disease_genes\n)\ngene_scores &lt;- gene_scores[order(gene_scores$score, decreasing = TRUE), ]\n\n# 查看前20个候选基因\nhead(gene_scores[!gene_scores$is_seed, ], 20)\n\n\n\n# 根据 RWR 分数着色\nscore_colors &lt;- colorRampPalette(c(\"lightblue\", \"red\"))(100)\nV(g)$color &lt;- score_colors[cut(rwr_scores, breaks = 100)]\n\n# 种子基因用不同颜色标记\nV(g)$color[seed_indices] &lt;- \"green\"\n\nplot(g,\n     vertex.size = 5,\n     vertex.label = NA,\n     vertex.color = V(g)$color,\n     main = \"RWR Scores (green = seed genes)\")\n\n# 分数分布\nggplot(gene_scores, aes(x = score, fill = is_seed)) +\n  geom_histogram(bins = 50, alpha = 0.7) +\n  scale_fill_manual(values = c(\"FALSE\" = \"steelblue\", \"TRUE\" = \"red\"),\n                    labels = c(\"Other genes\", \"Seed genes\")) +\n  labs(title = \"RWR Score Distribution\",\n       x = \"RWR Score\",\n       y = \"Count\",\n       fill = \"\") +\n  theme_minimal()\n\n\n\n# 提取高分候选基因\ntop_candidates &lt;- head(gene_scores[!gene_scores$is_seed, ], 50)$gene\n\n# KEGG 富集分析\nkegg_candidates &lt;- enrichKEGG(gene = top_candidates,\n                              organism = \"hsa\",\n                              pvalueCutoff = 0.05)\n\n# 查看富集的通路\nhead(kegg_candidates@result)\n\n# 可视化\nbarplot(kegg_candidates, showCategory = 15)\n\n\n\n\n\n\n\n\n\n识别功能相关的蛋白质群\n不同簇可能对应不同的生物学过程\n通过富集分析验证簇的功能一致性\n\n\n\n\n\n高分候选基因可能与疾病相关\n可以通过文献验证或实验确认\n考虑网络拓扑结构的疾病基因预测方法\n\n\n\n\n\n\n\n\n克罗恩病是一种慢性炎症性肠病。通过网络分析可以：\n\n发现新的疾病相关基因\n理解疾病的分子机制\n寻找潜在的治疗靶点\n\n\n\n\n\n功能相关的基因倾向于在网络中聚集\nRWR 利用这一原理进行基因功能预测\n网络拓扑比单个基因更能反映生物学功能\n\n\n\n\n\n\n\nMCL 聚类\n\n尝试不同的 inflation 参数\n分析参数对聚类结果的影响\n对主要簇进行功能富集分析\n\nRWR 分析\n\n实现 RWR 算法\n预测疾病候选基因\n验证候选基因的合理性\n\n综合分析\n\n比较 MCL 和 RWR 的结果\n讨论两种方法的优缺点\n提出改进建议\n\n\n\n\n\n\nGrade4/computational_biology/experiments/Exp3/\n├── MCL.R                          # MCL 聚类脚本\n├── RWR.R                          # RWR 分析脚本\n├── Exp3.Rmd                       # R Markdown 报告\n├── Exp3.html                      # 生成的 HTML 报告\n├── Crohn's_disease.txt            # 克罗恩病基因列表\n└── c2.cp.kegg_legacy.v2025.1.Hs.entrez.gmt  # KEGG 基因集\n\n\n\n\n\nVan Dongen, S. (2000). Graph clustering by flow simulation. PhD thesis, University of Utrecht.\nKöhler, S., et al. (2008). Walking the interactome for prioritization of candidate disease genes. The American Journal of Human Genetics, 82(4), 949-958.\nLi, Y., & Patra, J. C. (2010). Genome-wide inferring gene–phenotype relationship by walking on the heterogeneous network. Bioinformatics, 26(9), 1219-1224.\n\n\n\n\n\n\n\n\n\n\n\nTip参数选择\n\n\n\n\nMCL 的 inflation 参数：较小值产生大簇，较大值产生小簇\nRWR 的 restart 概率：通常取 0.5-0.8\n\n\n\n\n\n\n\n\n\nTip计算效率\n\n\n\n\n对于大型网络，MCL 可能需要较长时间\nRWR 可以使用稀疏矩阵加速计算\n\n\n\n\n\n\n\n\n\nWarning数据格式\n\n\n\n确保基因 ID 与网络中的节点 ID 一致（如 Entrez ID 或 Symbol）。\n\n\n\n← 上一个实验：WGCNA | 返回课程主页 | 下一个实验：qPCR →",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验3 - 网络聚类与随机游走"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp3.html#实验简介",
+    "href": "Grade4/computational_biology/exp3.html#实验简介",
+    "title": "实验三：网络聚类与随机游走",
+    "section": "",
+    "text": "本实验学习两种重要的网络分析算法：MCL（Markov Cluster Algorithm）和 RWR（Random Walk with Restart），并应用于疾病基因预测。",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验3 - 网络聚类与随机游走"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp3.html#实验目的",
+    "href": "Grade4/computational_biology/exp3.html#实验目的",
+    "title": "实验三：网络聚类与随机游走",
+    "section": "",
+    "text": "理解 MCL 聚类算法原理\n掌握 RWR 算法的实现\n学会进行 KEGG 通路富集分析\n应用网络算法解决实际生物学问题",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验3 - 网络聚类与随机游走"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp3.html#理论背景",
+    "href": "Grade4/computational_biology/exp3.html#理论背景",
+    "title": "实验三：网络聚类与随机游走",
+    "section": "",
+    "text": "MCL (Markov Cluster Algorithm) 通过模拟流在网络中的传播来识别密集连接的区域（簇）。\n基本步骤： 1. Expansion：矩阵乘法（随机游走） 2. Inflation：逐元素幂运算（促进流聚集） 3. 迭代：重复上述步骤直至收敛\n\n\n\nRWR 是一种在网络上进行随机游走的算法，从起始节点出发，每步以一定概率返回起始点。\n应用： - 候选疾病基因预测 - 药物靶点发现 - 功能相似性度量",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验3 - 网络聚类与随机游走"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp3.html#实验步骤",
+    "href": "Grade4/computational_biology/exp3.html#实验步骤",
+    "title": "实验三：网络聚类与随机游走",
+    "section": "",
+    "text": "library(igraph)\nlibrary(MCL)\n\n# 读取 PPI 网络\nppi_data &lt;- read.table(\"ppi_network.txt\", header = TRUE)\ng &lt;- graph_from_data_frame(ppi_data, directed = FALSE)\n\n# 获取邻接矩阵\nadj_matrix &lt;- as_adjacency_matrix(g, sparse = FALSE)\n\n\n\n# MCL 聚类\n# inflation 参数控制簇的粒度，通常取 2-5\nmcl_result &lt;- mcl(adj_matrix,\n                  addLoops = TRUE,\n                  inflation = 2,\n                  allow1 = FALSE)\n\n# 查看聚类结果\ntable(mcl_result$Cluster)\n\n# 添加簇信息到图对象\nV(g)$cluster &lt;- mcl_result$Cluster\n\n\n\n# 为不同簇分配颜色\ncluster_colors &lt;- rainbow(max(V(g)$cluster))\nV(g)$color &lt;- cluster_colors[V(g)$cluster]\n\n# 绘制网络\nplot(g,\n     vertex.size = 5,\n     vertex.label = NA,\n     vertex.color = V(g)$color,\n     main = \"MCL Clustering Result\")\n\n# 添加图例\nlegend(\"topright\",\n       legend = paste(\"Cluster\", 1:max(V(g)$cluster)),\n       col = cluster_colors,\n       pch = 19,\n       cex = 0.8)\n\n\n\nlibrary(clusterProfiler)\nlibrary(org.Hs.eg.db)\n\n# 选择一个簇进行功能富集分析\ncluster_id &lt;- 1\ncluster_genes &lt;- V(g)$name[V(g)$cluster == cluster_id]\n\n# KEGG 富集分析\nkegg_enrich &lt;- enrichKEGG(gene = cluster_genes,\n                          organism = \"hsa\",\n                          pvalueCutoff = 0.05,\n                          qvalueCutoff = 0.05)\n\n# 可视化\nbarplot(kegg_enrich, showCategory = 10)\ndotplot(kegg_enrich, showCategory = 10)\n\n\n\n\n\n\n\n# RWR 函数\nrandom_walk_with_restart &lt;- function(adj_matrix, seed_nodes, restart_prob = 0.7, max_iter = 100, tol = 1e-6) {\n  n &lt;- nrow(adj_matrix)\n  \n  # 标准化邻接矩阵（列归一化）\n  col_sums &lt;- colSums(adj_matrix)\n  col_sums[col_sums == 0] &lt;- 1  # 避免除以0\n  trans_matrix &lt;- t(t(adj_matrix) / col_sums)\n  \n  # 初始化概率向量\n  p0 &lt;- rep(0, n)\n  p0[seed_nodes] &lt;- 1 / length(seed_nodes)\n  \n  # 迭代\n  p &lt;- p0\n  for (i in 1:max_iter) {\n    p_new &lt;- (1 - restart_prob) * trans_matrix %*% p + restart_prob * p0\n    \n    # 检查收敛\n    if (sum(abs(p_new - p)) &lt; tol) {\n      break\n    }\n    p &lt;- p_new\n  }\n  \n  return(as.vector(p))\n}\n\n\n\n# 读取已知疾病基因\ndisease_genes &lt;- read.table(\"Crohn's_disease.txt\", header = FALSE)$V1\n\n# 找到种子基因在网络中的索引\nseed_indices &lt;- which(V(g)$name %in% disease_genes)\n\n# 执行 RWR\nrwr_scores &lt;- random_walk_with_restart(adj_matrix,\n                                       seed_nodes = seed_indices,\n                                       restart_prob = 0.7)\n\n# 添加分数到图对象\nV(g)$rwr_score &lt;- rwr_scores\n\n# 按分数排序，找到候选基因\ngene_scores &lt;- data.frame(\n  gene = V(g)$name,\n  score = rwr_scores,\n  is_seed = V(g)$name %in% disease_genes\n)\ngene_scores &lt;- gene_scores[order(gene_scores$score, decreasing = TRUE), ]\n\n# 查看前20个候选基因\nhead(gene_scores[!gene_scores$is_seed, ], 20)\n\n\n\n# 根据 RWR 分数着色\nscore_colors &lt;- colorRampPalette(c(\"lightblue\", \"red\"))(100)\nV(g)$color &lt;- score_colors[cut(rwr_scores, breaks = 100)]\n\n# 种子基因用不同颜色标记\nV(g)$color[seed_indices] &lt;- \"green\"\n\nplot(g,\n     vertex.size = 5,\n     vertex.label = NA,\n     vertex.color = V(g)$color,\n     main = \"RWR Scores (green = seed genes)\")\n\n# 分数分布\nggplot(gene_scores, aes(x = score, fill = is_seed)) +\n  geom_histogram(bins = 50, alpha = 0.7) +\n  scale_fill_manual(values = c(\"FALSE\" = \"steelblue\", \"TRUE\" = \"red\"),\n                    labels = c(\"Other genes\", \"Seed genes\")) +\n  labs(title = \"RWR Score Distribution\",\n       x = \"RWR Score\",\n       y = \"Count\",\n       fill = \"\") +\n  theme_minimal()\n\n\n\n# 提取高分候选基因\ntop_candidates &lt;- head(gene_scores[!gene_scores$is_seed, ], 50)$gene\n\n# KEGG 富集分析\nkegg_candidates &lt;- enrichKEGG(gene = top_candidates,\n                              organism = \"hsa\",\n                              pvalueCutoff = 0.05)\n\n# 查看富集的通路\nhead(kegg_candidates@result)\n\n# 可视化\nbarplot(kegg_candidates, showCategory = 15)",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验3 - 网络聚类与随机游走"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp3.html#结果分析",
+    "href": "Grade4/computational_biology/exp3.html#结果分析",
+    "title": "实验三：网络聚类与随机游走",
+    "section": "",
+    "text": "识别功能相关的蛋白质群\n不同簇可能对应不同的生物学过程\n通过富集分析验证簇的功能一致性\n\n\n\n\n\n高分候选基因可能与疾病相关\n可以通过文献验证或实验确认\n考虑网络拓扑结构的疾病基因预测方法",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验3 - 网络聚类与随机游走"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp3.html#生物学解释",
+    "href": "Grade4/computational_biology/exp3.html#生物学解释",
+    "title": "实验三：网络聚类与随机游走",
+    "section": "",
+    "text": "克罗恩病是一种慢性炎症性肠病。通过网络分析可以：\n\n发现新的疾病相关基因\n理解疾病的分子机制\n寻找潜在的治疗靶点\n\n\n\n\n\n功能相关的基因倾向于在网络中聚集\nRWR 利用这一原理进行基因功能预测\n网络拓扑比单个基因更能反映生物学功能",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验3 - 网络聚类与随机游走"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp3.html#作业要求",
+    "href": "Grade4/computational_biology/exp3.html#作业要求",
+    "title": "实验三：网络聚类与随机游走",
+    "section": "",
+    "text": "MCL 聚类\n\n尝试不同的 inflation 参数\n分析参数对聚类结果的影响\n对主要簇进行功能富集分析\n\nRWR 分析\n\n实现 RWR 算法\n预测疾病候选基因\n验证候选基因的合理性\n\n综合分析\n\n比较 MCL 和 RWR 的结果\n讨论两种方法的优缺点\n提出改进建议",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验3 - 网络聚类与随机游走"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp3.html#文件位置",
+    "href": "Grade4/computational_biology/exp3.html#文件位置",
+    "title": "实验三：网络聚类与随机游走",
+    "section": "",
+    "text": "Grade4/computational_biology/experiments/Exp3/\n├── MCL.R                          # MCL 聚类脚本\n├── RWR.R                          # RWR 分析脚本\n├── Exp3.Rmd                       # R Markdown 报告\n├── Exp3.html                      # 生成的 HTML 报告\n├── Crohn's_disease.txt            # 克罗恩病基因列表\n└── c2.cp.kegg_legacy.v2025.1.Hs.entrez.gmt  # KEGG 基因集",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验3 - 网络聚类与随机游走"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp3.html#参考资料",
+    "href": "Grade4/computational_biology/exp3.html#参考资料",
+    "title": "实验三：网络聚类与随机游走",
+    "section": "",
+    "text": "Van Dongen, S. (2000). Graph clustering by flow simulation. PhD thesis, University of Utrecht.\nKöhler, S., et al. (2008). Walking the interactome for prioritization of candidate disease genes. The American Journal of Human Genetics, 82(4), 949-958.\nLi, Y., & Patra, J. C. (2010). Genome-wide inferring gene–phenotype relationship by walking on the heterogeneous network. Bioinformatics, 26(9), 1219-1224.",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验3 - 网络聚类与随机游走"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp3.html#提示",
+    "href": "Grade4/computational_biology/exp3.html#提示",
+    "title": "实验三：网络聚类与随机游走",
+    "section": "",
+    "text": "Tip参数选择\n\n\n\n\nMCL 的 inflation 参数：较小值产生大簇，较大值产生小簇\nRWR 的 restart 概率：通常取 0.5-0.8\n\n\n\n\n\n\n\n\n\nTip计算效率\n\n\n\n\n对于大型网络，MCL 可能需要较长时间\nRWR 可以使用稀疏矩阵加速计算\n\n\n\n\n\n\n\n\n\nWarning数据格式\n\n\n\n确保基因 ID 与网络中的节点 ID 一致（如 Entrez ID 或 Symbol）。\n\n\n\n← 上一个实验：WGCNA | 返回课程主页 | 下一个实验：qPCR →",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验3 - 网络聚类与随机游走"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp1.html",
+    "href": "Grade4/computational_biology/exp1.html",
+    "title": "实验一：蛋白质相互作用网络分析（PPI）",
+    "section": "",
+    "text": "蛋白质相互作用网络（Protein-Protein Interaction Network, PPI）是研究细胞功能的重要工具。本实验通过构建和分析PPI网络，学习网络生物学的基本方法。\n\n\n\n\n\n理解蛋白质相互作用网络的概念\n掌握使用 R 语言构建 PPI 网络\n学会分析网络的拓扑性质\n了解网络中心性指标的生物学意义\n\n\n\n\n\n\n\n蛋白质相互作用网络是将蛋白质作为节点，蛋白质之间的相互作用作为边的网络图。\n\n\n\n\n度（Degree）：节点连接的边数\n聚类系数（Clustering Coefficient）：节点邻居之间相互连接的程度\n最短路径（Shortest Path）：两个节点之间的最短距离\n中心性（Centrality）：节点在网络中的重要性\n\n\n\n\n\n度中心性（Degree Centrality）：连接数最多的节点\n介数中心性（Betweenness Centrality）：经过该节点的最短路径数\n紧密中心性（Closeness Centrality）：到其他节点的平均距离\n特征向量中心性（Eigenvector Centrality）：考虑邻居重要性的中心性\n\n\n\n\n\n\n\n\n# 加载必需的包\nlibrary(igraph)\nlibrary(ggplot2)\nlibrary(dplyr)\n\n# 读取 PPI 数据\n# 数据通常包含两列：蛋白质A 和 蛋白质B\nppi_data &lt;- read.csv(\"ppi_data.csv\")\n\n\n\n# 创建图对象\ng &lt;- graph_from_data_frame(ppi_data, directed = FALSE)\n\n# 查看网络基本信息\nvcount(g)  # 节点数\necount(g)  # 边数\n\n\n\n# 度分布\ndegree_dist &lt;- degree(g)\n\n# 聚类系数\nclustering_coef &lt;- transitivity(g, type = \"local\")\n\n# 平均路径长度\navg_path_length &lt;- mean_distance(g)\n\n\n\n# 度中心性\ndegree_cent &lt;- degree(g)\n\n# 介数中心性\nbetween_cent &lt;- betweenness(g)\n\n# 紧密中心性\nclose_cent &lt;- closeness(g)\n\n# 特征向量中心性\neigen_cent &lt;- eigen_centrality(g)$vector\n\n\n\n# 基础可视化\nplot(g,\n     vertex.size = 5,\n     vertex.label = NA,\n     edge.arrow.size = 0.3)\n\n# 根据度中心性着色\nV(g)$color &lt;- colorRampPalette(c(\"lightblue\", \"darkred\"))(max(degree_cent))[degree_cent]\n\nplot(g,\n     vertex.size = log(degree_cent) * 3,\n     vertex.label = NA,\n     vertex.color = V(g)$color,\n     main = \"PPI Network (colored by degree)\")\n\n\n\n\n\n\n\nPPI 网络通常表现出无标度（Scale-free）特性，即少数”枢纽”蛋白与很多其他蛋白相互作用。\n# 绘制度分布图\nggplot(data.frame(degree = degree_dist), aes(x = degree)) +\n  geom_histogram(bins = 30, fill = \"steelblue\") +\n  scale_y_log10() +\n  labs(title = \"Degree Distribution\",\n       x = \"Degree\",\n       y = \"Count (log10)\") +\n  theme_minimal()\n\n\n\n# 识别度最高的前10个蛋白\ntop_hubs &lt;- head(sort(degree_cent, decreasing = TRUE), 10)\nprint(top_hubs)\n\n\n\n\n\n\n\n\nHub 蛋白通常是细胞功能的关键调控因子\nHub 蛋白的突变更可能导致疾病\nHub 蛋白是潜在的药物靶点\n\n\n\n\n\n高度连接的蛋白质群可能参与相同的生物学过程\n可以通过社区检测算法识别功能模块\n\n\n\n\n\n\n\n基础分析\n\n构建 PPI 网络\n计算网络拓扑性质\n识别 Hub 蛋白\n\n进阶分析\n\n进行社区检测\n分析不同模块的功能\n与已知通路比较\n\n报告撰写\n\n使用 R Markdown 撰写报告\n包含代码、图表和解释\n对结果进行生物学解读\n\n\n\n\n\n\nGrade4/computational_biology/experiments/Exp1/\n├── Exp1.PPI.Rmd      # R Markdown 报告\n├── PPI.html          # 生成的 HTML 报告\n└── data/             # 数据文件（如果有）\n\n\n\n\n\nBarabási, A. L., & Oltvai, Z. N. (2004). Network biology: understanding the cell’s functional organization. Nature Reviews Genetics, 5(2), 101-113.\nAlbert, R. (2005). Scale-free networks in cell biology. Journal of Cell Science, 118(21), 4947-4957.\nigraph 官方文档\nSTRING 数据库\n\n\n\n\n\n\n\n\n\n\n\nTip数据来源\n\n\n\n可以从 STRING 数据库下载特定物种或疾病相关的 PPI 数据。\n\n\n\n\n\n\n\n\nTip可视化建议\n\n\n\n对于大型网络，可以只展示部分节点或使用交互式可视化工具（如 visNetwork）。\n\n\n\n\n\n\n\n\nWarning计算时间\n\n\n\n对于大型网络，计算介数中心性等指标可能需要较长时间。\n\n\n\n返回课程主页 | 下一个实验：WGCNA →",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验1 - PPI网络分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp1.html#实验简介",
+    "href": "Grade4/computational_biology/exp1.html#实验简介",
+    "title": "实验一：蛋白质相互作用网络分析（PPI）",
+    "section": "",
+    "text": "蛋白质相互作用网络（Protein-Protein Interaction Network, PPI）是研究细胞功能的重要工具。本实验通过构建和分析PPI网络，学习网络生物学的基本方法。",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验1 - PPI网络分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp1.html#实验目的",
+    "href": "Grade4/computational_biology/exp1.html#实验目的",
+    "title": "实验一：蛋白质相互作用网络分析（PPI）",
+    "section": "",
+    "text": "理解蛋白质相互作用网络的概念\n掌握使用 R 语言构建 PPI 网络\n学会分析网络的拓扑性质\n了解网络中心性指标的生物学意义",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验1 - PPI网络分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp1.html#理论背景",
+    "href": "Grade4/computational_biology/exp1.html#理论背景",
+    "title": "实验一：蛋白质相互作用网络分析（PPI）",
+    "section": "",
+    "text": "蛋白质相互作用网络是将蛋白质作为节点，蛋白质之间的相互作用作为边的网络图。\n\n\n\n\n度（Degree）：节点连接的边数\n聚类系数（Clustering Coefficient）：节点邻居之间相互连接的程度\n最短路径（Shortest Path）：两个节点之间的最短距离\n中心性（Centrality）：节点在网络中的重要性\n\n\n\n\n\n度中心性（Degree Centrality）：连接数最多的节点\n介数中心性（Betweenness Centrality）：经过该节点的最短路径数\n紧密中心性（Closeness Centrality）：到其他节点的平均距离\n特征向量中心性（Eigenvector Centrality）：考虑邻居重要性的中心性",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验1 - PPI网络分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp1.html#实验步骤",
+    "href": "Grade4/computational_biology/exp1.html#实验步骤",
+    "title": "实验一：蛋白质相互作用网络分析（PPI）",
+    "section": "",
+    "text": "# 加载必需的包\nlibrary(igraph)\nlibrary(ggplot2)\nlibrary(dplyr)\n\n# 读取 PPI 数据\n# 数据通常包含两列：蛋白质A 和 蛋白质B\nppi_data &lt;- read.csv(\"ppi_data.csv\")\n\n\n\n# 创建图对象\ng &lt;- graph_from_data_frame(ppi_data, directed = FALSE)\n\n# 查看网络基本信息\nvcount(g)  # 节点数\necount(g)  # 边数\n\n\n\n# 度分布\ndegree_dist &lt;- degree(g)\n\n# 聚类系数\nclustering_coef &lt;- transitivity(g, type = \"local\")\n\n# 平均路径长度\navg_path_length &lt;- mean_distance(g)\n\n\n\n# 度中心性\ndegree_cent &lt;- degree(g)\n\n# 介数中心性\nbetween_cent &lt;- betweenness(g)\n\n# 紧密中心性\nclose_cent &lt;- closeness(g)\n\n# 特征向量中心性\neigen_cent &lt;- eigen_centrality(g)$vector\n\n\n\n# 基础可视化\nplot(g,\n     vertex.size = 5,\n     vertex.label = NA,\n     edge.arrow.size = 0.3)\n\n# 根据度中心性着色\nV(g)$color &lt;- colorRampPalette(c(\"lightblue\", \"darkred\"))(max(degree_cent))[degree_cent]\n\nplot(g,\n     vertex.size = log(degree_cent) * 3,\n     vertex.label = NA,\n     vertex.color = V(g)$color,\n     main = \"PPI Network (colored by degree)\")",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验1 - PPI网络分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp1.html#结果分析",
+    "href": "Grade4/computational_biology/exp1.html#结果分析",
+    "title": "实验一：蛋白质相互作用网络分析（PPI）",
+    "section": "",
+    "text": "PPI 网络通常表现出无标度（Scale-free）特性，即少数”枢纽”蛋白与很多其他蛋白相互作用。\n# 绘制度分布图\nggplot(data.frame(degree = degree_dist), aes(x = degree)) +\n  geom_histogram(bins = 30, fill = \"steelblue\") +\n  scale_y_log10() +\n  labs(title = \"Degree Distribution\",\n       x = \"Degree\",\n       y = \"Count (log10)\") +\n  theme_minimal()\n\n\n\n# 识别度最高的前10个蛋白\ntop_hubs &lt;- head(sort(degree_cent, decreasing = TRUE), 10)\nprint(top_hubs)",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验1 - PPI网络分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp1.html#生物学解释",
+    "href": "Grade4/computational_biology/exp1.html#生物学解释",
+    "title": "实验一：蛋白质相互作用网络分析（PPI）",
+    "section": "",
+    "text": "Hub 蛋白通常是细胞功能的关键调控因子\nHub 蛋白的突变更可能导致疾病\nHub 蛋白是潜在的药物靶点\n\n\n\n\n\n高度连接的蛋白质群可能参与相同的生物学过程\n可以通过社区检测算法识别功能模块",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验1 - PPI网络分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp1.html#作业要求",
+    "href": "Grade4/computational_biology/exp1.html#作业要求",
+    "title": "实验一：蛋白质相互作用网络分析（PPI）",
+    "section": "",
+    "text": "基础分析\n\n构建 PPI 网络\n计算网络拓扑性质\n识别 Hub 蛋白\n\n进阶分析\n\n进行社区检测\n分析不同模块的功能\n与已知通路比较\n\n报告撰写\n\n使用 R Markdown 撰写报告\n包含代码、图表和解释\n对结果进行生物学解读",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验1 - PPI网络分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp1.html#文件位置",
+    "href": "Grade4/computational_biology/exp1.html#文件位置",
+    "title": "实验一：蛋白质相互作用网络分析（PPI）",
+    "section": "",
+    "text": "Grade4/computational_biology/experiments/Exp1/\n├── Exp1.PPI.Rmd      # R Markdown 报告\n├── PPI.html          # 生成的 HTML 报告\n└── data/             # 数据文件（如果有）",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验1 - PPI网络分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp1.html#参考资料",
+    "href": "Grade4/computational_biology/exp1.html#参考资料",
+    "title": "实验一：蛋白质相互作用网络分析（PPI）",
+    "section": "",
+    "text": "Barabási, A. L., & Oltvai, Z. N. (2004). Network biology: understanding the cell’s functional organization. Nature Reviews Genetics, 5(2), 101-113.\nAlbert, R. (2005). Scale-free networks in cell biology. Journal of Cell Science, 118(21), 4947-4957.\nigraph 官方文档\nSTRING 数据库",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验1 - PPI网络分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp1.html#提示",
+    "href": "Grade4/computational_biology/exp1.html#提示",
+    "title": "实验一：蛋白质相互作用网络分析（PPI）",
+    "section": "",
+    "text": "Tip数据来源\n\n\n\n可以从 STRING 数据库下载特定物种或疾病相关的 PPI 数据。\n\n\n\n\n\n\n\n\nTip可视化建议\n\n\n\n对于大型网络，可以只展示部分节点或使用交互式可视化工具（如 visNetwork）。\n\n\n\n\n\n\n\n\nWarning计算时间\n\n\n\n对于大型网络，计算介数中心性等指标可能需要较长时间。\n\n\n\n返回课程主页 | 下一个实验：WGCNA →",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验1 - PPI网络分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/career_guidance/index.html",
+    "href": "Grade4/career_guidance/index.html",
+    "title": "就业指导概论",
+    "section": "",
+    "text": "课程性质：必修课\n学期：大四上学期\n\n\n\n\n\n课程作业包括两个部分：\n\n个人简历制作\n\n要求制作一份专业的个人简历\n突出个人技能和项目经验\n格式规范，内容完整\n\nAI 模拟面试\n\n使用 AI 工具进行模拟面试\n记录面试过程和反馈\n总结改进方向\n\n\n\n\n\n\n\n\n\n\n考试方式：机考（线上）\n考试时长：待定\n是否可回看：试题可以回看\n\n\n\n\n总题数：37 题\n满分：100 分\n\n\n\n题型\n题量\n单题分值\n总分\n\n\n\n\n判断题\n15 题\n2 分\n30 分\n\n\n单选题\n15 题\n2 分\n30 分\n\n\n多选题\n5 题\n3 分\n15 分\n\n\n简答题\n2 题\n15 分 + 10 分\n25 分\n\n\n\n\n\n\n\n\n\n\n\n\n公众号提供了详细的复习资料和考试重点：\n\n推文一：就业指导复习资料（一）\n\n包含基础知识点\n求职技巧总结\n简历制作要点\n\n推文二：就业指导复习资料（二）\n\n面试技巧讲解\n常见问题解答\n职业规划指导\n\n\n\n\n\n\n\n\nNote如何获取\n\n\n\n微信搜索公众号 “Hmaide”，查看历史推文获取完整复习资料\n\n\n\n\n\n\n\n佛教刷题平台\n\n题库代码：Yk6i-6lY\n使用方法：\n\n访问佛教刷题网站/小程序\n输入题库代码：Yk6i-6lY\n\n\n\n\n\n\n\n\n\n考察档案派遣。比如小明是外省人，被广州某私企公司录用，改如何派遣。\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nImportant必考题型\n\n\n\n档案派遣是简答题的重点考察内容！\n\n\n\n\n\n\n如果发现复习资料有误或需要补充，欢迎：\n\n在 Discussions 中讨论\n在 Issues 中反馈\n发邮件到：hinna01@163.com\n\n\n\n祝大家考试顺利！\n← 返回大四课程",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "就业指导概论"
+    ]
+  },
+  {
+    "objectID": "Grade4/career_guidance/index.html#课程考核",
+    "href": "Grade4/career_guidance/index.html#课程考核",
+    "title": "就业指导概论",
+    "section": "",
+    "text": "课程作业包括两个部分：\n\n个人简历制作\n\n要求制作一份专业的个人简历\n突出个人技能和项目经验\n格式规范，内容完整\n\nAI 模拟面试\n\n使用 AI 工具进行模拟面试\n记录面试过程和反馈\n总结改进方向",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "就业指导概论"
+    ]
+  },
+  {
+    "objectID": "Grade4/career_guidance/index.html#期末考试",
+    "href": "Grade4/career_guidance/index.html#期末考试",
+    "title": "就业指导概论",
+    "section": "",
+    "text": "考试方式：机考（线上）\n考试时长：待定\n是否可回看：试题可以回看\n\n\n\n\n总题数：37 题\n满分：100 分\n\n\n\n题型\n题量\n单题分值\n总分\n\n\n\n\n判断题\n15 题\n2 分\n30 分\n\n\n单选题\n15 题\n2 分\n30 分\n\n\n多选题\n5 题\n3 分\n15 分\n\n\n简答题\n2 题\n15 分 + 10 分\n25 分",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "就业指导概论"
+    ]
+  },
+  {
+    "objectID": "Grade4/career_guidance/index.html#复习资料",
+    "href": "Grade4/career_guidance/index.html#复习资料",
+    "title": "就业指导概论",
+    "section": "",
+    "text": "公众号提供了详细的复习资料和考试重点：\n\n推文一：就业指导复习资料（一）\n\n包含基础知识点\n求职技巧总结\n简历制作要点\n\n推文二：就业指导复习资料（二）\n\n面试技巧讲解\n常见问题解答\n职业规划指导\n\n\n\n\n\n\n\n\nNote如何获取\n\n\n\n微信搜索公众号 “Hmaide”，查看历史推文获取完整复习资料\n\n\n\n\n\n\n\n佛教刷题平台\n\n题库代码：Yk6i-6lY\n使用方法：\n\n访问佛教刷题网站/小程序\n输入题库代码：Yk6i-6lY",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "就业指导概论"
+    ]
+  },
+  {
+    "objectID": "Grade4/career_guidance/index.html#考试真题20251230",
+    "href": "Grade4/career_guidance/index.html#考试真题20251230",
+    "title": "就业指导概论",
+    "section": "",
+    "text": "考察档案派遣。比如小明是外省人，被广州某私企公司录用，改如何派遣。",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "就业指导概论"
+    ]
+  },
+  {
+    "objectID": "Grade4/career_guidance/index.html#获取就业信息的途径和方式有哪些多选题给了提示",
+    "href": "Grade4/career_guidance/index.html#获取就业信息的途径和方式有哪些多选题给了提示",
+    "title": "就业指导概论",
+    "section": "",
+    "text": "Important必考题型\n\n\n\n档案派遣是简答题的重点考察内容！",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "就业指导概论"
+    ]
+  },
+  {
+    "objectID": "Grade4/career_guidance/index.html#问题反馈",
+    "href": "Grade4/career_guidance/index.html#问题反馈",
+    "title": "就业指导概论",
+    "section": "",
+    "text": "如果发现复习资料有误或需要补充，欢迎：\n\n在 Discussions 中讨论\n在 Issues 中反馈\n发邮件到：hinna01@163.com\n\n\n\n祝大家考试顺利！\n← 返回大四课程",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "就业指导概论"
+    ]
+  },
+  {
+    "objectID": "Grade3/index.html",
+    "href": "Grade3/index.html",
+    "title": "大三课程",
+    "section": "",
+    "text": "学年概述：大三是生物信息学专业核心课程学习的关键阶段。\n\n\n\n\n大三上学期大三下学期\n\n\n专业核心课程深入学习阶段。\n\n\n专业知识综合应用与实践。\n\n\n\n\n\n\n\n\n\n\n\n\n\nTip学长学姐的宝贵经验\n\n\n\n以下是往届同学整理的考试经验，供参考复习。\n\n\n\n\n\n学期\n资料\n下载\n\n\n\n\n大三上\n考试经验总结\n下载 PDF\n\n\n\n\n\n\n\n\n深入理解 - 大三课程难度提升，要注重理解\n项目实践 - 多参与实际项目，积累经验\n提前规划 - 考虑未来方向（考研/就业/出国）\n\n\n返回首页",
+    "crumbs": [
+      "首页",
+      "大三课程",
+      "大三课程总览"
+    ]
+  },
+  {
+    "objectID": "Grade3/index.html#学期内容",
+    "href": "Grade3/index.html#学期内容",
+    "title": "大三课程",
+    "section": "",
+    "text": "大三上学期大三下学期\n\n\n专业核心课程深入学习阶段。\n\n\n专业知识综合应用与实践。",
+    "crumbs": [
+      "首页",
+      "大三课程",
+      "大三课程总览"
+    ]
+  },
+  {
+    "objectID": "Grade3/index.html#考试经验",
+    "href": "Grade3/index.html#考试经验",
+    "title": "大三课程",
+    "section": "",
+    "text": "Tip学长学姐的宝贵经验\n\n\n\n以下是往届同学整理的考试经验，供参考复习。\n\n\n\n\n\n学期\n资料\n下载\n\n\n\n\n大三上\n考试经验总结\n下载 PDF",
+    "crumbs": [
+      "首页",
+      "大三课程",
+      "大三课程总览"
+    ]
+  },
+  {
+    "objectID": "Grade3/index.html#学习建议",
+    "href": "Grade3/index.html#学习建议",
+    "title": "大三课程",
+    "section": "",
+    "text": "深入理解 - 大三课程难度提升，要注重理解\n项目实践 - 多参与实际项目，积累经验\n提前规划 - 考虑未来方向（考研/就业/出国）\n\n\n返回首页",
+    "crumbs": [
+      "首页",
+      "大三课程",
+      "大三课程总览"
+    ]
+  },
+  {
+    "objectID": "Epidemiology/UK_Biobank.html",
+    "href": "Epidemiology/UK_Biobank.html",
+    "title": "UK Biobank (UKB) 数据库简介",
+    "section": "",
+    "text": "UK Biobank (UKB) 是一个大型的生物医学数据库，包含了来自英国50万名参与者的详细健康和遗传信息。该数据库由英国政府资助，旨在促进医学研究和公共卫生领域的进步。UKB的数据涵盖了广泛的领域，包括基因组学、影像学、生活方式、环境暴露等，为研究人员提供了宝贵的资源来探索疾病的原因和发展机制。\n\n\n\n\nUK Biobank官方网站：https://www.ukbiobank.ac.uk/\n数据访问指南：https://www.ukbiobank.ac.uk/enable-your-research/apply-for-access\n数据字典：https://biobank.ndph.ox.ac.uk/showcase/\n\n\n\n\n\nUK Biobank数据分析教程：https://www.ukbiobank.ac.uk/enable-your-research/uk-biobank-data-analysis\nUK Biobank RAP平台教程1：RAP平台使用方法以及人口学数据的代码版本的下载\nUK Biobank RAP平台教程2：代谢组学与蛋白质组学数据的下载\nUK Biobank RAP平台教程3：GGIR包处理加速度计原始数据流程\nUK Biobank package：UKBAnalytica1.0提升UKB数据分析效率\n\n\n\n\n通过网盘分享的文件：UKB数据库介绍.pptx等2个文件 链接: https://pan.baidu.com/s/1bGSzOsV6ofUFLP7n_PNysA?pwd=fb33 提取码: fb33 –来自百度网盘超级会员v5的分享",
+    "crumbs": [
+      "首页",
+      "流行病学数据库",
+      "UK Biobank"
+    ]
+  },
+  {
+    "objectID": "Epidemiology/UK_Biobank.html#前言",
+    "href": "Epidemiology/UK_Biobank.html#前言",
+    "title": "UK Biobank (UKB) 数据库简介",
+    "section": "",
+    "text": "UK Biobank (UKB) 是一个大型的生物医学数据库，包含了来自英国50万名参与者的详细健康和遗传信息。该数据库由英国政府资助，旨在促进医学研究和公共卫生领域的进步。UKB的数据涵盖了广泛的领域，包括基因组学、影像学、生活方式、环境暴露等，为研究人员提供了宝贵的资源来探索疾病的原因和发展机制。",
+    "crumbs": [
+      "首页",
+      "流行病学数据库",
+      "UK Biobank"
+    ]
+  },
+  {
+    "objectID": "Epidemiology/UK_Biobank.html#网站",
+    "href": "Epidemiology/UK_Biobank.html#网站",
+    "title": "UK Biobank (UKB) 数据库简介",
+    "section": "",
+    "text": "UK Biobank官方网站：https://www.ukbiobank.ac.uk/\n数据访问指南：https://www.ukbiobank.ac.uk/enable-your-research/apply-for-access\n数据字典：https://biobank.ndph.ox.ac.uk/showcase/",
+    "crumbs": [
+      "首页",
+      "流行病学数据库",
+      "UK Biobank"
+    ]
+  },
+  {
+    "objectID": "Epidemiology/UK_Biobank.html#学习资源",
+    "href": "Epidemiology/UK_Biobank.html#学习资源",
+    "title": "UK Biobank (UKB) 数据库简介",
+    "section": "",
+    "text": "UK Biobank数据分析教程：https://www.ukbiobank.ac.uk/enable-your-research/uk-biobank-data-analysis\nUK Biobank RAP平台教程1：RAP平台使用方法以及人口学数据的代码版本的下载\nUK Biobank RAP平台教程2：代谢组学与蛋白质组学数据的下载\nUK Biobank RAP平台教程3：GGIR包处理加速度计原始数据流程\nUK Biobank package：UKBAnalytica1.0提升UKB数据分析效率",
+    "crumbs": [
+      "首页",
+      "流行病学数据库",
+      "UK Biobank"
+    ]
+  },
+  {
+    "objectID": "Epidemiology/UK_Biobank.html#uk-biobank数据库ppt视频介绍",
+    "href": "Epidemiology/UK_Biobank.html#uk-biobank数据库ppt视频介绍",
+    "title": "UK Biobank (UKB) 数据库简介",
+    "section": "",
+    "text": "通过网盘分享的文件：UKB数据库介绍.pptx等2个文件 链接: https://pan.baidu.com/s/1bGSzOsV6ofUFLP7n_PNysA?pwd=fb33 提取码: fb33 –来自百度网盘超级会员v5的分享",
+    "crumbs": [
+      "首页",
+      "流行病学数据库",
+      "UK Biobank"
+    ]
+  },
+  {
+    "objectID": "BioinfoTalus/index.html",
+    "href": "BioinfoTalus/index.html",
+    "title": "生信流程 (BioinfoTalus)",
+    "section": "",
+    "text": "项目简介：面向生物信息学转录组数据分析的 R 脚本集合，覆盖 Bulk 转录组、单细胞转录组与空间转录组三大领域。\n\n\n\n\n\n\nTip贡献者致谢\n\n\n\n本模块由 @BioConvolutionyt 贡献（生物信息学23级lyt），感谢分享！\n\n\n\n\n\n\n既可作为一套完整 pipeline，也可独立使用\n可泛化 + 注释较完整：核心步骤与关键参数已尽量写成可迁移的形式\n提供示例数据与部分运行结果\n\n\n\n\n\n\n\n\n\n\n分析类型\n主要内容\n\n\n\n\n数据处理\nTCGA/GEO 数据处理、表达矩阵整理\n\n\n差异分析\nDESeq2 差异分析\n\n\n富集分析\nGO、KEGG 富集分析、GSEA\n\n\n免疫分析\n免疫浸润 (CIBERSORT)、免疫/肿瘤/基质评分 (ESTIMATE)\n\n\n生存分析\n生存分析、单因素/多因素 COX 回归、LASSO、Nomogram\n\n\n其他\nWGCNA、药物敏感性分析、免疫检查点分析\n\n\n\n\n\n\n\n\n\n\n分析类型\n主要内容\n\n\n\n\n基础流程\nSeurat 主流程（读入/QC/聚类/去批次）\n\n\n细胞注释\n自动注释、手动注释\n\n\n质控\n双细胞检测、细胞周期评估\n\n\n高级分析\nCNV 推断、拟时序分析、发育潜能、细胞通讯\n\n\n\n\n\n\n\n\n\n\n分析类型\n主要内容\n\n\n\n\n基础流程\nVisium 读入与聚类\n\n\n反卷积\n空间反卷积（基于单细胞先验）\n\n\n空间分析\n空间差异基因、空间细胞通讯\n\n\n\n\n\n\n\n\n\n\n\n数据类型\n来源\n描述\n\n\n\n\nBulk 转录组\nTCGA-HNSC\n头颈部鳞状细胞癌\n\n\n单细胞转录组\nGSM9113377-9\n结直肠癌样本\n\n\n空间转录组\nGSM8594561\n结直肠癌样本\n\n\n\n\n\n\n\n\n\ngit clone https://github.com/Hinna0818/Bioinfo-SMU.git\ncd Bioinfo-SMU/BioinfoTalus\n\n\n\n从 GitHub Releases 下载示例数据：\n\n下载所有 data_split*.zip 文件\n解压并放置到 Data/ 目录下\n\n\n\n\n建议使用 RStudio 打开 BioinfoTalus.Rproj，按需运行各模块脚本。\n\n\n\n\n\n\nBulk 转录组单细胞转录组空间转录组\n\n\n\nTCGA表达数据处理.R → 生成表达矩阵\n差异分析.R → DESeq2 差异分析\nGO & KEGG富集分析.R / GSEA.R\n免疫、肿瘤、基质评分计算.R\n生存分析.R → 单因素COX回归.R → 多因素COX回归.R\n其他按需选用\n\n\n\n\n数据读入与 QC\n聚类与去批次\n细胞注释\n高级分析（拟时序、细胞通讯等）\n\n\n\n\nVisium 数据读入\n聚类分析\n空间反卷积\n空间差异基因分析\n\n\n\n\n\n\n\n\nBioinfoTalus/\n├── Bulk 转录组测序数据分析/\n│   ├── TCGA表达数据处理.R\n│   ├── 差异分析.R\n│   ├── GO & KEGG富集分析.R\n│   ├── GSEA.R\n│   ├── 生存分析.R\n│   └── ...\n├── 单细胞转录组测序数据分析/\n│   ├── Seurat主流程.R\n│   ├── 细胞注释.R\n│   └── ...\n├── 空间转录组测序数据分析/\n│   ├── Visium读入与聚类.R\n│   └── ...\n└── Data/  (从 Releases 下载)\n\n\n\n\n\nGitHub 仓库目录\n数据下载 (Releases)\n贡献者主页 @BioConvolutionyt\n\n\n\n\n\n感谢 @BioConvolutionyt 贡献本模块代码！\n如果你觉得这些代码对你有帮助，欢迎给仓库一个 Star！\n\n返回首页",
+    "crumbs": [
+      "首页",
+      "生信流程",
+      "BioinfoTalus"
+    ]
+  },
+  {
+    "objectID": "BioinfoTalus/index.html#项目特点",
+    "href": "BioinfoTalus/index.html#项目特点",
+    "title": "生信流程 (BioinfoTalus)",
+    "section": "",
+    "text": "既可作为一套完整 pipeline，也可独立使用\n可泛化 + 注释较完整：核心步骤与关键参数已尽量写成可迁移的形式\n提供示例数据与部分运行结果",
+    "crumbs": [
+      "首页",
+      "生信流程",
+      "BioinfoTalus"
+    ]
+  },
+  {
+    "objectID": "BioinfoTalus/index.html#模块概览",
+    "href": "BioinfoTalus/index.html#模块概览",
+    "title": "生信流程 (BioinfoTalus)",
+    "section": "",
+    "text": "分析类型\n主要内容\n\n\n\n\n数据处理\nTCGA/GEO 数据处理、表达矩阵整理\n\n\n差异分析\nDESeq2 差异分析\n\n\n富集分析\nGO、KEGG 富集分析、GSEA\n\n\n免疫分析\n免疫浸润 (CIBERSORT)、免疫/肿瘤/基质评分 (ESTIMATE)\n\n\n生存分析\n生存分析、单因素/多因素 COX 回归、LASSO、Nomogram\n\n\n其他\nWGCNA、药物敏感性分析、免疫检查点分析\n\n\n\n\n\n\n\n\n\n\n分析类型\n主要内容\n\n\n\n\n基础流程\nSeurat 主流程（读入/QC/聚类/去批次）\n\n\n细胞注释\n自动注释、手动注释\n\n\n质控\n双细胞检测、细胞周期评估\n\n\n高级分析\nCNV 推断、拟时序分析、发育潜能、细胞通讯\n\n\n\n\n\n\n\n\n\n\n分析类型\n主要内容\n\n\n\n\n基础流程\nVisium 读入与聚类\n\n\n反卷积\n空间反卷积（基于单细胞先验）\n\n\n空间分析\n空间差异基因、空间细胞通讯",
+    "crumbs": [
+      "首页",
+      "生信流程",
+      "BioinfoTalus"
+    ]
+  },
+  {
+    "objectID": "BioinfoTalus/index.html#示例数据说明",
+    "href": "BioinfoTalus/index.html#示例数据说明",
+    "title": "生信流程 (BioinfoTalus)",
+    "section": "",
+    "text": "数据类型\n来源\n描述\n\n\n\n\nBulk 转录组\nTCGA-HNSC\n头颈部鳞状细胞癌\n\n\n单细胞转录组\nGSM9113377-9\n结直肠癌样本\n\n\n空间转录组\nGSM8594561\n结直肠癌样本",
+    "crumbs": [
+      "首页",
+      "生信流程",
+      "BioinfoTalus"
+    ]
+  },
+  {
+    "objectID": "BioinfoTalus/index.html#快速开始",
+    "href": "BioinfoTalus/index.html#快速开始",
+    "title": "生信流程 (BioinfoTalus)",
+    "section": "",
+    "text": "git clone https://github.com/Hinna0818/Bioinfo-SMU.git\ncd Bioinfo-SMU/BioinfoTalus\n\n\n\n从 GitHub Releases 下载示例数据：\n\n下载所有 data_split*.zip 文件\n解压并放置到 Data/ 目录下\n\n\n\n\n建议使用 RStudio 打开 BioinfoTalus.Rproj，按需运行各模块脚本。",
+    "crumbs": [
+      "首页",
+      "生信流程",
+      "BioinfoTalus"
+    ]
+  },
+  {
+    "objectID": "BioinfoTalus/index.html#推荐运行顺序",
+    "href": "BioinfoTalus/index.html#推荐运行顺序",
+    "title": "生信流程 (BioinfoTalus)",
+    "section": "",
+    "text": "Bulk 转录组单细胞转录组空间转录组\n\n\n\nTCGA表达数据处理.R → 生成表达矩阵\n差异分析.R → DESeq2 差异分析\nGO & KEGG富集分析.R / GSEA.R\n免疫、肿瘤、基质评分计算.R\n生存分析.R → 单因素COX回归.R → 多因素COX回归.R\n其他按需选用\n\n\n\n\n数据读入与 QC\n聚类与去批次\n细胞注释\n高级分析（拟时序、细胞通讯等）\n\n\n\n\nVisium 数据读入\n聚类分析\n空间反卷积\n空间差异基因分析",
+    "crumbs": [
+      "首页",
+      "生信流程",
+      "BioinfoTalus"
+    ]
+  },
+  {
+    "objectID": "BioinfoTalus/index.html#目录结构",
+    "href": "BioinfoTalus/index.html#目录结构",
+    "title": "生信流程 (BioinfoTalus)",
+    "section": "",
+    "text": "BioinfoTalus/\n├── Bulk 转录组测序数据分析/\n│   ├── TCGA表达数据处理.R\n│   ├── 差异分析.R\n│   ├── GO & KEGG富集分析.R\n│   ├── GSEA.R\n│   ├── 生存分析.R\n│   └── ...\n├── 单细胞转录组测序数据分析/\n│   ├── Seurat主流程.R\n│   ├── 细胞注释.R\n│   └── ...\n├── 空间转录组测序数据分析/\n│   ├── Visium读入与聚类.R\n│   └── ...\n└── Data/  (从 Releases 下载)",
+    "crumbs": [
+      "首页",
+      "生信流程",
+      "BioinfoTalus"
+    ]
+  },
+  {
+    "objectID": "BioinfoTalus/index.html#相关链接",
+    "href": "BioinfoTalus/index.html#相关链接",
+    "title": "生信流程 (BioinfoTalus)",
+    "section": "",
+    "text": "GitHub 仓库目录\n数据下载 (Releases)\n贡献者主页 @BioConvolutionyt",
+    "crumbs": [
+      "首页",
+      "生信流程",
+      "BioinfoTalus"
+    ]
+  },
+  {
+    "objectID": "BioinfoTalus/index.html#致谢",
+    "href": "BioinfoTalus/index.html#致谢",
+    "title": "生信流程 (BioinfoTalus)",
+    "section": "",
+    "text": "感谢 @BioConvolutionyt 贡献本模块代码！\n如果你觉得这些代码对你有帮助，欢迎给仓库一个 Star！\n\n返回首页",
+    "crumbs": [
+      "首页",
+      "生信流程",
+      "BioinfoTalus"
+    ]
+  },
+  {
+    "objectID": "Grade2/index.html",
+    "href": "Grade2/index.html",
+    "title": "大二课程",
+    "section": "",
+    "text": "学年概述：大二是生物信息学专业基础课程学习的重要阶段。\n\n\n\n\n大二上学期大二下学期\n\n\n专业基础课程学习阶段。\n\n\n继续深入学习专业基础知识。\n\n\n\n\n\n\n\n\n\n\n\n\n\nTip学长学姐的宝贵经验\n\n\n\n以下是往届同学整理的考试经验，供参考复习。\n\n\n\n\n\n学期\n资料\n下载\n\n\n\n\n大二上\n考试经验总结\n下载 PDF\n\n\n大二下\n考试经验总结\n下载 PDF\n\n\n\n\n\n\n\n\n打好基础 - 大二课程是后续专业课的基础\n多做练习 - 理解概念后要多动手实践\n善用资源 - 参考往届考试经验，把握重点\n\n\n返回首页",
+    "crumbs": [
+      "首页",
+      "大二课程",
+      "大二课程总览"
+    ]
+  },
+  {
+    "objectID": "Grade2/index.html#学期内容",
+    "href": "Grade2/index.html#学期内容",
+    "title": "大二课程",
+    "section": "",
+    "text": "大二上学期大二下学期\n\n\n专业基础课程学习阶段。\n\n\n继续深入学习专业基础知识。",
+    "crumbs": [
+      "首页",
+      "大二课程",
+      "大二课程总览"
+    ]
+  },
+  {
+    "objectID": "Grade2/index.html#考试经验",
+    "href": "Grade2/index.html#考试经验",
+    "title": "大二课程",
+    "section": "",
+    "text": "Tip学长学姐的宝贵经验\n\n\n\n以下是往届同学整理的考试经验，供参考复习。\n\n\n\n\n\n学期\n资料\n下载\n\n\n\n\n大二上\n考试经验总结\n下载 PDF\n\n\n大二下\n考试经验总结\n下载 PDF",
+    "crumbs": [
+      "首页",
+      "大二课程",
+      "大二课程总览"
+    ]
+  },
+  {
+    "objectID": "Grade2/index.html#学习建议",
+    "href": "Grade2/index.html#学习建议",
+    "title": "大二课程",
+    "section": "",
+    "text": "打好基础 - 大二课程是后续专业课的基础\n多做练习 - 理解概念后要多动手实践\n善用资源 - 参考往届考试经验，把握重点\n\n\n返回首页",
+    "crumbs": [
+      "首页",
+      "大二课程",
+      "大二课程总览"
+    ]
+  },
+  {
+    "objectID": "Grade4/CADD/index.html",
+    "href": "Grade4/CADD/index.html",
+    "title": "计算机辅助药物设计（CADD）",
+    "section": "",
+    "text": "课程简介：学习使用计算方法进行药物设计和虚拟筛选。\n\n\n\n本课程主要内容包括：\n\n分子对接（Molecular Docking）\n虚拟筛选（Virtual Screening）\nQSAR 建模\n药物-靶点预测\n\n\n\n\n\n如果你有相关资料，欢迎贡献！\n\n返回上级",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算机辅助药物设计"
+    ]
+  },
+  {
+    "objectID": "Grade4/CADD/index.html#课程内容",
+    "href": "Grade4/CADD/index.html#课程内容",
+    "title": "计算机辅助药物设计（CADD）",
+    "section": "",
+    "text": "本课程主要内容包括：\n\n分子对接（Molecular Docking）\n虚拟筛选（Virtual Screening）\nQSAR 建模\n药物-靶点预测",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算机辅助药物设计"
+    ]
+  },
+  {
+    "objectID": "Grade4/CADD/index.html#资料正在整理中",
+    "href": "Grade4/CADD/index.html#资料正在整理中",
+    "title": "计算机辅助药物设计（CADD）",
+    "section": "",
+    "text": "如果你有相关资料，欢迎贡献！\n\n返回上级",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算机辅助药物设计"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exam-materials.html",
+    "href": "Grade4/computational_biology/exam-materials.html",
+    "title": "计算生物学考试资料",
+    "section": "",
+    "text": "欢迎来到计算生物学考试资料页面！这里汇总了课程重点、考试经验和复习建议。\n\n\n\n\n\n\n\n内容包含：\n\n课程核心知识点总结\n重要概念和公式\n考试题型分析\n学长学姐经验分享\n复习建议和重点标注\n\n文件信息：\n\n格式：PDF\n涵盖内容：PPI、WGCNA、网络聚类、qPCR等\n适用对象：大四上学期\n\n\n下载 PDF\n\n\n\n\n\n\n\n\n\n核心概念：\n\n网络拓扑参数：度、聚类系数、路径长度\n中心性指标：度中心性、介数中心性、紧密中心性\nHub 蛋白识别与生物学意义\n无标度网络特性\n\n常见题型：\n\n名词解释：Hub 基因、Degree、Betweenness\n简答题：PPI 网络的构建方法和应用\n计算题：给定邻接矩阵计算中心性指标\n\n\n\n\n\n核心概念：\n\n软阈值的选择原理\n拓扑重叠矩阵（TOM）\n模块识别与特征基因\n模块-表型关联分析\n\n常见题型：\n\n名词解释：Module、Eigengene、Soft threshold\n简答题：WGCNA 分析流程\n代码题：关键步骤的 R 代码实现\n\n\n\n\n\n核心概念：\n\nMCL 聚类算法原理\nRandom Walk with Restart (RWR)\n疾病基因预测方法\n功能富集分析\n\n常见题型：\n\n算法原理简答\n参数选择与优化\n应用场景分析\n\n\n\n\n\n核心概念：\n\nCt 值的含义\nΔΔCt 计算方法\n相对表达量计算\n内参基因的选择\n\n常见题型：\n\n计算题：给定 Ct 值计算相对表达量\n简答题：qPCR 实验设计要点\n数据分析与可视化\n\n\n\n\n\n\n\n\n\n\n\n\nTip复习策略\n\n\n\n1. 理论知识（40%）\n\n理解基本概念和原理\n掌握算法思想\n记忆关键公式\n\n2. 代码实践（30%）\n\n复习实验代码\n理解每一步的作用\n练习修改参数\n\n3. 应用分析（30%）\n\n会解读分析结果\n理解生物学意义\n能提出改进思路\n\n\n\n\n\n\n\n\n\nWarning考试注意事项\n\n\n\n\n带好学生证和身份证\n准备计算器（如需要）\n复习实验报告中的图表解读\n注意时间分配，先易后难\n\n\n\n\n\n\n\n\n\nTip学习建议\n\n\n\n\n提前1-2周开始系统复习\n重新运行实验代码加深理解\n与同学组队讨论交流\n整理自己的知识框架图\n多看文献了解方法应用\n\n\n\n\n\n\n\n\n\n所有实验的完整代码请访问：\n\n实验1：PPI 网络分析\n实验2：WGCNA 分析\n实验3：网络聚类与随机游走\n实验4：qPCR 数据分析\n\n\n\n\n\n学习路线建议\n常用工具\n参考文献\n\n\n\n\n\n\n遇到问题或有好的学习资料？\n\nGitHub Discussions - 提问讨论\nGitHub Issues - 报告问题\nEmail: hinna01@163.com\n\n\n\n\n\n感谢贡献考试资料的学长学姐们！\n如果你也有好的学习资料，欢迎贡献到本项目！\n\n\n祝大家考试顺利！加油！\n返回课程主页",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "考试资料"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exam-materials.html#考试资料下载",
+    "href": "Grade4/computational_biology/exam-materials.html#考试资料下载",
+    "title": "计算生物学考试资料",
+    "section": "",
+    "text": "内容包含：\n\n课程核心知识点总结\n重要概念和公式\n考试题型分析\n学长学姐经验分享\n复习建议和重点标注\n\n文件信息：\n\n格式：PDF\n涵盖内容：PPI、WGCNA、网络聚类、qPCR等\n适用对象：大四上学期\n\n\n下载 PDF",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "考试资料"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exam-materials.html#考试重点概览",
+    "href": "Grade4/computational_biology/exam-materials.html#考试重点概览",
+    "title": "计算生物学考试资料",
+    "section": "",
+    "text": "核心概念：\n\n网络拓扑参数：度、聚类系数、路径长度\n中心性指标：度中心性、介数中心性、紧密中心性\nHub 蛋白识别与生物学意义\n无标度网络特性\n\n常见题型：\n\n名词解释：Hub 基因、Degree、Betweenness\n简答题：PPI 网络的构建方法和应用\n计算题：给定邻接矩阵计算中心性指标\n\n\n\n\n\n核心概念：\n\n软阈值的选择原理\n拓扑重叠矩阵（TOM）\n模块识别与特征基因\n模块-表型关联分析\n\n常见题型：\n\n名词解释：Module、Eigengene、Soft threshold\n简答题：WGCNA 分析流程\n代码题：关键步骤的 R 代码实现\n\n\n\n\n\n核心概念：\n\nMCL 聚类算法原理\nRandom Walk with Restart (RWR)\n疾病基因预测方法\n功能富集分析\n\n常见题型：\n\n算法原理简答\n参数选择与优化\n应用场景分析\n\n\n\n\n\n核心概念：\n\nCt 值的含义\nΔΔCt 计算方法\n相对表达量计算\n内参基因的选择\n\n常见题型：\n\n计算题：给定 Ct 值计算相对表达量\n简答题：qPCR 实验设计要点\n数据分析与可视化",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "考试资料"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exam-materials.html#复习建议",
+    "href": "Grade4/computational_biology/exam-materials.html#复习建议",
+    "title": "计算生物学考试资料",
+    "section": "",
+    "text": "Tip复习策略\n\n\n\n1. 理论知识（40%）\n\n理解基本概念和原理\n掌握算法思想\n记忆关键公式\n\n2. 代码实践（30%）\n\n复习实验代码\n理解每一步的作用\n练习修改参数\n\n3. 应用分析（30%）\n\n会解读分析结果\n理解生物学意义\n能提出改进思路\n\n\n\n\n\n\n\n\n\nWarning考试注意事项\n\n\n\n\n带好学生证和身份证\n准备计算器（如需要）\n复习实验报告中的图表解读\n注意时间分配，先易后难\n\n\n\n\n\n\n\n\n\nTip学习建议\n\n\n\n\n提前1-2周开始系统复习\n重新运行实验代码加深理解\n与同学组队讨论交流\n整理自己的知识框架图\n多看文献了解方法应用",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "考试资料"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exam-materials.html#其他学习资料",
+    "href": "Grade4/computational_biology/exam-materials.html#其他学习资料",
+    "title": "计算生物学考试资料",
+    "section": "",
+    "text": "所有实验的完整代码请访问：\n\n实验1：PPI 网络分析\n实验2：WGCNA 分析\n实验3：网络聚类与随机游走\n实验4：qPCR 数据分析\n\n\n\n\n\n学习路线建议\n常用工具\n参考文献",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "考试资料"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exam-materials.html#交流讨论",
+    "href": "Grade4/computational_biology/exam-materials.html#交流讨论",
+    "title": "计算生物学考试资料",
+    "section": "",
+    "text": "遇到问题或有好的学习资料？\n\nGitHub Discussions - 提问讨论\nGitHub Issues - 报告问题\nEmail: hinna01@163.com",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "考试资料"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exam-materials.html#致谢",
+    "href": "Grade4/computational_biology/exam-materials.html#致谢",
+    "title": "计算生物学考试资料",
+    "section": "",
+    "text": "感谢贡献考试资料的学长学姐们！\n如果你也有好的学习资料，欢迎贡献到本项目！\n\n\n祝大家考试顺利！加油！\n返回课程主页",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "考试资料"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp2.html",
+    "href": "Grade4/computational_biology/exp2.html",
+    "title": "实验二：加权基因共表达网络分析（WGCNA）",
+    "section": "",
+    "text": "WGCNA (Weighted Gene Co-expression Network Analysis) 是一种系统生物学方法，用于描述不同样本间基因关联模式，识别高度协同变化的基因模块。\n\n\n\n\n\n理解基因共表达网络的概念\n掌握 WGCNA 的分析流程\n学会识别基因模块\n了解模块与表型的关联分析\n\n\n\n\n\n\n\nWGCNA 通过计算基因间的相关性，构建加权网络，并识别功能相关的基因模块。\n\n\n\n\n计算相似性矩阵：计算基因间的相关系数\n构建邻接矩阵：使用软阈值将相关系数转换为连接强度\n拓扑重叠矩阵（TOM）：衡量基因间的连接相似性\n层次聚类：识别基因模块\n模块-表型关联：分析模块与表型的相关性\n\n\n\n\n\n\n\n\n# 加载 WGCNA 包\nlibrary(WGCNA)\nlibrary(ggplot2)\n\n# 允许多线程\nenableWGCNAThreads()\n\n# 读取表达数据\n# 行为基因，列为样本\nexpr_data &lt;- read.csv(\"expression_data.csv\", row.names = 1)\nexpr_data &lt;- t(expr_data)  # 转置：行为样本，列为基因\n\n# 检查缺失值\ngsg &lt;- goodSamplesGenes(expr_data, verbose = 3)\n\n# 过滤低表达基因\nexpr_data_filtered &lt;- expr_data[, gsg$goodGenes]\n\n\n\n# 计算不同软阈值下的网络拓扑\npowers &lt;- c(c(1:10), seq(from = 12, to = 20, by = 2))\nsft &lt;- pickSoftThreshold(expr_data_filtered,\n                         powerVector = powers,\n                         verbose = 5)\n\n# 可视化\npar(mfrow = c(1, 2))\nplot(sft$fitIndices[,1],\n     -sign(sft$fitIndices[,3]) * sft$fitIndices[,2],\n     xlab = \"Soft Threshold (power)\",\n     ylab = \"Scale Free Topology Model Fit, signed R^2\",\n     type = \"n\",\n     main = \"Scale independence\")\ntext(sft$fitIndices[,1],\n     -sign(sft$fitIndices[,3]) * sft$fitIndices[,2],\n     labels = powers,\n     col = \"red\")\nabline(h = 0.90, col = \"red\")\n\n\n\n# 一步法构建网络并识别模块\nnet &lt;- blockwiseModules(expr_data_filtered,\n                        power = 6,  # 选择的软阈值\n                        TOMType = \"unsigned\",\n                        minModuleSize = 30,\n                        reassignThreshold = 0,\n                        mergeCutHeight = 0.25,\n                        numericLabels = TRUE,\n                        pamRespectsDendro = FALSE,\n                        saveTOMs = TRUE,\n                        saveTOMFileBase = \"TOM\",\n                        verbose = 3)\n\n# 查看模块信息\ntable(net$colors)\n\n# 转换为颜色标签\nmoduleColors &lt;- labels2colors(net$colors)\n\n\n\n# 绘制基因树和模块\nplotDendroAndColors(net$dendrograms[[1]],\n                    moduleColors[net$blockGenes[[1]]],\n                    \"Module colors\",\n                    dendroLabels = FALSE,\n                    hang = 0.03,\n                    addGuide = TRUE,\n                    guideHang = 0.05)\n\n\n\n# 读取表型数据\ntraits &lt;- read.csv(\"traits.csv\", row.names = 1)\n\n# 计算模块特征基因（ME）\nMEs &lt;- moduleEigengenes(expr_data_filtered, moduleColors)$eigengenes\nMEs &lt;- orderMEs(MEs)\n\n# 计算模块与表型的相关性\nmoduleTraitCor &lt;- cor(MEs, traits, use = \"p\")\nmoduleTraitPvalue &lt;- corPvalueStudent(moduleTraitCor, nrow(expr_data_filtered))\n\n# 可视化\ntextMatrix &lt;- paste(signif(moduleTraitCor, 2), \"\\n(\",\n                   signif(moduleTraitPvalue, 1), \")\", sep = \"\")\ndim(textMatrix) &lt;- dim(moduleTraitCor)\n\npar(mar = c(6, 8.5, 3, 3))\nlabeledHeatmap(Matrix = moduleTraitCor,\n               xLabels = names(traits),\n               yLabels = names(MEs),\n               ySymbols = names(MEs),\n               colorLabels = FALSE,\n               colors = blueWhiteRed(50),\n               textMatrix = textMatrix,\n               setStdMargins = FALSE,\n               cex.text = 0.5,\n               zlim = c(-1,1),\n               main = \"Module-trait relationships\")\n\n\n\n# 选择感兴趣的模块\nmodule &lt;- \"blue\"\ngenes &lt;- colnames(expr_data_filtered)[moduleColors == module]\n\n# 计算 TOM\nTOM &lt;- TOMsimilarityFromExpr(expr_data_filtered[, genes],\n                             power = 6)\n\n# 导出边信息\ncyt &lt;- exportNetworkToCytoscape(TOM,\n                                edgeFile = paste(\"CytoscapeInput-edges-\", module, \".txt\", sep=\"\"),\n                                nodeFile = paste(\"CytoscapeInput-nodes-\", module, \".txt\", sep=\"\"),\n                                weighted = TRUE,\n                                threshold = 0.02)\n\n\n\n\n\n\n\n# 对感兴趣的模块进行GO富集分析\nlibrary(clusterProfiler)\nlibrary(org.Hs.eg.db)\n\n# 提取模块基因\nmodule_genes &lt;- colnames(expr_data_filtered)[moduleColors == \"blue\"]\n\n# GO富集分析\nego &lt;- enrichGO(gene = module_genes,\n                OrgDb = org.Hs.eg.db,\n                keyType = \"SYMBOL\",\n                ont = \"BP\",\n                pAdjustMethod = \"BH\",\n                pvalueCutoff = 0.05,\n                qvalueCutoff = 0.05)\n\n# 可视化\nbarplot(ego, showCategory = 10)\ndotplot(ego, showCategory = 10)\n\n\n\n\n\n\n\n\n同一模块内的基因可能：\n\n参与相同的生物学过程\n受相同的转录调控\n在相同的细胞器中发挥作用\n\n\n\n\n\n\n模块内连接度最高的基因\n可能是该生物学过程的关键调控因子\n潜在的生物标志物或治疗靶点\n\n\n\n\n\n\n\n基础分析\n\n完成 WGCNA 分析流程\n识别基因模块\n分析模块与表型的关联\n\n进阶分析\n\n对关键模块进行功能富集分析\n识别 Hub 基因\n验证 Hub 基因的表达模式\n\n报告撰写\n\n详细记录分析步骤\n展示关键结果图表\n对模块功能进行生物学解读\n\n\n\n\n\n\nGrade4/computational_biology/experiments/Exp2/\n├── WGCNA.Rmd         # R Markdown 报告\n├── WGCNA.html        # 生成的 HTML 报告\n└── data/             # 数据文件\n\n\n\n\n\nLangfelder, P., & Horvath, S. (2008). WGCNA: an R package for weighted correlation network analysis. BMC Bioinformatics, 9(1), 559.\nWGCNA 官方教程\nZhang, B., & Horvath, S. (2005). A general framework for weighted gene co-expression network analysis. Statistical Applications in Genetics and Molecular Biology, 4(1).\n\n\n\n\n\n\n\n\n\n\n\nTip软阈值选择\n\n\n\n选择使 Scale-free topology fit R² 达到 0.8-0.9 的最小阈值。\n\n\n\n\n\n\n\n\nTip模块大小\n\n\n\n根据数据集大小调整 minModuleSize 参数，一般设为 30-50。\n\n\n\n\n\n\n\n\nWarning内存使用\n\n\n\nWGCNA 分析可能需要大量内存，建议在分析前清理 R 环境。\n\n\n\n← 上一个实验：PPI | 返回课程主页 | 下一个实验：MCL & RWR →",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验2 - WGCNA分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp2.html#实验简介",
+    "href": "Grade4/computational_biology/exp2.html#实验简介",
+    "title": "实验二：加权基因共表达网络分析（WGCNA）",
+    "section": "",
+    "text": "WGCNA (Weighted Gene Co-expression Network Analysis) 是一种系统生物学方法，用于描述不同样本间基因关联模式，识别高度协同变化的基因模块。",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验2 - WGCNA分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp2.html#实验目的",
+    "href": "Grade4/computational_biology/exp2.html#实验目的",
+    "title": "实验二：加权基因共表达网络分析（WGCNA）",
+    "section": "",
+    "text": "理解基因共表达网络的概念\n掌握 WGCNA 的分析流程\n学会识别基因模块\n了解模块与表型的关联分析",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验2 - WGCNA分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp2.html#理论背景",
+    "href": "Grade4/computational_biology/exp2.html#理论背景",
+    "title": "实验二：加权基因共表达网络分析（WGCNA）",
+    "section": "",
+    "text": "WGCNA 通过计算基因间的相关性，构建加权网络，并识别功能相关的基因模块。\n\n\n\n\n计算相似性矩阵：计算基因间的相关系数\n构建邻接矩阵：使用软阈值将相关系数转换为连接强度\n拓扑重叠矩阵（TOM）：衡量基因间的连接相似性\n层次聚类：识别基因模块\n模块-表型关联：分析模块与表型的相关性",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验2 - WGCNA分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp2.html#实验步骤",
+    "href": "Grade4/computational_biology/exp2.html#实验步骤",
+    "title": "实验二：加权基因共表达网络分析（WGCNA）",
+    "section": "",
+    "text": "# 加载 WGCNA 包\nlibrary(WGCNA)\nlibrary(ggplot2)\n\n# 允许多线程\nenableWGCNAThreads()\n\n# 读取表达数据\n# 行为基因，列为样本\nexpr_data &lt;- read.csv(\"expression_data.csv\", row.names = 1)\nexpr_data &lt;- t(expr_data)  # 转置：行为样本，列为基因\n\n# 检查缺失值\ngsg &lt;- goodSamplesGenes(expr_data, verbose = 3)\n\n# 过滤低表达基因\nexpr_data_filtered &lt;- expr_data[, gsg$goodGenes]\n\n\n\n# 计算不同软阈值下的网络拓扑\npowers &lt;- c(c(1:10), seq(from = 12, to = 20, by = 2))\nsft &lt;- pickSoftThreshold(expr_data_filtered,\n                         powerVector = powers,\n                         verbose = 5)\n\n# 可视化\npar(mfrow = c(1, 2))\nplot(sft$fitIndices[,1],\n     -sign(sft$fitIndices[,3]) * sft$fitIndices[,2],\n     xlab = \"Soft Threshold (power)\",\n     ylab = \"Scale Free Topology Model Fit, signed R^2\",\n     type = \"n\",\n     main = \"Scale independence\")\ntext(sft$fitIndices[,1],\n     -sign(sft$fitIndices[,3]) * sft$fitIndices[,2],\n     labels = powers,\n     col = \"red\")\nabline(h = 0.90, col = \"red\")\n\n\n\n# 一步法构建网络并识别模块\nnet &lt;- blockwiseModules(expr_data_filtered,\n                        power = 6,  # 选择的软阈值\n                        TOMType = \"unsigned\",\n                        minModuleSize = 30,\n                        reassignThreshold = 0,\n                        mergeCutHeight = 0.25,\n                        numericLabels = TRUE,\n                        pamRespectsDendro = FALSE,\n                        saveTOMs = TRUE,\n                        saveTOMFileBase = \"TOM\",\n                        verbose = 3)\n\n# 查看模块信息\ntable(net$colors)\n\n# 转换为颜色标签\nmoduleColors &lt;- labels2colors(net$colors)\n\n\n\n# 绘制基因树和模块\nplotDendroAndColors(net$dendrograms[[1]],\n                    moduleColors[net$blockGenes[[1]]],\n                    \"Module colors\",\n                    dendroLabels = FALSE,\n                    hang = 0.03,\n                    addGuide = TRUE,\n                    guideHang = 0.05)\n\n\n\n# 读取表型数据\ntraits &lt;- read.csv(\"traits.csv\", row.names = 1)\n\n# 计算模块特征基因（ME）\nMEs &lt;- moduleEigengenes(expr_data_filtered, moduleColors)$eigengenes\nMEs &lt;- orderMEs(MEs)\n\n# 计算模块与表型的相关性\nmoduleTraitCor &lt;- cor(MEs, traits, use = \"p\")\nmoduleTraitPvalue &lt;- corPvalueStudent(moduleTraitCor, nrow(expr_data_filtered))\n\n# 可视化\ntextMatrix &lt;- paste(signif(moduleTraitCor, 2), \"\\n(\",\n                   signif(moduleTraitPvalue, 1), \")\", sep = \"\")\ndim(textMatrix) &lt;- dim(moduleTraitCor)\n\npar(mar = c(6, 8.5, 3, 3))\nlabeledHeatmap(Matrix = moduleTraitCor,\n               xLabels = names(traits),\n               yLabels = names(MEs),\n               ySymbols = names(MEs),\n               colorLabels = FALSE,\n               colors = blueWhiteRed(50),\n               textMatrix = textMatrix,\n               setStdMargins = FALSE,\n               cex.text = 0.5,\n               zlim = c(-1,1),\n               main = \"Module-trait relationships\")\n\n\n\n# 选择感兴趣的模块\nmodule &lt;- \"blue\"\ngenes &lt;- colnames(expr_data_filtered)[moduleColors == module]\n\n# 计算 TOM\nTOM &lt;- TOMsimilarityFromExpr(expr_data_filtered[, genes],\n                             power = 6)\n\n# 导出边信息\ncyt &lt;- exportNetworkToCytoscape(TOM,\n                                edgeFile = paste(\"CytoscapeInput-edges-\", module, \".txt\", sep=\"\"),\n                                nodeFile = paste(\"CytoscapeInput-nodes-\", module, \".txt\", sep=\"\"),\n                                weighted = TRUE,\n                                threshold = 0.02)",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验2 - WGCNA分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp2.html#结果分析",
+    "href": "Grade4/computational_biology/exp2.html#结果分析",
+    "title": "实验二：加权基因共表达网络分析（WGCNA）",
+    "section": "",
+    "text": "# 对感兴趣的模块进行GO富集分析\nlibrary(clusterProfiler)\nlibrary(org.Hs.eg.db)\n\n# 提取模块基因\nmodule_genes &lt;- colnames(expr_data_filtered)[moduleColors == \"blue\"]\n\n# GO富集分析\nego &lt;- enrichGO(gene = module_genes,\n                OrgDb = org.Hs.eg.db,\n                keyType = \"SYMBOL\",\n                ont = \"BP\",\n                pAdjustMethod = \"BH\",\n                pvalueCutoff = 0.05,\n                qvalueCutoff = 0.05)\n\n# 可视化\nbarplot(ego, showCategory = 10)\ndotplot(ego, showCategory = 10)",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验2 - WGCNA分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp2.html#生物学解释",
+    "href": "Grade4/computational_biology/exp2.html#生物学解释",
+    "title": "实验二：加权基因共表达网络分析（WGCNA）",
+    "section": "",
+    "text": "同一模块内的基因可能：\n\n参与相同的生物学过程\n受相同的转录调控\n在相同的细胞器中发挥作用\n\n\n\n\n\n\n模块内连接度最高的基因\n可能是该生物学过程的关键调控因子\n潜在的生物标志物或治疗靶点",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验2 - WGCNA分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp2.html#作业要求",
+    "href": "Grade4/computational_biology/exp2.html#作业要求",
+    "title": "实验二：加权基因共表达网络分析（WGCNA）",
+    "section": "",
+    "text": "基础分析\n\n完成 WGCNA 分析流程\n识别基因模块\n分析模块与表型的关联\n\n进阶分析\n\n对关键模块进行功能富集分析\n识别 Hub 基因\n验证 Hub 基因的表达模式\n\n报告撰写\n\n详细记录分析步骤\n展示关键结果图表\n对模块功能进行生物学解读",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验2 - WGCNA分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp2.html#文件位置",
+    "href": "Grade4/computational_biology/exp2.html#文件位置",
+    "title": "实验二：加权基因共表达网络分析（WGCNA）",
+    "section": "",
+    "text": "Grade4/computational_biology/experiments/Exp2/\n├── WGCNA.Rmd         # R Markdown 报告\n├── WGCNA.html        # 生成的 HTML 报告\n└── data/             # 数据文件",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验2 - WGCNA分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp2.html#参考资料",
+    "href": "Grade4/computational_biology/exp2.html#参考资料",
+    "title": "实验二：加权基因共表达网络分析（WGCNA）",
+    "section": "",
+    "text": "Langfelder, P., & Horvath, S. (2008). WGCNA: an R package for weighted correlation network analysis. BMC Bioinformatics, 9(1), 559.\nWGCNA 官方教程\nZhang, B., & Horvath, S. (2005). A general framework for weighted gene co-expression network analysis. Statistical Applications in Genetics and Molecular Biology, 4(1).",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验2 - WGCNA分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp2.html#提示",
+    "href": "Grade4/computational_biology/exp2.html#提示",
+    "title": "实验二：加权基因共表达网络分析（WGCNA）",
+    "section": "",
+    "text": "Tip软阈值选择\n\n\n\n选择使 Scale-free topology fit R² 达到 0.8-0.9 的最小阈值。\n\n\n\n\n\n\n\n\nTip模块大小\n\n\n\n根据数据集大小调整 minModuleSize 参数，一般设为 30-50。\n\n\n\n\n\n\n\n\nWarning内存使用\n\n\n\nWGCNA 分析可能需要大量内存，建议在分析前清理 R 环境。\n\n\n\n← 上一个实验：PPI | 返回课程主页 | 下一个实验：MCL & RWR →",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验2 - WGCNA分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp4.html",
+    "href": "Grade4/computational_biology/exp4.html",
+    "title": "实验四：qPCR 数据分析",
+    "section": "",
+    "text": "qPCR（实时荧光定量 PCR）是分子生物学中常用的基因表达定量技术。本实验学习如何处理和分析 qPCR 数据。\n\n\n\n\n\n理解 qPCR 原理和数据格式\n掌握 Ct 值的处理方法\n学会相对表达量的计算（ΔΔCt 方法）\n进行统计检验和可视化\n\n\n\n\n\n\n\n实时荧光定量 PCR 通过实时监测 PCR 反应中荧光信号的变化来定量 DNA/RNA 模板。\n\n\n\nCt (Cycle threshold)：荧光信号达到设定阈值时的循环数。\n\nCt 值越小，表示起始模板量越多\nCt 值与起始模板量呈对数关系\n\n\n\n\n相对定量的标准方法：\n\\[\n\\Delta Ct = Ct_{目标基因} - Ct_{内参基因}\n\\]\n\\[\n\\Delta\\Delta Ct = \\Delta Ct_{实验组} - \\Delta Ct_{对照组}\n\\]\n\\[\n相对表达量 = 2^{-\\Delta\\Delta Ct}\n\\]\n\n\n\n\n\n\n\nlibrary(ggplot2)\nlibrary(dplyr)\nlibrary(tidyr)\n\n# 读取数据\nqpcr_data &lt;- read.csv(\"qPCR_data.csv\")\n\n# 查看数据结构\nhead(qpcr_data)\nstr(qpcr_data)\n\n# 数据格式示例：\n# Sample    Gene      Ct    Group\n# Sample1   GAPDH     18.5  Control\n# Sample1   Gene1     22.3  Control\n# ...\n\n\n\n# 检查技术重复的一致性\nqpcr_summary &lt;- qpcr_data %&gt;%\n  group_by(Sample, Gene, Group) %&gt;%\n  summarise(\n    mean_Ct = mean(Ct, na.rm = TRUE),\n    sd_Ct = sd(Ct, na.rm = TRUE),\n    cv = sd_Ct / mean_Ct * 100,  # 变异系数\n    .groups = \"drop\"\n  )\n\n# 标记CV过大的数据点（通常&gt;2%需要注意）\nqpcr_summary$qc_flag &lt;- ifelse(qpcr_summary$cv &gt; 2, \"Check\", \"Pass\")\n\n# 可视化技术重复的一致性\nggplot(qpcr_summary, aes(x = Gene, y = cv, fill = qc_flag)) +\n  geom_bar(stat = \"identity\") +\n  geom_hline(yintercept = 2, linetype = \"dashed\", color = \"red\") +\n  labs(title = \"Coefficient of Variation for Technical Replicates\",\n       x = \"Gene\",\n       y = \"CV (%)\") +\n  theme_minimal() +\n  theme(axis.text.x = element_text(angle = 45, hjust = 1))\n\n\n\n# 分离内参基因（假设为 GAPDH）\nhousekeeping_gene &lt;- \"GAPDH\"\n\n# 获取每个样本的内参 Ct 值\nhk_ct &lt;- qpcr_summary %&gt;%\n  filter(Gene == housekeeping_gene) %&gt;%\n  select(Sample, Group, hk_Ct = mean_Ct)\n\n# 计算 ΔCt\ndelta_ct &lt;- qpcr_summary %&gt;%\n  filter(Gene != housekeeping_gene) %&gt;%\n  left_join(hk_ct, by = c(\"Sample\", \"Group\")) %&gt;%\n  mutate(delta_Ct = mean_Ct - hk_Ct)\n\nhead(delta_ct)\n\n\n\n# 计算对照组的平均 ΔCt\ncontrol_delta_ct &lt;- delta_ct %&gt;%\n  filter(Group == \"Control\") %&gt;%\n  group_by(Gene) %&gt;%\n  summarise(control_mean_delta_Ct = mean(delta_Ct), .groups = \"drop\")\n\n# 计算 ΔΔCt\nddct_data &lt;- delta_ct %&gt;%\n  left_join(control_delta_ct, by = \"Gene\") %&gt;%\n  mutate(\n    delta_delta_Ct = delta_Ct - control_mean_delta_Ct,\n    relative_expression = 2^(-delta_delta_Ct)\n  )\n\nhead(ddct_data)\n\n\n\n# t检验比较实验组和对照组\nstat_results &lt;- ddct_data %&gt;%\n  group_by(Gene) %&gt;%\n  summarise(\n    control_mean = mean(relative_expression[Group == \"Control\"]),\n    treatment_mean = mean(relative_expression[Group == \"Treatment\"]),\n    fold_change = treatment_mean / control_mean,\n    p_value = t.test(relative_expression ~ Group)$p.value,\n    .groups = \"drop\"\n  ) %&gt;%\n  mutate(\n    significant = ifelse(p_value &lt; 0.05, \"Yes\", \"No\"),\n    regulation = case_when(\n      fold_change &gt; 1.5 & p_value &lt; 0.05 ~ \"Up\",\n      fold_change &lt; 0.67 & p_value &lt; 0.05 ~ \"Down\",\n      TRUE ~ \"No change\"\n    )\n  )\n\nprint(stat_results)\n\n\n\n\n\n# 计算均值和标准误\nplot_data &lt;- ddct_data %&gt;%\n  group_by(Gene, Group) %&gt;%\n  summarise(\n    mean_expr = mean(relative_expression),\n    se = sd(relative_expression) / sqrt(n()),\n    .groups = \"drop\"\n  )\n\n# 绘制条形图\nggplot(plot_data, aes(x = Gene, y = mean_expr, fill = Group)) +\n  geom_bar(stat = \"identity\", position = position_dodge(width = 0.9)) +\n  geom_errorbar(aes(ymin = mean_expr - se, ymax = mean_expr + se),\n                position = position_dodge(width = 0.9),\n                width = 0.25) +\n  geom_hline(yintercept = 1, linetype = \"dashed\", color = \"gray50\") +\n  labs(title = \"Relative Gene Expression\",\n       x = \"Gene\",\n       y = \"Relative Expression (2^-ΔΔCt)\",\n       fill = \"Group\") +\n  theme_minimal() +\n  theme(axis.text.x = element_text(angle = 45, hjust = 1))\n\n\n\nggplot(ddct_data, aes(x = Gene, y = relative_expression, fill = Group)) +\n  geom_boxplot() +\n  geom_jitter(position = position_jitterdodge(jitter.width = 0.2),\n              alpha = 0.5, size = 1) +\n  geom_hline(yintercept = 1, linetype = \"dashed\", color = \"gray50\") +\n  labs(title = \"Relative Gene Expression Distribution\",\n       x = \"Gene\",\n       y = \"Relative Expression (2^-ΔΔCt)\",\n       fill = \"Group\") +\n  theme_minimal() +\n  theme(axis.text.x = element_text(angle = 45, hjust = 1))\n\n\n\nggplot(stat_results, aes(x = log2(fold_change), y = -log10(p_value))) +\n  geom_point(aes(color = regulation), size = 3) +\n  scale_color_manual(values = c(\"Up\" = \"red\", \"Down\" = \"blue\", \"No change\" = \"gray\")) +\n  geom_vline(xintercept = c(-log2(1.5), log2(1.5)), linetype = \"dashed\") +\n  geom_hline(yintercept = -log10(0.05), linetype = \"dashed\") +\n  geom_text(aes(label = Gene), vjust = -0.5, size = 3) +\n  labs(title = \"Volcano Plot\",\n       x = \"log2(Fold Change)\",\n       y = \"-log10(p-value)\",\n       color = \"Regulation\") +\n  theme_minimal()\n\n\n\n\n\n\n\n\n\n= 1：表达量与对照组相同\n&gt; 1：表达上调\n&lt; 1：表达下调\n\n\n\n\n\nFC &gt; 1.5 且 p &lt; 0.05：显著上调\nFC &lt; 0.67 且 p &lt; 0.05：显著下调\n\n\n\n\n\n\n\n\n\n\n\n\nWarning实验设计\n\n\n\n\n确保技术重复（至少3次）\n生物学重复建议≥3个\n选择合适稳定的内参基因\n\n\n\n\n\n\n\n\n\nWarning数据质控\n\n\n\n\nCt &gt; 35 通常认为不可靠\n技术重复的 CV 应 &lt; 2%\n内参基因在不同组间应稳定\n\n\n\n\n\n\n\n\n\nTip内参基因选择\n\n\n\n常用内参基因：GAPDH、β-actin、18S rRNA\n内参基因应： - 表达稳定 - 不受实验条件影响 - 表达量适中\n\n\n\n\n\n\n\n数据分析\n\n导入并检查数据\n进行质量控制\n计算相对表达量\n\n统计分析\n\n进行 t 检验\n判断哪些基因显著差异表达\n计算 fold change\n\n结果可视化\n\n绘制条形图和箱线图\n添加误差线和统计显著性标记\n图表美观、标注清晰\n\n结果解释\n\n对差异基因的生物学意义进行讨论\n与已知文献比较\n提出进一步验证的思路\n\n\n\n\n\n\nGrade4/computational_biology/experiments/Exp4/\n├── Exp4.Rmd          # R Markdown 报告\n├── Exp4.html         # 生成的 HTML 报告\n└── qPCR_data.csv     # qPCR 数据\n\n\n\n\n\nLivak, K. J., & Schmittgen, T. D. (2001). Analysis of relative gene expression data using real-time quantitative PCR and the 2− ΔΔCT method. Methods, 25(4), 402-408.\nBustin, S. A., et al. (2009). The MIQE guidelines: minimum information for publication of quantitative real-time PCR experiments. Clinical Chemistry, 55(4), 611-622.\n\n\n\n\n\n\n\n\n\n\n\nTipPCR 效率\n\n\n\n本实验假设 PCR 效率为 100%（扩增效率 = 2）。如果效率不是 100%，需要使用修正公式：\n\\[相对表达量 = E^{-\\Delta\\Delta Ct}\\]\n其中 E 是实际的扩增效率。\n\n\n\n\n\n\n\n\nTip多重比较校正\n\n\n\n如果检测多个基因，考虑进行 Bonferroni 或 FDR 校正。\n\n\n\n← 上一个实验：MCL & RWR | 返回课程主页",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验4 - qPCR数据分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp4.html#实验简介",
+    "href": "Grade4/computational_biology/exp4.html#实验简介",
+    "title": "实验四：qPCR 数据分析",
+    "section": "",
+    "text": "qPCR（实时荧光定量 PCR）是分子生物学中常用的基因表达定量技术。本实验学习如何处理和分析 qPCR 数据。",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验4 - qPCR数据分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp4.html#实验目的",
+    "href": "Grade4/computational_biology/exp4.html#实验目的",
+    "title": "实验四：qPCR 数据分析",
+    "section": "",
+    "text": "理解 qPCR 原理和数据格式\n掌握 Ct 值的处理方法\n学会相对表达量的计算（ΔΔCt 方法）\n进行统计检验和可视化",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验4 - qPCR数据分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp4.html#理论背景",
+    "href": "Grade4/computational_biology/exp4.html#理论背景",
+    "title": "实验四：qPCR 数据分析",
+    "section": "",
+    "text": "实时荧光定量 PCR 通过实时监测 PCR 反应中荧光信号的变化来定量 DNA/RNA 模板。\n\n\n\nCt (Cycle threshold)：荧光信号达到设定阈值时的循环数。\n\nCt 值越小，表示起始模板量越多\nCt 值与起始模板量呈对数关系\n\n\n\n\n相对定量的标准方法：\n\\[\n\\Delta Ct = Ct_{目标基因} - Ct_{内参基因}\n\\]\n\\[\n\\Delta\\Delta Ct = \\Delta Ct_{实验组} - \\Delta Ct_{对照组}\n\\]\n\\[\n相对表达量 = 2^{-\\Delta\\Delta Ct}\n\\]",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验4 - qPCR数据分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp4.html#实验步骤",
+    "href": "Grade4/computational_biology/exp4.html#实验步骤",
+    "title": "实验四：qPCR 数据分析",
+    "section": "",
+    "text": "library(ggplot2)\nlibrary(dplyr)\nlibrary(tidyr)\n\n# 读取数据\nqpcr_data &lt;- read.csv(\"qPCR_data.csv\")\n\n# 查看数据结构\nhead(qpcr_data)\nstr(qpcr_data)\n\n# 数据格式示例：\n# Sample    Gene      Ct    Group\n# Sample1   GAPDH     18.5  Control\n# Sample1   Gene1     22.3  Control\n# ...\n\n\n\n# 检查技术重复的一致性\nqpcr_summary &lt;- qpcr_data %&gt;%\n  group_by(Sample, Gene, Group) %&gt;%\n  summarise(\n    mean_Ct = mean(Ct, na.rm = TRUE),\n    sd_Ct = sd(Ct, na.rm = TRUE),\n    cv = sd_Ct / mean_Ct * 100,  # 变异系数\n    .groups = \"drop\"\n  )\n\n# 标记CV过大的数据点（通常&gt;2%需要注意）\nqpcr_summary$qc_flag &lt;- ifelse(qpcr_summary$cv &gt; 2, \"Check\", \"Pass\")\n\n# 可视化技术重复的一致性\nggplot(qpcr_summary, aes(x = Gene, y = cv, fill = qc_flag)) +\n  geom_bar(stat = \"identity\") +\n  geom_hline(yintercept = 2, linetype = \"dashed\", color = \"red\") +\n  labs(title = \"Coefficient of Variation for Technical Replicates\",\n       x = \"Gene\",\n       y = \"CV (%)\") +\n  theme_minimal() +\n  theme(axis.text.x = element_text(angle = 45, hjust = 1))\n\n\n\n# 分离内参基因（假设为 GAPDH）\nhousekeeping_gene &lt;- \"GAPDH\"\n\n# 获取每个样本的内参 Ct 值\nhk_ct &lt;- qpcr_summary %&gt;%\n  filter(Gene == housekeeping_gene) %&gt;%\n  select(Sample, Group, hk_Ct = mean_Ct)\n\n# 计算 ΔCt\ndelta_ct &lt;- qpcr_summary %&gt;%\n  filter(Gene != housekeeping_gene) %&gt;%\n  left_join(hk_ct, by = c(\"Sample\", \"Group\")) %&gt;%\n  mutate(delta_Ct = mean_Ct - hk_Ct)\n\nhead(delta_ct)\n\n\n\n# 计算对照组的平均 ΔCt\ncontrol_delta_ct &lt;- delta_ct %&gt;%\n  filter(Group == \"Control\") %&gt;%\n  group_by(Gene) %&gt;%\n  summarise(control_mean_delta_Ct = mean(delta_Ct), .groups = \"drop\")\n\n# 计算 ΔΔCt\nddct_data &lt;- delta_ct %&gt;%\n  left_join(control_delta_ct, by = \"Gene\") %&gt;%\n  mutate(\n    delta_delta_Ct = delta_Ct - control_mean_delta_Ct,\n    relative_expression = 2^(-delta_delta_Ct)\n  )\n\nhead(ddct_data)\n\n\n\n# t检验比较实验组和对照组\nstat_results &lt;- ddct_data %&gt;%\n  group_by(Gene) %&gt;%\n  summarise(\n    control_mean = mean(relative_expression[Group == \"Control\"]),\n    treatment_mean = mean(relative_expression[Group == \"Treatment\"]),\n    fold_change = treatment_mean / control_mean,\n    p_value = t.test(relative_expression ~ Group)$p.value,\n    .groups = \"drop\"\n  ) %&gt;%\n  mutate(\n    significant = ifelse(p_value &lt; 0.05, \"Yes\", \"No\"),\n    regulation = case_when(\n      fold_change &gt; 1.5 & p_value &lt; 0.05 ~ \"Up\",\n      fold_change &lt; 0.67 & p_value &lt; 0.05 ~ \"Down\",\n      TRUE ~ \"No change\"\n    )\n  )\n\nprint(stat_results)\n\n\n\n\n\n# 计算均值和标准误\nplot_data &lt;- ddct_data %&gt;%\n  group_by(Gene, Group) %&gt;%\n  summarise(\n    mean_expr = mean(relative_expression),\n    se = sd(relative_expression) / sqrt(n()),\n    .groups = \"drop\"\n  )\n\n# 绘制条形图\nggplot(plot_data, aes(x = Gene, y = mean_expr, fill = Group)) +\n  geom_bar(stat = \"identity\", position = position_dodge(width = 0.9)) +\n  geom_errorbar(aes(ymin = mean_expr - se, ymax = mean_expr + se),\n                position = position_dodge(width = 0.9),\n                width = 0.25) +\n  geom_hline(yintercept = 1, linetype = \"dashed\", color = \"gray50\") +\n  labs(title = \"Relative Gene Expression\",\n       x = \"Gene\",\n       y = \"Relative Expression (2^-ΔΔCt)\",\n       fill = \"Group\") +\n  theme_minimal() +\n  theme(axis.text.x = element_text(angle = 45, hjust = 1))\n\n\n\nggplot(ddct_data, aes(x = Gene, y = relative_expression, fill = Group)) +\n  geom_boxplot() +\n  geom_jitter(position = position_jitterdodge(jitter.width = 0.2),\n              alpha = 0.5, size = 1) +\n  geom_hline(yintercept = 1, linetype = \"dashed\", color = \"gray50\") +\n  labs(title = \"Relative Gene Expression Distribution\",\n       x = \"Gene\",\n       y = \"Relative Expression (2^-ΔΔCt)\",\n       fill = \"Group\") +\n  theme_minimal() +\n  theme(axis.text.x = element_text(angle = 45, hjust = 1))\n\n\n\nggplot(stat_results, aes(x = log2(fold_change), y = -log10(p_value))) +\n  geom_point(aes(color = regulation), size = 3) +\n  scale_color_manual(values = c(\"Up\" = \"red\", \"Down\" = \"blue\", \"No change\" = \"gray\")) +\n  geom_vline(xintercept = c(-log2(1.5), log2(1.5)), linetype = \"dashed\") +\n  geom_hline(yintercept = -log10(0.05), linetype = \"dashed\") +\n  geom_text(aes(label = Gene), vjust = -0.5, size = 3) +\n  labs(title = \"Volcano Plot\",\n       x = \"log2(Fold Change)\",\n       y = \"-log10(p-value)\",\n       color = \"Regulation\") +\n  theme_minimal()",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验4 - qPCR数据分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp4.html#结果解释",
+    "href": "Grade4/computational_biology/exp4.html#结果解释",
+    "title": "实验四：qPCR 数据分析",
+    "section": "",
+    "text": "= 1：表达量与对照组相同\n&gt; 1：表达上调\n&lt; 1：表达下调\n\n\n\n\n\nFC &gt; 1.5 且 p &lt; 0.05：显著上调\nFC &lt; 0.67 且 p &lt; 0.05：显著下调",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验4 - qPCR数据分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp4.html#注意事项",
+    "href": "Grade4/computational_biology/exp4.html#注意事项",
+    "title": "实验四：qPCR 数据分析",
+    "section": "",
+    "text": "Warning实验设计\n\n\n\n\n确保技术重复（至少3次）\n生物学重复建议≥3个\n选择合适稳定的内参基因\n\n\n\n\n\n\n\n\n\nWarning数据质控\n\n\n\n\nCt &gt; 35 通常认为不可靠\n技术重复的 CV 应 &lt; 2%\n内参基因在不同组间应稳定\n\n\n\n\n\n\n\n\n\nTip内参基因选择\n\n\n\n常用内参基因：GAPDH、β-actin、18S rRNA\n内参基因应： - 表达稳定 - 不受实验条件影响 - 表达量适中",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验4 - qPCR数据分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp4.html#作业要求",
+    "href": "Grade4/computational_biology/exp4.html#作业要求",
+    "title": "实验四：qPCR 数据分析",
+    "section": "",
+    "text": "数据分析\n\n导入并检查数据\n进行质量控制\n计算相对表达量\n\n统计分析\n\n进行 t 检验\n判断哪些基因显著差异表达\n计算 fold change\n\n结果可视化\n\n绘制条形图和箱线图\n添加误差线和统计显著性标记\n图表美观、标注清晰\n\n结果解释\n\n对差异基因的生物学意义进行讨论\n与已知文献比较\n提出进一步验证的思路",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验4 - qPCR数据分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp4.html#文件位置",
+    "href": "Grade4/computational_biology/exp4.html#文件位置",
+    "title": "实验四：qPCR 数据分析",
+    "section": "",
+    "text": "Grade4/computational_biology/experiments/Exp4/\n├── Exp4.Rmd          # R Markdown 报告\n├── Exp4.html         # 生成的 HTML 报告\n└── qPCR_data.csv     # qPCR 数据",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验4 - qPCR数据分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp4.html#参考资料",
+    "href": "Grade4/computational_biology/exp4.html#参考资料",
+    "title": "实验四：qPCR 数据分析",
+    "section": "",
+    "text": "Livak, K. J., & Schmittgen, T. D. (2001). Analysis of relative gene expression data using real-time quantitative PCR and the 2− ΔΔCT method. Methods, 25(4), 402-408.\nBustin, S. A., et al. (2009). The MIQE guidelines: minimum information for publication of quantitative real-time PCR experiments. Clinical Chemistry, 55(4), 611-622.",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验4 - qPCR数据分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp4.html#提示",
+    "href": "Grade4/computational_biology/exp4.html#提示",
+    "title": "实验四：qPCR 数据分析",
+    "section": "",
+    "text": "TipPCR 效率\n\n\n\n本实验假设 PCR 效率为 100%（扩增效率 = 2）。如果效率不是 100%，需要使用修正公式：\n\\[相对表达量 = E^{-\\Delta\\Delta Ct}\\]\n其中 E 是实际的扩增效率。\n\n\n\n\n\n\n\n\nTip多重比较校正\n\n\n\n如果检测多个基因，考虑进行 Bonferroni 或 FDR 校正。\n\n\n\n← 上一个实验：MCL & RWR | 返回课程主页",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验4 - qPCR数据分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_molecular_biology/exam-info.html",
+    "href": "Grade4/computational_molecular_biology/exam-info.html",
+    "title": "计算分子生物学 - 考试说明",
+    "section": "",
+    "text": "考核项目\n分值占比\n备注\n\n\n\n\n笔试\n50%\n及格线：60分\n\n\n爱课平台作业\n25%\n平均分 80-85\n\n\n爱课平台测试\n25%\n平均分 80-85\n\n\n\n\n\n\n\n\n\nWarning及格要求\n\n\n\n笔试成绩需达到 60分 才能及格！\n\n\n\n\n\n\n笔试题目主要来源：\n\n爱课平台作业题\nPPT 中的思考题\n课后作业\n测验题\n\n\n\n\n\n\n\n\n\n\n\nImportant大题考点（必看）\n\n\n\n根据考试情况，大题主要考察以下内容：\n\n反序排序 - 排列的反转操作与距离计算\n系统进化树构建 - UPGMA、NJ 等方法\n字符串问题 - 欧拉回路、哈密尔顿回路等图论问题\n\n\n\n\n\n\n\n\n\n\n\n\n\nTip复习建议\n\n\n\n重点复习以下三部分内容：\n\n课后作业 - 认真完成并理解每道题\n爱课平台 - 作业和测试题目\n自测题PPT - 两个自测题PPT要仔细做\n\n\n\n\n\n\n\n\n\nTip原题率\n\n\n\n根据往届经验，原题率还可以，认真复习上述内容基本能覆盖考试范围。\n\n\n\n\n\n\n\n第一轮：过一遍所有课后作业和爱课平台题目\n第二轮：重点攻克自测题PPT\n第三轮：回顾PPT中的思考题，确保理解\n\n\n\n\n\n\n\n\n阶段\n内容\n建议时间\n\n\n\n\n第一阶段\n爱课平台作业回顾\n2-3天\n\n\n第二阶段\n自测题PPT练习\n2天\n\n\n第三阶段\nPPT思考题整理\n1-2天\n\n\n第四阶段\n查漏补缺\n1天\n\n\n\n\n\n\n\n\n\n\nNote祝大家考试顺利！\n\n\n\n好好复习，相信自己，加油！\n\n\n\n← 返回计算分子生物学 | 返回大四课程",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算分子生物学",
+      "考试说明"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_molecular_biology/exam-info.html#成绩构成",
+    "href": "Grade4/computational_molecular_biology/exam-info.html#成绩构成",
+    "title": "计算分子生物学 - 考试说明",
+    "section": "",
+    "text": "考核项目\n分值占比\n备注\n\n\n\n\n笔试\n50%\n及格线：60分\n\n\n爱课平台作业\n25%\n平均分 80-85\n\n\n爱课平台测试\n25%\n平均分 80-85\n\n\n\n\n\n\n\n\n\nWarning及格要求\n\n\n\n笔试成绩需达到 60分 才能及格！",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算分子生物学",
+      "考试说明"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_molecular_biology/exam-info.html#笔试题型与来源",
+    "href": "Grade4/computational_molecular_biology/exam-info.html#笔试题型与来源",
+    "title": "计算分子生物学 - 考试说明",
+    "section": "",
+    "text": "笔试题目主要来源：\n\n爱课平台作业题\nPPT 中的思考题\n课后作业\n测验题",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算分子生物学",
+      "考试说明"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_molecular_biology/exam-info.html#考试大题重点",
+    "href": "Grade4/computational_molecular_biology/exam-info.html#考试大题重点",
+    "title": "计算分子生物学 - 考试说明",
+    "section": "",
+    "text": "Important大题考点（必看）\n\n\n\n根据考试情况，大题主要考察以下内容：\n\n反序排序 - 排列的反转操作与距离计算\n系统进化树构建 - UPGMA、NJ 等方法\n字符串问题 - 欧拉回路、哈密尔顿回路等图论问题",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算分子生物学",
+      "考试说明"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_molecular_biology/exam-info.html#复习重点",
+    "href": "Grade4/computational_molecular_biology/exam-info.html#复习重点",
+    "title": "计算分子生物学 - 考试说明",
+    "section": "",
+    "text": "Tip复习建议\n\n\n\n重点复习以下三部分内容：\n\n课后作业 - 认真完成并理解每道题\n爱课平台 - 作业和测试题目\n自测题PPT - 两个自测题PPT要仔细做\n\n\n\n\n\n\n\n\n\nTip原题率\n\n\n\n根据往届经验，原题率还可以，认真复习上述内容基本能覆盖考试范围。",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算分子生物学",
+      "考试说明"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_molecular_biology/exam-info.html#复习策略",
+    "href": "Grade4/computational_molecular_biology/exam-info.html#复习策略",
+    "title": "计算分子生物学 - 考试说明",
+    "section": "",
+    "text": "第一轮：过一遍所有课后作业和爱课平台题目\n第二轮：重点攻克自测题PPT\n第三轮：回顾PPT中的思考题，确保理解",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算分子生物学",
+      "考试说明"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_molecular_biology/exam-info.html#时间安排建议",
+    "href": "Grade4/computational_molecular_biology/exam-info.html#时间安排建议",
+    "title": "计算分子生物学 - 考试说明",
+    "section": "",
+    "text": "阶段\n内容\n建议时间\n\n\n\n\n第一阶段\n爱课平台作业回顾\n2-3天\n\n\n第二阶段\n自测题PPT练习\n2天\n\n\n第三阶段\nPPT思考题整理\n1-2天\n\n\n第四阶段\n查漏补缺\n1天\n\n\n\n\n\n\n\n\n\n\nNote祝大家考试顺利！\n\n\n\n好好复习，相信自己，加油！\n\n\n\n← 返回计算分子生物学 | 返回大四课程",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算分子生物学",
+      "考试说明"
+    ]
+  },
+  {
+    "objectID": "Grade4/index.html",
+    "href": "Grade4/index.html",
+    "title": "大四课程",
+    "section": "",
+    "text": "欢迎来到大四课程资料页面！\n本页面汇总了大四阶段各门课程的学习资料、实验代码和相关文档。\n\n\n\n\n\n课程简介：计算生物学是生物信息学专业的核心课程，主要学习使用计算方法分析生物数据，包括网络分析、基因表达分析等。\n主要内容：\n\n蛋白质相互作用网络（PPI）分析\n加权基因共表达网络分析（WGCNA）\n网络聚类算法（MCL）\n随机游走算法（RWR）\nqPCR 数据分析\n\n实验数量：4 个\n查看详情 →\n\n\n\n\n课程简介：学习使用计算方法进行药物设计和虚拟筛选，包括分子对接、QSAR建模等。\n主要内容：\n\n分子对接\n虚拟筛选\nQSAR 建模\n药物-靶点预测\n\n查看详情 →\n\n\n\n\n课程简介：学习分子水平的计算模拟方法，包括分子动力学模拟、蛋白质结构预测等。\n主要内容：\n\n分子动力学模拟\n蛋白质结构预测\n同源建模\n分子力场\n\n查看详情 →\n\n\n\n\n课程简介：帮助学生了解求职流程，掌握简历制作和面试技巧，为就业做好准备。\n主要内容：\n\n个人简历制作\nAI 模拟面试\n求职渠道与技巧\n职业规划指导\n\n考核方式：\n\n平时作业：个人简历 + AI 面试\n期末考试：线上机考（37 题，满分 100 分）\n\n判断题 15 题（30 分）\n单选题 15 题（30 分）\n多选题 5 题（15 分）\n简答题 2 题（25 分）\n\n\n查看详情 →\n\n\n\n\n\n\n\n大四上学期课程较多，建议：\n\n提前预习：上课前浏览课件和相关资料\n及时复习：课后及时整理笔记\n动手实践：每个实验都要亲自运行代码\n小组讨论：与同学交流学习心得\n\n\n\n\n\n理解基本原理和算法思想\n掌握 R 和 Python 编程\n学会数据分析和可视化\n培养科研思维和问题解决能力\n\n\n\n\n\n\n各门课程通常包括：\n\n平时作业（20-30%）\n实验报告（30-40%）\n期末考试/论文（30-50%）\n\n\n\n\n\n\n\nTip考试准备\n\n\n\n\n整理每门课的知识点\n复习实验原理和代码\n查看往年考试题型\n多与同学交流讨论\n\n\n\n\n\n\n\n\n\n所有实验代码都保存在 Grade4/ 目录下：\nGrade4/\n├── computational_biology/\n│   └── experiments/\n│       ├── Exp1/    # PPI 网络分析\n│       ├── Exp2/    # WGCNA 分析\n│       ├── Exp3/    # MCL & RWR\n│       └── Exp4/    # qPCR 分析\n├── CADD/\n└── computational_molecular_biology/\n\n\n\n本文档网站提供了详细的学习指导和实验说明。\n\n\n\n\n\n\n\n\n《生物信息学》- 李霞、雷健波\n《Bioinformatics and Functional Genomics》- Jonathan Pevsner\n《An Introduction to Systems Biology》- Uri Alon\n\n\n\n\n\nBioconductor - R 生物信息学包\nBiopython - Python 生物信息学库\n生信技能树 - 中文生信学习社区\n\n\n\n\n\n\n遇到问题？\n\n在 Discussions 中提问\n在 Issues 中报告问题\n发邮件给学长学姐：hinna01@163.com\n\n\n\n祝大家学习顺利！\n返回首页",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "大四课程总览"
+    ]
+  },
+  {
+    "objectID": "Grade4/index.html#课程列表",
+    "href": "Grade4/index.html#课程列表",
+    "title": "大四课程",
+    "section": "",
+    "text": "课程简介：计算生物学是生物信息学专业的核心课程，主要学习使用计算方法分析生物数据，包括网络分析、基因表达分析等。\n主要内容：\n\n蛋白质相互作用网络（PPI）分析\n加权基因共表达网络分析（WGCNA）\n网络聚类算法（MCL）\n随机游走算法（RWR）\nqPCR 数据分析\n\n实验数量：4 个\n查看详情 →\n\n\n\n\n课程简介：学习使用计算方法进行药物设计和虚拟筛选，包括分子对接、QSAR建模等。\n主要内容：\n\n分子对接\n虚拟筛选\nQSAR 建模\n药物-靶点预测\n\n查看详情 →\n\n\n\n\n课程简介：学习分子水平的计算模拟方法，包括分子动力学模拟、蛋白质结构预测等。\n主要内容：\n\n分子动力学模拟\n蛋白质结构预测\n同源建模\n分子力场\n\n查看详情 →\n\n\n\n\n课程简介：帮助学生了解求职流程，掌握简历制作和面试技巧，为就业做好准备。\n主要内容：\n\n个人简历制作\nAI 模拟面试\n求职渠道与技巧\n职业规划指导\n\n考核方式：\n\n平时作业：个人简历 + AI 面试\n期末考试：线上机考（37 题，满分 100 分）\n\n判断题 15 题（30 分）\n单选题 15 题（30 分）\n多选题 5 题（15 分）\n简答题 2 题（25 分）\n\n\n查看详情 →",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "大四课程总览"
+    ]
+  },
+  {
+    "objectID": "Grade4/index.html#学习建议",
+    "href": "Grade4/index.html#学习建议",
+    "title": "大四课程",
+    "section": "",
+    "text": "大四上学期课程较多，建议：\n\n提前预习：上课前浏览课件和相关资料\n及时复习：课后及时整理笔记\n动手实践：每个实验都要亲自运行代码\n小组讨论：与同学交流学习心得\n\n\n\n\n\n理解基本原理和算法思想\n掌握 R 和 Python 编程\n学会数据分析和可视化\n培养科研思维和问题解决能力",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "大四课程总览"
+    ]
+  },
+  {
+    "objectID": "Grade4/index.html#考核方式",
+    "href": "Grade4/index.html#考核方式",
+    "title": "大四课程",
+    "section": "",
+    "text": "各门课程通常包括：\n\n平时作业（20-30%）\n实验报告（30-40%）\n期末考试/论文（30-50%）\n\n\n\n\n\n\n\nTip考试准备\n\n\n\n\n整理每门课的知识点\n复习实验原理和代码\n查看往年考试题型\n多与同学交流讨论",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "大四课程总览"
+    ]
+  },
+  {
+    "objectID": "Grade4/index.html#资源导航",
+    "href": "Grade4/index.html#资源导航",
+    "title": "大四课程",
+    "section": "",
+    "text": "所有实验代码都保存在 Grade4/ 目录下：\nGrade4/\n├── computational_biology/\n│   └── experiments/\n│       ├── Exp1/    # PPI 网络分析\n│       ├── Exp2/    # WGCNA 分析\n│       ├── Exp3/    # MCL & RWR\n│       └── Exp4/    # qPCR 分析\n├── CADD/\n└── computational_molecular_biology/\n\n\n\n本文档网站提供了详细的学习指导和实验说明。",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "大四课程总览"
+    ]
+  },
+  {
+    "objectID": "Grade4/index.html#学习资源",
+    "href": "Grade4/index.html#学习资源",
+    "title": "大四课程",
+    "section": "",
+    "text": "《生物信息学》- 李霞、雷健波\n《Bioinformatics and Functional Genomics》- Jonathan Pevsner\n《An Introduction to Systems Biology》- Uri Alon\n\n\n\n\n\nBioconductor - R 生物信息学包\nBiopython - Python 生物信息学库\n生信技能树 - 中文生信学习社区",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "大四课程总览"
+    ]
+  },
+  {
+    "objectID": "Grade4/index.html#互助学习",
+    "href": "Grade4/index.html#互助学习",
+    "title": "大四课程",
+    "section": "",
+    "text": "遇到问题？\n\n在 Discussions 中提问\n在 Issues 中报告问题\n发邮件给学长学姐：hinna01@163.com\n\n\n\n祝大家学习顺利！\n返回首页",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "大四课程总览"
+    ]
+  },
+  {
+    "objectID": "Rbase/L7_ggplot2.html",
+    "href": "Rbase/L7_ggplot2.html",
+    "title": "Data Visualization with ggplot2",
+    "section": "",
+    "text": "In the previous sections, we introduced R data structures, data manipulation (tidyverse), control flow, and function writing. Now let’s learn how to create elegant and professional data visualizations using ggplot2.\nggplot2 is a core package of the tidyverse ecosystem, based on Leland Wilkinson’s Grammar of Graphics. Its core idea is: Deconstruct graphs into independent layers, and build complex visualizations by combining them.\n\n\n\n\n\n\nggplot2 decomposes a plot into the following components:\n\nData: The data frame to visualize\nAesthetics (aes): Mapping of data variables to visual properties (x, y, color, size, etc.)\nGeometries (Geoms): The geometric representation of data (points, lines, bars, etc.)\nStatistics (Stats): Statistical transformations of the data (counting, smoothing, etc.)\nScales: Controls the details of aesthetic mappings (color schemes, axis limits, etc.)\nCoordinate systems: How data points are mapped to the 2D plane\nFacets: Grouping data to create multiple subplots\nThemes: Controls the overall appearance of the plot\n\n\n\n\n\nggplot(data = &lt;DATA&gt;, mapping = aes(&lt;MAPPINGS&gt;)) +\n  &lt;GEOM_FUNCTION&gt;() +\n  &lt;SCALE_FUNCTION&gt;() +\n  &lt;FACET_FUNCTION&gt;() +\n  &lt;THEME_FUNCTION&gt;()\nKey Points: - Use the + sign to chain layers together (not the pipe operator %&gt;% or |&gt;) - ggplot() initializes the plot object and specifies global data/aesthetics - Each geom_*() function adds a new geometric layer\n\n\n\n\n\n\n\n# Install (if not already installed)\n# install.packages(\"ggplot2\")\n\nlibrary(ggplot2)\nlibrary(dplyr)  \n\n\n\n\nWe use the built-in mpg dataset (car fuel efficiency data) as an example.\n# View data\nhead(mpg)\n\n# Basic scatter plot: Engine displacement vs Highway MPG\nggplot(data = mpg, mapping = aes(x = displ, y = hwy)) +\n  geom_point()\nExplanation: - ggplot(): Initializes the plot - aes(x = displ, y = hwy): Maps displ to the x-axis and hwy to the y-axis - geom_point(): Represents data as points\n\n\n\n\n# Color by vehicle class\nggplot(mpg, aes(x = displ, y = hwy, color = class)) +\n  geom_point()\nColors are automatically grouped by the class variable, generating a legend.\n\n\n\n\n# Map dot size to number of cylinders, add transparency\nggplot(mpg, aes(x = displ, y = hwy, color = class, size = cyl)) +\n  geom_point(alpha = 0.6)\nNote: - alpha controls transparency (0-1). It can be mapped in aes() or passed as a fixed parameter. - When size is mapped to a numeric variable, the point size will scale with the values.\n\n\n\n\n\n\n\nIdeal for displaying the relationship between two continuous variables.\nset.seed(123)\ngene_expr &lt;- data.frame(\n  gene = paste0(\"Gene\", 1:100),\n  sample_A = rnorm(100, mean = 5, sd = 2),\n  sample_B = rnorm(100, mean = 5, sd = 2),\n  significant = sample(c(\"Sig\", \"Not Sig\"), 100, replace = TRUE, prob = c(0.3, 0.7))\n)\n\nggplot(gene_expr, aes(x = sample_A, y = sample_B, color = significant)) +\n  geom_point(size = 2, alpha = 0.7) +\n  geom_abline(slope = 1, intercept = 0, linetype = \"dashed\", color = \"gray50\") +\n  labs(title = \"Gene Expression Correlation\",\n       x = \"Sample A (log2 expression)\",\n       y = \"Sample B (log2 expression)\") +\n  theme_bw()\n\n\n\n\nIdeal for time series or ordered data.\n# Example: qPCR timeseries\ntime_series &lt;- data.frame(\n  time = rep(0:10, 3),\n  expression = c(1 * 2^(0:10 * 0.3),  # Gene1\n                 1 * 2^(0:10 * 0.5),  # Gene2\n                 1 * 2^(0:10 * 0.2)), # Gene3\n  gene = rep(c(\"Gene1\", \"Gene2\", \"Gene3\"), each = 11)\n)\n\nggplot(time_series, aes(x = time, y = expression, color = gene)) +\n  geom_line(linewidth = 1) +\n  geom_point(size = 2) +\n  scale_y_log10() +  # Log scale\n  labs(title = \"Gene Expression Time Series\",\n       x = \"Time (hours)\",\n       y = \"Expression (log scale)\") +\n  theme_minimal()\n\n\n\n\n\ngeom_bar(): Automatically counts occurrences, used for categorical variables\ngeom_col(): Uses raw y values directly, used for pre-summarized data\n\n# geom_bar: Automatic counting\nggplot(mpg, aes(x = class)) +\n  geom_bar(fill = \"steelblue\") +\n  labs(title = \"Vehicle Class Distribution\", x = \"Class\", y = \"Count\") +\n  theme_classic()\n# geom_col: Using pre-calculated values\npathway_counts &lt;- data.frame(\n  pathway = c(\"MAPK\", \"PI3K-AKT\", \"WNT\", \"Notch\", \"TGF-beta\"),\n  gene_count = c(45, 38, 25, 18, 22)\n)\n\nggplot(pathway_counts, aes(x = reorder(pathway, gene_count), y = gene_count)) +\n  geom_col(fill = \"coral\") +\n  coord_flip() +  # Horizontal bar plot\n  labs(title = \"Signal Pathway Gene Counts\", x = NULL, y = \"Gene Count\") +\n  theme_minimal()\n\n\n\n\nDisplays data distribution, median, quartiles, and outliers.\n# Example: Gene expression across tissues\ntissue_expr &lt;- data.frame(\n  tissue = rep(c(\"Liver\", \"Brain\", \"Muscle\", \"Heart\"), each = 50),\n  expression = c(rnorm(50, 8, 2), rnorm(50, 6, 1.5), \n                 rnorm(50, 7, 2.5), rnorm(50, 9, 1.8))\n)\n\nggplot(tissue_expr, aes(x = tissue, y = expression, fill = tissue)) +\n  geom_boxplot(alpha = 0.7) +\n  geom_jitter(width = 0.2, alpha = 0.3, size = 1) +  # Add raw data points\n  labs(title = \"Gene Expression by Tissue\",\n       x = \"Tissue Type\", y = \"Expression (log2)\") +\n  theme_bw() +\n  theme(legend.position = \"none\")\n\n\n\n\nCombines advantages of boxplots and density plots.\nggplot(tissue_expr, aes(x = tissue, y = expression, fill = tissue)) +\n  geom_violin(alpha = 0.7) +\n  geom_boxplot(width = 0.1, fill = \"white\", outlier.shape = NA) +\n  labs(title = \"Gene Expression Distribution (Violin Plot)\",\n       x = \"Tissue Type\", y = \"Expression (log2)\") +\n  theme_minimal() +\n  theme(legend.position = \"none\")\n\n\n\n\nDisplays the distribution of a single continuous variable.\nggplot(gene_expr, aes(x = sample_A)) +\n  geom_histogram(bins = 20, fill = \"skyblue\", color = \"black\", alpha = 0.7) +\n  geom_vline(xintercept = mean(gene_expr$sample_A), \n             linetype = \"dashed\", color = \"red\", linewidth = 1) +\n  labs(title = \"Gene Expression Distribution\",\n       x = \"Expression (log2)\", y = \"Frequency\") +\n  theme_classic()\n\n\n\n\nA smoothed version of the histogram.\nggplot(tissue_expr, aes(x = expression, fill = tissue)) +\n  geom_density(alpha = 0.5) +\n  labs(title = \"Gene Expression Density by Tissue\",\n       x = \"Expression (log2)\", y = \"Density\") +\n  theme_minimal()\n\n\n\n\n\n\n\n# Global mapping: Shared across all layers\nggplot(mpg, aes(x = displ, y = hwy, color = class)) +\n  geom_point() +\n  geom_smooth(method = \"lm\", se = FALSE)  # Inherits color mapping\n\n# Local mapping: Applied to a specific layer\nggplot(mpg, aes(x = displ, y = hwy)) +\n  geom_point(aes(color = class)) +  # Only points have colors\n  geom_smooth(method = \"lm\", se = FALSE, color = \"black\")  # Fixed black line\n\n\n\n\n# Incorrect example: Fixed value inside aes()\nggplot(mpg, aes(x = displ, y = hwy)) +\n  geom_point(aes(color = \"blue\"))  # Error! Will be treated as a variable mapping\n\n# Correct example: Fixed value outside aes()\nggplot(mpg, aes(x = displ, y = hwy)) +\n  geom_point(color = \"blue\", size = 3)\n\n\n\n\n\n\n\nProperty\nDescription\nApplicable Geom\n\n\n\n\nx, y\nCoordinate axis position\nAll\n\n\ncolor\nPoint/line color\npoint, line, text\n\n\nfill\nFill color\nbar, boxplot, violin, area\n\n\nsize\nPoint/line size\npoint, line, text\n\n\nalpha\nTransparency (0-1)\nAll\n\n\nshape\nPoint shape\npoint\n\n\nlinetype\nLine pattern\nline, smooth\n\n\n\n\n\n\n\n\nFaceting creates multiple subplots based on a categorical variable.\n\n\nWraps subplots based on a single variable into multiple rows/cols.\nggplot(mpg, aes(x = displ, y = hwy)) +\n  geom_point() +\n  facet_wrap(~ class, nrow = 2) +\n  labs(title = \"Faceted by Vehicle Class\") +\n  theme_bw()\n\n\n\n\nCreates a grid based on two categorical variables.\nggplot(mpg, aes(x = displ, y = hwy)) +\n  geom_point() +\n  facet_grid(drv ~ cyl) +\n  labs(title = \"Faceted by Drive Type and Cylinders\") +\n  theme_minimal()\n\n\n\n\n\nScales define how data values are mapped to visual properties.\n\n\n# Log scale\nggplot(mpg, aes(x = displ, y = hwy)) +\n  geom_point() +\n  scale_x_log10() +\n  scale_y_continuous(breaks = seq(10, 50, by = 5)) +\n  labs(title = \"Log10 x-axis\") +\n  theme_bw()\n\n\n\n\n# Manually assigned colors\nggplot(tissue_expr, aes(x = tissue, y = expression, fill = tissue)) +\n  geom_boxplot() +\n  scale_fill_manual(values = c(\"Liver\" = \"#E64B35\", \n                                \"Brain\" = \"#4DBBD5\",\n                                \"Muscle\" = \"#00A087\",\n                                \"Heart\" = \"#F39B7F\")) +\n  theme_minimal()\n\n# ColorBrewer palettes\nggplot(mpg, aes(x = displ, y = hwy, color = class)) +\n  geom_point(size = 3) +\n  scale_color_brewer(palette = \"Set1\") +\n  theme_classic()\n\n\n\n\n# Continuous variable color gradients\ngene_heatmap_data &lt;- expand.grid(\n  gene = paste0(\"Gene\", 1:20),\n  sample = paste0(\"Sample\", 1:10)\n)\ngene_heatmap_data$expression &lt;- rnorm(200, mean = 5, sd = 2)\n\nggplot(gene_heatmap_data, aes(x = sample, y = gene, fill = expression)) +\n  geom_tile() +\n  scale_fill_gradient2(low = \"blue\", mid = \"white\", high = \"red\", \n                       midpoint = 5) +\n  labs(title = \"Gene Expression Heatmap\") +\n  theme_minimal() +\n  theme(axis.text.x = element_text(angle = 45, hjust = 1))\n\n\n\n\n\n\n\np &lt;- ggplot(mpg, aes(x = class, fill = class)) +\n  geom_bar() +\n  labs(title = \"Different Themes Example\")\n\n# theme_gray() (default)\np + theme_gray()\n\n# theme_bw() (black and white, good for papers)\np + theme_bw()\n\n# theme_minimal() (minimalist)\np + theme_minimal()\n\n# theme_classic() (classic plot with no gridlines)\np + theme_classic()\n\n\n\n\nggplot(mpg, aes(x = displ, y = hwy, color = class)) +\n  geom_point(size = 3) +\n  labs(title = \"Custom Theme Example\",\n       x = \"Engine Displacement (L)\",\n       y = \"Highway MPG\") +\n  theme_bw() +\n  theme(\n    plot.title = element_text(size = 16, face = \"bold\", hjust = 0.5),\n    axis.title = element_text(size = 12, face = \"bold\"),\n    axis.text = element_text(size = 10),\n    legend.position = \"bottom\",\n    legend.title = element_text(size = 11, face = \"bold\"),\n    panel.grid.minor = element_blank()\n  )\n\n\n\n\n\n\n\n# Simulate differentially expressed gene data\nset.seed(456)\nn_genes &lt;- 5000\nvolcano_data &lt;- data.frame(\n  gene = paste0(\"Gene\", 1:n_genes),\n  log2FC = rnorm(n_genes, mean = 0, sd = 1.5),\n  pvalue = runif(n_genes, 0, 1)\n)\nvolcano_data$padj &lt;- p.adjust(volcano_data$pvalue, method = \"BH\")\nvolcano_data$neg_log10_padj &lt;- -log10(volcano_data$padj)\n\n# Categorization: Significant Up/Down/Not Sig\nvolcano_data &lt;- volcano_data %&gt;%\n  mutate(\n    diff_expressed = case_when(\n      log2FC &gt; 1 & padj &lt; 0.05 ~ \"Up-regulated\",\n      log2FC &lt; -1 & padj &lt; 0.05 ~ \"Down-regulated\",\n      TRUE ~ \"Not significant\"\n    )\n  )\n\n# Draw Volcano Plot\nggplot(volcano_data, aes(x = log2FC, y = neg_log10_padj, color = diff_expressed)) +\n  geom_point(alpha = 0.5, size = 1.5) +\n  scale_color_manual(values = c(\"Up-regulated\" = \"red\",\n                                 \"Down-regulated\" = \"blue\",\n                                 \"Not significant\" = \"gray\")) +\n  geom_vline(xintercept = c(-1, 1), linetype = \"dashed\", color = \"gray40\") +\n  geom_hline(yintercept = -log10(0.05), linetype = \"dashed\", color = \"gray40\") +\n  labs(title = \"Volcano Plot - Differentially Expressed Genes\",\n       x = \"Log2 Fold Change\",\n       y = \"-Log10(Adjusted P-value)\",\n       color = \"Status\") +\n  theme_bw() +\n  theme(legend.position = \"top\")\n\n\n\n\n# Simulated Data\nma_data &lt;- data.frame(\n  gene = paste0(\"Gene\", 1:n_genes),\n  baseMean = 10^runif(n_genes, 0, 4),\n  log2FC = rnorm(n_genes, 0, 1.2)\n)\nma_data$significant &lt;- abs(ma_data$log2FC) &gt; 1\n\nggplot(ma_data, aes(x = log10(baseMean), y = log2FC, color = significant)) +\n  geom_point(alpha = 0.4, size = 1) +\n  scale_color_manual(values = c(\"TRUE\" = \"red\", \"FALSE\" = \"gray50\")) +\n  geom_hline(yintercept = c(-1, 1), linetype = \"dashed\", color = \"blue\") +\n  geom_hline(yintercept = 0, linetype = \"solid\", color = \"black\") +\n  labs(title = \"MA Plot\",\n       x = \"Log10 Mean Expression\",\n       y = \"Log2 Fold Change\") +\n  theme_minimal() +\n  theme(legend.position = \"none\")\n\n\n\n\n# Simulated PCA Results\nset.seed(789)\npca_data &lt;- data.frame(\n  sample = paste0(\"S\", 1:30),\n  PC1 = c(rnorm(15, -2, 1), rnorm(15, 2, 1)),\n  PC2 = c(rnorm(15, 1, 1.5), rnorm(15, -1, 1.5)),\n  group = rep(c(\"Control\", \"Treatment\"), each = 15)\n)\n\nggplot(pca_data, aes(x = PC1, y = PC2, color = group, shape = group)) +\n  geom_point(size = 4, alpha = 0.8) +\n  stat_ellipse(level = 0.95, linewidth = 1) +  # Add confidence ellipses\n  labs(title = \"PCA Plot\",\n       x = \"PC1 (45.3% variance)\",\n       y = \"PC2 (23.7% variance)\") +\n  theme_bw() +\n  theme(legend.position = \"top\",\n        legend.title = element_blank())\n\n\n\n\n\n\n\n# install.packages(\"patchwork\")\nlibrary(patchwork)\n\np1 &lt;- ggplot(mpg, aes(x = displ, y = hwy)) +\n  geom_point() +\n  labs(title = \"Plot 1\") +\n  theme_bw()\n\np2 &lt;- ggplot(mpg, aes(x = class, fill = class)) +\n  geom_bar() +\n  labs(title = \"Plot 2\") +\n  theme_bw() +\n  theme(legend.position = \"none\")\n\np3 &lt;- ggplot(mpg, aes(x = hwy)) +\n  geom_histogram(bins = 20, fill = \"steelblue\") +\n  labs(title = \"Plot 3\") +\n  theme_bw()\n\n# Combine layout\n(p1 | p2) / p3 + \n  plot_annotation(title = \"Combined Plots Layout Example\", \n                  tag_levels = \"A\")\n\n\n\n\n\n# Save current plot\nggsave(\"my_plot.png\", width = 8, height = 6, dpi = 300)\nggsave(\"my_plot.pdf\", width = 8, height = 6)\n\n# Save specific plot object\np &lt;- ggplot(mpg, aes(x = displ, y = hwy)) + geom_point()\nggsave(\"scatter.png\", plot = p, width = 10, height = 8, dpi = 300)\n\n\n\n\n\n\n# Prepare data using tidyverse\nlibrary(tidyr)\n\n# Wide format vs Long format\nwide_data &lt;- data.frame(\n  sample = c(\"S1\", \"S2\", \"S3\"),\n  GeneA = c(5.2, 6.1, 5.8),\n  GeneB = c(7.3, 6.9, 7.5)\n)\n\n# Convert to long format for ggplot2\nlong_data &lt;- wide_data %&gt;%\n  pivot_longer(cols = c(GeneA, GeneB), \n               names_to = \"gene\", \n               values_to = \"expression\")\n\nggplot(long_data, aes(x = sample, y = expression, fill = gene)) +\n  geom_col(position = \"dodge\") +\n  theme_minimal()\n\n\n\n\n# Formatting ggplot code across lines for readability \nggplot(mpg, aes(x = displ, y = hwy, color = class)) +\n  geom_point(size = 3, alpha = 0.6) +\n  scale_color_brewer(palette = \"Set2\") +\n  labs(\n    title = \"Engine Displacement vs Highway MPG\",\n    subtitle = \"Colored by vehicle class\",\n    x = \"Engine Displacement (L)\",\n    y = \"Highway Miles per Gallon\",\n    color = \"Vehicle Class\"\n  ) +\n  theme_bw() +\n  theme(\n    plot.title = element_text(size = 14, face = \"bold\"),\n    legend.position = \"bottom\"\n  )\n\n\n\n\nIssue 1: Rendering CJK Fonts\n# macOS / Linux\ntheme(text = element_text(family = \"STHeiti\"))\n\n# Windows\ntheme(text = element_text(family = \"SimHei\"))\nIssue 2: Overlapping axis labels\nggplot(mpg, aes(x = manufacturer, y = hwy)) +\n  geom_boxplot() +\n  theme(axis.text.x = element_text(angle = 45, hjust = 1))\nIssue 3: Legend Position Adjustment\nggplot(mpg, aes(x = displ, y = hwy, color = class)) +\n  geom_point() +\n  theme(legend.position = \"bottom\")  # \"top\", \"left\", \"right\", \"none\"\n\n\n\n\n\n\nggpubr: Publication-ready plots (with statistical testing)\nggsci: Color palettes matching scientific journals\nggrepel: Automatically repels text labels away from data points\npatchwork: Combining multiple plots\nplotly: Interactive graphics (ggplotly())\ngganimate: Animated plots\n\n\n\n\n\nThis section covered the core concepts and usage of ggplot2:\n\nGrammar of Graphics: Data + Aesthetics + Geometries + …\nCommon Geoms: Points, lines, bars, boxplots, violins, heatmaps\nAesthetics Mappings: Global vs Local, Fixed vs Mapped\nFacets: facet_wrap() and facet_grid()\nScales: Axis, color palettes, gradients\nThemes: Built-in themes and custom themes\nBioinformatics Cases: Volcano plots, MA plots, PCA plots\n\nNext Steps: - Read the ggplot2 Official Documentation - Browse the R Graph Gallery for inspiration - Practice by visualizing real datasets - Explore the ggplot2 extension ecosystem\n\nReferences: - ggplot2: Elegant Graphics for Data Analysis - R for Data Science - Data Visualization - ggplot2 Cheatsheet",
+    "crumbs": [
+      "首页",
+      "R 语言教程",
+      "L7 - ggplot2 数据可视化"
+    ]
+  },
+  {
+    "objectID": "Rbase/L7_ggplot2.html#introduction",
+    "href": "Rbase/L7_ggplot2.html#introduction",
+    "title": "Data Visualization with ggplot2",
+    "section": "",
+    "text": "In the previous sections, we introduced R data structures, data manipulation (tidyverse), control flow, and function writing. Now let’s learn how to create elegant and professional data visualizations using ggplot2.\nggplot2 is a core package of the tidyverse ecosystem, based on Leland Wilkinson’s Grammar of Graphics. Its core idea is: Deconstruct graphs into independent layers, and build complex visualizations by combining them.",
+    "crumbs": [
+      "首页",
+      "R 语言教程",
+      "L7 - ggplot2 数据可视化"
+    ]
+  },
+  {
+    "objectID": "Rbase/L7_ggplot2.html#grammar-of-graphics-in-ggplot2",
+    "href": "Rbase/L7_ggplot2.html#grammar-of-graphics-in-ggplot2",
+    "title": "Data Visualization with ggplot2",
+    "section": "",
+    "text": "ggplot2 decomposes a plot into the following components:\n\nData: The data frame to visualize\nAesthetics (aes): Mapping of data variables to visual properties (x, y, color, size, etc.)\nGeometries (Geoms): The geometric representation of data (points, lines, bars, etc.)\nStatistics (Stats): Statistical transformations of the data (counting, smoothing, etc.)\nScales: Controls the details of aesthetic mappings (color schemes, axis limits, etc.)\nCoordinate systems: How data points are mapped to the 2D plane\nFacets: Grouping data to create multiple subplots\nThemes: Controls the overall appearance of the plot\n\n\n\n\n\nggplot(data = &lt;DATA&gt;, mapping = aes(&lt;MAPPINGS&gt;)) +\n  &lt;GEOM_FUNCTION&gt;() +\n  &lt;SCALE_FUNCTION&gt;() +\n  &lt;FACET_FUNCTION&gt;() +\n  &lt;THEME_FUNCTION&gt;()\nKey Points: - Use the + sign to chain layers together (not the pipe operator %&gt;% or |&gt;) - ggplot() initializes the plot object and specifies global data/aesthetics - Each geom_*() function adds a new geometric layer",
+    "crumbs": [
+      "首页",
+      "R 语言教程",
+      "L7 - ggplot2 数据可视化"
+    ]
+  },
+  {
+    "objectID": "Rbase/L7_ggplot2.html#your-first-ggplot2-plot",
+    "href": "Rbase/L7_ggplot2.html#your-first-ggplot2-plot",
+    "title": "Data Visualization with ggplot2",
+    "section": "",
+    "text": "# Install (if not already installed)\n# install.packages(\"ggplot2\")\n\nlibrary(ggplot2)\nlibrary(dplyr)  \n\n\n\n\nWe use the built-in mpg dataset (car fuel efficiency data) as an example.\n# View data\nhead(mpg)\n\n# Basic scatter plot: Engine displacement vs Highway MPG\nggplot(data = mpg, mapping = aes(x = displ, y = hwy)) +\n  geom_point()\nExplanation: - ggplot(): Initializes the plot - aes(x = displ, y = hwy): Maps displ to the x-axis and hwy to the y-axis - geom_point(): Represents data as points\n\n\n\n\n# Color by vehicle class\nggplot(mpg, aes(x = displ, y = hwy, color = class)) +\n  geom_point()\nColors are automatically grouped by the class variable, generating a legend.\n\n\n\n\n# Map dot size to number of cylinders, add transparency\nggplot(mpg, aes(x = displ, y = hwy, color = class, size = cyl)) +\n  geom_point(alpha = 0.6)\nNote: - alpha controls transparency (0-1). It can be mapped in aes() or passed as a fixed parameter. - When size is mapped to a numeric variable, the point size will scale with the values.",
+    "crumbs": [
+      "首页",
+      "R 语言教程",
+      "L7 - ggplot2 数据可视化"
+    ]
+  },
+  {
+    "objectID": "Rbase/L7_ggplot2.html#common-geometries-geoms",
+    "href": "Rbase/L7_ggplot2.html#common-geometries-geoms",
+    "title": "Data Visualization with ggplot2",
+    "section": "",
+    "text": "Ideal for displaying the relationship between two continuous variables.\nset.seed(123)\ngene_expr &lt;- data.frame(\n  gene = paste0(\"Gene\", 1:100),\n  sample_A = rnorm(100, mean = 5, sd = 2),\n  sample_B = rnorm(100, mean = 5, sd = 2),\n  significant = sample(c(\"Sig\", \"Not Sig\"), 100, replace = TRUE, prob = c(0.3, 0.7))\n)\n\nggplot(gene_expr, aes(x = sample_A, y = sample_B, color = significant)) +\n  geom_point(size = 2, alpha = 0.7) +\n  geom_abline(slope = 1, intercept = 0, linetype = \"dashed\", color = \"gray50\") +\n  labs(title = \"Gene Expression Correlation\",\n       x = \"Sample A (log2 expression)\",\n       y = \"Sample B (log2 expression)\") +\n  theme_bw()\n\n\n\n\nIdeal for time series or ordered data.\n# Example: qPCR timeseries\ntime_series &lt;- data.frame(\n  time = rep(0:10, 3),\n  expression = c(1 * 2^(0:10 * 0.3),  # Gene1\n                 1 * 2^(0:10 * 0.5),  # Gene2\n                 1 * 2^(0:10 * 0.2)), # Gene3\n  gene = rep(c(\"Gene1\", \"Gene2\", \"Gene3\"), each = 11)\n)\n\nggplot(time_series, aes(x = time, y = expression, color = gene)) +\n  geom_line(linewidth = 1) +\n  geom_point(size = 2) +\n  scale_y_log10() +  # Log scale\n  labs(title = \"Gene Expression Time Series\",\n       x = \"Time (hours)\",\n       y = \"Expression (log scale)\") +\n  theme_minimal()\n\n\n\n\n\ngeom_bar(): Automatically counts occurrences, used for categorical variables\ngeom_col(): Uses raw y values directly, used for pre-summarized data\n\n# geom_bar: Automatic counting\nggplot(mpg, aes(x = class)) +\n  geom_bar(fill = \"steelblue\") +\n  labs(title = \"Vehicle Class Distribution\", x = \"Class\", y = \"Count\") +\n  theme_classic()\n# geom_col: Using pre-calculated values\npathway_counts &lt;- data.frame(\n  pathway = c(\"MAPK\", \"PI3K-AKT\", \"WNT\", \"Notch\", \"TGF-beta\"),\n  gene_count = c(45, 38, 25, 18, 22)\n)\n\nggplot(pathway_counts, aes(x = reorder(pathway, gene_count), y = gene_count)) +\n  geom_col(fill = \"coral\") +\n  coord_flip() +  # Horizontal bar plot\n  labs(title = \"Signal Pathway Gene Counts\", x = NULL, y = \"Gene Count\") +\n  theme_minimal()\n\n\n\n\nDisplays data distribution, median, quartiles, and outliers.\n# Example: Gene expression across tissues\ntissue_expr &lt;- data.frame(\n  tissue = rep(c(\"Liver\", \"Brain\", \"Muscle\", \"Heart\"), each = 50),\n  expression = c(rnorm(50, 8, 2), rnorm(50, 6, 1.5), \n                 rnorm(50, 7, 2.5), rnorm(50, 9, 1.8))\n)\n\nggplot(tissue_expr, aes(x = tissue, y = expression, fill = tissue)) +\n  geom_boxplot(alpha = 0.7) +\n  geom_jitter(width = 0.2, alpha = 0.3, size = 1) +  # Add raw data points\n  labs(title = \"Gene Expression by Tissue\",\n       x = \"Tissue Type\", y = \"Expression (log2)\") +\n  theme_bw() +\n  theme(legend.position = \"none\")\n\n\n\n\nCombines advantages of boxplots and density plots.\nggplot(tissue_expr, aes(x = tissue, y = expression, fill = tissue)) +\n  geom_violin(alpha = 0.7) +\n  geom_boxplot(width = 0.1, fill = \"white\", outlier.shape = NA) +\n  labs(title = \"Gene Expression Distribution (Violin Plot)\",\n       x = \"Tissue Type\", y = \"Expression (log2)\") +\n  theme_minimal() +\n  theme(legend.position = \"none\")\n\n\n\n\nDisplays the distribution of a single continuous variable.\nggplot(gene_expr, aes(x = sample_A)) +\n  geom_histogram(bins = 20, fill = \"skyblue\", color = \"black\", alpha = 0.7) +\n  geom_vline(xintercept = mean(gene_expr$sample_A), \n             linetype = \"dashed\", color = \"red\", linewidth = 1) +\n  labs(title = \"Gene Expression Distribution\",\n       x = \"Expression (log2)\", y = \"Frequency\") +\n  theme_classic()\n\n\n\n\nA smoothed version of the histogram.\nggplot(tissue_expr, aes(x = expression, fill = tissue)) +\n  geom_density(alpha = 0.5) +\n  labs(title = \"Gene Expression Density by Tissue\",\n       x = \"Expression (log2)\", y = \"Density\") +\n  theme_minimal()",
+    "crumbs": [
+      "首页",
+      "R 语言教程",
+      "L7 - ggplot2 数据可视化"
+    ]
+  },
+  {
+    "objectID": "Rbase/L7_ggplot2.html#aesthetics-mappings",
+    "href": "Rbase/L7_ggplot2.html#aesthetics-mappings",
+    "title": "Data Visualization with ggplot2",
+    "section": "",
+    "text": "# Global mapping: Shared across all layers\nggplot(mpg, aes(x = displ, y = hwy, color = class)) +\n  geom_point() +\n  geom_smooth(method = \"lm\", se = FALSE)  # Inherits color mapping\n\n# Local mapping: Applied to a specific layer\nggplot(mpg, aes(x = displ, y = hwy)) +\n  geom_point(aes(color = class)) +  # Only points have colors\n  geom_smooth(method = \"lm\", se = FALSE, color = \"black\")  # Fixed black line\n\n\n\n\n# Incorrect example: Fixed value inside aes()\nggplot(mpg, aes(x = displ, y = hwy)) +\n  geom_point(aes(color = \"blue\"))  # Error! Will be treated as a variable mapping\n\n# Correct example: Fixed value outside aes()\nggplot(mpg, aes(x = displ, y = hwy)) +\n  geom_point(color = \"blue\", size = 3)\n\n\n\n\n\n\n\nProperty\nDescription\nApplicable Geom\n\n\n\n\nx, y\nCoordinate axis position\nAll\n\n\ncolor\nPoint/line color\npoint, line, text\n\n\nfill\nFill color\nbar, boxplot, violin, area\n\n\nsize\nPoint/line size\npoint, line, text\n\n\nalpha\nTransparency (0-1)\nAll\n\n\nshape\nPoint shape\npoint\n\n\nlinetype\nLine pattern\nline, smooth",
+    "crumbs": [
+      "首页",
+      "R 语言教程",
+      "L7 - ggplot2 数据可视化"
+    ]
+  },
+  {
+    "objectID": "Rbase/L7_ggplot2.html#facets",
+    "href": "Rbase/L7_ggplot2.html#facets",
+    "title": "Data Visualization with ggplot2",
+    "section": "",
+    "text": "Faceting creates multiple subplots based on a categorical variable.\n\n\nWraps subplots based on a single variable into multiple rows/cols.\nggplot(mpg, aes(x = displ, y = hwy)) +\n  geom_point() +\n  facet_wrap(~ class, nrow = 2) +\n  labs(title = \"Faceted by Vehicle Class\") +\n  theme_bw()\n\n\n\n\nCreates a grid based on two categorical variables.\nggplot(mpg, aes(x = displ, y = hwy)) +\n  geom_point() +\n  facet_grid(drv ~ cyl) +\n  labs(title = \"Faceted by Drive Type and Cylinders\") +\n  theme_minimal()",
+    "crumbs": [
+      "首页",
+      "R 语言教程",
+      "L7 - ggplot2 数据可视化"
+    ]
+  },
+  {
+    "objectID": "Rbase/L7_ggplot2.html#scales",
+    "href": "Rbase/L7_ggplot2.html#scales",
+    "title": "Data Visualization with ggplot2",
+    "section": "",
+    "text": "Scales define how data values are mapped to visual properties.\n\n\n# Log scale\nggplot(mpg, aes(x = displ, y = hwy)) +\n  geom_point() +\n  scale_x_log10() +\n  scale_y_continuous(breaks = seq(10, 50, by = 5)) +\n  labs(title = \"Log10 x-axis\") +\n  theme_bw()\n\n\n\n\n# Manually assigned colors\nggplot(tissue_expr, aes(x = tissue, y = expression, fill = tissue)) +\n  geom_boxplot() +\n  scale_fill_manual(values = c(\"Liver\" = \"#E64B35\", \n                                \"Brain\" = \"#4DBBD5\",\n                                \"Muscle\" = \"#00A087\",\n                                \"Heart\" = \"#F39B7F\")) +\n  theme_minimal()\n\n# ColorBrewer palettes\nggplot(mpg, aes(x = displ, y = hwy, color = class)) +\n  geom_point(size = 3) +\n  scale_color_brewer(palette = \"Set1\") +\n  theme_classic()\n\n\n\n\n# Continuous variable color gradients\ngene_heatmap_data &lt;- expand.grid(\n  gene = paste0(\"Gene\", 1:20),\n  sample = paste0(\"Sample\", 1:10)\n)\ngene_heatmap_data$expression &lt;- rnorm(200, mean = 5, sd = 2)\n\nggplot(gene_heatmap_data, aes(x = sample, y = gene, fill = expression)) +\n  geom_tile() +\n  scale_fill_gradient2(low = \"blue\", mid = \"white\", high = \"red\", \n                       midpoint = 5) +\n  labs(title = \"Gene Expression Heatmap\") +\n  theme_minimal() +\n  theme(axis.text.x = element_text(angle = 45, hjust = 1))",
+    "crumbs": [
+      "首页",
+      "R 语言教程",
+      "L7 - ggplot2 数据可视化"
+    ]
+  },
+  {
+    "objectID": "Rbase/L7_ggplot2.html#themes",
+    "href": "Rbase/L7_ggplot2.html#themes",
+    "title": "Data Visualization with ggplot2",
+    "section": "",
+    "text": "p &lt;- ggplot(mpg, aes(x = class, fill = class)) +\n  geom_bar() +\n  labs(title = \"Different Themes Example\")\n\n# theme_gray() (default)\np + theme_gray()\n\n# theme_bw() (black and white, good for papers)\np + theme_bw()\n\n# theme_minimal() (minimalist)\np + theme_minimal()\n\n# theme_classic() (classic plot with no gridlines)\np + theme_classic()\n\n\n\n\nggplot(mpg, aes(x = displ, y = hwy, color = class)) +\n  geom_point(size = 3) +\n  labs(title = \"Custom Theme Example\",\n       x = \"Engine Displacement (L)\",\n       y = \"Highway MPG\") +\n  theme_bw() +\n  theme(\n    plot.title = element_text(size = 16, face = \"bold\", hjust = 0.5),\n    axis.title = element_text(size = 12, face = \"bold\"),\n    axis.text = element_text(size = 10),\n    legend.position = \"bottom\",\n    legend.title = element_text(size = 11, face = \"bold\"),\n    panel.grid.minor = element_blank()\n  )",
+    "crumbs": [
+      "首页",
+      "R 语言教程",
+      "L7 - ggplot2 数据可视化"
+    ]
+  },
+  {
+    "objectID": "Rbase/L7_ggplot2.html#bioinformatics-real-world-examples",
+    "href": "Rbase/L7_ggplot2.html#bioinformatics-real-world-examples",
+    "title": "Data Visualization with ggplot2",
+    "section": "",
+    "text": "# Simulate differentially expressed gene data\nset.seed(456)\nn_genes &lt;- 5000\nvolcano_data &lt;- data.frame(\n  gene = paste0(\"Gene\", 1:n_genes),\n  log2FC = rnorm(n_genes, mean = 0, sd = 1.5),\n  pvalue = runif(n_genes, 0, 1)\n)\nvolcano_data$padj &lt;- p.adjust(volcano_data$pvalue, method = \"BH\")\nvolcano_data$neg_log10_padj &lt;- -log10(volcano_data$padj)\n\n# Categorization: Significant Up/Down/Not Sig\nvolcano_data &lt;- volcano_data %&gt;%\n  mutate(\n    diff_expressed = case_when(\n      log2FC &gt; 1 & padj &lt; 0.05 ~ \"Up-regulated\",\n      log2FC &lt; -1 & padj &lt; 0.05 ~ \"Down-regulated\",\n      TRUE ~ \"Not significant\"\n    )\n  )\n\n# Draw Volcano Plot\nggplot(volcano_data, aes(x = log2FC, y = neg_log10_padj, color = diff_expressed)) +\n  geom_point(alpha = 0.5, size = 1.5) +\n  scale_color_manual(values = c(\"Up-regulated\" = \"red\",\n                                 \"Down-regulated\" = \"blue\",\n                                 \"Not significant\" = \"gray\")) +\n  geom_vline(xintercept = c(-1, 1), linetype = \"dashed\", color = \"gray40\") +\n  geom_hline(yintercept = -log10(0.05), linetype = \"dashed\", color = \"gray40\") +\n  labs(title = \"Volcano Plot - Differentially Expressed Genes\",\n       x = \"Log2 Fold Change\",\n       y = \"-Log10(Adjusted P-value)\",\n       color = \"Status\") +\n  theme_bw() +\n  theme(legend.position = \"top\")\n\n\n\n\n# Simulated Data\nma_data &lt;- data.frame(\n  gene = paste0(\"Gene\", 1:n_genes),\n  baseMean = 10^runif(n_genes, 0, 4),\n  log2FC = rnorm(n_genes, 0, 1.2)\n)\nma_data$significant &lt;- abs(ma_data$log2FC) &gt; 1\n\nggplot(ma_data, aes(x = log10(baseMean), y = log2FC, color = significant)) +\n  geom_point(alpha = 0.4, size = 1) +\n  scale_color_manual(values = c(\"TRUE\" = \"red\", \"FALSE\" = \"gray50\")) +\n  geom_hline(yintercept = c(-1, 1), linetype = \"dashed\", color = \"blue\") +\n  geom_hline(yintercept = 0, linetype = \"solid\", color = \"black\") +\n  labs(title = \"MA Plot\",\n       x = \"Log10 Mean Expression\",\n       y = \"Log2 Fold Change\") +\n  theme_minimal() +\n  theme(legend.position = \"none\")\n\n\n\n\n# Simulated PCA Results\nset.seed(789)\npca_data &lt;- data.frame(\n  sample = paste0(\"S\", 1:30),\n  PC1 = c(rnorm(15, -2, 1), rnorm(15, 2, 1)),\n  PC2 = c(rnorm(15, 1, 1.5), rnorm(15, -1, 1.5)),\n  group = rep(c(\"Control\", \"Treatment\"), each = 15)\n)\n\nggplot(pca_data, aes(x = PC1, y = PC2, color = group, shape = group)) +\n  geom_point(size = 4, alpha = 0.8) +\n  stat_ellipse(level = 0.95, linewidth = 1) +  # Add confidence ellipses\n  labs(title = \"PCA Plot\",\n       x = \"PC1 (45.3% variance)\",\n       y = \"PC2 (23.7% variance)\") +\n  theme_bw() +\n  theme(legend.position = \"top\",\n        legend.title = element_blank())",
+    "crumbs": [
+      "首页",
+      "R 语言教程",
+      "L7 - ggplot2 数据可视化"
+    ]
+  },
+  {
+    "objectID": "Rbase/L7_ggplot2.html#combining-plots",
+    "href": "Rbase/L7_ggplot2.html#combining-plots",
+    "title": "Data Visualization with ggplot2",
+    "section": "",
+    "text": "# install.packages(\"patchwork\")\nlibrary(patchwork)\n\np1 &lt;- ggplot(mpg, aes(x = displ, y = hwy)) +\n  geom_point() +\n  labs(title = \"Plot 1\") +\n  theme_bw()\n\np2 &lt;- ggplot(mpg, aes(x = class, fill = class)) +\n  geom_bar() +\n  labs(title = \"Plot 2\") +\n  theme_bw() +\n  theme(legend.position = \"none\")\n\np3 &lt;- ggplot(mpg, aes(x = hwy)) +\n  geom_histogram(bins = 20, fill = \"steelblue\") +\n  labs(title = \"Plot 3\") +\n  theme_bw()\n\n# Combine layout\n(p1 | p2) / p3 + \n  plot_annotation(title = \"Combined Plots Layout Example\", \n                  tag_levels = \"A\")",
+    "crumbs": [
+      "首页",
+      "R 语言教程",
+      "L7 - ggplot2 数据可视化"
+    ]
+  },
+  {
+    "objectID": "Rbase/L7_ggplot2.html#saving-plots",
+    "href": "Rbase/L7_ggplot2.html#saving-plots",
+    "title": "Data Visualization with ggplot2",
+    "section": "",
+    "text": "# Save current plot\nggsave(\"my_plot.png\", width = 8, height = 6, dpi = 300)\nggsave(\"my_plot.pdf\", width = 8, height = 6)\n\n# Save specific plot object\np &lt;- ggplot(mpg, aes(x = displ, y = hwy)) + geom_point()\nggsave(\"scatter.png\", plot = p, width = 10, height = 8, dpi = 300)",
+    "crumbs": [
+      "首页",
+      "R 语言教程",
+      "L7 - ggplot2 数据可视化"
+    ]
+  },
+  {
+    "objectID": "Rbase/L7_ggplot2.html#best-practices-tips",
+    "href": "Rbase/L7_ggplot2.html#best-practices-tips",
+    "title": "Data Visualization with ggplot2",
+    "section": "",
+    "text": "# Prepare data using tidyverse\nlibrary(tidyr)\n\n# Wide format vs Long format\nwide_data &lt;- data.frame(\n  sample = c(\"S1\", \"S2\", \"S3\"),\n  GeneA = c(5.2, 6.1, 5.8),\n  GeneB = c(7.3, 6.9, 7.5)\n)\n\n# Convert to long format for ggplot2\nlong_data &lt;- wide_data %&gt;%\n  pivot_longer(cols = c(GeneA, GeneB), \n               names_to = \"gene\", \n               values_to = \"expression\")\n\nggplot(long_data, aes(x = sample, y = expression, fill = gene)) +\n  geom_col(position = \"dodge\") +\n  theme_minimal()\n\n\n\n\n# Formatting ggplot code across lines for readability \nggplot(mpg, aes(x = displ, y = hwy, color = class)) +\n  geom_point(size = 3, alpha = 0.6) +\n  scale_color_brewer(palette = \"Set2\") +\n  labs(\n    title = \"Engine Displacement vs Highway MPG\",\n    subtitle = \"Colored by vehicle class\",\n    x = \"Engine Displacement (L)\",\n    y = \"Highway Miles per Gallon\",\n    color = \"Vehicle Class\"\n  ) +\n  theme_bw() +\n  theme(\n    plot.title = element_text(size = 14, face = \"bold\"),\n    legend.position = \"bottom\"\n  )\n\n\n\n\nIssue 1: Rendering CJK Fonts\n# macOS / Linux\ntheme(text = element_text(family = \"STHeiti\"))\n\n# Windows\ntheme(text = element_text(family = \"SimHei\"))\nIssue 2: Overlapping axis labels\nggplot(mpg, aes(x = manufacturer, y = hwy)) +\n  geom_boxplot() +\n  theme(axis.text.x = element_text(angle = 45, hjust = 1))\nIssue 3: Legend Position Adjustment\nggplot(mpg, aes(x = displ, y = hwy, color = class)) +\n  geom_point() +\n  theme(legend.position = \"bottom\")  # \"top\", \"left\", \"right\", \"none\"",
+    "crumbs": [
+      "首页",
+      "R 语言教程",
+      "L7 - ggplot2 数据可视化"
+    ]
+  },
+  {
+    "objectID": "Rbase/L7_ggplot2.html#recommended-extension-packages",
+    "href": "Rbase/L7_ggplot2.html#recommended-extension-packages",
+    "title": "Data Visualization with ggplot2",
+    "section": "",
+    "text": "ggpubr: Publication-ready plots (with statistical testing)\nggsci: Color palettes matching scientific journals\nggrepel: Automatically repels text labels away from data points\npatchwork: Combining multiple plots\nplotly: Interactive graphics (ggplotly())\ngganimate: Animated plots",
+    "crumbs": [
+      "首页",
+      "R 语言教程",
+      "L7 - ggplot2 数据可视化"
+    ]
+  },
+  {
+    "objectID": "Rbase/L7_ggplot2.html#summary",
+    "href": "Rbase/L7_ggplot2.html#summary",
+    "title": "Data Visualization with ggplot2",
+    "section": "",
+    "text": "This section covered the core concepts and usage of ggplot2:\n\nGrammar of Graphics: Data + Aesthetics + Geometries + …\nCommon Geoms: Points, lines, bars, boxplots, violins, heatmaps\nAesthetics Mappings: Global vs Local, Fixed vs Mapped\nFacets: facet_wrap() and facet_grid()\nScales: Axis, color palettes, gradients\nThemes: Built-in themes and custom themes\nBioinformatics Cases: Volcano plots, MA plots, PCA plots\n\nNext Steps: - Read the ggplot2 Official Documentation - Browse the R Graph Gallery for inspiration - Practice by visualizing real datasets - Explore the ggplot2 extension ecosystem\n\nReferences: - ggplot2: Elegant Graphics for Data Analysis - R for Data Science - Data Visualization - ggplot2 Cheatsheet",
+    "crumbs": [
+      "首页",
+      "R 语言教程",
+      "L7 - ggplot2 数据可视化"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "关于本项目",
+    "section": "",
+    "text": "Bioinfo-SMU 是一个面向南方医科大学生物信息学专业学生的学习资源库。\n\n\n\n帮助生信专业的同学们更好地学习和科研，共同进步！\n\n我们相信：\n\n知识共享能让学习更高效\n互帮互助能让进步更快速\n开源协作能创造更大价值\n\n\n\n\n\n\n\n\n\n全面的课程资料\n\n各门专业课的实验代码\n详细的实验报告和笔记\n考试复习资料\n\n系统的学习路线\n\n从入门到精通的学习指导\n各阶段的重点和难点\n推荐的学习资源\n\n实用的科研工具\n\n常用生物信息学分析脚本\n数据处理和可视化代码\n最佳实践和经验分享\n\n\n\n\n\n\n编程能力 - R 和 Python 编程技能\n数据分析 - 生物数据的统计分析能力\n科研思维 - 独立思考和解决问题的能力\n协作精神 - 开源协作和知识分享\n\n\n\n\n\n\n\n\nNan He (@Hinna0818)\n\n邮箱：hinna01@163.com\n\n\n\n\n感谢所有为本项目做出贡献的同学！\n  \n查看完整贡献者列表 →\n\n\n\n\n\n\n      \n\n\n\n\n\n\n\n\n12月 - 项目创建，添加大四计算生物学课程资料\n12月 - 建立 MkDocs 文档网站\n12月 - 完善学习路线和贡献指南\n\n(持续更新中…)\n\n\n\n\n\n\n\n\nR - 生物信息学数据分析主要语言\nPython - 通用编程和机器学习\nMarkdown - 文档编写\n\n\n\n\n\nMkDocs Material - 文档网站生成\nGit & GitHub - 版本控制和协作\nRStudio - R 语言开发环境\nJupyter Notebook - 交互式编程\n\n\n\n\n\nWGCNA - 加权基因共表达网络分析\nigraph - 网络分析和可视化\nDESeq2 - 差异表达分析\nclusterProfiler - 功能富集分析\nggplot2 - 数据可视化\n\n\n\n\n\n\n本项目采用 MIT License 开源协议。\n\n\n\n允许商业使用\n允许修改和分发\n允许私人使用\n需保留版权声明\n不提供任何担保\n\n查看完整许可证 →\n\n\n\n\n\n\n\n\nGitHub 仓库\n在线文档\n讨论区\nIssue 追踪\n\n\n\n\n\n生信技能树\nBioconductor\nR for Data Science\nPython for Biologists\n\n\n\n\n\nGEO - 基因表达数据\nTCGA - 癌症基因组数据\nSTRING - 蛋白质相互作用\nKEGG - 代谢通路\n\n\n\n\n\n\n\n\n\nGitHub Discussions：参与讨论\nIssue 反馈：提交问题\n\n\n\n\n\n邮箱：hinna01@163.com\nGitHub：@Hinna0818\n\n\n\n\n\n\n\n\n任何对生物信息学感兴趣的人都可以使用，但主要面向南方医科大学的学生。\n\n\n\n请参考 贡献指南 了解详细步骤。\n\n\n\n可以，但需要遵守 MIT License 的规定，保留版权声明。\n\n\n\n请在 Issues 中报告，或直接提交 PR 修复。\n\n\n\n可以，但请注明出处并遵守开源协议。\n\n\n\n\n\n\n\n\n南方医科大学生物信息学系的老师们\n所有贡献资料和代码的同学们\n所有 Star 和 Fork 本项目的朋友们\n\n\n\n\n\nMkDocs - 文档生成工具\nMaterial for MkDocs - 优秀的文档主题\nGitHub - 代码托管平台\nShields.io - 徽章生成服务\ncontrib.rocks - 贡献者展示\n\n\n\n\n\n\n\n[] 添加更多课程的学习资料\n[] 建立在线交流社区\n[] 制作视频教程\n[] 举办线上/线下学习交流会\n[] 建立题库和练习系统\n[] 开发配套工具和脚本库\n\n\n\n\n\n请给我们一个 Star！\n这是对我们最大的鼓励和支持！\n\nMaintained by SMU Bioinformatics Students\n\n返回首页 | 开始学习 | 参与贡献",
+    "crumbs": [
+      "首页",
+      "关于"
+    ]
+  },
+  {
+    "objectID": "about.html#项目简介",
+    "href": "about.html#项目简介",
+    "title": "关于本项目",
+    "section": "",
+    "text": "Bioinfo-SMU 是一个面向南方医科大学生物信息学专业学生的学习资源库。\n\n\n\n帮助生信专业的同学们更好地学习和科研，共同进步！\n\n我们相信：\n\n知识共享能让学习更高效\n互帮互助能让进步更快速\n开源协作能创造更大价值",
+    "crumbs": [
+      "首页",
+      "关于"
+    ]
+  },
+  {
+    "objectID": "about.html#项目目标",
+    "href": "about.html#项目目标",
+    "title": "关于本项目",
+    "section": "",
+    "text": "全面的课程资料\n\n各门专业课的实验代码\n详细的实验报告和笔记\n考试复习资料\n\n系统的学习路线\n\n从入门到精通的学习指导\n各阶段的重点和难点\n推荐的学习资源\n\n实用的科研工具\n\n常用生物信息学分析脚本\n数据处理和可视化代码\n最佳实践和经验分享\n\n\n\n\n\n\n编程能力 - R 和 Python 编程技能\n数据分析 - 生物数据的统计分析能力\n科研思维 - 独立思考和解决问题的能力\n协作精神 - 开源协作和知识分享",
+    "crumbs": [
+      "首页",
+      "关于"
+    ]
+  },
+  {
+    "objectID": "about.html#项目维护",
+    "href": "about.html#项目维护",
+    "title": "关于本项目",
+    "section": "",
+    "text": "Nan He (@Hinna0818)\n\n邮箱：hinna01@163.com\n\n\n\n\n感谢所有为本项目做出贡献的同学！\n  \n查看完整贡献者列表 →",
+    "crumbs": [
+      "首页",
+      "关于"
+    ]
+  },
+  {
+    "objectID": "about.html#项目历程",
+    "href": "about.html#项目历程",
+    "title": "关于本项目",
+    "section": "",
+    "text": "12月 - 项目创建，添加大四计算生物学课程资料\n12月 - 建立 MkDocs 文档网站\n12月 - 完善学习路线和贡献指南\n\n(持续更新中…)",
+    "crumbs": [
+      "首页",
+      "关于"
+    ]
+  },
+  {
+    "objectID": "about.html#技术栈",
+    "href": "about.html#技术栈",
+    "title": "关于本项目",
+    "section": "",
+    "text": "R - 生物信息学数据分析主要语言\nPython - 通用编程和机器学习\nMarkdown - 文档编写\n\n\n\n\n\nMkDocs Material - 文档网站生成\nGit & GitHub - 版本控制和协作\nRStudio - R 语言开发环境\nJupyter Notebook - 交互式编程\n\n\n\n\n\nWGCNA - 加权基因共表达网络分析\nigraph - 网络分析和可视化\nDESeq2 - 差异表达分析\nclusterProfiler - 功能富集分析\nggplot2 - 数据可视化",
+    "crumbs": [
+      "首页",
+      "关于"
+    ]
+  },
+  {
+    "objectID": "about.html#许可证",
+    "href": "about.html#许可证",
+    "title": "关于本项目",
+    "section": "",
+    "text": "本项目采用 MIT License 开源协议。\n\n\n\n允许商业使用\n允许修改和分发\n允许私人使用\n需保留版权声明\n不提供任何担保\n\n查看完整许可证 →",
+    "crumbs": [
+      "首页",
+      "关于"
+    ]
+  },
+  {
+    "objectID": "about.html#相关链接",
+    "href": "about.html#相关链接",
+    "title": "关于本项目",
+    "section": "",
+    "text": "GitHub 仓库\n在线文档\n讨论区\nIssue 追踪\n\n\n\n\n\n生信技能树\nBioconductor\nR for Data Science\nPython for Biologists\n\n\n\n\n\nGEO - 基因表达数据\nTCGA - 癌症基因组数据\nSTRING - 蛋白质相互作用\nKEGG - 代谢通路",
+    "crumbs": [
+      "首页",
+      "关于"
+    ]
+  },
+  {
+    "objectID": "about.html#联系我们",
+    "href": "about.html#联系我们",
+    "title": "关于本项目",
+    "section": "",
+    "text": "GitHub Discussions：参与讨论\nIssue 反馈：提交问题\n\n\n\n\n\n邮箱：hinna01@163.com\nGitHub：@Hinna0818",
+    "crumbs": [
+      "首页",
+      "关于"
+    ]
+  },
+  {
+    "objectID": "about.html#常见问题",
+    "href": "about.html#常见问题",
+    "title": "关于本项目",
+    "section": "",
+    "text": "任何对生物信息学感兴趣的人都可以使用，但主要面向南方医科大学的学生。\n\n\n\n请参考 贡献指南 了解详细步骤。\n\n\n\n可以，但需要遵守 MIT License 的规定，保留版权声明。\n\n\n\n请在 Issues 中报告，或直接提交 PR 修复。\n\n\n\n可以，但请注明出处并遵守开源协议。",
+    "crumbs": [
+      "首页",
+      "关于"
+    ]
+  },
+  {
+    "objectID": "about.html#致谢",
+    "href": "about.html#致谢",
+    "title": "关于本项目",
+    "section": "",
+    "text": "南方医科大学生物信息学系的老师们\n所有贡献资料和代码的同学们\n所有 Star 和 Fork 本项目的朋友们\n\n\n\n\n\nMkDocs - 文档生成工具\nMaterial for MkDocs - 优秀的文档主题\nGitHub - 代码托管平台\nShields.io - 徽章生成服务\ncontrib.rocks - 贡献者展示",
+    "crumbs": [
+      "首页",
+      "关于"
+    ]
+  },
+  {
+    "objectID": "about.html#未来计划",
+    "href": "about.html#未来计划",
+    "title": "关于本项目",
+    "section": "",
+    "text": "[] 添加更多课程的学习资料\n[] 建立在线交流社区\n[] 制作视频教程\n[] 举办线上/线下学习交流会\n[] 建立题库和练习系统\n[] 开发配套工具和脚本库",
+    "crumbs": [
+      "首页",
+      "关于"
+    ]
+  },
+  {
+    "objectID": "about.html#如果这个项目对你有帮助",
+    "href": "about.html#如果这个项目对你有帮助",
+    "title": "关于本项目",
+    "section": "",
+    "text": "请给我们一个 Star！\n这是对我们最大的鼓励和支持！\n\nMaintained by SMU Bioinformatics Students\n\n返回首页 | 开始学习 | 参与贡献",
+    "crumbs": [
+      "首页",
+      "关于"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Bioinfo-SMU",
+    "section": "",
+    "text": "南方医科大学生物信息学专业学习资源库\n\n面向课程学习、实验代码、考试复习和科研入门的开放资料库，帮助生物信息学同学更系统地管理学习路径与实践材料。\n\n\n开始学习 查看课程 参与贡献",
+    "crumbs": [
+      "首页"
+    ]
+  },
+  {
+    "objectID": "index.html#主要内容",
+    "href": "index.html#主要内容",
+    "title": "Bioinfo-SMU",
+    "section": "主要内容",
+    "text": "主要内容\n\n\n课程资料\n各门专业课程的实验报告、作业、笔记和复习材料。\n\n\n实验代码\n整理生物信息学课程和分析流程中常用的 R/Python 代码。\n\n\n考试资料\n收集往届考试重点、题型经验和复习建议。\n\n\n科研工具\n汇总常用数据库、分析工具和可复用脚本。\n\n\n\n\n\n\n\n\nTip宗旨\n\n\n\n帮助生信专业的同学们更好地学习和科研，共同进步。",
+    "crumbs": [
+      "首页"
+    ]
+  },
+  {
+    "objectID": "index.html#快速开始",
+    "href": "index.html#快速开始",
+    "title": "Bioinfo-SMU",
+    "section": "快速开始",
+    "text": "快速开始\n\n\n浏览文档\n通过顶部导航或左侧目录进入不同课程与主题页面。\n\n\n克隆仓库\ngit clone https://github.com/Hinna0818/Bioinfo-SMU.git\ncd Bioinfo-SMU\n\n\n参与贡献\n欢迎同学补充课程资料、实验代码和学习经验。贡献前请阅读 贡献指南。",
+    "crumbs": [
+      "首页"
+    ]
+  },
+  {
+    "objectID": "index.html#项目统计",
+    "href": "index.html#项目统计",
+    "title": "Bioinfo-SMU",
+    "section": "项目统计",
+    "text": "项目统计\n\n\n课程层级\n4 覆盖大二到大四课程资料\n\n\nR 教程\n7 从基础语法到数据可视化\n\n\n分析流程\n3 Bulk、单细胞和空间转录组",
+    "crumbs": [
+      "首页"
+    ]
+  },
+  {
+    "objectID": "index.html#课程概览",
+    "href": "index.html#课程概览",
+    "title": "Bioinfo-SMU",
+    "section": "课程概览",
+    "text": "课程概览\n\n\nR 语言教程\n系统学习 R 语言基础知识和生物信息学数据分析方法。\n进入教程\n\n\n生信流程\n面向转录组数据分析的 R 脚本集合，覆盖 Bulk、单细胞与空间转录组。\n查看流程\n\n\n计算生物学\n涵盖 PPI 网络分析、WGCNA、网络聚类、随机游走和 qPCR 数据分析。\n查看课程\n\n\n计算机辅助药物设计\n学习使用计算方法进行药物设计、虚拟筛选和 QSAR 建模。\n查看课程\n\n\n计算分子生物学\n整理序列比对、概率模型和分子层面计算方法相关内容。\n查看课程\n\n\n学习资源\n整理学习路线、常用工具、数据库和参考书目。\n查看资源",
+    "crumbs": [
+      "首页"
+    ]
+  },
+  {
+    "objectID": "index.html#联系方式",
+    "href": "index.html#联系方式",
+    "title": "Bioinfo-SMU",
+    "section": "联系方式",
+    "text": "联系方式\n\n作者：Nan He\n邮箱：hinna01@163.com\nGitHub：@Hinna0818\n\n有任何问题或建议，欢迎 提交 Issue 或参与 Discussions。",
+    "crumbs": [
+      "首页"
+    ]
+  },
+  {
+    "objectID": "index.html#注意事项",
+    "href": "index.html#注意事项",
+    "title": "Bioinfo-SMU",
+    "section": "注意事项",
+    "text": "注意事项\n\n\n\n\n\n\nWarning学术诚信\n\n\n\n本仓库资料仅供学习参考，请勿直接抄袭。\n\n\n\n\n\n\n\n\nNote版权声明\n\n\n\n尊重知识产权，注明资料来源。如有侵权，请联系删除。",
+    "crumbs": [
+      "首页"
+    ]
+  },
+  {
+    "objectID": "index.html#许可证",
+    "href": "index.html#许可证",
+    "title": "Bioinfo-SMU",
+    "section": "许可证",
+    "text": "许可证\n本项目采用 MIT License 开源协议。",
+    "crumbs": [
+      "首页"
+    ]
+  },
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "参考资料",
+    "section": "",
+    "text": "推荐的学习资源、文献和教程。\n\n\n\n\n\n\n《生物信息学》 - 李霞、雷健波\n《R语言实战》 - Robert I. Kabacoff\n《Python编程：从入门到实践》 - Eric Matthes\n\n\n\n\n\n《Bioinformatics and Functional Genomics》 - Jonathan Pevsner\n《An Introduction to Statistical Learning》 - James et al.\n《The Elements of Statistical Learning》 - Hastie et al.\n\n\n\n\n\n\n\n\n\nBioinformatics Specialization\nGenomic Data Science Specialization\n\n\n\n\n\nData Analysis for Life Sciences\nIntroduction to Bioconductor\n\n\n\n\n\n生信技能树\nRosalind - 生物信息学编程练习\n\n\n\n\n\n\n\n\n\nNetwork Biology\n\nBarabási, A. L., & Oltvai, Z. N. (2004). Network biology: understanding the cell’s functional organization. Nature Reviews Genetics.\n\nRNA-seq\n\nConesa, A., et al. (2016). A survey of best practices for RNA-seq data analysis. Genome Biology.\n\nSingle-cell RNA-seq\n\nLuecken, M. D., & Theis, F. J. (2019). Current best practices in single‐cell RNA‐seq analysis. Molecular Systems Biology.\n\n\n\n\n\n\n\n\n\n\nR for Data Science\nAdvanced R\nR Graphics Cookbook\n\n\n\n\n\nPython for Biologists\nBiopython Tutorial\nPython Data Science Handbook\n\n\n\n\n\n\n\n\n\nBiostars - 生物信息学问答社区\nStack Overflow - 编程问答\n生信技能树论坛\n\n\n\n\n\n生信技能树公众号\n简书 - 生信标签\n\n\n\n\n\n\n\n\n参见常用工具页面的数据库部分。\n\n\n\n\n\n\n\n\nISMB - Intelligent Systems for Molecular Biology\nRECOMB - Research in Computational Molecular Biology\nPSB - Pacific Symposium on Biocomputing\n\n\n\n\n\n中国生物信息学大会\n中国计算生物学大会\n\n\n返回首页",
+    "crumbs": [
+      "首页",
+      "学习资源",
+      "参考资料"
+    ]
+  },
+  {
+    "objectID": "resources.html#书籍",
+    "href": "resources.html#书籍",
+    "title": "参考资料",
+    "section": "",
+    "text": "《生物信息学》 - 李霞、雷健波\n《R语言实战》 - Robert I. Kabacoff\n《Python编程：从入门到实践》 - Eric Matthes\n\n\n\n\n\n《Bioinformatics and Functional Genomics》 - Jonathan Pevsner\n《An Introduction to Statistical Learning》 - James et al.\n《The Elements of Statistical Learning》 - Hastie et al.",
+    "crumbs": [
+      "首页",
+      "学习资源",
+      "参考资料"
+    ]
+  },
+  {
+    "objectID": "resources.html#在线课程",
+    "href": "resources.html#在线课程",
+    "title": "参考资料",
+    "section": "",
+    "text": "Bioinformatics Specialization\nGenomic Data Science Specialization\n\n\n\n\n\nData Analysis for Life Sciences\nIntroduction to Bioconductor\n\n\n\n\n\n生信技能树\nRosalind - 生物信息学编程练习",
+    "crumbs": [
+      "首页",
+      "学习资源",
+      "参考资料"
+    ]
+  },
+  {
+    "objectID": "resources.html#重要文献",
+    "href": "resources.html#重要文献",
+    "title": "参考资料",
+    "section": "",
+    "text": "Network Biology\n\nBarabási, A. L., & Oltvai, Z. N. (2004). Network biology: understanding the cell’s functional organization. Nature Reviews Genetics.\n\nRNA-seq\n\nConesa, A., et al. (2016). A survey of best practices for RNA-seq data analysis. Genome Biology.\n\nSingle-cell RNA-seq\n\nLuecken, M. D., & Theis, F. J. (2019). Current best practices in single‐cell RNA‐seq analysis. Molecular Systems Biology.",
+    "crumbs": [
+      "首页",
+      "学习资源",
+      "参考资料"
+    ]
+  },
+  {
+    "objectID": "resources.html#编程资源",
+    "href": "resources.html#编程资源",
+    "title": "参考资料",
+    "section": "",
+    "text": "R for Data Science\nAdvanced R\nR Graphics Cookbook\n\n\n\n\n\nPython for Biologists\nBiopython Tutorial\nPython Data Science Handbook",
+    "crumbs": [
+      "首页",
+      "学习资源",
+      "参考资料"
+    ]
+  },
+  {
+    "objectID": "resources.html#有用的网站",
+    "href": "resources.html#有用的网站",
+    "title": "参考资料",
+    "section": "",
+    "text": "Biostars - 生物信息学问答社区\nStack Overflow - 编程问答\n生信技能树论坛\n\n\n\n\n\n生信技能树公众号\n简书 - 生信标签",
+    "crumbs": [
+      "首页",
+      "学习资源",
+      "参考资料"
+    ]
+  },
+  {
+    "objectID": "resources.html#数据资源",
+    "href": "resources.html#数据资源",
+    "title": "参考资料",
+    "section": "",
+    "text": "参见常用工具页面的数据库部分。",
+    "crumbs": [
+      "首页",
+      "学习资源",
+      "参考资料"
+    ]
+  },
+  {
+    "objectID": "resources.html#学术会议",
+    "href": "resources.html#学术会议",
+    "title": "参考资料",
+    "section": "",
+    "text": "ISMB - Intelligent Systems for Molecular Biology\nRECOMB - Research in Computational Molecular Biology\nPSB - Pacific Symposium on Biocomputing\n\n\n\n\n\n中国生物信息学大会\n中国计算生物学大会\n\n\n返回首页",
+    "crumbs": [
+      "首页",
+      "学习资源",
+      "参考资料"
+    ]
+  }
+]

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>index – Bioinfo-SMU</title>
+<title>exp4 – Bioinfo-SMU</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,6 +23,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -32,8 +67,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../Grade4/computational_molecular_biology/exam-info.html" rel="next">
-<link href="../../Grade4/CADD/index.html" rel="prev">
+<link href="../../Grade4/computational_biology/exam-materials.html" rel="next">
+<link href="../../Grade4/computational_biology/exp3.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -76,10 +111,38 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
 <meta property="og:title" content="Bioinfo-SMU">
-<meta property="og:description" content="">
 <meta property="og:site_name" content="Bioinfo-SMU">
 </head>
 
@@ -363,7 +426,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../Grade4/index.html">大四课程</a></li><li class="breadcrumb-item"><a href="../../Grade4/computational_molecular_biology/index.html">计算分子生物学</a></li><li class="breadcrumb-item"><a href="../../Grade4/computational_molecular_biology/index.html">课程主页</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../Grade4/index.html">大四课程</a></li><li class="breadcrumb-item"><a href="../../Grade4/computational_biology/index.html">计算生物学</a></li><li class="breadcrumb-item"><a href="../../Grade4/computational_biology/exp4.html">实验4 - qPCR数据分析</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -440,13 +503,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
  <span class="menu-text">计算生物学</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../Grade4/computational_biology/index.html" class="sidebar-item-text sidebar-link">
@@ -473,7 +536,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Grade4/computational_biology/exp4.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Grade4/computational_biology/exp4.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">实验4 - qPCR数据分析</span></a>
   </div>
 </li>
@@ -493,16 +556,16 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false">
  <span class="menu-text">计算分子生物学</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 show">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Grade4/computational_molecular_biology/index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../Grade4/computational_molecular_biology/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">课程主页</span></a>
   </div>
 </li>
@@ -636,59 +699,404 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#计算分子生物学" id="toc-计算分子生物学" class="nav-link active" data-scroll-target="#计算分子生物学">计算分子生物学</a>
+  <li><a href="#实验四qpcr-数据分析" id="toc-实验四qpcr-数据分析" class="nav-link active" data-scroll-target="#实验四qpcr-数据分析">实验四：qPCR 数据分析</a>
   <ul class="collapse">
-  <li><a href="#课程内容" id="toc-课程内容" class="nav-link" data-scroll-target="#课程内容">课程内容</a></li>
-  <li><a href="#考试相关" id="toc-考试相关" class="nav-link" data-scroll-target="#考试相关">考试相关</a></li>
-  <li><a href="#其他资料" id="toc-其他资料" class="nav-link" data-scroll-target="#其他资料">其他资料</a></li>
+  <li><a href="#实验简介" id="toc-实验简介" class="nav-link" data-scroll-target="#实验简介">实验简介</a></li>
+  <li><a href="#实验目的" id="toc-实验目的" class="nav-link" data-scroll-target="#实验目的">实验目的</a></li>
+  <li><a href="#理论背景" id="toc-理论背景" class="nav-link" data-scroll-target="#理论背景">理论背景</a>
+  <ul class="collapse">
+  <li><a href="#qpcr-原理" id="toc-qpcr-原理" class="nav-link" data-scroll-target="#qpcr-原理">qPCR 原理</a></li>
+  <li><a href="#ct-值" id="toc-ct-值" class="nav-link" data-scroll-target="#ct-值">Ct 值</a></li>
+  <li><a href="#δδct-方法" id="toc-δδct-方法" class="nav-link" data-scroll-target="#δδct-方法">ΔΔCt 方法</a></li>
+  </ul></li>
+  <li><a href="#实验步骤" id="toc-实验步骤" class="nav-link" data-scroll-target="#实验步骤">实验步骤</a>
+  <ul class="collapse">
+  <li><a href="#数据导入和检查" id="toc-数据导入和检查" class="nav-link" data-scroll-target="#数据导入和检查">1. 数据导入和检查</a></li>
+  <li><a href="#数据质控" id="toc-数据质控" class="nav-link" data-scroll-target="#数据质控">2. 数据质控</a></li>
+  <li><a href="#计算-δct" id="toc-计算-δct" class="nav-link" data-scroll-target="#计算-δct">3. 计算 ΔCt</a></li>
+  <li><a href="#计算-δδct-和相对表达量" id="toc-计算-δδct-和相对表达量" class="nav-link" data-scroll-target="#计算-δδct-和相对表达量">4. 计算 ΔΔCt 和相对表达量</a></li>
+  <li><a href="#统计检验" id="toc-统计检验" class="nav-link" data-scroll-target="#统计检验">5. 统计检验</a></li>
+  <li><a href="#数据可视化" id="toc-数据可视化" class="nav-link" data-scroll-target="#数据可视化">6. 数据可视化</a></li>
+  </ul></li>
+  <li><a href="#结果解释" id="toc-结果解释" class="nav-link" data-scroll-target="#结果解释">结果解释</a>
+  <ul class="collapse">
+  <li><a href="#相对表达量" id="toc-相对表达量" class="nav-link" data-scroll-target="#相对表达量">相对表达量</a></li>
+  <li><a href="#fold-change" id="toc-fold-change" class="nav-link" data-scroll-target="#fold-change">Fold Change</a></li>
+  </ul></li>
+  <li><a href="#注意事项" id="toc-注意事项" class="nav-link" data-scroll-target="#注意事项">注意事项</a></li>
+  <li><a href="#作业要求" id="toc-作业要求" class="nav-link" data-scroll-target="#作业要求">作业要求</a></li>
+  <li><a href="#文件位置" id="toc-文件位置" class="nav-link" data-scroll-target="#文件位置">文件位置</a></li>
+  <li><a href="#参考资料" id="toc-参考资料" class="nav-link" data-scroll-target="#参考资料">参考资料</a></li>
+  <li><a href="#提示" id="toc-提示" class="nav-link" data-scroll-target="#提示">提示</a></li>
   </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../Grade4/index.html">大四课程</a></li><li class="breadcrumb-item"><a href="../../Grade4/computational_molecular_biology/index.html">计算分子生物学</a></li><li class="breadcrumb-item"><a href="../../Grade4/computational_molecular_biology/index.html">课程主页</a></li></ol></nav></header>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../Grade4/index.html">大四课程</a></li><li class="breadcrumb-item"><a href="../../Grade4/computational_biology/index.html">计算生物学</a></li><li class="breadcrumb-item"><a href="../../Grade4/computational_biology/exp4.html">实验4 - qPCR数据分析</a></li></ol></nav></header>
 
 
 
 
 
-<section id="计算分子生物学" class="level1">
-<h1>计算分子生物学</h1>
-<p><strong>课程简介</strong>：学习生物信息学中的核心算法与计算方法。</p>
+<section id="实验四qpcr-数据分析" class="level1">
+<h1>实验四：qPCR 数据分析</h1>
+<section id="实验简介" class="level2">
+<h2 class="anchored" data-anchor-id="实验简介">实验简介</h2>
+<p>qPCR（实时荧光定量 PCR）是分子生物学中常用的基因表达定量技术。本实验学习如何处理和分析 qPCR 数据。</p>
 <hr>
-<section id="课程内容" class="level2">
-<h2 class="anchored" data-anchor-id="课程内容">课程内容</h2>
-<p>本课程主要内容包括：</p>
+</section>
+<section id="实验目的" class="level2">
+<h2 class="anchored" data-anchor-id="实验目的">实验目的</h2>
 <ul>
-<li><strong>序列比对</strong> - 双序列比对、多序列比对算法</li>
-<li><strong>系统进化树</strong> - 进化树的构建方法与分析</li>
-<li><strong>概率模型</strong> - 马尔可夫链及其应用</li>
+<li>理解 qPCR 原理和数据格式</li>
+<li>掌握 Ct 值的处理方法</li>
+<li>学会相对表达量的计算（ΔΔCt 方法）</li>
+<li>进行统计检验和可视化</li>
 </ul>
 <hr>
 </section>
-<section id="考试相关" class="level2">
-<h2 class="anchored" data-anchor-id="考试相关">考试相关</h2>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th style="text-align: center;">资料</th>
-<th style="text-align: center;">说明</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;"><a href="../../Grade4/computational_molecular_biology/exam-info.html">考试说明</a></td>
-<td style="text-align: center;">成绩构成、复习重点</td>
-</tr>
-</tbody>
-</table>
+<section id="理论背景" class="level2">
+<h2 class="anchored" data-anchor-id="理论背景">理论背景</h2>
+<section id="qpcr-原理" class="level3">
+<h3 class="anchored" data-anchor-id="qpcr-原理">qPCR 原理</h3>
+<p>实时荧光定量 PCR 通过实时监测 PCR 反应中荧光信号的变化来定量 DNA/RNA 模板。</p>
+</section>
+<section id="ct-值" class="level3">
+<h3 class="anchored" data-anchor-id="ct-值">Ct 值</h3>
+<p><strong>Ct (Cycle threshold)</strong>：荧光信号达到设定阈值时的循环数。</p>
+<ul>
+<li>Ct 值越小，表示起始模板量越多</li>
+<li>Ct 值与起始模板量呈对数关系</li>
+</ul>
+</section>
+<section id="δδct-方法" class="level3">
+<h3 class="anchored" data-anchor-id="δδct-方法">ΔΔCt 方法</h3>
+<p>相对定量的标准方法：</p>
+<p><span class="math display">\[
+\Delta Ct = Ct_{目标基因} - Ct_{内参基因}
+\]</span></p>
+<p><span class="math display">\[
+\Delta\Delta Ct = \Delta Ct_{实验组} - \Delta Ct_{对照组}
+\]</span></p>
+<p><span class="math display">\[
+相对表达量 = 2^{-\Delta\Delta Ct}
+\]</span></p>
 <hr>
 </section>
-<section id="其他资料" class="level2">
-<h2 class="anchored" data-anchor-id="其他资料">其他资料</h2>
-<p>资料正在整理中…如果你有相关资料，欢迎<a href="../../contributing.html">贡献</a>！</p>
+</section>
+<section id="实验步骤" class="level2">
+<h2 class="anchored" data-anchor-id="实验步骤">实验步骤</h2>
+<section id="数据导入和检查" class="level3">
+<h3 class="anchored" data-anchor-id="数据导入和检查">1. 数据导入和检查</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyr)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 读取数据</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>qpcr_data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"qPCR_data.csv"</span>)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># 查看数据结构</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(qpcr_data)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(qpcr_data)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co"># 数据格式示例：</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Sample    Gene      Ct    Group</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Sample1   GAPDH     18.5  Control</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Sample1   Gene1     22.3  Control</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co"># ...</span></span></code></pre></div>
+</section>
+<section id="数据质控" class="level3">
+<h3 class="anchored" data-anchor-id="数据质控">2. 数据质控</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 检查技术重复的一致性</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>qpcr_summary <span class="ot">&lt;-</span> qpcr_data <span class="sc">%&gt;%</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Sample, Gene, Group) <span class="sc">%&gt;%</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">mean_Ct =</span> <span class="fu">mean</span>(Ct, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">sd_Ct =</span> <span class="fu">sd</span>(Ct, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">cv =</span> sd_Ct <span class="sc">/</span> mean_Ct <span class="sc">*</span> <span class="dv">100</span>,  <span class="co"># 变异系数</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co"># 标记CV过大的数据点（通常&gt;2%需要注意）</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>qpcr_summary<span class="sc">$</span>qc_flag <span class="ot">&lt;-</span> <span class="fu">ifelse</span>(qpcr_summary<span class="sc">$</span>cv <span class="sc">&gt;</span> <span class="dv">2</span>, <span class="st">"Check"</span>, <span class="st">"Pass"</span>)</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="co"># 可视化技术重复的一致性</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(qpcr_summary, <span class="fu">aes</span>(<span class="at">x =</span> Gene, <span class="at">y =</span> cv, <span class="at">fill =</span> qc_flag)) <span class="sc">+</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>) <span class="sc">+</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">2</span>, <span class="at">linetype =</span> <span class="st">"dashed"</span>, <span class="at">color =</span> <span class="st">"red"</span>) <span class="sc">+</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Coefficient of Variation for Technical Replicates"</span>,</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Gene"</span>,</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"CV (%)"</span>) <span class="sc">+</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>))</span></code></pre></div>
+</section>
+<section id="计算-δct" class="level3">
+<h3 class="anchored" data-anchor-id="计算-δct">3. 计算 ΔCt</h3>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 分离内参基因（假设为 GAPDH）</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>housekeeping_gene <span class="ot">&lt;-</span> <span class="st">"GAPDH"</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 获取每个样本的内参 Ct 值</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>hk_ct <span class="ot">&lt;-</span> qpcr_summary <span class="sc">%&gt;%</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Gene <span class="sc">==</span> housekeeping_gene) <span class="sc">%&gt;%</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(Sample, Group, <span class="at">hk_Ct =</span> mean_Ct)</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="co"># 计算 ΔCt</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>delta_ct <span class="ot">&lt;-</span> qpcr_summary <span class="sc">%&gt;%</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Gene <span class="sc">!=</span> housekeeping_gene) <span class="sc">%&gt;%</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(hk_ct, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"Sample"</span>, <span class="st">"Group"</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">delta_Ct =</span> mean_Ct <span class="sc">-</span> hk_Ct)</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(delta_ct)</span></code></pre></div>
+</section>
+<section id="计算-δδct-和相对表达量" class="level3">
+<h3 class="anchored" data-anchor-id="计算-δδct-和相对表达量">4. 计算 ΔΔCt 和相对表达量</h3>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 计算对照组的平均 ΔCt</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>control_delta_ct <span class="ot">&lt;-</span> delta_ct <span class="sc">%&gt;%</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Group <span class="sc">==</span> <span class="st">"Control"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Gene) <span class="sc">%&gt;%</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">control_mean_delta_Ct =</span> <span class="fu">mean</span>(delta_Ct), <span class="at">.groups =</span> <span class="st">"drop"</span>)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 计算 ΔΔCt</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>ddct_data <span class="ot">&lt;-</span> delta_ct <span class="sc">%&gt;%</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(control_delta_ct, <span class="at">by =</span> <span class="st">"Gene"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">delta_delta_Ct =</span> delta_Ct <span class="sc">-</span> control_mean_delta_Ct,</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">relative_expression =</span> <span class="dv">2</span><span class="sc">^</span>(<span class="sc">-</span>delta_delta_Ct)</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(ddct_data)</span></code></pre></div>
+</section>
+<section id="统计检验" class="level3">
+<h3 class="anchored" data-anchor-id="统计检验">5. 统计检验</h3>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># t检验比较实验组和对照组</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>stat_results <span class="ot">&lt;-</span> ddct_data <span class="sc">%&gt;%</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Gene) <span class="sc">%&gt;%</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">control_mean =</span> <span class="fu">mean</span>(relative_expression[Group <span class="sc">==</span> <span class="st">"Control"</span>]),</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">treatment_mean =</span> <span class="fu">mean</span>(relative_expression[Group <span class="sc">==</span> <span class="st">"Treatment"</span>]),</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">fold_change =</span> treatment_mean <span class="sc">/</span> control_mean,</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">p_value =</span> <span class="fu">t.test</span>(relative_expression <span class="sc">~</span> Group)<span class="sc">$</span>p.value,</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">significant =</span> <span class="fu">ifelse</span>(p_value <span class="sc">&lt;</span> <span class="fl">0.05</span>, <span class="st">"Yes"</span>, <span class="st">"No"</span>),</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">regulation =</span> <span class="fu">case_when</span>(</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>      fold_change <span class="sc">&gt;</span> <span class="fl">1.5</span> <span class="sc">&amp;</span> p_value <span class="sc">&lt;</span> <span class="fl">0.05</span> <span class="sc">~</span> <span class="st">"Up"</span>,</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>      fold_change <span class="sc">&lt;</span> <span class="fl">0.67</span> <span class="sc">&amp;</span> p_value <span class="sc">&lt;</span> <span class="fl">0.05</span> <span class="sc">~</span> <span class="st">"Down"</span>,</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>      <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">"No change"</span></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(stat_results)</span></code></pre></div>
+</section>
+<section id="数据可视化" class="level3">
+<h3 class="anchored" data-anchor-id="数据可视化">6. 数据可视化</h3>
+<section id="条形图" class="level4">
+<h4 class="anchored" data-anchor-id="条形图">条形图</h4>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 计算均值和标准误</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>plot_data <span class="ot">&lt;-</span> ddct_data <span class="sc">%&gt;%</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Gene, Group) <span class="sc">%&gt;%</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">mean_expr =</span> <span class="fu">mean</span>(relative_expression),</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">se =</span> <span class="fu">sd</span>(relative_expression) <span class="sc">/</span> <span class="fu">sqrt</span>(<span class="fu">n</span>()),</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="co"># 绘制条形图</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(plot_data, <span class="fu">aes</span>(<span class="at">x =</span> Gene, <span class="at">y =</span> mean_expr, <span class="at">fill =</span> Group)) <span class="sc">+</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">position =</span> <span class="fu">position_dodge</span>(<span class="at">width =</span> <span class="fl">0.9</span>)) <span class="sc">+</span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymin =</span> mean_expr <span class="sc">-</span> se, <span class="at">ymax =</span> mean_expr <span class="sc">+</span> se),</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>                <span class="at">position =</span> <span class="fu">position_dodge</span>(<span class="at">width =</span> <span class="fl">0.9</span>),</span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>                <span class="at">width =</span> <span class="fl">0.25</span>) <span class="sc">+</span></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">1</span>, <span class="at">linetype =</span> <span class="st">"dashed"</span>, <span class="at">color =</span> <span class="st">"gray50"</span>) <span class="sc">+</span></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Relative Gene Expression"</span>,</span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Gene"</span>,</span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Relative Expression (2^-ΔΔCt)"</span>,</span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>       <span class="at">fill =</span> <span class="st">"Group"</span>) <span class="sc">+</span></span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>))</span></code></pre></div>
+</section>
+<section id="箱线图" class="level4">
+<h4 class="anchored" data-anchor-id="箱线图">箱线图</h4>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(ddct_data, <span class="fu">aes</span>(<span class="at">x =</span> Gene, <span class="at">y =</span> relative_expression, <span class="at">fill =</span> Group)) <span class="sc">+</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_jitter</span>(<span class="at">position =</span> <span class="fu">position_jitterdodge</span>(<span class="at">jitter.width =</span> <span class="fl">0.2</span>),</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>              <span class="at">alpha =</span> <span class="fl">0.5</span>, <span class="at">size =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">1</span>, <span class="at">linetype =</span> <span class="st">"dashed"</span>, <span class="at">color =</span> <span class="st">"gray50"</span>) <span class="sc">+</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Relative Gene Expression Distribution"</span>,</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Gene"</span>,</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Relative Expression (2^-ΔΔCt)"</span>,</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>       <span class="at">fill =</span> <span class="st">"Group"</span>) <span class="sc">+</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>))</span></code></pre></div>
+</section>
+<section id="火山图如果有多个基因" class="level4">
+<h4 class="anchored" data-anchor-id="火山图如果有多个基因">火山图（如果有多个基因）</h4>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(stat_results, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">log2</span>(fold_change), <span class="at">y =</span> <span class="sc">-</span><span class="fu">log10</span>(p_value))) <span class="sc">+</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color =</span> regulation), <span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"Up"</span> <span class="ot">=</span> <span class="st">"red"</span>, <span class="st">"Down"</span> <span class="ot">=</span> <span class="st">"blue"</span>, <span class="st">"No change"</span> <span class="ot">=</span> <span class="st">"gray"</span>)) <span class="sc">+</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="fu">log2</span>(<span class="fl">1.5</span>), <span class="fu">log2</span>(<span class="fl">1.5</span>)), <span class="at">linetype =</span> <span class="st">"dashed"</span>) <span class="sc">+</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="sc">-</span><span class="fu">log10</span>(<span class="fl">0.05</span>), <span class="at">linetype =</span> <span class="st">"dashed"</span>) <span class="sc">+</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> Gene), <span class="at">vjust =</span> <span class="sc">-</span><span class="fl">0.5</span>, <span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Volcano Plot"</span>,</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"log2(Fold Change)"</span>,</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"-log10(p-value)"</span>,</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>       <span class="at">color =</span> <span class="st">"Regulation"</span>) <span class="sc">+</span></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div>
 <hr>
-<p><a href="../../Grade4/index.html">返回上级</a></p>
+</section>
+</section>
+</section>
+<section id="结果解释" class="level2">
+<h2 class="anchored" data-anchor-id="结果解释">结果解释</h2>
+<section id="相对表达量" class="level3">
+<h3 class="anchored" data-anchor-id="相对表达量">相对表达量</h3>
+<ul>
+<li><strong>= 1</strong>：表达量与对照组相同</li>
+<li><strong>&gt; 1</strong>：表达上调</li>
+<li><strong>&lt; 1</strong>：表达下调</li>
+</ul>
+</section>
+<section id="fold-change" class="level3">
+<h3 class="anchored" data-anchor-id="fold-change">Fold Change</h3>
+<ul>
+<li><strong>FC &gt; 1.5 且 p &lt; 0.05</strong>：显著上调</li>
+<li><strong>FC &lt; 0.67 且 p &lt; 0.05</strong>：显著下调</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="注意事项" class="level2">
+<h2 class="anchored" data-anchor-id="注意事项">注意事项</h2>
+<div class="callout callout-style-simple callout-warning callout-titled" title="实验设计">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>实验设计
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>确保技术重复（至少3次）</li>
+<li>生物学重复建议≥3个</li>
+<li>选择合适稳定的内参基因</li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-simple callout-warning callout-titled" title="数据质控">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>数据质控
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Ct &gt; 35 通常认为不可靠</li>
+<li>技术重复的 CV 应 &lt; 2%</li>
+<li>内参基因在不同组间应稳定</li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-simple callout-tip callout-titled" title="内参基因选择">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>内参基因选择
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>常用内参基因：GAPDH、β-actin、18S rRNA</p>
+<p>内参基因应： - 表达稳定 - 不受实验条件影响 - 表达量适中</p>
+</div>
+</div>
+<hr>
+</section>
+<section id="作业要求" class="level2">
+<h2 class="anchored" data-anchor-id="作业要求">作业要求</h2>
+<ol type="1">
+<li><strong>数据分析</strong>
+<ul>
+<li>导入并检查数据</li>
+<li>进行质量控制</li>
+<li>计算相对表达量</li>
+</ul></li>
+<li><strong>统计分析</strong>
+<ul>
+<li>进行 t 检验</li>
+<li>判断哪些基因显著差异表达</li>
+<li>计算 fold change</li>
+</ul></li>
+<li><strong>结果可视化</strong>
+<ul>
+<li>绘制条形图和箱线图</li>
+<li>添加误差线和统计显著性标记</li>
+<li>图表美观、标注清晰</li>
+</ul></li>
+<li><strong>结果解释</strong>
+<ul>
+<li>对差异基因的生物学意义进行讨论</li>
+<li>与已知文献比较</li>
+<li>提出进一步验证的思路</li>
+</ul></li>
+</ol>
+<hr>
+</section>
+<section id="文件位置" class="level2">
+<h2 class="anchored" data-anchor-id="文件位置">文件位置</h2>
+<pre><code>Grade4/computational_biology/experiments/Exp4/
+├── Exp4.Rmd          # R Markdown 报告
+├── Exp4.html         # 生成的 HTML 报告
+└── qPCR_data.csv     # qPCR 数据</code></pre>
+<hr>
+</section>
+<section id="参考资料" class="level2">
+<h2 class="anchored" data-anchor-id="参考资料">参考资料</h2>
+<ol type="1">
+<li><p>Livak, K. J., &amp; Schmittgen, T. D. (2001). Analysis of relative gene expression data using real-time quantitative PCR and the 2− ΔΔCT method. <em>Methods</em>, 25(4), 402-408.</p></li>
+<li><p>Bustin, S. A., et al.&nbsp;(2009). The MIQE guidelines: minimum information for publication of quantitative real-time PCR experiments. <em>Clinical Chemistry</em>, 55(4), 611-622.</p></li>
+</ol>
+<hr>
+</section>
+<section id="提示" class="level2">
+<h2 class="anchored" data-anchor-id="提示">提示</h2>
+<div class="callout callout-style-simple callout-tip callout-titled" title="PCR 效率">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>PCR 效率
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>本实验假设 PCR 效率为 100%（扩增效率 = 2）。如果效率不是 100%，需要使用修正公式：</p>
+<p><span class="math display">\[相对表达量 = E^{-\Delta\Delta Ct}\]</span></p>
+<p>其中 E 是实际的扩增效率。</p>
+</div>
+</div>
+<div class="callout callout-style-simple callout-tip callout-titled" title="多重比较校正">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>多重比较校正
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>如果检测多个基因，考虑进行 Bonferroni 或 FDR 校正。</p>
+</div>
+</div>
+<hr>
+<p><a href="../../Grade4/computational_biology/exp3.html">← 上一个实验：MCL &amp; RWR</a> | <a href="../../Grade4/computational_biology/index.html">返回课程主页</a></p>
 
 
 </section>
@@ -1053,13 +1461,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../Grade4/CADD/index.html" class="pagination-link" aria-label="计算机辅助药物设计">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">计算机辅助药物设计</span>
+      <a href="../../Grade4/computational_biology/exp3.html" class="pagination-link" aria-label="实验3 - 网络聚类与随机游走">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">实验3 - 网络聚类与随机游走</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../Grade4/computational_molecular_biology/exam-info.html" class="pagination-link" aria-label="考试说明">
-        <span class="nav-page-text">考试说明</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../Grade4/computational_biology/exam-materials.html" class="pagination-link" aria-label="考试资料">
+        <span class="nav-page-text">考试资料</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
