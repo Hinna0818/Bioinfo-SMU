@@ -1,0 +1,156 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "*.md"
+    - "BioinfoTalus/*.md"
+    - "Epidemiology/*.md"
+    - "Grade2/*.md"
+    - "Grade3/*.md"
+    - "Grade4/**/*.md"
+    - "Rbase/*.md"
+
+website:
+  title: "Bioinfo-SMU"
+  site-url: "https://hinna0818.github.io/Bioinfo-SMU/"
+  repo-url: "https://github.com/Hinna0818/Bioinfo-SMU"
+  page-navigation: true
+  reader-mode: true
+  open-graph: true
+  search:
+    location: navbar
+    type: overlay
+  navbar:
+    pinned: true
+    left:
+      - text: "首页"
+        href: index.md
+      - text: "大二课程"
+        href: Grade2/index.md
+      - text: "大三课程"
+        href: Grade3/index.md
+      - text: "大四课程"
+        menu:
+          - text: "课程总览"
+            href: Grade4/index.md
+          - text: "计算生物学"
+            href: Grade4/computational_biology/index.md
+          - text: "计算机辅助药物设计"
+            href: Grade4/CADD/index.md
+          - text: "计算分子生物学"
+            href: Grade4/computational_molecular_biology/index.md
+          - text: "就业指导概论"
+            href: Grade4/career_guidance/index.md
+      - text: "R 语言教程"
+        href: Rbase/index.md
+      - text: "生信流程"
+        href: BioinfoTalus/index.md
+      - text: "流行病学数据库"
+        href: Epidemiology/UK_Biobank.md
+      - text: "学习资源"
+        menu:
+          - text: "学习路线"
+            href: learning-path.md
+          - text: "常用工具"
+            href: tools.md
+          - text: "参考资料"
+            href: resources.md
+      - text: "贡献指南"
+        href: contributing.md
+      - text: "关于"
+        href: about.md
+    right:
+      - text: "GitHub"
+        href: "https://github.com/Hinna0818/Bioinfo-SMU"
+  sidebar:
+    style: docked
+    search: true
+    collapse-level: 2
+    contents:
+      - text: "首页"
+        href: index.md
+      - section: "大二课程"
+        contents:
+          - text: "大二课程总览"
+            href: Grade2/index.md
+      - section: "大三课程"
+        contents:
+          - text: "大三课程总览"
+            href: Grade3/index.md
+      - section: "大四课程"
+        contents:
+          - text: "大四课程总览"
+            href: Grade4/index.md
+          - section: "计算生物学"
+            contents:
+              - text: "课程主页"
+                href: Grade4/computational_biology/index.md
+              - text: "实验1 - PPI网络分析"
+                href: Grade4/computational_biology/exp1.md
+              - text: "实验2 - WGCNA分析"
+                href: Grade4/computational_biology/exp2.md
+              - text: "实验3 - 网络聚类与随机游走"
+                href: Grade4/computational_biology/exp3.md
+              - text: "实验4 - qPCR数据分析"
+                href: Grade4/computational_biology/exp4.md
+              - text: "考试资料"
+                href: Grade4/computational_biology/exam-materials.md
+          - text: "计算机辅助药物设计"
+            href: Grade4/CADD/index.md
+          - section: "计算分子生物学"
+            contents:
+              - text: "课程主页"
+                href: Grade4/computational_molecular_biology/index.md
+              - text: "考试说明"
+                href: Grade4/computational_molecular_biology/exam-info.md
+          - text: "就业指导概论"
+            href: Grade4/career_guidance/index.md
+      - section: "R 语言教程"
+        contents:
+          - text: "教程总览"
+            href: Rbase/index.md
+          - text: "L6 - R 函数与包开发"
+            href: Rbase/L6_functions.md
+          - text: "L7 - ggplot2 数据可视化"
+            href: Rbase/L7_ggplot2.md
+      - section: "生信流程"
+        contents:
+          - text: "BioinfoTalus"
+            href: BioinfoTalus/index.md
+      - section: "流行病学数据库"
+        contents:
+          - text: "UK Biobank"
+            href: Epidemiology/UK_Biobank.md
+      - section: "学习资源"
+        contents:
+          - text: "学习路线"
+            href: learning-path.md
+          - text: "常用工具"
+            href: tools.md
+          - text: "参考资料"
+            href: resources.md
+      - text: "贡献指南"
+        href: contributing.md
+      - text: "关于"
+        href: about.md
+  page-footer:
+    left: "Bioinfo-SMU 学习资源库"
+    right: "Built with Quarto"
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    css: styles.css
+    toc: true
+    toc-depth: 3
+    code-copy: false
+    code-overflow: wrap
+    anchor-sections: true
+    smooth-scroll: true
+    link-external-newwindow: true
+    callout-appearance: simple
+
+execute:
+  freeze: auto

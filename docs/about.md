@@ -1,22 +1,22 @@
 # 关于本项目
 
-## 📖 项目简介
+## 项目简介
 
 **Bioinfo-SMU** 是一个面向南方医科大学生物信息学专业学生的学习资源库。
 
 ### 项目宗旨
 
-> 💡 帮助生信专业的同学们更好地学习和科研，共同进步！
+>  帮助生信专业的同学们更好地学习和科研，共同进步！
 
 我们相信：
 
-- 📚 知识共享能让学习更高效
-- 🤝 互帮互助能让进步更快速
-- 🌟 开源协作能创造更大价值
+- 知识共享能让学习更高效
+- 互帮互助能让进步更快速
+- 开源协作能创造更大价值
 
 ---
 
-## 🎯 项目目标
+## 项目目标
 
 ### 为学生提供
 
@@ -37,20 +37,20 @@
 
 ### 培养能力
 
-- 💻 **编程能力** - R 和 Python 编程技能
-- 📊 **数据分析** - 生物数据的统计分析能力
-- 🔬 **科研思维** - 独立思考和解决问题的能力
-- 🤝 **协作精神** - 开源协作和知识分享
+- **编程能力** - R 和 Python 编程技能
+- **数据分析** - 生物数据的统计分析能力
+- **科研思维** - 独立思考和解决问题的能力
+- **协作精神** - 开源协作和知识分享
 
 ---
 
-## 👥 项目维护
+## 项目维护
 
 ### 创始人
 
 **Nan He** ([@Hinna0818](https://github.com/Hinna0818))
 
-- 📧 邮箱：hinna01@163.com
+- 邮箱：hinna01@163.com
 
 ### 贡献者
 
@@ -64,7 +64,7 @@
 
 ---
 
-## 📊 项目统计
+## 项目统计
 
 <div align="center">
 
@@ -80,7 +80,7 @@
 
 ---
 
-## 🗓️ 项目历程
+## 项目历程
 
 ### 2025
 
@@ -92,7 +92,7 @@
 
 ---
 
-## 🛠️ 技术栈
+## 技术栈
 
 ### 编程语言
 
@@ -117,62 +117,62 @@
 
 ---
 
-## 📄 许可证
+## 许可证
 
 本项目采用 **MIT License** 开源协议。
 
 ### MIT License 特点
 
-- ✅ 允许商业使用
-- ✅ 允许修改和分发
-- ✅ 允许私人使用
-- ⚠️ 需保留版权声明
-- ⚠️ 不提供任何担保
+- 允许商业使用
+- 允许修改和分发
+- 允许私人使用
+- 需保留版权声明
+- 不提供任何担保
 
 [查看完整许可证 →](https://github.com/Hinna0818/Bioinfo-SMU/blob/main/LICENSE)
 
 ---
 
-## 🔗 相关链接
+## 相关链接
 
 ### 官方资源
 
-- 🏠 [GitHub 仓库](https://github.com/Hinna0818/Bioinfo-SMU)
-- 📚 [在线文档](https://hinna0818.github.io/Bioinfo-SMU/)
-- 💬 [讨论区](https://github.com/Hinna0818/Bioinfo-SMU/discussions)
-- 🐛 [Issue 追踪](https://github.com/Hinna0818/Bioinfo-SMU/issues)
+- [GitHub 仓库](https://github.com/Hinna0818/Bioinfo-SMU)
+- [在线文档](https://hinna0818.github.io/Bioinfo-SMU/)
+- [讨论区](https://github.com/Hinna0818/Bioinfo-SMU/discussions)
+- [Issue 追踪](https://github.com/Hinna0818/Bioinfo-SMU/issues)
 
 ### 学习资源
 
-- 🔗 [生信技能树](https://www.biotrainee.com/)
-- 🔗 [Bioconductor](https://www.bioconductor.org/)
-- 🔗 [R for Data Science](https://r4ds.had.co.nz/)
-- 🔗 [Python for Biologists](https://pythonforbiologists.com/)
+- [生信技能树](https://www.biotrainee.com/)
+- [Bioconductor](https://www.bioconductor.org/)
+- [R for Data Science](https://r4ds.had.co.nz/)
+- [Python for Biologists](https://pythonforbiologists.com/)
 
 ### 数据库
 
-- 🔗 [GEO](https://www.ncbi.nlm.nih.gov/geo/) - 基因表达数据
-- 🔗 [TCGA](https://portal.gdc.cancer.gov/) - 癌症基因组数据
-- 🔗 [STRING](https://string-db.org/) - 蛋白质相互作用
-- 🔗 [KEGG](https://www.kegg.jp/) - 代谢通路
+- [GEO](https://www.ncbi.nlm.nih.gov/geo/) - 基因表达数据
+- [TCGA](https://portal.gdc.cancer.gov/) - 癌症基因组数据
+- [STRING](https://string-db.org/) - 蛋白质相互作用
+- [KEGG](https://www.kegg.jp/) - 代谢通路
 
 ---
 
-## 💬 联系我们
+## 联系我们
 
 ### 在线交流
 
-- 💬 **GitHub Discussions**：[参与讨论](https://github.com/Hinna0818/Bioinfo-SMU/discussions)
-- 🐛 **Issue 反馈**：[提交问题](https://github.com/Hinna0818/Bioinfo-SMU/issues)
+- **GitHub Discussions**：[参与讨论](https://github.com/Hinna0818/Bioinfo-SMU/discussions)
+- **Issue 反馈**：[提交问题](https://github.com/Hinna0818/Bioinfo-SMU/issues)
 
 ### 直接联系
 
-- 📧 **邮箱**：hinna01@163.com
-- 🐙 **GitHub**：[@Hinna0818](https://github.com/Hinna0818)
+- **邮箱**：hinna01@163.com
+- **GitHub**：[@Hinna0818](https://github.com/Hinna0818)
 
 ---
 
-## ❓ 常见问题
+## 常见问题
 
 ### 谁可以使用这个项目？
 
@@ -196,7 +196,7 @@
 
 ---
 
-## 🙏 致谢
+## 致谢
 
 ### 特别感谢
 
@@ -214,28 +214,28 @@
 
 ---
 
-## 📈 未来计划
+## 未来计划
 
-- [ ] 添加更多课程的学习资料
-- [ ] 建立在线交流社区
-- [ ] 制作视频教程
-- [ ] 举办线上/线下学习交流会
-- [ ] 建立题库和练习系统
-- [ ] 开发配套工具和脚本库
+- [] 添加更多课程的学习资料
+- [] 建立在线交流社区
+- [] 制作视频教程
+- [] 举办线上/线下学习交流会
+- [] 建立题库和练习系统
+- [] 开发配套工具和脚本库
 
 ---
 
 <div align="center">
 
-## 🌟 如果这个项目对你有帮助
+## 如果这个项目对你有帮助
 
-请给我们一个 ⭐️ Star！
+请给我们一个 Star！
 
 这是对我们最大的鼓励和支持！
 
 <br>
 
-**Made with ❤️ by SMU Bioinformatics Students**
+**Maintained by SMU Bioinformatics Students**
 
 <br>
 

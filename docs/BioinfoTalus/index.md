@@ -1,21 +1,22 @@
-# 🧬 生信流程 (BioinfoTalus)
+# 生信流程 (BioinfoTalus)
 
 **项目简介**：面向生物信息学转录组数据分析的 R 脚本集合，覆盖 Bulk 转录组、单细胞转录组与空间转录组三大领域。
 
-!!! success "贡献者致谢"
-    本模块由 [@BioConvolutionyt](https://github.com/BioConvolutionyt) 贡献（生物信息学23级lyt），感谢分享！🎉
+::: {.callout-tip title="贡献者致谢"}
+本模块由 [@BioConvolutionyt](https://github.com/BioConvolutionyt) 贡献（生物信息学23级lyt），感谢分享！
+
+:::
+---
+
+## 项目特点
+
+- **既可作为一套完整 pipeline，也可独立使用**
+- **可泛化 + 注释较完整**：核心步骤与关键参数已尽量写成可迁移的形式
+- **提供示例数据与部分运行结果**
 
 ---
 
-## 🎯 项目特点
-
-- ✅ **既可作为一套完整 pipeline，也可独立使用**
-- ✅ **可泛化 + 注释较完整**：核心步骤与关键参数已尽量写成可迁移的形式
-- ✅ **提供示例数据与部分运行结果**
-
----
-
-## 📚 模块概览
+## 模块概览
 
 ### Bulk 转录组测序数据分析
 
@@ -51,7 +52,7 @@
 
 ---
 
-## 💡 示例数据说明
+## 示例数据说明
 
 | 数据类型 | 来源 | 描述 |
 |:-------:|:----:|:----:|
@@ -61,7 +62,7 @@
 
 ---
 
-## 🚀 快速开始
+## 快速开始
 
 ### 1. 获取代码
 
@@ -83,34 +84,38 @@ cd Bioinfo-SMU/BioinfoTalus
 
 ---
 
-## 📍 推荐运行顺序
+## 推荐运行顺序
 
-=== "Bulk 转录组"
-    
-    1. `TCGA表达数据处理.R` → 生成表达矩阵
-    2. `差异分析.R` → DESeq2 差异分析
-    3. `GO & KEGG富集分析.R` / `GSEA.R`
-    4. `免疫、肿瘤、基质评分计算.R`
-    5. `生存分析.R` → `单因素COX回归.R` → `多因素COX回归.R`
-    6. 其他按需选用
+::: {.panel-tabset}
 
-=== "单细胞转录组"
-    
-    1. 数据读入与 QC
-    2. 聚类与去批次
-    3. 细胞注释
-    4. 高级分析（拟时序、细胞通讯等）
+### Bulk 转录组
 
-=== "空间转录组"
-    
-    1. Visium 数据读入
-    2. 聚类分析
-    3. 空间反卷积
-    4. 空间差异基因分析
+1. `TCGA表达数据处理.R` → 生成表达矩阵
+2. `差异分析.R` → DESeq2 差异分析
+3. `GO & KEGG富集分析.R` / `GSEA.R`
+4. `免疫、肿瘤、基质评分计算.R`
+5. `生存分析.R` → `单因素COX回归.R` → `多因素COX回归.R`
+6. 其他按需选用
+
+### 单细胞转录组
+
+1. 数据读入与 QC
+2. 聚类与去批次
+3. 细胞注释
+4. 高级分析（拟时序、细胞通讯等）
+
+### 空间转录组
+
+1. Visium 数据读入
+2. 聚类分析
+3. 空间反卷积
+4. 空间差异基因分析
+
+:::
 
 ---
 
-## 📂 目录结构
+## 目录结构
 
 ```
 BioinfoTalus/
@@ -133,19 +138,19 @@ BioinfoTalus/
 
 ---
 
-## 🔗 相关链接
+## 相关链接
 
-- [📁 GitHub 仓库目录](https://github.com/Hinna0818/Bioinfo-SMU/tree/main/BioinfoTalus)
-- [📦 数据下载 (Releases)](https://github.com/BioConvolutionyt/BioinfoTalus/releases)
-- [👤 贡献者主页 @BioConvolutionyt](https://github.com/BioConvolutionyt)
+- [GitHub 仓库目录](https://github.com/Hinna0818/Bioinfo-SMU/tree/main/BioinfoTalus)
+- [数据下载 (Releases)](https://github.com/BioConvolutionyt/BioinfoTalus/releases)
+- [贡献者主页 @BioConvolutionyt](https://github.com/BioConvolutionyt)
 
 ---
 
-## 🙏 致谢
+## 致谢
 
 感谢 [@BioConvolutionyt](https://github.com/BioConvolutionyt) 贡献本模块代码！
 
-如果你觉得这些代码对你有帮助，欢迎给仓库一个 ⭐️ Star！
+如果你觉得这些代码对你有帮助，欢迎给仓库一个 Star！
 
 ---
 

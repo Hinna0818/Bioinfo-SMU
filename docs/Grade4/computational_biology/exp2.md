@@ -1,12 +1,12 @@
 # 实验二：加权基因共表达网络分析（WGCNA）
 
-## 📖 实验简介
+## 实验简介
 
 WGCNA (Weighted Gene Co-expression Network Analysis) 是一种系统生物学方法，用于描述不同样本间基因关联模式，识别高度协同变化的基因模块。
 
 ---
 
-## 🎯 实验目的
+## 实验目的
 
 - 理解基因共表达网络的概念
 - 掌握 WGCNA 的分析流程
@@ -15,7 +15,7 @@ WGCNA (Weighted Gene Co-expression Network Analysis) 是一种系统生物学方
 
 ---
 
-## 📚 理论背景
+## 理论背景
 
 ### WGCNA 原理
 
@@ -31,7 +31,7 @@ WGCNA 通过计算基因间的相关性，构建加权网络，并识别功能�
 
 ---
 
-## 💻 实验步骤
+## 实验步骤
 
 ### 1. 数据准备和预处理
 
@@ -169,7 +169,7 @@ cyt <- exportNetworkToCytoscape(TOM,
 
 ---
 
-## 📊 结果分析
+## 结果分析
 
 ### 模块功能富集
 
@@ -197,7 +197,7 @@ dotplot(ego, showCategory = 10)
 
 ---
 
-## 🔍 生物学解释
+## 生物学解释
 
 ### 模块的意义
 
@@ -214,7 +214,7 @@ dotplot(ego, showCategory = 10)
 
 ---
 
-## 📝 作业要求
+## 作业要求
 
 1. **基础分析**
    - 完成 WGCNA 分析流程
@@ -233,7 +233,7 @@ dotplot(ego, showCategory = 10)
 
 ---
 
-## 📁 文件位置
+## 文件位置
 
 ```
 Grade4/computational_biology/experiments/Exp2/
@@ -244,7 +244,7 @@ Grade4/computational_biology/experiments/Exp2/
 
 ---
 
-## 📚 参考资料
+## 参考资料
 
 1. Langfelder, P., & Horvath, S. (2008). WGCNA: an R package for weighted correlation network analysis. *BMC Bioinformatics*, 9(1), 559.
 
@@ -254,17 +254,20 @@ Grade4/computational_biology/experiments/Exp2/
 
 ---
 
-## 💡 提示
+## 提示
 
-!!! tip "软阈值选择"
-    选择使 Scale-free topology fit R² 达到 0.8-0.9 的最小阈值。
+::: {.callout-tip title="软阈值选择"}
+选择使 Scale-free topology fit R² 达到 0.8-0.9 的最小阈值。
 
-!!! tip "模块大小"
-    根据数据集大小调整 `minModuleSize` 参数，一般设为 30-50。
+:::
+::: {.callout-tip title="模块大小"}
+根据数据集大小调整 `minModuleSize` 参数，一般设为 30-50。
 
-!!! warning "内存使用"
-    WGCNA 分析可能需要大量内存，建议在分析前清理 R 环境。
+:::
+::: {.callout-warning title="内存使用"}
+WGCNA 分析可能需要大量内存，建议在分析前清理 R 环境。
 
+:::
 ---
 
 [← 上一个实验：PPI](exp1.md) | [返回课程主页](index.md) | [下一个实验：MCL & RWR →](exp3.md)

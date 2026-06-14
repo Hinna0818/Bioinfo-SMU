@@ -1,12 +1,12 @@
 # 实验一：蛋白质相互作用网络分析（PPI）
 
-## 📖 实验简介
+## 实验简介
 
 蛋白质相互作用网络（Protein-Protein Interaction Network, PPI）是研究细胞功能的重要工具。本实验通过构建和分析PPI网络，学习网络生物学的基本方法。
 
 ---
 
-## 🎯 实验目的
+## 实验目的
 
 - 理解蛋白质相互作用网络的概念
 - 掌握使用 R 语言构建 PPI 网络
@@ -15,7 +15,7 @@
 
 ---
 
-## 📚 理论背景
+## 理论背景
 
 ### 什么是 PPI 网络？
 
@@ -37,7 +37,7 @@
 
 ---
 
-## 💻 实验步骤
+## 实验步骤
 
 ### 1. 数据准备
 
@@ -113,7 +113,7 @@ plot(g,
 
 ---
 
-## 📊 结果分析
+## 结果分析
 
 ### 度分布
 
@@ -140,7 +140,7 @@ print(top_hubs)
 
 ---
 
-## 🔍 生物学解释
+## 生物学解释
 
 ### Hub 蛋白的重要性
 
@@ -155,7 +155,7 @@ print(top_hubs)
 
 ---
 
-## 📝 作业要求
+## 作业要求
 
 1. **基础分析**
    - 构建 PPI 网络
@@ -174,7 +174,7 @@ print(top_hubs)
 
 ---
 
-## 📁 文件位置
+## 文件位置
 
 ```
 Grade4/computational_biology/experiments/Exp1/
@@ -185,7 +185,7 @@ Grade4/computational_biology/experiments/Exp1/
 
 ---
 
-## 📚 参考资料
+## 参考资料
 
 1. Barabási, A. L., & Oltvai, Z. N. (2004). Network biology: understanding the cell's functional organization. *Nature Reviews Genetics*, 5(2), 101-113.
 
@@ -197,17 +197,20 @@ Grade4/computational_biology/experiments/Exp1/
 
 ---
 
-## 💡 提示
+## 提示
 
-!!! tip "数据来源"
-    可以从 STRING 数据库下载特定物种或疾病相关的 PPI 数据。
+::: {.callout-tip title="数据来源"}
+可以从 STRING 数据库下载特定物种或疾病相关的 PPI 数据。
 
-!!! tip "可视化建议"
-    对于大型网络，可以只展示部分节点或使用交互式可视化工具（如 visNetwork）。
+:::
+::: {.callout-tip title="可视化建议"}
+对于大型网络，可以只展示部分节点或使用交互式可视化工具（如 visNetwork）。
 
-!!! warning "计算时间"
-    对于大型网络，计算介数中心性等指标可能需要较长时间。
+:::
+::: {.callout-warning title="计算时间"}
+对于大型网络，计算介数中心性等指标可能需要较长时间。
 
+:::
 ---
 
 [返回课程主页](index.md) | [下一个实验：WGCNA →](exp2.md)

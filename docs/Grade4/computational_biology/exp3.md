@@ -1,12 +1,12 @@
 # 实验三：网络聚类与随机游走
 
-## 📖 实验简介
+## 实验简介
 
 本实验学习两种重要的网络分析算法：MCL（Markov Cluster Algorithm）和 RWR（Random Walk with Restart），并应用于疾病基因预测。
 
 ---
 
-## 🎯 实验目的
+## 实验目的
 
 - 理解 MCL 聚类算法原理
 - 掌握 RWR 算法的实现
@@ -15,7 +15,7 @@
 
 ---
 
-## 📚 理论背景
+## 理论背景
 
 ### MCL 聚类算法
 
@@ -37,7 +37,7 @@ RWR 是一种在网络上进行随机游走的算法，从起始节点出发，�
 
 ---
 
-## 💻 实验步骤
+## 实验步骤
 
 ### Part 1: MCL 聚类分析
 
@@ -228,7 +228,7 @@ barplot(kegg_candidates, showCategory = 15)
 
 ---
 
-## 📊 结果分析
+## 结果分析
 
 ### MCL 聚类
 
@@ -244,7 +244,7 @@ barplot(kegg_candidates, showCategory = 15)
 
 ---
 
-## 🔍 生物学解释
+## 生物学解释
 
 ### 克罗恩病
 
@@ -262,7 +262,7 @@ barplot(kegg_candidates, showCategory = 15)
 
 ---
 
-## 📝 作业要求
+## 作业要求
 
 1. **MCL 聚类**
    - 尝试不同的 inflation 参数
@@ -281,7 +281,7 @@ barplot(kegg_candidates, showCategory = 15)
 
 ---
 
-## 📁 文件位置
+## 文件位置
 
 ```
 Grade4/computational_biology/experiments/Exp3/
@@ -295,7 +295,7 @@ Grade4/computational_biology/experiments/Exp3/
 
 ---
 
-## 📚 参考资料
+## 参考资料
 
 1. Van Dongen, S. (2000). *Graph clustering by flow simulation*. PhD thesis, University of Utrecht.
 
@@ -305,19 +305,22 @@ Grade4/computational_biology/experiments/Exp3/
 
 ---
 
-## 💡 提示
+## 提示
 
-!!! tip "参数选择"
-    - MCL 的 inflation 参数：较小值产生大簇，较大值产生小簇
-    - RWR 的 restart 概率：通常取 0.5-0.8
+::: {.callout-tip title="参数选择"}
+- MCL 的 inflation 参数：较小值产生大簇，较大值产生小簇
+- RWR 的 restart 概率：通常取 0.5-0.8
 
-!!! tip "计算效率"
-    - 对于大型网络，MCL 可能需要较长时间
-    - RWR 可以使用稀疏矩阵加速计算
+:::
+::: {.callout-tip title="计算效率"}
+- 对于大型网络，MCL 可能需要较长时间
+- RWR 可以使用稀疏矩阵加速计算
 
-!!! warning "数据格式"
-    确保基因 ID 与网络中的节点 ID 一致（如 Entrez ID 或 Symbol）。
+:::
+::: {.callout-warning title="数据格式"}
+确保基因 ID 与网络中的节点 ID 一致（如 Entrez ID 或 Symbol）。
 
+:::
 ---
 
 [← 上一个实验：WGCNA](exp2.md) | [返回课程主页](index.md) | [下一个实验：qPCR →](exp4.md)

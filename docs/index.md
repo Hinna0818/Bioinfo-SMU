@@ -1,157 +1,166 @@
-<div align="center">
+::: {.hero}
 
-# 🧬 Bioinfo-SMU
+# Bioinfo-SMU
 
-**南方医科大学生物信息学专业学习资源库**
-<br>
+南方医科大学生物信息学专业学习资源库
 
-Bioinformatics Learning Resources for Southern Medical University
+::: {.subtitle}
+面向课程学习、实验代码、考试复习和科研入门的开放资料库，帮助生物信息学同学更系统地管理学习路径与实践材料。
+:::
 
-</div>
+::: {.hero-actions}
+[开始学习](learning-path.md){.button .primary}
+[查看课程](Grade4/index.md){.button}
+[参与贡献](contributing.md){.button}
+:::
 
----
+:::
 
-## 📚 欢迎
+## 主要内容
 
-欢迎来到南方医科大学生物信息学专业学习资源库！
+::: {.feature-grid}
 
-本仓库收集整理了生物信息学专业学习过程中的各类资源，旨在帮助同学们更好地学习和科研。
+::: {.feature-card}
+### 课程资料
+各门专业课程的实验报告、作业、笔记和复习材料。
+:::
 
-### 主要内容
+::: {.feature-card}
+### 实验代码
+整理生物信息学课程和分析流程中常用的 R/Python 代码。
+:::
 
-- 📖 **课程资料** - 各门专业课程的实验报告、作业和笔记
-- 🔬 **实验代码** - 生物信息学相关实验的 R/Python 代码
-- 📝 **考试资料** - 历年考试重点和复习资料
-- 🧪 **科研工具** - 常用的生物信息学分析方法和脚本
+::: {.feature-card}
+### 考试资料
+收集往届考试重点、题型经验和复习建议。
+:::
 
-!!! tip "宗旨"
-    帮助生信专业的同学们更好地学习和科研，共同进步！
+::: {.feature-card}
+### 科研工具
+汇总常用数据库、分析工具和可复用脚本。
+:::
 
----
+:::
 
-## 🚀 快速开始
+::: {.callout-tip title="宗旨"}
+帮助生信专业的同学们更好地学习和科研，共同进步。
+:::
 
+## 快速开始
+
+::: {.course-grid}
+
+::: {.course-card}
 ### 浏览文档
+通过顶部导航或左侧目录进入不同课程与主题页面。
+:::
 
-使用左侧导航栏浏览不同课程和主题的内容。
-
+::: {.course-card}
 ### 克隆仓库
-
-如果你想在本地查看代码和资料：
 
 ```bash
 git clone https://github.com/Hinna0818/Bioinfo-SMU.git
 cd Bioinfo-SMU
 ```
+:::
 
+::: {.course-card}
 ### 参与贡献
+欢迎同学补充课程资料、实验代码和学习经验。贡献前请阅读 [贡献指南](contributing.md)。
+:::
 
-我们欢迎所有同学贡献资料！请查看 [贡献指南](contributing.md) 了解详情。
+:::
 
----
+## 项目统计
 
+::: {.stat-grid}
 
-## 📊 项目统计
+::: {.stat-card}
+### 课程层级
+**4**
+<span>覆盖大二到大四课程资料</span>
+:::
 
-<p align="center">
-    <img src="https://img.shields.io/github/watchers/Hinna0818/Bioinfo-SMU?style=flat-square">
-    <img src="https://img.shields.io/github/repo-size/Hinna0818/Bioinfo-SMU?style=flat-square">
-    <img src="https://img.shields.io/github/issues-pr-closed/Hinna0818/Bioinfo-SMU?style=flat-square">
-    <a href="https://github.com/Hinna0818/Bioinfo-SMU/stargazers"><img src="https://img.shields.io/github/stars/Hinna0818/Bioinfo-SMU?style=social"></a>
-    <a href="https://github.com/Hinna0818/Bioinfo-SMU/network/members"><img src="https://img.shields.io/github/forks/Hinna0818/Bioinfo-SMU?style=social"></a>
-</p>
+::: {.stat-card}
+### R 教程
+**7**
+<span>从基础语法到数据可视化</span>
+:::
 
----
+::: {.stat-card}
+### 分析流程
+**3**
+<span>Bulk、单细胞和空间转录组</span>
+:::
 
-## 🎯 课程概览
+:::
 
+## 课程概览
+
+::: {.course-grid}
+
+::: {.course-card}
 ### R 语言教程
+系统学习 R 语言基础知识和生物信息学数据分析方法。
 
-!!! tip "从零开始学 R"
-    系统学习 R 语言基础知识和生物信息学数据分析方法。
-    
-    - 📖 第一课：R 语言基础入门
-    - 📖 第二课：R 向量操作
-    - 📖 第三课：R 基础数据结构
-    
-    [开始学习 →](Rbase/index.md)
+[进入教程](Rbase/index.md)
+:::
 
----
+::: {.course-card}
+### 生信流程
+面向转录组数据分析的 R 脚本集合，覆盖 Bulk、单细胞与空间转录组。
 
-### 生信流程 (BioinfoTalus)
+[查看流程](BioinfoTalus/index.md)
+:::
 
-!!! example "转录组分析 Pipeline"
-    面向生物信息学转录组数据分析的 R 脚本集合，由 [@BioConvolutionyt](https://github.com/BioConvolutionyt) 贡献。
-    
-    - 🧬 Bulk 转录组分析（TCGA/GEO、差异分析、富集、生存分析等）
-    - 🔬 单细胞转录组分析（Seurat 流程、细胞注释、拟时序等）
-    - 📍 空间转录组分析（Visium、空间反卷积等）
-    
-    [查看详情 →](BioinfoTalus/index.md)
+::: {.course-card}
+### 计算生物学
+涵盖 PPI 网络分析、WGCNA、网络聚类、随机游走和 qPCR 数据分析。
 
----
+[查看课程](Grade4/computational_biology/index.md)
+:::
 
-### 大四课程
+::: {.course-card}
+### 计算机辅助药物设计
+学习使用计算方法进行药物设计、虚拟筛选和 QSAR 建模。
 
-=== "计算生物学"
-    
-    大四上学期核心课程，涵盖多种生物信息学分析方法：
-    
-    - PPI 网络分析
-    - WGCNA 加权基因共表达网络分析
-    - 网络聚类与随机游走算法
-    
-    [查看详情 →](Grade4/computational_biology/index.md)
+[查看课程](Grade4/CADD/index.md)
+:::
 
-=== "计算机辅助药物设计"
-    
-    学习使用计算方法进行药物设计和虚拟筛选。
-    
-    [查看详情 →](Grade4/CADD/index.md)
+::: {.course-card}
+### 计算分子生物学
+整理序列比对、概率模型和分子层面计算方法相关内容。
 
-=== "计算分子生物学"
-    
-    分子建模和模拟相关内容。
-    
-    [查看详情 →](Grade4/computational_molecular_biology/index.md)
+[查看课程](Grade4/computational_molecular_biology/index.md)
+:::
 
----
+::: {.course-card}
+### 学习资源
+整理学习路线、常用工具、数据库和参考书目。
 
-## 📮 联系方式
+[查看资源](resources.md)
+:::
+
+:::
+
+## 联系方式
 
 - **作者**：Nan He
 - **邮箱**：[hinna01@163.com](mailto:hinna01@163.com)
 - **GitHub**：[@Hinna0818](https://github.com/Hinna0818)
 
-有任何问题或建议，欢迎通过以下方式联系：
+有任何问题或建议，欢迎 [提交 Issue](https://github.com/Hinna0818/Bioinfo-SMU/issues) 或参与 [Discussions](https://github.com/Hinna0818/Bioinfo-SMU/discussions)。
 
-- [提交 Issue](https://github.com/Hinna0818/Bioinfo-SMU/issues)
-- [参与讨论](https://github.com/Hinna0818/Bioinfo-SMU/discussions)
+## 注意事项
 
----
+::: {.callout-warning title="学术诚信"}
+本仓库资料仅供学习参考，请勿直接抄袭。
+:::
 
-## ⚠️ 注意事项
+::: {.callout-note title="版权声明"}
+尊重知识产权，注明资料来源。如有侵权，请联系删除。
+:::
 
-!!! warning "学术诚信"
-    本仓库资料仅供学习参考，请勿直接抄袭。
-
-!!! info "版权声明"
-    尊重知识产权，注明资料来源。如有侵权，请联系删除。
-
----
-
-## 📄 许可证
+## 许可证
 
 本项目采用 [MIT License](https://github.com/Hinna0818/Bioinfo-SMU/blob/main/LICENSE) 开源协议。
-
----
-
-<div align="center">
-
-### 💪 一起加油，共同进步！
-
-**Made with ❤️ by SMU Bioinformatics Students**
-
-如果这个项目对你有帮助，请给个 ⭐️ Star 支持一下！
-
-</div>

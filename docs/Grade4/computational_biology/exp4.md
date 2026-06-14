@@ -1,12 +1,12 @@
 # 实验四：qPCR 数据分析
 
-## 📖 实验简介
+## 实验简介
 
 qPCR（实时荧光定量 PCR）是分子生物学中常用的基因表达定量技术。本实验学习如何处理和分析 qPCR 数据。
 
 ---
 
-## 🎯 实验目的
+## 实验目的
 
 - 理解 qPCR 原理和数据格式
 - 掌握 Ct 值的处理方法
@@ -15,7 +15,7 @@ qPCR（实时荧光定量 PCR）是分子生物学中常用的基因表达定量
 
 ---
 
-## 📚 理论背景
+## 理论背景
 
 ### qPCR 原理
 
@@ -46,7 +46,7 @@ $$
 
 ---
 
-## 💻 实验步骤
+## 实验步骤
 
 ### 1. 数据导入和检查
 
@@ -224,7 +224,7 @@ ggplot(stat_results, aes(x = log2(fold_change), y = -log10(p_value))) +
 
 ---
 
-## 📊 结果解释
+## 结果解释
 
 ### 相对表达量
 
@@ -239,29 +239,32 @@ ggplot(stat_results, aes(x = log2(fold_change), y = -log10(p_value))) +
 
 ---
 
-## 🔍 注意事项
+## 注意事项
 
-!!! warning "实验设计"
-    - 确保技术重复（至少3次）
-    - 生物学重复建议≥3个
-    - 选择合适稳定的内参基因
+::: {.callout-warning title="实验设计"}
+- 确保技术重复（至少3次）
+- 生物学重复建议≥3个
+- 选择合适稳定的内参基因
 
-!!! warning "数据质控"
-    - Ct > 35 通常认为不可靠
-    - 技术重复的 CV 应 < 2%
-    - 内参基因在不同组间应稳定
+:::
+::: {.callout-warning title="数据质控"}
+- Ct > 35 通常认为不可靠
+- 技术重复的 CV 应 < 2%
+- 内参基因在不同组间应稳定
 
-!!! tip "内参基因选择"
-    常用内参基因：GAPDH、β-actin、18S rRNA
-    
-    内参基因应：
-    - 表达稳定
-    - 不受实验条件影响
-    - 表达量适中
+:::
+::: {.callout-tip title="内参基因选择"}
+常用内参基因：GAPDH、β-actin、18S rRNA
 
+内参基因应：
+- 表达稳定
+- 不受实验条件影响
+- 表达量适中
+
+:::
 ---
 
-## 📝 作业要求
+## 作业要求
 
 1. **数据分析**
    - 导入并检查数据
@@ -285,7 +288,7 @@ ggplot(stat_results, aes(x = log2(fold_change), y = -log10(p_value))) +
 
 ---
 
-## 📁 文件位置
+## 文件位置
 
 ```
 Grade4/computational_biology/experiments/Exp4/
@@ -296,7 +299,7 @@ Grade4/computational_biology/experiments/Exp4/
 
 ---
 
-## 📚 参考资料
+## 参考资料
 
 1. Livak, K. J., & Schmittgen, T. D. (2001). Analysis of relative gene expression data using real-time quantitative PCR and the 2− ΔΔCT method. *Methods*, 25(4), 402-408.
 
@@ -304,18 +307,20 @@ Grade4/computational_biology/experiments/Exp4/
 
 ---
 
-## 💡 提示
+## 提示
 
-!!! tip "PCR 效率"
-    本实验假设 PCR 效率为 100%（扩增效率 = 2）。如果效率不是 100%，需要使用修正公式：
-    
-    $$相对表达量 = E^{-\Delta\Delta Ct}$$
-    
-    其中 E 是实际的扩增效率。
+::: {.callout-tip title="PCR 效率"}
+本实验假设 PCR 效率为 100%（扩增效率 = 2）。如果效率不是 100%，需要使用修正公式：
 
-!!! tip "多重比较校正"
-    如果检测多个基因，考虑进行 Bonferroni 或 FDR 校正。
+$$相对表达量 = E^{-\Delta\Delta Ct}$$
 
+其中 E 是实际的扩增效率。
+
+:::
+::: {.callout-tip title="多重比较校正"}
+如果检测多个基因，考虑进行 Bonferroni 或 FDR 校正。
+
+:::
 ---
 
 [← 上一个实验：MCL & RWR](exp3.md) | [返回课程主页](index.md)

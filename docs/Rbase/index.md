@@ -4,7 +4,7 @@
 
 ---
 
-## 📚 课程目录
+## 课程目录
 
 本系列教程由浅入深，从 R 语言基础到数据分析实战，适合生物信息学初学者。
 
@@ -12,149 +12,158 @@
 
 | 课程 | 内容 | 链接 |
 |:----:|:----:|:----:|
-| **第一课** | R 语言基础入门 | [📖 查看教程](https://github.com/Hinna0818/Bioinfo-SMU/blob/main/Rbase/L1.pdf) \| [💻 下载](L1.pdf) |
-| **第二课** | R 向量操作 | [📖 查看教程](https://github.com/Hinna0818/Bioinfo-SMU/blob/main/Rbase/L2.pdf) \| [💻 下载](L2.pdf) |
-| **第三课** | R 基础数据结构 | [📖 查看教程](https://github.com/Hinna0818/Bioinfo-SMU/blob/main/Rbase/L3.pdf) \| [💻 下载](L3.pdf) |
-| **第四课** | Tidyverse 数据处理 | [📖 查看教程](https://github.com/Hinna0818/Bioinfo-SMU/blob/main/Rbase/L4.pdf) \| [💻 下载](L4.pdf) |
-| **第五课** | R 流程控制 | [📖 查看教程](https://github.com/Hinna0818/Bioinfo-SMU/blob/main/Rbase/L5.pdf) \| [💻 下载](L5.pdf) |
-| **第六课** | R 函数与包开发 | [📖 在线阅读](L6_functions.md) \| [💻 下载](https://github.com/Hinna0818/Bioinfo-SMU/blob/main/Rbase/L6.pdf) |
-| **第七课** | ggplot2 数据可视化 | [📖 在线阅读](L7_ggplot2.md) \| [💻 下载](https://github.com/Hinna0818/Bioinfo-SMU/blob/main/Rbase/L7.pdf) |
+| **第一课** | R 语言基础入门 | [查看教程](https://github.com/Hinna0818/Bioinfo-SMU/blob/main/Rbase/L1.pdf) \| [下载](L1.pdf) |
+| **第二课** | R 向量操作 | [查看教程](https://github.com/Hinna0818/Bioinfo-SMU/blob/main/Rbase/L2.pdf) \| [下载](L2.pdf) |
+| **第三课** | R 基础数据结构 | [查看教程](https://github.com/Hinna0818/Bioinfo-SMU/blob/main/Rbase/L3.pdf) \| [下载](L3.pdf) |
+| **第四课** | Tidyverse 数据处理 | [查看教程](https://github.com/Hinna0818/Bioinfo-SMU/blob/main/Rbase/L4.pdf) \| [下载](L4.pdf) |
+| **第五课** | R 流程控制 | [查看教程](https://github.com/Hinna0818/Bioinfo-SMU/blob/main/Rbase/L5.pdf) \| [下载](L5.pdf) |
+| **第六课** | R 函数与包开发 | [在线阅读](L6_functions.md) \| [下载](https://github.com/Hinna0818/Bioinfo-SMU/blob/main/Rbase/L6.pdf) |
+| **第七课** | ggplot2 数据可视化 | [在线阅读](L7_ggplot2.md) \| [下载](https://github.com/Hinna0818/Bioinfo-SMU/blob/main/Rbase/L7.pdf) |
 
 ---
 
-## 📖 课程内容概览
+## 课程内容概览
 
 ### 第一课：R 语言基础入门
 
-!!! info "学习重点"
-    - R Studio 编辑器的高效使用
-    - R 包的下载、读取和卸载（CRAN、Bioconductor、GitHub）
-    - 文件的读取与写入
-    - R 源文件的使用方法
+::: {.callout-note title="学习重点"}
+- R Studio 编辑器的高效使用
+- R 包的下载、读取和卸载（CRAN、Bioconductor、GitHub）
+- 文件的读取与写入
+- R 源文件的使用方法
   
+:::
 **公众号推文链接**：https://mp.weixin.qq.com/s/ekygBz43ILxO4ne0mCjDxA
 
-[:material-book-open: 在 GitHub 查看](https://github.com/Hinna0818/Bioinfo-SMU/blob/main/Rbase/L1.pdf){ .md-button } [:material-download: 下载 PDF](L1.pdf){ .md-button }
+[在 GitHub 查看](https://github.com/Hinna0818/Bioinfo-SMU/blob/main/Rbase/L1.pdf) [下载 PDF](L1.pdf)
 
 ---
 
 ### 第二课：R 向量操作
 
-!!! info "学习重点"
-    - 向量的创建与查看
-    - 向量的索引与子集提取
-    - 向量的运算与函数
-    - 缺失值的处理
-    - 常用向量相关函数
+::: {.callout-note title="学习重点"}
+- 向量的创建与查看
+- 向量的索引与子集提取
+- 向量的运算与函数
+- 缺失值的处理
+- 常用向量相关函数
 
 
+:::
 **公众号推文链接**：https://mp.weixin.qq.com/s/bB5lOeqRQVGA4n284Pzt0A
 
-[:material-book-open: 在 GitHub 查看](https://github.com/Hinna0818/Bioinfo-SMU/blob/main/Rbase/L2.pdf){ .md-button } [:material-download: 下载 PDF](L2.pdf){ .md-button }
+[在 GitHub 查看](https://github.com/Hinna0818/Bioinfo-SMU/blob/main/Rbase/L2.pdf) [下载 PDF](L2.pdf)
 
 ---
 
 ### 第三课：R 基础数据结构
 
-!!! info "学习重点"
-    - 矩阵（Matrix）的创建与操作
-    - 列表（List）的使用与索引
-    - 数据框（Data Frame）的清洗与整理
-    - 三种结构的差异与应用场景
-    - Base R 数据清洗范式
+::: {.callout-note title="学习重点"}
+- 矩阵（Matrix）的创建与操作
+- 列表（List）的使用与索引
+- 数据框（Data Frame）的清洗与整理
+- 三种结构的差异与应用场景
+- Base R 数据清洗范式
   
+:::
 **公众号推文链接**：https://mp.weixin.qq.com/s/QGyuHDArCZ7j4NeVdbDRpg
 
-[:material-book-open: 在 GitHub 查看](https://github.com/Hinna0818/Bioinfo-SMU/blob/main/Rbase/L3.pdf){ .md-button } [:material-download: 下载 PDF](L3.pdf){ .md-button }
+[在 GitHub 查看](https://github.com/Hinna0818/Bioinfo-SMU/blob/main/Rbase/L3.pdf) [下载 PDF](L3.pdf)
 
 ---
 
 ### 第四课：Tidyverse 数据处理
 
-!!! info "学习重点"
-    - tidyverse 生态系统概述
-    - dplyr 数据操作（select, filter, mutate, summarise 等）
-    - tidyr 数据整理（pivot_longer, pivot_wider 等）
-    - 管道操作符 `%>%` 的使用
-    - 数据处理实战案例
+::: {.callout-note title="学习重点"}
+- tidyverse 生态系统概述
+- dplyr 数据操作（select, filter, mutate, summarise 等）
+- tidyr 数据整理（pivot_longer, pivot_wider 等）
+- 管道操作符 `%>%` 的使用
+- 数据处理实战案例
 
+:::
 **公众号推文链接**：https://mp.weixin.qq.com/s/1Kj_bql-KEJBGdLt8_Quiw
 
-[:material-book-open: 在 GitHub 查看](https://github.com/Hinna0818/Bioinfo-SMU/blob/main/Rbase/L4.pdf){ .md-button } [:material-download: 下载 PDF](L4.pdf){ .md-button }
+[在 GitHub 查看](https://github.com/Hinna0818/Bioinfo-SMU/blob/main/Rbase/L4.pdf) [下载 PDF](L4.pdf)
 
 ---
 
 ### 第五课：R 流程控制
 
-!!! info "学习重点"
-    - 条件判断（if/else、ifelse、switch）
-    - 循环结构（for、while、repeat）
-    - 循环控制（break、next）
-    - apply 函数族（apply、lapply、sapply 等）
-    - 函数式编程基础
+::: {.callout-note title="学习重点"}
+- 条件判断（if/else、ifelse、switch）
+- 循环结构（for、while、repeat）
+- 循环控制（break、next）
+- apply 函数族（apply、lapply、sapply 等）
+- 函数式编程基础
 
+:::
 **公众号推文链接**：https://mp.weixin.qq.com/s/thm_qtawHiSJJO_OP_xwCA
 
-[:material-book-open: 在 GitHub 查看](https://github.com/Hinna0818/Bioinfo-SMU/blob/main/Rbase/L5.pdf){ .md-button } [:material-download: 下载 PDF](L5.pdf){ .md-button }
+[在 GitHub 查看](https://github.com/Hinna0818/Bioinfo-SMU/blob/main/Rbase/L5.pdf) [下载 PDF](L5.pdf)
 
 ---
 
 ### 第六课：R 函数与包开发
 
-!!! info "学习重点"
-    - R 函数的定义与参数设计
-    - 返回值与作用域（Scope）
-    - 闭包（Closure）与高阶函数
-    - roxygen2 注释规范与文档生成
-    - 使用 source() 和 debug() 调试函数
-    - R 包开发流程（devtools、testthat）
+::: {.callout-note title="学习重点"}
+- R 函数的定义与参数设计
+- 返回值与作用域（Scope）
+- 闭包（Closure）与高阶函数
+- roxygen2 注释规范与文档生成
+- 使用 source() 和 debug() 调试函数
+- R 包开发流程（devtools、testthat）
 
+:::
 **公众号推文链接**：https://mp.weixin.qq.com/s/bDzhc05GRaGZ5ADIclrsjA
 
-[:material-book-open: 在线阅读](L6_functions.md){ .md-button } [:material-download: 下载 Rmd](https://github.com/Hinna0818/Bioinfo-SMU/blob/main/Rbase/L6.Rmd){ .md-button }
+[在线阅读](L6_functions.md) [下载 Rmd](https://github.com/Hinna0818/Bioinfo-SMU/blob/main/Rbase/L6.Rmd)
 
 ---
 
 ### 第七课：ggplot2 数据可视化
 
-!!! info "学习重点"
-    - ggplot2 图形语法（Grammar of Graphics）
-    - 常用几何对象（散点图、箱线图、柱状图、密度图等）
-    - 美学映射（颜色、大小、透明度）
-    - 分面（facet_wrap / facet_grid）
-    - 标度与主题定制
-    - 生信实战：火山图、MA 图、PCA 图
+::: {.callout-note title="学习重点"}
+- ggplot2 图形语法（Grammar of Graphics）
+- 常用几何对象（散点图、箱线图、柱状图、密度图等）
+- 美学映射（颜色、大小、透明度）
+- 分面（facet_wrap / facet_grid）
+- 标度与主题定制
+- 生信实战：火山图、MA 图、PCA 图
 
-[:material-book-open: 在线阅读](L7_ggplot2.md){ .md-button } [:material-download: 下载 Rmd](https://github.com/Hinna0818/Bioinfo-SMU/blob/main/Rbase/L7.Rmd){ .md-button }
-
----
-
-## 💡 学习建议
-
-!!! tip "学习路线"
-    1. **第一步**：按顺序学习七节课程，理解基础概念
-    2. **第二步**：动手实践每个代码示例
-    3. **第三步**：尝试用真实的生信数据进行练习
-    4. **第四步**：尝试编写自己的函数和 R 包
-    5. **第五步**：用 ggplot2 绑定数据分析与可视化
-
-!!! success "学习资源"
-    - [R for Data Science](https://r4ds.hadley.nz/) - 经典 R 语言数据分析书籍
-    - [Bioconductor](https://www.bioconductor.org/) - 生物信息学 R 包集合
-    - [ggplot2 官方文档](https://ggplot2.tidyverse.org/) - 数据可视化
+:::
+[在线阅读](L7_ggplot2.md) [下载 Rmd](https://github.com/Hinna0818/Bioinfo-SMU/blob/main/Rbase/L7.Rmd)
 
 ---
 
-## 🎯 课程特色
+## 学习建议
 
-- ✅ **实用导向**：面向生物信息学实际分析场景
-- ✅ **代码示例**：每个知识点配有完整代码
-- ✅ **循序渐进**：从零基础到数据分析实战
-- ✅ **持续更新**：后续会添加更多高级主题
+::: {.callout-tip title="学习路线"}
+1. **第一步**：按顺序学习七节课程，理解基础概念
+2. **第二步**：动手实践每个代码示例
+3. **第三步**：尝试用真实的生信数据进行练习
+4. **第四步**：尝试编写自己的函数和 R 包
+5. **第五步**：用 ggplot2 绑定数据分析与可视化
+
+:::
+::: {.callout-tip title="学习资源"}
+- [R for Data Science](https://r4ds.hadley.nz/) - 经典 R 语言数据分析书籍
+- [Bioconductor](https://www.bioconductor.org/) - 生物信息学 R 包集合
+- [ggplot2 官方文档](https://ggplot2.tidyverse.org/) - 数据可视化
+
+:::
+---
+
+## 课程特色
+
+- **实用导向**：面向生物信息学实际分析场景
+- **代码示例**：每个知识点配有完整代码
+- **循序渐进**：从零基础到数据分析实战
+- **持续更新**：后续会添加更多高级主题
 
 ---
 
-## 📝 课程材料
+## 课程材料
 
 所有课程的源代码（Rmd 文件）和 HTML 版本都存放在 `Rbase/` 目录中。
 
@@ -165,7 +174,7 @@
 
 ---
 
-## 🤝 反馈与建议
+## 反馈与建议
 
 如果你在学习过程中遇到问题，或者有任何建议，欢迎：
 
