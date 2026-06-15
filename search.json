@@ -494,1102 +494,142 @@
     ]
   },
   {
-    "objectID": "Grade4/computational_molecular_biology/index.html",
-    "href": "Grade4/computational_molecular_biology/index.html",
-    "title": "计算分子生物学",
+    "objectID": "Grade4/graduation_paper/index.html",
+    "href": "Grade4/graduation_paper/index.html",
+    "title": "毕业论文指南",
     "section": "",
-    "text": "课程简介：学习生物信息学中的核心算法与计算方法。\n\n\n\n本课程主要内容包括：\n\n序列比对 - 双序列比对、多序列比对算法\n系统进化树 - 进化树的构建方法与分析\n概率模型 - 马尔可夫链及其应用\n\n\n\n\n\n\n\n\n资料\n说明\n\n\n\n\n考试说明\n成绩构成、复习重点\n\n\n\n\n\n\n\n资料正在整理中…如果你有相关资料，欢迎贡献！\n\n返回上级",
+    "text": "本页面用于整理生物信息学专业毕业论文相关流程，帮助同学按时间节点完成选题、开题、论文撰写、查重、答辩与归档。具体时间和材料要求以学院、教务系统和指导老师通知为准。\n\n\n\n毕业论文通常贯穿大四学年。建议把任务拆成“确认方向、完成研究、撰写论文、准备答辩、提交归档”五个阶段。\n\n\n\n\n\n\n\n\n\n阶段\n建议时间\n核心任务\n产出材料\n\n\n\n\n方向准备\n大四上学期9月-10月\n了解研究方向，联系潜在指导老师，阅读近年论文与课题组工作\n初步选题意向、文献清单\n\n\n选题确认\n大四上学期10月-12月\n与指导老师确定论文题目、研究问题、数据来源与技术路线\n选题登记、任务书或开题准备材料\n\n\n开题与方案细化\n大四上学期末至寒假前后\n明确研究背景、研究目的、方法路线、预期结果和风险预案\n开题报告、PPT、时间计划\n\n\n数据分析与实验推进\n大四下学期前半段\n获取和整理数据，完成主要实验或计算分析，记录关键参数和结果\n分析脚本、结果图表、阶段性汇报\n\n\n初稿撰写\n大四下学期中期\n完成摘要、引言、方法、结果、讨论和参考文献\n论文初稿、图表初版\n\n\n修改与查重\n答辩前 2-4 周\n根据老师意见修改论文，检查格式、引用、图表和重复率\n论文定稿、查重报告、答辩申请材料\n\n\n答辩准备\n答辩前 1-2 周\n制作答辩 PPT，准备问题清单，进行模拟答辩\n答辩 PPT、讲稿、备用材料\n\n\n答辩与归档\n学院统一安排\n完成现场或线上答辩，根据答辩意见修改并提交最终版本\n最终论文、答辩记录、归档材料\n\n\n\n\n\n\n\n\n\nNote毕业设计重要事务！！！\n\n\n\n\n大四上学期开学大概9月中旬班群会发一个共享文档，里面会让填实习单位，这个实习单位过往大部分同学都是填的课题组，也有少部分填公司。在公司实习的，毕业论文可以挂载到我们学校的某个老师上。实习单位就是指导你完成毕业设计的单位。\n\n对于实习单位为课题组的同学，大部分同学会在本校实习，小部分同学会在外校课题组实习。\n毕业设计的整个时间线分别为：确认选题与指导老师（大四上）、开题报告提交（来年3月左右完成）、中期检查（来年4月左右完成）、第一次查重（来年5月上旬完成）、答辩ppt制作、正式答辩（一般基础医学院毕业班答辩统一在来年5月的最后一个周五）、第二次查重与终稿提交。\n关于毕业设计评分，提交答辩稿会先派送给同学院的两位老师进行打分，然后正式答辩那天，会有1个答辩组长（Y叔）+5名答辩组员老师共同打分；答辩组长的评分不计入总分，5个答辩老师打的分会区一个平均分算到成绩单上，作为毕业设计总分。这里要注意，某些保研的学校明确要求毕业设计分数不能低于80分。\n\n\n\n\n\n\n每周至少向指导老师同步一次进展，哪怕只是说明当前卡点。\n所有代码、图表和数据处理步骤都保留版本，避免后期无法复现。\n论文写作尽早开始，方法部分和数据来源可以边做边写。\n每次修改论文前另存版本，文件名中加入日期。\n\n\n\n\n\n\n毕业论文选题应同时满足三个条件：自己能持续推进、指导老师能提供有效指导、在毕业论文周期内可以完成。\n\n\n生物信息学方向的毕业论文常见选题可以分为以下几类：\n\n\n\n\n\n\n\n\n类型\n适合内容\n常见产出\n\n\n\n\n公共数据库分析\nTCGA、GEO、UK Biobank、单细胞或空间转录组数据分析\n差异分析、富集分析、预后模型、分型结果\n\n\n方法复现与比较\n复现一篇论文的方法，比较不同工具或参数\n流程复现、性能对比、适用场景总结\n\n\n生物信息学流程构建\n整理某类数据的标准分析流程\n可运行脚本、流程图、示例结果\n\n\n实验数据辅助分析\n配合课题组实验数据完成统计和可视化\n质控结果、核心图表、统计分析\n\n\n数据库或工具开发\n构建轻量网站、脚本包或可视化工具\n工具原型、使用说明、测试案例\n\n\n\n\n\n\n\n\n\n\n\n\nTip选题检查清单\n\n\n\n\n数据是否已经可获取，或能在开题后较快获得？\n研究问题是否能用一两句话说清楚？\n是否有明确的主要图表，例如差异分析图、热图、网络图、生存曲线或流程图？\n是否能在 8-12 周内完成主要结果？\n题目是否避免过大，例如“癌症机制研究”应收敛为具体癌种、数据集、基因集或分析问题？\n\n\n\n\n\n\n联系老师前，建议准备一页简短材料，说明自己的兴趣方向、已掌握技能、想做的问题和可投入时间。\n可以包含：\n\n自己熟悉的技能：R、Python、Linux、统计分析、机器学习、转录组分析等。\n感兴趣方向：肿瘤组学、单细胞、空间转录组、药物筛选、流行病学数据库等。\n已读文献：列 2-3 篇与方向相关的论文。\n初步想法：可以是一个很粗的题目，但要说明数据来源和分析路线。\n\n\n\n\n\n\n\n问题\n为什么重要\n\n\n\n\n论文题目是否需要调整\n保证题目范围适中，符合专业培养目标\n\n\n数据来源是否可靠\n避免后期数据拿不到或权限不足\n\n\n技术路线是否可完成\n避免使用自己短期内无法掌握的方法\n\n\n汇报频率如何安排\n保证进度可控，减少临近答辩集中返工\n\n\n图表和结果标准\n提前对齐老师对论文质量的要求\n\n\n\n\n\n\n\n\n答辩的核心不是把论文逐字讲完，而是在有限时间内说明：你研究了什么问题，为什么值得做，怎么做，得到了什么结果，结果有什么意义和局限。\n\n\n建议控制在 5-6 分钟，具体以学院要求为准。2026届答辩时常明确要求每个人控制在5分钟以内，回答问题时常控制在3分钟以内。\n\n\n\n部分\n建议页数\n内容重点\n\n\n\n\n标题页\n1\n论文题目、姓名、专业、指导老师\n\n\n研究背景\n1-2\n领域问题、研究意义、已有工作不足\n\n\n研究目的\n1\n明确本文要回答的问题\n\n\n数据与方法\n2-3\n数据来源、样本量、分析流程、关键工具\n\n\n主要结果\n4-6\n按逻辑展示核心图表，不堆砌所有结果\n\n\n讨论与局限\n1-2\n结果解释、可靠性、局限和后续方向\n\n\n总结\n1\n用 3-4 条概括主要结论\n\n\n\n\n\n\n\n\n\n\n\n\nWarning答辩材料检查\n\n\n\n\nPPT 中所有图表都应清晰可读，坐标轴、图例和字体大小统一。\n数据来源、样本量、筛选标准和统计方法要能说清楚。\n所有缩写第一次出现时应解释。\n论文题目、学生姓名、指导老师姓名不要写错。\n准备一个 PDF 版本，避免现场字体或格式错乱。\n\n\n\n\n\n\n答辩老师常问的问题通常集中在以下方面：\n\n为什么选择这个题目？\n数据从哪里来，样本量是多少，纳入排除标准是什么？\n为什么选择这个分析方法，而不是其他方法？\n你的核心结果是否可靠，是否做了验证？\n图中的分组、颜色、统计检验和显著性标注是什么意思？\n论文最大的创新点或价值是什么？\n目前研究有什么局限，后续如何改进？\n\n\n\n\n\n先讲主线，再讲细节。不要一上来解释所有参数。\n每张结果图只强调一个结论。\n遇到不会的问题，说明自己的理解和后续可以补充的方向，不要硬编。\n回答问题时先给结论，再解释依据。\n\n\n\n\n\n\n毕业设计单位可以修改吗： A： 可以修改，需要填资料申请；若是本校，则不需要；\n答辩还有哪些需要注意的？ A：答辩前2-3天班长会在群里发抽签顺序，每个人都会随机分配到不同的位次；答辩当天分为上午+下午两个半场，所有人需要穿正装，早上8点开始，答辩完的同学可以先走，可以等到快答辩时再过去现场；\n\n\n\n\n\n\n\nNote归档原则\n\n\n\n最终提交前，确保论文、PPT、代码、核心图表和源数据能够对应起来。毕业论文不是只交一个 Word 文件，后续复查或修改时，可复现的材料会非常重要。\n\n\n\n返回大四课程",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "毕业论文"
+    ]
+  },
+  {
+    "objectID": "Grade4/graduation_paper/index.html#毕业论文时间-timetable",
+    "href": "Grade4/graduation_paper/index.html#毕业论文时间-timetable",
+    "title": "毕业论文指南",
+    "section": "",
+    "text": "毕业论文通常贯穿大四学年。建议把任务拆成“确认方向、完成研究、撰写论文、准备答辩、提交归档”五个阶段。\n\n\n\n\n\n\n\n\n\n阶段\n建议时间\n核心任务\n产出材料\n\n\n\n\n方向准备\n大四上学期9月-10月\n了解研究方向，联系潜在指导老师，阅读近年论文与课题组工作\n初步选题意向、文献清单\n\n\n选题确认\n大四上学期10月-12月\n与指导老师确定论文题目、研究问题、数据来源与技术路线\n选题登记、任务书或开题准备材料\n\n\n开题与方案细化\n大四上学期末至寒假前后\n明确研究背景、研究目的、方法路线、预期结果和风险预案\n开题报告、PPT、时间计划\n\n\n数据分析与实验推进\n大四下学期前半段\n获取和整理数据，完成主要实验或计算分析，记录关键参数和结果\n分析脚本、结果图表、阶段性汇报\n\n\n初稿撰写\n大四下学期中期\n完成摘要、引言、方法、结果、讨论和参考文献\n论文初稿、图表初版\n\n\n修改与查重\n答辩前 2-4 周\n根据老师意见修改论文，检查格式、引用、图表和重复率\n论文定稿、查重报告、答辩申请材料\n\n\n答辩准备\n答辩前 1-2 周\n制作答辩 PPT，准备问题清单，进行模拟答辩\n答辩 PPT、讲稿、备用材料\n\n\n答辩与归档\n学院统一安排\n完成现场或线上答辩，根据答辩意见修改并提交最终版本\n最终论文、答辩记录、归档材料\n\n\n\n\n\n\n\n\n\nNote毕业设计重要事务！！！\n\n\n\n\n大四上学期开学大概9月中旬班群会发一个共享文档，里面会让填实习单位，这个实习单位过往大部分同学都是填的课题组，也有少部分填公司。在公司实习的，毕业论文可以挂载到我们学校的某个老师上。实习单位就是指导你完成毕业设计的单位。\n\n对于实习单位为课题组的同学，大部分同学会在本校实习，小部分同学会在外校课题组实习。\n毕业设计的整个时间线分别为：确认选题与指导老师（大四上）、开题报告提交（来年3月左右完成）、中期检查（来年4月左右完成）、第一次查重（来年5月上旬完成）、答辩ppt制作、正式答辩（一般基础医学院毕业班答辩统一在来年5月的最后一个周五）、第二次查重与终稿提交。\n关于毕业设计评分，提交答辩稿会先派送给同学院的两位老师进行打分，然后正式答辩那天，会有1个答辩组长（Y叔）+5名答辩组员老师共同打分；答辩组长的评分不计入总分，5个答辩老师打的分会区一个平均分算到成绩单上，作为毕业设计总分。这里要注意，某些保研的学校明确要求毕业设计分数不能低于80分。\n\n\n\n\n\n\n每周至少向指导老师同步一次进展，哪怕只是说明当前卡点。\n所有代码、图表和数据处理步骤都保留版本，避免后期无法复现。\n论文写作尽早开始，方法部分和数据来源可以边做边写。\n每次修改论文前另存版本，文件名中加入日期。",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "毕业论文"
+    ]
+  },
+  {
+    "objectID": "Grade4/graduation_paper/index.html#毕业论文选题与指导老师",
+    "href": "Grade4/graduation_paper/index.html#毕业论文选题与指导老师",
+    "title": "毕业论文指南",
+    "section": "",
+    "text": "毕业论文选题应同时满足三个条件：自己能持续推进、指导老师能提供有效指导、在毕业论文周期内可以完成。\n\n\n生物信息学方向的毕业论文常见选题可以分为以下几类：\n\n\n\n\n\n\n\n\n类型\n适合内容\n常见产出\n\n\n\n\n公共数据库分析\nTCGA、GEO、UK Biobank、单细胞或空间转录组数据分析\n差异分析、富集分析、预后模型、分型结果\n\n\n方法复现与比较\n复现一篇论文的方法，比较不同工具或参数\n流程复现、性能对比、适用场景总结\n\n\n生物信息学流程构建\n整理某类数据的标准分析流程\n可运行脚本、流程图、示例结果\n\n\n实验数据辅助分析\n配合课题组实验数据完成统计和可视化\n质控结果、核心图表、统计分析\n\n\n数据库或工具开发\n构建轻量网站、脚本包或可视化工具\n工具原型、使用说明、测试案例\n\n\n\n\n\n\n\n\n\n\n\n\nTip选题检查清单\n\n\n\n\n数据是否已经可获取，或能在开题后较快获得？\n研究问题是否能用一两句话说清楚？\n是否有明确的主要图表，例如差异分析图、热图、网络图、生存曲线或流程图？\n是否能在 8-12 周内完成主要结果？\n题目是否避免过大，例如“癌症机制研究”应收敛为具体癌种、数据集、基因集或分析问题？\n\n\n\n\n\n\n联系老师前，建议准备一页简短材料，说明自己的兴趣方向、已掌握技能、想做的问题和可投入时间。\n可以包含：\n\n自己熟悉的技能：R、Python、Linux、统计分析、机器学习、转录组分析等。\n感兴趣方向：肿瘤组学、单细胞、空间转录组、药物筛选、流行病学数据库等。\n已读文献：列 2-3 篇与方向相关的论文。\n初步想法：可以是一个很粗的题目，但要说明数据来源和分析路线。\n\n\n\n\n\n\n\n问题\n为什么重要\n\n\n\n\n论文题目是否需要调整\n保证题目范围适中，符合专业培养目标\n\n\n数据来源是否可靠\n避免后期数据拿不到或权限不足\n\n\n技术路线是否可完成\n避免使用自己短期内无法掌握的方法\n\n\n汇报频率如何安排\n保证进度可控，减少临近答辩集中返工\n\n\n图表和结果标准\n提前对齐老师对论文质量的要求",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "毕业论文"
+    ]
+  },
+  {
+    "objectID": "Grade4/graduation_paper/index.html#毕业论文答辩",
+    "href": "Grade4/graduation_paper/index.html#毕业论文答辩",
+    "title": "毕业论文指南",
+    "section": "",
+    "text": "答辩的核心不是把论文逐字讲完，而是在有限时间内说明：你研究了什么问题，为什么值得做，怎么做，得到了什么结果，结果有什么意义和局限。\n\n\n建议控制在 5-6 分钟，具体以学院要求为准。2026届答辩时常明确要求每个人控制在5分钟以内，回答问题时常控制在3分钟以内。\n\n\n\n部分\n建议页数\n内容重点\n\n\n\n\n标题页\n1\n论文题目、姓名、专业、指导老师\n\n\n研究背景\n1-2\n领域问题、研究意义、已有工作不足\n\n\n研究目的\n1\n明确本文要回答的问题\n\n\n数据与方法\n2-3\n数据来源、样本量、分析流程、关键工具\n\n\n主要结果\n4-6\n按逻辑展示核心图表，不堆砌所有结果\n\n\n讨论与局限\n1-2\n结果解释、可靠性、局限和后续方向\n\n\n总结\n1\n用 3-4 条概括主要结论\n\n\n\n\n\n\n\n\n\n\n\n\nWarning答辩材料检查\n\n\n\n\nPPT 中所有图表都应清晰可读，坐标轴、图例和字体大小统一。\n数据来源、样本量、筛选标准和统计方法要能说清楚。\n所有缩写第一次出现时应解释。\n论文题目、学生姓名、指导老师姓名不要写错。\n准备一个 PDF 版本，避免现场字体或格式错乱。\n\n\n\n\n\n\n答辩老师常问的问题通常集中在以下方面：\n\n为什么选择这个题目？\n数据从哪里来，样本量是多少，纳入排除标准是什么？\n为什么选择这个分析方法，而不是其他方法？\n你的核心结果是否可靠，是否做了验证？\n图中的分组、颜色、统计检验和显著性标注是什么意思？\n论文最大的创新点或价值是什么？\n目前研究有什么局限，后续如何改进？\n\n\n\n\n\n先讲主线，再讲细节。不要一上来解释所有参数。\n每张结果图只强调一个结论。\n遇到不会的问题，说明自己的理解和后续可以补充的方向，不要硬编。\n回答问题时先给结论，再解释依据。\n\n\n\n\n\n\n毕业设计单位可以修改吗： A： 可以修改，需要填资料申请；若是本校，则不需要；\n答辩还有哪些需要注意的？ A：答辩前2-3天班长会在群里发抽签顺序，每个人都会随机分配到不同的位次；答辩当天分为上午+下午两个半场，所有人需要穿正装，早上8点开始，答辩完的同学可以先走，可以等到快答辩时再过去现场；\n\n\n\n\n\n\n\nNote归档原则\n\n\n\n最终提交前，确保论文、PPT、代码、核心图表和源数据能够对应起来。毕业论文不是只交一个 Word 文件，后续复查或修改时，可复现的材料会非常重要。\n\n\n\n返回大四课程",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "毕业论文"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_molecular_biology/exam-info.html",
+    "href": "Grade4/computational_molecular_biology/exam-info.html",
+    "title": "计算分子生物学 - 考试说明",
+    "section": "",
+    "text": "考核项目\n分值占比\n备注\n\n\n\n\n笔试\n50%\n及格线：60分\n\n\n爱课平台作业\n25%\n平均分 80-85\n\n\n爱课平台测试\n25%\n平均分 80-85\n\n\n\n\n\n\n\n\n\nWarning及格要求\n\n\n\n笔试成绩需达到 60分 才能及格！\n\n\n\n\n\n\n笔试题目主要来源：\n\n爱课平台作业题\nPPT 中的思考题\n课后作业\n测验题\n\n\n\n\n\n\n\n\n\n\n\nImportant大题考点（必看）\n\n\n\n根据考试情况，大题主要考察以下内容：\n\n反序排序 - 排列的反转操作与距离计算\n系统进化树构建 - UPGMA、NJ 等方法\n字符串问题 - 欧拉回路、哈密尔顿回路等图论问题\n\n\n\n\n\n\n\n\n\n\n\n\n\nTip复习建议\n\n\n\n重点复习以下三部分内容：\n\n课后作业 - 认真完成并理解每道题\n爱课平台 - 作业和测试题目\n自测题PPT - 两个自测题PPT要仔细做\n\n\n\n\n\n\n\n\n\nTip原题率\n\n\n\n根据往届经验，原题率还可以，认真复习上述内容基本能覆盖考试范围。\n\n\n\n\n\n\n\n第一轮：过一遍所有课后作业和爱课平台题目\n第二轮：重点攻克自测题PPT\n第三轮：回顾PPT中的思考题，确保理解\n\n\n\n\n\n\n\n\n阶段\n内容\n建议时间\n\n\n\n\n第一阶段\n爱课平台作业回顾\n2-3天\n\n\n第二阶段\n自测题PPT练习\n2天\n\n\n第三阶段\nPPT思考题整理\n1-2天\n\n\n第四阶段\n查漏补缺\n1天\n\n\n\n\n\n\n\n\n\n\nNote祝大家考试顺利！\n\n\n\n好好复习，相信自己，加油！\n\n\n\n← 返回计算分子生物学 | 返回大四课程",
     "crumbs": [
       "首页",
       "大四课程",
       "计算分子生物学",
-      "课程主页"
+      "考试说明"
     ]
   },
   {
-    "objectID": "Grade4/computational_molecular_biology/index.html#课程内容",
-    "href": "Grade4/computational_molecular_biology/index.html#课程内容",
-    "title": "计算分子生物学",
+    "objectID": "Grade4/computational_molecular_biology/exam-info.html#成绩构成",
+    "href": "Grade4/computational_molecular_biology/exam-info.html#成绩构成",
+    "title": "计算分子生物学 - 考试说明",
     "section": "",
-    "text": "本课程主要内容包括：\n\n序列比对 - 双序列比对、多序列比对算法\n系统进化树 - 进化树的构建方法与分析\n概率模型 - 马尔可夫链及其应用",
+    "text": "考核项目\n分值占比\n备注\n\n\n\n\n笔试\n50%\n及格线：60分\n\n\n爱课平台作业\n25%\n平均分 80-85\n\n\n爱课平台测试\n25%\n平均分 80-85\n\n\n\n\n\n\n\n\n\nWarning及格要求\n\n\n\n笔试成绩需达到 60分 才能及格！",
     "crumbs": [
       "首页",
       "大四课程",
       "计算分子生物学",
-      "课程主页"
+      "考试说明"
     ]
   },
   {
-    "objectID": "Grade4/computational_molecular_biology/index.html#考试相关",
-    "href": "Grade4/computational_molecular_biology/index.html#考试相关",
-    "title": "计算分子生物学",
+    "objectID": "Grade4/computational_molecular_biology/exam-info.html#笔试题型与来源",
+    "href": "Grade4/computational_molecular_biology/exam-info.html#笔试题型与来源",
+    "title": "计算分子生物学 - 考试说明",
     "section": "",
-    "text": "资料\n说明\n\n\n\n\n考试说明\n成绩构成、复习重点",
+    "text": "笔试题目主要来源：\n\n爱课平台作业题\nPPT 中的思考题\n课后作业\n测验题",
     "crumbs": [
       "首页",
       "大四课程",
       "计算分子生物学",
-      "课程主页"
+      "考试说明"
     ]
   },
   {
-    "objectID": "Grade4/computational_molecular_biology/index.html#其他资料",
-    "href": "Grade4/computational_molecular_biology/index.html#其他资料",
-    "title": "计算分子生物学",
+    "objectID": "Grade4/computational_molecular_biology/exam-info.html#考试大题重点",
+    "href": "Grade4/computational_molecular_biology/exam-info.html#考试大题重点",
+    "title": "计算分子生物学 - 考试说明",
     "section": "",
-    "text": "资料正在整理中…如果你有相关资料，欢迎贡献！\n\n返回上级",
+    "text": "Important大题考点（必看）\n\n\n\n根据考试情况，大题主要考察以下内容：\n\n反序排序 - 排列的反转操作与距离计算\n系统进化树构建 - UPGMA、NJ 等方法\n字符串问题 - 欧拉回路、哈密尔顿回路等图论问题",
     "crumbs": [
       "首页",
       "大四课程",
       "计算分子生物学",
-      "课程主页"
+      "考试说明"
     ]
   },
   {
-    "objectID": "Grade4/computational_biology/index.html",
-    "href": "Grade4/computational_biology/index.html",
-    "title": "计算系统生物学",
+    "objectID": "Grade4/computational_molecular_biology/exam-info.html#复习重点",
+    "href": "Grade4/computational_molecular_biology/exam-info.html#复习重点",
+    "title": "计算分子生物学 - 考试说明",
     "section": "",
-    "text": "课程代码：待补充\n学分：待补充\n学期：大四上学期\n\n\n\n计算系统生物学是生物信息学专业的核心课程，主要学习使用计算方法分析生物数据。本课程涵盖了网络生物学、基因表达分析、聚类算法等多个重要主题。\n\n\n\n掌握生物网络分析的基本方法\n学会使用 R 语言进行数据分析\n理解常用网络算法的原理\n培养独立分析生物数据的能力\n\n\n\n\n\n\n\n\n主要内容：\n\n蛋白质相互作用网络的构建\n网络拓扑性质分析\n中心性指标计算\n网络可视化\n\n技术栈：R, igraph\n代码位置：Grade4/computational_biology/experiments/Exp1/\n\n\n\n\n主要内容：\n\n基因表达数据预处理\n共表达网络构建\n模块识别和特征基因提取\n模块与表型关联分析\n\n技术栈：R, WGCNA\n代码位置：Grade4/computational_biology/experiments/Exp2/\n\n\n\n\n主要内容：\n\nMCL (Markov Cluster Algorithm) 聚类分析\nRWR (Random Walk with Restart) 算法\nKEGG 通路富集分析\n应用案例：克罗恩病相关基因分析\n\n技术栈：R, clusterProfiler\n代码位置：Grade4/computational_biology/experiments/Exp3/\n\n\n\n\n主要内容：\n\nqPCR 原理和数据格式\nCt 值处理和标准化\n相对表达量计算（ΔΔCt 方法）\n统计检验和可视化\n\n技术栈：R, ggplot2\n代码位置：Grade4/computational_biology/experiments/Exp4/\n\n\n\n\n\n\n\n准备考试？这里有学长学姐整理的考试资料：\n\n课程核心知识点总结\n考试题型分析与经验\n复习建议和重点标注\nPDF 资料下载\n\n查看考试资料 →\n\n\n\n\n\n\n\n\n网络生物学\n\nBarabási, A. L., & Oltvai, Z. N. (2004). Network biology: understanding the cell’s functional organization. Nature Reviews Genetics, 5(2), 101-113.\n\nWGCNA\n\nLangfelder, P., & Horvath, S. (2008). WGCNA: an R package for weighted correlation network analysis. BMC Bioinformatics, 9(1), 559.\n\n网络聚类\n\nVan Dongen, S. (2000). Graph clustering by flow simulation. PhD thesis, University of Utrecht.\n\n\n\n\n\n\nWGCNA 官方教程\nigraph 文档\nSTRING 数据库\n\n\n\n\n\n\n\n\n推荐使用 R &gt;= 4.0.0\n\n\n\n# 基础包\ninstall.packages(c(\"tidyverse\", \"ggplot2\", \"dplyr\"))\n\n# 生物信息学包\nif (!require(\"BiocManager\", quietly = TRUE))\n    install.packages(\"BiocManager\")\n\nBiocManager::install(c(\n    \"WGCNA\",\n    \"igraph\",\n    \"clusterProfiler\",\n    \"org.Hs.eg.db\"\n))\n\n\n\n推荐使用 RStudio 作为开发环境，可以更方便地编写和运行 R Markdown 文件。\n\n\n\n\n\n\n\n\n\n\n数据库\n用途\n网址\n\n\n\n\nSTRING\n蛋白质相互作用\nhttps://string-db.org/\n\n\nGEO\n基因表达数据\nhttps://www.ncbi.nlm.nih.gov/geo/\n\n\nKEGG\n代谢通路\nhttps://www.kegg.jp/\n\n\nUniProt\n蛋白质信息\nhttps://www.uniprot.org/\n\n\n\n\n\n\n\n\n\n\n\n实验目的：简要说明实验要解决的问题\n实验原理：介绍相关算法和方法\n实验步骤：详细记录分析流程\n结果分析：展示结果并进行解读\n讨论：总结实验收获和思考\n\n\n\n\n\n代码清晰易读，有适当的注释\n使用有意义的变量名\n结果可重现\n图表美观，标注清晰\n\n\n\n\n\n\n\nTip报告撰写建议\n\n\n\n\n使用 R Markdown 编写报告\n代码和文字结合，便于理解\n注意图表的标题和坐标轴标签\n对结果进行充分的生物学解释\n\n\n\n\n\n\n\n\n\n平时作业：20%\n实验报告：40%\n期末考试：40%\n\n\n\n通常包括：\n\n理论知识（算法原理、概念解释）\n代码阅读和填空\n简单的数据分析题\n\n\n\n\n\n\n\n\nA: 尝试以下方法：\n# 1. 更换 CRAN 镜像\noptions(repos = c(CRAN = \"https://mirrors.tuna.tsinghua.edu.cn/CRAN/\"))\n\n# 2. 使用 Bioconductor 镜像\noptions(BioC_mirror = \"https://mirrors.tuna.tsinghua.edu.cn/bioconductor\")\n\n# 3. 更新 R 和 RStudio 到最新版本\n\n\n\nA: 1. 检查数据文件路径是否正确 2. 确认所有必需的包都已安装 3. 查看错误信息，搜索解决方案 4. 在 Discussions 中提问\n\n\n\nA: 实验数据通常包含在代码文件夹中，或从指定的数据库下载。\n\n\n\n\n\n\nDiscussions\nIssues\nEmail: hinna01@163.com\n\n\n\n祝学习顺利！如有问题欢迎交流！\n返回上级 | 查看实验详情",
+    "text": "Tip复习建议\n\n\n\n重点复习以下三部分内容：\n\n课后作业 - 认真完成并理解每道题\n爱课平台 - 作业和测试题目\n自测题PPT - 两个自测题PPT要仔细做\n\n\n\n\n\n\n\n\n\nTip原题率\n\n\n\n根据往届经验，原题率还可以，认真复习上述内容基本能覆盖考试范围。",
     "crumbs": [
       "首页",
       "大四课程",
-      "计算生物学",
-      "课程主页"
+      "计算分子生物学",
+      "考试说明"
     ]
   },
   {
-    "objectID": "Grade4/computational_biology/index.html#课程简介",
-    "href": "Grade4/computational_biology/index.html#课程简介",
-    "title": "计算系统生物学",
+    "objectID": "Grade4/computational_molecular_biology/exam-info.html#复习策略",
+    "href": "Grade4/computational_molecular_biology/exam-info.html#复习策略",
+    "title": "计算分子生物学 - 考试说明",
     "section": "",
-    "text": "计算系统生物学是生物信息学专业的核心课程，主要学习使用计算方法分析生物数据。本课程涵盖了网络生物学、基因表达分析、聚类算法等多个重要主题。\n\n\n\n掌握生物网络分析的基本方法\n学会使用 R 语言进行数据分析\n理解常用网络算法的原理\n培养独立分析生物数据的能力",
+    "text": "第一轮：过一遍所有课后作业和爱课平台题目\n第二轮：重点攻克自测题PPT\n第三轮：回顾PPT中的思考题，确保理解",
     "crumbs": [
       "首页",
       "大四课程",
-      "计算生物学",
-      "课程主页"
+      "计算分子生物学",
+      "考试说明"
     ]
   },
   {
-    "objectID": "Grade4/computational_biology/index.html#实验列表",
-    "href": "Grade4/computational_biology/index.html#实验列表",
-    "title": "计算系统生物学",
+    "objectID": "Grade4/computational_molecular_biology/exam-info.html#时间安排建议",
+    "href": "Grade4/computational_molecular_biology/exam-info.html#时间安排建议",
+    "title": "计算分子生物学 - 考试说明",
     "section": "",
-    "text": "主要内容：\n\n蛋白质相互作用网络的构建\n网络拓扑性质分析\n中心性指标计算\n网络可视化\n\n技术栈：R, igraph\n代码位置：Grade4/computational_biology/experiments/Exp1/\n\n\n\n\n主要内容：\n\n基因表达数据预处理\n共表达网络构建\n模块识别和特征基因提取\n模块与表型关联分析\n\n技术栈：R, WGCNA\n代码位置：Grade4/computational_biology/experiments/Exp2/\n\n\n\n\n主要内容：\n\nMCL (Markov Cluster Algorithm) 聚类分析\nRWR (Random Walk with Restart) 算法\nKEGG 通路富集分析\n应用案例：克罗恩病相关基因分析\n\n技术栈：R, clusterProfiler\n代码位置：Grade4/computational_biology/experiments/Exp3/\n\n\n\n\n主要内容：\n\nqPCR 原理和数据格式\nCt 值处理和标准化\n相对表达量计算（ΔΔCt 方法）\n统计检验和可视化\n\n技术栈：R, ggplot2\n代码位置：Grade4/computational_biology/experiments/Exp4/",
+    "text": "阶段\n内容\n建议时间\n\n\n\n\n第一阶段\n爱课平台作业回顾\n2-3天\n\n\n第二阶段\n自测题PPT练习\n2天\n\n\n第三阶段\nPPT思考题整理\n1-2天\n\n\n第四阶段\n查漏补缺\n1天\n\n\n\n\n\n\n\n\n\n\nNote祝大家考试顺利！\n\n\n\n好好复习，相信自己，加油！\n\n\n\n← 返回计算分子生物学 | 返回大四课程",
     "crumbs": [
       "首页",
       "大四课程",
-      "计算生物学",
-      "课程主页"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/index.html#考试资料",
-    "href": "Grade4/computational_biology/index.html#考试资料",
-    "title": "计算系统生物学",
-    "section": "",
-    "text": "准备考试？这里有学长学姐整理的考试资料：\n\n课程核心知识点总结\n考试题型分析与经验\n复习建议和重点标注\nPDF 资料下载\n\n查看考试资料 →",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "课程主页"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/index.html#学习资源",
-    "href": "Grade4/computational_biology/index.html#学习资源",
-    "title": "计算系统生物学",
-    "section": "",
-    "text": "网络生物学\n\nBarabási, A. L., & Oltvai, Z. N. (2004). Network biology: understanding the cell’s functional organization. Nature Reviews Genetics, 5(2), 101-113.\n\nWGCNA\n\nLangfelder, P., & Horvath, S. (2008). WGCNA: an R package for weighted correlation network analysis. BMC Bioinformatics, 9(1), 559.\n\n网络聚类\n\nVan Dongen, S. (2000). Graph clustering by flow simulation. PhD thesis, University of Utrecht.\n\n\n\n\n\n\nWGCNA 官方教程\nigraph 文档\nSTRING 数据库",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "课程主页"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/index.html#环境配置",
-    "href": "Grade4/computational_biology/index.html#环境配置",
-    "title": "计算系统生物学",
-    "section": "",
-    "text": "推荐使用 R &gt;= 4.0.0\n\n\n\n# 基础包\ninstall.packages(c(\"tidyverse\", \"ggplot2\", \"dplyr\"))\n\n# 生物信息学包\nif (!require(\"BiocManager\", quietly = TRUE))\n    install.packages(\"BiocManager\")\n\nBiocManager::install(c(\n    \"WGCNA\",\n    \"igraph\",\n    \"clusterProfiler\",\n    \"org.Hs.eg.db\"\n))\n\n\n\n推荐使用 RStudio 作为开发环境，可以更方便地编写和运行 R Markdown 文件。",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "课程主页"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/index.html#数据来源",
-    "href": "Grade4/computational_biology/index.html#数据来源",
-    "title": "计算系统生物学",
-    "section": "",
-    "text": "数据库\n用途\n网址\n\n\n\n\nSTRING\n蛋白质相互作用\nhttps://string-db.org/\n\n\nGEO\n基因表达数据\nhttps://www.ncbi.nlm.nih.gov/geo/\n\n\nKEGG\n代谢通路\nhttps://www.kegg.jp/\n\n\nUniProt\n蛋白质信息\nhttps://www.uniprot.org/",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "课程主页"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/index.html#实验报告要求",
-    "href": "Grade4/computational_biology/index.html#实验报告要求",
-    "title": "计算系统生物学",
-    "section": "",
-    "text": "实验目的：简要说明实验要解决的问题\n实验原理：介绍相关算法和方法\n实验步骤：详细记录分析流程\n结果分析：展示结果并进行解读\n讨论：总结实验收获和思考\n\n\n\n\n\n代码清晰易读，有适当的注释\n使用有意义的变量名\n结果可重现\n图表美观，标注清晰\n\n\n\n\n\n\n\nTip报告撰写建议\n\n\n\n\n使用 R Markdown 编写报告\n代码和文字结合，便于理解\n注意图表的标题和坐标轴标签\n对结果进行充分的生物学解释",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "课程主页"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/index.html#考核方式",
-    "href": "Grade4/computational_biology/index.html#考核方式",
-    "title": "计算系统生物学",
-    "section": "",
-    "text": "平时作业：20%\n实验报告：40%\n期末考试：40%\n\n\n\n通常包括：\n\n理论知识（算法原理、概念解释）\n代码阅读和填空\n简单的数据分析题",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "课程主页"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/index.html#常见问题",
-    "href": "Grade4/computational_biology/index.html#常见问题",
-    "title": "计算系统生物学",
-    "section": "",
-    "text": "A: 尝试以下方法：\n# 1. 更换 CRAN 镜像\noptions(repos = c(CRAN = \"https://mirrors.tuna.tsinghua.edu.cn/CRAN/\"))\n\n# 2. 使用 Bioconductor 镜像\noptions(BioC_mirror = \"https://mirrors.tuna.tsinghua.edu.cn/bioconductor\")\n\n# 3. 更新 R 和 RStudio 到最新版本\n\n\n\nA: 1. 检查数据文件路径是否正确 2. 确认所有必需的包都已安装 3. 查看错误信息，搜索解决方案 4. 在 Discussions 中提问\n\n\n\nA: 实验数据通常包含在代码文件夹中，或从指定的数据库下载。",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "课程主页"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/index.html#联系方式",
-    "href": "Grade4/computational_biology/index.html#联系方式",
-    "title": "计算系统生物学",
-    "section": "",
-    "text": "Discussions\nIssues\nEmail: hinna01@163.com\n\n\n\n祝学习顺利！如有问题欢迎交流！\n返回上级 | 查看实验详情",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "课程主页"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/exp3.html",
-    "href": "Grade4/computational_biology/exp3.html",
-    "title": "实验三：网络聚类与随机游走",
-    "section": "",
-    "text": "本实验学习两种重要的网络分析算法：MCL（Markov Cluster Algorithm）和 RWR（Random Walk with Restart），并应用于疾病基因预测。\n\n\n\n\n\n理解 MCL 聚类算法原理\n掌握 RWR 算法的实现\n学会进行 KEGG 通路富集分析\n应用网络算法解决实际生物学问题\n\n\n\n\n\n\n\nMCL (Markov Cluster Algorithm) 通过模拟流在网络中的传播来识别密集连接的区域（簇）。\n基本步骤： 1. Expansion：矩阵乘法（随机游走） 2. Inflation：逐元素幂运算（促进流聚集） 3. 迭代：重复上述步骤直至收敛\n\n\n\nRWR 是一种在网络上进行随机游走的算法，从起始节点出发，每步以一定概率返回起始点。\n应用： - 候选疾病基因预测 - 药物靶点发现 - 功能相似性度量\n\n\n\n\n\n\n\n\n\nlibrary(igraph)\nlibrary(MCL)\n\n# 读取 PPI 网络\nppi_data &lt;- read.table(\"ppi_network.txt\", header = TRUE)\ng &lt;- graph_from_data_frame(ppi_data, directed = FALSE)\n\n# 获取邻接矩阵\nadj_matrix &lt;- as_adjacency_matrix(g, sparse = FALSE)\n\n\n\n# MCL 聚类\n# inflation 参数控制簇的粒度，通常取 2-5\nmcl_result &lt;- mcl(adj_matrix,\n                  addLoops = TRUE,\n                  inflation = 2,\n                  allow1 = FALSE)\n\n# 查看聚类结果\ntable(mcl_result$Cluster)\n\n# 添加簇信息到图对象\nV(g)$cluster &lt;- mcl_result$Cluster\n\n\n\n# 为不同簇分配颜色\ncluster_colors &lt;- rainbow(max(V(g)$cluster))\nV(g)$color &lt;- cluster_colors[V(g)$cluster]\n\n# 绘制网络\nplot(g,\n     vertex.size = 5,\n     vertex.label = NA,\n     vertex.color = V(g)$color,\n     main = \"MCL Clustering Result\")\n\n# 添加图例\nlegend(\"topright\",\n       legend = paste(\"Cluster\", 1:max(V(g)$cluster)),\n       col = cluster_colors,\n       pch = 19,\n       cex = 0.8)\n\n\n\nlibrary(clusterProfiler)\nlibrary(org.Hs.eg.db)\n\n# 选择一个簇进行功能富集分析\ncluster_id &lt;- 1\ncluster_genes &lt;- V(g)$name[V(g)$cluster == cluster_id]\n\n# KEGG 富集分析\nkegg_enrich &lt;- enrichKEGG(gene = cluster_genes,\n                          organism = \"hsa\",\n                          pvalueCutoff = 0.05,\n                          qvalueCutoff = 0.05)\n\n# 可视化\nbarplot(kegg_enrich, showCategory = 10)\ndotplot(kegg_enrich, showCategory = 10)\n\n\n\n\n\n\n\n# RWR 函数\nrandom_walk_with_restart &lt;- function(adj_matrix, seed_nodes, restart_prob = 0.7, max_iter = 100, tol = 1e-6) {\n  n &lt;- nrow(adj_matrix)\n  \n  # 标准化邻接矩阵（列归一化）\n  col_sums &lt;- colSums(adj_matrix)\n  col_sums[col_sums == 0] &lt;- 1  # 避免除以0\n  trans_matrix &lt;- t(t(adj_matrix) / col_sums)\n  \n  # 初始化概率向量\n  p0 &lt;- rep(0, n)\n  p0[seed_nodes] &lt;- 1 / length(seed_nodes)\n  \n  # 迭代\n  p &lt;- p0\n  for (i in 1:max_iter) {\n    p_new &lt;- (1 - restart_prob) * trans_matrix %*% p + restart_prob * p0\n    \n    # 检查收敛\n    if (sum(abs(p_new - p)) &lt; tol) {\n      break\n    }\n    p &lt;- p_new\n  }\n  \n  return(as.vector(p))\n}\n\n\n\n# 读取已知疾病基因\ndisease_genes &lt;- read.table(\"Crohn's_disease.txt\", header = FALSE)$V1\n\n# 找到种子基因在网络中的索引\nseed_indices &lt;- which(V(g)$name %in% disease_genes)\n\n# 执行 RWR\nrwr_scores &lt;- random_walk_with_restart(adj_matrix,\n                                       seed_nodes = seed_indices,\n                                       restart_prob = 0.7)\n\n# 添加分数到图对象\nV(g)$rwr_score &lt;- rwr_scores\n\n# 按分数排序，找到候选基因\ngene_scores &lt;- data.frame(\n  gene = V(g)$name,\n  score = rwr_scores,\n  is_seed = V(g)$name %in% disease_genes\n)\ngene_scores &lt;- gene_scores[order(gene_scores$score, decreasing = TRUE), ]\n\n# 查看前20个候选基因\nhead(gene_scores[!gene_scores$is_seed, ], 20)\n\n\n\n# 根据 RWR 分数着色\nscore_colors &lt;- colorRampPalette(c(\"lightblue\", \"red\"))(100)\nV(g)$color &lt;- score_colors[cut(rwr_scores, breaks = 100)]\n\n# 种子基因用不同颜色标记\nV(g)$color[seed_indices] &lt;- \"green\"\n\nplot(g,\n     vertex.size = 5,\n     vertex.label = NA,\n     vertex.color = V(g)$color,\n     main = \"RWR Scores (green = seed genes)\")\n\n# 分数分布\nggplot(gene_scores, aes(x = score, fill = is_seed)) +\n  geom_histogram(bins = 50, alpha = 0.7) +\n  scale_fill_manual(values = c(\"FALSE\" = \"steelblue\", \"TRUE\" = \"red\"),\n                    labels = c(\"Other genes\", \"Seed genes\")) +\n  labs(title = \"RWR Score Distribution\",\n       x = \"RWR Score\",\n       y = \"Count\",\n       fill = \"\") +\n  theme_minimal()\n\n\n\n# 提取高分候选基因\ntop_candidates &lt;- head(gene_scores[!gene_scores$is_seed, ], 50)$gene\n\n# KEGG 富集分析\nkegg_candidates &lt;- enrichKEGG(gene = top_candidates,\n                              organism = \"hsa\",\n                              pvalueCutoff = 0.05)\n\n# 查看富集的通路\nhead(kegg_candidates@result)\n\n# 可视化\nbarplot(kegg_candidates, showCategory = 15)\n\n\n\n\n\n\n\n\n\n识别功能相关的蛋白质群\n不同簇可能对应不同的生物学过程\n通过富集分析验证簇的功能一致性\n\n\n\n\n\n高分候选基因可能与疾病相关\n可以通过文献验证或实验确认\n考虑网络拓扑结构的疾病基因预测方法\n\n\n\n\n\n\n\n\n克罗恩病是一种慢性炎症性肠病。通过网络分析可以：\n\n发现新的疾病相关基因\n理解疾病的分子机制\n寻找潜在的治疗靶点\n\n\n\n\n\n功能相关的基因倾向于在网络中聚集\nRWR 利用这一原理进行基因功能预测\n网络拓扑比单个基因更能反映生物学功能\n\n\n\n\n\n\n\nMCL 聚类\n\n尝试不同的 inflation 参数\n分析参数对聚类结果的影响\n对主要簇进行功能富集分析\n\nRWR 分析\n\n实现 RWR 算法\n预测疾病候选基因\n验证候选基因的合理性\n\n综合分析\n\n比较 MCL 和 RWR 的结果\n讨论两种方法的优缺点\n提出改进建议\n\n\n\n\n\n\nGrade4/computational_biology/experiments/Exp3/\n├── MCL.R                          # MCL 聚类脚本\n├── RWR.R                          # RWR 分析脚本\n├── Exp3.Rmd                       # R Markdown 报告\n├── Exp3.html                      # 生成的 HTML 报告\n├── Crohn's_disease.txt            # 克罗恩病基因列表\n└── c2.cp.kegg_legacy.v2025.1.Hs.entrez.gmt  # KEGG 基因集\n\n\n\n\n\nVan Dongen, S. (2000). Graph clustering by flow simulation. PhD thesis, University of Utrecht.\nKöhler, S., et al. (2008). Walking the interactome for prioritization of candidate disease genes. The American Journal of Human Genetics, 82(4), 949-958.\nLi, Y., & Patra, J. C. (2010). Genome-wide inferring gene–phenotype relationship by walking on the heterogeneous network. Bioinformatics, 26(9), 1219-1224.\n\n\n\n\n\n\n\n\n\n\n\nTip参数选择\n\n\n\n\nMCL 的 inflation 参数：较小值产生大簇，较大值产生小簇\nRWR 的 restart 概率：通常取 0.5-0.8\n\n\n\n\n\n\n\n\n\nTip计算效率\n\n\n\n\n对于大型网络，MCL 可能需要较长时间\nRWR 可以使用稀疏矩阵加速计算\n\n\n\n\n\n\n\n\n\nWarning数据格式\n\n\n\n确保基因 ID 与网络中的节点 ID 一致（如 Entrez ID 或 Symbol）。\n\n\n\n← 上一个实验：WGCNA | 返回课程主页 | 下一个实验：qPCR →",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "实验3 - 网络聚类与随机游走"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/exp3.html#实验简介",
-    "href": "Grade4/computational_biology/exp3.html#实验简介",
-    "title": "实验三：网络聚类与随机游走",
-    "section": "",
-    "text": "本实验学习两种重要的网络分析算法：MCL（Markov Cluster Algorithm）和 RWR（Random Walk with Restart），并应用于疾病基因预测。",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "实验3 - 网络聚类与随机游走"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/exp3.html#实验目的",
-    "href": "Grade4/computational_biology/exp3.html#实验目的",
-    "title": "实验三：网络聚类与随机游走",
-    "section": "",
-    "text": "理解 MCL 聚类算法原理\n掌握 RWR 算法的实现\n学会进行 KEGG 通路富集分析\n应用网络算法解决实际生物学问题",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "实验3 - 网络聚类与随机游走"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/exp3.html#理论背景",
-    "href": "Grade4/computational_biology/exp3.html#理论背景",
-    "title": "实验三：网络聚类与随机游走",
-    "section": "",
-    "text": "MCL (Markov Cluster Algorithm) 通过模拟流在网络中的传播来识别密集连接的区域（簇）。\n基本步骤： 1. Expansion：矩阵乘法（随机游走） 2. Inflation：逐元素幂运算（促进流聚集） 3. 迭代：重复上述步骤直至收敛\n\n\n\nRWR 是一种在网络上进行随机游走的算法，从起始节点出发，每步以一定概率返回起始点。\n应用： - 候选疾病基因预测 - 药物靶点发现 - 功能相似性度量",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "实验3 - 网络聚类与随机游走"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/exp3.html#实验步骤",
-    "href": "Grade4/computational_biology/exp3.html#实验步骤",
-    "title": "实验三：网络聚类与随机游走",
-    "section": "",
-    "text": "library(igraph)\nlibrary(MCL)\n\n# 读取 PPI 网络\nppi_data &lt;- read.table(\"ppi_network.txt\", header = TRUE)\ng &lt;- graph_from_data_frame(ppi_data, directed = FALSE)\n\n# 获取邻接矩阵\nadj_matrix &lt;- as_adjacency_matrix(g, sparse = FALSE)\n\n\n\n# MCL 聚类\n# inflation 参数控制簇的粒度，通常取 2-5\nmcl_result &lt;- mcl(adj_matrix,\n                  addLoops = TRUE,\n                  inflation = 2,\n                  allow1 = FALSE)\n\n# 查看聚类结果\ntable(mcl_result$Cluster)\n\n# 添加簇信息到图对象\nV(g)$cluster &lt;- mcl_result$Cluster\n\n\n\n# 为不同簇分配颜色\ncluster_colors &lt;- rainbow(max(V(g)$cluster))\nV(g)$color &lt;- cluster_colors[V(g)$cluster]\n\n# 绘制网络\nplot(g,\n     vertex.size = 5,\n     vertex.label = NA,\n     vertex.color = V(g)$color,\n     main = \"MCL Clustering Result\")\n\n# 添加图例\nlegend(\"topright\",\n       legend = paste(\"Cluster\", 1:max(V(g)$cluster)),\n       col = cluster_colors,\n       pch = 19,\n       cex = 0.8)\n\n\n\nlibrary(clusterProfiler)\nlibrary(org.Hs.eg.db)\n\n# 选择一个簇进行功能富集分析\ncluster_id &lt;- 1\ncluster_genes &lt;- V(g)$name[V(g)$cluster == cluster_id]\n\n# KEGG 富集分析\nkegg_enrich &lt;- enrichKEGG(gene = cluster_genes,\n                          organism = \"hsa\",\n                          pvalueCutoff = 0.05,\n                          qvalueCutoff = 0.05)\n\n# 可视化\nbarplot(kegg_enrich, showCategory = 10)\ndotplot(kegg_enrich, showCategory = 10)\n\n\n\n\n\n\n\n# RWR 函数\nrandom_walk_with_restart &lt;- function(adj_matrix, seed_nodes, restart_prob = 0.7, max_iter = 100, tol = 1e-6) {\n  n &lt;- nrow(adj_matrix)\n  \n  # 标准化邻接矩阵（列归一化）\n  col_sums &lt;- colSums(adj_matrix)\n  col_sums[col_sums == 0] &lt;- 1  # 避免除以0\n  trans_matrix &lt;- t(t(adj_matrix) / col_sums)\n  \n  # 初始化概率向量\n  p0 &lt;- rep(0, n)\n  p0[seed_nodes] &lt;- 1 / length(seed_nodes)\n  \n  # 迭代\n  p &lt;- p0\n  for (i in 1:max_iter) {\n    p_new &lt;- (1 - restart_prob) * trans_matrix %*% p + restart_prob * p0\n    \n    # 检查收敛\n    if (sum(abs(p_new - p)) &lt; tol) {\n      break\n    }\n    p &lt;- p_new\n  }\n  \n  return(as.vector(p))\n}\n\n\n\n# 读取已知疾病基因\ndisease_genes &lt;- read.table(\"Crohn's_disease.txt\", header = FALSE)$V1\n\n# 找到种子基因在网络中的索引\nseed_indices &lt;- which(V(g)$name %in% disease_genes)\n\n# 执行 RWR\nrwr_scores &lt;- random_walk_with_restart(adj_matrix,\n                                       seed_nodes = seed_indices,\n                                       restart_prob = 0.7)\n\n# 添加分数到图对象\nV(g)$rwr_score &lt;- rwr_scores\n\n# 按分数排序，找到候选基因\ngene_scores &lt;- data.frame(\n  gene = V(g)$name,\n  score = rwr_scores,\n  is_seed = V(g)$name %in% disease_genes\n)\ngene_scores &lt;- gene_scores[order(gene_scores$score, decreasing = TRUE), ]\n\n# 查看前20个候选基因\nhead(gene_scores[!gene_scores$is_seed, ], 20)\n\n\n\n# 根据 RWR 分数着色\nscore_colors &lt;- colorRampPalette(c(\"lightblue\", \"red\"))(100)\nV(g)$color &lt;- score_colors[cut(rwr_scores, breaks = 100)]\n\n# 种子基因用不同颜色标记\nV(g)$color[seed_indices] &lt;- \"green\"\n\nplot(g,\n     vertex.size = 5,\n     vertex.label = NA,\n     vertex.color = V(g)$color,\n     main = \"RWR Scores (green = seed genes)\")\n\n# 分数分布\nggplot(gene_scores, aes(x = score, fill = is_seed)) +\n  geom_histogram(bins = 50, alpha = 0.7) +\n  scale_fill_manual(values = c(\"FALSE\" = \"steelblue\", \"TRUE\" = \"red\"),\n                    labels = c(\"Other genes\", \"Seed genes\")) +\n  labs(title = \"RWR Score Distribution\",\n       x = \"RWR Score\",\n       y = \"Count\",\n       fill = \"\") +\n  theme_minimal()\n\n\n\n# 提取高分候选基因\ntop_candidates &lt;- head(gene_scores[!gene_scores$is_seed, ], 50)$gene\n\n# KEGG 富集分析\nkegg_candidates &lt;- enrichKEGG(gene = top_candidates,\n                              organism = \"hsa\",\n                              pvalueCutoff = 0.05)\n\n# 查看富集的通路\nhead(kegg_candidates@result)\n\n# 可视化\nbarplot(kegg_candidates, showCategory = 15)",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "实验3 - 网络聚类与随机游走"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/exp3.html#结果分析",
-    "href": "Grade4/computational_biology/exp3.html#结果分析",
-    "title": "实验三：网络聚类与随机游走",
-    "section": "",
-    "text": "识别功能相关的蛋白质群\n不同簇可能对应不同的生物学过程\n通过富集分析验证簇的功能一致性\n\n\n\n\n\n高分候选基因可能与疾病相关\n可以通过文献验证或实验确认\n考虑网络拓扑结构的疾病基因预测方法",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "实验3 - 网络聚类与随机游走"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/exp3.html#生物学解释",
-    "href": "Grade4/computational_biology/exp3.html#生物学解释",
-    "title": "实验三：网络聚类与随机游走",
-    "section": "",
-    "text": "克罗恩病是一种慢性炎症性肠病。通过网络分析可以：\n\n发现新的疾病相关基因\n理解疾病的分子机制\n寻找潜在的治疗靶点\n\n\n\n\n\n功能相关的基因倾向于在网络中聚集\nRWR 利用这一原理进行基因功能预测\n网络拓扑比单个基因更能反映生物学功能",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "实验3 - 网络聚类与随机游走"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/exp3.html#作业要求",
-    "href": "Grade4/computational_biology/exp3.html#作业要求",
-    "title": "实验三：网络聚类与随机游走",
-    "section": "",
-    "text": "MCL 聚类\n\n尝试不同的 inflation 参数\n分析参数对聚类结果的影响\n对主要簇进行功能富集分析\n\nRWR 分析\n\n实现 RWR 算法\n预测疾病候选基因\n验证候选基因的合理性\n\n综合分析\n\n比较 MCL 和 RWR 的结果\n讨论两种方法的优缺点\n提出改进建议",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "实验3 - 网络聚类与随机游走"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/exp3.html#文件位置",
-    "href": "Grade4/computational_biology/exp3.html#文件位置",
-    "title": "实验三：网络聚类与随机游走",
-    "section": "",
-    "text": "Grade4/computational_biology/experiments/Exp3/\n├── MCL.R                          # MCL 聚类脚本\n├── RWR.R                          # RWR 分析脚本\n├── Exp3.Rmd                       # R Markdown 报告\n├── Exp3.html                      # 生成的 HTML 报告\n├── Crohn's_disease.txt            # 克罗恩病基因列表\n└── c2.cp.kegg_legacy.v2025.1.Hs.entrez.gmt  # KEGG 基因集",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "实验3 - 网络聚类与随机游走"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/exp3.html#参考资料",
-    "href": "Grade4/computational_biology/exp3.html#参考资料",
-    "title": "实验三：网络聚类与随机游走",
-    "section": "",
-    "text": "Van Dongen, S. (2000). Graph clustering by flow simulation. PhD thesis, University of Utrecht.\nKöhler, S., et al. (2008). Walking the interactome for prioritization of candidate disease genes. The American Journal of Human Genetics, 82(4), 949-958.\nLi, Y., & Patra, J. C. (2010). Genome-wide inferring gene–phenotype relationship by walking on the heterogeneous network. Bioinformatics, 26(9), 1219-1224.",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "实验3 - 网络聚类与随机游走"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/exp3.html#提示",
-    "href": "Grade4/computational_biology/exp3.html#提示",
-    "title": "实验三：网络聚类与随机游走",
-    "section": "",
-    "text": "Tip参数选择\n\n\n\n\nMCL 的 inflation 参数：较小值产生大簇，较大值产生小簇\nRWR 的 restart 概率：通常取 0.5-0.8\n\n\n\n\n\n\n\n\n\nTip计算效率\n\n\n\n\n对于大型网络，MCL 可能需要较长时间\nRWR 可以使用稀疏矩阵加速计算\n\n\n\n\n\n\n\n\n\nWarning数据格式\n\n\n\n确保基因 ID 与网络中的节点 ID 一致（如 Entrez ID 或 Symbol）。\n\n\n\n← 上一个实验：WGCNA | 返回课程主页 | 下一个实验：qPCR →",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "实验3 - 网络聚类与随机游走"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/exp1.html",
-    "href": "Grade4/computational_biology/exp1.html",
-    "title": "实验一：蛋白质相互作用网络分析（PPI）",
-    "section": "",
-    "text": "蛋白质相互作用网络（Protein-Protein Interaction Network, PPI）是研究细胞功能的重要工具。本实验通过构建和分析PPI网络，学习网络生物学的基本方法。\n\n\n\n\n\n理解蛋白质相互作用网络的概念\n掌握使用 R 语言构建 PPI 网络\n学会分析网络的拓扑性质\n了解网络中心性指标的生物学意义\n\n\n\n\n\n\n\n蛋白质相互作用网络是将蛋白质作为节点，蛋白质之间的相互作用作为边的网络图。\n\n\n\n\n度（Degree）：节点连接的边数\n聚类系数（Clustering Coefficient）：节点邻居之间相互连接的程度\n最短路径（Shortest Path）：两个节点之间的最短距离\n中心性（Centrality）：节点在网络中的重要性\n\n\n\n\n\n度中心性（Degree Centrality）：连接数最多的节点\n介数中心性（Betweenness Centrality）：经过该节点的最短路径数\n紧密中心性（Closeness Centrality）：到其他节点的平均距离\n特征向量中心性（Eigenvector Centrality）：考虑邻居重要性的中心性\n\n\n\n\n\n\n\n\n# 加载必需的包\nlibrary(igraph)\nlibrary(ggplot2)\nlibrary(dplyr)\n\n# 读取 PPI 数据\n# 数据通常包含两列：蛋白质A 和 蛋白质B\nppi_data &lt;- read.csv(\"ppi_data.csv\")\n\n\n\n# 创建图对象\ng &lt;- graph_from_data_frame(ppi_data, directed = FALSE)\n\n# 查看网络基本信息\nvcount(g)  # 节点数\necount(g)  # 边数\n\n\n\n# 度分布\ndegree_dist &lt;- degree(g)\n\n# 聚类系数\nclustering_coef &lt;- transitivity(g, type = \"local\")\n\n# 平均路径长度\navg_path_length &lt;- mean_distance(g)\n\n\n\n# 度中心性\ndegree_cent &lt;- degree(g)\n\n# 介数中心性\nbetween_cent &lt;- betweenness(g)\n\n# 紧密中心性\nclose_cent &lt;- closeness(g)\n\n# 特征向量中心性\neigen_cent &lt;- eigen_centrality(g)$vector\n\n\n\n# 基础可视化\nplot(g,\n     vertex.size = 5,\n     vertex.label = NA,\n     edge.arrow.size = 0.3)\n\n# 根据度中心性着色\nV(g)$color &lt;- colorRampPalette(c(\"lightblue\", \"darkred\"))(max(degree_cent))[degree_cent]\n\nplot(g,\n     vertex.size = log(degree_cent) * 3,\n     vertex.label = NA,\n     vertex.color = V(g)$color,\n     main = \"PPI Network (colored by degree)\")\n\n\n\n\n\n\n\nPPI 网络通常表现出无标度（Scale-free）特性，即少数”枢纽”蛋白与很多其他蛋白相互作用。\n# 绘制度分布图\nggplot(data.frame(degree = degree_dist), aes(x = degree)) +\n  geom_histogram(bins = 30, fill = \"steelblue\") +\n  scale_y_log10() +\n  labs(title = \"Degree Distribution\",\n       x = \"Degree\",\n       y = \"Count (log10)\") +\n  theme_minimal()\n\n\n\n# 识别度最高的前10个蛋白\ntop_hubs &lt;- head(sort(degree_cent, decreasing = TRUE), 10)\nprint(top_hubs)\n\n\n\n\n\n\n\n\nHub 蛋白通常是细胞功能的关键调控因子\nHub 蛋白的突变更可能导致疾病\nHub 蛋白是潜在的药物靶点\n\n\n\n\n\n高度连接的蛋白质群可能参与相同的生物学过程\n可以通过社区检测算法识别功能模块\n\n\n\n\n\n\n\n基础分析\n\n构建 PPI 网络\n计算网络拓扑性质\n识别 Hub 蛋白\n\n进阶分析\n\n进行社区检测\n分析不同模块的功能\n与已知通路比较\n\n报告撰写\n\n使用 R Markdown 撰写报告\n包含代码、图表和解释\n对结果进行生物学解读\n\n\n\n\n\n\nGrade4/computational_biology/experiments/Exp1/\n├── Exp1.PPI.Rmd      # R Markdown 报告\n├── PPI.html          # 生成的 HTML 报告\n└── data/             # 数据文件（如果有）\n\n\n\n\n\nBarabási, A. L., & Oltvai, Z. N. (2004). Network biology: understanding the cell’s functional organization. Nature Reviews Genetics, 5(2), 101-113.\nAlbert, R. (2005). Scale-free networks in cell biology. Journal of Cell Science, 118(21), 4947-4957.\nigraph 官方文档\nSTRING 数据库\n\n\n\n\n\n\n\n\n\n\n\nTip数据来源\n\n\n\n可以从 STRING 数据库下载特定物种或疾病相关的 PPI 数据。\n\n\n\n\n\n\n\n\nTip可视化建议\n\n\n\n对于大型网络，可以只展示部分节点或使用交互式可视化工具（如 visNetwork）。\n\n\n\n\n\n\n\n\nWarning计算时间\n\n\n\n对于大型网络，计算介数中心性等指标可能需要较长时间。\n\n\n\n返回课程主页 | 下一个实验：WGCNA →",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "实验1 - PPI网络分析"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/exp1.html#实验简介",
-    "href": "Grade4/computational_biology/exp1.html#实验简介",
-    "title": "实验一：蛋白质相互作用网络分析（PPI）",
-    "section": "",
-    "text": "蛋白质相互作用网络（Protein-Protein Interaction Network, PPI）是研究细胞功能的重要工具。本实验通过构建和分析PPI网络，学习网络生物学的基本方法。",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "实验1 - PPI网络分析"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/exp1.html#实验目的",
-    "href": "Grade4/computational_biology/exp1.html#实验目的",
-    "title": "实验一：蛋白质相互作用网络分析（PPI）",
-    "section": "",
-    "text": "理解蛋白质相互作用网络的概念\n掌握使用 R 语言构建 PPI 网络\n学会分析网络的拓扑性质\n了解网络中心性指标的生物学意义",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "实验1 - PPI网络分析"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/exp1.html#理论背景",
-    "href": "Grade4/computational_biology/exp1.html#理论背景",
-    "title": "实验一：蛋白质相互作用网络分析（PPI）",
-    "section": "",
-    "text": "蛋白质相互作用网络是将蛋白质作为节点，蛋白质之间的相互作用作为边的网络图。\n\n\n\n\n度（Degree）：节点连接的边数\n聚类系数（Clustering Coefficient）：节点邻居之间相互连接的程度\n最短路径（Shortest Path）：两个节点之间的最短距离\n中心性（Centrality）：节点在网络中的重要性\n\n\n\n\n\n度中心性（Degree Centrality）：连接数最多的节点\n介数中心性（Betweenness Centrality）：经过该节点的最短路径数\n紧密中心性（Closeness Centrality）：到其他节点的平均距离\n特征向量中心性（Eigenvector Centrality）：考虑邻居重要性的中心性",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "实验1 - PPI网络分析"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/exp1.html#实验步骤",
-    "href": "Grade4/computational_biology/exp1.html#实验步骤",
-    "title": "实验一：蛋白质相互作用网络分析（PPI）",
-    "section": "",
-    "text": "# 加载必需的包\nlibrary(igraph)\nlibrary(ggplot2)\nlibrary(dplyr)\n\n# 读取 PPI 数据\n# 数据通常包含两列：蛋白质A 和 蛋白质B\nppi_data &lt;- read.csv(\"ppi_data.csv\")\n\n\n\n# 创建图对象\ng &lt;- graph_from_data_frame(ppi_data, directed = FALSE)\n\n# 查看网络基本信息\nvcount(g)  # 节点数\necount(g)  # 边数\n\n\n\n# 度分布\ndegree_dist &lt;- degree(g)\n\n# 聚类系数\nclustering_coef &lt;- transitivity(g, type = \"local\")\n\n# 平均路径长度\navg_path_length &lt;- mean_distance(g)\n\n\n\n# 度中心性\ndegree_cent &lt;- degree(g)\n\n# 介数中心性\nbetween_cent &lt;- betweenness(g)\n\n# 紧密中心性\nclose_cent &lt;- closeness(g)\n\n# 特征向量中心性\neigen_cent &lt;- eigen_centrality(g)$vector\n\n\n\n# 基础可视化\nplot(g,\n     vertex.size = 5,\n     vertex.label = NA,\n     edge.arrow.size = 0.3)\n\n# 根据度中心性着色\nV(g)$color &lt;- colorRampPalette(c(\"lightblue\", \"darkred\"))(max(degree_cent))[degree_cent]\n\nplot(g,\n     vertex.size = log(degree_cent) * 3,\n     vertex.label = NA,\n     vertex.color = V(g)$color,\n     main = \"PPI Network (colored by degree)\")",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "实验1 - PPI网络分析"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/exp1.html#结果分析",
-    "href": "Grade4/computational_biology/exp1.html#结果分析",
-    "title": "实验一：蛋白质相互作用网络分析（PPI）",
-    "section": "",
-    "text": "PPI 网络通常表现出无标度（Scale-free）特性，即少数”枢纽”蛋白与很多其他蛋白相互作用。\n# 绘制度分布图\nggplot(data.frame(degree = degree_dist), aes(x = degree)) +\n  geom_histogram(bins = 30, fill = \"steelblue\") +\n  scale_y_log10() +\n  labs(title = \"Degree Distribution\",\n       x = \"Degree\",\n       y = \"Count (log10)\") +\n  theme_minimal()\n\n\n\n# 识别度最高的前10个蛋白\ntop_hubs &lt;- head(sort(degree_cent, decreasing = TRUE), 10)\nprint(top_hubs)",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "实验1 - PPI网络分析"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/exp1.html#生物学解释",
-    "href": "Grade4/computational_biology/exp1.html#生物学解释",
-    "title": "实验一：蛋白质相互作用网络分析（PPI）",
-    "section": "",
-    "text": "Hub 蛋白通常是细胞功能的关键调控因子\nHub 蛋白的突变更可能导致疾病\nHub 蛋白是潜在的药物靶点\n\n\n\n\n\n高度连接的蛋白质群可能参与相同的生物学过程\n可以通过社区检测算法识别功能模块",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "实验1 - PPI网络分析"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/exp1.html#作业要求",
-    "href": "Grade4/computational_biology/exp1.html#作业要求",
-    "title": "实验一：蛋白质相互作用网络分析（PPI）",
-    "section": "",
-    "text": "基础分析\n\n构建 PPI 网络\n计算网络拓扑性质\n识别 Hub 蛋白\n\n进阶分析\n\n进行社区检测\n分析不同模块的功能\n与已知通路比较\n\n报告撰写\n\n使用 R Markdown 撰写报告\n包含代码、图表和解释\n对结果进行生物学解读",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "实验1 - PPI网络分析"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/exp1.html#文件位置",
-    "href": "Grade4/computational_biology/exp1.html#文件位置",
-    "title": "实验一：蛋白质相互作用网络分析（PPI）",
-    "section": "",
-    "text": "Grade4/computational_biology/experiments/Exp1/\n├── Exp1.PPI.Rmd      # R Markdown 报告\n├── PPI.html          # 生成的 HTML 报告\n└── data/             # 数据文件（如果有）",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "实验1 - PPI网络分析"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/exp1.html#参考资料",
-    "href": "Grade4/computational_biology/exp1.html#参考资料",
-    "title": "实验一：蛋白质相互作用网络分析（PPI）",
-    "section": "",
-    "text": "Barabási, A. L., & Oltvai, Z. N. (2004). Network biology: understanding the cell’s functional organization. Nature Reviews Genetics, 5(2), 101-113.\nAlbert, R. (2005). Scale-free networks in cell biology. Journal of Cell Science, 118(21), 4947-4957.\nigraph 官方文档\nSTRING 数据库",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "实验1 - PPI网络分析"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/exp1.html#提示",
-    "href": "Grade4/computational_biology/exp1.html#提示",
-    "title": "实验一：蛋白质相互作用网络分析（PPI）",
-    "section": "",
-    "text": "Tip数据来源\n\n\n\n可以从 STRING 数据库下载特定物种或疾病相关的 PPI 数据。\n\n\n\n\n\n\n\n\nTip可视化建议\n\n\n\n对于大型网络，可以只展示部分节点或使用交互式可视化工具（如 visNetwork）。\n\n\n\n\n\n\n\n\nWarning计算时间\n\n\n\n对于大型网络，计算介数中心性等指标可能需要较长时间。\n\n\n\n返回课程主页 | 下一个实验：WGCNA →",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "实验1 - PPI网络分析"
-    ]
-  },
-  {
-    "objectID": "Grade4/career_guidance/index.html",
-    "href": "Grade4/career_guidance/index.html",
-    "title": "就业指导概论",
-    "section": "",
-    "text": "课程性质：必修课\n学期：大四上学期\n\n\n\n\n\n课程作业包括两个部分：\n\n个人简历制作\n\n要求制作一份专业的个人简历\n突出个人技能和项目经验\n格式规范，内容完整\n\nAI 模拟面试\n\n使用 AI 工具进行模拟面试\n记录面试过程和反馈\n总结改进方向\n\n\n\n\n\n\n\n\n\n\n考试方式：机考（线上）\n考试时长：待定\n是否可回看：试题可以回看\n\n\n\n\n总题数：37 题\n满分：100 分\n\n\n\n题型\n题量\n单题分值\n总分\n\n\n\n\n判断题\n15 题\n2 分\n30 分\n\n\n单选题\n15 题\n2 分\n30 分\n\n\n多选题\n5 题\n3 分\n15 分\n\n\n简答题\n2 题\n15 分 + 10 分\n25 分\n\n\n\n\n\n\n\n\n\n\n\n\n公众号提供了详细的复习资料和考试重点：\n\n推文一：就业指导复习资料（一）\n\n包含基础知识点\n求职技巧总结\n简历制作要点\n\n推文二：就业指导复习资料（二）\n\n面试技巧讲解\n常见问题解答\n职业规划指导\n\n\n\n\n\n\n\n\nNote如何获取\n\n\n\n微信搜索公众号 “Hmaide”，查看历史推文获取完整复习资料\n\n\n\n\n\n\n\n佛教刷题平台\n\n题库代码：Yk6i-6lY\n使用方法：\n\n访问佛教刷题网站/小程序\n输入题库代码：Yk6i-6lY\n\n\n\n\n\n\n\n\n\n考察档案派遣。比如小明是外省人，被广州某私企公司录用，改如何派遣。\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nImportant必考题型\n\n\n\n档案派遣是简答题的重点考察内容！\n\n\n\n\n\n\n如果发现复习资料有误或需要补充，欢迎：\n\n在 Discussions 中讨论\n在 Issues 中反馈\n发邮件到：hinna01@163.com\n\n\n\n祝大家考试顺利！\n← 返回大四课程",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "就业指导概论"
-    ]
-  },
-  {
-    "objectID": "Grade4/career_guidance/index.html#课程考核",
-    "href": "Grade4/career_guidance/index.html#课程考核",
-    "title": "就业指导概论",
-    "section": "",
-    "text": "课程作业包括两个部分：\n\n个人简历制作\n\n要求制作一份专业的个人简历\n突出个人技能和项目经验\n格式规范，内容完整\n\nAI 模拟面试\n\n使用 AI 工具进行模拟面试\n记录面试过程和反馈\n总结改进方向",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "就业指导概论"
-    ]
-  },
-  {
-    "objectID": "Grade4/career_guidance/index.html#期末考试",
-    "href": "Grade4/career_guidance/index.html#期末考试",
-    "title": "就业指导概论",
-    "section": "",
-    "text": "考试方式：机考（线上）\n考试时长：待定\n是否可回看：试题可以回看\n\n\n\n\n总题数：37 题\n满分：100 分\n\n\n\n题型\n题量\n单题分值\n总分\n\n\n\n\n判断题\n15 题\n2 分\n30 分\n\n\n单选题\n15 题\n2 分\n30 分\n\n\n多选题\n5 题\n3 分\n15 分\n\n\n简答题\n2 题\n15 分 + 10 分\n25 分",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "就业指导概论"
-    ]
-  },
-  {
-    "objectID": "Grade4/career_guidance/index.html#复习资料",
-    "href": "Grade4/career_guidance/index.html#复习资料",
-    "title": "就业指导概论",
-    "section": "",
-    "text": "公众号提供了详细的复习资料和考试重点：\n\n推文一：就业指导复习资料（一）\n\n包含基础知识点\n求职技巧总结\n简历制作要点\n\n推文二：就业指导复习资料（二）\n\n面试技巧讲解\n常见问题解答\n职业规划指导\n\n\n\n\n\n\n\n\nNote如何获取\n\n\n\n微信搜索公众号 “Hmaide”，查看历史推文获取完整复习资料\n\n\n\n\n\n\n\n佛教刷题平台\n\n题库代码：Yk6i-6lY\n使用方法：\n\n访问佛教刷题网站/小程序\n输入题库代码：Yk6i-6lY",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "就业指导概论"
-    ]
-  },
-  {
-    "objectID": "Grade4/career_guidance/index.html#考试真题20251230",
-    "href": "Grade4/career_guidance/index.html#考试真题20251230",
-    "title": "就业指导概论",
-    "section": "",
-    "text": "考察档案派遣。比如小明是外省人，被广州某私企公司录用，改如何派遣。",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "就业指导概论"
-    ]
-  },
-  {
-    "objectID": "Grade4/career_guidance/index.html#获取就业信息的途径和方式有哪些多选题给了提示",
-    "href": "Grade4/career_guidance/index.html#获取就业信息的途径和方式有哪些多选题给了提示",
-    "title": "就业指导概论",
-    "section": "",
-    "text": "Important必考题型\n\n\n\n档案派遣是简答题的重点考察内容！",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "就业指导概论"
-    ]
-  },
-  {
-    "objectID": "Grade4/career_guidance/index.html#问题反馈",
-    "href": "Grade4/career_guidance/index.html#问题反馈",
-    "title": "就业指导概论",
-    "section": "",
-    "text": "如果发现复习资料有误或需要补充，欢迎：\n\n在 Discussions 中讨论\n在 Issues 中反馈\n发邮件到：hinna01@163.com\n\n\n\n祝大家考试顺利！\n← 返回大四课程",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "就业指导概论"
-    ]
-  },
-  {
-    "objectID": "Grade3/index.html",
-    "href": "Grade3/index.html",
-    "title": "大三课程",
-    "section": "",
-    "text": "学年概述：大三是生物信息学专业核心课程学习的关键阶段。\n\n\n\n\n大三上学期大三下学期\n\n\n专业核心课程深入学习阶段。\n\n\n专业知识综合应用与实践。\n\n\n\n\n\n\n\n\n\n\n\n\n\nTip学长学姐的宝贵经验\n\n\n\n以下是往届同学整理的考试经验，供参考复习。\n\n\n\n\n\n学期\n资料\n下载\n\n\n\n\n大三上\n考试经验总结\n下载 PDF\n\n\n\n\n\n\n\n\n深入理解 - 大三课程难度提升，要注重理解\n项目实践 - 多参与实际项目，积累经验\n提前规划 - 考虑未来方向（考研/就业/出国）\n\n\n返回首页",
-    "crumbs": [
-      "首页",
-      "大三课程",
-      "大三课程总览"
-    ]
-  },
-  {
-    "objectID": "Grade3/index.html#学期内容",
-    "href": "Grade3/index.html#学期内容",
-    "title": "大三课程",
-    "section": "",
-    "text": "大三上学期大三下学期\n\n\n专业核心课程深入学习阶段。\n\n\n专业知识综合应用与实践。",
-    "crumbs": [
-      "首页",
-      "大三课程",
-      "大三课程总览"
-    ]
-  },
-  {
-    "objectID": "Grade3/index.html#考试经验",
-    "href": "Grade3/index.html#考试经验",
-    "title": "大三课程",
-    "section": "",
-    "text": "Tip学长学姐的宝贵经验\n\n\n\n以下是往届同学整理的考试经验，供参考复习。\n\n\n\n\n\n学期\n资料\n下载\n\n\n\n\n大三上\n考试经验总结\n下载 PDF",
-    "crumbs": [
-      "首页",
-      "大三课程",
-      "大三课程总览"
-    ]
-  },
-  {
-    "objectID": "Grade3/index.html#学习建议",
-    "href": "Grade3/index.html#学习建议",
-    "title": "大三课程",
-    "section": "",
-    "text": "深入理解 - 大三课程难度提升，要注重理解\n项目实践 - 多参与实际项目，积累经验\n提前规划 - 考虑未来方向（考研/就业/出国）\n\n\n返回首页",
-    "crumbs": [
-      "首页",
-      "大三课程",
-      "大三课程总览"
-    ]
-  },
-  {
-    "objectID": "Epidemiology/UK_Biobank.html",
-    "href": "Epidemiology/UK_Biobank.html",
-    "title": "UK Biobank (UKB) 数据库简介",
-    "section": "",
-    "text": "UK Biobank (UKB) 是一个大型的生物医学数据库，包含了来自英国50万名参与者的详细健康和遗传信息。该数据库由英国政府资助，旨在促进医学研究和公共卫生领域的进步。UKB的数据涵盖了广泛的领域，包括基因组学、影像学、生活方式、环境暴露等，为研究人员提供了宝贵的资源来探索疾病的原因和发展机制。\n\n\n\n\nUK Biobank官方网站：https://www.ukbiobank.ac.uk/\n数据访问指南：https://www.ukbiobank.ac.uk/enable-your-research/apply-for-access\n数据字典：https://biobank.ndph.ox.ac.uk/showcase/\n\n\n\n\n\nUK Biobank数据分析教程：https://www.ukbiobank.ac.uk/enable-your-research/uk-biobank-data-analysis\nUK Biobank RAP平台教程1：RAP平台使用方法以及人口学数据的代码版本的下载\nUK Biobank RAP平台教程2：代谢组学与蛋白质组学数据的下载\nUK Biobank RAP平台教程3：GGIR包处理加速度计原始数据流程\nUK Biobank package：UKBAnalytica1.0提升UKB数据分析效率\n\n\n\n\n通过网盘分享的文件：UKB数据库介绍.pptx等2个文件 链接: https://pan.baidu.com/s/1bGSzOsV6ofUFLP7n_PNysA?pwd=fb33 提取码: fb33 –来自百度网盘超级会员v5的分享",
-    "crumbs": [
-      "首页",
-      "流行病学数据库",
-      "UK Biobank"
-    ]
-  },
-  {
-    "objectID": "Epidemiology/UK_Biobank.html#前言",
-    "href": "Epidemiology/UK_Biobank.html#前言",
-    "title": "UK Biobank (UKB) 数据库简介",
-    "section": "",
-    "text": "UK Biobank (UKB) 是一个大型的生物医学数据库，包含了来自英国50万名参与者的详细健康和遗传信息。该数据库由英国政府资助，旨在促进医学研究和公共卫生领域的进步。UKB的数据涵盖了广泛的领域，包括基因组学、影像学、生活方式、环境暴露等，为研究人员提供了宝贵的资源来探索疾病的原因和发展机制。",
-    "crumbs": [
-      "首页",
-      "流行病学数据库",
-      "UK Biobank"
-    ]
-  },
-  {
-    "objectID": "Epidemiology/UK_Biobank.html#网站",
-    "href": "Epidemiology/UK_Biobank.html#网站",
-    "title": "UK Biobank (UKB) 数据库简介",
-    "section": "",
-    "text": "UK Biobank官方网站：https://www.ukbiobank.ac.uk/\n数据访问指南：https://www.ukbiobank.ac.uk/enable-your-research/apply-for-access\n数据字典：https://biobank.ndph.ox.ac.uk/showcase/",
-    "crumbs": [
-      "首页",
-      "流行病学数据库",
-      "UK Biobank"
-    ]
-  },
-  {
-    "objectID": "Epidemiology/UK_Biobank.html#学习资源",
-    "href": "Epidemiology/UK_Biobank.html#学习资源",
-    "title": "UK Biobank (UKB) 数据库简介",
-    "section": "",
-    "text": "UK Biobank数据分析教程：https://www.ukbiobank.ac.uk/enable-your-research/uk-biobank-data-analysis\nUK Biobank RAP平台教程1：RAP平台使用方法以及人口学数据的代码版本的下载\nUK Biobank RAP平台教程2：代谢组学与蛋白质组学数据的下载\nUK Biobank RAP平台教程3：GGIR包处理加速度计原始数据流程\nUK Biobank package：UKBAnalytica1.0提升UKB数据分析效率",
-    "crumbs": [
-      "首页",
-      "流行病学数据库",
-      "UK Biobank"
-    ]
-  },
-  {
-    "objectID": "Epidemiology/UK_Biobank.html#uk-biobank数据库ppt视频介绍",
-    "href": "Epidemiology/UK_Biobank.html#uk-biobank数据库ppt视频介绍",
-    "title": "UK Biobank (UKB) 数据库简介",
-    "section": "",
-    "text": "通过网盘分享的文件：UKB数据库介绍.pptx等2个文件 链接: https://pan.baidu.com/s/1bGSzOsV6ofUFLP7n_PNysA?pwd=fb33 提取码: fb33 –来自百度网盘超级会员v5的分享",
-    "crumbs": [
-      "首页",
-      "流行病学数据库",
-      "UK Biobank"
-    ]
-  },
-  {
-    "objectID": "BioinfoTalus/index.html",
-    "href": "BioinfoTalus/index.html",
-    "title": "生信流程 (BioinfoTalus)",
-    "section": "",
-    "text": "项目简介：面向生物信息学转录组数据分析的 R 脚本集合，覆盖 Bulk 转录组、单细胞转录组与空间转录组三大领域。\n\n\n\n\n\n\nTip贡献者致谢\n\n\n\n本模块由 @BioConvolutionyt 贡献（生物信息学23级lyt），感谢分享！\n\n\n\n\n\n\n既可作为一套完整 pipeline，也可独立使用\n可泛化 + 注释较完整：核心步骤与关键参数已尽量写成可迁移的形式\n提供示例数据与部分运行结果\n\n\n\n\n\n\n\n\n\n\n分析类型\n主要内容\n\n\n\n\n数据处理\nTCGA/GEO 数据处理、表达矩阵整理\n\n\n差异分析\nDESeq2 差异分析\n\n\n富集分析\nGO、KEGG 富集分析、GSEA\n\n\n免疫分析\n免疫浸润 (CIBERSORT)、免疫/肿瘤/基质评分 (ESTIMATE)\n\n\n生存分析\n生存分析、单因素/多因素 COX 回归、LASSO、Nomogram\n\n\n其他\nWGCNA、药物敏感性分析、免疫检查点分析\n\n\n\n\n\n\n\n\n\n\n分析类型\n主要内容\n\n\n\n\n基础流程\nSeurat 主流程（读入/QC/聚类/去批次）\n\n\n细胞注释\n自动注释、手动注释\n\n\n质控\n双细胞检测、细胞周期评估\n\n\n高级分析\nCNV 推断、拟时序分析、发育潜能、细胞通讯\n\n\n\n\n\n\n\n\n\n\n分析类型\n主要内容\n\n\n\n\n基础流程\nVisium 读入与聚类\n\n\n反卷积\n空间反卷积（基于单细胞先验）\n\n\n空间分析\n空间差异基因、空间细胞通讯\n\n\n\n\n\n\n\n\n\n\n\n数据类型\n来源\n描述\n\n\n\n\nBulk 转录组\nTCGA-HNSC\n头颈部鳞状细胞癌\n\n\n单细胞转录组\nGSM9113377-9\n结直肠癌样本\n\n\n空间转录组\nGSM8594561\n结直肠癌样本\n\n\n\n\n\n\n\n\n\ngit clone https://github.com/Hinna0818/Bioinfo-SMU.git\ncd Bioinfo-SMU/BioinfoTalus\n\n\n\n从 GitHub Releases 下载示例数据：\n\n下载所有 data_split*.zip 文件\n解压并放置到 Data/ 目录下\n\n\n\n\n建议使用 RStudio 打开 BioinfoTalus.Rproj，按需运行各模块脚本。\n\n\n\n\n\n\nBulk 转录组单细胞转录组空间转录组\n\n\n\nTCGA表达数据处理.R → 生成表达矩阵\n差异分析.R → DESeq2 差异分析\nGO & KEGG富集分析.R / GSEA.R\n免疫、肿瘤、基质评分计算.R\n生存分析.R → 单因素COX回归.R → 多因素COX回归.R\n其他按需选用\n\n\n\n\n数据读入与 QC\n聚类与去批次\n细胞注释\n高级分析（拟时序、细胞通讯等）\n\n\n\n\nVisium 数据读入\n聚类分析\n空间反卷积\n空间差异基因分析\n\n\n\n\n\n\n\n\nBioinfoTalus/\n├── Bulk 转录组测序数据分析/\n│   ├── TCGA表达数据处理.R\n│   ├── 差异分析.R\n│   ├── GO & KEGG富集分析.R\n│   ├── GSEA.R\n│   ├── 生存分析.R\n│   └── ...\n├── 单细胞转录组测序数据分析/\n│   ├── Seurat主流程.R\n│   ├── 细胞注释.R\n│   └── ...\n├── 空间转录组测序数据分析/\n│   ├── Visium读入与聚类.R\n│   └── ...\n└── Data/  (从 Releases 下载)\n\n\n\n\n\nGitHub 仓库目录\n数据下载 (Releases)\n贡献者主页 @BioConvolutionyt\n\n\n\n\n\n感谢 @BioConvolutionyt 贡献本模块代码！\n如果你觉得这些代码对你有帮助，欢迎给仓库一个 Star！\n\n返回首页",
-    "crumbs": [
-      "首页",
-      "生信流程",
-      "BioinfoTalus"
-    ]
-  },
-  {
-    "objectID": "BioinfoTalus/index.html#项目特点",
-    "href": "BioinfoTalus/index.html#项目特点",
-    "title": "生信流程 (BioinfoTalus)",
-    "section": "",
-    "text": "既可作为一套完整 pipeline，也可独立使用\n可泛化 + 注释较完整：核心步骤与关键参数已尽量写成可迁移的形式\n提供示例数据与部分运行结果",
-    "crumbs": [
-      "首页",
-      "生信流程",
-      "BioinfoTalus"
-    ]
-  },
-  {
-    "objectID": "BioinfoTalus/index.html#模块概览",
-    "href": "BioinfoTalus/index.html#模块概览",
-    "title": "生信流程 (BioinfoTalus)",
-    "section": "",
-    "text": "分析类型\n主要内容\n\n\n\n\n数据处理\nTCGA/GEO 数据处理、表达矩阵整理\n\n\n差异分析\nDESeq2 差异分析\n\n\n富集分析\nGO、KEGG 富集分析、GSEA\n\n\n免疫分析\n免疫浸润 (CIBERSORT)、免疫/肿瘤/基质评分 (ESTIMATE)\n\n\n生存分析\n生存分析、单因素/多因素 COX 回归、LASSO、Nomogram\n\n\n其他\nWGCNA、药物敏感性分析、免疫检查点分析\n\n\n\n\n\n\n\n\n\n\n分析类型\n主要内容\n\n\n\n\n基础流程\nSeurat 主流程（读入/QC/聚类/去批次）\n\n\n细胞注释\n自动注释、手动注释\n\n\n质控\n双细胞检测、细胞周期评估\n\n\n高级分析\nCNV 推断、拟时序分析、发育潜能、细胞通讯\n\n\n\n\n\n\n\n\n\n\n分析类型\n主要内容\n\n\n\n\n基础流程\nVisium 读入与聚类\n\n\n反卷积\n空间反卷积（基于单细胞先验）\n\n\n空间分析\n空间差异基因、空间细胞通讯",
-    "crumbs": [
-      "首页",
-      "生信流程",
-      "BioinfoTalus"
-    ]
-  },
-  {
-    "objectID": "BioinfoTalus/index.html#示例数据说明",
-    "href": "BioinfoTalus/index.html#示例数据说明",
-    "title": "生信流程 (BioinfoTalus)",
-    "section": "",
-    "text": "数据类型\n来源\n描述\n\n\n\n\nBulk 转录组\nTCGA-HNSC\n头颈部鳞状细胞癌\n\n\n单细胞转录组\nGSM9113377-9\n结直肠癌样本\n\n\n空间转录组\nGSM8594561\n结直肠癌样本",
-    "crumbs": [
-      "首页",
-      "生信流程",
-      "BioinfoTalus"
-    ]
-  },
-  {
-    "objectID": "BioinfoTalus/index.html#快速开始",
-    "href": "BioinfoTalus/index.html#快速开始",
-    "title": "生信流程 (BioinfoTalus)",
-    "section": "",
-    "text": "git clone https://github.com/Hinna0818/Bioinfo-SMU.git\ncd Bioinfo-SMU/BioinfoTalus\n\n\n\n从 GitHub Releases 下载示例数据：\n\n下载所有 data_split*.zip 文件\n解压并放置到 Data/ 目录下\n\n\n\n\n建议使用 RStudio 打开 BioinfoTalus.Rproj，按需运行各模块脚本。",
-    "crumbs": [
-      "首页",
-      "生信流程",
-      "BioinfoTalus"
-    ]
-  },
-  {
-    "objectID": "BioinfoTalus/index.html#推荐运行顺序",
-    "href": "BioinfoTalus/index.html#推荐运行顺序",
-    "title": "生信流程 (BioinfoTalus)",
-    "section": "",
-    "text": "Bulk 转录组单细胞转录组空间转录组\n\n\n\nTCGA表达数据处理.R → 生成表达矩阵\n差异分析.R → DESeq2 差异分析\nGO & KEGG富集分析.R / GSEA.R\n免疫、肿瘤、基质评分计算.R\n生存分析.R → 单因素COX回归.R → 多因素COX回归.R\n其他按需选用\n\n\n\n\n数据读入与 QC\n聚类与去批次\n细胞注释\n高级分析（拟时序、细胞通讯等）\n\n\n\n\nVisium 数据读入\n聚类分析\n空间反卷积\n空间差异基因分析",
-    "crumbs": [
-      "首页",
-      "生信流程",
-      "BioinfoTalus"
-    ]
-  },
-  {
-    "objectID": "BioinfoTalus/index.html#目录结构",
-    "href": "BioinfoTalus/index.html#目录结构",
-    "title": "生信流程 (BioinfoTalus)",
-    "section": "",
-    "text": "BioinfoTalus/\n├── Bulk 转录组测序数据分析/\n│   ├── TCGA表达数据处理.R\n│   ├── 差异分析.R\n│   ├── GO & KEGG富集分析.R\n│   ├── GSEA.R\n│   ├── 生存分析.R\n│   └── ...\n├── 单细胞转录组测序数据分析/\n│   ├── Seurat主流程.R\n│   ├── 细胞注释.R\n│   └── ...\n├── 空间转录组测序数据分析/\n│   ├── Visium读入与聚类.R\n│   └── ...\n└── Data/  (从 Releases 下载)",
-    "crumbs": [
-      "首页",
-      "生信流程",
-      "BioinfoTalus"
-    ]
-  },
-  {
-    "objectID": "BioinfoTalus/index.html#相关链接",
-    "href": "BioinfoTalus/index.html#相关链接",
-    "title": "生信流程 (BioinfoTalus)",
-    "section": "",
-    "text": "GitHub 仓库目录\n数据下载 (Releases)\n贡献者主页 @BioConvolutionyt",
-    "crumbs": [
-      "首页",
-      "生信流程",
-      "BioinfoTalus"
-    ]
-  },
-  {
-    "objectID": "BioinfoTalus/index.html#致谢",
-    "href": "BioinfoTalus/index.html#致谢",
-    "title": "生信流程 (BioinfoTalus)",
-    "section": "",
-    "text": "感谢 @BioConvolutionyt 贡献本模块代码！\n如果你觉得这些代码对你有帮助，欢迎给仓库一个 Star！\n\n返回首页",
-    "crumbs": [
-      "首页",
-      "生信流程",
-      "BioinfoTalus"
-    ]
-  },
-  {
-    "objectID": "Grade2/index.html",
-    "href": "Grade2/index.html",
-    "title": "大二课程",
-    "section": "",
-    "text": "学年概述：大二是生物信息学专业基础课程学习的重要阶段。\n\n\n\n\n大二上学期大二下学期\n\n\n专业基础课程学习阶段。\n\n\n继续深入学习专业基础知识。\n\n\n\n\n\n\n\n\n\n\n\n\n\nTip学长学姐的宝贵经验\n\n\n\n以下是往届同学整理的考试经验，供参考复习。\n\n\n\n\n\n学期\n资料\n下载\n\n\n\n\n大二上\n考试经验总结\n下载 PDF\n\n\n大二下\n考试经验总结\n下载 PDF\n\n\n\n\n\n\n\n\n打好基础 - 大二课程是后续专业课的基础\n多做练习 - 理解概念后要多动手实践\n善用资源 - 参考往届考试经验，把握重点\n\n\n返回首页",
-    "crumbs": [
-      "首页",
-      "大二课程",
-      "大二课程总览"
-    ]
-  },
-  {
-    "objectID": "Grade2/index.html#学期内容",
-    "href": "Grade2/index.html#学期内容",
-    "title": "大二课程",
-    "section": "",
-    "text": "大二上学期大二下学期\n\n\n专业基础课程学习阶段。\n\n\n继续深入学习专业基础知识。",
-    "crumbs": [
-      "首页",
-      "大二课程",
-      "大二课程总览"
-    ]
-  },
-  {
-    "objectID": "Grade2/index.html#考试经验",
-    "href": "Grade2/index.html#考试经验",
-    "title": "大二课程",
-    "section": "",
-    "text": "Tip学长学姐的宝贵经验\n\n\n\n以下是往届同学整理的考试经验，供参考复习。\n\n\n\n\n\n学期\n资料\n下载\n\n\n\n\n大二上\n考试经验总结\n下载 PDF\n\n\n大二下\n考试经验总结\n下载 PDF",
-    "crumbs": [
-      "首页",
-      "大二课程",
-      "大二课程总览"
-    ]
-  },
-  {
-    "objectID": "Grade2/index.html#学习建议",
-    "href": "Grade2/index.html#学习建议",
-    "title": "大二课程",
-    "section": "",
-    "text": "打好基础 - 大二课程是后续专业课的基础\n多做练习 - 理解概念后要多动手实践\n善用资源 - 参考往届考试经验，把握重点\n\n\n返回首页",
-    "crumbs": [
-      "首页",
-      "大二课程",
-      "大二课程总览"
-    ]
-  },
-  {
-    "objectID": "Grade4/CADD/index.html",
-    "href": "Grade4/CADD/index.html",
-    "title": "计算机辅助药物设计（CADD）",
-    "section": "",
-    "text": "课程简介：学习使用计算方法进行药物设计和虚拟筛选。\n\n\n\n本课程主要内容包括：\n\n分子对接（Molecular Docking）\n虚拟筛选（Virtual Screening）\nQSAR 建模\n药物-靶点预测\n\n\n\n\n\n如果你有相关资料，欢迎贡献！\n\n返回上级",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算机辅助药物设计"
-    ]
-  },
-  {
-    "objectID": "Grade4/CADD/index.html#课程内容",
-    "href": "Grade4/CADD/index.html#课程内容",
-    "title": "计算机辅助药物设计（CADD）",
-    "section": "",
-    "text": "本课程主要内容包括：\n\n分子对接（Molecular Docking）\n虚拟筛选（Virtual Screening）\nQSAR 建模\n药物-靶点预测",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算机辅助药物设计"
-    ]
-  },
-  {
-    "objectID": "Grade4/CADD/index.html#资料正在整理中",
-    "href": "Grade4/CADD/index.html#资料正在整理中",
-    "title": "计算机辅助药物设计（CADD）",
-    "section": "",
-    "text": "如果你有相关资料，欢迎贡献！\n\n返回上级",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算机辅助药物设计"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/exam-materials.html",
-    "href": "Grade4/computational_biology/exam-materials.html",
-    "title": "计算生物学考试资料",
-    "section": "",
-    "text": "欢迎来到计算生物学考试资料页面！这里汇总了课程重点、考试经验和复习建议。\n\n\n\n\n\n\n\n内容包含：\n\n课程核心知识点总结\n重要概念和公式\n考试题型分析\n学长学姐经验分享\n复习建议和重点标注\n\n文件信息：\n\n格式：PDF\n涵盖内容：PPI、WGCNA、网络聚类、qPCR等\n适用对象：大四上学期\n\n\n下载 PDF\n\n\n\n\n\n\n\n\n\n核心概念：\n\n网络拓扑参数：度、聚类系数、路径长度\n中心性指标：度中心性、介数中心性、紧密中心性\nHub 蛋白识别与生物学意义\n无标度网络特性\n\n常见题型：\n\n名词解释：Hub 基因、Degree、Betweenness\n简答题：PPI 网络的构建方法和应用\n计算题：给定邻接矩阵计算中心性指标\n\n\n\n\n\n核心概念：\n\n软阈值的选择原理\n拓扑重叠矩阵（TOM）\n模块识别与特征基因\n模块-表型关联分析\n\n常见题型：\n\n名词解释：Module、Eigengene、Soft threshold\n简答题：WGCNA 分析流程\n代码题：关键步骤的 R 代码实现\n\n\n\n\n\n核心概念：\n\nMCL 聚类算法原理\nRandom Walk with Restart (RWR)\n疾病基因预测方法\n功能富集分析\n\n常见题型：\n\n算法原理简答\n参数选择与优化\n应用场景分析\n\n\n\n\n\n核心概念：\n\nCt 值的含义\nΔΔCt 计算方法\n相对表达量计算\n内参基因的选择\n\n常见题型：\n\n计算题：给定 Ct 值计算相对表达量\n简答题：qPCR 实验设计要点\n数据分析与可视化\n\n\n\n\n\n\n\n\n\n\n\n\nTip复习策略\n\n\n\n1. 理论知识（40%）\n\n理解基本概念和原理\n掌握算法思想\n记忆关键公式\n\n2. 代码实践（30%）\n\n复习实验代码\n理解每一步的作用\n练习修改参数\n\n3. 应用分析（30%）\n\n会解读分析结果\n理解生物学意义\n能提出改进思路\n\n\n\n\n\n\n\n\n\nWarning考试注意事项\n\n\n\n\n带好学生证和身份证\n准备计算器（如需要）\n复习实验报告中的图表解读\n注意时间分配，先易后难\n\n\n\n\n\n\n\n\n\nTip学习建议\n\n\n\n\n提前1-2周开始系统复习\n重新运行实验代码加深理解\n与同学组队讨论交流\n整理自己的知识框架图\n多看文献了解方法应用\n\n\n\n\n\n\n\n\n\n所有实验的完整代码请访问：\n\n实验1：PPI 网络分析\n实验2：WGCNA 分析\n实验3：网络聚类与随机游走\n实验4：qPCR 数据分析\n\n\n\n\n\n学习路线建议\n常用工具\n参考文献\n\n\n\n\n\n\n遇到问题或有好的学习资料？\n\nGitHub Discussions - 提问讨论\nGitHub Issues - 报告问题\nEmail: hinna01@163.com\n\n\n\n\n\n感谢贡献考试资料的学长学姐们！\n如果你也有好的学习资料，欢迎贡献到本项目！\n\n\n祝大家考试顺利！加油！\n返回课程主页",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "考试资料"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/exam-materials.html#考试资料下载",
-    "href": "Grade4/computational_biology/exam-materials.html#考试资料下载",
-    "title": "计算生物学考试资料",
-    "section": "",
-    "text": "内容包含：\n\n课程核心知识点总结\n重要概念和公式\n考试题型分析\n学长学姐经验分享\n复习建议和重点标注\n\n文件信息：\n\n格式：PDF\n涵盖内容：PPI、WGCNA、网络聚类、qPCR等\n适用对象：大四上学期\n\n\n下载 PDF",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "考试资料"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/exam-materials.html#考试重点概览",
-    "href": "Grade4/computational_biology/exam-materials.html#考试重点概览",
-    "title": "计算生物学考试资料",
-    "section": "",
-    "text": "核心概念：\n\n网络拓扑参数：度、聚类系数、路径长度\n中心性指标：度中心性、介数中心性、紧密中心性\nHub 蛋白识别与生物学意义\n无标度网络特性\n\n常见题型：\n\n名词解释：Hub 基因、Degree、Betweenness\n简答题：PPI 网络的构建方法和应用\n计算题：给定邻接矩阵计算中心性指标\n\n\n\n\n\n核心概念：\n\n软阈值的选择原理\n拓扑重叠矩阵（TOM）\n模块识别与特征基因\n模块-表型关联分析\n\n常见题型：\n\n名词解释：Module、Eigengene、Soft threshold\n简答题：WGCNA 分析流程\n代码题：关键步骤的 R 代码实现\n\n\n\n\n\n核心概念：\n\nMCL 聚类算法原理\nRandom Walk with Restart (RWR)\n疾病基因预测方法\n功能富集分析\n\n常见题型：\n\n算法原理简答\n参数选择与优化\n应用场景分析\n\n\n\n\n\n核心概念：\n\nCt 值的含义\nΔΔCt 计算方法\n相对表达量计算\n内参基因的选择\n\n常见题型：\n\n计算题：给定 Ct 值计算相对表达量\n简答题：qPCR 实验设计要点\n数据分析与可视化",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "考试资料"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/exam-materials.html#复习建议",
-    "href": "Grade4/computational_biology/exam-materials.html#复习建议",
-    "title": "计算生物学考试资料",
-    "section": "",
-    "text": "Tip复习策略\n\n\n\n1. 理论知识（40%）\n\n理解基本概念和原理\n掌握算法思想\n记忆关键公式\n\n2. 代码实践（30%）\n\n复习实验代码\n理解每一步的作用\n练习修改参数\n\n3. 应用分析（30%）\n\n会解读分析结果\n理解生物学意义\n能提出改进思路\n\n\n\n\n\n\n\n\n\nWarning考试注意事项\n\n\n\n\n带好学生证和身份证\n准备计算器（如需要）\n复习实验报告中的图表解读\n注意时间分配，先易后难\n\n\n\n\n\n\n\n\n\nTip学习建议\n\n\n\n\n提前1-2周开始系统复习\n重新运行实验代码加深理解\n与同学组队讨论交流\n整理自己的知识框架图\n多看文献了解方法应用",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "考试资料"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/exam-materials.html#其他学习资料",
-    "href": "Grade4/computational_biology/exam-materials.html#其他学习资料",
-    "title": "计算生物学考试资料",
-    "section": "",
-    "text": "所有实验的完整代码请访问：\n\n实验1：PPI 网络分析\n实验2：WGCNA 分析\n实验3：网络聚类与随机游走\n实验4：qPCR 数据分析\n\n\n\n\n\n学习路线建议\n常用工具\n参考文献",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "考试资料"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/exam-materials.html#交流讨论",
-    "href": "Grade4/computational_biology/exam-materials.html#交流讨论",
-    "title": "计算生物学考试资料",
-    "section": "",
-    "text": "遇到问题或有好的学习资料？\n\nGitHub Discussions - 提问讨论\nGitHub Issues - 报告问题\nEmail: hinna01@163.com",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "考试资料"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/exam-materials.html#致谢",
-    "href": "Grade4/computational_biology/exam-materials.html#致谢",
-    "title": "计算生物学考试资料",
-    "section": "",
-    "text": "感谢贡献考试资料的学长学姐们！\n如果你也有好的学习资料，欢迎贡献到本项目！\n\n\n祝大家考试顺利！加油！\n返回课程主页",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "考试资料"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/exp2.html",
-    "href": "Grade4/computational_biology/exp2.html",
-    "title": "实验二：加权基因共表达网络分析（WGCNA）",
-    "section": "",
-    "text": "WGCNA (Weighted Gene Co-expression Network Analysis) 是一种系统生物学方法，用于描述不同样本间基因关联模式，识别高度协同变化的基因模块。\n\n\n\n\n\n理解基因共表达网络的概念\n掌握 WGCNA 的分析流程\n学会识别基因模块\n了解模块与表型的关联分析\n\n\n\n\n\n\n\nWGCNA 通过计算基因间的相关性，构建加权网络，并识别功能相关的基因模块。\n\n\n\n\n计算相似性矩阵：计算基因间的相关系数\n构建邻接矩阵：使用软阈值将相关系数转换为连接强度\n拓扑重叠矩阵（TOM）：衡量基因间的连接相似性\n层次聚类：识别基因模块\n模块-表型关联：分析模块与表型的相关性\n\n\n\n\n\n\n\n\n# 加载 WGCNA 包\nlibrary(WGCNA)\nlibrary(ggplot2)\n\n# 允许多线程\nenableWGCNAThreads()\n\n# 读取表达数据\n# 行为基因，列为样本\nexpr_data &lt;- read.csv(\"expression_data.csv\", row.names = 1)\nexpr_data &lt;- t(expr_data)  # 转置：行为样本，列为基因\n\n# 检查缺失值\ngsg &lt;- goodSamplesGenes(expr_data, verbose = 3)\n\n# 过滤低表达基因\nexpr_data_filtered &lt;- expr_data[, gsg$goodGenes]\n\n\n\n# 计算不同软阈值下的网络拓扑\npowers &lt;- c(c(1:10), seq(from = 12, to = 20, by = 2))\nsft &lt;- pickSoftThreshold(expr_data_filtered,\n                         powerVector = powers,\n                         verbose = 5)\n\n# 可视化\npar(mfrow = c(1, 2))\nplot(sft$fitIndices[,1],\n     -sign(sft$fitIndices[,3]) * sft$fitIndices[,2],\n     xlab = \"Soft Threshold (power)\",\n     ylab = \"Scale Free Topology Model Fit, signed R^2\",\n     type = \"n\",\n     main = \"Scale independence\")\ntext(sft$fitIndices[,1],\n     -sign(sft$fitIndices[,3]) * sft$fitIndices[,2],\n     labels = powers,\n     col = \"red\")\nabline(h = 0.90, col = \"red\")\n\n\n\n# 一步法构建网络并识别模块\nnet &lt;- blockwiseModules(expr_data_filtered,\n                        power = 6,  # 选择的软阈值\n                        TOMType = \"unsigned\",\n                        minModuleSize = 30,\n                        reassignThreshold = 0,\n                        mergeCutHeight = 0.25,\n                        numericLabels = TRUE,\n                        pamRespectsDendro = FALSE,\n                        saveTOMs = TRUE,\n                        saveTOMFileBase = \"TOM\",\n                        verbose = 3)\n\n# 查看模块信息\ntable(net$colors)\n\n# 转换为颜色标签\nmoduleColors &lt;- labels2colors(net$colors)\n\n\n\n# 绘制基因树和模块\nplotDendroAndColors(net$dendrograms[[1]],\n                    moduleColors[net$blockGenes[[1]]],\n                    \"Module colors\",\n                    dendroLabels = FALSE,\n                    hang = 0.03,\n                    addGuide = TRUE,\n                    guideHang = 0.05)\n\n\n\n# 读取表型数据\ntraits &lt;- read.csv(\"traits.csv\", row.names = 1)\n\n# 计算模块特征基因（ME）\nMEs &lt;- moduleEigengenes(expr_data_filtered, moduleColors)$eigengenes\nMEs &lt;- orderMEs(MEs)\n\n# 计算模块与表型的相关性\nmoduleTraitCor &lt;- cor(MEs, traits, use = \"p\")\nmoduleTraitPvalue &lt;- corPvalueStudent(moduleTraitCor, nrow(expr_data_filtered))\n\n# 可视化\ntextMatrix &lt;- paste(signif(moduleTraitCor, 2), \"\\n(\",\n                   signif(moduleTraitPvalue, 1), \")\", sep = \"\")\ndim(textMatrix) &lt;- dim(moduleTraitCor)\n\npar(mar = c(6, 8.5, 3, 3))\nlabeledHeatmap(Matrix = moduleTraitCor,\n               xLabels = names(traits),\n               yLabels = names(MEs),\n               ySymbols = names(MEs),\n               colorLabels = FALSE,\n               colors = blueWhiteRed(50),\n               textMatrix = textMatrix,\n               setStdMargins = FALSE,\n               cex.text = 0.5,\n               zlim = c(-1,1),\n               main = \"Module-trait relationships\")\n\n\n\n# 选择感兴趣的模块\nmodule &lt;- \"blue\"\ngenes &lt;- colnames(expr_data_filtered)[moduleColors == module]\n\n# 计算 TOM\nTOM &lt;- TOMsimilarityFromExpr(expr_data_filtered[, genes],\n                             power = 6)\n\n# 导出边信息\ncyt &lt;- exportNetworkToCytoscape(TOM,\n                                edgeFile = paste(\"CytoscapeInput-edges-\", module, \".txt\", sep=\"\"),\n                                nodeFile = paste(\"CytoscapeInput-nodes-\", module, \".txt\", sep=\"\"),\n                                weighted = TRUE,\n                                threshold = 0.02)\n\n\n\n\n\n\n\n# 对感兴趣的模块进行GO富集分析\nlibrary(clusterProfiler)\nlibrary(org.Hs.eg.db)\n\n# 提取模块基因\nmodule_genes &lt;- colnames(expr_data_filtered)[moduleColors == \"blue\"]\n\n# GO富集分析\nego &lt;- enrichGO(gene = module_genes,\n                OrgDb = org.Hs.eg.db,\n                keyType = \"SYMBOL\",\n                ont = \"BP\",\n                pAdjustMethod = \"BH\",\n                pvalueCutoff = 0.05,\n                qvalueCutoff = 0.05)\n\n# 可视化\nbarplot(ego, showCategory = 10)\ndotplot(ego, showCategory = 10)\n\n\n\n\n\n\n\n\n同一模块内的基因可能：\n\n参与相同的生物学过程\n受相同的转录调控\n在相同的细胞器中发挥作用\n\n\n\n\n\n\n模块内连接度最高的基因\n可能是该生物学过程的关键调控因子\n潜在的生物标志物或治疗靶点\n\n\n\n\n\n\n\n基础分析\n\n完成 WGCNA 分析流程\n识别基因模块\n分析模块与表型的关联\n\n进阶分析\n\n对关键模块进行功能富集分析\n识别 Hub 基因\n验证 Hub 基因的表达模式\n\n报告撰写\n\n详细记录分析步骤\n展示关键结果图表\n对模块功能进行生物学解读\n\n\n\n\n\n\nGrade4/computational_biology/experiments/Exp2/\n├── WGCNA.Rmd         # R Markdown 报告\n├── WGCNA.html        # 生成的 HTML 报告\n└── data/             # 数据文件\n\n\n\n\n\nLangfelder, P., & Horvath, S. (2008). WGCNA: an R package for weighted correlation network analysis. BMC Bioinformatics, 9(1), 559.\nWGCNA 官方教程\nZhang, B., & Horvath, S. (2005). A general framework for weighted gene co-expression network analysis. Statistical Applications in Genetics and Molecular Biology, 4(1).\n\n\n\n\n\n\n\n\n\n\n\nTip软阈值选择\n\n\n\n选择使 Scale-free topology fit R² 达到 0.8-0.9 的最小阈值。\n\n\n\n\n\n\n\n\nTip模块大小\n\n\n\n根据数据集大小调整 minModuleSize 参数，一般设为 30-50。\n\n\n\n\n\n\n\n\nWarning内存使用\n\n\n\nWGCNA 分析可能需要大量内存，建议在分析前清理 R 环境。\n\n\n\n← 上一个实验：PPI | 返回课程主页 | 下一个实验：MCL & RWR →",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "实验2 - WGCNA分析"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/exp2.html#实验简介",
-    "href": "Grade4/computational_biology/exp2.html#实验简介",
-    "title": "实验二：加权基因共表达网络分析（WGCNA）",
-    "section": "",
-    "text": "WGCNA (Weighted Gene Co-expression Network Analysis) 是一种系统生物学方法，用于描述不同样本间基因关联模式，识别高度协同变化的基因模块。",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "实验2 - WGCNA分析"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/exp2.html#实验目的",
-    "href": "Grade4/computational_biology/exp2.html#实验目的",
-    "title": "实验二：加权基因共表达网络分析（WGCNA）",
-    "section": "",
-    "text": "理解基因共表达网络的概念\n掌握 WGCNA 的分析流程\n学会识别基因模块\n了解模块与表型的关联分析",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "实验2 - WGCNA分析"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/exp2.html#理论背景",
-    "href": "Grade4/computational_biology/exp2.html#理论背景",
-    "title": "实验二：加权基因共表达网络分析（WGCNA）",
-    "section": "",
-    "text": "WGCNA 通过计算基因间的相关性，构建加权网络，并识别功能相关的基因模块。\n\n\n\n\n计算相似性矩阵：计算基因间的相关系数\n构建邻接矩阵：使用软阈值将相关系数转换为连接强度\n拓扑重叠矩阵（TOM）：衡量基因间的连接相似性\n层次聚类：识别基因模块\n模块-表型关联：分析模块与表型的相关性",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "实验2 - WGCNA分析"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/exp2.html#实验步骤",
-    "href": "Grade4/computational_biology/exp2.html#实验步骤",
-    "title": "实验二：加权基因共表达网络分析（WGCNA）",
-    "section": "",
-    "text": "# 加载 WGCNA 包\nlibrary(WGCNA)\nlibrary(ggplot2)\n\n# 允许多线程\nenableWGCNAThreads()\n\n# 读取表达数据\n# 行为基因，列为样本\nexpr_data &lt;- read.csv(\"expression_data.csv\", row.names = 1)\nexpr_data &lt;- t(expr_data)  # 转置：行为样本，列为基因\n\n# 检查缺失值\ngsg &lt;- goodSamplesGenes(expr_data, verbose = 3)\n\n# 过滤低表达基因\nexpr_data_filtered &lt;- expr_data[, gsg$goodGenes]\n\n\n\n# 计算不同软阈值下的网络拓扑\npowers &lt;- c(c(1:10), seq(from = 12, to = 20, by = 2))\nsft &lt;- pickSoftThreshold(expr_data_filtered,\n                         powerVector = powers,\n                         verbose = 5)\n\n# 可视化\npar(mfrow = c(1, 2))\nplot(sft$fitIndices[,1],\n     -sign(sft$fitIndices[,3]) * sft$fitIndices[,2],\n     xlab = \"Soft Threshold (power)\",\n     ylab = \"Scale Free Topology Model Fit, signed R^2\",\n     type = \"n\",\n     main = \"Scale independence\")\ntext(sft$fitIndices[,1],\n     -sign(sft$fitIndices[,3]) * sft$fitIndices[,2],\n     labels = powers,\n     col = \"red\")\nabline(h = 0.90, col = \"red\")\n\n\n\n# 一步法构建网络并识别模块\nnet &lt;- blockwiseModules(expr_data_filtered,\n                        power = 6,  # 选择的软阈值\n                        TOMType = \"unsigned\",\n                        minModuleSize = 30,\n                        reassignThreshold = 0,\n                        mergeCutHeight = 0.25,\n                        numericLabels = TRUE,\n                        pamRespectsDendro = FALSE,\n                        saveTOMs = TRUE,\n                        saveTOMFileBase = \"TOM\",\n                        verbose = 3)\n\n# 查看模块信息\ntable(net$colors)\n\n# 转换为颜色标签\nmoduleColors &lt;- labels2colors(net$colors)\n\n\n\n# 绘制基因树和模块\nplotDendroAndColors(net$dendrograms[[1]],\n                    moduleColors[net$blockGenes[[1]]],\n                    \"Module colors\",\n                    dendroLabels = FALSE,\n                    hang = 0.03,\n                    addGuide = TRUE,\n                    guideHang = 0.05)\n\n\n\n# 读取表型数据\ntraits &lt;- read.csv(\"traits.csv\", row.names = 1)\n\n# 计算模块特征基因（ME）\nMEs &lt;- moduleEigengenes(expr_data_filtered, moduleColors)$eigengenes\nMEs &lt;- orderMEs(MEs)\n\n# 计算模块与表型的相关性\nmoduleTraitCor &lt;- cor(MEs, traits, use = \"p\")\nmoduleTraitPvalue &lt;- corPvalueStudent(moduleTraitCor, nrow(expr_data_filtered))\n\n# 可视化\ntextMatrix &lt;- paste(signif(moduleTraitCor, 2), \"\\n(\",\n                   signif(moduleTraitPvalue, 1), \")\", sep = \"\")\ndim(textMatrix) &lt;- dim(moduleTraitCor)\n\npar(mar = c(6, 8.5, 3, 3))\nlabeledHeatmap(Matrix = moduleTraitCor,\n               xLabels = names(traits),\n               yLabels = names(MEs),\n               ySymbols = names(MEs),\n               colorLabels = FALSE,\n               colors = blueWhiteRed(50),\n               textMatrix = textMatrix,\n               setStdMargins = FALSE,\n               cex.text = 0.5,\n               zlim = c(-1,1),\n               main = \"Module-trait relationships\")\n\n\n\n# 选择感兴趣的模块\nmodule &lt;- \"blue\"\ngenes &lt;- colnames(expr_data_filtered)[moduleColors == module]\n\n# 计算 TOM\nTOM &lt;- TOMsimilarityFromExpr(expr_data_filtered[, genes],\n                             power = 6)\n\n# 导出边信息\ncyt &lt;- exportNetworkToCytoscape(TOM,\n                                edgeFile = paste(\"CytoscapeInput-edges-\", module, \".txt\", sep=\"\"),\n                                nodeFile = paste(\"CytoscapeInput-nodes-\", module, \".txt\", sep=\"\"),\n                                weighted = TRUE,\n                                threshold = 0.02)",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "实验2 - WGCNA分析"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/exp2.html#结果分析",
-    "href": "Grade4/computational_biology/exp2.html#结果分析",
-    "title": "实验二：加权基因共表达网络分析（WGCNA）",
-    "section": "",
-    "text": "# 对感兴趣的模块进行GO富集分析\nlibrary(clusterProfiler)\nlibrary(org.Hs.eg.db)\n\n# 提取模块基因\nmodule_genes &lt;- colnames(expr_data_filtered)[moduleColors == \"blue\"]\n\n# GO富集分析\nego &lt;- enrichGO(gene = module_genes,\n                OrgDb = org.Hs.eg.db,\n                keyType = \"SYMBOL\",\n                ont = \"BP\",\n                pAdjustMethod = \"BH\",\n                pvalueCutoff = 0.05,\n                qvalueCutoff = 0.05)\n\n# 可视化\nbarplot(ego, showCategory = 10)\ndotplot(ego, showCategory = 10)",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "实验2 - WGCNA分析"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/exp2.html#生物学解释",
-    "href": "Grade4/computational_biology/exp2.html#生物学解释",
-    "title": "实验二：加权基因共表达网络分析（WGCNA）",
-    "section": "",
-    "text": "同一模块内的基因可能：\n\n参与相同的生物学过程\n受相同的转录调控\n在相同的细胞器中发挥作用\n\n\n\n\n\n\n模块内连接度最高的基因\n可能是该生物学过程的关键调控因子\n潜在的生物标志物或治疗靶点",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "实验2 - WGCNA分析"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/exp2.html#作业要求",
-    "href": "Grade4/computational_biology/exp2.html#作业要求",
-    "title": "实验二：加权基因共表达网络分析（WGCNA）",
-    "section": "",
-    "text": "基础分析\n\n完成 WGCNA 分析流程\n识别基因模块\n分析模块与表型的关联\n\n进阶分析\n\n对关键模块进行功能富集分析\n识别 Hub 基因\n验证 Hub 基因的表达模式\n\n报告撰写\n\n详细记录分析步骤\n展示关键结果图表\n对模块功能进行生物学解读",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "实验2 - WGCNA分析"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/exp2.html#文件位置",
-    "href": "Grade4/computational_biology/exp2.html#文件位置",
-    "title": "实验二：加权基因共表达网络分析（WGCNA）",
-    "section": "",
-    "text": "Grade4/computational_biology/experiments/Exp2/\n├── WGCNA.Rmd         # R Markdown 报告\n├── WGCNA.html        # 生成的 HTML 报告\n└── data/             # 数据文件",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "实验2 - WGCNA分析"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/exp2.html#参考资料",
-    "href": "Grade4/computational_biology/exp2.html#参考资料",
-    "title": "实验二：加权基因共表达网络分析（WGCNA）",
-    "section": "",
-    "text": "Langfelder, P., & Horvath, S. (2008). WGCNA: an R package for weighted correlation network analysis. BMC Bioinformatics, 9(1), 559.\nWGCNA 官方教程\nZhang, B., & Horvath, S. (2005). A general framework for weighted gene co-expression network analysis. Statistical Applications in Genetics and Molecular Biology, 4(1).",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "实验2 - WGCNA分析"
-    ]
-  },
-  {
-    "objectID": "Grade4/computational_biology/exp2.html#提示",
-    "href": "Grade4/computational_biology/exp2.html#提示",
-    "title": "实验二：加权基因共表达网络分析（WGCNA）",
-    "section": "",
-    "text": "Tip软阈值选择\n\n\n\n选择使 Scale-free topology fit R² 达到 0.8-0.9 的最小阈值。\n\n\n\n\n\n\n\n\nTip模块大小\n\n\n\n根据数据集大小调整 minModuleSize 参数，一般设为 30-50。\n\n\n\n\n\n\n\n\nWarning内存使用\n\n\n\nWGCNA 分析可能需要大量内存，建议在分析前清理 R 环境。\n\n\n\n← 上一个实验：PPI | 返回课程主页 | 下一个实验：MCL & RWR →",
-    "crumbs": [
-      "首页",
-      "大四课程",
-      "计算生物学",
-      "实验2 - WGCNA分析"
+      "计算分子生物学",
+      "考试说明"
     ]
   },
   {
@@ -1736,94 +776,1102 @@
     ]
   },
   {
-    "objectID": "Grade4/computational_molecular_biology/exam-info.html",
-    "href": "Grade4/computational_molecular_biology/exam-info.html",
-    "title": "计算分子生物学 - 考试说明",
+    "objectID": "Grade4/computational_biology/exp2.html",
+    "href": "Grade4/computational_biology/exp2.html",
+    "title": "实验二：加权基因共表达网络分析（WGCNA）",
     "section": "",
-    "text": "考核项目\n分值占比\n备注\n\n\n\n\n笔试\n50%\n及格线：60分\n\n\n爱课平台作业\n25%\n平均分 80-85\n\n\n爱课平台测试\n25%\n平均分 80-85\n\n\n\n\n\n\n\n\n\nWarning及格要求\n\n\n\n笔试成绩需达到 60分 才能及格！\n\n\n\n\n\n\n笔试题目主要来源：\n\n爱课平台作业题\nPPT 中的思考题\n课后作业\n测验题\n\n\n\n\n\n\n\n\n\n\n\nImportant大题考点（必看）\n\n\n\n根据考试情况，大题主要考察以下内容：\n\n反序排序 - 排列的反转操作与距离计算\n系统进化树构建 - UPGMA、NJ 等方法\n字符串问题 - 欧拉回路、哈密尔顿回路等图论问题\n\n\n\n\n\n\n\n\n\n\n\n\n\nTip复习建议\n\n\n\n重点复习以下三部分内容：\n\n课后作业 - 认真完成并理解每道题\n爱课平台 - 作业和测试题目\n自测题PPT - 两个自测题PPT要仔细做\n\n\n\n\n\n\n\n\n\nTip原题率\n\n\n\n根据往届经验，原题率还可以，认真复习上述内容基本能覆盖考试范围。\n\n\n\n\n\n\n\n第一轮：过一遍所有课后作业和爱课平台题目\n第二轮：重点攻克自测题PPT\n第三轮：回顾PPT中的思考题，确保理解\n\n\n\n\n\n\n\n\n阶段\n内容\n建议时间\n\n\n\n\n第一阶段\n爱课平台作业回顾\n2-3天\n\n\n第二阶段\n自测题PPT练习\n2天\n\n\n第三阶段\nPPT思考题整理\n1-2天\n\n\n第四阶段\n查漏补缺\n1天\n\n\n\n\n\n\n\n\n\n\nNote祝大家考试顺利！\n\n\n\n好好复习，相信自己，加油！\n\n\n\n← 返回计算分子生物学 | 返回大四课程",
+    "text": "WGCNA (Weighted Gene Co-expression Network Analysis) 是一种系统生物学方法，用于描述不同样本间基因关联模式，识别高度协同变化的基因模块。\n\n\n\n\n\n理解基因共表达网络的概念\n掌握 WGCNA 的分析流程\n学会识别基因模块\n了解模块与表型的关联分析\n\n\n\n\n\n\n\nWGCNA 通过计算基因间的相关性，构建加权网络，并识别功能相关的基因模块。\n\n\n\n\n计算相似性矩阵：计算基因间的相关系数\n构建邻接矩阵：使用软阈值将相关系数转换为连接强度\n拓扑重叠矩阵（TOM）：衡量基因间的连接相似性\n层次聚类：识别基因模块\n模块-表型关联：分析模块与表型的相关性\n\n\n\n\n\n\n\n\n# 加载 WGCNA 包\nlibrary(WGCNA)\nlibrary(ggplot2)\n\n# 允许多线程\nenableWGCNAThreads()\n\n# 读取表达数据\n# 行为基因，列为样本\nexpr_data &lt;- read.csv(\"expression_data.csv\", row.names = 1)\nexpr_data &lt;- t(expr_data)  # 转置：行为样本，列为基因\n\n# 检查缺失值\ngsg &lt;- goodSamplesGenes(expr_data, verbose = 3)\n\n# 过滤低表达基因\nexpr_data_filtered &lt;- expr_data[, gsg$goodGenes]\n\n\n\n# 计算不同软阈值下的网络拓扑\npowers &lt;- c(c(1:10), seq(from = 12, to = 20, by = 2))\nsft &lt;- pickSoftThreshold(expr_data_filtered,\n                         powerVector = powers,\n                         verbose = 5)\n\n# 可视化\npar(mfrow = c(1, 2))\nplot(sft$fitIndices[,1],\n     -sign(sft$fitIndices[,3]) * sft$fitIndices[,2],\n     xlab = \"Soft Threshold (power)\",\n     ylab = \"Scale Free Topology Model Fit, signed R^2\",\n     type = \"n\",\n     main = \"Scale independence\")\ntext(sft$fitIndices[,1],\n     -sign(sft$fitIndices[,3]) * sft$fitIndices[,2],\n     labels = powers,\n     col = \"red\")\nabline(h = 0.90, col = \"red\")\n\n\n\n# 一步法构建网络并识别模块\nnet &lt;- blockwiseModules(expr_data_filtered,\n                        power = 6,  # 选择的软阈值\n                        TOMType = \"unsigned\",\n                        minModuleSize = 30,\n                        reassignThreshold = 0,\n                        mergeCutHeight = 0.25,\n                        numericLabels = TRUE,\n                        pamRespectsDendro = FALSE,\n                        saveTOMs = TRUE,\n                        saveTOMFileBase = \"TOM\",\n                        verbose = 3)\n\n# 查看模块信息\ntable(net$colors)\n\n# 转换为颜色标签\nmoduleColors &lt;- labels2colors(net$colors)\n\n\n\n# 绘制基因树和模块\nplotDendroAndColors(net$dendrograms[[1]],\n                    moduleColors[net$blockGenes[[1]]],\n                    \"Module colors\",\n                    dendroLabels = FALSE,\n                    hang = 0.03,\n                    addGuide = TRUE,\n                    guideHang = 0.05)\n\n\n\n# 读取表型数据\ntraits &lt;- read.csv(\"traits.csv\", row.names = 1)\n\n# 计算模块特征基因（ME）\nMEs &lt;- moduleEigengenes(expr_data_filtered, moduleColors)$eigengenes\nMEs &lt;- orderMEs(MEs)\n\n# 计算模块与表型的相关性\nmoduleTraitCor &lt;- cor(MEs, traits, use = \"p\")\nmoduleTraitPvalue &lt;- corPvalueStudent(moduleTraitCor, nrow(expr_data_filtered))\n\n# 可视化\ntextMatrix &lt;- paste(signif(moduleTraitCor, 2), \"\\n(\",\n                   signif(moduleTraitPvalue, 1), \")\", sep = \"\")\ndim(textMatrix) &lt;- dim(moduleTraitCor)\n\npar(mar = c(6, 8.5, 3, 3))\nlabeledHeatmap(Matrix = moduleTraitCor,\n               xLabels = names(traits),\n               yLabels = names(MEs),\n               ySymbols = names(MEs),\n               colorLabels = FALSE,\n               colors = blueWhiteRed(50),\n               textMatrix = textMatrix,\n               setStdMargins = FALSE,\n               cex.text = 0.5,\n               zlim = c(-1,1),\n               main = \"Module-trait relationships\")\n\n\n\n# 选择感兴趣的模块\nmodule &lt;- \"blue\"\ngenes &lt;- colnames(expr_data_filtered)[moduleColors == module]\n\n# 计算 TOM\nTOM &lt;- TOMsimilarityFromExpr(expr_data_filtered[, genes],\n                             power = 6)\n\n# 导出边信息\ncyt &lt;- exportNetworkToCytoscape(TOM,\n                                edgeFile = paste(\"CytoscapeInput-edges-\", module, \".txt\", sep=\"\"),\n                                nodeFile = paste(\"CytoscapeInput-nodes-\", module, \".txt\", sep=\"\"),\n                                weighted = TRUE,\n                                threshold = 0.02)\n\n\n\n\n\n\n\n# 对感兴趣的模块进行GO富集分析\nlibrary(clusterProfiler)\nlibrary(org.Hs.eg.db)\n\n# 提取模块基因\nmodule_genes &lt;- colnames(expr_data_filtered)[moduleColors == \"blue\"]\n\n# GO富集分析\nego &lt;- enrichGO(gene = module_genes,\n                OrgDb = org.Hs.eg.db,\n                keyType = \"SYMBOL\",\n                ont = \"BP\",\n                pAdjustMethod = \"BH\",\n                pvalueCutoff = 0.05,\n                qvalueCutoff = 0.05)\n\n# 可视化\nbarplot(ego, showCategory = 10)\ndotplot(ego, showCategory = 10)\n\n\n\n\n\n\n\n\n同一模块内的基因可能：\n\n参与相同的生物学过程\n受相同的转录调控\n在相同的细胞器中发挥作用\n\n\n\n\n\n\n模块内连接度最高的基因\n可能是该生物学过程的关键调控因子\n潜在的生物标志物或治疗靶点\n\n\n\n\n\n\n\n基础分析\n\n完成 WGCNA 分析流程\n识别基因模块\n分析模块与表型的关联\n\n进阶分析\n\n对关键模块进行功能富集分析\n识别 Hub 基因\n验证 Hub 基因的表达模式\n\n报告撰写\n\n详细记录分析步骤\n展示关键结果图表\n对模块功能进行生物学解读\n\n\n\n\n\n\nGrade4/computational_biology/experiments/Exp2/\n├── WGCNA.Rmd         # R Markdown 报告\n├── WGCNA.html        # 生成的 HTML 报告\n└── data/             # 数据文件\n\n\n\n\n\nLangfelder, P., & Horvath, S. (2008). WGCNA: an R package for weighted correlation network analysis. BMC Bioinformatics, 9(1), 559.\nWGCNA 官方教程\nZhang, B., & Horvath, S. (2005). A general framework for weighted gene co-expression network analysis. Statistical Applications in Genetics and Molecular Biology, 4(1).\n\n\n\n\n\n\n\n\n\n\n\nTip软阈值选择\n\n\n\n选择使 Scale-free topology fit R² 达到 0.8-0.9 的最小阈值。\n\n\n\n\n\n\n\n\nTip模块大小\n\n\n\n根据数据集大小调整 minModuleSize 参数，一般设为 30-50。\n\n\n\n\n\n\n\n\nWarning内存使用\n\n\n\nWGCNA 分析可能需要大量内存，建议在分析前清理 R 环境。\n\n\n\n← 上一个实验：PPI | 返回课程主页 | 下一个实验：MCL & RWR →",
     "crumbs": [
       "首页",
       "大四课程",
-      "计算分子生物学",
-      "考试说明"
+      "计算生物学",
+      "实验2 - WGCNA分析"
     ]
   },
   {
-    "objectID": "Grade4/computational_molecular_biology/exam-info.html#成绩构成",
-    "href": "Grade4/computational_molecular_biology/exam-info.html#成绩构成",
-    "title": "计算分子生物学 - 考试说明",
+    "objectID": "Grade4/computational_biology/exp2.html#实验简介",
+    "href": "Grade4/computational_biology/exp2.html#实验简介",
+    "title": "实验二：加权基因共表达网络分析（WGCNA）",
     "section": "",
-    "text": "考核项目\n分值占比\n备注\n\n\n\n\n笔试\n50%\n及格线：60分\n\n\n爱课平台作业\n25%\n平均分 80-85\n\n\n爱课平台测试\n25%\n平均分 80-85\n\n\n\n\n\n\n\n\n\nWarning及格要求\n\n\n\n笔试成绩需达到 60分 才能及格！",
+    "text": "WGCNA (Weighted Gene Co-expression Network Analysis) 是一种系统生物学方法，用于描述不同样本间基因关联模式，识别高度协同变化的基因模块。",
     "crumbs": [
       "首页",
       "大四课程",
-      "计算分子生物学",
-      "考试说明"
+      "计算生物学",
+      "实验2 - WGCNA分析"
     ]
   },
   {
-    "objectID": "Grade4/computational_molecular_biology/exam-info.html#笔试题型与来源",
-    "href": "Grade4/computational_molecular_biology/exam-info.html#笔试题型与来源",
-    "title": "计算分子生物学 - 考试说明",
+    "objectID": "Grade4/computational_biology/exp2.html#实验目的",
+    "href": "Grade4/computational_biology/exp2.html#实验目的",
+    "title": "实验二：加权基因共表达网络分析（WGCNA）",
     "section": "",
-    "text": "笔试题目主要来源：\n\n爱课平台作业题\nPPT 中的思考题\n课后作业\n测验题",
+    "text": "理解基因共表达网络的概念\n掌握 WGCNA 的分析流程\n学会识别基因模块\n了解模块与表型的关联分析",
     "crumbs": [
       "首页",
       "大四课程",
-      "计算分子生物学",
-      "考试说明"
+      "计算生物学",
+      "实验2 - WGCNA分析"
     ]
   },
   {
-    "objectID": "Grade4/computational_molecular_biology/exam-info.html#考试大题重点",
-    "href": "Grade4/computational_molecular_biology/exam-info.html#考试大题重点",
-    "title": "计算分子生物学 - 考试说明",
+    "objectID": "Grade4/computational_biology/exp2.html#理论背景",
+    "href": "Grade4/computational_biology/exp2.html#理论背景",
+    "title": "实验二：加权基因共表达网络分析（WGCNA）",
     "section": "",
-    "text": "Important大题考点（必看）\n\n\n\n根据考试情况，大题主要考察以下内容：\n\n反序排序 - 排列的反转操作与距离计算\n系统进化树构建 - UPGMA、NJ 等方法\n字符串问题 - 欧拉回路、哈密尔顿回路等图论问题",
+    "text": "WGCNA 通过计算基因间的相关性，构建加权网络，并识别功能相关的基因模块。\n\n\n\n\n计算相似性矩阵：计算基因间的相关系数\n构建邻接矩阵：使用软阈值将相关系数转换为连接强度\n拓扑重叠矩阵（TOM）：衡量基因间的连接相似性\n层次聚类：识别基因模块\n模块-表型关联：分析模块与表型的相关性",
     "crumbs": [
       "首页",
       "大四课程",
-      "计算分子生物学",
-      "考试说明"
+      "计算生物学",
+      "实验2 - WGCNA分析"
     ]
   },
   {
-    "objectID": "Grade4/computational_molecular_biology/exam-info.html#复习重点",
-    "href": "Grade4/computational_molecular_biology/exam-info.html#复习重点",
-    "title": "计算分子生物学 - 考试说明",
+    "objectID": "Grade4/computational_biology/exp2.html#实验步骤",
+    "href": "Grade4/computational_biology/exp2.html#实验步骤",
+    "title": "实验二：加权基因共表达网络分析（WGCNA）",
     "section": "",
-    "text": "Tip复习建议\n\n\n\n重点复习以下三部分内容：\n\n课后作业 - 认真完成并理解每道题\n爱课平台 - 作业和测试题目\n自测题PPT - 两个自测题PPT要仔细做\n\n\n\n\n\n\n\n\n\nTip原题率\n\n\n\n根据往届经验，原题率还可以，认真复习上述内容基本能覆盖考试范围。",
+    "text": "# 加载 WGCNA 包\nlibrary(WGCNA)\nlibrary(ggplot2)\n\n# 允许多线程\nenableWGCNAThreads()\n\n# 读取表达数据\n# 行为基因，列为样本\nexpr_data &lt;- read.csv(\"expression_data.csv\", row.names = 1)\nexpr_data &lt;- t(expr_data)  # 转置：行为样本，列为基因\n\n# 检查缺失值\ngsg &lt;- goodSamplesGenes(expr_data, verbose = 3)\n\n# 过滤低表达基因\nexpr_data_filtered &lt;- expr_data[, gsg$goodGenes]\n\n\n\n# 计算不同软阈值下的网络拓扑\npowers &lt;- c(c(1:10), seq(from = 12, to = 20, by = 2))\nsft &lt;- pickSoftThreshold(expr_data_filtered,\n                         powerVector = powers,\n                         verbose = 5)\n\n# 可视化\npar(mfrow = c(1, 2))\nplot(sft$fitIndices[,1],\n     -sign(sft$fitIndices[,3]) * sft$fitIndices[,2],\n     xlab = \"Soft Threshold (power)\",\n     ylab = \"Scale Free Topology Model Fit, signed R^2\",\n     type = \"n\",\n     main = \"Scale independence\")\ntext(sft$fitIndices[,1],\n     -sign(sft$fitIndices[,3]) * sft$fitIndices[,2],\n     labels = powers,\n     col = \"red\")\nabline(h = 0.90, col = \"red\")\n\n\n\n# 一步法构建网络并识别模块\nnet &lt;- blockwiseModules(expr_data_filtered,\n                        power = 6,  # 选择的软阈值\n                        TOMType = \"unsigned\",\n                        minModuleSize = 30,\n                        reassignThreshold = 0,\n                        mergeCutHeight = 0.25,\n                        numericLabels = TRUE,\n                        pamRespectsDendro = FALSE,\n                        saveTOMs = TRUE,\n                        saveTOMFileBase = \"TOM\",\n                        verbose = 3)\n\n# 查看模块信息\ntable(net$colors)\n\n# 转换为颜色标签\nmoduleColors &lt;- labels2colors(net$colors)\n\n\n\n# 绘制基因树和模块\nplotDendroAndColors(net$dendrograms[[1]],\n                    moduleColors[net$blockGenes[[1]]],\n                    \"Module colors\",\n                    dendroLabels = FALSE,\n                    hang = 0.03,\n                    addGuide = TRUE,\n                    guideHang = 0.05)\n\n\n\n# 读取表型数据\ntraits &lt;- read.csv(\"traits.csv\", row.names = 1)\n\n# 计算模块特征基因（ME）\nMEs &lt;- moduleEigengenes(expr_data_filtered, moduleColors)$eigengenes\nMEs &lt;- orderMEs(MEs)\n\n# 计算模块与表型的相关性\nmoduleTraitCor &lt;- cor(MEs, traits, use = \"p\")\nmoduleTraitPvalue &lt;- corPvalueStudent(moduleTraitCor, nrow(expr_data_filtered))\n\n# 可视化\ntextMatrix &lt;- paste(signif(moduleTraitCor, 2), \"\\n(\",\n                   signif(moduleTraitPvalue, 1), \")\", sep = \"\")\ndim(textMatrix) &lt;- dim(moduleTraitCor)\n\npar(mar = c(6, 8.5, 3, 3))\nlabeledHeatmap(Matrix = moduleTraitCor,\n               xLabels = names(traits),\n               yLabels = names(MEs),\n               ySymbols = names(MEs),\n               colorLabels = FALSE,\n               colors = blueWhiteRed(50),\n               textMatrix = textMatrix,\n               setStdMargins = FALSE,\n               cex.text = 0.5,\n               zlim = c(-1,1),\n               main = \"Module-trait relationships\")\n\n\n\n# 选择感兴趣的模块\nmodule &lt;- \"blue\"\ngenes &lt;- colnames(expr_data_filtered)[moduleColors == module]\n\n# 计算 TOM\nTOM &lt;- TOMsimilarityFromExpr(expr_data_filtered[, genes],\n                             power = 6)\n\n# 导出边信息\ncyt &lt;- exportNetworkToCytoscape(TOM,\n                                edgeFile = paste(\"CytoscapeInput-edges-\", module, \".txt\", sep=\"\"),\n                                nodeFile = paste(\"CytoscapeInput-nodes-\", module, \".txt\", sep=\"\"),\n                                weighted = TRUE,\n                                threshold = 0.02)",
     "crumbs": [
       "首页",
       "大四课程",
-      "计算分子生物学",
-      "考试说明"
+      "计算生物学",
+      "实验2 - WGCNA分析"
     ]
   },
   {
-    "objectID": "Grade4/computational_molecular_biology/exam-info.html#复习策略",
-    "href": "Grade4/computational_molecular_biology/exam-info.html#复习策略",
-    "title": "计算分子生物学 - 考试说明",
+    "objectID": "Grade4/computational_biology/exp2.html#结果分析",
+    "href": "Grade4/computational_biology/exp2.html#结果分析",
+    "title": "实验二：加权基因共表达网络分析（WGCNA）",
     "section": "",
-    "text": "第一轮：过一遍所有课后作业和爱课平台题目\n第二轮：重点攻克自测题PPT\n第三轮：回顾PPT中的思考题，确保理解",
+    "text": "# 对感兴趣的模块进行GO富集分析\nlibrary(clusterProfiler)\nlibrary(org.Hs.eg.db)\n\n# 提取模块基因\nmodule_genes &lt;- colnames(expr_data_filtered)[moduleColors == \"blue\"]\n\n# GO富集分析\nego &lt;- enrichGO(gene = module_genes,\n                OrgDb = org.Hs.eg.db,\n                keyType = \"SYMBOL\",\n                ont = \"BP\",\n                pAdjustMethod = \"BH\",\n                pvalueCutoff = 0.05,\n                qvalueCutoff = 0.05)\n\n# 可视化\nbarplot(ego, showCategory = 10)\ndotplot(ego, showCategory = 10)",
     "crumbs": [
       "首页",
       "大四课程",
-      "计算分子生物学",
-      "考试说明"
+      "计算生物学",
+      "实验2 - WGCNA分析"
     ]
   },
   {
-    "objectID": "Grade4/computational_molecular_biology/exam-info.html#时间安排建议",
-    "href": "Grade4/computational_molecular_biology/exam-info.html#时间安排建议",
-    "title": "计算分子生物学 - 考试说明",
+    "objectID": "Grade4/computational_biology/exp2.html#生物学解释",
+    "href": "Grade4/computational_biology/exp2.html#生物学解释",
+    "title": "实验二：加权基因共表达网络分析（WGCNA）",
     "section": "",
-    "text": "阶段\n内容\n建议时间\n\n\n\n\n第一阶段\n爱课平台作业回顾\n2-3天\n\n\n第二阶段\n自测题PPT练习\n2天\n\n\n第三阶段\nPPT思考题整理\n1-2天\n\n\n第四阶段\n查漏补缺\n1天\n\n\n\n\n\n\n\n\n\n\nNote祝大家考试顺利！\n\n\n\n好好复习，相信自己，加油！\n\n\n\n← 返回计算分子生物学 | 返回大四课程",
+    "text": "同一模块内的基因可能：\n\n参与相同的生物学过程\n受相同的转录调控\n在相同的细胞器中发挥作用\n\n\n\n\n\n\n模块内连接度最高的基因\n可能是该生物学过程的关键调控因子\n潜在的生物标志物或治疗靶点",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验2 - WGCNA分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp2.html#作业要求",
+    "href": "Grade4/computational_biology/exp2.html#作业要求",
+    "title": "实验二：加权基因共表达网络分析（WGCNA）",
+    "section": "",
+    "text": "基础分析\n\n完成 WGCNA 分析流程\n识别基因模块\n分析模块与表型的关联\n\n进阶分析\n\n对关键模块进行功能富集分析\n识别 Hub 基因\n验证 Hub 基因的表达模式\n\n报告撰写\n\n详细记录分析步骤\n展示关键结果图表\n对模块功能进行生物学解读",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验2 - WGCNA分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp2.html#文件位置",
+    "href": "Grade4/computational_biology/exp2.html#文件位置",
+    "title": "实验二：加权基因共表达网络分析（WGCNA）",
+    "section": "",
+    "text": "Grade4/computational_biology/experiments/Exp2/\n├── WGCNA.Rmd         # R Markdown 报告\n├── WGCNA.html        # 生成的 HTML 报告\n└── data/             # 数据文件",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验2 - WGCNA分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp2.html#参考资料",
+    "href": "Grade4/computational_biology/exp2.html#参考资料",
+    "title": "实验二：加权基因共表达网络分析（WGCNA）",
+    "section": "",
+    "text": "Langfelder, P., & Horvath, S. (2008). WGCNA: an R package for weighted correlation network analysis. BMC Bioinformatics, 9(1), 559.\nWGCNA 官方教程\nZhang, B., & Horvath, S. (2005). A general framework for weighted gene co-expression network analysis. Statistical Applications in Genetics and Molecular Biology, 4(1).",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验2 - WGCNA分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp2.html#提示",
+    "href": "Grade4/computational_biology/exp2.html#提示",
+    "title": "实验二：加权基因共表达网络分析（WGCNA）",
+    "section": "",
+    "text": "Tip软阈值选择\n\n\n\n选择使 Scale-free topology fit R² 达到 0.8-0.9 的最小阈值。\n\n\n\n\n\n\n\n\nTip模块大小\n\n\n\n根据数据集大小调整 minModuleSize 参数，一般设为 30-50。\n\n\n\n\n\n\n\n\nWarning内存使用\n\n\n\nWGCNA 分析可能需要大量内存，建议在分析前清理 R 环境。\n\n\n\n← 上一个实验：PPI | 返回课程主页 | 下一个实验：MCL & RWR →",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验2 - WGCNA分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exam-materials.html",
+    "href": "Grade4/computational_biology/exam-materials.html",
+    "title": "计算生物学考试资料",
+    "section": "",
+    "text": "欢迎来到计算生物学考试资料页面！这里汇总了课程重点、考试经验和复习建议。\n\n\n\n\n\n\n\n内容包含：\n\n课程核心知识点总结\n重要概念和公式\n考试题型分析\n学长学姐经验分享\n复习建议和重点标注\n\n文件信息：\n\n格式：PDF\n涵盖内容：PPI、WGCNA、网络聚类、qPCR等\n适用对象：大四上学期\n\n\n下载 PDF\n\n\n\n\n\n\n\n\n\n核心概念：\n\n网络拓扑参数：度、聚类系数、路径长度\n中心性指标：度中心性、介数中心性、紧密中心性\nHub 蛋白识别与生物学意义\n无标度网络特性\n\n常见题型：\n\n名词解释：Hub 基因、Degree、Betweenness\n简答题：PPI 网络的构建方法和应用\n计算题：给定邻接矩阵计算中心性指标\n\n\n\n\n\n核心概念：\n\n软阈值的选择原理\n拓扑重叠矩阵（TOM）\n模块识别与特征基因\n模块-表型关联分析\n\n常见题型：\n\n名词解释：Module、Eigengene、Soft threshold\n简答题：WGCNA 分析流程\n代码题：关键步骤的 R 代码实现\n\n\n\n\n\n核心概念：\n\nMCL 聚类算法原理\nRandom Walk with Restart (RWR)\n疾病基因预测方法\n功能富集分析\n\n常见题型：\n\n算法原理简答\n参数选择与优化\n应用场景分析\n\n\n\n\n\n核心概念：\n\nCt 值的含义\nΔΔCt 计算方法\n相对表达量计算\n内参基因的选择\n\n常见题型：\n\n计算题：给定 Ct 值计算相对表达量\n简答题：qPCR 实验设计要点\n数据分析与可视化\n\n\n\n\n\n\n\n\n\n\n\n\nTip复习策略\n\n\n\n1. 理论知识（40%）\n\n理解基本概念和原理\n掌握算法思想\n记忆关键公式\n\n2. 代码实践（30%）\n\n复习实验代码\n理解每一步的作用\n练习修改参数\n\n3. 应用分析（30%）\n\n会解读分析结果\n理解生物学意义\n能提出改进思路\n\n\n\n\n\n\n\n\n\nWarning考试注意事项\n\n\n\n\n带好学生证和身份证\n准备计算器（如需要）\n复习实验报告中的图表解读\n注意时间分配，先易后难\n\n\n\n\n\n\n\n\n\nTip学习建议\n\n\n\n\n提前1-2周开始系统复习\n重新运行实验代码加深理解\n与同学组队讨论交流\n整理自己的知识框架图\n多看文献了解方法应用\n\n\n\n\n\n\n\n\n\n所有实验的完整代码请访问：\n\n实验1：PPI 网络分析\n实验2：WGCNA 分析\n实验3：网络聚类与随机游走\n实验4：qPCR 数据分析\n\n\n\n\n\n学习路线建议\n常用工具\n参考文献\n\n\n\n\n\n\n遇到问题或有好的学习资料？\n\nGitHub Discussions - 提问讨论\nGitHub Issues - 报告问题\nEmail: hinna01@163.com\n\n\n\n\n\n感谢贡献考试资料的学长学姐们！\n如果你也有好的学习资料，欢迎贡献到本项目！\n\n\n祝大家考试顺利！加油！\n返回课程主页",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "考试资料"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exam-materials.html#考试资料下载",
+    "href": "Grade4/computational_biology/exam-materials.html#考试资料下载",
+    "title": "计算生物学考试资料",
+    "section": "",
+    "text": "内容包含：\n\n课程核心知识点总结\n重要概念和公式\n考试题型分析\n学长学姐经验分享\n复习建议和重点标注\n\n文件信息：\n\n格式：PDF\n涵盖内容：PPI、WGCNA、网络聚类、qPCR等\n适用对象：大四上学期\n\n\n下载 PDF",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "考试资料"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exam-materials.html#考试重点概览",
+    "href": "Grade4/computational_biology/exam-materials.html#考试重点概览",
+    "title": "计算生物学考试资料",
+    "section": "",
+    "text": "核心概念：\n\n网络拓扑参数：度、聚类系数、路径长度\n中心性指标：度中心性、介数中心性、紧密中心性\nHub 蛋白识别与生物学意义\n无标度网络特性\n\n常见题型：\n\n名词解释：Hub 基因、Degree、Betweenness\n简答题：PPI 网络的构建方法和应用\n计算题：给定邻接矩阵计算中心性指标\n\n\n\n\n\n核心概念：\n\n软阈值的选择原理\n拓扑重叠矩阵（TOM）\n模块识别与特征基因\n模块-表型关联分析\n\n常见题型：\n\n名词解释：Module、Eigengene、Soft threshold\n简答题：WGCNA 分析流程\n代码题：关键步骤的 R 代码实现\n\n\n\n\n\n核心概念：\n\nMCL 聚类算法原理\nRandom Walk with Restart (RWR)\n疾病基因预测方法\n功能富集分析\n\n常见题型：\n\n算法原理简答\n参数选择与优化\n应用场景分析\n\n\n\n\n\n核心概念：\n\nCt 值的含义\nΔΔCt 计算方法\n相对表达量计算\n内参基因的选择\n\n常见题型：\n\n计算题：给定 Ct 值计算相对表达量\n简答题：qPCR 实验设计要点\n数据分析与可视化",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "考试资料"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exam-materials.html#复习建议",
+    "href": "Grade4/computational_biology/exam-materials.html#复习建议",
+    "title": "计算生物学考试资料",
+    "section": "",
+    "text": "Tip复习策略\n\n\n\n1. 理论知识（40%）\n\n理解基本概念和原理\n掌握算法思想\n记忆关键公式\n\n2. 代码实践（30%）\n\n复习实验代码\n理解每一步的作用\n练习修改参数\n\n3. 应用分析（30%）\n\n会解读分析结果\n理解生物学意义\n能提出改进思路\n\n\n\n\n\n\n\n\n\nWarning考试注意事项\n\n\n\n\n带好学生证和身份证\n准备计算器（如需要）\n复习实验报告中的图表解读\n注意时间分配，先易后难\n\n\n\n\n\n\n\n\n\nTip学习建议\n\n\n\n\n提前1-2周开始系统复习\n重新运行实验代码加深理解\n与同学组队讨论交流\n整理自己的知识框架图\n多看文献了解方法应用",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "考试资料"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exam-materials.html#其他学习资料",
+    "href": "Grade4/computational_biology/exam-materials.html#其他学习资料",
+    "title": "计算生物学考试资料",
+    "section": "",
+    "text": "所有实验的完整代码请访问：\n\n实验1：PPI 网络分析\n实验2：WGCNA 分析\n实验3：网络聚类与随机游走\n实验4：qPCR 数据分析\n\n\n\n\n\n学习路线建议\n常用工具\n参考文献",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "考试资料"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exam-materials.html#交流讨论",
+    "href": "Grade4/computational_biology/exam-materials.html#交流讨论",
+    "title": "计算生物学考试资料",
+    "section": "",
+    "text": "遇到问题或有好的学习资料？\n\nGitHub Discussions - 提问讨论\nGitHub Issues - 报告问题\nEmail: hinna01@163.com",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "考试资料"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exam-materials.html#致谢",
+    "href": "Grade4/computational_biology/exam-materials.html#致谢",
+    "title": "计算生物学考试资料",
+    "section": "",
+    "text": "感谢贡献考试资料的学长学姐们！\n如果你也有好的学习资料，欢迎贡献到本项目！\n\n\n祝大家考试顺利！加油！\n返回课程主页",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "考试资料"
+    ]
+  },
+  {
+    "objectID": "Grade4/CADD/index.html",
+    "href": "Grade4/CADD/index.html",
+    "title": "计算机辅助药物设计（CADD）",
+    "section": "",
+    "text": "课程简介：学习使用计算方法进行药物设计和虚拟筛选。\n\n\n\n本课程主要内容包括：\n\n分子对接（Molecular Docking）\n虚拟筛选（Virtual Screening）\nQSAR 建模\n药物-靶点预测\n\n\n\n\n\n如果你有相关资料，欢迎贡献！\n\n返回上级",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算机辅助药物设计"
+    ]
+  },
+  {
+    "objectID": "Grade4/CADD/index.html#课程内容",
+    "href": "Grade4/CADD/index.html#课程内容",
+    "title": "计算机辅助药物设计（CADD）",
+    "section": "",
+    "text": "本课程主要内容包括：\n\n分子对接（Molecular Docking）\n虚拟筛选（Virtual Screening）\nQSAR 建模\n药物-靶点预测",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算机辅助药物设计"
+    ]
+  },
+  {
+    "objectID": "Grade4/CADD/index.html#资料正在整理中",
+    "href": "Grade4/CADD/index.html#资料正在整理中",
+    "title": "计算机辅助药物设计（CADD）",
+    "section": "",
+    "text": "如果你有相关资料，欢迎贡献！\n\n返回上级",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算机辅助药物设计"
+    ]
+  },
+  {
+    "objectID": "Grade2/index.html",
+    "href": "Grade2/index.html",
+    "title": "大二课程",
+    "section": "",
+    "text": "学年概述：大二是生物信息学专业基础课程学习的重要阶段。\n\n\n\n\n大二上学期大二下学期\n\n\n专业基础课程学习阶段。\n\n\n继续深入学习专业基础知识。\n\n\n\n\n\n\n\n\n\n\n\n\n\nTip学长学姐的宝贵经验\n\n\n\n以下是往届同学整理的考试经验，供参考复习。\n\n\n\n\n\n学期\n资料\n下载\n\n\n\n\n大二上\n考试经验总结\n下载 PDF\n\n\n大二下\n考试经验总结\n下载 PDF\n\n\n\n\n\n\n\n\n打好基础 - 大二课程是后续专业课的基础\n多做练习 - 理解概念后要多动手实践\n善用资源 - 参考往届考试经验，把握重点\n\n\n返回首页",
+    "crumbs": [
+      "首页",
+      "大二课程",
+      "大二课程总览"
+    ]
+  },
+  {
+    "objectID": "Grade2/index.html#学期内容",
+    "href": "Grade2/index.html#学期内容",
+    "title": "大二课程",
+    "section": "",
+    "text": "大二上学期大二下学期\n\n\n专业基础课程学习阶段。\n\n\n继续深入学习专业基础知识。",
+    "crumbs": [
+      "首页",
+      "大二课程",
+      "大二课程总览"
+    ]
+  },
+  {
+    "objectID": "Grade2/index.html#考试经验",
+    "href": "Grade2/index.html#考试经验",
+    "title": "大二课程",
+    "section": "",
+    "text": "Tip学长学姐的宝贵经验\n\n\n\n以下是往届同学整理的考试经验，供参考复习。\n\n\n\n\n\n学期\n资料\n下载\n\n\n\n\n大二上\n考试经验总结\n下载 PDF\n\n\n大二下\n考试经验总结\n下载 PDF",
+    "crumbs": [
+      "首页",
+      "大二课程",
+      "大二课程总览"
+    ]
+  },
+  {
+    "objectID": "Grade2/index.html#学习建议",
+    "href": "Grade2/index.html#学习建议",
+    "title": "大二课程",
+    "section": "",
+    "text": "打好基础 - 大二课程是后续专业课的基础\n多做练习 - 理解概念后要多动手实践\n善用资源 - 参考往届考试经验，把握重点\n\n\n返回首页",
+    "crumbs": [
+      "首页",
+      "大二课程",
+      "大二课程总览"
+    ]
+  },
+  {
+    "objectID": "BioinfoTalus/index.html",
+    "href": "BioinfoTalus/index.html",
+    "title": "生信流程 (BioinfoTalus)",
+    "section": "",
+    "text": "项目简介：面向生物信息学转录组数据分析的 R 脚本集合，覆盖 Bulk 转录组、单细胞转录组与空间转录组三大领域。\n\n\n\n\n\n\nTip贡献者致谢\n\n\n\n本模块由 @BioConvolutionyt 贡献（生物信息学23级lyt），感谢分享！\n\n\n\n\n\n\n既可作为一套完整 pipeline，也可独立使用\n可泛化 + 注释较完整：核心步骤与关键参数已尽量写成可迁移的形式\n提供示例数据与部分运行结果\n\n\n\n\n\n\n\n\n\n\n分析类型\n主要内容\n\n\n\n\n数据处理\nTCGA/GEO 数据处理、表达矩阵整理\n\n\n差异分析\nDESeq2 差异分析\n\n\n富集分析\nGO、KEGG 富集分析、GSEA\n\n\n免疫分析\n免疫浸润 (CIBERSORT)、免疫/肿瘤/基质评分 (ESTIMATE)\n\n\n生存分析\n生存分析、单因素/多因素 COX 回归、LASSO、Nomogram\n\n\n其他\nWGCNA、药物敏感性分析、免疫检查点分析\n\n\n\n\n\n\n\n\n\n\n分析类型\n主要内容\n\n\n\n\n基础流程\nSeurat 主流程（读入/QC/聚类/去批次）\n\n\n细胞注释\n自动注释、手动注释\n\n\n质控\n双细胞检测、细胞周期评估\n\n\n高级分析\nCNV 推断、拟时序分析、发育潜能、细胞通讯\n\n\n\n\n\n\n\n\n\n\n分析类型\n主要内容\n\n\n\n\n基础流程\nVisium 读入与聚类\n\n\n反卷积\n空间反卷积（基于单细胞先验）\n\n\n空间分析\n空间差异基因、空间细胞通讯\n\n\n\n\n\n\n\n\n\n\n\n数据类型\n来源\n描述\n\n\n\n\nBulk 转录组\nTCGA-HNSC\n头颈部鳞状细胞癌\n\n\n单细胞转录组\nGSM9113377-9\n结直肠癌样本\n\n\n空间转录组\nGSM8594561\n结直肠癌样本\n\n\n\n\n\n\n\n\n\ngit clone https://github.com/Hinna0818/Bioinfo-SMU.git\ncd Bioinfo-SMU/BioinfoTalus\n\n\n\n从 GitHub Releases 下载示例数据：\n\n下载所有 data_split*.zip 文件\n解压并放置到 Data/ 目录下\n\n\n\n\n建议使用 RStudio 打开 BioinfoTalus.Rproj，按需运行各模块脚本。\n\n\n\n\n\n\nBulk 转录组单细胞转录组空间转录组\n\n\n\nTCGA表达数据处理.R → 生成表达矩阵\n差异分析.R → DESeq2 差异分析\nGO & KEGG富集分析.R / GSEA.R\n免疫、肿瘤、基质评分计算.R\n生存分析.R → 单因素COX回归.R → 多因素COX回归.R\n其他按需选用\n\n\n\n\n数据读入与 QC\n聚类与去批次\n细胞注释\n高级分析（拟时序、细胞通讯等）\n\n\n\n\nVisium 数据读入\n聚类分析\n空间反卷积\n空间差异基因分析\n\n\n\n\n\n\n\n\nBioinfoTalus/\n├── Bulk 转录组测序数据分析/\n│   ├── TCGA表达数据处理.R\n│   ├── 差异分析.R\n│   ├── GO & KEGG富集分析.R\n│   ├── GSEA.R\n│   ├── 生存分析.R\n│   └── ...\n├── 单细胞转录组测序数据分析/\n│   ├── Seurat主流程.R\n│   ├── 细胞注释.R\n│   └── ...\n├── 空间转录组测序数据分析/\n│   ├── Visium读入与聚类.R\n│   └── ...\n└── Data/  (从 Releases 下载)\n\n\n\n\n\nGitHub 仓库目录\n数据下载 (Releases)\n贡献者主页 @BioConvolutionyt\n\n\n\n\n\n感谢 @BioConvolutionyt 贡献本模块代码！\n如果你觉得这些代码对你有帮助，欢迎给仓库一个 Star！\n\n返回首页",
+    "crumbs": [
+      "首页",
+      "生信流程",
+      "BioinfoTalus"
+    ]
+  },
+  {
+    "objectID": "BioinfoTalus/index.html#项目特点",
+    "href": "BioinfoTalus/index.html#项目特点",
+    "title": "生信流程 (BioinfoTalus)",
+    "section": "",
+    "text": "既可作为一套完整 pipeline，也可独立使用\n可泛化 + 注释较完整：核心步骤与关键参数已尽量写成可迁移的形式\n提供示例数据与部分运行结果",
+    "crumbs": [
+      "首页",
+      "生信流程",
+      "BioinfoTalus"
+    ]
+  },
+  {
+    "objectID": "BioinfoTalus/index.html#模块概览",
+    "href": "BioinfoTalus/index.html#模块概览",
+    "title": "生信流程 (BioinfoTalus)",
+    "section": "",
+    "text": "分析类型\n主要内容\n\n\n\n\n数据处理\nTCGA/GEO 数据处理、表达矩阵整理\n\n\n差异分析\nDESeq2 差异分析\n\n\n富集分析\nGO、KEGG 富集分析、GSEA\n\n\n免疫分析\n免疫浸润 (CIBERSORT)、免疫/肿瘤/基质评分 (ESTIMATE)\n\n\n生存分析\n生存分析、单因素/多因素 COX 回归、LASSO、Nomogram\n\n\n其他\nWGCNA、药物敏感性分析、免疫检查点分析\n\n\n\n\n\n\n\n\n\n\n分析类型\n主要内容\n\n\n\n\n基础流程\nSeurat 主流程（读入/QC/聚类/去批次）\n\n\n细胞注释\n自动注释、手动注释\n\n\n质控\n双细胞检测、细胞周期评估\n\n\n高级分析\nCNV 推断、拟时序分析、发育潜能、细胞通讯\n\n\n\n\n\n\n\n\n\n\n分析类型\n主要内容\n\n\n\n\n基础流程\nVisium 读入与聚类\n\n\n反卷积\n空间反卷积（基于单细胞先验）\n\n\n空间分析\n空间差异基因、空间细胞通讯",
+    "crumbs": [
+      "首页",
+      "生信流程",
+      "BioinfoTalus"
+    ]
+  },
+  {
+    "objectID": "BioinfoTalus/index.html#示例数据说明",
+    "href": "BioinfoTalus/index.html#示例数据说明",
+    "title": "生信流程 (BioinfoTalus)",
+    "section": "",
+    "text": "数据类型\n来源\n描述\n\n\n\n\nBulk 转录组\nTCGA-HNSC\n头颈部鳞状细胞癌\n\n\n单细胞转录组\nGSM9113377-9\n结直肠癌样本\n\n\n空间转录组\nGSM8594561\n结直肠癌样本",
+    "crumbs": [
+      "首页",
+      "生信流程",
+      "BioinfoTalus"
+    ]
+  },
+  {
+    "objectID": "BioinfoTalus/index.html#快速开始",
+    "href": "BioinfoTalus/index.html#快速开始",
+    "title": "生信流程 (BioinfoTalus)",
+    "section": "",
+    "text": "git clone https://github.com/Hinna0818/Bioinfo-SMU.git\ncd Bioinfo-SMU/BioinfoTalus\n\n\n\n从 GitHub Releases 下载示例数据：\n\n下载所有 data_split*.zip 文件\n解压并放置到 Data/ 目录下\n\n\n\n\n建议使用 RStudio 打开 BioinfoTalus.Rproj，按需运行各模块脚本。",
+    "crumbs": [
+      "首页",
+      "生信流程",
+      "BioinfoTalus"
+    ]
+  },
+  {
+    "objectID": "BioinfoTalus/index.html#推荐运行顺序",
+    "href": "BioinfoTalus/index.html#推荐运行顺序",
+    "title": "生信流程 (BioinfoTalus)",
+    "section": "",
+    "text": "Bulk 转录组单细胞转录组空间转录组\n\n\n\nTCGA表达数据处理.R → 生成表达矩阵\n差异分析.R → DESeq2 差异分析\nGO & KEGG富集分析.R / GSEA.R\n免疫、肿瘤、基质评分计算.R\n生存分析.R → 单因素COX回归.R → 多因素COX回归.R\n其他按需选用\n\n\n\n\n数据读入与 QC\n聚类与去批次\n细胞注释\n高级分析（拟时序、细胞通讯等）\n\n\n\n\nVisium 数据读入\n聚类分析\n空间反卷积\n空间差异基因分析",
+    "crumbs": [
+      "首页",
+      "生信流程",
+      "BioinfoTalus"
+    ]
+  },
+  {
+    "objectID": "BioinfoTalus/index.html#目录结构",
+    "href": "BioinfoTalus/index.html#目录结构",
+    "title": "生信流程 (BioinfoTalus)",
+    "section": "",
+    "text": "BioinfoTalus/\n├── Bulk 转录组测序数据分析/\n│   ├── TCGA表达数据处理.R\n│   ├── 差异分析.R\n│   ├── GO & KEGG富集分析.R\n│   ├── GSEA.R\n│   ├── 生存分析.R\n│   └── ...\n├── 单细胞转录组测序数据分析/\n│   ├── Seurat主流程.R\n│   ├── 细胞注释.R\n│   └── ...\n├── 空间转录组测序数据分析/\n│   ├── Visium读入与聚类.R\n│   └── ...\n└── Data/  (从 Releases 下载)",
+    "crumbs": [
+      "首页",
+      "生信流程",
+      "BioinfoTalus"
+    ]
+  },
+  {
+    "objectID": "BioinfoTalus/index.html#相关链接",
+    "href": "BioinfoTalus/index.html#相关链接",
+    "title": "生信流程 (BioinfoTalus)",
+    "section": "",
+    "text": "GitHub 仓库目录\n数据下载 (Releases)\n贡献者主页 @BioConvolutionyt",
+    "crumbs": [
+      "首页",
+      "生信流程",
+      "BioinfoTalus"
+    ]
+  },
+  {
+    "objectID": "BioinfoTalus/index.html#致谢",
+    "href": "BioinfoTalus/index.html#致谢",
+    "title": "生信流程 (BioinfoTalus)",
+    "section": "",
+    "text": "感谢 @BioConvolutionyt 贡献本模块代码！\n如果你觉得这些代码对你有帮助，欢迎给仓库一个 Star！\n\n返回首页",
+    "crumbs": [
+      "首页",
+      "生信流程",
+      "BioinfoTalus"
+    ]
+  },
+  {
+    "objectID": "Epidemiology/UK_Biobank.html",
+    "href": "Epidemiology/UK_Biobank.html",
+    "title": "UK Biobank (UKB) 数据库简介",
+    "section": "",
+    "text": "UK Biobank (UKB) 是一个大型的生物医学数据库，包含了来自英国50万名参与者的详细健康和遗传信息。该数据库由英国政府资助，旨在促进医学研究和公共卫生领域的进步。UKB的数据涵盖了广泛的领域，包括基因组学、影像学、生活方式、环境暴露等，为研究人员提供了宝贵的资源来探索疾病的原因和发展机制。\n\n\n\n\nUK Biobank官方网站：https://www.ukbiobank.ac.uk/\n数据访问指南：https://www.ukbiobank.ac.uk/enable-your-research/apply-for-access\n数据字典：https://biobank.ndph.ox.ac.uk/showcase/\n\n\n\n\n\nUK Biobank数据分析教程：https://www.ukbiobank.ac.uk/enable-your-research/uk-biobank-data-analysis\nUK Biobank RAP平台教程1：RAP平台使用方法以及人口学数据的代码版本的下载\nUK Biobank RAP平台教程2：代谢组学与蛋白质组学数据的下载\nUK Biobank RAP平台教程3：GGIR包处理加速度计原始数据流程\nUK Biobank package：UKBAnalytica1.0提升UKB数据分析效率\n\n\n\n\n通过网盘分享的文件：UKB数据库介绍.pptx等2个文件 链接: https://pan.baidu.com/s/1bGSzOsV6ofUFLP7n_PNysA?pwd=fb33 提取码: fb33 –来自百度网盘超级会员v5的分享",
+    "crumbs": [
+      "首页",
+      "流行病学数据库",
+      "UK Biobank"
+    ]
+  },
+  {
+    "objectID": "Epidemiology/UK_Biobank.html#前言",
+    "href": "Epidemiology/UK_Biobank.html#前言",
+    "title": "UK Biobank (UKB) 数据库简介",
+    "section": "",
+    "text": "UK Biobank (UKB) 是一个大型的生物医学数据库，包含了来自英国50万名参与者的详细健康和遗传信息。该数据库由英国政府资助，旨在促进医学研究和公共卫生领域的进步。UKB的数据涵盖了广泛的领域，包括基因组学、影像学、生活方式、环境暴露等，为研究人员提供了宝贵的资源来探索疾病的原因和发展机制。",
+    "crumbs": [
+      "首页",
+      "流行病学数据库",
+      "UK Biobank"
+    ]
+  },
+  {
+    "objectID": "Epidemiology/UK_Biobank.html#网站",
+    "href": "Epidemiology/UK_Biobank.html#网站",
+    "title": "UK Biobank (UKB) 数据库简介",
+    "section": "",
+    "text": "UK Biobank官方网站：https://www.ukbiobank.ac.uk/\n数据访问指南：https://www.ukbiobank.ac.uk/enable-your-research/apply-for-access\n数据字典：https://biobank.ndph.ox.ac.uk/showcase/",
+    "crumbs": [
+      "首页",
+      "流行病学数据库",
+      "UK Biobank"
+    ]
+  },
+  {
+    "objectID": "Epidemiology/UK_Biobank.html#学习资源",
+    "href": "Epidemiology/UK_Biobank.html#学习资源",
+    "title": "UK Biobank (UKB) 数据库简介",
+    "section": "",
+    "text": "UK Biobank数据分析教程：https://www.ukbiobank.ac.uk/enable-your-research/uk-biobank-data-analysis\nUK Biobank RAP平台教程1：RAP平台使用方法以及人口学数据的代码版本的下载\nUK Biobank RAP平台教程2：代谢组学与蛋白质组学数据的下载\nUK Biobank RAP平台教程3：GGIR包处理加速度计原始数据流程\nUK Biobank package：UKBAnalytica1.0提升UKB数据分析效率",
+    "crumbs": [
+      "首页",
+      "流行病学数据库",
+      "UK Biobank"
+    ]
+  },
+  {
+    "objectID": "Epidemiology/UK_Biobank.html#uk-biobank数据库ppt视频介绍",
+    "href": "Epidemiology/UK_Biobank.html#uk-biobank数据库ppt视频介绍",
+    "title": "UK Biobank (UKB) 数据库简介",
+    "section": "",
+    "text": "通过网盘分享的文件：UKB数据库介绍.pptx等2个文件 链接: https://pan.baidu.com/s/1bGSzOsV6ofUFLP7n_PNysA?pwd=fb33 提取码: fb33 –来自百度网盘超级会员v5的分享",
+    "crumbs": [
+      "首页",
+      "流行病学数据库",
+      "UK Biobank"
+    ]
+  },
+  {
+    "objectID": "Grade3/index.html",
+    "href": "Grade3/index.html",
+    "title": "大三课程",
+    "section": "",
+    "text": "学年概述：大三是生物信息学专业核心课程学习的关键阶段。\n\n\n\n\n大三上学期大三下学期\n\n\n专业核心课程深入学习阶段。\n\n\n专业知识综合应用与实践。\n\n\n\n\n\n\n\n\n\n\n\n\n\nTip学长学姐的宝贵经验\n\n\n\n以下是往届同学整理的考试经验，供参考复习。\n\n\n\n\n\n学期\n资料\n下载\n\n\n\n\n大三上\n考试经验总结\n下载 PDF\n\n\n\n\n\n\n\n\n深入理解 - 大三课程难度提升，要注重理解\n项目实践 - 多参与实际项目，积累经验\n提前规划 - 考虑未来方向（考研/就业/出国）\n\n\n返回首页",
+    "crumbs": [
+      "首页",
+      "大三课程",
+      "大三课程总览"
+    ]
+  },
+  {
+    "objectID": "Grade3/index.html#学期内容",
+    "href": "Grade3/index.html#学期内容",
+    "title": "大三课程",
+    "section": "",
+    "text": "大三上学期大三下学期\n\n\n专业核心课程深入学习阶段。\n\n\n专业知识综合应用与实践。",
+    "crumbs": [
+      "首页",
+      "大三课程",
+      "大三课程总览"
+    ]
+  },
+  {
+    "objectID": "Grade3/index.html#考试经验",
+    "href": "Grade3/index.html#考试经验",
+    "title": "大三课程",
+    "section": "",
+    "text": "Tip学长学姐的宝贵经验\n\n\n\n以下是往届同学整理的考试经验，供参考复习。\n\n\n\n\n\n学期\n资料\n下载\n\n\n\n\n大三上\n考试经验总结\n下载 PDF",
+    "crumbs": [
+      "首页",
+      "大三课程",
+      "大三课程总览"
+    ]
+  },
+  {
+    "objectID": "Grade3/index.html#学习建议",
+    "href": "Grade3/index.html#学习建议",
+    "title": "大三课程",
+    "section": "",
+    "text": "深入理解 - 大三课程难度提升，要注重理解\n项目实践 - 多参与实际项目，积累经验\n提前规划 - 考虑未来方向（考研/就业/出国）\n\n\n返回首页",
+    "crumbs": [
+      "首页",
+      "大三课程",
+      "大三课程总览"
+    ]
+  },
+  {
+    "objectID": "Grade4/career_guidance/index.html",
+    "href": "Grade4/career_guidance/index.html",
+    "title": "就业指导概论",
+    "section": "",
+    "text": "课程性质：必修课\n学期：大四上学期\n\n\n\n\n\n课程作业包括两个部分：\n\n个人简历制作\n\n要求制作一份专业的个人简历\n突出个人技能和项目经验\n格式规范，内容完整\n\nAI 模拟面试\n\n使用 AI 工具进行模拟面试\n记录面试过程和反馈\n总结改进方向\n\n\n\n\n\n\n\n\n\n\n考试方式：机考（线上）\n考试时长：待定\n是否可回看：试题可以回看\n\n\n\n\n总题数：37 题\n满分：100 分\n\n\n\n题型\n题量\n单题分值\n总分\n\n\n\n\n判断题\n15 题\n2 分\n30 分\n\n\n单选题\n15 题\n2 分\n30 分\n\n\n多选题\n5 题\n3 分\n15 分\n\n\n简答题\n2 题\n15 分 + 10 分\n25 分\n\n\n\n\n\n\n\n\n\n\n\n\n公众号提供了详细的复习资料和考试重点：\n\n推文一：就业指导复习资料（一）\n\n包含基础知识点\n求职技巧总结\n简历制作要点\n\n推文二：就业指导复习资料（二）\n\n面试技巧讲解\n常见问题解答\n职业规划指导\n\n\n\n\n\n\n\n\nNote如何获取\n\n\n\n微信搜索公众号 “Hmaide”，查看历史推文获取完整复习资料\n\n\n\n\n\n\n\n佛教刷题平台\n\n题库代码：Yk6i-6lY\n使用方法：\n\n访问佛教刷题网站/小程序\n输入题库代码：Yk6i-6lY\n\n\n\n\n\n\n\n\n\n考察档案派遣。比如小明是外省人，被广州某私企公司录用，改如何派遣。\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nImportant必考题型\n\n\n\n档案派遣是简答题的重点考察内容！\n\n\n\n\n\n\n如果发现复习资料有误或需要补充，欢迎：\n\n在 Discussions 中讨论\n在 Issues 中反馈\n发邮件到：hinna01@163.com\n\n\n\n祝大家考试顺利！\n← 返回大四课程",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "就业指导概论"
+    ]
+  },
+  {
+    "objectID": "Grade4/career_guidance/index.html#课程考核",
+    "href": "Grade4/career_guidance/index.html#课程考核",
+    "title": "就业指导概论",
+    "section": "",
+    "text": "课程作业包括两个部分：\n\n个人简历制作\n\n要求制作一份专业的个人简历\n突出个人技能和项目经验\n格式规范，内容完整\n\nAI 模拟面试\n\n使用 AI 工具进行模拟面试\n记录面试过程和反馈\n总结改进方向",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "就业指导概论"
+    ]
+  },
+  {
+    "objectID": "Grade4/career_guidance/index.html#期末考试",
+    "href": "Grade4/career_guidance/index.html#期末考试",
+    "title": "就业指导概论",
+    "section": "",
+    "text": "考试方式：机考（线上）\n考试时长：待定\n是否可回看：试题可以回看\n\n\n\n\n总题数：37 题\n满分：100 分\n\n\n\n题型\n题量\n单题分值\n总分\n\n\n\n\n判断题\n15 题\n2 分\n30 分\n\n\n单选题\n15 题\n2 分\n30 分\n\n\n多选题\n5 题\n3 分\n15 分\n\n\n简答题\n2 题\n15 分 + 10 分\n25 分",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "就业指导概论"
+    ]
+  },
+  {
+    "objectID": "Grade4/career_guidance/index.html#复习资料",
+    "href": "Grade4/career_guidance/index.html#复习资料",
+    "title": "就业指导概论",
+    "section": "",
+    "text": "公众号提供了详细的复习资料和考试重点：\n\n推文一：就业指导复习资料（一）\n\n包含基础知识点\n求职技巧总结\n简历制作要点\n\n推文二：就业指导复习资料（二）\n\n面试技巧讲解\n常见问题解答\n职业规划指导\n\n\n\n\n\n\n\n\nNote如何获取\n\n\n\n微信搜索公众号 “Hmaide”，查看历史推文获取完整复习资料\n\n\n\n\n\n\n\n佛教刷题平台\n\n题库代码：Yk6i-6lY\n使用方法：\n\n访问佛教刷题网站/小程序\n输入题库代码：Yk6i-6lY",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "就业指导概论"
+    ]
+  },
+  {
+    "objectID": "Grade4/career_guidance/index.html#考试真题20251230",
+    "href": "Grade4/career_guidance/index.html#考试真题20251230",
+    "title": "就业指导概论",
+    "section": "",
+    "text": "考察档案派遣。比如小明是外省人，被广州某私企公司录用，改如何派遣。",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "就业指导概论"
+    ]
+  },
+  {
+    "objectID": "Grade4/career_guidance/index.html#获取就业信息的途径和方式有哪些多选题给了提示",
+    "href": "Grade4/career_guidance/index.html#获取就业信息的途径和方式有哪些多选题给了提示",
+    "title": "就业指导概论",
+    "section": "",
+    "text": "Important必考题型\n\n\n\n档案派遣是简答题的重点考察内容！",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "就业指导概论"
+    ]
+  },
+  {
+    "objectID": "Grade4/career_guidance/index.html#问题反馈",
+    "href": "Grade4/career_guidance/index.html#问题反馈",
+    "title": "就业指导概论",
+    "section": "",
+    "text": "如果发现复习资料有误或需要补充，欢迎：\n\n在 Discussions 中讨论\n在 Issues 中反馈\n发邮件到：hinna01@163.com\n\n\n\n祝大家考试顺利！\n← 返回大四课程",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "就业指导概论"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp1.html",
+    "href": "Grade4/computational_biology/exp1.html",
+    "title": "实验一：蛋白质相互作用网络分析（PPI）",
+    "section": "",
+    "text": "蛋白质相互作用网络（Protein-Protein Interaction Network, PPI）是研究细胞功能的重要工具。本实验通过构建和分析PPI网络，学习网络生物学的基本方法。\n\n\n\n\n\n理解蛋白质相互作用网络的概念\n掌握使用 R 语言构建 PPI 网络\n学会分析网络的拓扑性质\n了解网络中心性指标的生物学意义\n\n\n\n\n\n\n\n蛋白质相互作用网络是将蛋白质作为节点，蛋白质之间的相互作用作为边的网络图。\n\n\n\n\n度（Degree）：节点连接的边数\n聚类系数（Clustering Coefficient）：节点邻居之间相互连接的程度\n最短路径（Shortest Path）：两个节点之间的最短距离\n中心性（Centrality）：节点在网络中的重要性\n\n\n\n\n\n度中心性（Degree Centrality）：连接数最多的节点\n介数中心性（Betweenness Centrality）：经过该节点的最短路径数\n紧密中心性（Closeness Centrality）：到其他节点的平均距离\n特征向量中心性（Eigenvector Centrality）：考虑邻居重要性的中心性\n\n\n\n\n\n\n\n\n# 加载必需的包\nlibrary(igraph)\nlibrary(ggplot2)\nlibrary(dplyr)\n\n# 读取 PPI 数据\n# 数据通常包含两列：蛋白质A 和 蛋白质B\nppi_data &lt;- read.csv(\"ppi_data.csv\")\n\n\n\n# 创建图对象\ng &lt;- graph_from_data_frame(ppi_data, directed = FALSE)\n\n# 查看网络基本信息\nvcount(g)  # 节点数\necount(g)  # 边数\n\n\n\n# 度分布\ndegree_dist &lt;- degree(g)\n\n# 聚类系数\nclustering_coef &lt;- transitivity(g, type = \"local\")\n\n# 平均路径长度\navg_path_length &lt;- mean_distance(g)\n\n\n\n# 度中心性\ndegree_cent &lt;- degree(g)\n\n# 介数中心性\nbetween_cent &lt;- betweenness(g)\n\n# 紧密中心性\nclose_cent &lt;- closeness(g)\n\n# 特征向量中心性\neigen_cent &lt;- eigen_centrality(g)$vector\n\n\n\n# 基础可视化\nplot(g,\n     vertex.size = 5,\n     vertex.label = NA,\n     edge.arrow.size = 0.3)\n\n# 根据度中心性着色\nV(g)$color &lt;- colorRampPalette(c(\"lightblue\", \"darkred\"))(max(degree_cent))[degree_cent]\n\nplot(g,\n     vertex.size = log(degree_cent) * 3,\n     vertex.label = NA,\n     vertex.color = V(g)$color,\n     main = \"PPI Network (colored by degree)\")\n\n\n\n\n\n\n\nPPI 网络通常表现出无标度（Scale-free）特性，即少数”枢纽”蛋白与很多其他蛋白相互作用。\n# 绘制度分布图\nggplot(data.frame(degree = degree_dist), aes(x = degree)) +\n  geom_histogram(bins = 30, fill = \"steelblue\") +\n  scale_y_log10() +\n  labs(title = \"Degree Distribution\",\n       x = \"Degree\",\n       y = \"Count (log10)\") +\n  theme_minimal()\n\n\n\n# 识别度最高的前10个蛋白\ntop_hubs &lt;- head(sort(degree_cent, decreasing = TRUE), 10)\nprint(top_hubs)\n\n\n\n\n\n\n\n\nHub 蛋白通常是细胞功能的关键调控因子\nHub 蛋白的突变更可能导致疾病\nHub 蛋白是潜在的药物靶点\n\n\n\n\n\n高度连接的蛋白质群可能参与相同的生物学过程\n可以通过社区检测算法识别功能模块\n\n\n\n\n\n\n\n基础分析\n\n构建 PPI 网络\n计算网络拓扑性质\n识别 Hub 蛋白\n\n进阶分析\n\n进行社区检测\n分析不同模块的功能\n与已知通路比较\n\n报告撰写\n\n使用 R Markdown 撰写报告\n包含代码、图表和解释\n对结果进行生物学解读\n\n\n\n\n\n\nGrade4/computational_biology/experiments/Exp1/\n├── Exp1.PPI.Rmd      # R Markdown 报告\n├── PPI.html          # 生成的 HTML 报告\n└── data/             # 数据文件（如果有）\n\n\n\n\n\nBarabási, A. L., & Oltvai, Z. N. (2004). Network biology: understanding the cell’s functional organization. Nature Reviews Genetics, 5(2), 101-113.\nAlbert, R. (2005). Scale-free networks in cell biology. Journal of Cell Science, 118(21), 4947-4957.\nigraph 官方文档\nSTRING 数据库\n\n\n\n\n\n\n\n\n\n\n\nTip数据来源\n\n\n\n可以从 STRING 数据库下载特定物种或疾病相关的 PPI 数据。\n\n\n\n\n\n\n\n\nTip可视化建议\n\n\n\n对于大型网络，可以只展示部分节点或使用交互式可视化工具（如 visNetwork）。\n\n\n\n\n\n\n\n\nWarning计算时间\n\n\n\n对于大型网络，计算介数中心性等指标可能需要较长时间。\n\n\n\n返回课程主页 | 下一个实验：WGCNA →",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验1 - PPI网络分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp1.html#实验简介",
+    "href": "Grade4/computational_biology/exp1.html#实验简介",
+    "title": "实验一：蛋白质相互作用网络分析（PPI）",
+    "section": "",
+    "text": "蛋白质相互作用网络（Protein-Protein Interaction Network, PPI）是研究细胞功能的重要工具。本实验通过构建和分析PPI网络，学习网络生物学的基本方法。",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验1 - PPI网络分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp1.html#实验目的",
+    "href": "Grade4/computational_biology/exp1.html#实验目的",
+    "title": "实验一：蛋白质相互作用网络分析（PPI）",
+    "section": "",
+    "text": "理解蛋白质相互作用网络的概念\n掌握使用 R 语言构建 PPI 网络\n学会分析网络的拓扑性质\n了解网络中心性指标的生物学意义",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验1 - PPI网络分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp1.html#理论背景",
+    "href": "Grade4/computational_biology/exp1.html#理论背景",
+    "title": "实验一：蛋白质相互作用网络分析（PPI）",
+    "section": "",
+    "text": "蛋白质相互作用网络是将蛋白质作为节点，蛋白质之间的相互作用作为边的网络图。\n\n\n\n\n度（Degree）：节点连接的边数\n聚类系数（Clustering Coefficient）：节点邻居之间相互连接的程度\n最短路径（Shortest Path）：两个节点之间的最短距离\n中心性（Centrality）：节点在网络中的重要性\n\n\n\n\n\n度中心性（Degree Centrality）：连接数最多的节点\n介数中心性（Betweenness Centrality）：经过该节点的最短路径数\n紧密中心性（Closeness Centrality）：到其他节点的平均距离\n特征向量中心性（Eigenvector Centrality）：考虑邻居重要性的中心性",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验1 - PPI网络分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp1.html#实验步骤",
+    "href": "Grade4/computational_biology/exp1.html#实验步骤",
+    "title": "实验一：蛋白质相互作用网络分析（PPI）",
+    "section": "",
+    "text": "# 加载必需的包\nlibrary(igraph)\nlibrary(ggplot2)\nlibrary(dplyr)\n\n# 读取 PPI 数据\n# 数据通常包含两列：蛋白质A 和 蛋白质B\nppi_data &lt;- read.csv(\"ppi_data.csv\")\n\n\n\n# 创建图对象\ng &lt;- graph_from_data_frame(ppi_data, directed = FALSE)\n\n# 查看网络基本信息\nvcount(g)  # 节点数\necount(g)  # 边数\n\n\n\n# 度分布\ndegree_dist &lt;- degree(g)\n\n# 聚类系数\nclustering_coef &lt;- transitivity(g, type = \"local\")\n\n# 平均路径长度\navg_path_length &lt;- mean_distance(g)\n\n\n\n# 度中心性\ndegree_cent &lt;- degree(g)\n\n# 介数中心性\nbetween_cent &lt;- betweenness(g)\n\n# 紧密中心性\nclose_cent &lt;- closeness(g)\n\n# 特征向量中心性\neigen_cent &lt;- eigen_centrality(g)$vector\n\n\n\n# 基础可视化\nplot(g,\n     vertex.size = 5,\n     vertex.label = NA,\n     edge.arrow.size = 0.3)\n\n# 根据度中心性着色\nV(g)$color &lt;- colorRampPalette(c(\"lightblue\", \"darkred\"))(max(degree_cent))[degree_cent]\n\nplot(g,\n     vertex.size = log(degree_cent) * 3,\n     vertex.label = NA,\n     vertex.color = V(g)$color,\n     main = \"PPI Network (colored by degree)\")",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验1 - PPI网络分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp1.html#结果分析",
+    "href": "Grade4/computational_biology/exp1.html#结果分析",
+    "title": "实验一：蛋白质相互作用网络分析（PPI）",
+    "section": "",
+    "text": "PPI 网络通常表现出无标度（Scale-free）特性，即少数”枢纽”蛋白与很多其他蛋白相互作用。\n# 绘制度分布图\nggplot(data.frame(degree = degree_dist), aes(x = degree)) +\n  geom_histogram(bins = 30, fill = \"steelblue\") +\n  scale_y_log10() +\n  labs(title = \"Degree Distribution\",\n       x = \"Degree\",\n       y = \"Count (log10)\") +\n  theme_minimal()\n\n\n\n# 识别度最高的前10个蛋白\ntop_hubs &lt;- head(sort(degree_cent, decreasing = TRUE), 10)\nprint(top_hubs)",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验1 - PPI网络分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp1.html#生物学解释",
+    "href": "Grade4/computational_biology/exp1.html#生物学解释",
+    "title": "实验一：蛋白质相互作用网络分析（PPI）",
+    "section": "",
+    "text": "Hub 蛋白通常是细胞功能的关键调控因子\nHub 蛋白的突变更可能导致疾病\nHub 蛋白是潜在的药物靶点\n\n\n\n\n\n高度连接的蛋白质群可能参与相同的生物学过程\n可以通过社区检测算法识别功能模块",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验1 - PPI网络分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp1.html#作业要求",
+    "href": "Grade4/computational_biology/exp1.html#作业要求",
+    "title": "实验一：蛋白质相互作用网络分析（PPI）",
+    "section": "",
+    "text": "基础分析\n\n构建 PPI 网络\n计算网络拓扑性质\n识别 Hub 蛋白\n\n进阶分析\n\n进行社区检测\n分析不同模块的功能\n与已知通路比较\n\n报告撰写\n\n使用 R Markdown 撰写报告\n包含代码、图表和解释\n对结果进行生物学解读",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验1 - PPI网络分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp1.html#文件位置",
+    "href": "Grade4/computational_biology/exp1.html#文件位置",
+    "title": "实验一：蛋白质相互作用网络分析（PPI）",
+    "section": "",
+    "text": "Grade4/computational_biology/experiments/Exp1/\n├── Exp1.PPI.Rmd      # R Markdown 报告\n├── PPI.html          # 生成的 HTML 报告\n└── data/             # 数据文件（如果有）",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验1 - PPI网络分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp1.html#参考资料",
+    "href": "Grade4/computational_biology/exp1.html#参考资料",
+    "title": "实验一：蛋白质相互作用网络分析（PPI）",
+    "section": "",
+    "text": "Barabási, A. L., & Oltvai, Z. N. (2004). Network biology: understanding the cell’s functional organization. Nature Reviews Genetics, 5(2), 101-113.\nAlbert, R. (2005). Scale-free networks in cell biology. Journal of Cell Science, 118(21), 4947-4957.\nigraph 官方文档\nSTRING 数据库",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验1 - PPI网络分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp1.html#提示",
+    "href": "Grade4/computational_biology/exp1.html#提示",
+    "title": "实验一：蛋白质相互作用网络分析（PPI）",
+    "section": "",
+    "text": "Tip数据来源\n\n\n\n可以从 STRING 数据库下载特定物种或疾病相关的 PPI 数据。\n\n\n\n\n\n\n\n\nTip可视化建议\n\n\n\n对于大型网络，可以只展示部分节点或使用交互式可视化工具（如 visNetwork）。\n\n\n\n\n\n\n\n\nWarning计算时间\n\n\n\n对于大型网络，计算介数中心性等指标可能需要较长时间。\n\n\n\n返回课程主页 | 下一个实验：WGCNA →",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验1 - PPI网络分析"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp3.html",
+    "href": "Grade4/computational_biology/exp3.html",
+    "title": "实验三：网络聚类与随机游走",
+    "section": "",
+    "text": "本实验学习两种重要的网络分析算法：MCL（Markov Cluster Algorithm）和 RWR（Random Walk with Restart），并应用于疾病基因预测。\n\n\n\n\n\n理解 MCL 聚类算法原理\n掌握 RWR 算法的实现\n学会进行 KEGG 通路富集分析\n应用网络算法解决实际生物学问题\n\n\n\n\n\n\n\nMCL (Markov Cluster Algorithm) 通过模拟流在网络中的传播来识别密集连接的区域（簇）。\n基本步骤： 1. Expansion：矩阵乘法（随机游走） 2. Inflation：逐元素幂运算（促进流聚集） 3. 迭代：重复上述步骤直至收敛\n\n\n\nRWR 是一种在网络上进行随机游走的算法，从起始节点出发，每步以一定概率返回起始点。\n应用： - 候选疾病基因预测 - 药物靶点发现 - 功能相似性度量\n\n\n\n\n\n\n\n\n\nlibrary(igraph)\nlibrary(MCL)\n\n# 读取 PPI 网络\nppi_data &lt;- read.table(\"ppi_network.txt\", header = TRUE)\ng &lt;- graph_from_data_frame(ppi_data, directed = FALSE)\n\n# 获取邻接矩阵\nadj_matrix &lt;- as_adjacency_matrix(g, sparse = FALSE)\n\n\n\n# MCL 聚类\n# inflation 参数控制簇的粒度，通常取 2-5\nmcl_result &lt;- mcl(adj_matrix,\n                  addLoops = TRUE,\n                  inflation = 2,\n                  allow1 = FALSE)\n\n# 查看聚类结果\ntable(mcl_result$Cluster)\n\n# 添加簇信息到图对象\nV(g)$cluster &lt;- mcl_result$Cluster\n\n\n\n# 为不同簇分配颜色\ncluster_colors &lt;- rainbow(max(V(g)$cluster))\nV(g)$color &lt;- cluster_colors[V(g)$cluster]\n\n# 绘制网络\nplot(g,\n     vertex.size = 5,\n     vertex.label = NA,\n     vertex.color = V(g)$color,\n     main = \"MCL Clustering Result\")\n\n# 添加图例\nlegend(\"topright\",\n       legend = paste(\"Cluster\", 1:max(V(g)$cluster)),\n       col = cluster_colors,\n       pch = 19,\n       cex = 0.8)\n\n\n\nlibrary(clusterProfiler)\nlibrary(org.Hs.eg.db)\n\n# 选择一个簇进行功能富集分析\ncluster_id &lt;- 1\ncluster_genes &lt;- V(g)$name[V(g)$cluster == cluster_id]\n\n# KEGG 富集分析\nkegg_enrich &lt;- enrichKEGG(gene = cluster_genes,\n                          organism = \"hsa\",\n                          pvalueCutoff = 0.05,\n                          qvalueCutoff = 0.05)\n\n# 可视化\nbarplot(kegg_enrich, showCategory = 10)\ndotplot(kegg_enrich, showCategory = 10)\n\n\n\n\n\n\n\n# RWR 函数\nrandom_walk_with_restart &lt;- function(adj_matrix, seed_nodes, restart_prob = 0.7, max_iter = 100, tol = 1e-6) {\n  n &lt;- nrow(adj_matrix)\n  \n  # 标准化邻接矩阵（列归一化）\n  col_sums &lt;- colSums(adj_matrix)\n  col_sums[col_sums == 0] &lt;- 1  # 避免除以0\n  trans_matrix &lt;- t(t(adj_matrix) / col_sums)\n  \n  # 初始化概率向量\n  p0 &lt;- rep(0, n)\n  p0[seed_nodes] &lt;- 1 / length(seed_nodes)\n  \n  # 迭代\n  p &lt;- p0\n  for (i in 1:max_iter) {\n    p_new &lt;- (1 - restart_prob) * trans_matrix %*% p + restart_prob * p0\n    \n    # 检查收敛\n    if (sum(abs(p_new - p)) &lt; tol) {\n      break\n    }\n    p &lt;- p_new\n  }\n  \n  return(as.vector(p))\n}\n\n\n\n# 读取已知疾病基因\ndisease_genes &lt;- read.table(\"Crohn's_disease.txt\", header = FALSE)$V1\n\n# 找到种子基因在网络中的索引\nseed_indices &lt;- which(V(g)$name %in% disease_genes)\n\n# 执行 RWR\nrwr_scores &lt;- random_walk_with_restart(adj_matrix,\n                                       seed_nodes = seed_indices,\n                                       restart_prob = 0.7)\n\n# 添加分数到图对象\nV(g)$rwr_score &lt;- rwr_scores\n\n# 按分数排序，找到候选基因\ngene_scores &lt;- data.frame(\n  gene = V(g)$name,\n  score = rwr_scores,\n  is_seed = V(g)$name %in% disease_genes\n)\ngene_scores &lt;- gene_scores[order(gene_scores$score, decreasing = TRUE), ]\n\n# 查看前20个候选基因\nhead(gene_scores[!gene_scores$is_seed, ], 20)\n\n\n\n# 根据 RWR 分数着色\nscore_colors &lt;- colorRampPalette(c(\"lightblue\", \"red\"))(100)\nV(g)$color &lt;- score_colors[cut(rwr_scores, breaks = 100)]\n\n# 种子基因用不同颜色标记\nV(g)$color[seed_indices] &lt;- \"green\"\n\nplot(g,\n     vertex.size = 5,\n     vertex.label = NA,\n     vertex.color = V(g)$color,\n     main = \"RWR Scores (green = seed genes)\")\n\n# 分数分布\nggplot(gene_scores, aes(x = score, fill = is_seed)) +\n  geom_histogram(bins = 50, alpha = 0.7) +\n  scale_fill_manual(values = c(\"FALSE\" = \"steelblue\", \"TRUE\" = \"red\"),\n                    labels = c(\"Other genes\", \"Seed genes\")) +\n  labs(title = \"RWR Score Distribution\",\n       x = \"RWR Score\",\n       y = \"Count\",\n       fill = \"\") +\n  theme_minimal()\n\n\n\n# 提取高分候选基因\ntop_candidates &lt;- head(gene_scores[!gene_scores$is_seed, ], 50)$gene\n\n# KEGG 富集分析\nkegg_candidates &lt;- enrichKEGG(gene = top_candidates,\n                              organism = \"hsa\",\n                              pvalueCutoff = 0.05)\n\n# 查看富集的通路\nhead(kegg_candidates@result)\n\n# 可视化\nbarplot(kegg_candidates, showCategory = 15)\n\n\n\n\n\n\n\n\n\n识别功能相关的蛋白质群\n不同簇可能对应不同的生物学过程\n通过富集分析验证簇的功能一致性\n\n\n\n\n\n高分候选基因可能与疾病相关\n可以通过文献验证或实验确认\n考虑网络拓扑结构的疾病基因预测方法\n\n\n\n\n\n\n\n\n克罗恩病是一种慢性炎症性肠病。通过网络分析可以：\n\n发现新的疾病相关基因\n理解疾病的分子机制\n寻找潜在的治疗靶点\n\n\n\n\n\n功能相关的基因倾向于在网络中聚集\nRWR 利用这一原理进行基因功能预测\n网络拓扑比单个基因更能反映生物学功能\n\n\n\n\n\n\n\nMCL 聚类\n\n尝试不同的 inflation 参数\n分析参数对聚类结果的影响\n对主要簇进行功能富集分析\n\nRWR 分析\n\n实现 RWR 算法\n预测疾病候选基因\n验证候选基因的合理性\n\n综合分析\n\n比较 MCL 和 RWR 的结果\n讨论两种方法的优缺点\n提出改进建议\n\n\n\n\n\n\nGrade4/computational_biology/experiments/Exp3/\n├── MCL.R                          # MCL 聚类脚本\n├── RWR.R                          # RWR 分析脚本\n├── Exp3.Rmd                       # R Markdown 报告\n├── Exp3.html                      # 生成的 HTML 报告\n├── Crohn's_disease.txt            # 克罗恩病基因列表\n└── c2.cp.kegg_legacy.v2025.1.Hs.entrez.gmt  # KEGG 基因集\n\n\n\n\n\nVan Dongen, S. (2000). Graph clustering by flow simulation. PhD thesis, University of Utrecht.\nKöhler, S., et al. (2008). Walking the interactome for prioritization of candidate disease genes. The American Journal of Human Genetics, 82(4), 949-958.\nLi, Y., & Patra, J. C. (2010). Genome-wide inferring gene–phenotype relationship by walking on the heterogeneous network. Bioinformatics, 26(9), 1219-1224.\n\n\n\n\n\n\n\n\n\n\n\nTip参数选择\n\n\n\n\nMCL 的 inflation 参数：较小值产生大簇，较大值产生小簇\nRWR 的 restart 概率：通常取 0.5-0.8\n\n\n\n\n\n\n\n\n\nTip计算效率\n\n\n\n\n对于大型网络，MCL 可能需要较长时间\nRWR 可以使用稀疏矩阵加速计算\n\n\n\n\n\n\n\n\n\nWarning数据格式\n\n\n\n确保基因 ID 与网络中的节点 ID 一致（如 Entrez ID 或 Symbol）。\n\n\n\n← 上一个实验：WGCNA | 返回课程主页 | 下一个实验：qPCR →",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验3 - 网络聚类与随机游走"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp3.html#实验简介",
+    "href": "Grade4/computational_biology/exp3.html#实验简介",
+    "title": "实验三：网络聚类与随机游走",
+    "section": "",
+    "text": "本实验学习两种重要的网络分析算法：MCL（Markov Cluster Algorithm）和 RWR（Random Walk with Restart），并应用于疾病基因预测。",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验3 - 网络聚类与随机游走"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp3.html#实验目的",
+    "href": "Grade4/computational_biology/exp3.html#实验目的",
+    "title": "实验三：网络聚类与随机游走",
+    "section": "",
+    "text": "理解 MCL 聚类算法原理\n掌握 RWR 算法的实现\n学会进行 KEGG 通路富集分析\n应用网络算法解决实际生物学问题",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验3 - 网络聚类与随机游走"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp3.html#理论背景",
+    "href": "Grade4/computational_biology/exp3.html#理论背景",
+    "title": "实验三：网络聚类与随机游走",
+    "section": "",
+    "text": "MCL (Markov Cluster Algorithm) 通过模拟流在网络中的传播来识别密集连接的区域（簇）。\n基本步骤： 1. Expansion：矩阵乘法（随机游走） 2. Inflation：逐元素幂运算（促进流聚集） 3. 迭代：重复上述步骤直至收敛\n\n\n\nRWR 是一种在网络上进行随机游走的算法，从起始节点出发，每步以一定概率返回起始点。\n应用： - 候选疾病基因预测 - 药物靶点发现 - 功能相似性度量",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验3 - 网络聚类与随机游走"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp3.html#实验步骤",
+    "href": "Grade4/computational_biology/exp3.html#实验步骤",
+    "title": "实验三：网络聚类与随机游走",
+    "section": "",
+    "text": "library(igraph)\nlibrary(MCL)\n\n# 读取 PPI 网络\nppi_data &lt;- read.table(\"ppi_network.txt\", header = TRUE)\ng &lt;- graph_from_data_frame(ppi_data, directed = FALSE)\n\n# 获取邻接矩阵\nadj_matrix &lt;- as_adjacency_matrix(g, sparse = FALSE)\n\n\n\n# MCL 聚类\n# inflation 参数控制簇的粒度，通常取 2-5\nmcl_result &lt;- mcl(adj_matrix,\n                  addLoops = TRUE,\n                  inflation = 2,\n                  allow1 = FALSE)\n\n# 查看聚类结果\ntable(mcl_result$Cluster)\n\n# 添加簇信息到图对象\nV(g)$cluster &lt;- mcl_result$Cluster\n\n\n\n# 为不同簇分配颜色\ncluster_colors &lt;- rainbow(max(V(g)$cluster))\nV(g)$color &lt;- cluster_colors[V(g)$cluster]\n\n# 绘制网络\nplot(g,\n     vertex.size = 5,\n     vertex.label = NA,\n     vertex.color = V(g)$color,\n     main = \"MCL Clustering Result\")\n\n# 添加图例\nlegend(\"topright\",\n       legend = paste(\"Cluster\", 1:max(V(g)$cluster)),\n       col = cluster_colors,\n       pch = 19,\n       cex = 0.8)\n\n\n\nlibrary(clusterProfiler)\nlibrary(org.Hs.eg.db)\n\n# 选择一个簇进行功能富集分析\ncluster_id &lt;- 1\ncluster_genes &lt;- V(g)$name[V(g)$cluster == cluster_id]\n\n# KEGG 富集分析\nkegg_enrich &lt;- enrichKEGG(gene = cluster_genes,\n                          organism = \"hsa\",\n                          pvalueCutoff = 0.05,\n                          qvalueCutoff = 0.05)\n\n# 可视化\nbarplot(kegg_enrich, showCategory = 10)\ndotplot(kegg_enrich, showCategory = 10)\n\n\n\n\n\n\n\n# RWR 函数\nrandom_walk_with_restart &lt;- function(adj_matrix, seed_nodes, restart_prob = 0.7, max_iter = 100, tol = 1e-6) {\n  n &lt;- nrow(adj_matrix)\n  \n  # 标准化邻接矩阵（列归一化）\n  col_sums &lt;- colSums(adj_matrix)\n  col_sums[col_sums == 0] &lt;- 1  # 避免除以0\n  trans_matrix &lt;- t(t(adj_matrix) / col_sums)\n  \n  # 初始化概率向量\n  p0 &lt;- rep(0, n)\n  p0[seed_nodes] &lt;- 1 / length(seed_nodes)\n  \n  # 迭代\n  p &lt;- p0\n  for (i in 1:max_iter) {\n    p_new &lt;- (1 - restart_prob) * trans_matrix %*% p + restart_prob * p0\n    \n    # 检查收敛\n    if (sum(abs(p_new - p)) &lt; tol) {\n      break\n    }\n    p &lt;- p_new\n  }\n  \n  return(as.vector(p))\n}\n\n\n\n# 读取已知疾病基因\ndisease_genes &lt;- read.table(\"Crohn's_disease.txt\", header = FALSE)$V1\n\n# 找到种子基因在网络中的索引\nseed_indices &lt;- which(V(g)$name %in% disease_genes)\n\n# 执行 RWR\nrwr_scores &lt;- random_walk_with_restart(adj_matrix,\n                                       seed_nodes = seed_indices,\n                                       restart_prob = 0.7)\n\n# 添加分数到图对象\nV(g)$rwr_score &lt;- rwr_scores\n\n# 按分数排序，找到候选基因\ngene_scores &lt;- data.frame(\n  gene = V(g)$name,\n  score = rwr_scores,\n  is_seed = V(g)$name %in% disease_genes\n)\ngene_scores &lt;- gene_scores[order(gene_scores$score, decreasing = TRUE), ]\n\n# 查看前20个候选基因\nhead(gene_scores[!gene_scores$is_seed, ], 20)\n\n\n\n# 根据 RWR 分数着色\nscore_colors &lt;- colorRampPalette(c(\"lightblue\", \"red\"))(100)\nV(g)$color &lt;- score_colors[cut(rwr_scores, breaks = 100)]\n\n# 种子基因用不同颜色标记\nV(g)$color[seed_indices] &lt;- \"green\"\n\nplot(g,\n     vertex.size = 5,\n     vertex.label = NA,\n     vertex.color = V(g)$color,\n     main = \"RWR Scores (green = seed genes)\")\n\n# 分数分布\nggplot(gene_scores, aes(x = score, fill = is_seed)) +\n  geom_histogram(bins = 50, alpha = 0.7) +\n  scale_fill_manual(values = c(\"FALSE\" = \"steelblue\", \"TRUE\" = \"red\"),\n                    labels = c(\"Other genes\", \"Seed genes\")) +\n  labs(title = \"RWR Score Distribution\",\n       x = \"RWR Score\",\n       y = \"Count\",\n       fill = \"\") +\n  theme_minimal()\n\n\n\n# 提取高分候选基因\ntop_candidates &lt;- head(gene_scores[!gene_scores$is_seed, ], 50)$gene\n\n# KEGG 富集分析\nkegg_candidates &lt;- enrichKEGG(gene = top_candidates,\n                              organism = \"hsa\",\n                              pvalueCutoff = 0.05)\n\n# 查看富集的通路\nhead(kegg_candidates@result)\n\n# 可视化\nbarplot(kegg_candidates, showCategory = 15)",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验3 - 网络聚类与随机游走"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp3.html#结果分析",
+    "href": "Grade4/computational_biology/exp3.html#结果分析",
+    "title": "实验三：网络聚类与随机游走",
+    "section": "",
+    "text": "识别功能相关的蛋白质群\n不同簇可能对应不同的生物学过程\n通过富集分析验证簇的功能一致性\n\n\n\n\n\n高分候选基因可能与疾病相关\n可以通过文献验证或实验确认\n考虑网络拓扑结构的疾病基因预测方法",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验3 - 网络聚类与随机游走"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp3.html#生物学解释",
+    "href": "Grade4/computational_biology/exp3.html#生物学解释",
+    "title": "实验三：网络聚类与随机游走",
+    "section": "",
+    "text": "克罗恩病是一种慢性炎症性肠病。通过网络分析可以：\n\n发现新的疾病相关基因\n理解疾病的分子机制\n寻找潜在的治疗靶点\n\n\n\n\n\n功能相关的基因倾向于在网络中聚集\nRWR 利用这一原理进行基因功能预测\n网络拓扑比单个基因更能反映生物学功能",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验3 - 网络聚类与随机游走"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp3.html#作业要求",
+    "href": "Grade4/computational_biology/exp3.html#作业要求",
+    "title": "实验三：网络聚类与随机游走",
+    "section": "",
+    "text": "MCL 聚类\n\n尝试不同的 inflation 参数\n分析参数对聚类结果的影响\n对主要簇进行功能富集分析\n\nRWR 分析\n\n实现 RWR 算法\n预测疾病候选基因\n验证候选基因的合理性\n\n综合分析\n\n比较 MCL 和 RWR 的结果\n讨论两种方法的优缺点\n提出改进建议",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验3 - 网络聚类与随机游走"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp3.html#文件位置",
+    "href": "Grade4/computational_biology/exp3.html#文件位置",
+    "title": "实验三：网络聚类与随机游走",
+    "section": "",
+    "text": "Grade4/computational_biology/experiments/Exp3/\n├── MCL.R                          # MCL 聚类脚本\n├── RWR.R                          # RWR 分析脚本\n├── Exp3.Rmd                       # R Markdown 报告\n├── Exp3.html                      # 生成的 HTML 报告\n├── Crohn's_disease.txt            # 克罗恩病基因列表\n└── c2.cp.kegg_legacy.v2025.1.Hs.entrez.gmt  # KEGG 基因集",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验3 - 网络聚类与随机游走"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp3.html#参考资料",
+    "href": "Grade4/computational_biology/exp3.html#参考资料",
+    "title": "实验三：网络聚类与随机游走",
+    "section": "",
+    "text": "Van Dongen, S. (2000). Graph clustering by flow simulation. PhD thesis, University of Utrecht.\nKöhler, S., et al. (2008). Walking the interactome for prioritization of candidate disease genes. The American Journal of Human Genetics, 82(4), 949-958.\nLi, Y., & Patra, J. C. (2010). Genome-wide inferring gene–phenotype relationship by walking on the heterogeneous network. Bioinformatics, 26(9), 1219-1224.",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验3 - 网络聚类与随机游走"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/exp3.html#提示",
+    "href": "Grade4/computational_biology/exp3.html#提示",
+    "title": "实验三：网络聚类与随机游走",
+    "section": "",
+    "text": "Tip参数选择\n\n\n\n\nMCL 的 inflation 参数：较小值产生大簇，较大值产生小簇\nRWR 的 restart 概率：通常取 0.5-0.8\n\n\n\n\n\n\n\n\n\nTip计算效率\n\n\n\n\n对于大型网络，MCL 可能需要较长时间\nRWR 可以使用稀疏矩阵加速计算\n\n\n\n\n\n\n\n\n\nWarning数据格式\n\n\n\n确保基因 ID 与网络中的节点 ID 一致（如 Entrez ID 或 Symbol）。\n\n\n\n← 上一个实验：WGCNA | 返回课程主页 | 下一个实验：qPCR →",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "实验3 - 网络聚类与随机游走"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/index.html",
+    "href": "Grade4/computational_biology/index.html",
+    "title": "计算系统生物学",
+    "section": "",
+    "text": "课程代码：待补充\n学分：待补充\n学期：大四上学期\n\n\n\n计算系统生物学是生物信息学专业的核心课程，主要学习使用计算方法分析生物数据。本课程涵盖了网络生物学、基因表达分析、聚类算法等多个重要主题。\n\n\n\n掌握生物网络分析的基本方法\n学会使用 R 语言进行数据分析\n理解常用网络算法的原理\n培养独立分析生物数据的能力\n\n\n\n\n\n\n\n\n主要内容：\n\n蛋白质相互作用网络的构建\n网络拓扑性质分析\n中心性指标计算\n网络可视化\n\n技术栈：R, igraph\n代码位置：Grade4/computational_biology/experiments/Exp1/\n\n\n\n\n主要内容：\n\n基因表达数据预处理\n共表达网络构建\n模块识别和特征基因提取\n模块与表型关联分析\n\n技术栈：R, WGCNA\n代码位置：Grade4/computational_biology/experiments/Exp2/\n\n\n\n\n主要内容：\n\nMCL (Markov Cluster Algorithm) 聚类分析\nRWR (Random Walk with Restart) 算法\nKEGG 通路富集分析\n应用案例：克罗恩病相关基因分析\n\n技术栈：R, clusterProfiler\n代码位置：Grade4/computational_biology/experiments/Exp3/\n\n\n\n\n主要内容：\n\nqPCR 原理和数据格式\nCt 值处理和标准化\n相对表达量计算（ΔΔCt 方法）\n统计检验和可视化\n\n技术栈：R, ggplot2\n代码位置：Grade4/computational_biology/experiments/Exp4/\n\n\n\n\n\n\n\n准备考试？这里有学长学姐整理的考试资料：\n\n课程核心知识点总结\n考试题型分析与经验\n复习建议和重点标注\nPDF 资料下载\n\n查看考试资料 →\n\n\n\n\n\n\n\n\n网络生物学\n\nBarabási, A. L., & Oltvai, Z. N. (2004). Network biology: understanding the cell’s functional organization. Nature Reviews Genetics, 5(2), 101-113.\n\nWGCNA\n\nLangfelder, P., & Horvath, S. (2008). WGCNA: an R package for weighted correlation network analysis. BMC Bioinformatics, 9(1), 559.\n\n网络聚类\n\nVan Dongen, S. (2000). Graph clustering by flow simulation. PhD thesis, University of Utrecht.\n\n\n\n\n\n\nWGCNA 官方教程\nigraph 文档\nSTRING 数据库\n\n\n\n\n\n\n\n\n推荐使用 R &gt;= 4.0.0\n\n\n\n# 基础包\ninstall.packages(c(\"tidyverse\", \"ggplot2\", \"dplyr\"))\n\n# 生物信息学包\nif (!require(\"BiocManager\", quietly = TRUE))\n    install.packages(\"BiocManager\")\n\nBiocManager::install(c(\n    \"WGCNA\",\n    \"igraph\",\n    \"clusterProfiler\",\n    \"org.Hs.eg.db\"\n))\n\n\n\n推荐使用 RStudio 作为开发环境，可以更方便地编写和运行 R Markdown 文件。\n\n\n\n\n\n\n\n\n\n\n数据库\n用途\n网址\n\n\n\n\nSTRING\n蛋白质相互作用\nhttps://string-db.org/\n\n\nGEO\n基因表达数据\nhttps://www.ncbi.nlm.nih.gov/geo/\n\n\nKEGG\n代谢通路\nhttps://www.kegg.jp/\n\n\nUniProt\n蛋白质信息\nhttps://www.uniprot.org/\n\n\n\n\n\n\n\n\n\n\n\n实验目的：简要说明实验要解决的问题\n实验原理：介绍相关算法和方法\n实验步骤：详细记录分析流程\n结果分析：展示结果并进行解读\n讨论：总结实验收获和思考\n\n\n\n\n\n代码清晰易读，有适当的注释\n使用有意义的变量名\n结果可重现\n图表美观，标注清晰\n\n\n\n\n\n\n\nTip报告撰写建议\n\n\n\n\n使用 R Markdown 编写报告\n代码和文字结合，便于理解\n注意图表的标题和坐标轴标签\n对结果进行充分的生物学解释\n\n\n\n\n\n\n\n\n\n平时作业：20%\n实验报告：40%\n期末考试：40%\n\n\n\n通常包括：\n\n理论知识（算法原理、概念解释）\n代码阅读和填空\n简单的数据分析题\n\n\n\n\n\n\n\n\nA: 尝试以下方法：\n# 1. 更换 CRAN 镜像\noptions(repos = c(CRAN = \"https://mirrors.tuna.tsinghua.edu.cn/CRAN/\"))\n\n# 2. 使用 Bioconductor 镜像\noptions(BioC_mirror = \"https://mirrors.tuna.tsinghua.edu.cn/bioconductor\")\n\n# 3. 更新 R 和 RStudio 到最新版本\n\n\n\nA: 1. 检查数据文件路径是否正确 2. 确认所有必需的包都已安装 3. 查看错误信息，搜索解决方案 4. 在 Discussions 中提问\n\n\n\nA: 实验数据通常包含在代码文件夹中，或从指定的数据库下载。\n\n\n\n\n\n\nDiscussions\nIssues\nEmail: hinna01@163.com\n\n\n\n祝学习顺利！如有问题欢迎交流！\n返回上级 | 查看实验详情",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "课程主页"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/index.html#课程简介",
+    "href": "Grade4/computational_biology/index.html#课程简介",
+    "title": "计算系统生物学",
+    "section": "",
+    "text": "计算系统生物学是生物信息学专业的核心课程，主要学习使用计算方法分析生物数据。本课程涵盖了网络生物学、基因表达分析、聚类算法等多个重要主题。\n\n\n\n掌握生物网络分析的基本方法\n学会使用 R 语言进行数据分析\n理解常用网络算法的原理\n培养独立分析生物数据的能力",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "课程主页"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/index.html#实验列表",
+    "href": "Grade4/computational_biology/index.html#实验列表",
+    "title": "计算系统生物学",
+    "section": "",
+    "text": "主要内容：\n\n蛋白质相互作用网络的构建\n网络拓扑性质分析\n中心性指标计算\n网络可视化\n\n技术栈：R, igraph\n代码位置：Grade4/computational_biology/experiments/Exp1/\n\n\n\n\n主要内容：\n\n基因表达数据预处理\n共表达网络构建\n模块识别和特征基因提取\n模块与表型关联分析\n\n技术栈：R, WGCNA\n代码位置：Grade4/computational_biology/experiments/Exp2/\n\n\n\n\n主要内容：\n\nMCL (Markov Cluster Algorithm) 聚类分析\nRWR (Random Walk with Restart) 算法\nKEGG 通路富集分析\n应用案例：克罗恩病相关基因分析\n\n技术栈：R, clusterProfiler\n代码位置：Grade4/computational_biology/experiments/Exp3/\n\n\n\n\n主要内容：\n\nqPCR 原理和数据格式\nCt 值处理和标准化\n相对表达量计算（ΔΔCt 方法）\n统计检验和可视化\n\n技术栈：R, ggplot2\n代码位置：Grade4/computational_biology/experiments/Exp4/",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "课程主页"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/index.html#考试资料",
+    "href": "Grade4/computational_biology/index.html#考试资料",
+    "title": "计算系统生物学",
+    "section": "",
+    "text": "准备考试？这里有学长学姐整理的考试资料：\n\n课程核心知识点总结\n考试题型分析与经验\n复习建议和重点标注\nPDF 资料下载\n\n查看考试资料 →",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "课程主页"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/index.html#学习资源",
+    "href": "Grade4/computational_biology/index.html#学习资源",
+    "title": "计算系统生物学",
+    "section": "",
+    "text": "网络生物学\n\nBarabási, A. L., & Oltvai, Z. N. (2004). Network biology: understanding the cell’s functional organization. Nature Reviews Genetics, 5(2), 101-113.\n\nWGCNA\n\nLangfelder, P., & Horvath, S. (2008). WGCNA: an R package for weighted correlation network analysis. BMC Bioinformatics, 9(1), 559.\n\n网络聚类\n\nVan Dongen, S. (2000). Graph clustering by flow simulation. PhD thesis, University of Utrecht.\n\n\n\n\n\n\nWGCNA 官方教程\nigraph 文档\nSTRING 数据库",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "课程主页"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/index.html#环境配置",
+    "href": "Grade4/computational_biology/index.html#环境配置",
+    "title": "计算系统生物学",
+    "section": "",
+    "text": "推荐使用 R &gt;= 4.0.0\n\n\n\n# 基础包\ninstall.packages(c(\"tidyverse\", \"ggplot2\", \"dplyr\"))\n\n# 生物信息学包\nif (!require(\"BiocManager\", quietly = TRUE))\n    install.packages(\"BiocManager\")\n\nBiocManager::install(c(\n    \"WGCNA\",\n    \"igraph\",\n    \"clusterProfiler\",\n    \"org.Hs.eg.db\"\n))\n\n\n\n推荐使用 RStudio 作为开发环境，可以更方便地编写和运行 R Markdown 文件。",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "课程主页"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/index.html#数据来源",
+    "href": "Grade4/computational_biology/index.html#数据来源",
+    "title": "计算系统生物学",
+    "section": "",
+    "text": "数据库\n用途\n网址\n\n\n\n\nSTRING\n蛋白质相互作用\nhttps://string-db.org/\n\n\nGEO\n基因表达数据\nhttps://www.ncbi.nlm.nih.gov/geo/\n\n\nKEGG\n代谢通路\nhttps://www.kegg.jp/\n\n\nUniProt\n蛋白质信息\nhttps://www.uniprot.org/",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "课程主页"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/index.html#实验报告要求",
+    "href": "Grade4/computational_biology/index.html#实验报告要求",
+    "title": "计算系统生物学",
+    "section": "",
+    "text": "实验目的：简要说明实验要解决的问题\n实验原理：介绍相关算法和方法\n实验步骤：详细记录分析流程\n结果分析：展示结果并进行解读\n讨论：总结实验收获和思考\n\n\n\n\n\n代码清晰易读，有适当的注释\n使用有意义的变量名\n结果可重现\n图表美观，标注清晰\n\n\n\n\n\n\n\nTip报告撰写建议\n\n\n\n\n使用 R Markdown 编写报告\n代码和文字结合，便于理解\n注意图表的标题和坐标轴标签\n对结果进行充分的生物学解释",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "课程主页"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/index.html#考核方式",
+    "href": "Grade4/computational_biology/index.html#考核方式",
+    "title": "计算系统生物学",
+    "section": "",
+    "text": "平时作业：20%\n实验报告：40%\n期末考试：40%\n\n\n\n通常包括：\n\n理论知识（算法原理、概念解释）\n代码阅读和填空\n简单的数据分析题",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "课程主页"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/index.html#常见问题",
+    "href": "Grade4/computational_biology/index.html#常见问题",
+    "title": "计算系统生物学",
+    "section": "",
+    "text": "A: 尝试以下方法：\n# 1. 更换 CRAN 镜像\noptions(repos = c(CRAN = \"https://mirrors.tuna.tsinghua.edu.cn/CRAN/\"))\n\n# 2. 使用 Bioconductor 镜像\noptions(BioC_mirror = \"https://mirrors.tuna.tsinghua.edu.cn/bioconductor\")\n\n# 3. 更新 R 和 RStudio 到最新版本\n\n\n\nA: 1. 检查数据文件路径是否正确 2. 确认所有必需的包都已安装 3. 查看错误信息，搜索解决方案 4. 在 Discussions 中提问\n\n\n\nA: 实验数据通常包含在代码文件夹中，或从指定的数据库下载。",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "课程主页"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_biology/index.html#联系方式",
+    "href": "Grade4/computational_biology/index.html#联系方式",
+    "title": "计算系统生物学",
+    "section": "",
+    "text": "Discussions\nIssues\nEmail: hinna01@163.com\n\n\n\n祝学习顺利！如有问题欢迎交流！\n返回上级 | 查看实验详情",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算生物学",
+      "课程主页"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_molecular_biology/index.html",
+    "href": "Grade4/computational_molecular_biology/index.html",
+    "title": "计算分子生物学",
+    "section": "",
+    "text": "课程简介：学习生物信息学中的核心算法与计算方法。\n\n\n\n本课程主要内容包括：\n\n序列比对 - 双序列比对、多序列比对算法\n系统进化树 - 进化树的构建方法与分析\n概率模型 - 马尔可夫链及其应用\n\n\n\n\n\n\n\n\n资料\n说明\n\n\n\n\n考试说明\n成绩构成、复习重点\n\n\n\n\n\n\n\n资料正在整理中…如果你有相关资料，欢迎贡献！\n\n返回上级",
     "crumbs": [
       "首页",
       "大四课程",
       "计算分子生物学",
-      "考试说明"
+      "课程主页"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_molecular_biology/index.html#课程内容",
+    "href": "Grade4/computational_molecular_biology/index.html#课程内容",
+    "title": "计算分子生物学",
+    "section": "",
+    "text": "本课程主要内容包括：\n\n序列比对 - 双序列比对、多序列比对算法\n系统进化树 - 进化树的构建方法与分析\n概率模型 - 马尔可夫链及其应用",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算分子生物学",
+      "课程主页"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_molecular_biology/index.html#考试相关",
+    "href": "Grade4/computational_molecular_biology/index.html#考试相关",
+    "title": "计算分子生物学",
+    "section": "",
+    "text": "资料\n说明\n\n\n\n\n考试说明\n成绩构成、复习重点",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算分子生物学",
+      "课程主页"
+    ]
+  },
+  {
+    "objectID": "Grade4/computational_molecular_biology/index.html#其他资料",
+    "href": "Grade4/computational_molecular_biology/index.html#其他资料",
+    "title": "计算分子生物学",
+    "section": "",
+    "text": "资料正在整理中…如果你有相关资料，欢迎贡献！\n\n返回上级",
+    "crumbs": [
+      "首页",
+      "大四课程",
+      "计算分子生物学",
+      "课程主页"
     ]
   },
   {
@@ -1831,7 +1879,7 @@
     "href": "Grade4/index.html",
     "title": "大四课程",
     "section": "",
-    "text": "欢迎来到大四课程资料页面！\n本页面汇总了大四阶段各门课程的学习资料、实验代码和相关文档。\n\n\n\n\n\n课程简介：计算生物学是生物信息学专业的核心课程，主要学习使用计算方法分析生物数据，包括网络分析、基因表达分析等。\n主要内容：\n\n蛋白质相互作用网络（PPI）分析\n加权基因共表达网络分析（WGCNA）\n网络聚类算法（MCL）\n随机游走算法（RWR）\nqPCR 数据分析\n\n实验数量：4 个\n查看详情 →\n\n\n\n\n课程简介：学习使用计算方法进行药物设计和虚拟筛选，包括分子对接、QSAR建模等。\n主要内容：\n\n分子对接\n虚拟筛选\nQSAR 建模\n药物-靶点预测\n\n查看详情 →\n\n\n\n\n课程简介：学习分子水平的计算模拟方法，包括分子动力学模拟、蛋白质结构预测等。\n主要内容：\n\n分子动力学模拟\n蛋白质结构预测\n同源建模\n分子力场\n\n查看详情 →\n\n\n\n\n课程简介：帮助学生了解求职流程，掌握简历制作和面试技巧，为就业做好准备。\n主要内容：\n\n个人简历制作\nAI 模拟面试\n求职渠道与技巧\n职业规划指导\n\n考核方式：\n\n平时作业：个人简历 + AI 面试\n期末考试：线上机考（37 题，满分 100 分）\n\n判断题 15 题（30 分）\n单选题 15 题（30 分）\n多选题 5 题（15 分）\n简答题 2 题（25 分）\n\n\n查看详情 →\n\n\n\n\n\n\n\n大四上学期课程较多，建议：\n\n提前预习：上课前浏览课件和相关资料\n及时复习：课后及时整理笔记\n动手实践：每个实验都要亲自运行代码\n小组讨论：与同学交流学习心得\n\n\n\n\n\n理解基本原理和算法思想\n掌握 R 和 Python 编程\n学会数据分析和可视化\n培养科研思维和问题解决能力\n\n\n\n\n\n\n各门课程通常包括：\n\n平时作业（20-30%）\n实验报告（30-40%）\n期末考试/论文（30-50%）\n\n\n\n\n\n\n\nTip考试准备\n\n\n\n\n整理每门课的知识点\n复习实验原理和代码\n查看往年考试题型\n多与同学交流讨论\n\n\n\n\n\n\n\n\n\n所有实验代码都保存在 Grade4/ 目录下：\nGrade4/\n├── computational_biology/\n│   └── experiments/\n│       ├── Exp1/    # PPI 网络分析\n│       ├── Exp2/    # WGCNA 分析\n│       ├── Exp3/    # MCL & RWR\n│       └── Exp4/    # qPCR 分析\n├── CADD/\n└── computational_molecular_biology/\n\n\n\n本文档网站提供了详细的学习指导和实验说明。\n\n\n\n\n\n\n\n\n《生物信息学》- 李霞、雷健波\n《Bioinformatics and Functional Genomics》- Jonathan Pevsner\n《An Introduction to Systems Biology》- Uri Alon\n\n\n\n\n\nBioconductor - R 生物信息学包\nBiopython - Python 生物信息学库\n生信技能树 - 中文生信学习社区\n\n\n\n\n\n\n遇到问题？\n\n在 Discussions 中提问\n在 Issues 中报告问题\n发邮件给学长学姐：hinna01@163.com\n\n\n\n祝大家学习顺利！\n返回首页",
+    "text": "欢迎来到大四课程资料页面！\n本页面汇总了大四阶段各门课程的学习资料、实验代码和相关文档。\n\n\n\n\n\n课程简介：计算生物学是生物信息学专业的核心课程，主要学习使用计算方法分析生物数据，包括网络分析、基因表达分析等。\n主要内容：\n\n蛋白质相互作用网络（PPI）分析\n加权基因共表达网络分析（WGCNA）\n网络聚类算法（MCL）\n随机游走算法（RWR）\nqPCR 数据分析\n\n实验数量：4 个\n查看详情 →\n\n\n\n\n课程简介：学习使用计算方法进行药物设计和虚拟筛选，包括分子对接、QSAR建模等。\n主要内容：\n\n分子对接\n虚拟筛选\nQSAR 建模\n药物-靶点预测\n\n查看详情 →\n\n\n\n\n课程简介：学习分子水平的计算模拟方法，包括分子动力学模拟、蛋白质结构预测等。\n主要内容：\n\n分子动力学模拟\n蛋白质结构预测\n同源建模\n分子力场\n\n查看详情 →\n\n\n\n\n课程简介：帮助学生了解求职流程，掌握简历制作和面试技巧，为就业做好准备。\n主要内容：\n\n个人简历制作\nAI 模拟面试\n求职渠道与技巧\n职业规划指导\n\n考核方式：\n\n平时作业：个人简历 + AI 面试\n期末考试：线上机考（37 题，满分 100 分）\n\n判断题 15 题（30 分）\n单选题 15 题（30 分）\n多选题 5 题（15 分）\n简答题 2 题（25 分）\n\n\n查看详情 →\n\n\n\n\n内容简介：整理毕业论文从选题、联系指导老师、开题、论文撰写到答辩归档的关键流程。\n主要内容：\n\n毕业论文时间 timetable\n毕业论文选题与指导老师\n毕业论文答辩准备\n文件管理与归档建议\n\n查看详情 →\n\n\n\n\n\n\n\n大四上学期课程较多，建议：\n\n提前预习：上课前浏览课件和相关资料\n及时复习：课后及时整理笔记\n动手实践：每个实验都要亲自运行代码\n小组讨论：与同学交流学习心得\n\n\n\n\n\n理解基本原理和算法思想\n掌握 R 和 Python 编程\n学会数据分析和可视化\n培养科研思维和问题解决能力\n\n\n\n\n\n\n各门课程通常包括：\n\n平时作业（20-30%）\n实验报告（30-40%）\n期末考试/论文（30-50%）\n\n\n\n\n\n\n\nTip考试准备\n\n\n\n\n整理每门课的知识点\n复习实验原理和代码\n查看往年考试题型\n多与同学交流讨论\n\n\n\n\n\n\n\n\n\n所有实验代码都保存在 Grade4/ 目录下：\nGrade4/\n├── computational_biology/\n│   └── experiments/\n│       ├── Exp1/    # PPI 网络分析\n│       ├── Exp2/    # WGCNA 分析\n│       ├── Exp3/    # MCL & RWR\n│       └── Exp4/    # qPCR 分析\n├── CADD/\n└── computational_molecular_biology/\n\n\n\n本文档网站提供了详细的学习指导和实验说明。\n\n\n\n\n\n\n\n\n《生物信息学》- 李霞、雷健波\n《Bioinformatics and Functional Genomics》- Jonathan Pevsner\n《An Introduction to Systems Biology》- Uri Alon\n\n\n\n\n\nBioconductor - R 生物信息学包\nBiopython - Python 生物信息学库\n生信技能树 - 中文生信学习社区\n\n\n\n\n\n\n遇到问题？\n\n在 Discussions 中提问\n在 Issues 中报告问题\n发邮件给学长学姐：hinna01@163.com\n\n\n\n祝大家学习顺利！\n返回首页",
     "crumbs": [
       "首页",
       "大四课程",
@@ -1843,7 +1891,7 @@
     "href": "Grade4/index.html#课程列表",
     "title": "大四课程",
     "section": "",
-    "text": "课程简介：计算生物学是生物信息学专业的核心课程，主要学习使用计算方法分析生物数据，包括网络分析、基因表达分析等。\n主要内容：\n\n蛋白质相互作用网络（PPI）分析\n加权基因共表达网络分析（WGCNA）\n网络聚类算法（MCL）\n随机游走算法（RWR）\nqPCR 数据分析\n\n实验数量：4 个\n查看详情 →\n\n\n\n\n课程简介：学习使用计算方法进行药物设计和虚拟筛选，包括分子对接、QSAR建模等。\n主要内容：\n\n分子对接\n虚拟筛选\nQSAR 建模\n药物-靶点预测\n\n查看详情 →\n\n\n\n\n课程简介：学习分子水平的计算模拟方法，包括分子动力学模拟、蛋白质结构预测等。\n主要内容：\n\n分子动力学模拟\n蛋白质结构预测\n同源建模\n分子力场\n\n查看详情 →\n\n\n\n\n课程简介：帮助学生了解求职流程，掌握简历制作和面试技巧，为就业做好准备。\n主要内容：\n\n个人简历制作\nAI 模拟面试\n求职渠道与技巧\n职业规划指导\n\n考核方式：\n\n平时作业：个人简历 + AI 面试\n期末考试：线上机考（37 题，满分 100 分）\n\n判断题 15 题（30 分）\n单选题 15 题（30 分）\n多选题 5 题（15 分）\n简答题 2 题（25 分）\n\n\n查看详情 →",
+    "text": "课程简介：计算生物学是生物信息学专业的核心课程，主要学习使用计算方法分析生物数据，包括网络分析、基因表达分析等。\n主要内容：\n\n蛋白质相互作用网络（PPI）分析\n加权基因共表达网络分析（WGCNA）\n网络聚类算法（MCL）\n随机游走算法（RWR）\nqPCR 数据分析\n\n实验数量：4 个\n查看详情 →\n\n\n\n\n课程简介：学习使用计算方法进行药物设计和虚拟筛选，包括分子对接、QSAR建模等。\n主要内容：\n\n分子对接\n虚拟筛选\nQSAR 建模\n药物-靶点预测\n\n查看详情 →\n\n\n\n\n课程简介：学习分子水平的计算模拟方法，包括分子动力学模拟、蛋白质结构预测等。\n主要内容：\n\n分子动力学模拟\n蛋白质结构预测\n同源建模\n分子力场\n\n查看详情 →\n\n\n\n\n课程简介：帮助学生了解求职流程，掌握简历制作和面试技巧，为就业做好准备。\n主要内容：\n\n个人简历制作\nAI 模拟面试\n求职渠道与技巧\n职业规划指导\n\n考核方式：\n\n平时作业：个人简历 + AI 面试\n期末考试：线上机考（37 题，满分 100 分）\n\n判断题 15 题（30 分）\n单选题 15 题（30 分）\n多选题 5 题（15 分）\n简答题 2 题（25 分）\n\n\n查看详情 →\n\n\n\n\n内容简介：整理毕业论文从选题、联系指导老师、开题、论文撰写到答辩归档的关键流程。\n主要内容：\n\n毕业论文时间 timetable\n毕业论文选题与指导老师\n毕业论文答辩准备\n文件管理与归档建议\n\n查看详情 →",
     "crumbs": [
       "首页",
       "大四课程",
