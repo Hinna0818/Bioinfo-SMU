@@ -41,6 +41,8 @@ website:
             href: Grade4/computational_molecular_biology/index.md
           - text: "就业指导概论"
             href: Grade4/career_guidance/index.md
+          - text: "毕业论文"
+            href: Grade4/graduation_paper/index.md
       - text: "R 语言教程"
         href: Rbase/index.md
       - text: "生信流程"
@@ -105,6 +107,8 @@ website:
                 href: Grade4/computational_molecular_biology/exam-info.md
           - text: "就业指导概论"
             href: Grade4/career_guidance/index.md
+          - text: "毕业论文"
+            href: Grade4/graduation_paper/index.md
       - section: "R 语言教程"
         contents:
           - text: "教程总览"
