@@ -196,6 +196,7 @@ def calculate_expression(data: pd.DataFrame) -> pd.DataFrame:
 ```
 Bioinfo-SMU/
 ├── docs/                      # 文档目录
+│   ├── _quarto.yml           # Quarto 网站配置
 │   ├── index.md              # 首页
 │   ├── Grade4/               # 大四课程
 │   │   ├── computational_biology/
@@ -212,7 +213,7 @@ Bioinfo-SMU/
 │   │       │   └── ...
 │   │       └── ...
 │   └── ...
-└── mkdocs.yml               # MkDocs 配置文件
+└── README.md                 # 项目说明
 ```
 
 ---
@@ -221,13 +222,13 @@ Bioinfo-SMU/
 
 在提交 Pull Request 之前，请确保：
 
-- [] 代码可以正常运行
-- [] 添加了必要的注释
-- [] 文档格式正确
-- [] 没有拼写错误
-- [] 遵循项目的代码风格
-- [] Commit message 清晰明确
-- [] 已经测试过你的更改
+- [ ] 代码可以正常运行
+- [ ] 添加了必要的注释
+- [ ] 文档格式正确
+- [ ] 没有拼写错误
+- [ ] 遵循项目的代码风格
+- [ ] Commit message 清晰明确
+- [ ] 已经测试过你的更改
 
 ---
 

@@ -288,7 +288,6 @@ Grade4/computational_biology/experiments/Exp3/
 ├── MCL.R                          # MCL 聚类脚本
 ├── RWR.R                          # RWR 分析脚本
 ├── Exp3.Rmd                       # R Markdown 报告
-├── Exp3.html                      # 生成的 HTML 报告
 ├── Crohn's_disease.txt            # 克罗恩病基因列表
 └── c2.cp.kegg_legacy.v2025.1.Hs.entrez.gmt  # KEGG 基因集
 ```

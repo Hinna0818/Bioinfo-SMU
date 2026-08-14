@@ -238,7 +238,6 @@ dotplot(ego, showCategory = 10)
 ```
 Grade4/computational_biology/experiments/Exp2/
 ├── WGCNA.Rmd         # R Markdown 报告
-├── WGCNA.html        # 生成的 HTML 报告
 └── data/             # 数据文件
 ```
 

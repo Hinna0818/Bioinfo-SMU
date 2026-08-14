@@ -293,7 +293,6 @@ ggplot(stat_results, aes(x = log2(fold_change), y = -log10(p_value))) +
 ```
 Grade4/computational_biology/experiments/Exp4/
 ├── Exp4.Rmd          # R Markdown 报告
-├── Exp4.html         # 生成的 HTML 报告
 └── qPCR_data.csv     # qPCR 数据
 ```
 

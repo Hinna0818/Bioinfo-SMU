@@ -179,7 +179,6 @@ print(top_hubs)
 ```
 Grade4/computational_biology/experiments/Exp1/
 ├── Exp1.PPI.Rmd      # R Markdown 报告
-├── PPI.html          # 生成的 HTML 报告
 └── data/             # 数据文件（如果有）
 ```
 

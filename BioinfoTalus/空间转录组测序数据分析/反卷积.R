@@ -3,8 +3,6 @@ library(png)
 library(tidyverse)
 library(ggpubr)
 library(patchwork)
-library(Seurat)
-library(tidyverse)
 library(viridis)
 library(RColorBrewer)
 

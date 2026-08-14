@@ -60,3 +60,8 @@ pip-delete-this-directory.txt
 *.out
 *.html
 _site/
+.quarto/
+**/*.quarto_ipynb
+
+# Legacy static-site output
+/site/

@@ -206,8 +206,7 @@
 
 ### 使用的开源项目
 
-- [MkDocs](https://www.mkdocs.org/) - 文档生成工具
-- [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) - 优秀的文档主题
+- [Quarto](https://quarto.org/) - 文档与网站生成工具
 - [GitHub](https://github.com/) - 代码托管平台
 - [Shields.io](https://shields.io/) - 徽章生成服务
 - [contrib.rocks](https://contrib.rocks/) - 贡献者展示
@@ -216,12 +215,12 @@
 
 ## 未来计划
 
-- [] 添加更多课程的学习资料
-- [] 建立在线交流社区
-- [] 制作视频教程
-- [] 举办线上/线下学习交流会
-- [] 建立题库和练习系统
-- [] 开发配套工具和脚本库
+- [ ] 添加更多课程的学习资料
+- [ ] 建立在线交流社区
+- [ ] 制作视频教程
+- [ ] 举办线上/线下学习交流会
+- [ ] 建立题库和练习系统
+- [ ] 开发配套工具和脚本库
 
 ---
 
