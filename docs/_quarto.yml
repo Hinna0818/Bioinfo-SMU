@@ -9,7 +9,7 @@ project:
     - "Grade3/*.md"
     - "Grade4/**/*.md"
     - "Rbase/*.md"
-
+    - "ComputerExam/**/*.md"
 website:
   title: "Bioinfo-SMU"
   site-url: "https://hinna0818.github.io/Bioinfo-SMU/"
@@ -49,6 +49,8 @@ website:
         href: BioinfoTalus/index.md
       - text: "流行病学数据库"
         href: Epidemiology/UK_Biobank.md
+      - text: "计算机考级"
+        href: ComputerExam/index.md
       - text: "学习资源"
         menu:
           - text: "学习路线"
@@ -125,6 +127,14 @@ website:
         contents:
           - text: "UK Biobank"
             href: Epidemiology/UK_Biobank.md
+      - section: "计算机考级"
+        contents:
+          - text: "考级资料总览"
+            href: ComputerExam/index.md
+          - text: "计算机二级 - Python"
+            href: ComputerExam/Level2-Python/index.md
+          - text: "免责声明"
+            href: ComputerExam/claim.md
       - section: "学习资源"
         contents:
           - text: "学习路线"
