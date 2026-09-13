@@ -1094,6 +1094,66 @@
     ]
   },
   {
+    "objectID": "Epidemiology/UK_Biobank.html",
+    "href": "Epidemiology/UK_Biobank.html",
+    "title": "UK Biobank (UKB) 数据库简介",
+    "section": "",
+    "text": "UK Biobank (UKB) 是一个大型的生物医学数据库，包含了来自英国50万名参与者的详细健康和遗传信息。该数据库由英国政府资助，旨在促进医学研究和公共卫生领域的进步。UKB的数据涵盖了广泛的领域，包括基因组学、影像学、生活方式、环境暴露等，为研究人员提供了宝贵的资源来探索疾病的原因和发展机制。\n\n\n\n\nUK Biobank官方网站：https://www.ukbiobank.ac.uk/\n数据访问指南：https://www.ukbiobank.ac.uk/enable-your-research/apply-for-access\n数据字典：https://biobank.ndph.ox.ac.uk/showcase/\n\n\n\n\n\nUK Biobank数据分析教程：https://www.ukbiobank.ac.uk/enable-your-research/uk-biobank-data-analysis\nUK Biobank RAP平台教程1：RAP平台使用方法以及人口学数据的代码版本的下载\nUK Biobank RAP平台教程2：代谢组学与蛋白质组学数据的下载\nUK Biobank RAP平台教程3：GGIR包处理加速度计原始数据流程\nUK Biobank package：UKBAnalytica1.0提升UKB数据分析效率\n\n\n\n\n通过网盘分享的文件：UKB数据库介绍.pptx等2个文件 链接: https://pan.baidu.com/s/1bGSzOsV6ofUFLP7n_PNysA?pwd=fb33 提取码: fb33 –来自百度网盘超级会员v5的分享",
+    "crumbs": [
+      "首页",
+      "流行病学数据库",
+      "UK Biobank"
+    ]
+  },
+  {
+    "objectID": "Epidemiology/UK_Biobank.html#前言",
+    "href": "Epidemiology/UK_Biobank.html#前言",
+    "title": "UK Biobank (UKB) 数据库简介",
+    "section": "",
+    "text": "UK Biobank (UKB) 是一个大型的生物医学数据库，包含了来自英国50万名参与者的详细健康和遗传信息。该数据库由英国政府资助，旨在促进医学研究和公共卫生领域的进步。UKB的数据涵盖了广泛的领域，包括基因组学、影像学、生活方式、环境暴露等，为研究人员提供了宝贵的资源来探索疾病的原因和发展机制。",
+    "crumbs": [
+      "首页",
+      "流行病学数据库",
+      "UK Biobank"
+    ]
+  },
+  {
+    "objectID": "Epidemiology/UK_Biobank.html#网站",
+    "href": "Epidemiology/UK_Biobank.html#网站",
+    "title": "UK Biobank (UKB) 数据库简介",
+    "section": "",
+    "text": "UK Biobank官方网站：https://www.ukbiobank.ac.uk/\n数据访问指南：https://www.ukbiobank.ac.uk/enable-your-research/apply-for-access\n数据字典：https://biobank.ndph.ox.ac.uk/showcase/",
+    "crumbs": [
+      "首页",
+      "流行病学数据库",
+      "UK Biobank"
+    ]
+  },
+  {
+    "objectID": "Epidemiology/UK_Biobank.html#学习资源",
+    "href": "Epidemiology/UK_Biobank.html#学习资源",
+    "title": "UK Biobank (UKB) 数据库简介",
+    "section": "",
+    "text": "UK Biobank数据分析教程：https://www.ukbiobank.ac.uk/enable-your-research/uk-biobank-data-analysis\nUK Biobank RAP平台教程1：RAP平台使用方法以及人口学数据的代码版本的下载\nUK Biobank RAP平台教程2：代谢组学与蛋白质组学数据的下载\nUK Biobank RAP平台教程3：GGIR包处理加速度计原始数据流程\nUK Biobank package：UKBAnalytica1.0提升UKB数据分析效率",
+    "crumbs": [
+      "首页",
+      "流行病学数据库",
+      "UK Biobank"
+    ]
+  },
+  {
+    "objectID": "Epidemiology/UK_Biobank.html#uk-biobank数据库ppt视频介绍",
+    "href": "Epidemiology/UK_Biobank.html#uk-biobank数据库ppt视频介绍",
+    "title": "UK Biobank (UKB) 数据库简介",
+    "section": "",
+    "text": "通过网盘分享的文件：UKB数据库介绍.pptx等2个文件 链接: https://pan.baidu.com/s/1bGSzOsV6ofUFLP7n_PNysA?pwd=fb33 提取码: fb33 –来自百度网盘超级会员v5的分享",
+    "crumbs": [
+      "首页",
+      "流行病学数据库",
+      "UK Biobank"
+    ]
+  },
+  {
     "objectID": "BioinfoTalus/index.html",
     "href": "BioinfoTalus/index.html",
     "title": "生信流程 (BioinfoTalus)",
@@ -1202,63 +1262,39 @@
     ]
   },
   {
-    "objectID": "Epidemiology/UK_Biobank.html",
-    "href": "Epidemiology/UK_Biobank.html",
-    "title": "UK Biobank (UKB) 数据库简介",
+    "objectID": "Grade1/index.html",
+    "href": "Grade1/index.html",
+    "title": "大一课程",
     "section": "",
-    "text": "UK Biobank (UKB) 是一个大型的生物医学数据库，包含了来自英国50万名参与者的详细健康和遗传信息。该数据库由英国政府资助，旨在促进医学研究和公共卫生领域的进步。UKB的数据涵盖了广泛的领域，包括基因组学、影像学、生活方式、环境暴露等，为研究人员提供了宝贵的资源来探索疾病的原因和发展机制。\n\n\n\n\nUK Biobank官方网站：https://www.ukbiobank.ac.uk/\n数据访问指南：https://www.ukbiobank.ac.uk/enable-your-research/apply-for-access\n数据字典：https://biobank.ndph.ox.ac.uk/showcase/\n\n\n\n\n\nUK Biobank数据分析教程：https://www.ukbiobank.ac.uk/enable-your-research/uk-biobank-data-analysis\nUK Biobank RAP平台教程1：RAP平台使用方法以及人口学数据的代码版本的下载\nUK Biobank RAP平台教程2：代谢组学与蛋白质组学数据的下载\nUK Biobank RAP平台教程3：GGIR包处理加速度计原始数据流程\nUK Biobank package：UKBAnalytica1.0提升UKB数据分析效率\n\n\n\n\n通过网盘分享的文件：UKB数据库介绍.pptx等2个文件 链接: https://pan.baidu.com/s/1bGSzOsV6ofUFLP7n_PNysA?pwd=fb33 提取码: fb33 –来自百度网盘超级会员v5的分享",
+    "text": "大一阶段以公共基础课程学习为主。本栏目用于整理课程资料、往年真题和复习参考。",
     "crumbs": [
       "首页",
-      "流行病学数据库",
-      "UK Biobank"
+      "大一课程",
+      "大一课程总览"
     ]
   },
   {
-    "objectID": "Epidemiology/UK_Biobank.html#前言",
-    "href": "Epidemiology/UK_Biobank.html#前言",
-    "title": "UK Biobank (UKB) 数据库简介",
-    "section": "",
-    "text": "UK Biobank (UKB) 是一个大型的生物医学数据库，包含了来自英国50万名参与者的详细健康和遗传信息。该数据库由英国政府资助，旨在促进医学研究和公共卫生领域的进步。UKB的数据涵盖了广泛的领域，包括基因组学、影像学、生活方式、环境暴露等，为研究人员提供了宝贵的资源来探索疾病的原因和发展机制。",
+    "objectID": "Grade1/index.html#高等数学下真题",
+    "href": "Grade1/index.html#高等数学下真题",
+    "title": "大一课程",
+    "section": "高等数学（下）真题",
+    "text": "高等数学（下）真题\n《26 高数下真题》手写版 PDF，适合复习时查看题目与解题过程。\n\n大一下学期 高等数学 PDF · 6 页\n\n\n在线查看 下载 PDF",
     "crumbs": [
       "首页",
-      "流行病学数据库",
-      "UK Biobank"
+      "大一课程",
+      "大一课程总览"
     ]
   },
   {
-    "objectID": "Epidemiology/UK_Biobank.html#网站",
-    "href": "Epidemiology/UK_Biobank.html#网站",
-    "title": "UK Biobank (UKB) 数据库简介",
-    "section": "",
-    "text": "UK Biobank官方网站：https://www.ukbiobank.ac.uk/\n数据访问指南：https://www.ukbiobank.ac.uk/enable-your-research/apply-for-access\n数据字典：https://biobank.ndph.ox.ac.uk/showcase/",
+    "objectID": "Grade1/index.html#在线预览",
+    "href": "Grade1/index.html#在线预览",
+    "title": "大一课程",
+    "section": "在线预览",
+    "text": "在线预览\n\n\n\n\n\n\n\n\n\n\nNote使用说明\n\n\n\n若浏览器无法显示内嵌预览，请使用上方“在线查看”或“下载 PDF”。资料仅供学习与复习参考。\n\n\n返回首页",
     "crumbs": [
       "首页",
-      "流行病学数据库",
-      "UK Biobank"
-    ]
-  },
-  {
-    "objectID": "Epidemiology/UK_Biobank.html#学习资源",
-    "href": "Epidemiology/UK_Biobank.html#学习资源",
-    "title": "UK Biobank (UKB) 数据库简介",
-    "section": "",
-    "text": "UK Biobank数据分析教程：https://www.ukbiobank.ac.uk/enable-your-research/uk-biobank-data-analysis\nUK Biobank RAP平台教程1：RAP平台使用方法以及人口学数据的代码版本的下载\nUK Biobank RAP平台教程2：代谢组学与蛋白质组学数据的下载\nUK Biobank RAP平台教程3：GGIR包处理加速度计原始数据流程\nUK Biobank package：UKBAnalytica1.0提升UKB数据分析效率",
-    "crumbs": [
-      "首页",
-      "流行病学数据库",
-      "UK Biobank"
-    ]
-  },
-  {
-    "objectID": "Epidemiology/UK_Biobank.html#uk-biobank数据库ppt视频介绍",
-    "href": "Epidemiology/UK_Biobank.html#uk-biobank数据库ppt视频介绍",
-    "title": "UK Biobank (UKB) 数据库简介",
-    "section": "",
-    "text": "通过网盘分享的文件：UKB数据库介绍.pptx等2个文件 链接: https://pan.baidu.com/s/1bGSzOsV6ofUFLP7n_PNysA?pwd=fb33 提取码: fb33 –来自百度网盘超级会员v5的分享",
-    "crumbs": [
-      "首页",
-      "流行病学数据库",
-      "UK Biobank"
+      "大一课程",
+      "大一课程总览"
     ]
   },
   {
@@ -2316,7 +2352,7 @@
     "href": "index.html#项目统计",
     "title": "Bioinfo-SMU",
     "section": "项目统计",
-    "text": "项目统计\n\n\n课程层级\n4 覆盖大二到大四课程资料\n\n\nR 教程\n7 从基础语法到数据可视化\n\n\n分析流程\n3 Bulk、单细胞和空间转录组",
+    "text": "项目统计\n\n\n课程层级\n4 覆盖大一到大四课程资料\n\n\nR 教程\n7 从基础语法到数据可视化\n\n\n分析流程\n3 Bulk、单细胞和空间转录组",
     "crumbs": [
       "首页"
     ]
@@ -2326,7 +2362,7 @@
     "href": "index.html#课程概览",
     "title": "Bioinfo-SMU",
     "section": "课程概览",
-    "text": "课程概览\n\n\nR 语言教程\n系统学习 R 语言基础知识和生物信息学数据分析方法。\n进入教程\n\n\n生信流程\n面向转录组数据分析的 R 脚本集合，覆盖 Bulk、单细胞与空间转录组。\n查看流程\n\n\n计算生物学\n涵盖 PPI 网络分析、WGCNA、网络聚类、随机游走和 qPCR 数据分析。\n查看课程\n\n\n计算机辅助药物设计\n学习使用计算方法进行药物设计、虚拟筛选和 QSAR 建模。\n查看课程\n\n\n计算分子生物学\n整理序列比对、概率模型和分子层面计算方法相关内容。\n查看课程\n\n\n学习资源\n整理学习路线、常用工具、数据库和参考书目。\n查看资源",
+    "text": "课程概览\n\n\n大一课程\n收录大一公共基础课程资料，目前包含高等数学（下）真题。\n查看课程\n\n\nR 语言教程\n系统学习 R 语言基础知识和生物信息学数据分析方法。\n进入教程\n\n\n生信流程\n面向转录组数据分析的 R 脚本集合，覆盖 Bulk、单细胞与空间转录组。\n查看流程\n\n\n计算生物学\n涵盖 PPI 网络分析、WGCNA、网络聚类、随机游走和 qPCR 数据分析。\n查看课程\n\n\n计算机辅助药物设计\n学习使用计算方法进行药物设计、虚拟筛选和 QSAR 建模。\n查看课程\n\n\n计算分子生物学\n整理序列比对、概率模型和分子层面计算方法相关内容。\n查看课程\n\n\n学习资源\n整理学习路线、常用工具、数据库和参考书目。\n查看资源",
     "crumbs": [
       "首页"
     ]

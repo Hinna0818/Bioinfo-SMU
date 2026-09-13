@@ -144,6 +144,55 @@ a:hover {
   box-shadow: 0 12px 28px rgba(15, 23, 42, 0.045);
 }
 
+.resource-card {
+  background: #ffffff;
+  border: 1px solid var(--smu-border);
+  border-left: 6px solid var(--smu-brand);
+  border-radius: 8px;
+  padding: clamp(1.1rem, 3vw, 1.6rem);
+  margin: 1.4rem 0 2rem;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.045);
+}
+
+.resource-card h2 {
+  border: 0;
+  margin: 0 0 0.6rem;
+  padding: 0;
+}
+
+.resource-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 1rem 0;
+}
+
+.resource-meta span {
+  background: #eef7f5;
+  border: 1px solid var(--smu-border);
+  border-radius: 999px;
+  color: var(--smu-brand-dark);
+  font-size: 0.9rem;
+  font-weight: 650;
+  padding: 0.28rem 0.7rem;
+}
+
+.pdf-viewer {
+  background: #eef7f5;
+  border: 1px solid var(--smu-border);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 1rem 0 1.5rem;
+}
+
+.pdf-viewer iframe {
+  display: block;
+  width: 100%;
+  height: min(78vh, 920px);
+  min-height: 680px;
+  border: 0;
+}
+
 .feature-card h3,
 .course-card h3,
 .stat-card h3 {
@@ -217,5 +266,10 @@ pre code {
   .button,
   .link-row a {
     width: 100%;
+  }
+
+  .pdf-viewer iframe {
+    height: 68vh;
+    min-height: 480px;
   }
 }
