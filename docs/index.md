@@ -78,7 +78,7 @@ cd Bioinfo-SMU
 ::: {.stat-card}
 ### 课程层级
 **4**
-<span>覆盖大二到大四课程资料</span>
+<span>覆盖大一到大四课程资料</span>
 :::
 
 ::: {.stat-card}
@@ -98,6 +98,13 @@ cd Bioinfo-SMU
 ## 课程概览
 
 ::: {.course-grid}
+
+::: {.course-card}
+### 大一课程
+收录大一公共基础课程资料，目前包含高等数学（下）真题。
+
+[查看课程](Grade1/index.md)
+:::
 
 ::: {.course-card}
 ### R 语言教程

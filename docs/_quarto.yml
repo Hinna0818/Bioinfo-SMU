@@ -5,6 +5,7 @@ project:
     - "*.md"
     - "BioinfoTalus/*.md"
     - "Epidemiology/*.md"
+    - "Grade1/*.md"
     - "Grade2/*.md"
     - "Grade3/*.md"
     - "Grade4/**/*.md"
@@ -25,6 +26,8 @@ website:
     left:
       - text: "首页"
         href: index.md
+      - text: "大一课程"
+        href: Grade1/index.md
       - text: "大二课程"
         href: Grade2/index.md
       - text: "大三课程"
@@ -71,6 +74,10 @@ website:
     contents:
       - text: "首页"
         href: index.md
+      - section: "大一课程"
+        contents:
+          - text: "大一课程总览"
+            href: Grade1/index.md
       - section: "大二课程"
         contents:
           - text: "大二课程总览"
