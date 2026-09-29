@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>index – Bioinfo-SMU</title>
+<title>foundation-models-dna – Bioinfo-SMU</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,6 +26,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -35,8 +70,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../Grade4/computational_biology/index.html" rel="next">
-<link href="../Grade3/index.html" rel="prev">
+<link href="../AI4S/foundation-models-rna.html" rel="next">
+<link href="../AI4S/index.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -405,7 +440,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Grade4/index.html">大四课程</a></li><li class="breadcrumb-item"><a href="../Grade4/index.html">大四课程总览</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../AI4S/index.html">AI4Science 专题</a></li><li class="breadcrumb-item"><a href="../AI4S/foundation-models-dna.html">DNA Foundation Models</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -493,7 +528,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Grade4/index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../Grade4/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">大四课程总览</span></a>
   </div>
 </li>
@@ -667,7 +702,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../AI4S/foundation-models-dna.html" class="sidebar-item-text sidebar-link">
+  <a href="../AI4S/foundation-models-dna.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">DNA Foundation Models</span></a>
   </div>
 </li>
@@ -748,235 +783,579 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#大四课程" id="toc-大四课程" class="nav-link active" data-scroll-target="#大四课程">大四课程</a>
+  <li><a href="#dna-foundation-models" id="toc-dna-foundation-models" class="nav-link active" data-scroll-target="#dna-foundation-models">DNA Foundation Models</a>
   <ul class="collapse">
-  <li><a href="#课程列表" id="toc-课程列表" class="nav-link" data-scroll-target="#课程列表">课程列表</a>
+  <li><a href="#核心概念" id="toc-核心概念" class="nav-link" data-scroll-target="#核心概念">核心概念</a>
   <ul class="collapse">
-  <li><a href="#计算生物学" id="toc-计算生物学" class="nav-link" data-scroll-target="#计算生物学">计算生物学</a></li>
-  <li><a href="#计算机辅助药物设计cadd" id="toc-计算机辅助药物设计cadd" class="nav-link" data-scroll-target="#计算机辅助药物设计cadd">计算机辅助药物设计（CADD）</a></li>
-  <li><a href="#计算分子生物学" id="toc-计算分子生物学" class="nav-link" data-scroll-target="#计算分子生物学">计算分子生物学</a></li>
-  <li><a href="#就业指导概论" id="toc-就业指导概论" class="nav-link" data-scroll-target="#就业指导概论">就业指导概论</a></li>
-  <li><a href="#毕业论文" id="toc-毕业论文" class="nav-link" data-scroll-target="#毕业论文">毕业论文</a></li>
+  <li><a href="#dna-序列的复杂性" id="toc-dna-序列的复杂性" class="nav-link" data-scroll-target="#dna-序列的复杂性">DNA 序列的复杂性</a></li>
+  <li><a href="#为什么需要-foundation-models" id="toc-为什么需要-foundation-models" class="nav-link" data-scroll-target="#为什么需要-foundation-models">为什么需要 Foundation Models？</a></li>
   </ul></li>
-  <li><a href="#学习建议" id="toc-学习建议" class="nav-link" data-scroll-target="#学习建议">学习建议</a>
+  <li><a href="#经典模型" id="toc-经典模型" class="nav-link" data-scroll-target="#经典模型">经典模型</a>
   <ul class="collapse">
-  <li><a href="#时间安排" id="toc-时间安排" class="nav-link" data-scroll-target="#时间安排">时间安排</a></li>
-  <li><a href="#学习重点" id="toc-学习重点" class="nav-link" data-scroll-target="#学习重点">学习重点</a></li>
+  <li><a href="#dnabert2021" id="toc-dnabert2021" class="nav-link" data-scroll-target="#dnabert2021">1. DNABERT（2021）</a></li>
+  <li><a href="#nucleotide-transformer2023" id="toc-nucleotide-transformer2023" class="nav-link" data-scroll-target="#nucleotide-transformer2023">2. Nucleotide Transformer（2023）</a></li>
+  <li><a href="#hyenadna2023" id="toc-hyenadna2023" class="nav-link" data-scroll-target="#hyenadna2023">3. HyenaDNA（2023）</a></li>
+  <li><a href="#enformer2021" id="toc-enformer2021" class="nav-link" data-scroll-target="#enformer2021">4. Enformer（2021）</a></li>
+  <li><a href="#gena-lm2023" id="toc-gena-lm2023" class="nav-link" data-scroll-target="#gena-lm2023">5. GENA-LM（2023）</a></li>
   </ul></li>
-  <li><a href="#考核方式" id="toc-考核方式" class="nav-link" data-scroll-target="#考核方式">考核方式</a></li>
-  <li><a href="#资源导航" id="toc-资源导航" class="nav-link" data-scroll-target="#资源导航">资源导航</a>
+  <li><a href="#应用场景" id="toc-应用场景" class="nav-link" data-scroll-target="#应用场景">应用场景</a>
   <ul class="collapse">
-  <li><a href="#代码仓库" id="toc-代码仓库" class="nav-link" data-scroll-target="#代码仓库">代码仓库</a></li>
-  <li><a href="#文档资料" id="toc-文档资料" class="nav-link" data-scroll-target="#文档资料">文档资料</a></li>
+  <li><a href="#变异效应预测" id="toc-变异效应预测" class="nav-link" data-scroll-target="#变异效应预测">1. 变异效应预测</a></li>
+  <li><a href="#启动子识别" id="toc-启动子识别" class="nav-link" data-scroll-target="#启动子识别">2. 启动子识别</a></li>
+  <li><a href="#转录因子结合位点预测" id="toc-转录因子结合位点预测" class="nav-link" data-scroll-target="#转录因子结合位点预测">3. 转录因子结合位点预测</a></li>
+  <li><a href="#剪接位点预测" id="toc-剪接位点预测" class="nav-link" data-scroll-target="#剪接位点预测">4. 剪接位点预测</a></li>
+  <li><a href="#表观遗传修饰预测" id="toc-表观遗传修饰预测" class="nav-link" data-scroll-target="#表观遗传修饰预测">5. 表观遗传修饰预测</a></li>
+  </ul></li>
+  <li><a href="#模型比较" id="toc-模型比较" class="nav-link" data-scroll-target="#模型比较">模型比较</a></li>
+  <li><a href="#评估指标" id="toc-评估指标" class="nav-link" data-scroll-target="#评估指标">评估指标</a>
+  <ul class="collapse">
+  <li><a href="#序列预测任务" id="toc-序列预测任务" class="nav-link" data-scroll-target="#序列预测任务">序列预测任务</a></li>
+  <li><a href="#生成任务" id="toc-生成任务" class="nav-link" data-scroll-target="#生成任务">生成任务</a></li>
+  <li><a href="#变异效应预测-1" id="toc-变异效应预测-1" class="nav-link" data-scroll-target="#变异效应预测-1">变异效应预测</a></li>
+  </ul></li>
+  <li><a href="#实践工具" id="toc-实践工具" class="nav-link" data-scroll-target="#实践工具">实践工具</a>
+  <ul class="collapse">
+  <li><a href="#hugging-face-transformers" id="toc-hugging-face-transformers" class="nav-link" data-scroll-target="#hugging-face-transformers">Hugging Face Transformers</a></li>
+  <li><a href="#dnabert-工具包" id="toc-dnabert-工具包" class="nav-link" data-scroll-target="#dnabert-工具包">DNABERT 工具包</a></li>
+  <li><a href="#enformer-工具" id="toc-enformer-工具" class="nav-link" data-scroll-target="#enformer-工具">Enformer 工具</a></li>
+  <li><a href="#hyenadna" id="toc-hyenadna" class="nav-link" data-scroll-target="#hyenadna">HyenaDNA</a></li>
+  </ul></li>
+  <li><a href="#挑战与未来方向" id="toc-挑战与未来方向" class="nav-link" data-scroll-target="#挑战与未来方向">挑战与未来方向</a>
+  <ul class="collapse">
+  <li><a href="#当前挑战" id="toc-当前挑战" class="nav-link" data-scroll-target="#当前挑战">当前挑战</a></li>
+  <li><a href="#未来方向" id="toc-未来方向" class="nav-link" data-scroll-target="#未来方向">未来方向</a></li>
   </ul></li>
   <li><a href="#学习资源" id="toc-学习资源" class="nav-link" data-scroll-target="#学习资源">学习资源</a>
   <ul class="collapse">
-  <li><a href="#推荐教材" id="toc-推荐教材" class="nav-link" data-scroll-target="#推荐教材">推荐教材</a></li>
-  <li><a href="#在线资源" id="toc-在线资源" class="nav-link" data-scroll-target="#在线资源">在线资源</a></li>
+  <li><a href="#论文" id="toc-论文" class="nav-link" data-scroll-target="#论文">论文</a></li>
+  <li><a href="#教程" id="toc-教程" class="nav-link" data-scroll-target="#教程">教程</a></li>
+  <li><a href="#课程" id="toc-课程" class="nav-link" data-scroll-target="#课程">课程</a></li>
   </ul></li>
-  <li><a href="#互助学习" id="toc-互助学习" class="nav-link" data-scroll-target="#互助学习">互助学习</a></li>
+  <li><a href="#相关链接" id="toc-相关链接" class="nav-link" data-scroll-target="#相关链接">相关链接</a></li>
   </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Grade4/index.html">大四课程</a></li><li class="breadcrumb-item"><a href="../Grade4/index.html">大四课程总览</a></li></ol></nav></header>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../AI4S/index.html">AI4Science 专题</a></li><li class="breadcrumb-item"><a href="../AI4S/foundation-models-dna.html">DNA Foundation Models</a></li></ol></nav></header>
 
 
 
 
 
-<section id="大四课程" class="level1">
-<h1>大四课程</h1>
-<p>欢迎来到大四课程资料页面！</p>
-<p>本页面汇总了大四阶段各门课程的学习资料、实验代码和相关文档。</p>
+<section id="dna-foundation-models" class="level1">
+<h1>DNA Foundation Models</h1>
+<p>DNA 序列编码了生命的遗传信息，包含基因编码区、调控元件、非编码区等复杂结构。DNA Foundation Models 通过在大规模基因组数据上进行预训练，学习 DNA 序列中的语法规则、功能模式和进化约束，能够预测基因功能、调控元件、变异效应等多种下游任务。</p>
 <hr>
-<section id="课程列表" class="level2">
-<h2 class="anchored" data-anchor-id="课程列表">课程列表</h2>
-<section id="计算生物学" class="level3">
-<h3 class="anchored" data-anchor-id="计算生物学">计算生物学</h3>
-<p><strong>课程简介</strong>：计算生物学是生物信息学专业的核心课程，主要学习使用计算方法分析生物数据，包括网络分析、基因表达分析等。</p>
-<p><strong>主要内容</strong>：</p>
-<ul>
-<li>蛋白质相互作用网络（PPI）分析</li>
-<li>加权基因共表达网络分析（WGCNA）</li>
-<li>网络聚类算法（MCL）</li>
-<li>随机游走算法（RWR）</li>
-<li>qPCR 数据分析</li>
-</ul>
-<p><strong>实验数量</strong>：4 个</p>
-<p><a href="../Grade4/computational_biology/index.html">查看详情 →</a></p>
-<hr>
-</section>
-<section id="计算机辅助药物设计cadd" class="level3">
-<h3 class="anchored" data-anchor-id="计算机辅助药物设计cadd">计算机辅助药物设计（CADD）</h3>
-<p><strong>课程简介</strong>：学习使用计算方法进行药物设计和虚拟筛选，包括分子对接、QSAR建模等。</p>
-<p><strong>主要内容</strong>：</p>
-<ul>
-<li>分子对接</li>
-<li>虚拟筛选</li>
-<li>QSAR 建模</li>
-<li>药物-靶点预测</li>
-</ul>
-<p><a href="../Grade4/CADD/index.html">查看详情 →</a></p>
-<hr>
-</section>
-<section id="计算分子生物学" class="level3">
-<h3 class="anchored" data-anchor-id="计算分子生物学">计算分子生物学</h3>
-<p><strong>课程简介</strong>：学习分子水平的计算模拟方法，包括分子动力学模拟、蛋白质结构预测等。</p>
-<p><strong>主要内容</strong>：</p>
-<ul>
-<li>分子动力学模拟</li>
-<li>蛋白质结构预测</li>
-<li>同源建模</li>
-<li>分子力场</li>
-</ul>
-<p><a href="../Grade4/computational_molecular_biology/index.html">查看详情 →</a></p>
-<hr>
-</section>
-<section id="就业指导概论" class="level3">
-<h3 class="anchored" data-anchor-id="就业指导概论">就业指导概论</h3>
-<p><strong>课程简介</strong>：帮助学生了解求职流程，掌握简历制作和面试技巧，为就业做好准备。</p>
-<p><strong>主要内容</strong>：</p>
-<ul>
-<li>个人简历制作</li>
-<li>AI 模拟面试</li>
-<li>求职渠道与技巧</li>
-<li>职业规划指导</li>
-</ul>
-<p><strong>考核方式</strong>：</p>
-<ul>
-<li>平时作业：个人简历 + AI 面试</li>
-<li>期末考试：线上机考（37 题，满分 100 分）
-<ul>
-<li>判断题 15 题（30 分）</li>
-<li>单选题 15 题（30 分）</li>
-<li>多选题 5 题（15 分）</li>
-<li>简答题 2 题（25 分）</li>
-</ul></li>
-</ul>
-<p><a href="../Grade4/career_guidance/index.html">查看详情 →</a></p>
-<hr>
-</section>
-<section id="毕业论文" class="level3">
-<h3 class="anchored" data-anchor-id="毕业论文">毕业论文</h3>
-<p><strong>内容简介</strong>：整理毕业论文从选题、联系指导老师、开题、论文撰写到答辩归档的关键流程。</p>
-<p><strong>主要内容</strong>：</p>
-<ul>
-<li>毕业论文时间 timetable</li>
-<li>毕业论文选题与指导老师</li>
-<li>毕业论文答辩准备</li>
-<li>文件管理与归档建议</li>
-</ul>
-<p><a href="../Grade4/graduation_paper/index.html">查看详情 →</a></p>
-<hr>
-</section>
-</section>
-<section id="学习建议" class="level2">
-<h2 class="anchored" data-anchor-id="学习建议">学习建议</h2>
-<section id="时间安排" class="level3">
-<h3 class="anchored" data-anchor-id="时间安排">时间安排</h3>
-<p>大四上学期课程较多，建议：</p>
+<section id="核心概念" class="level2">
+<h2 class="anchored" data-anchor-id="核心概念">核心概念</h2>
+<section id="dna-序列的复杂性" class="level3">
+<h3 class="anchored" data-anchor-id="dna-序列的复杂性">DNA 序列的复杂性</h3>
+<p><strong>多层次信息编码</strong>:</p>
 <ol type="1">
-<li><strong>提前预习</strong>：上课前浏览课件和相关资料</li>
-<li><strong>及时复习</strong>：课后及时整理笔记</li>
-<li><strong>动手实践</strong>：每个实验都要亲自运行代码</li>
-<li><strong>小组讨论</strong>：与同学交流学习心得</li>
+<li><strong>编码区（Coding Regions）</strong>
+<ul>
+<li>基因外显子：编码蛋白质</li>
+<li>密码子偏好性</li>
+<li>剪接位点信号</li>
+</ul></li>
+<li><strong>调控元件（Regulatory Elements）</strong>
+<ul>
+<li>启动子（Promoter）</li>
+<li>增强子（Enhancer）</li>
+<li>沉默子（Silencer）</li>
+<li>绝缘子（Insulator）</li>
+</ul></li>
+<li><strong>非编码区（Non-coding Regions）</strong>
+<ul>
+<li>内含子</li>
+<li>基因间区</li>
+<li>非编码 RNA 基因</li>
+</ul></li>
+<li><strong>表观遗传信号</strong>
+<ul>
+<li>CpG 岛</li>
+<li>转录因子结合位点（TFBS）</li>
+<li>染色质可及性区域</li>
+</ul></li>
 </ol>
+<p><strong>序列特征</strong>: - 长程依赖关系（可达数十万碱基） - 位置依赖性（上下文敏感） - 物种特异性与保守性共存</p>
+<hr>
 </section>
-<section id="学习重点" class="level3">
-<h3 class="anchored" data-anchor-id="学习重点">学习重点</h3>
+<section id="为什么需要-foundation-models" class="level3">
+<h3 class="anchored" data-anchor-id="为什么需要-foundation-models">为什么需要 Foundation Models？</h3>
+<p><strong>传统方法的局限</strong>: - <strong>基于规则的方法</strong>: 难以捕捉复杂模式 - <strong>k-mer 特征</strong>: 维度爆炸，缺乏泛化能力 - <strong>单任务模型</strong>: 每个任务需要独立训练，数据效率低</p>
+<p><strong>Foundation Models 的优势</strong>: - <strong>迁移学习</strong>: 预训练捕捉通用序列特征，适应多种下游任务 - <strong>长程依赖</strong>: Transformer 等架构捕捉远距离相互作用 - <strong>无监督学习</strong>: 利用海量未标注基因组数据 - <strong>零样本学习</strong>: 预测训练时未见过的序列功能</p>
+<hr>
+</section>
+</section>
+<section id="经典模型" class="level2">
+<h2 class="anchored" data-anchor-id="经典模型">经典模型</h2>
+<section id="dnabert2021" class="level3">
+<h3 class="anchored" data-anchor-id="dnabert2021">1. DNABERT（2021）</h3>
+<p><strong>架构</strong>: 基于 BERT（Bidirectional Encoder Representations from Transformers）</p>
+<p><strong>训练数据</strong>: 人类基因组参考序列（GRCh38）</p>
+<p><strong>输入表示</strong>: k-mer tokenization（k=3, 4, 5, 6） - 例如：<code>ATCGAT</code> → <code>ATC</code>, <code>TCG</code>, <code>CGA</code>, <code>GAT</code></p>
+<p><strong>预训练任务</strong>: - Masked Language Modeling（MLM）：随机遮盖 15% 的 k-mer，预测被遮盖的 token</p>
+<p><strong>模型规模</strong>: - 12 层 Transformer - 隐藏维度 768 - 12 个注意力头 - 约 110M 参数</p>
+<p><strong>下游任务</strong>: - 启动子预测 - 转录因子结合位点预测 - 剪接位点预测 - 变异效应预测</p>
+<p><strong>性能</strong>: - 在多个基因组预测任务上超越传统 CNN 和 RNN 模型 - 微调后在少样本场景下表现优异</p>
+<p><strong>代码示例</strong>:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> transformers <span class="im">import</span> AutoTokenizer, AutoModel</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 加载预训练 DNABERT</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>tokenizer <span class="op">=</span> AutoTokenizer.from_pretrained(<span class="st">"zhihan1996/DNA_bert_6"</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> AutoModel.from_pretrained(<span class="st">"zhihan1996/DNA_bert_6"</span>)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># DNA 序列</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>sequence <span class="op">=</span> <span class="st">"ATCGATCGATCG"</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co"># k-mer 转换（k=6）</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> seq_to_kmer(seq, k<span class="op">=</span><span class="dv">6</span>):</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="st">" "</span>.join([seq[i:i<span class="op">+</span>k] <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(seq) <span class="op">-</span> k <span class="op">+</span> <span class="dv">1</span>)])</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>kmer_seq <span class="op">=</span> seq_to_kmer(sequence, k<span class="op">=</span><span class="dv">6</span>)</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"k-mer 序列: </span><span class="sc">{</span>kmer_seq<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Tokenize</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>inputs <span class="op">=</span> tokenizer(kmer_seq, return_tensors<span class="op">=</span><span class="st">"pt"</span>)</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="co"># 获取嵌入</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> torch.no_grad():</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    outputs <span class="op">=</span> model(<span class="op">**</span>inputs)</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>    embeddings <span class="op">=</span> outputs.last_hidden_state</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"嵌入形状: </span><span class="sc">{</span>embeddings<span class="sc">.</span>shape<span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div>
+<p><strong>论文</strong>: Ji, Y. et al.&nbsp;(2021). DNABERT: pre-trained Bidirectional Encoder Representations from Transformers model for DNA-language in genome. <em>Bioinformatics</em>, 37(15), 2112-2120.</p>
+<hr>
+</section>
+<section id="nucleotide-transformer2023" class="level3">
+<h3 class="anchored" data-anchor-id="nucleotide-transformer2023">2. Nucleotide Transformer（2023）</h3>
+<p><strong>架构</strong>: Transformer encoder</p>
+<p><strong>训练数据</strong>: - 多物种基因组（3,202 个物种） - 包含原核生物、真核生物、病毒 - 总共约 300B tokens</p>
+<p><strong>输入表示</strong>: 单核苷酸 tokenization（A, T, C, G）</p>
+<p><strong>预训练任务</strong>: - Masked Language Modeling</p>
+<p><strong>模型规模</strong>: - 多个版本：500M, 1B, 2.5B 参数 - 最大上下文窗口：6kb</p>
+<p><strong>特点</strong>: - 跨物种预训练，学习进化保守特征 - 支持零样本跨物种迁移 - 性能随模型规模增长而提升</p>
+<p><strong>下游任务</strong>: - 基因预测 - 调控元件预测 - 变异效应预测 - 表观遗传修饰预测</p>
+<p><strong>代码示例</strong>:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> transformers <span class="im">import</span> AutoTokenizer, AutoModelForMaskedLM</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 加载模型</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>model_name <span class="op">=</span> <span class="st">"InstaDeepAI/nucleotide-transformer-500m-human-ref"</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>tokenizer <span class="op">=</span> AutoTokenizer.from_pretrained(model_name)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> AutoModelForMaskedLM.from_pretrained(model_name)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co"># DNA 序列</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>sequence <span class="op">=</span> <span class="st">"ATCGATCGATCGATCG"</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Tokenize（单核苷酸）</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>inputs <span class="op">=</span> tokenizer(sequence, return_tensors<span class="op">=</span><span class="st">"pt"</span>)</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="co"># 前向传播</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>outputs <span class="op">=</span> model(<span class="op">**</span>inputs)</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>logits <span class="op">=</span> outputs.logits</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Logits 形状: </span><span class="sc">{</span>logits<span class="sc">.</span>shape<span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div>
+<p><strong>论文</strong>: Dalla-Torre, H. et al.&nbsp;(2023). The Nucleotide Transformer: Building and Evaluating Robust Foundation Models for Human Genomics. <em>bioRxiv</em>.</p>
+<hr>
+</section>
+<section id="hyenadna2023" class="level3">
+<h3 class="anchored" data-anchor-id="hyenadna2023">3. HyenaDNA（2023）</h3>
+<p><strong>架构</strong>: Hyena operator（长程卷积的高效实现）</p>
+<p><strong>训练数据</strong>: 人类参考基因组</p>
+<p><strong>关键创新</strong>: - 替代 Transformer 的自注意力机制 - 线性复杂度，支持超长上下文 - 最长上下文：1M bp（百万碱基对）</p>
+<p><strong>模型规模</strong>: - 多个版本：1M, 32k, 160k, 450k, 1M 上下文长度 - 参数量从数百万到数千万</p>
+<p><strong>优势</strong>: - 训练和推理速度快 - 内存效率高 - 适合全基因组级别的序列建模</p>
+<p><strong>应用</strong>: - 染色体级别的调控预测 - 长程增强子-启动子互作 - 结构变异效应预测</p>
+<p><strong>代码示例</strong>:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># HyenaDNA 使用示例（需要安装 hyena-dna 包）</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> hyenadna <span class="im">import</span> HyenaDNAModel</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 加载预训练模型</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> HyenaDNAModel.from_pretrained(<span class="st">"hyenadna-large-1m"</span>)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 超长 DNA 序列（可达 1M bp）</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>long_sequence <span class="op">=</span> <span class="st">"A"</span> <span class="op">*</span> <span class="dv">100000</span> <span class="op">+</span> <span class="st">"TATA"</span> <span class="op">*</span> <span class="dv">1000</span> <span class="op">+</span> <span class="st">"C"</span> <span class="op">*</span> <span class="dv">100000</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="co"># 嵌入</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>embeddings <span class="op">=</span> model.encode(long_sequence)</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"嵌入形状: </span><span class="sc">{</span>embeddings<span class="sc">.</span>shape<span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div>
+<p><strong>论文</strong>: Nguyen, E. et al.&nbsp;(2023). HyenaDNA: Long-Range Genomic Sequence Modeling at Single Nucleotide Resolution. <em>NeurIPS 2023</em>.</p>
+<hr>
+</section>
+<section id="enformer2021" class="level3">
+<h3 class="anchored" data-anchor-id="enformer2021">4. Enformer（2021）</h3>
+<p><strong>架构</strong>: Transformer + 卷积</p>
+<p><strong>任务</strong>: 预测染色质状态和基因表达</p>
+<p><strong>训练数据</strong>: - ENCODE、Roadmap Epigenomics 数据 - ChIP-seq, ATAC-seq, DNase-seq, RNA-seq</p>
+<p><strong>输入</strong>: 200kb DNA 序列</p>
+<p><strong>输出</strong>: - 5,313 个表观遗传和转录特征 - 在 128 个 bin 上的预测（每个 bin 128bp）</p>
+<p><strong>关键特点</strong>: - 远程依赖建模（200kb 上下文） - 预测增强子-启动子互作 - 变异效应量化</p>
+<p><strong>应用</strong>: - GWAS 变异功能注释 - 疾病相关变异优先级排序 - 调控机制解析</p>
+<p><strong>代码示例</strong>:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tensorflow <span class="im">as</span> tf</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tensorflow_hub <span class="im">as</span> hub</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 加载 Enformer</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> hub.load(<span class="st">"https://tfhub.dev/deepmind/enformer/1"</span>).model</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 输入：200kb 序列 one-hot 编码</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co"># 形状: (batch, 196608, 4)</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>sequence <span class="op">=</span> tf.random.uniform((<span class="dv">1</span>, <span class="dv">196608</span>, <span class="dv">4</span>))</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="co"># 预测</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>predictions <span class="op">=</span> model.predict_on_batch(sequence)</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="co"># 输出形状: (batch, 896, 5313)</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="co"># 896 bins × 5313 tracks</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"预测形状: </span><span class="sc">{</span>predictions[<span class="st">'human'</span>]<span class="sc">.</span>shape<span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div>
+<p><strong>论文</strong>: Avsec, Ž. et al.&nbsp;(2021). Effective gene expression prediction from sequence by integrating long-range interactions. <em>Nature Methods</em>, 18, 1196–1203.</p>
+<hr>
+</section>
+<section id="gena-lm2023" class="level3">
+<h3 class="anchored" data-anchor-id="gena-lm2023">5. GENA-LM（2023）</h3>
+<p><strong>架构</strong>: BERT-based</p>
+<p><strong>训练数据</strong>: - T2T（Telomere-to-Telomere）完整人类基因组 - 包含着丝粒、端粒等传统方法难以组装的区域</p>
+<p><strong>特点</strong>: - 首个基于完整人类基因组的模型 - 覆盖之前参考基因组缺失的区域</p>
+<p><strong>论文</strong>: Fishman, D. et al.&nbsp;(2023). GENA-LM: A Family of Open-Source Foundational DNA Language Models for Long Sequences. <em>bioRxiv</em>.</p>
+<hr>
+</section>
+</section>
+<section id="应用场景" class="level2">
+<h2 class="anchored" data-anchor-id="应用场景">应用场景</h2>
+<section id="变异效应预测" class="level3">
+<h3 class="anchored" data-anchor-id="变异效应预测">1. 变异效应预测</h3>
+<p><strong>任务</strong>: 预测单核苷酸变异（SNV）、插入/删除（Indel）对基因功能或表达的影响</p>
+<p><strong>方法</strong>: 1. 输入参考序列和变异序列 2. 获取两者的模型预测 3. 计算预测差异作为变异效应评分</p>
+<p><strong>应用</strong>: - 致病性变异识别 - GWAS 功能注释 - 个性化医疗</p>
+<p><strong>代码示例</strong>:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> predict_variant_effect(model, tokenizer, ref_seq, alt_seq):</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co">    预测变异效应</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co">    </span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="co">    Args:</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="co">        model: 预训练 DNA 模型</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co">        tokenizer: tokenizer</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="co">        ref_seq: 参考序列</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="co">        alt_seq: 变异序列</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="co">    </span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="co">    Returns:</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="co">        effect_score: 变异效应评分</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Tokenize</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>    ref_inputs <span class="op">=</span> tokenizer(ref_seq, return_tensors<span class="op">=</span><span class="st">"pt"</span>)</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>    alt_inputs <span class="op">=</span> tokenizer(alt_seq, return_tensors<span class="op">=</span><span class="st">"pt"</span>)</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 预测</span></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>    <span class="cf">with</span> torch.no_grad():</span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>        ref_outputs <span class="op">=</span> model(<span class="op">**</span>ref_inputs)</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>        alt_outputs <span class="op">=</span> model(<span class="op">**</span>alt_inputs)</span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 计算差异（示例：使用 logits 的 L2 距离）</span></span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>    ref_logits <span class="op">=</span> ref_outputs.logits</span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>    alt_logits <span class="op">=</span> alt_outputs.logits</span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>    effect_score <span class="op">=</span> torch.norm(ref_logits <span class="op">-</span> alt_logits).item()</span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> effect_score</span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a><span class="co"># 示例</span></span>
+<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a>ref_seq <span class="op">=</span> <span class="st">"ATCGATCG"</span></span>
+<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a>alt_seq <span class="op">=</span> <span class="st">"ATCTATCG"</span>  <span class="co"># C-&gt;T 变异</span></span>
+<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a>score <span class="op">=</span> predict_variant_effect(model, tokenizer, ref_seq, alt_seq)</span>
+<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"变异效应评分: </span><span class="sc">{</span>score<span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div>
+<hr>
+</section>
+<section id="启动子识别" class="level3">
+<h3 class="anchored" data-anchor-id="启动子识别">2. 启动子识别</h3>
+<p><strong>任务</strong>: 识别 DNA 序列中的启动子区域</p>
+<p><strong>方法</strong>: 1. 在启动子/非启动子数据上微调 2. 对新序列进行分类</p>
+<p><strong>数据集</strong>: - EPDnew: 真核启动子数据库 - FANTOM5: CAGE 数据</p>
+<p><strong>代码示例</strong>:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> transformers <span class="im">import</span> AutoModelForSequenceClassification, Trainer, TrainingArguments</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 加载预训练模型并添加分类头</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> AutoModelForSequenceClassification.from_pretrained(</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">"zhihan1996/DNA_bert_6"</span>,</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    num_labels<span class="op">=</span><span class="dv">2</span>  <span class="co"># 二分类：启动子/非启动子</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="co"># 准备数据（示例）</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>train_sequences <span class="op">=</span> [<span class="st">"ATCG..."</span>, <span class="st">"GCTA..."</span>]  <span class="co"># 启动子序列</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>train_labels <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">0</span>]  <span class="co"># 1=启动子, 0=非启动子</span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="co"># 微调（省略数据处理细节）</span></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>training_args <span class="op">=</span> TrainingArguments(</span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>    output_dir<span class="op">=</span><span class="st">"./promoter_model"</span>,</span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>    num_train_epochs<span class="op">=</span><span class="dv">3</span>,</span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>    per_device_train_batch_size<span class="op">=</span><span class="dv">16</span>,</span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>    learning_rate<span class="op">=</span><span class="fl">5e-5</span></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>trainer <span class="op">=</span> Trainer(</span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>    model<span class="op">=</span>model,</span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>    args<span class="op">=</span>training_args,</span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>    <span class="co"># train_dataset=train_dataset,</span></span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>    <span class="co"># eval_dataset=eval_dataset,</span></span>
+<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a><span class="co"># trainer.train()</span></span></code></pre></div>
+<hr>
+</section>
+<section id="转录因子结合位点预测" class="level3">
+<h3 class="anchored" data-anchor-id="转录因子结合位点预测">3. 转录因子结合位点预测</h3>
+<p><strong>任务</strong>: 预测转录因子（TF）在基因组上的结合位点</p>
+<p><strong>方法</strong>: - 输入：DNA 序列 + TF 信息 - 输出：结合概率</p>
+<p><strong>应用</strong>: - 调控网络构建 - 增强子-启动子互作预测</p>
+<hr>
+</section>
+<section id="剪接位点预测" class="level3">
+<h3 class="anchored" data-anchor-id="剪接位点预测">4. 剪接位点预测</h3>
+<p><strong>任务</strong>: 预测 mRNA 前体的剪接供体/受体位点</p>
+<p><strong>经典位点信号</strong>: - 供体位点（Donor）: GT（保守） - 受体位点（Acceptor）: AG（保守）</p>
+<p><strong>挑战</strong>: - 隐性剪接位点 - 可变剪接</p>
+<p><strong>代码示例</strong>:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 使用 DNABERT 预测剪接位点</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> predict_splice_site(sequence, model, tokenizer):</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co">    预测序列中的剪接位点</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    inputs <span class="op">=</span> tokenizer(sequence, return_tensors<span class="op">=</span><span class="st">"pt"</span>)</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>    outputs <span class="op">=</span> model(<span class="op">**</span>inputs)</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 获取每个位置的预测</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>    logits <span class="op">=</span> outputs.logits</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>    predictions <span class="op">=</span> torch.argmax(logits, dim<span class="op">=-</span><span class="dv">1</span>)</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> predictions</span></code></pre></div>
+<hr>
+</section>
+<section id="表观遗传修饰预测" class="level3">
+<h3 class="anchored" data-anchor-id="表观遗传修饰预测">5. 表观遗传修饰预测</h3>
+<p><strong>任务</strong>: 预测 DNA 甲基化、组蛋白修饰等表观遗传标记</p>
+<p><strong>输入</strong>: DNA 序列</p>
+<p><strong>输出</strong>: 修饰概率</p>
+<p><strong>应用</strong>: - 癌症表观遗传标志识别 - 发育调控研究</p>
+<hr>
+</section>
+</section>
+<section id="模型比较" class="level2">
+<h2 class="anchored" data-anchor-id="模型比较">模型比较</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 23%">
+<col style="width: 17%">
+<col style="width: 19%">
+<col style="width: 13%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>模型</th>
+<th>架构</th>
+<th>上下文长度</th>
+<th>参数量</th>
+<th>训练数据</th>
+<th>特点</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>DNABERT</strong></td>
+<td>BERT</td>
+<td>512 bp</td>
+<td>110M</td>
+<td>人类基因组</td>
+<td>k-mer tokenization，经典</td>
+</tr>
+<tr class="even">
+<td><strong>Nucleotide Transformer</strong></td>
+<td>Transformer</td>
+<td>6 kb</td>
+<td>500M-2.5B</td>
+<td>3,202 物种</td>
+<td>跨物种，大规模</td>
+</tr>
+<tr class="odd">
+<td><strong>HyenaDNA</strong></td>
+<td>Hyena operator</td>
+<td>1M bp</td>
+<td>数千万</td>
+<td>人类基因组</td>
+<td>超长上下文，高效</td>
+</tr>
+<tr class="even">
+<td><strong>Enformer</strong></td>
+<td>Transformer + CNN</td>
+<td>200 kb</td>
+<td>未公开</td>
+<td>ENCODE 数据</td>
+<td>预测表观遗传特征</td>
+</tr>
+<tr class="odd">
+<td><strong>GENA-LM</strong></td>
+<td>BERT</td>
+<td>数 kb</td>
+<td>未公开</td>
+<td>T2T 基因组</td>
+<td>完整基因组覆盖</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="评估指标" class="level2">
+<h2 class="anchored" data-anchor-id="评估指标">评估指标</h2>
+<section id="序列预测任务" class="level3">
+<h3 class="anchored" data-anchor-id="序列预测任务">序列预测任务</h3>
 <ul>
-<li>理解基本原理和算法思想</li>
-<li>掌握 R 和 Python 编程</li>
-<li>学会数据分析和可视化</li>
-<li>培养科研思维和问题解决能力</li>
+<li><strong>准确率（Accuracy）</strong>: 分类任务</li>
+<li><strong>AUROC / AUPRC</strong>: 二分类性能</li>
+<li><strong>F1 Score</strong>: 平衡精确率与召回率</li>
+</ul>
+</section>
+<section id="生成任务" class="level3">
+<h3 class="anchored" data-anchor-id="生成任务">生成任务</h3>
+<ul>
+<li><strong>困惑度（Perplexity）</strong>: 语言模型质量</li>
+<li><strong>序列似然</strong>: 生成序列的合理性</li>
+</ul>
+</section>
+<section id="变异效应预测-1" class="level3">
+<h3 class="anchored" data-anchor-id="变异效应预测-1">变异效应预测</h3>
+<ul>
+<li><strong>Spearman 相关系数</strong>: 预测评分与实验数据相关性</li>
+<li><strong>分类准确率</strong>: 致病/良性变异分类</li>
 </ul>
 <hr>
 </section>
 </section>
-<section id="考核方式" class="level2">
-<h2 class="anchored" data-anchor-id="考核方式">考核方式</h2>
-<p>各门课程通常包括：</p>
-<ul>
-<li>平时作业（20-30%）</li>
-<li>实验报告（30-40%）</li>
-<li>期末考试/论文（30-50%）</li>
-</ul>
-<div class="callout callout-style-simple callout-tip callout-titled" title="考试准备">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>考试准备
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>整理每门课的知识点</li>
-<li>复习实验原理和代码</li>
-<li>查看往年考试题型</li>
-<li>多与同学交流讨论</li>
-</ul>
-</div>
-</div>
+<section id="实践工具" class="level2">
+<h2 class="anchored" data-anchor-id="实践工具">实践工具</h2>
+<section id="hugging-face-transformers" class="level3">
+<h3 class="anchored" data-anchor-id="hugging-face-transformers">Hugging Face Transformers</h3>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> transformers <span class="im">import</span> AutoTokenizer, AutoModel</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 加载任意 DNA 模型</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>tokenizer <span class="op">=</span> AutoTokenizer.from_pretrained(<span class="st">"model_name"</span>)</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> AutoModel.from_pretrained(<span class="st">"model_name"</span>)</span></code></pre></div>
+</section>
+<section id="dnabert-工具包" class="level3">
+<h3 class="anchored" data-anchor-id="dnabert-工具包">DNABERT 工具包</h3>
+<p>GitHub: <a href="https://github.com/jerryji1993/DNABERT">DNABERT</a></p>
+<p>包含预训练模型、微调脚本、评估工具。</p>
+</section>
+<section id="enformer-工具" class="level3">
+<h3 class="anchored" data-anchor-id="enformer-工具">Enformer 工具</h3>
+<p>TensorFlow Hub: <a href="https://tfhub.dev/deepmind/enformer/1">Enformer</a></p>
+</section>
+<section id="hyenadna" class="level3">
+<h3 class="anchored" data-anchor-id="hyenadna">HyenaDNA</h3>
+<p>GitHub: <a href="https://github.com/HazyResearch/hyena-dna">HyenaDNA</a></p>
 <hr>
 </section>
-<section id="资源导航" class="level2">
-<h2 class="anchored" data-anchor-id="资源导航">资源导航</h2>
-<section id="代码仓库" class="level3">
-<h3 class="anchored" data-anchor-id="代码仓库">代码仓库</h3>
-<p>所有实验代码都保存在 <code>Grade4/</code> 目录下：</p>
-<pre><code>Grade4/
-├── computational_biology/
-│   └── experiments/
-│       ├── Exp1/    # PPI 网络分析
-│       ├── Exp2/    # WGCNA 分析
-│       ├── Exp3/    # MCL &amp; RWR
-│       └── Exp4/    # qPCR 分析
-├── CADD/
-└── computational_molecular_biology/</code></pre>
 </section>
-<section id="文档资料" class="level3">
-<h3 class="anchored" data-anchor-id="文档资料">文档资料</h3>
-<p>本文档网站提供了详细的学习指导和实验说明。</p>
+<section id="挑战与未来方向" class="level2">
+<h2 class="anchored" data-anchor-id="挑战与未来方向">挑战与未来方向</h2>
+<section id="当前挑战" class="level3">
+<h3 class="anchored" data-anchor-id="当前挑战">当前挑战</h3>
+<ol type="1">
+<li><strong>上下文长度限制</strong>
+<ul>
+<li>人类基因组 3Gb，现有模型最长 1M bp</li>
+<li>染色体级调控互作难以建模</li>
+</ul></li>
+<li><strong>物种泛化</strong>
+<ul>
+<li>多数模型专注人类基因组</li>
+<li>跨物种迁移效果有限</li>
+</ul></li>
+<li><strong>可解释性</strong>
+<ul>
+<li>模型决策机制不透明</li>
+<li>难以提取生物学洞见</li>
+</ul></li>
+<li><strong>数据偏差</strong>
+<ul>
+<li>训练数据多来自欧洲人群</li>
+<li>对其他人群的泛化能力弱</li>
+</ul></li>
+</ol>
+<hr>
+</section>
+<section id="未来方向" class="level3">
+<h3 class="anchored" data-anchor-id="未来方向">未来方向</h3>
+<ol type="1">
+<li><strong>更长上下文</strong>
+<ul>
+<li>全染色体级模型</li>
+<li>高效长程注意力机制</li>
+</ul></li>
+<li><strong>多模态整合</strong>
+<ul>
+<li>DNA 序列 + 表观遗传数据</li>
+<li>序列 + 3D 染色质结构</li>
+</ul></li>
+<li><strong>跨物种统一模型</strong>
+<ul>
+<li>学习进化保守特征</li>
+<li>提升少样本物种的预测</li>
+</ul></li>
+<li><strong>因果推断</strong>
+<ul>
+<li>从相关性到因果关系</li>
+<li>理解调控机制</li>
+</ul></li>
+<li><strong>个性化基因组建模</strong>
+<ul>
+<li>整合个体变异信息</li>
+<li>精准医疗应用</li>
+</ul></li>
+</ol>
 <hr>
 </section>
 </section>
 <section id="学习资源" class="level2">
 <h2 class="anchored" data-anchor-id="学习资源">学习资源</h2>
-<section id="推荐教材" class="level3">
-<h3 class="anchored" data-anchor-id="推荐教材">推荐教材</h3>
+<section id="论文" class="level3">
+<h3 class="anchored" data-anchor-id="论文">论文</h3>
 <ul>
-<li>《生物信息学》- 李霞、雷健波</li>
-<li>《Bioinformatics and Functional Genomics》- Jonathan Pevsner</li>
-<li>《An Introduction to Systems Biology》- Uri Alon</li>
+<li>Ji, Y. et al.&nbsp;(2021). DNABERT. <em>Bioinformatics</em>.</li>
+<li>Avsec, Ž. et al.&nbsp;(2021). Enformer. <em>Nature Methods</em>.</li>
+<li>Nguyen, E. et al.&nbsp;(2023). HyenaDNA. <em>NeurIPS 2023</em>.</li>
 </ul>
 </section>
-<section id="在线资源" class="level3">
-<h3 class="anchored" data-anchor-id="在线资源">在线资源</h3>
+<section id="教程" class="level3">
+<h3 class="anchored" data-anchor-id="教程">教程</h3>
 <ul>
-<li><a href="https://www.bioconductor.org/">Bioconductor</a> - R 生物信息学包</li>
-<li><a href="https://biopython.org/">Biopython</a> - Python 生物信息学库</li>
-<li><a href="https://www.biotrainee.com/">生信技能树</a> - 中文生信学习社区</li>
+<li><a href="https://github.com/jerryji1993/DNABERT">DNABERT Tutorial</a></li>
+<li><a href="https://huggingface.co/models?pipeline_tag=feature-extraction&amp;search=dna">Hugging Face Genomics Models</a></li>
 </ul>
-<hr>
 </section>
-</section>
-<section id="互助学习" class="level2">
-<h2 class="anchored" data-anchor-id="互助学习">互助学习</h2>
-<p>遇到问题？</p>
+<section id="课程" class="level3">
+<h3 class="anchored" data-anchor-id="课程">课程</h3>
 <ul>
-<li>在 <a href="https://github.com/Hinna0818/Bioinfo-SMU/discussions">Discussions</a> 中提问</li>
-<li>在 <a href="https://github.com/Hinna0818/Bioinfo-SMU/issues">Issues</a> 中报告问题</li>
-<li>发邮件给学长学姐：hinna01@163.com</li>
+<li>Deep Learning in Genomics (Stanford)</li>
+<li>Computational Genomics (MIT OpenCourseWare)</li>
 </ul>
 <hr>
-<div data-align="center">
-<p><strong>祝大家学习顺利！</strong></p>
-<p><a href="../index.html">返回首页</a></p>
-</div>
+</section>
+</section>
+<section id="相关链接" class="level2">
+<h2 class="anchored" data-anchor-id="相关链接">相关链接</h2>
+<ul>
+<li><a href="../AI4S/index.html">AI4S 专题主页</a></li>
+<li><a href="../AI4S/foundation-models-rna.html">RNA Foundation Models</a></li>
+<li><a href="../AI4S/foundation-models-protein.html">蛋白质 Foundation Models</a></li>
+<li><a href="../AI4S/ai4drug-overview.html">AI4Drug</a></li>
+<li><a href="../AI4S/virtual-cell.html">虚拟细胞</a></li>
+</ul>
+<hr>
+<p>更新时间：2026-09-29</p>
 
 
 </section>
@@ -1341,13 +1720,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../Grade3/index.html" class="pagination-link" aria-label="大三课程总览">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">大三课程总览</span>
+      <a href="../AI4S/index.html" class="pagination-link" aria-label="AI4S 概述">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">AI4S 概述</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../Grade4/computational_biology/index.html" class="pagination-link" aria-label="课程主页">
-        <span class="nav-page-text">课程主页</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../AI4S/foundation-models-rna.html" class="pagination-link" aria-label="RNA Foundation Models">
+        <span class="nav-page-text">RNA Foundation Models</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

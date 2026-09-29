@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>l6_functions – Bioinfo-SMU</title>
+<title>foundation-models-rna – Bioinfo-SMU</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -70,8 +70,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../Rbase/L7_ggplot2.html" rel="next">
-<link href="../Rbase/index.html" rel="prev">
+<link href="../AI4S/foundation-models-protein.html" rel="next">
+<link href="../AI4S/foundation-models-dna.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -440,7 +440,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Rbase/index.html">R 语言教程</a></li><li class="breadcrumb-item"><a href="../Rbase/L6_functions.html">L6 - R 函数与包开发</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../AI4S/index.html">AI4Science 专题</a></li><li class="breadcrumb-item"><a href="../AI4S/foundation-models-rna.html">RNA Foundation Models</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -639,7 +639,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Rbase/L6_functions.html" class="sidebar-item-text sidebar-link active">
+  <a href="../Rbase/L6_functions.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">L6 - R 函数与包开发</span></a>
   </div>
 </li>
@@ -708,7 +708,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../AI4S/foundation-models-rna.html" class="sidebar-item-text sidebar-link">
+  <a href="../AI4S/foundation-models-rna.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">RNA Foundation Models</span></a>
   </div>
 </li>
@@ -783,347 +783,617 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#r-中的函数function与包内函数编写规范" id="toc-r-中的函数function与包内函数编写规范" class="nav-link active" data-scroll-target="#r-中的函数function与包内函数编写规范">R 中的函数（function）与包内函数编写规范</a>
+  <li><a href="#rna-foundation-models" id="toc-rna-foundation-models" class="nav-link active" data-scroll-target="#rna-foundation-models">RNA Foundation Models</a>
   <ul class="collapse">
-  <li><a href="#函数的基本形式" id="toc-函数的基本形式" class="nav-link" data-scroll-target="#函数的基本形式">1. 函数的基本形式</a></li>
-  <li><a href="#参数设计与默认值" id="toc-参数设计与默认值" class="nav-link" data-scroll-target="#参数设计与默认值">2. 参数设计与默认值</a></li>
-  <li><a href="#返回值设计" id="toc-返回值设计" class="nav-link" data-scroll-target="#返回值设计">3. 返回值设计</a></li>
-  <li><a href="#作用域scope与副作用" id="toc-作用域scope与副作用" class="nav-link" data-scroll-target="#作用域scope与副作用">4. 作用域（Scope）与副作用</a></li>
-  <li><a href="#编写可测试可读的函数最佳实践" id="toc-编写可测试可读的函数最佳实践" class="nav-link" data-scroll-target="#编写可测试可读的函数最佳实践">5. 编写可测试、可读的函数（最佳实践）</a></li>
-  <li><a href="#在-r-脚本中组织函数并用-source-调试" id="toc-在-r-脚本中组织函数并用-source-调试" class="nav-link" data-scroll-target="#在-r-脚本中组织函数并用-source-调试">6. 在 R 脚本中组织函数并用 <code>source()</code> 调试</a></li>
-  <li><a href="#在-r-包中撰写函数的标准与-roxygen2-注释" id="toc-在-r-包中撰写函数的标准与-roxygen2-注释" class="nav-link" data-scroll-target="#在-r-包中撰写函数的标准与-roxygen2-注释">7. 在 R 包中撰写函数的标准与 roxygen2 注释</a></li>
-  <li><a href="#实战把函数写在脚本中并转为包函数的最小实践" id="toc-实战把函数写在脚本中并转为包函数的最小实践" class="nav-link" data-scroll-target="#实战把函数写在脚本中并转为包函数的最小实践">8. 实战：把函数写在脚本中并转为包函数的最小实践</a></li>
-  <li><a href="#常见陷阱与调试建议" id="toc-常见陷阱与调试建议" class="nav-link" data-scroll-target="#常见陷阱与调试建议">9. 常见陷阱与调试建议</a></li>
-  <li><a href="#小结" id="toc-小结" class="nav-link" data-scroll-target="#小结">10. 小结</a></li>
+  <li><a href="#rna-的独特性" id="toc-rna-的独特性" class="nav-link" data-scroll-target="#rna-的独特性">RNA 的独特性</a>
+  <ul class="collapse">
+  <li><a href="#rna-vs-dna" id="toc-rna-vs-dna" class="nav-link" data-scroll-target="#rna-vs-dna">RNA vs DNA</a></li>
+  <li><a href="#为什么需要-rna-foundation-models" id="toc-为什么需要-rna-foundation-models" class="nav-link" data-scroll-target="#为什么需要-rna-foundation-models">为什么需要 RNA Foundation Models？</a></li>
+  </ul></li>
+  <li><a href="#经典模型" id="toc-经典模型" class="nav-link" data-scroll-target="#经典模型">经典模型</a>
+  <ul class="collapse">
+  <li><a href="#rna-fm2022" id="toc-rna-fm2022" class="nav-link" data-scroll-target="#rna-fm2022">1. RNA-FM（2022）</a></li>
+  <li><a href="#rnabert2023" id="toc-rnabert2023" class="nav-link" data-scroll-target="#rnabert2023">2. RNABert（2023）</a></li>
+  <li><a href="#splicebert2023" id="toc-splicebert2023" class="nav-link" data-scroll-target="#splicebert2023">3. SpliceBERT（2023）</a></li>
+  <li><a href="#rna-msmmulti-species-model2023" id="toc-rna-msmmulti-species-model2023" class="nav-link" data-scroll-target="#rna-msmmulti-species-model2023">4. RNA-MSM（Multi-Species Model）（2023）</a></li>
+  <li><a href="#utr-lm2023" id="toc-utr-lm2023" class="nav-link" data-scroll-target="#utr-lm2023">5. UTR-LM（2023）</a></li>
+  </ul></li>
+  <li><a href="#应用场景" id="toc-应用场景" class="nav-link" data-scroll-target="#应用场景">应用场景</a>
+  <ul class="collapse">
+  <li><a href="#rna-二级结构预测" id="toc-rna-二级结构预测" class="nav-link" data-scroll-target="#rna-二级结构预测">1. RNA 二级结构预测</a></li>
+  <li><a href="#mrna-稳定性预测" id="toc-mrna-稳定性预测" class="nav-link" data-scroll-target="#mrna-稳定性预测">2. mRNA 稳定性预测</a></li>
+  <li><a href="#剪接预测" id="toc-剪接预测" class="nav-link" data-scroll-target="#剪接预测">3. 剪接预测</a></li>
+  <li><a href="#rna-修饰预测" id="toc-rna-修饰预测" class="nav-link" data-scroll-target="#rna-修饰预测">4. RNA 修饰预测</a></li>
+  <li><a href="#rna-蛋白质相互作用预测" id="toc-rna-蛋白质相互作用预测" class="nav-link" data-scroll-target="#rna-蛋白质相互作用预测">5. RNA-蛋白质相互作用预测</a></li>
+  <li><a href="#单细胞-rna-分析" id="toc-单细胞-rna-分析" class="nav-link" data-scroll-target="#单细胞-rna-分析">6. 单细胞 RNA 分析</a></li>
+  </ul></li>
+  <li><a href="#技术细节" id="toc-技术细节" class="nav-link" data-scroll-target="#技术细节">技术细节</a>
+  <ul class="collapse">
+  <li><a href="#输入表示" id="toc-输入表示" class="nav-link" data-scroll-target="#输入表示">输入表示</a></li>
+  <li><a href="#预训练策略" id="toc-预训练策略" class="nav-link" data-scroll-target="#预训练策略">预训练策略</a></li>
+  </ul></li>
+  <li><a href="#数据资源" id="toc-数据资源" class="nav-link" data-scroll-target="#数据资源">数据资源</a>
+  <ul class="collapse">
+  <li><a href="#rna-序列数据库" id="toc-rna-序列数据库" class="nav-link" data-scroll-target="#rna-序列数据库">RNA 序列数据库</a></li>
+  <li><a href="#实验数据" id="toc-实验数据" class="nav-link" data-scroll-target="#实验数据">实验数据</a></li>
+  <li><a href="#结构数据" id="toc-结构数据" class="nav-link" data-scroll-target="#结构数据">结构数据</a></li>
+  </ul></li>
+  <li><a href="#评估指标" id="toc-评估指标" class="nav-link" data-scroll-target="#评估指标">评估指标</a>
+  <ul class="collapse">
+  <li><a href="#分类任务" id="toc-分类任务" class="nav-link" data-scroll-target="#分类任务">分类任务</a></li>
+  <li><a href="#结构预测" id="toc-结构预测" class="nav-link" data-scroll-target="#结构预测">结构预测</a></li>
+  <li><a href="#回归任务" id="toc-回归任务" class="nav-link" data-scroll-target="#回归任务">回归任务</a></li>
+  </ul></li>
+  <li><a href="#模型比较" id="toc-模型比较" class="nav-link" data-scroll-target="#模型比较">模型比较</a></li>
+  <li><a href="#实践工具" id="toc-实践工具" class="nav-link" data-scroll-target="#实践工具">实践工具</a>
+  <ul class="collapse">
+  <li><a href="#rna-fm" id="toc-rna-fm" class="nav-link" data-scroll-target="#rna-fm">RNA-FM</a></li>
+  <li><a href="#viennarna传统方法对比" id="toc-viennarna传统方法对比" class="nav-link" data-scroll-target="#viennarna传统方法对比">ViennaRNA（传统方法对比）</a></li>
+  </ul></li>
+  <li><a href="#挑战与未来方向" id="toc-挑战与未来方向" class="nav-link" data-scroll-target="#挑战与未来方向">挑战与未来方向</a>
+  <ul class="collapse">
+  <li><a href="#当前挑战" id="toc-当前挑战" class="nav-link" data-scroll-target="#当前挑战">当前挑战</a></li>
+  <li><a href="#未来方向" id="toc-未来方向" class="nav-link" data-scroll-target="#未来方向">未来方向</a></li>
+  </ul></li>
+  <li><a href="#学习资源" id="toc-学习资源" class="nav-link" data-scroll-target="#学习资源">学习资源</a>
+  <ul class="collapse">
+  <li><a href="#论文" id="toc-论文" class="nav-link" data-scroll-target="#论文">论文</a></li>
+  <li><a href="#在线资源" id="toc-在线资源" class="nav-link" data-scroll-target="#在线资源">在线资源</a></li>
+  <li><a href="#课程" id="toc-课程" class="nav-link" data-scroll-target="#课程">课程</a></li>
+  </ul></li>
+  <li><a href="#相关链接" id="toc-相关链接" class="nav-link" data-scroll-target="#相关链接">相关链接</a></li>
   </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Rbase/index.html">R 语言教程</a></li><li class="breadcrumb-item"><a href="../Rbase/L6_functions.html">L6 - R 函数与包开发</a></li></ol></nav></header>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../AI4S/index.html">AI4Science 专题</a></li><li class="breadcrumb-item"><a href="../AI4S/foundation-models-rna.html">RNA Foundation Models</a></li></ol></nav></header>
 
 
 
 
 
-<section id="r-中的函数function与包内函数编写规范" class="level1">
-<h1>R 中的函数（function）与包内函数编写规范</h1>
-<p>本节我们将系统介绍如何在 R 中定义和使用函数、函数参数与返回值的设计、作用域（scope）问题；随后介绍在 R 包中撰写函数的规范（使用 roxygen2 注释生成文档、<span class="citation" data-cites="export">@export</span> 等），并给出用 <code>source()</code> 和调试工具单步调试函数的实用流程。</p>
-<p><br></p>
-<section id="函数的基本形式" class="level2">
-<h2 class="anchored" data-anchor-id="函数的基本形式">1. 函数的基本形式</h2>
-<p>R 中最基本的函数定义形式：</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>fn_name <span class="ot">&lt;-</span> <span class="cf">function</span>(arg1, <span class="at">arg2 =</span> <span class="dv">1</span>, ...) {</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># 函数体</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  result <span class="ot">&lt;-</span> arg1 <span class="sc">+</span> arg2</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(result)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<p>要点：</p>
+<section id="rna-foundation-models" class="level1">
+<h1>RNA Foundation Models</h1>
+<p>RNA 在基因表达调控中扮演核心角色，从转录、剪接、翻译到降解的每个环节都受到精密调控。RNA Foundation Models 通过学习大规模 RNA 序列数据，捕捉序列-结构-功能关系，能够预测 RNA 稳定性、剪接模式、二级结构、蛋白质相互作用等关键特性。</p>
+<hr>
+<section id="rna-的独特性" class="level2">
+<h2 class="anchored" data-anchor-id="rna-的独特性">RNA 的独特性</h2>
+<section id="rna-vs-dna" class="level3">
+<h3 class="anchored" data-anchor-id="rna-vs-dna">RNA vs DNA</h3>
+<p><strong>功能多样性</strong>: - <strong>DNA</strong>: 主要负责信息存储 - <strong>RNA</strong>: - mRNA: 蛋白质编码 - tRNA: 翻译适配器 - rRNA: 核糖体组成 - ncRNA: 调控功能（miRNA, lncRNA, circRNA）</p>
+<p><strong>结构复杂性</strong>: - <strong>DNA</strong>: 双链螺旋，结构相对稳定 - <strong>RNA</strong>: 单链，形成复杂二级/三级结构（发夹、假结、茎环）</p>
+<p><strong>化学差异</strong>: - RNA 含核糖（ribose），DNA 含脱氧核糖 - RNA 使用尿嘧啶（U）代替胸腺嘧啶（T） - RNA 更易降解</p>
+<hr>
+</section>
+<section id="为什么需要-rna-foundation-models" class="level3">
+<h3 class="anchored" data-anchor-id="为什么需要-rna-foundation-models">为什么需要 RNA Foundation Models？</h3>
+<p><strong>挑战</strong>: 1. <strong>序列-结构耦合</strong>: RNA 功能依赖于二级/三级结构 2. <strong>剪接复杂性</strong>: 一个基因可产生多个 mRNA 异构体 3. <strong>表达调控</strong>: mRNA 稳定性、定位、翻译效率 4. <strong>RNA 修饰</strong>: m6A, pseudouridine 等化学修饰影响功能</p>
+<p><strong>Foundation Models 的优势</strong>: - 整合序列和结构信息 - 学习跨物种保守模式 - 迁移到低资源 RNA 类型 - 预测修饰位点和功能效应</p>
+<hr>
+</section>
+</section>
+<section id="经典模型" class="level2">
+<h2 class="anchored" data-anchor-id="经典模型">经典模型</h2>
+<section id="rna-fm2022" class="level3">
+<h3 class="anchored" data-anchor-id="rna-fm2022">1. RNA-FM（2022）</h3>
+<p><strong>全称</strong>: RNA Foundation Model</p>
+<p><strong>架构</strong>: BERT-like Transformer</p>
+<p><strong>训练数据</strong>: - RNAcentral 数据库 - 23.7M RNA 序列 - 涵盖多种 RNA 类型（mRNA, rRNA, tRNA, ncRNA）</p>
+<p><strong>预训练任务</strong>: - Masked Language Modeling（MLM）</p>
+<p><strong>输入表示</strong>: 单核苷酸 token（A, U, G, C）</p>
+<p><strong>模型规模</strong>: - 约 100M 参数 - 12 层 Transformer</p>
+<p><strong>下游任务</strong>: - RNA 二级结构预测 - ncRNA 分类 - RNA-蛋白质相互作用预测 - RNA 修饰位点预测</p>
+<p><strong>性能</strong>: - 在多个 RNA 任务上超越从头训练的模型 - 零样本迁移到新 RNA 类型</p>
+<p><strong>代码示例</strong>:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> fm</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 加载 RNA-FM</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>model, alphabet <span class="op">=</span> fm.pretrained.rna_fm_t12()</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>batch_converter <span class="op">=</span> alphabet.get_batch_converter()</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>model.<span class="bu">eval</span>()</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># RNA 序列</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> [</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    (<span class="st">"RNA1"</span>, <span class="st">"GGGAAACCC"</span>),</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    (<span class="st">"RNA2"</span>, <span class="st">"UCGAUCGAUCGAU"</span>),</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co"># 准备批次</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>batch_labels, batch_strs, batch_tokens <span class="op">=</span> batch_converter(data)</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="co"># 提取特征</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> torch.no_grad():</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    results <span class="op">=</span> model(batch_tokens, repr_layers<span class="op">=</span>[<span class="dv">12</span>])</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    token_embeddings <span class="op">=</span> results[<span class="st">"representations"</span>][<span class="dv">12</span>]</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"嵌入形状: </span><span class="sc">{</span>token_embeddings<span class="sc">.</span>shape<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="co"># 输出: (batch_size, seq_len, hidden_dim)</span></span></code></pre></div>
+<p><strong>论文</strong>: Chen, J. et al.&nbsp;(2022). Interpretable RNA Foundation Model from Unannotated Data for Highly Accurate RNA Structure and Function Predictions. <em>arXiv:2204.00300</em>.</p>
+<hr>
+</section>
+<section id="rnabert2023" class="level3">
+<h3 class="anchored" data-anchor-id="rnabert2023">2. RNABert（2023）</h3>
+<p><strong>架构</strong>: BERT</p>
+<p><strong>训练数据</strong>: - RNAcentral + Rfam - 约 30M RNA 序列</p>
+<p><strong>特点</strong>: - 专注于 ncRNA（非编码 RNA） - 学习 RNA 家族特征 - 支持 RNA 功能预测</p>
+<p><strong>输入表示</strong>: k-mer（类似 DNABERT）</p>
+<p><strong>下游任务</strong>: - RNA 家族分类 - ncRNA 功能注释 - RNA 相互作用预测</p>
+<hr>
+</section>
+<section id="splicebert2023" class="level3">
+<h3 class="anchored" data-anchor-id="splicebert2023">3. SpliceBERT（2023）</h3>
+<p><strong>专门化</strong>: 专注于 mRNA 剪接</p>
+<p><strong>架构</strong>: BERT</p>
+<p><strong>训练数据</strong>: - 人类外显子-内含子边界序列 - GENCODE 注释</p>
+<p><strong>预训练任务</strong>: - MLM - 剪接位点分类（供体/受体/非剪接位点）</p>
+<p><strong>下游任务</strong>: - 剪接位点预测 - 可变剪接事件检测 - 剪接因子结合预测</p>
+<p><strong>性能</strong>: - 在剪接位点预测上达到 SOTA - 预测罕见/隐性剪接位点</p>
+<p><strong>代码示例</strong>:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> transformers <span class="im">import</span> AutoTokenizer, AutoModel</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 加载 SpliceBERT</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>tokenizer <span class="op">=</span> AutoTokenizer.from_pretrained(<span class="st">"biomed-ai/splicebert-510nt"</span>)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> AutoModel.from_pretrained(<span class="st">"biomed-ai/splicebert-510nt"</span>)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># mRNA 序列（外显子-内含子边界）</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>sequence <span class="op">=</span> <span class="st">"AGGUAAGU...CAGGU"</span>  <span class="co"># 供体位点附近序列</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Tokenize</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>inputs <span class="op">=</span> tokenizer(sequence, return_tensors<span class="op">=</span><span class="st">"pt"</span>)</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="co"># 提取嵌入</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> torch.no_grad():</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    outputs <span class="op">=</span> model(<span class="op">**</span>inputs)</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>    embeddings <span class="op">=</span> outputs.last_hidden_state</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"嵌入: </span><span class="sc">{</span>embeddings<span class="sc">.</span>shape<span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div>
+<p><strong>论文</strong>: Chen, K. et al.&nbsp;(2023). SpliceBERT: A pre-trained model for splice site prediction. <em>bioRxiv</em>.</p>
+<hr>
+</section>
+<section id="rna-msmmulti-species-model2023" class="level3">
+<h3 class="anchored" data-anchor-id="rna-msmmulti-species-model2023">4. RNA-MSM（Multi-Species Model）（2023）</h3>
+<p><strong>特点</strong>: 跨物种 RNA 预训练</p>
+<p><strong>训练数据</strong>: - 多物种 RNA 序列（细菌、古菌、真核生物） - 学习进化保守特征</p>
+<p><strong>应用</strong>: - 跨物种功能预测 - 比较转录组学</p>
+<hr>
+</section>
+<section id="utr-lm2023" class="level3">
+<h3 class="anchored" data-anchor-id="utr-lm2023">5. UTR-LM（2023）</h3>
+<p><strong>专门化</strong>: 5’ 和 3’ UTR（非翻译区）</p>
+<p><strong>训练数据</strong>: - 人类 5’UTR 和 3’UTR 序列 - eCLIP 数据（RBP 结合）</p>
+<p><strong>下游任务</strong>: - mRNA 稳定性预测 - 翻译效率预测 - RBP（RNA 结合蛋白）结合位点预测 - miRNA 靶标预测</p>
+<p><strong>应用</strong>: - mRNA 疫苗设计（优化 UTR 提高稳定性） - 基因治疗载体优化</p>
+<hr>
+</section>
+</section>
+<section id="应用场景" class="level2">
+<h2 class="anchored" data-anchor-id="应用场景">应用场景</h2>
+<section id="rna-二级结构预测" class="level3">
+<h3 class="anchored" data-anchor-id="rna-二级结构预测">1. RNA 二级结构预测</h3>
+<p><strong>任务</strong>: 预测 RNA 的二级结构（碱基配对模式）</p>
+<p><strong>传统方法</strong>: - <strong>ViennaRNA</strong>: 基于热力学自由能最小化 - <strong>RNAfold</strong>: 动态规划算法</p>
+<p><strong>深度学习方法</strong>: - <strong>SPOT-RNA</strong>: CNN + LSTM - <strong>E2Efold</strong>: 端到端学习 - <strong>RNA-FM + 结构预测头</strong>: 预训练 + 微调</p>
+<p><strong>评估指标</strong>: - F1 score（碱基配对预测） - Matthews Correlation Coefficient（MCC）</p>
+<p><strong>代码示例</strong>:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 使用 RNA-FM 预测二级结构</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> fm</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 加载模型</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>model, alphabet <span class="op">=</span> fm.pretrained.rna_fm_t12()</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>model.<span class="bu">eval</span>()</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="co"># RNA 序列</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>sequence <span class="op">=</span> <span class="st">"GGGAAACCCUUUGGGUUUCCC"</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="co"># 编码</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>batch_converter <span class="op">=</span> alphabet.get_batch_converter()</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> [(<span class="st">"RNA"</span>, sequence)]</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>_, _, batch_tokens <span class="op">=</span> batch_converter(data)</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="co"># 预测接触图</span></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> torch.no_grad():</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>    results <span class="op">=</span> model(batch_tokens, need_head_weights<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>    attention <span class="op">=</span> results[<span class="st">"attentions"</span>]  <span class="co"># 注意力权重可用于接触预测</span></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a><span class="co"># 解析二级结构（简化示例）</span></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a><span class="co"># 实际需要后处理将注意力转换为配对概率</span></span></code></pre></div>
+<hr>
+</section>
+<section id="mrna-稳定性预测" class="level3">
+<h3 class="anchored" data-anchor-id="mrna-稳定性预测">2. mRNA 稳定性预测</h3>
+<p><strong>任务</strong>: 预测 mRNA 的半衰期</p>
+<p><strong>重要性</strong>: - mRNA 疫苗设计（提高稳定性） - 基因表达调控理解 - 治疗性 mRNA 优化</p>
+<p><strong>特征</strong>: - 5’ UTR 序列 - 3’ UTR 序列（ARE 元件） - Poly(A) 尾长度 - 密码子优化</p>
+<p><strong>数据集</strong>: - Saluki dataset（人类 mRNA 半衰期） - 高通量测序实验数据</p>
+<p><strong>代码示例</strong>:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> transformers <span class="im">import</span> AutoModelForSequenceClassification</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 假设已微调的 mRNA 稳定性预测模型</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> AutoModelForSequenceClassification.from_pretrained(</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"rna-stability-model"</span>,</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    num_labels<span class="op">=</span><span class="dv">1</span>  <span class="co"># 回归：预测半衰期</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="co"># mRNA 序列（5'UTR + CDS + 3'UTR）</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>mrna_sequence <span class="op">=</span> <span class="st">"AGCUAGCU...AAAAAA"</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Tokenize</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>inputs <span class="op">=</span> tokenizer(mrna_sequence, return_tensors<span class="op">=</span><span class="st">"pt"</span>)</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="co"># 预测半衰期</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> torch.no_grad():</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>    outputs <span class="op">=</span> model(<span class="op">**</span>inputs)</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>    predicted_half_life <span class="op">=</span> outputs.logits.item()</span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"预测半衰期: </span><span class="sc">{</span>predicted_half_life<span class="sc">}</span><span class="ss"> 小时"</span>)</span></code></pre></div>
+<hr>
+</section>
+<section id="剪接预测" class="level3">
+<h3 class="anchored" data-anchor-id="剪接预测">3. 剪接预测</h3>
+<p><strong>任务</strong>: 预测可变剪接事件</p>
+<p><strong>剪接类型</strong>: - <strong>外显子跳跃（Exon Skipping, SE）</strong> - <strong>可变 5’ 剪接位点（A5SS）</strong> - <strong>可变 3’ 剪接位点（A3SS）</strong> - <strong>内含子保留（Intron Retention, IR）</strong> - <strong>互斥外显子（Mutually Exclusive Exons, MXE）</strong></p>
+<p><strong>工具</strong>: - <strong>SpliceAI</strong>: 深度学习剪接预测（CNN） - <strong>SpliceBERT</strong>: 基于 Transformer - <strong>MMSplice</strong>: 模块化剪接模型</p>
+<p><strong>应用</strong>: - 疾病相关剪接变异识别 - 剪接调控机制研究</p>
+<p><strong>代码示例</strong>:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 使用 SpliceAI 预测剪接效应</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> spliceai <span class="im">import</span> predict_splice</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>sequence <span class="op">=</span> <span class="st">"AGGTAAGT...TGCAG"</span>  <span class="co"># 包含剪接位点的序列</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>position <span class="op">=</span> <span class="dv">100</span>  <span class="co"># 变异位置</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 预测</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>scores <span class="op">=</span> predict_splice(sequence, position)</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"供体位点增益: </span><span class="sc">{</span>scores[<span class="st">'donor_gain'</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"受体位点损失: </span><span class="sc">{</span>scores[<span class="st">'acceptor_loss'</span>]<span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div>
+<hr>
+</section>
+<section id="rna-修饰预测" class="level3">
+<h3 class="anchored" data-anchor-id="rna-修饰预测">4. RNA 修饰预测</h3>
+<p><strong>常见 RNA 修饰</strong>: - <strong>m6A（N6-甲基腺苷）</strong>: 最常见的 mRNA 修饰 - <strong>pseudouridine（Ψ）</strong>: 假尿苷 - <strong>m5C（5-甲基胞嘧啶）</strong> - <strong>m1A（N1-甲基腺苷）</strong></p>
+<p><strong>功能</strong>: - 影响 mRNA 稳定性 - 调控翻译效率 - 影响 RNA 结构</p>
+<p><strong>预测方法</strong>: - 基于序列 motif（DRACH 为 m6A motif） - 深度学习模型（CNN, RNN, Transformer）</p>
+<p><strong>数据集</strong>: - MeRIP-seq / m6A-seq 数据 - 高通量修饰检测数据</p>
+<p><strong>代码示例</strong>:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 预测 m6A 修饰位点</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> predict_m6a(sequence, model, tokenizer):</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co">    预测序列中的 m6A 修饰位点</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    inputs <span class="op">=</span> tokenizer(sequence, return_tensors<span class="op">=</span><span class="st">"pt"</span>)</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">with</span> torch.no_grad():</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>        outputs <span class="op">=</span> model(<span class="op">**</span>inputs)</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>        probs <span class="op">=</span> torch.sigmoid(outputs.logits)</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 找到高概率位点</span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>    m6a_sites <span class="op">=</span> (probs <span class="op">&gt;</span> <span class="fl">0.5</span>).nonzero(as_tuple<span class="op">=</span><span class="va">True</span>)[<span class="dv">1</span>]</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> m6a_sites.tolist()</span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a><span class="co"># 示例</span></span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>rna_seq <span class="op">=</span> <span class="st">"AGACUGGACUUAAA"</span></span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>sites <span class="op">=</span> predict_m6a(rna_seq, model, tokenizer)</span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"预测 m6A 位点: </span><span class="sc">{</span>sites<span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div>
+<hr>
+</section>
+<section id="rna-蛋白质相互作用预测" class="level3">
+<h3 class="anchored" data-anchor-id="rna-蛋白质相互作用预测">5. RNA-蛋白质相互作用预测</h3>
+<p><strong>任务</strong>: 预测 RNA 结合蛋白（RBP）的结合位点</p>
+<p><strong>重要性</strong>: - 理解转录后调控 - 识别 RBP 靶标 - 设计 RNA 干扰工具</p>
+<p><strong>方法</strong>: - <strong>CLIP-seq 数据</strong>: 交联免疫沉淀测序 - <strong>深度学习</strong>: 学习 RBP 结合 motif</p>
+<p><strong>数据集</strong>: - ENCODE eCLIP 数据 - 数百个 RBP 的结合谱</p>
+<p><strong>代码示例</strong>:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># RBP 结合预测</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> RBPBindingPredictor(nn.Module):</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, rna_model):</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>        <span class="bu">super</span>().<span class="fu">__init__</span>()</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.rna_encoder <span class="op">=</span> rna_model</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.classifier <span class="op">=</span> nn.Linear(rna_model.config.hidden_size, <span class="dv">1</span>)</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> forward(<span class="va">self</span>, input_ids):</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>        embeddings <span class="op">=</span> <span class="va">self</span>.rna_encoder(input_ids).last_hidden_state</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>        pooled <span class="op">=</span> embeddings.mean(dim<span class="op">=</span><span class="dv">1</span>)  <span class="co"># 平均池化</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>        logits <span class="op">=</span> <span class="va">self</span>.classifier(pooled)</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> logits</span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a><span class="co"># 预测</span></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> RBPBindingPredictor(rna_fm_model)</span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>sequence <span class="op">=</span> <span class="st">"AGCUAGCU"</span></span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>prediction <span class="op">=</span> model(tokenizer(sequence, return_tensors<span class="op">=</span><span class="st">"pt"</span>)[<span class="st">"input_ids"</span>])</span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"RBP 结合概率: </span><span class="sc">{</span>torch<span class="sc">.</span>sigmoid(prediction)<span class="sc">.</span>item()<span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div>
+<hr>
+</section>
+<section id="单细胞-rna-分析" class="level3">
+<h3 class="anchored" data-anchor-id="单细胞-rna-分析">6. 单细胞 RNA 分析</h3>
+<p><strong>任务</strong>: 从单细胞 RNA-seq 数据中识别细胞类型、状态、轨迹</p>
+<p><strong>传统工具</strong>: - Scanpy, Seurat（基于统计方法）</p>
+<p><strong>Foundation Model 增强</strong>: - <strong>scGPT</strong>: 单细胞基因表达 Transformer - <strong>Geneformer</strong>: 单细胞基因表达基础模型 - <strong>scBERT</strong>: 单细胞 BERT</p>
+<p><strong>应用</strong>: - 细胞类型注释 - 细胞轨迹推断 - 基因扰动预测 - 细胞-细胞通讯</p>
+<hr>
+</section>
+</section>
+<section id="技术细节" class="level2">
+<h2 class="anchored" data-anchor-id="技术细节">技术细节</h2>
+<section id="输入表示" class="level3">
+<h3 class="anchored" data-anchor-id="输入表示">输入表示</h3>
+<p><strong>单核苷酸 tokenization</strong>:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>sequence <span class="op">=</span> <span class="st">"AUCGAUCG"</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>tokens <span class="op">=</span> [<span class="st">"A"</span>, <span class="st">"U"</span>, <span class="st">"C"</span>, <span class="st">"G"</span>, <span class="st">"A"</span>, <span class="st">"U"</span>, <span class="st">"C"</span>, <span class="st">"G"</span>]</span></code></pre></div>
+<p><strong>k-mer tokenization</strong>:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>sequence <span class="op">=</span> <span class="st">"AUCGAUCG"</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="dv">3</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>kmers <span class="op">=</span> [<span class="st">"AUC"</span>, <span class="st">"UCG"</span>, <span class="st">"CGA"</span>, <span class="st">"GAU"</span>, <span class="st">"AUC"</span>, <span class="st">"UCG"</span>]</span></code></pre></div>
+<p><strong>结构感知编码</strong>: - 同时编码序列和二级结构 - 使用括号记号表示配对：<code>(((...)))</code></p>
+<hr>
+</section>
+<section id="预训练策略" class="level3">
+<h3 class="anchored" data-anchor-id="预训练策略">预训练策略</h3>
+<p><strong>Masked Language Modeling（MLM）</strong>:</p>
+<pre><code>原始序列:  A U C G A U C G
+遮盖序列:  A [MASK] C G [MASK] U C G
+预测目标:  U, A</code></pre>
+<p><strong>结构预测任务</strong>: - 预测碱基配对 - 预测接触图</p>
+<p><strong>对比学习</strong>: - 学习相似 RNA 的表示相近 - 区分不同功能的 RNA</p>
+<hr>
+</section>
+</section>
+<section id="数据资源" class="level2">
+<h2 class="anchored" data-anchor-id="数据资源">数据资源</h2>
+<section id="rna-序列数据库" class="level3">
+<h3 class="anchored" data-anchor-id="rna-序列数据库">RNA 序列数据库</h3>
 <ul>
-<li>函数由 <code>function()</code> 创建，参数可以有默认值；</li>
-<li><code>...</code> 用于接收额外可变参数，常用于透传给其它函数（例如绘图或 <code>read_*</code> 系列）；</li>
-<li>如果没有显式 <code>return()</code>，函数会返回最后一个求值表达式的值。</li>
+<li><strong>RNAcentral</strong>: 非编码 RNA 综合数据库</li>
+<li><strong>Rfam</strong>: RNA 家族数据库</li>
+<li><strong>GENCODE</strong>: 人类和小鼠基因注释</li>
+<li><strong>miRBase</strong>: miRNA 数据库</li>
 </ul>
-<p>下面用一个生信常见的小函数举例：计算 TPM（Transcripts Per Million）从基因计数和基因长度（单位 bp）得到 TPM 值。</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>compute_tpm <span class="ot">&lt;-</span> <span class="cf">function</span>(counts, length_bp) {</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># counts: 命名向量或数值向量，表示原始计数</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># length_bp: 与 counts 对应的基因长度，单位 bp</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">length</span>(counts) <span class="sc">!=</span> <span class="fu">length</span>(length_bp)) <span class="fu">stop</span>(<span class="st">"counts 与 length_bp 长度不一致"</span>)</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  length_kb <span class="ot">&lt;-</span> length_bp <span class="sc">/</span> <span class="dv">1000</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  rpk <span class="ot">&lt;-</span> counts <span class="sc">/</span> length_kb</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  tpm <span class="ot">&lt;-</span> rpk <span class="sc">/</span> <span class="fu">sum</span>(rpk, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">*</span> <span class="fl">1e6</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(tpm)</span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="co"># 测试</span></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>counts <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="at">GeneA =</span> <span class="dv">500</span>, <span class="at">GeneB =</span> <span class="dv">1000</span>, <span class="at">GeneC =</span> <span class="dv">50</span>)</span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>length_bp <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="at">GeneA =</span> <span class="dv">2000</span>, <span class="at">GeneB =</span> <span class="dv">1000</span>, <span class="at">GeneC =</span> <span class="dv">1500</span>)</span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="fu">compute_tpm</span>(counts, length_bp)</span></code></pre></div>
-<p>这段代码展示了常见的参数检查（长度一致性）、单位转换、以及向量化操作（避免循环）。</p>
-<p><br></p>
 </section>
-<section id="参数设计与默认值" class="level2">
-<h2 class="anchored" data-anchor-id="参数设计与默认值">2. 参数设计与默认值</h2>
-<p>良好的参数设计可以提高函数的可用性与可维护性。</p>
-<p>建议：</p>
+<section id="实验数据" class="level3">
+<h3 class="anchored" data-anchor-id="实验数据">实验数据</h3>
 <ul>
-<li>把必须提供的参数放在最前面；带有合理默认值的参数放后面；</li>
-<li>使用具说明性的参数名（如 <code>counts</code>, <code>length_bp</code>, <code>method</code>）；</li>
-<li>对可能为 <code>NULL</code> 或 NA 的参数，要在函数内部处理或给出明确定义；</li>
-<li>使用 <code>...</code> 以支持可扩展性，但在文档中明确说明 <code>...</code> 会传递给哪个底层函数。</li>
+<li><strong>ENCODE</strong>: 表观基因组和转录组数据</li>
+<li><strong>GTEx</strong>: 人类组织基因表达</li>
+<li><strong>GEO</strong>: 基因表达数据库</li>
 </ul>
-<p>示例：为 <code>compute_tpm</code> 添加 <code>na.rm</code> 与 <code>min_counts</code> 两个参数。</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>compute_tpm2 <span class="ot">&lt;-</span> <span class="cf">function</span>(counts, length_bp, <span class="at">na.rm =</span> <span class="cn">TRUE</span>, <span class="at">min_counts =</span> <span class="dv">0</span>) {</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">length</span>(counts) <span class="sc">!=</span> <span class="fu">length</span>(length_bp)) <span class="fu">stop</span>(<span class="st">"counts 与 length_bp 长度不一致"</span>)</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (na.rm) {</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    keep <span class="ot">&lt;-</span> <span class="sc">!</span><span class="fu">is.na</span>(counts) <span class="sc">&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(length_bp)</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    counts <span class="ot">&lt;-</span> counts[keep]</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    length_bp <span class="ot">&lt;-</span> length_bp[keep]</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  counts[counts <span class="sc">&lt;</span> min_counts] <span class="ot">&lt;-</span> <span class="dv">0</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  length_kb <span class="ot">&lt;-</span> length_bp <span class="sc">/</span> <span class="dv">1000</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>  rpk <span class="ot">&lt;-</span> counts <span class="sc">/</span> length_kb</span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  tpm <span class="ot">&lt;-</span> rpk <span class="sc">/</span> <span class="fu">sum</span>(rpk, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">*</span> <span class="fl">1e6</span></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(tpm)</span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="fu">compute_tpm2</span>(counts, length_bp, <span class="at">min_counts =</span> <span class="dv">10</span>)</span></code></pre></div>
-<p><br></p>
 </section>
-<section id="返回值设计" class="level2">
-<h2 class="anchored" data-anchor-id="返回值设计">3. 返回值设计</h2>
-<p>函数应尽量返回明确且易用的数据结构：</p>
+<section id="结构数据" class="level3">
+<h3 class="anchored" data-anchor-id="结构数据">结构数据</h3>
 <ul>
-<li>简单计算返回向量或标量；</li>
-<li>复杂处理返回 <code>list</code> 或 <code>data.frame</code>，并在文档中说明每个字段含义；</li>
-<li>如果函数会改变全局变量，尽量避免——优先返回结果并让调用者决定是否赋值。</li>
+<li><strong>PDB</strong>: RNA 三维结构</li>
+<li><strong>RNA Strand</strong>: RNA 二级结构数据库</li>
+<li><strong>bpRNA</strong>: 大规模 RNA 二级结构数据集</li>
 </ul>
-<p>示例：一个返回多个结果的统计函数。</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>summary_stats <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(x)</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  res <span class="ot">&lt;-</span> <span class="fu">list</span>(</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">n =</span> <span class="fu">length</span>(x),</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">mean =</span> <span class="fu">mean</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">sd =</span> <span class="fu">sd</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(res)</span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="fu">summary_stats</span>(<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="cn">NA</span>,<span class="dv">5</span>))</span></code></pre></div>
-<p><br></p>
+<hr>
 </section>
-<section id="作用域scope与副作用" class="level2">
-<h2 class="anchored" data-anchor-id="作用域scope与副作用">4. 作用域（Scope）与副作用</h2>
-<p>R 中的变量作用域遵循词法作用域（lexical scope）。函数内部创建的变量默认是局部的；若想修改外部变量，需显式使用 <code>&lt;&lt;-</code> 或 <code>assign()</code>，一般不推荐。</p>
-<p>示例：局部变量与修改全局变量对比</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>global_var <span class="ot">&lt;-</span> <span class="dv">0</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>fn_local <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  y <span class="ot">&lt;-</span> x <span class="sc">+</span> <span class="dv">1</span>  <span class="co"># 局部变量 y</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(y)</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>fn_modify_global <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>  global_var <span class="ot">&lt;&lt;-</span> x  <span class="co"># 修改外部变量（不推荐）</span></span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="fu">fn_local</span>(<span class="dv">2</span>)</span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>global_var</span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="fu">fn_modify_global</span>(<span class="dv">5</span>)</span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>global_var</span></code></pre></div>
-<p>说明：除非确有必要，否则不要让函数产生副作用（修改外部状态）。函数应当是”纯函数”（相对纯粹）：相同输入应返回相同输出。</p>
-<p>闭包（closure）是 R 的一个重要特性：函数返回另一个函数，并保留创建时的环境。举例：创建一个带默认正则化参数的 scaler。</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>make_scaler <span class="ot">&lt;-</span> <span class="cf">function</span>(<span class="at">center =</span> <span class="cn">TRUE</span>, <span class="at">scale =</span> <span class="cn">TRUE</span>) {</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">function</span>(x) {</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    x <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(x)</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (center) x <span class="ot">&lt;-</span> x <span class="sc">-</span> <span class="fu">mean</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (scale) x <span class="ot">&lt;-</span> x <span class="sc">/</span> <span class="fu">sd</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    x</span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>sc <span class="ot">&lt;-</span> <span class="fu">make_scaler</span>(<span class="at">center =</span> <span class="cn">TRUE</span>, <span class="at">scale =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="fu">sc</span>(<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>))</span></code></pre></div>
-<p><br></p>
 </section>
-<section id="编写可测试可读的函数最佳实践" class="level2">
-<h2 class="anchored" data-anchor-id="编写可测试可读的函数最佳实践">5. 编写可测试、可读的函数（最佳实践）</h2>
-<p>小结性的建议：</p>
+<section id="评估指标" class="level2">
+<h2 class="anchored" data-anchor-id="评估指标">评估指标</h2>
+<section id="分类任务" class="level3">
+<h3 class="anchored" data-anchor-id="分类任务">分类任务</h3>
+<ul>
+<li><strong>准确率（Accuracy）</strong></li>
+<li><strong>AUROC / AUPRC</strong></li>
+<li><strong>F1 Score</strong></li>
+</ul>
+</section>
+<section id="结构预测" class="level3">
+<h3 class="anchored" data-anchor-id="结构预测">结构预测</h3>
+<ul>
+<li><strong>F1 Score</strong>: 碱基配对预测</li>
+<li><strong>PPV / Sensitivity</strong>: 阳性预测值 / 灵敏度</li>
+<li><strong>MCC</strong>: Matthews 相关系数</li>
+</ul>
+</section>
+<section id="回归任务" class="level3">
+<h3 class="anchored" data-anchor-id="回归任务">回归任务</h3>
+<ul>
+<li><strong>Pearson / Spearman 相关系数</strong></li>
+<li><strong>RMSE / MAE</strong></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="模型比较" class="level2">
+<h2 class="anchored" data-anchor-id="模型比较">模型比较</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 20%">
+<col style="width: 18%">
+<col style="width: 18%">
+<col style="width: 13%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>模型</th>
+<th>架构</th>
+<th>训练数据</th>
+<th>参数量</th>
+<th>专门化</th>
+<th>特点</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>RNA-FM</strong></td>
+<td>BERT</td>
+<td>RNAcentral (23.7M)</td>
+<td>100M</td>
+<td>通用</td>
+<td>多 RNA 类型</td>
+</tr>
+<tr class="even">
+<td><strong>RNABert</strong></td>
+<td>BERT</td>
+<td>RNAcentral + Rfam</td>
+<td>未公开</td>
+<td>ncRNA</td>
+<td>家族分类</td>
+</tr>
+<tr class="odd">
+<td><strong>SpliceBERT</strong></td>
+<td>BERT</td>
+<td>人类剪接位点</td>
+<td>未公开</td>
+<td>剪接</td>
+<td>高精度剪接预测</td>
+</tr>
+<tr class="even">
+<td><strong>UTR-LM</strong></td>
+<td>BERT</td>
+<td>人类 UTR</td>
+<td>未公开</td>
+<td>UTR</td>
+<td>稳定性/翻译</td>
+</tr>
+<tr class="odd">
+<td><strong>RNA-MSM</strong></td>
+<td>Transformer</td>
+<td>多物种</td>
+<td>未公开</td>
+<td>跨物种</td>
+<td>进化保守性</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="实践工具" class="level2">
+<h2 class="anchored" data-anchor-id="实践工具">实践工具</h2>
+<section id="rna-fm" class="level3">
+<h3 class="anchored" data-anchor-id="rna-fm">RNA-FM</h3>
+<p>GitHub: <a href="https://github.com/ml4bio/RNA-FM">RNA-FM</a></p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 安装</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install rna-fm</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 提取特征</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> scripts/extract_features.py <span class="dt">\</span></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">--model</span> rna_fm_t12 <span class="dt">\</span></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">--fasta</span> input.fasta <span class="dt">\</span></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">--output</span> embeddings.pt</span></code></pre></div>
+<hr>
+</section>
+<section id="viennarna传统方法对比" class="level3">
+<h3 class="anchored" data-anchor-id="viennarna传统方法对比">ViennaRNA（传统方法对比）</h3>
+<div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> RNA</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 序列</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>sequence <span class="op">=</span> <span class="st">"GGGAAACCC"</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="co"># 预测最小自由能结构</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>structure, mfe <span class="op">=</span> RNA.fold(sequence)</span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"结构: </span><span class="sc">{</span>structure<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"MFE: </span><span class="sc">{</span>mfe<span class="sc">}</span><span class="ss"> kcal/mol"</span>)</span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a><span class="co"># 配对概率</span></span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>fc <span class="op">=</span> RNA.fold_compound(sequence)</span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>fc.pf()</span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>bp_prob <span class="op">=</span> fc.bpp()</span></code></pre></div>
+<hr>
+</section>
+</section>
+<section id="挑战与未来方向" class="level2">
+<h2 class="anchored" data-anchor-id="挑战与未来方向">挑战与未来方向</h2>
+<section id="当前挑战" class="level3">
+<h3 class="anchored" data-anchor-id="当前挑战">当前挑战</h3>
 <ol type="1">
-<li>单一职责：函数只做一件事；</li>
-<li>输入验证：对输入类型、长度、NA 等进行检查并给出明确错误信息；</li>
-<li>明确返回值类型和结构；</li>
-<li>写示例与单元测试（测试框架如 <code>testthat</code>）；</li>
-<li>注释清楚但不要冗余；函数复杂时拆分为小函数。</li>
+<li><strong>结构复杂性</strong>
+<ul>
+<li>三级结构预测困难</li>
+<li>假结（pseudoknot）难以建模</li>
+</ul></li>
+<li><strong>数据稀缺</strong>
+<ul>
+<li>实验标注数据少</li>
+<li>某些 RNA 类型研究不足</li>
+</ul></li>
+<li><strong>长序列建模</strong>
+<ul>
+<li>lncRNA 可达数万碱基</li>
+<li>上下文窗口限制</li>
+</ul></li>
+<li><strong>动态性</strong>
+<ul>
+<li>RNA 结构动态变化</li>
+<li>细胞环境影响</li>
+</ul></li>
 </ol>
-<p>示例：改写一个更健壮的 TPM 计算函数（带参数检查与文档示例）。</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>compute_tpm_safe <span class="ot">&lt;-</span> <span class="cf">function</span>(counts, length_bp, <span class="at">min_counts =</span> <span class="dv">0</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) {</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.numeric</span>(counts)) <span class="fu">stop</span>(<span class="st">"counts 必须为数值向量"</span>)</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.numeric</span>(length_bp)) <span class="fu">stop</span>(<span class="st">"length_bp 必须为数值向量"</span>)</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">length</span>(counts) <span class="sc">!=</span> <span class="fu">length</span>(length_bp)) <span class="fu">stop</span>(<span class="st">"counts 与 length_bp 长度不一致"</span>)</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (na.rm) {</span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>    keep <span class="ot">&lt;-</span> <span class="sc">!</span><span class="fu">is.na</span>(counts) <span class="sc">&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(length_bp)</span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>    counts <span class="ot">&lt;-</span> counts[keep]</span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>    length_bp <span class="ot">&lt;-</span> length_bp[keep]</span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>  counts[counts <span class="sc">&lt;</span> min_counts] <span class="ot">&lt;-</span> <span class="dv">0</span></span>
-<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>  length_kb <span class="ot">&lt;-</span> length_bp <span class="sc">/</span> <span class="dv">1000</span></span>
-<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">any</span>(length_kb <span class="sc">==</span> <span class="dv">0</span>)) <span class="fu">stop</span>(<span class="st">"基因长度不能为 0"</span>)</span>
-<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>  rpk <span class="ot">&lt;-</span> counts <span class="sc">/</span> length_kb</span>
-<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>  denom <span class="ot">&lt;-</span> <span class="fu">sum</span>(rpk, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (denom <span class="sc">==</span> <span class="dv">0</span>) <span class="fu">return</span>(<span class="fu">rep</span>(<span class="dv">0</span>, <span class="fu">length</span>(rpk)))</span>
-<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>  tpm <span class="ot">&lt;-</span> rpk <span class="sc">/</span> denom <span class="sc">*</span> <span class="fl">1e6</span></span>
-<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">names</span>(tpm) <span class="ot">&lt;-</span> <span class="fu">names</span>(counts)</span>
-<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(tpm)</span>
-<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a><span class="fu">compute_tpm_safe</span>(counts, length_bp)</span></code></pre></div>
-<p><br></p>
+<hr>
 </section>
-<section id="在-r-脚本中组织函数并用-source-调试" class="level2">
-<h2 class="anchored" data-anchor-id="在-r-脚本中组织函数并用-source-调试">6. 在 R 脚本中组织函数并用 <code>source()</code> 调试</h2>
-<p>在日常分析中，我们通常把一组相关函数放在单独的脚本文件，如 <code>R/functions_tpm.R</code>，然后在主脚本中 <code>source()</code> 加载：</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 在主脚本中</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">'R/functions_tpm.R'</span>)</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>res <span class="ot">&lt;-</span> <span class="fu">compute_tpm_safe</span>(my_counts, my_lengths)</span></code></pre></div>
-<p>调试技巧：</p>
-<ul>
-<li><code>debug(func)</code>：在下一次调用 <code>func()</code> 时进入交互调试，可以单步执行；</li>
-<li><code>debugonce(func)</code>：仅调试下一次调用；</li>
-<li>在函数内部插入 <code>browser()</code>：运行到这里会进入交互式调试；</li>
-<li><code>traceback()</code>：当出错后查看调用栈；</li>
-<li><code>trace()</code>：在函数运行时插入临时代码（如打印变量）；</li>
-</ul>
-<p>示例：演示 <code>debug()</code> 与 <code>browser()</code>。</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>tmp_fn <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  a <span class="ot">&lt;-</span> <span class="fu">sqrt</span>(x)</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  b <span class="ot">&lt;-</span> <span class="fu">log</span>(a)</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(b)</span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 使用 debug()：下次调用时会进入调试模式</span></span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="fu">debug</span>(tmp_fn)</span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="fu">tmp_fn</span>(<span class="dv">10</span>)</span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a><span class="fu">undebug</span>(tmp_fn)</span>
-<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a><span class="co"># 在函数中插入 browser()</span></span>
-<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>tmp_fn2 <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
-<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>  a <span class="ot">&lt;-</span> <span class="fu">sqrt</span>(x)</span>
-<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">browser</span>()</span>
-<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>  b <span class="ot">&lt;-</span> <span class="fu">log</span>(a)</span>
-<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(b)</span>
-<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a><span class="fu">try</span>(<span class="fu">tmp_fn2</span>(<span class="dv">10</span>))</span>
-<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a><span class="co"># 出错后的 traceback()</span></span>
-<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a>bad_fn <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
-<span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stop</span>(<span class="st">"故意出错"</span>)</span>
-<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a><span class="fu">tryCatch</span>(<span class="fu">bad_fn</span>(<span class="dv">1</span>), <span class="at">error =</span> <span class="cf">function</span>(e) <span class="fu">message</span>(<span class="st">"出错: "</span>, e<span class="sc">$</span>message))</span>
-<span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a><span class="co"># 如果没有 catch，运行后可用 traceback() 查看</span></span></code></pre></div>
-<p>在 <code>source()</code> 调试时常见问题：</p>
-<ul>
-<li><code>source()</code> 默认为全局环境执行（<code>local = FALSE</code>），如果想把函数载入某个环境可以设置 <code>local = TRUE</code> 或指定环境；</li>
-<li>推荐把函数脚本放到项目 <code>R/</code> 目录并使用 <code>devtools::load_all()</code> 进行开发加载，模拟包加载环境。</li>
-</ul>
-<p>示例：使用 <code>devtools</code>（开发包时）</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 在包开发目录下</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">load_all</span>()</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">document</span>()  <span class="co"># 生成 roxygen 文档</span></span></code></pre></div>
-<p><br></p>
-</section>
-<section id="在-r-包中撰写函数的标准与-roxygen2-注释" class="level2">
-<h2 class="anchored" data-anchor-id="在-r-包中撰写函数的标准与-roxygen2-注释">7. 在 R 包中撰写函数的标准与 roxygen2 注释</h2>
-<p>当需要把函数分发或重复复用时，建议把函数放入 R 包中。R 包中的函数放在 <code>R/</code> 目录中，每个函数文件应尽量小而聚焦。使用 <code>roxygen2</code> 注释可以直接在源代码上方写注释，随后用 <code>devtools::document()</code> 自动生成 <code>NAMESPACE</code> 和 Rd 文档。</p>
-<p>roxygen2 注释模板示例：</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">#' 计算 TPM</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="co">#'</span></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="co">#' 读取原始计数与基因长度，返回 TPM 向量。</span></span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="co">#'</span></span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="co">#' @param counts 数值向量或命名向量，原始计数</span></span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="co">#' @param length_bp 数值向量，与 counts 对应，单位 bp</span></span>
-<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a><span class="co">#' @param na.rm 布尔，是否移除 NA</span></span>
-<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a><span class="co">#' @param min_counts 数值，小于该值的计数将视为 0</span></span>
-<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a><span class="co">#' @return 命名数值向量，TPM</span></span>
-<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a><span class="co">#' @examples</span></span>
-<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a><span class="co">#' counts &lt;- c(G1 = 100, G2 = 50)</span></span>
-<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a><span class="co">#' length_bp &lt;- c(G1 = 2000, G2 = 1000)</span></span>
-<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a><span class="co">#' compute_tpm_safe(counts, length_bp)</span></span>
-<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a><span class="co">#' @export</span></span>
-<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a>compute_tpm_safe <span class="ot">&lt;-</span> <span class="cf">function</span>(counts, length_bp, <span class="at">min_counts =</span> <span class="dv">0</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) {</span>
-<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a>  <span class="co"># 函数体同上（为示例重复定义）</span></span>
-<span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.numeric</span>(counts)) <span class="fu">stop</span>(<span class="st">"counts 必须为数值向量"</span>)</span>
-<span id="cb11-18"><a href="#cb11-18" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.numeric</span>(length_bp)) <span class="fu">stop</span>(<span class="st">"length_bp 必须为数值向量"</span>)</span>
-<span id="cb11-19"><a href="#cb11-19" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">length</span>(counts) <span class="sc">!=</span> <span class="fu">length</span>(length_bp)) <span class="fu">stop</span>(<span class="st">"counts 与 length_bp 长度不一致"</span>)</span>
-<span id="cb11-20"><a href="#cb11-20" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (na.rm) {</span>
-<span id="cb11-21"><a href="#cb11-21" aria-hidden="true" tabindex="-1"></a>    keep <span class="ot">&lt;-</span> <span class="sc">!</span><span class="fu">is.na</span>(counts) <span class="sc">&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(length_bp)</span>
-<span id="cb11-22"><a href="#cb11-22" aria-hidden="true" tabindex="-1"></a>    counts <span class="ot">&lt;-</span> counts[keep]</span>
-<span id="cb11-23"><a href="#cb11-23" aria-hidden="true" tabindex="-1"></a>    length_bp <span class="ot">&lt;-</span> length_bp[keep]</span>
-<span id="cb11-24"><a href="#cb11-24" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb11-25"><a href="#cb11-25" aria-hidden="true" tabindex="-1"></a>  counts[counts <span class="sc">&lt;</span> min_counts] <span class="ot">&lt;-</span> <span class="dv">0</span></span>
-<span id="cb11-26"><a href="#cb11-26" aria-hidden="true" tabindex="-1"></a>  length_kb <span class="ot">&lt;-</span> length_bp <span class="sc">/</span> <span class="dv">1000</span></span>
-<span id="cb11-27"><a href="#cb11-27" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">any</span>(length_kb <span class="sc">==</span> <span class="dv">0</span>)) <span class="fu">stop</span>(<span class="st">"基因长度不能为 0"</span>)</span>
-<span id="cb11-28"><a href="#cb11-28" aria-hidden="true" tabindex="-1"></a>  rpk <span class="ot">&lt;-</span> counts <span class="sc">/</span> length_kb</span>
-<span id="cb11-29"><a href="#cb11-29" aria-hidden="true" tabindex="-1"></a>  denom <span class="ot">&lt;-</span> <span class="fu">sum</span>(rpk, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb11-30"><a href="#cb11-30" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (denom <span class="sc">==</span> <span class="dv">0</span>) <span class="fu">return</span>(<span class="fu">rep</span>(<span class="dv">0</span>, <span class="fu">length</span>(rpk)))</span>
-<span id="cb11-31"><a href="#cb11-31" aria-hidden="true" tabindex="-1"></a>  tpm <span class="ot">&lt;-</span> rpk <span class="sc">/</span> denom <span class="sc">*</span> <span class="fl">1e6</span></span>
-<span id="cb11-32"><a href="#cb11-32" aria-hidden="true" tabindex="-1"></a>  <span class="fu">names</span>(tpm) <span class="ot">&lt;-</span> <span class="fu">names</span>(counts)</span>
-<span id="cb11-33"><a href="#cb11-33" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(tpm)</span>
-<span id="cb11-34"><a href="#cb11-34" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<p>关键点：</p>
-<ul>
-<li><code>#'</code> 开头的注释会被 roxygen2 解析；</li>
-<li>常用标签：<code>@title</code>（可选）、<code>@description</code>、<code>@param</code>、<code>@return</code>、<code>@examples</code>、<code>@export</code>、<code>@importFrom</code>；</li>
-<li><code>@export</code> 会在 <code>NAMESPACE</code> 中添加 <code>export()</code>，使函数对包用户可见；</li>
-<li><code>@importFrom pkg fun</code> 可用于在 NAMESPACE 中声明函数依赖，避免在运行时使用 <code>pkg::fun</code>。但在包内部代码中推荐使用 <code>pkg::fun</code> 或在 DESCRIPTION 中 Declare Imports。</li>
-</ul>
-<p>生成文档与安装流程（简要）：</p>
+<section id="未来方向" class="level3">
+<h3 class="anchored" data-anchor-id="未来方向">未来方向</h3>
 <ol type="1">
-<li>在包工程根目录下，编辑 <code>DESCRIPTION</code>（填写 Package, Title, Version, Authors@R, Depends/Imports）；</li>
-<li>把函数放到 <code>R/</code> 目录；</li>
-<li>运行 <code>devtools::document()</code> 自动生成 <code>man/</code> 下的 Rd 文件和 <code>NAMESPACE</code>；</li>
-<li>运行 <code>devtools::check()</code> 检查包规范；</li>
-<li><code>devtools::install()</code> 或 <code>remotes::install_local()</code> 安装包。</li>
-</ol>
-<p>示例命令（开发者机器上执行）：</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">document</span>()</span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">check</span>()</span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install</span>()</span></code></pre></div>
-<p><br></p>
-</section>
-<section id="实战把函数写在脚本中并转为包函数的最小实践" class="level2">
-<h2 class="anchored" data-anchor-id="实战把函数写在脚本中并转为包函数的最小实践">8. 实战：把函数写在脚本中并转为包函数的最小实践</h2>
-<p>步骤演示（本地项目）：</p>
-<ol type="1">
-<li>在项目 <code>R/</code> 下创建 <code>tpm.R</code>，把 <code>compute_tpm_safe()</code> 与 roxygen 注释放入其中；</li>
-<li>在 <code>DESCRIPTION</code> 中写明包名和依赖（如 <code>Imports: dplyr</code>）；</li>
-<li>使用 <code>devtools::load_all()</code> 调试并在交互中测试；</li>
-<li>写 <code>tests/testthat/test-tpm.R</code> 做单元测试。</li>
-</ol>
-<p>示例 <code>tests</code>（简要）:</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># tests/testthat/test-tpm.R</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(testthat)</span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="fu">test_that</span>(<span class="st">"TPM 计算基本正确"</span>, {</span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  counts <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="at">G1 =</span> <span class="dv">10</span>, <span class="at">G2 =</span> <span class="dv">0</span>)</span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  lengths <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="at">G1 =</span> <span class="dv">1000</span>, <span class="at">G2 =</span> <span class="dv">1000</span>)</span>
-<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>  t <span class="ot">&lt;-</span> <span class="fu">compute_tpm_safe</span>(counts, lengths)</span>
-<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">expect_equal</span>(<span class="fu">sum</span>(t), <span class="fl">1e6</span>)</span>
-<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div>
-<p><br></p>
-</section>
-<section id="常见陷阱与调试建议" class="level2">
-<h2 class="anchored" data-anchor-id="常见陷阱与调试建议">9. 常见陷阱与调试建议</h2>
+<li><strong>序列-结构联合建模</strong>
 <ul>
-<li>注意参数向量的命名和对齐（<code>names()</code>），不要依赖顺序匹配；</li>
-<li>小心 <code>...</code> 的透传导致参数被错误地传给下游函数；</li>
-<li>写示例时要包含边界条件（零向量、全 NA、长度不匹配）；</li>
-<li>使用 <code>testthat</code> 保持回归稳定性；</li>
-<li><code>devtools::check()</code> 会捕捉到文档错误、未导出的符号等问题，务必在发布前运行。</li>
-</ul>
-<p>调试流程建议：</p>
-<ol type="1">
-<li>在交互式环境用 <code>source()</code> 或 <code>devtools::load_all()</code> 加载函数；</li>
-<li>使用 <code>debugonce()</code> 或在函数中插入 <code>browser()</code> 单步调试；</li>
-<li>出错后用 <code>traceback()</code> 查找调用栈，并使用 <code>rlang::last_error()</code> 获取更详细信息（若使用 <code>rlang</code>）；</li>
-<li>写最小可复现示例，方便定位问题并写测试。</li>
-</ol>
-<p><br></p>
-</section>
-<section id="小结" class="level2">
-<h2 class="anchored" data-anchor-id="小结">10. 小结</h2>
-<p>本节覆盖了：</p>
+<li>同时预测序列和结构</li>
+<li>学习结构-功能关系</li>
+</ul></li>
+<li><strong>多模态 RNA 模型</strong>
 <ul>
-<li>R 函数定义与参数设计；</li>
-<li>返回值与作用域（避免副作用）；</li>
-<li>闭包与高阶函数的简单示例；</li>
-<li>在脚本中组织函数并用 <code>source()</code>/<code>debug()</code> 调试；</li>
-<li>将函数写入 R 包、roxygen2 注释与文档自动生成；</li>
-<li>单元测试与 <code>devtools</code> 流程建议。</li>
+<li>整合序列、结构、表达、修饰数据</li>
+<li>全面理解 RNA 功能</li>
+</ul></li>
+<li><strong>可解释 RNA 模型</strong>
+<ul>
+<li>识别功能 motif</li>
+<li>理解调控机制</li>
+</ul></li>
+<li><strong>RNA 设计</strong>
+<ul>
+<li>从功能到序列的逆向设计</li>
+<li>mRNA 疫苗、治疗性 RNA 优化</li>
+</ul></li>
+<li><strong>动态建模</strong>
+<ul>
+<li>捕捉 RNA 结构动态</li>
+<li>模拟折叠路径</li>
+</ul></li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="学习资源" class="level2">
+<h2 class="anchored" data-anchor-id="学习资源">学习资源</h2>
+<section id="论文" class="level3">
+<h3 class="anchored" data-anchor-id="论文">论文</h3>
+<ul>
+<li>Chen, J. et al.&nbsp;(2022). RNA-FM. <em>arXiv:2204.00300</em>.</li>
+<li>Jaganathan, K. et al.&nbsp;(2019). SpliceAI. <em>Cell</em>.</li>
+<li>Chen, K. et al.&nbsp;(2023). SpliceBERT. <em>bioRxiv</em>.</li>
 </ul>
+</section>
+<section id="在线资源" class="level3">
+<h3 class="anchored" data-anchor-id="在线资源">在线资源</h3>
+<ul>
+<li><a href="https://github.com/ml4bio/RNA-FM">RNA-FM GitHub</a></li>
+<li><a href="https://www.tbi.univie.ac.at/RNA/">ViennaRNA Package</a></li>
+<li><a href="https://rnacentral.org/">RNAcentral</a></li>
+</ul>
+</section>
+<section id="课程" class="level3">
+<h3 class="anchored" data-anchor-id="课程">课程</h3>
+<ul>
+<li>RNA Biology (MIT OpenCourseWare)</li>
+<li>Computational RNA Biology (Coursera)</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="相关链接" class="level2">
+<h2 class="anchored" data-anchor-id="相关链接">相关链接</h2>
+<ul>
+<li><a href="../AI4S/index.html">AI4S 专题主页</a></li>
+<li><a href="../AI4S/foundation-models-dna.html">DNA Foundation Models</a></li>
+<li><a href="../AI4S/foundation-models-protein.html">蛋白质 Foundation Models</a></li>
+<li><a href="../AI4S/ai4drug-overview.html">AI4Drug</a></li>
+<li><a href="../AI4S/virtual-cell.html">虚拟细胞</a></li>
+</ul>
+<hr>
+<p>更新时间：2026-09-29</p>
 
 
 </section>
@@ -1488,13 +1758,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../Rbase/index.html" class="pagination-link" aria-label="教程总览">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">教程总览</span>
+      <a href="../AI4S/foundation-models-dna.html" class="pagination-link" aria-label="DNA Foundation Models">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">DNA Foundation Models</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../Rbase/L7_ggplot2.html" class="pagination-link" aria-label="L7 - ggplot2 数据可视化">
-        <span class="nav-page-text">L7 - ggplot2 数据可视化</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../AI4S/foundation-models-protein.html" class="pagination-link" aria-label="蛋白质 Foundation Models">
+        <span class="nav-page-text">蛋白质 Foundation Models</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

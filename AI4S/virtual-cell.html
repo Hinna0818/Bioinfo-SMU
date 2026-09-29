@@ -1,0 +1,1720 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>virtual-cell – Bioinfo-SMU</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../learning-path.html" rel="next">
+<link href="../AI4S/ai4drug-overview.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-ebb2f88ff82f7a66e9b1e4215819a99f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-a73ff9addbf92c1d16ae9639034a74ac.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-ebb2f88ff82f7a66e9b1e4215819a99f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="Bioinfo-SMU">
+<meta property="og:description" content="">
+<meta property="og:site_name" content="Bioinfo-SMU">
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Bioinfo-SMU</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
+<span class="menu-text">首页</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../Grade1/index.html"> 
+<span class="menu-text">大一课程</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../Grade2/index.html"> 
+<span class="menu-text">大二课程</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../Grade3/index.html"> 
+<span class="menu-text">大三课程</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">大四课程</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-">    
+        <li>
+    <a class="dropdown-item" href="../Grade4/index.html">
+ <span class="dropdown-text">课程总览</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../Grade4/computational_biology/index.html">
+ <span class="dropdown-text">计算生物学</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../Grade4/CADD/index.html">
+ <span class="dropdown-text">计算机辅助药物设计</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../Grade4/computational_molecular_biology/index.html">
+ <span class="dropdown-text">计算分子生物学</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../Grade4/career_guidance/index.html">
+ <span class="dropdown-text">就业指导概论</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../Grade4/graduation_paper/index.html">
+ <span class="dropdown-text">毕业论文</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../Rbase/index.html"> 
+<span class="menu-text">R 语言教程</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../BioinfoTalus/index.html"> 
+<span class="menu-text">生信流程</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../Epidemiology/UK_Biobank.html"> 
+<span class="menu-text">流行病学数据库</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-ai4science" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">AI4Science</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-ai4science">    
+        <li>
+    <a class="dropdown-item" href="../AI4S/index.html">
+ <span class="dropdown-text">AI4S 专题</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../AI4S/foundation-models-dna.html">
+ <span class="dropdown-text">DNA Foundation Models</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../AI4S/foundation-models-rna.html">
+ <span class="dropdown-text">RNA Foundation Models</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../AI4S/foundation-models-protein.html">
+ <span class="dropdown-text">蛋白质 Foundation Models</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../AI4S/ai4drug-overview.html">
+ <span class="dropdown-text">AI4Drug</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../AI4S/virtual-cell.html">
+ <span class="dropdown-text">虚拟细胞</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu--1" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">学习资源</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu--1">    
+        <li>
+    <a class="dropdown-item" href="../learning-path.html">
+ <span class="dropdown-text">学习路线</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../tools.html">
+ <span class="dropdown-text">常用工具</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../resources.html">
+ <span class="dropdown-text">参考资料</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../contributing.html"> 
+<span class="menu-text">贡献指南</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html"> 
+<span class="menu-text">关于</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://github.com/Hinna0818/Bioinfo-SMU"> 
+<span class="menu-text">GitHub</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../AI4S/index.html">AI4Science 专题</a></li><li class="breadcrumb-item"><a href="../AI4S/virtual-cell.html">虚拟细胞</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">首页</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">大一课程</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Grade1/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">大一课程总览</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">大二课程</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Grade2/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">大二课程总览</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">大三课程</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Grade3/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">大三课程总览</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">大四课程</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Grade4/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">大四课程总览</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false">
+ <span class="menu-text">计算生物学</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Grade4/computational_biology/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">课程主页</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Grade4/computational_biology/exp1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">实验1 - PPI网络分析</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Grade4/computational_biology/exp2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">实验2 - WGCNA分析</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Grade4/computational_biology/exp3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">实验3 - 网络聚类与随机游走</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Grade4/computational_biology/exp4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">实验4 - qPCR数据分析</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Grade4/computational_biology/exam-materials.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">考试资料</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Grade4/CADD/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">计算机辅助药物设计</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false">
+ <span class="menu-text">计算分子生物学</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Grade4/computational_molecular_biology/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">课程主页</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Grade4/computational_molecular_biology/exam-info.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">考试说明</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Grade4/career_guidance/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">就业指导概论</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Grade4/graduation_paper/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">毕业论文</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
+ <span class="menu-text">R 语言教程</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Rbase/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">教程总览</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Rbase/L6_functions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">L6 - R 函数与包开发</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Rbase/L7_ggplot2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">L7 - ggplot2 数据可视化</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true">
+ <span class="menu-text">生信流程</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../BioinfoTalus/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">BioinfoTalus</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true">
+ <span class="menu-text">流行病学数据库</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Epidemiology/UK_Biobank.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">UK Biobank</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true">
+ <span class="menu-text">AI4Science 专题</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../AI4S/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">AI4S 概述</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../AI4S/foundation-models-dna.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">DNA Foundation Models</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../AI4S/foundation-models-rna.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">RNA Foundation Models</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../AI4S/foundation-models-protein.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">蛋白质 Foundation Models</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../AI4S/ai4drug-overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">AI4Drug</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../AI4S/virtual-cell.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">虚拟细胞</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true">
+ <span class="menu-text">学习资源</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../learning-path.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">学习路线</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tools.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">常用工具</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../resources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">参考资料</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../contributing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">贡献指南</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">关于</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#虚拟细胞virtual-cell" id="toc-虚拟细胞virtual-cell" class="nav-link active" data-scroll-target="#虚拟细胞virtual-cell">虚拟细胞（Virtual Cell）</a>
+  <ul class="collapse">
+  <li><a href="#什么是虚拟细胞" id="toc-什么是虚拟细胞" class="nav-link" data-scroll-target="#什么是虚拟细胞">什么是虚拟细胞？</a>
+  <ul class="collapse">
+  <li><a href="#定义" id="toc-定义" class="nav-link" data-scroll-target="#定义">定义</a></li>
+  <li><a href="#目标" id="toc-目标" class="nav-link" data-scroll-target="#目标">目标</a></li>
+  </ul></li>
+  <li><a href="#核心技术" id="toc-核心技术" class="nav-link" data-scroll-target="#核心技术">核心技术</a>
+  <ul class="collapse">
+  <li><a href="#基于约束的建模" id="toc-基于约束的建模" class="nav-link" data-scroll-target="#基于约束的建模">1. 基于约束的建模</a></li>
+  <li><a href="#常微分方程ode建模" id="toc-常微分方程ode建模" class="nav-link" data-scroll-target="#常微分方程ode建模">2. 常微分方程（ODE）建模</a></li>
+  <li><a href="#随机模拟" id="toc-随机模拟" class="nav-link" data-scroll-target="#随机模拟">3. 随机模拟</a></li>
+  <li><a href="#多尺度建模" id="toc-多尺度建模" class="nav-link" data-scroll-target="#多尺度建模">4. 多尺度建模</a></li>
+  <li><a href="#机器学习驱动的虚拟细胞" id="toc-机器学习驱动的虚拟细胞" class="nav-link" data-scroll-target="#机器学习驱动的虚拟细胞">5. 机器学习驱动的虚拟细胞</a></li>
+  </ul></li>
+  <li><a href="#代表性虚拟细胞模型" id="toc-代表性虚拟细胞模型" class="nav-link" data-scroll-target="#代表性虚拟细胞模型">代表性虚拟细胞模型</a>
+  <ul class="collapse">
+  <li><a href="#全细胞模型mycoplasma-genitalium" id="toc-全细胞模型mycoplasma-genitalium" class="nav-link" data-scroll-target="#全细胞模型mycoplasma-genitalium">1. 全细胞模型：Mycoplasma genitalium</a></li>
+  <li><a href="#大肠杆菌代谢模型" id="toc-大肠杆菌代谢模型" class="nav-link" data-scroll-target="#大肠杆菌代谢模型">2. 大肠杆菌代谢模型</a></li>
+  <li><a href="#人类代谢模型" id="toc-人类代谢模型" class="nav-link" data-scroll-target="#人类代谢模型">3. 人类代谢模型</a></li>
+  </ul></li>
+  <li><a href="#前沿进展2026-年" id="toc-前沿进展2026-年" class="nav-link" data-scroll-target="#前沿进展2026-年">前沿进展（2026 年）</a>
+  <ul class="collapse">
+  <li><a href="#cell-2026-综述虚拟细胞的未来" id="toc-cell-2026-综述虚拟细胞的未来" class="nav-link" data-scroll-target="#cell-2026-综述虚拟细胞的未来">Cell 2026 综述：虚拟细胞的未来</a></li>
+  <li><a href="#技术突破" id="toc-技术突破" class="nav-link" data-scroll-target="#技术突破">技术突破</a></li>
+  </ul></li>
+  <li><a href="#应用场景" id="toc-应用场景" class="nav-link" data-scroll-target="#应用场景">应用场景</a>
+  <ul class="collapse">
+  <li><a href="#代谢工程" id="toc-代谢工程" class="nav-link" data-scroll-target="#代谢工程">1. 代谢工程</a></li>
+  <li><a href="#药物靶点识别" id="toc-药物靶点识别" class="nav-link" data-scroll-target="#药物靶点识别">2. 药物靶点识别</a></li>
+  <li><a href="#细胞命运预测" id="toc-细胞命运预测" class="nav-link" data-scroll-target="#细胞命运预测">3. 细胞命运预测</a></li>
+  <li><a href="#合成生物学" id="toc-合成生物学" class="nav-link" data-scroll-target="#合成生物学">4. 合成生物学</a></li>
+  <li><a href="#疾病建模" id="toc-疾病建模" class="nav-link" data-scroll-target="#疾病建模">5. 疾病建模</a></li>
+  </ul></li>
+  <li><a href="#工具与平台" id="toc-工具与平台" class="nav-link" data-scroll-target="#工具与平台">工具与平台</a>
+  <ul class="collapse">
+  <li><a href="#cobrapy" id="toc-cobrapy" class="nav-link" data-scroll-target="#cobrapy">COBRApy</a></li>
+  <li><a href="#vcellvirtual-cell" id="toc-vcellvirtual-cell" class="nav-link" data-scroll-target="#vcellvirtual-cell">VCell（Virtual Cell）</a></li>
+  <li><a href="#celloracle" id="toc-celloracle" class="nav-link" data-scroll-target="#celloracle">CellOracle</a></li>
+  <li><a href="#physicell" id="toc-physicell" class="nav-link" data-scroll-target="#physicell">PhysiCell</a></li>
+  <li><a href="#e-cell" id="toc-e-cell" class="nav-link" data-scroll-target="#e-cell">E-Cell</a></li>
+  </ul></li>
+  <li><a href="#挑战与未来" id="toc-挑战与未来" class="nav-link" data-scroll-target="#挑战与未来">挑战与未来</a>
+  <ul class="collapse">
+  <li><a href="#当前挑战" id="toc-当前挑战" class="nav-link" data-scroll-target="#当前挑战">当前挑战</a></li>
+  <li><a href="#未来方向" id="toc-未来方向" class="nav-link" data-scroll-target="#未来方向">未来方向</a></li>
+  </ul></li>
+  <li><a href="#学习资源" id="toc-学习资源" class="nav-link" data-scroll-target="#学习资源">学习资源</a>
+  <ul class="collapse">
+  <li><a href="#在线课程" id="toc-在线课程" class="nav-link" data-scroll-target="#在线课程">在线课程</a></li>
+  <li><a href="#书籍" id="toc-书籍" class="nav-link" data-scroll-target="#书籍">书籍</a></li>
+  <li><a href="#教程" id="toc-教程" class="nav-link" data-scroll-target="#教程">教程</a></li>
+  <li><a href="#论文" id="toc-论文" class="nav-link" data-scroll-target="#论文">论文</a></li>
+  </ul></li>
+  <li><a href="#总结" id="toc-总结" class="nav-link" data-scroll-target="#总结">总结</a></li>
+  <li><a href="#相关链接" id="toc-相关链接" class="nav-link" data-scroll-target="#相关链接">相关链接</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../AI4S/index.html">AI4Science 专题</a></li><li class="breadcrumb-item"><a href="../AI4S/virtual-cell.html">虚拟细胞</a></li></ol></nav></header>
+
+
+
+
+
+<section id="虚拟细胞virtual-cell" class="level1">
+<h1>虚拟细胞（Virtual Cell）</h1>
+<p>虚拟细胞是通过计算模型重建细胞完整行为的前沿研究方向，旨在构建细胞的”数字孪生”（Digital Twin），整合从分子到细胞器再到整个细胞的多尺度生物学数据，实现对细胞行为的预测、模拟和操控。虚拟细胞代表了系统生物学、合成生物学和计算生物学的深度融合，是 AI4Science 的重要应用领域。</p>
+<hr>
+<section id="什么是虚拟细胞" class="level2">
+<h2 class="anchored" data-anchor-id="什么是虚拟细胞">什么是虚拟细胞？</h2>
+<section id="定义" class="level3">
+<h3 class="anchored" data-anchor-id="定义">定义</h3>
+<p>虚拟细胞是一个基于计算的、可预测的细胞模型，能够模拟细胞在不同条件下的行为，包括：</p>
+<ul>
+<li><strong>代谢网络</strong>：物质与能量的流动</li>
+<li><strong>基因调控网络</strong>：基因表达的动态变化</li>
+<li><strong>信号通路</strong>：细胞对外界刺激的响应</li>
+<li><strong>细胞分裂</strong>：细胞周期与增殖</li>
+<li><strong>细胞分化</strong>：干细胞命运决定</li>
+<li><strong>细胞-细胞互作</strong>：多细胞系统的协同行为</li>
+</ul>
+<hr>
+</section>
+<section id="目标" class="level3">
+<h3 class="anchored" data-anchor-id="目标">目标</h3>
+<p><strong>预测能力</strong>: - 给定初始条件，预测细胞状态演化 - 预测基因敲除/过表达的表型 - 预测药物对细胞的影响</p>
+<p><strong>可操控性</strong>: - 虚拟实验：在计算机中测试假设 - 优化设计：合成生物学中的最优基因回路 - 个性化医疗：基于患者细胞的治疗方案</p>
+<hr>
+</section>
+</section>
+<section id="核心技术" class="level2">
+<h2 class="anchored" data-anchor-id="核心技术">核心技术</h2>
+<section id="基于约束的建模" class="level3">
+<h3 class="anchored" data-anchor-id="基于约束的建模">1. 基于约束的建模</h3>
+<p><strong>代表方法：通量平衡分析（Flux Balance Analysis, FBA）</strong></p>
+<p><strong>原理</strong>: - 假设细胞处于稳态（代谢物浓度不变） - 最大化生物量或其他目标函数 - 约束：反应化学计量、通量上下界</p>
+<p><strong>数学表示</strong>:</p>
+<pre><code>最大化: v_biomass
+约束:
+  S · v = 0  （稳态约束）
+  lb ≤ v ≤ ub  （通量边界）</code></pre>
+<p>其中： - <code>S</code>: 化学计量矩阵 - <code>v</code>: 反应通量向量 - <code>lb, ub</code>: 通量下界与上界</p>
+<p><strong>代码示例（使用 COBRApy）</strong>:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> cobra</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> cobra.io <span class="im">import</span> load_model</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 加载大肠杆菌基因组规模代谢模型</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> load_model(<span class="st">"iJO1366"</span>)  <span class="co"># E. coli 模型</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 查看模型基本信息</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"反应数: </span><span class="sc">{</span><span class="bu">len</span>(model.reactions)<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"代谢物数: </span><span class="sc">{</span><span class="bu">len</span>(model.metabolites)<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"基因数: </span><span class="sc">{</span><span class="bu">len</span>(model.genes)<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="co"># 模拟生长</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>solution <span class="op">=</span> model.optimize()</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"最大生长速率: </span><span class="sc">{</span>solution<span class="sc">.</span>objective_value<span class="sc">:.3f}</span><span class="ss"> 1/h"</span>)</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="co"># 基因敲除实验</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> model:</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 敲除 pgi 基因（葡萄糖-6-磷酸异构酶）</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>    model.genes.pgi.knock_out()</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>    ko_solution <span class="op">=</span> model.optimize()</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"敲除后生长速率: </span><span class="sc">{</span>ko_solution<span class="sc">.</span>objective_value<span class="sc">:.3f}</span><span class="ss"> 1/h"</span>)</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="co"># 通量变异性分析（FVA）</span></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> cobra.flux_analysis <span class="im">import</span> flux_variability_analysis</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>fva_result <span class="op">=</span> flux_variability_analysis(model, model.reactions[:<span class="dv">10</span>])</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(fva_result)</span></code></pre></div>
+<p><strong>应用</strong>: - 预测基因敲除效应 - 代谢工程：优化产物合成 - 致死基因识别：药物靶点发现</p>
+<hr>
+</section>
+<section id="常微分方程ode建模" class="level3">
+<h3 class="anchored" data-anchor-id="常微分方程ode建模">2. 常微分方程（ODE）建模</h3>
+<p><strong>适用场景</strong>: 信号通路、基因调控网络的动态模拟</p>
+<p><strong>原理</strong>: 描述分子浓度随时间的变化</p>
+<p><strong>示例：简单基因调控</strong>:</p>
+<pre><code>dX/dt = k_on - k_off * X</code></pre>
+<p>其中： - <code>X</code>: 蛋白质浓度 - <code>k_on</code>: 合成速率 - <code>k_off</code>: 降解速率</p>
+<p><strong>代码示例（使用 SciPy）</strong>:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.integrate <span class="im">import</span> odeint</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 基因调控 ODE：负反馈回路</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> gene_regulation(y, t, k_on, k_off, k_inh, n):</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    X <span class="op">=</span> y[<span class="dv">0</span>]</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Hill 函数抑制</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    dX_dt <span class="op">=</span> k_on <span class="op">/</span> (<span class="dv">1</span> <span class="op">+</span> (X <span class="op">/</span> k_inh) <span class="op">**</span> n) <span class="op">-</span> k_off <span class="op">*</span> X</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> [dX_dt]</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="co"># 参数</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>k_on <span class="op">=</span> <span class="fl">1.0</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>k_off <span class="op">=</span> <span class="fl">0.1</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>k_inh <span class="op">=</span> <span class="fl">5.0</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">2</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a><span class="co"># 初始条件</span></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>X0 <span class="op">=</span> [<span class="fl">0.1</span>]</span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a><span class="co"># 时间点</span></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> np.linspace(<span class="dv">0</span>, <span class="dv">100</span>, <span class="dv">1000</span>)</span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a><span class="co"># 求解 ODE</span></span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>sol <span class="op">=</span> odeint(gene_regulation, X0, t, args<span class="op">=</span>(k_on, k_off, k_inh, n))</span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a><span class="co"># 可视化</span></span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>plt.plot(t, sol[:, <span class="dv">0</span>], label<span class="op">=</span><span class="st">'Protein X'</span>)</span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Time'</span>)</span>
+<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Concentration'</span>)</span>
+<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Gene Regulation with Negative Feedback'</span>)</span>
+<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
+<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<p><strong>应用</strong>: - 振荡器设计（合成生物学） - 信号通路动力学 - 细胞周期模型</p>
+<hr>
+</section>
+<section id="随机模拟" class="level3">
+<h3 class="anchored" data-anchor-id="随机模拟">3. 随机模拟</h3>
+<p><strong>适用场景</strong>: 低拷贝数分子、基因表达噪声</p>
+<p><strong>Gillespie 算法（Stochastic Simulation Algorithm, SSA）</strong>: - 精确模拟化学反应的随机过程 - 适用于小体系</p>
+<p><strong>代码示例</strong>:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> gillespie(reactions, X0, tmax):</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="co">    Gillespie 算法</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co">    </span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="co">    reactions: list of (propensity_func, change_vector)</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="co">    X0: 初始状态</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="co">    tmax: 最大时间</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    X <span class="op">=</span> np.array(X0, dtype<span class="op">=</span><span class="bu">float</span>)</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    t <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>    t_list <span class="op">=</span> [t]</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>    X_list <span class="op">=</span> [X.copy()]</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> t <span class="op">&lt;</span> tmax:</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>        <span class="co"># 计算所有反应的倾向性</span></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>        a_list <span class="op">=</span> [prop(X) <span class="cf">for</span> prop, _ <span class="kw">in</span> reactions]</span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>        a0 <span class="op">=</span> <span class="bu">sum</span>(a_list)</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> a0 <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>            <span class="cf">break</span></span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>        <span class="co"># 采样时间增量</span></span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>        tau <span class="op">=</span> np.random.exponential(<span class="dv">1</span> <span class="op">/</span> a0)</span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a>        t <span class="op">+=</span> tau</span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a>        <span class="co"># 选择反应</span></span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a>        r <span class="op">=</span> np.random.uniform(<span class="dv">0</span>, a0)</span>
+<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a>        cumsum <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> i, a <span class="kw">in</span> <span class="bu">enumerate</span>(a_list):</span>
+<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a>            cumsum <span class="op">+=</span> a</span>
+<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> r <span class="op">&lt;</span> cumsum:</span>
+<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a>                X <span class="op">+=</span> reactions[i][<span class="dv">1</span>]</span>
+<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a>                <span class="cf">break</span></span>
+<span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a>        t_list.append(t)</span>
+<span id="cb5-39"><a href="#cb5-39" aria-hidden="true" tabindex="-1"></a>        X_list.append(X.copy())</span>
+<span id="cb5-40"><a href="#cb5-40" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb5-41"><a href="#cb5-41" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> np.array(t_list), np.array(X_list)</span>
+<span id="cb5-42"><a href="#cb5-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-43"><a href="#cb5-43" aria-hidden="true" tabindex="-1"></a><span class="co"># 示例：mRNA 和蛋白质合成与降解</span></span>
+<span id="cb5-44"><a href="#cb5-44" aria-hidden="true" tabindex="-1"></a><span class="co"># 状态: [mRNA, Protein]</span></span>
+<span id="cb5-45"><a href="#cb5-45" aria-hidden="true" tabindex="-1"></a><span class="co"># 反应:</span></span>
+<span id="cb5-46"><a href="#cb5-46" aria-hidden="true" tabindex="-1"></a><span class="co">#   1. DNA -&gt; DNA + mRNA  (rate = k1)</span></span>
+<span id="cb5-47"><a href="#cb5-47" aria-hidden="true" tabindex="-1"></a><span class="co">#   2. mRNA -&gt; 0           (rate = k2 * mRNA)</span></span>
+<span id="cb5-48"><a href="#cb5-48" aria-hidden="true" tabindex="-1"></a><span class="co">#   3. mRNA -&gt; mRNA + Protein (rate = k3 * mRNA)</span></span>
+<span id="cb5-49"><a href="#cb5-49" aria-hidden="true" tabindex="-1"></a><span class="co">#   4. Protein -&gt; 0        (rate = k4 * Protein)</span></span>
+<span id="cb5-50"><a href="#cb5-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-51"><a href="#cb5-51" aria-hidden="true" tabindex="-1"></a>k1, k2, k3, k4 <span class="op">=</span> <span class="dv">10</span>, <span class="fl">0.1</span>, <span class="dv">10</span>, <span class="fl">0.01</span></span>
+<span id="cb5-52"><a href="#cb5-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-53"><a href="#cb5-53" aria-hidden="true" tabindex="-1"></a>reactions <span class="op">=</span> [</span>
+<span id="cb5-54"><a href="#cb5-54" aria-hidden="true" tabindex="-1"></a>    (<span class="kw">lambda</span> X: k1, np.array([<span class="dv">1</span>, <span class="dv">0</span>])),           <span class="co"># mRNA 合成</span></span>
+<span id="cb5-55"><a href="#cb5-55" aria-hidden="true" tabindex="-1"></a>    (<span class="kw">lambda</span> X: k2 <span class="op">*</span> X[<span class="dv">0</span>], np.array([<span class="op">-</span><span class="dv">1</span>, <span class="dv">0</span>])),   <span class="co"># mRNA 降解</span></span>
+<span id="cb5-56"><a href="#cb5-56" aria-hidden="true" tabindex="-1"></a>    (<span class="kw">lambda</span> X: k3 <span class="op">*</span> X[<span class="dv">0</span>], np.array([<span class="dv">0</span>, <span class="dv">1</span>])),    <span class="co"># 蛋白质合成</span></span>
+<span id="cb5-57"><a href="#cb5-57" aria-hidden="true" tabindex="-1"></a>    (<span class="kw">lambda</span> X: k4 <span class="op">*</span> X[<span class="dv">1</span>], np.array([<span class="dv">0</span>, <span class="op">-</span><span class="dv">1</span>])),   <span class="co"># 蛋白质降解</span></span>
+<span id="cb5-58"><a href="#cb5-58" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb5-59"><a href="#cb5-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-60"><a href="#cb5-60" aria-hidden="true" tabindex="-1"></a>X0 <span class="op">=</span> [<span class="dv">0</span>, <span class="dv">0</span>]</span>
+<span id="cb5-61"><a href="#cb5-61" aria-hidden="true" tabindex="-1"></a>tmax <span class="op">=</span> <span class="dv">100</span></span>
+<span id="cb5-62"><a href="#cb5-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-63"><a href="#cb5-63" aria-hidden="true" tabindex="-1"></a><span class="co"># 运行多次模拟</span></span>
+<span id="cb5-64"><a href="#cb5-64" aria-hidden="true" tabindex="-1"></a>n_sim <span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb5-65"><a href="#cb5-65" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">5</span>))</span>
+<span id="cb5-66"><a href="#cb5-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-67"><a href="#cb5-67" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(n_sim):</span>
+<span id="cb5-68"><a href="#cb5-68" aria-hidden="true" tabindex="-1"></a>    t_list, X_list <span class="op">=</span> gillespie(reactions, X0, tmax)</span>
+<span id="cb5-69"><a href="#cb5-69" aria-hidden="true" tabindex="-1"></a>    plt.subplot(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">1</span>)</span>
+<span id="cb5-70"><a href="#cb5-70" aria-hidden="true" tabindex="-1"></a>    plt.plot(t_list, X_list[:, <span class="dv">0</span>], alpha<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb5-71"><a href="#cb5-71" aria-hidden="true" tabindex="-1"></a>    plt.subplot(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">2</span>)</span>
+<span id="cb5-72"><a href="#cb5-72" aria-hidden="true" tabindex="-1"></a>    plt.plot(t_list, X_list[:, <span class="dv">1</span>], alpha<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb5-73"><a href="#cb5-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-74"><a href="#cb5-74" aria-hidden="true" tabindex="-1"></a>plt.subplot(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">1</span>)</span>
+<span id="cb5-75"><a href="#cb5-75" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Time'</span>)</span>
+<span id="cb5-76"><a href="#cb5-76" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'mRNA count'</span>)</span>
+<span id="cb5-77"><a href="#cb5-77" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'mRNA dynamics'</span>)</span>
+<span id="cb5-78"><a href="#cb5-78" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb5-79"><a href="#cb5-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-80"><a href="#cb5-80" aria-hidden="true" tabindex="-1"></a>plt.subplot(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">2</span>)</span>
+<span id="cb5-81"><a href="#cb5-81" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Time'</span>)</span>
+<span id="cb5-82"><a href="#cb5-82" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Protein count'</span>)</span>
+<span id="cb5-83"><a href="#cb5-83" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Protein dynamics'</span>)</span>
+<span id="cb5-84"><a href="#cb5-84" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb5-85"><a href="#cb5-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-86"><a href="#cb5-86" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb5-87"><a href="#cb5-87" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<p><strong>应用</strong>: - 基因表达噪声 - 小分子数动力学 - 细胞命运决策</p>
+<hr>
+</section>
+<section id="多尺度建模" class="level3">
+<h3 class="anchored" data-anchor-id="多尺度建模">4. 多尺度建模</h3>
+<p><strong>挑战</strong>: 细胞行为跨越多个时间尺度和空间尺度</p>
+<p><strong>尺度</strong>: - <strong>原子级</strong>（纳秒、纳米）：分子动力学 - <strong>分子级</strong>（秒、纳米-微米）：生化反应 - <strong>细胞器级</strong>（分钟、微米）：线粒体、核糖体 - <strong>细胞级</strong>（小时、微米-毫米）：细胞分裂、迁移 - <strong>组织级</strong>（天、毫米）：器官发育</p>
+<p><strong>多尺度整合方法</strong>: - 分层建模：不同尺度使用不同模型 - 耦合模拟：跨尺度信息传递</p>
+<p><strong>工具</strong>: - <strong>E-Cell</strong>: 多尺度细胞模拟 - <strong>Virtual Cell (VCell)</strong>: 空间细胞建模</p>
+<hr>
+</section>
+<section id="机器学习驱动的虚拟细胞" class="level3">
+<h3 class="anchored" data-anchor-id="机器学习驱动的虚拟细胞">5. 机器学习驱动的虚拟细胞</h3>
+<p><strong>从数据学习细胞动力学</strong></p>
+<p><strong>单细胞 RNA-seq → 细胞状态转换</strong>: - 学习细胞状态的潜在空间 - 预测扰动效应</p>
+<p><strong>代表工具</strong>:</p>
+<p><strong>CellOracle</strong>: - 从单细胞数据推断基因调控网络 - 模拟基因扰动引起的细胞命运变化</p>
+<p><strong>代码示例（CellOracle）</strong>:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> celloracle <span class="im">as</span> co</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> scanpy <span class="im">as</span> sc</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 加载单细胞数据</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>adata <span class="op">=</span> sc.read_h5ad(<span class="st">"scRNA_data.h5ad"</span>)</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 构建基因调控网络（GRN）</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>oracle <span class="op">=</span> co.Oracle()</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>oracle.import_anndata_as_raw_count(adata)</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>oracle.perform_PCA()</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>oracle.knn_imputation()</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="co"># 推断 GRN</span></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>oracle.fit_GRN()</span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a><span class="co"># 模拟基因敲除</span></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>oracle.simulate_shift(gene<span class="op">=</span><span class="st">"Gata1"</span>, n_propagation<span class="op">=</span><span class="dv">3</span>)</span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a><span class="co"># 可视化细胞命运变化</span></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>oracle.visualize_development()</span></code></pre></div>
+<hr>
+<p><strong>Geneformer</strong>: - Transformer 模型学习基因表达 - 预测基因扰动和细胞状态</p>
+<hr>
+<p><strong>scGPT</strong>: - 生成式预训练 Transformer - 单细胞数据的通用表示</p>
+<hr>
+</section>
+</section>
+<section id="代表性虚拟细胞模型" class="level2">
+<h2 class="anchored" data-anchor-id="代表性虚拟细胞模型">代表性虚拟细胞模型</h2>
+<section id="全细胞模型mycoplasma-genitalium" class="level3">
+<h3 class="anchored" data-anchor-id="全细胞模型mycoplasma-genitalium">1. 全细胞模型：Mycoplasma genitalium</h3>
+<p><strong>背景</strong>: - 最简单的自由生活生物 - 基因组仅 525 个基因</p>
+<p><strong>模型</strong>: - Karr et al.&nbsp;(2012) 在 <em>Cell</em> 发表 - 整合 28 个子模块 - 模拟细胞周期全过程</p>
+<p><strong>成果</strong>: - 预测基因敲除表型 - 预测细胞分裂时间</p>
+<p><strong>论文</strong>: Karr, J. R. et al.&nbsp;(2012). A whole-cell computational model predicts phenotype from genotype. <em>Cell</em>, 150(2), 389-401.</p>
+<hr>
+</section>
+<section id="大肠杆菌代谢模型" class="level3">
+<h3 class="anchored" data-anchor-id="大肠杆菌代谢模型">2. 大肠杆菌代谢模型</h3>
+<p><strong>iJO1366 模型</strong>: - 1366 个基因 - 2583 个反应 - 1805 个代谢物</p>
+<p><strong>应用</strong>: - 预测营养缺陷 - 代谢工程设计 - 合成生物学</p>
+<hr>
+</section>
+<section id="人类代谢模型" class="level3">
+<h3 class="anchored" data-anchor-id="人类代谢模型">3. 人类代谢模型</h3>
+<p><strong>Recon3D</strong>: - 全面的人类代谢重建 - 整合组织特异性数据</p>
+<p><strong>应用</strong>: - 癌症代谢研究 - 遗传代谢病 - 药物-代谢互作</p>
+<hr>
+</section>
+</section>
+<section id="前沿进展2026-年" class="level2">
+<h2 class="anchored" data-anchor-id="前沿进展2026-年">前沿进展（2026 年）</h2>
+<section id="cell-2026-综述虚拟细胞的未来" class="level3">
+<h3 class="anchored" data-anchor-id="cell-2026-综述虚拟细胞的未来">Cell 2026 综述：虚拟细胞的未来</h3>
+<p><strong>参考文献</strong>: <a href="https://www.cell.com/cell/fulltext/S0092-8674(26)01015-9">Cell 2026: Virtual Cell Modeling</a></p>
+<p><strong>关键进展</strong>:</p>
+<p><strong>1. AI 与物理模型的混合建模</strong> - 深度学习学习数据驱动的规律 - 物理模型提供机制约束 - 神经常微分方程（Neural ODE）</p>
+<hr>
+<p><strong>2. 单细胞多模态虚拟细胞</strong> - 整合 scRNA-seq、scATAC-seq、蛋白质组、代谢组 - 构建细胞状态的高维表示 - 预测细胞对扰动的响应</p>
+<hr>
+<p><strong>3. 空间虚拟细胞</strong> - 空间转录组技术（Visium、MERFISH） - 模拟空间微环境对细胞的影响 - 细胞-细胞互作与组织结构</p>
+<hr>
+<p><strong>4. 个性化虚拟细胞</strong> - 基于患者组学数据构建个性化模型 - 预测个体化药物响应 - 精准医疗应用</p>
+<hr>
+<p><strong>5. 自动化模型构建</strong> - 从文献自动提取生物学知识 - 知识图谱 + 机器学习 - 加速模型迭代</p>
+<hr>
+</section>
+<section id="技术突破" class="level3">
+<h3 class="anchored" data-anchor-id="技术突破">技术突破</h3>
+<p><strong>计算能力提升</strong>: - GPU 加速模拟 - 云计算平台 - 量子计算潜力</p>
+<p><strong>数据爆炸</strong>: - 单细胞技术成熟 - 空间组学数据增长 - 多模态数据整合</p>
+<p><strong>AI 赋能</strong>: - Foundation Models 学习生物规律 - 生成模型模拟细胞行为 - 强化学习优化细胞设计</p>
+<hr>
+</section>
+</section>
+<section id="应用场景" class="level2">
+<h2 class="anchored" data-anchor-id="应用场景">应用场景</h2>
+<section id="代谢工程" class="level3">
+<h3 class="anchored" data-anchor-id="代谢工程">1. 代谢工程</h3>
+<p><strong>目标</strong>: 优化微生物生产有价值化合物</p>
+<p><strong>流程</strong>: 1. 构建代谢网络模型 2. FBA 预测基因改造策略 3. 实验验证 4. 迭代优化</p>
+<p><strong>案例</strong>: - 大肠杆菌生产生物燃料 - 酵母合成青蒿素（抗疟药）</p>
+<p><strong>代码示例</strong>:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> cobra</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> cobra.io.load_model(<span class="st">"iJO1366"</span>)</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 添加异源代谢途径（示例：生产琥珀酸）</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> model:</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 最大化琥珀酸生产</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>    model.objective <span class="op">=</span> <span class="st">"EX_succ_e"</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>    solution <span class="op">=</span> model.optimize()</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"琥珀酸产量: </span><span class="sc">{</span>solution<span class="sc">.</span>objective_value<span class="sc">:.3f}</span><span class="ss"> mmol/gDW/h"</span>)</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 识别提升产量的基因过表达靶点</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>    <span class="im">from</span> cobra.flux_analysis <span class="im">import</span> single_gene_deletion</span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>    deletion_results <span class="op">=</span> single_gene_deletion(model)</span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 找到敲除后产量下降最大的基因（过表达候选）</span></span></code></pre></div>
+<hr>
+</section>
+<section id="药物靶点识别" class="level3">
+<h3 class="anchored" data-anchor-id="药物靶点识别">2. 药物靶点识别</h3>
+<p><strong>虚拟敲除实验</strong>: - 在虚拟细胞中逐个敲除基因 - 预测致死基因 - 优先级排序药物靶点</p>
+<p><strong>示例</strong>:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> cobra</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> cobra.io.load_model(<span class="st">"iJO1366"</span>)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 单基因敲除分析</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> cobra.flux_analysis <span class="im">import</span> single_gene_deletion</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>deletion_results <span class="op">=</span> single_gene_deletion(model)</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="co"># 识别致死基因（敲除后生长速率接近 0）</span></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>essential_genes <span class="op">=</span> deletion_results[deletion_results[<span class="st">"growth"</span>] <span class="op">&lt;</span> <span class="fl">0.01</span>]</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"致死基因数: </span><span class="sc">{</span><span class="bu">len</span>(essential_genes)<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(essential_genes.head())</span></code></pre></div>
+<hr>
+</section>
+<section id="细胞命运预测" class="level3">
+<h3 class="anchored" data-anchor-id="细胞命运预测">3. 细胞命运预测</h3>
+<p><strong>从单细胞数据推断细胞分化轨迹</strong></p>
+<p><strong>工具</strong>: CellOracle, RNA Velocity, Waddington-OT</p>
+<p><strong>应用</strong>: - 干细胞分化控制 - 癌症细胞可塑性 - 发育生物学</p>
+<hr>
+</section>
+<section id="合成生物学" class="level3">
+<h3 class="anchored" data-anchor-id="合成生物学">4. 合成生物学</h3>
+<p><strong>设计基因回路</strong>: - 振荡器 - 开关 - 逻辑门</p>
+<p><strong>最小基因组设计</strong>: - JCVI-syn3.0: 仅 473 个基因的合成细菌 - 虚拟细胞指导基因选择</p>
+<hr>
+</section>
+<section id="疾病建模" class="level3">
+<h3 class="anchored" data-anchor-id="疾病建模">5. 疾病建模</h3>
+<p><strong>癌症虚拟细胞</strong>: - 整合患者基因组、转录组数据 - 预测癌细胞对治疗的响应 - 个性化治疗方案</p>
+<p><strong>神经退行性疾病</strong>: - 模拟神经元代谢失调 - 预测保护性干预</p>
+<hr>
+</section>
+</section>
+<section id="工具与平台" class="level2">
+<h2 class="anchored" data-anchor-id="工具与平台">工具与平台</h2>
+<section id="cobrapy" class="level3">
+<h3 class="anchored" data-anchor-id="cobrapy">COBRApy</h3>
+<p>代谢网络约束建模</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install cobra</span></code></pre></div>
+<p><strong>文档</strong>: <a href="https://cobrapy.readthedocs.io/">COBRApy</a></p>
+<hr>
+</section>
+<section id="vcellvirtual-cell" class="level3">
+<h3 class="anchored" data-anchor-id="vcellvirtual-cell">VCell（Virtual Cell）</h3>
+<p>多尺度细胞建模平台</p>
+<p><strong>特点</strong>: - 图形化界面 - ODE、PDE、随机模拟 - 空间细胞建模</p>
+<p><strong>网站</strong>: <a href="https://vcell.org/">VCell</a></p>
+<hr>
+</section>
+<section id="celloracle" class="level3">
+<h3 class="anchored" data-anchor-id="celloracle">CellOracle</h3>
+<p>基因调控网络与细胞命运预测</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install celloracle</span></code></pre></div>
+<p><strong>GitHub</strong>: <a href="https://github.com/morris-lab/CellOracle">CellOracle</a></p>
+<hr>
+</section>
+<section id="physicell" class="level3">
+<h3 class="anchored" data-anchor-id="physicell">PhysiCell</h3>
+<p>多细胞系统 Agent-based 建模</p>
+<p><strong>特点</strong>: - 模拟细胞群体 - 细胞-微环境互作 - 3D 可视化</p>
+<p><strong>网站</strong>: <a href="http://physicell.org/">PhysiCell</a></p>
+<hr>
+</section>
+<section id="e-cell" class="level3">
+<h3 class="anchored" data-anchor-id="e-cell">E-Cell</h3>
+<p>多尺度细胞模拟</p>
+<p><strong>GitHub</strong>: <a href="https://github.com/ecell/ecell4">E-Cell</a></p>
+<hr>
+</section>
+</section>
+<section id="挑战与未来" class="level2">
+<h2 class="anchored" data-anchor-id="挑战与未来">挑战与未来</h2>
+<section id="当前挑战" class="level3">
+<h3 class="anchored" data-anchor-id="当前挑战">当前挑战</h3>
+<p><strong>1. 模型复杂性</strong> - 生物系统极其复杂 - 参数众多，难以全部实验测定 - 不确定性量化困难</p>
+<p><strong>2. 数据整合</strong> - 多模态数据格式不统一 - 数据质量参差不齐 - 缺失数据插补</p>
+<p><strong>3. 计算成本</strong> - 全细胞模拟计算密集 - 高通量虚拟筛选需大量资源</p>
+<p><strong>4. 验证困难</strong> - 虚拟预测需实验验证 - 细胞行为复杂，难以完全验证</p>
+<p><strong>5. 泛化能力</strong> - 模型往往针对特定细胞类型 - 跨物种、跨细胞类型泛化困难</p>
+<hr>
+</section>
+<section id="未来方向" class="level3">
+<h3 class="anchored" data-anchor-id="未来方向">未来方向</h3>
+<p><strong>1. AI + 物理混合建模</strong> - 深度学习捕捉复杂模式 - 物理模型提供可解释性 - 神经 ODE、物理信息神经网络（PINN）</p>
+<p><strong>2. 数字孪生细胞</strong> - 实时追踪真实细胞 - 虚拟细胞同步更新 - 预测细胞未来状态</p>
+<p><strong>3. 全人类虚拟细胞</strong> - 整合 Human Cell Atlas 数据 - 覆盖所有细胞类型 - 个性化医疗基础设施</p>
+<p><strong>4. 闭环设计-实验-学习</strong> - 虚拟设计 → 自动化实验 → 模型更新 - 加速科学发现</p>
+<p><strong>5. 多细胞虚拟生物</strong> - 从单细胞到组织、器官 - 虚拟器官（Virtual Organ） - 虚拟人体（Virtual Human）</p>
+<hr>
+</section>
+</section>
+<section id="学习资源" class="level2">
+<h2 class="anchored" data-anchor-id="学习资源">学习资源</h2>
+<section id="在线课程" class="level3">
+<h3 class="anchored" data-anchor-id="在线课程">在线课程</h3>
+<ul>
+<li><strong>Systems Biology (MIT OpenCourseWare)</strong>: 系统生物学基础</li>
+<li><strong>Computational Systems Biology (Coursera)</strong>: 计算系统生物学</li>
+</ul>
+<hr>
+</section>
+<section id="书籍" class="level3">
+<h3 class="anchored" data-anchor-id="书籍">书籍</h3>
+<ul>
+<li>《Systems Biology: A Textbook》（Edda Klipp 等）</li>
+<li>《Computational Modeling of Signaling Networks》（Springer）</li>
+</ul>
+<hr>
+</section>
+<section id="教程" class="level3">
+<h3 class="anchored" data-anchor-id="教程">教程</h3>
+<ul>
+<li><a href="https://cobrapy.readthedocs.io/en/latest/getting_started.html">COBRApy Tutorial</a></li>
+<li><a href="https://morris-lab.github.io/CellOracle.documentation/">CellOracle Tutorials</a></li>
+</ul>
+<hr>
+</section>
+<section id="论文" class="level3">
+<h3 class="anchored" data-anchor-id="论文">论文</h3>
+<ul>
+<li>Karr, J. R. et al.&nbsp;(2012). A whole-cell computational model. <em>Cell</em>.</li>
+<li>Macklin, D. N. et al.&nbsp;(2020). Simultaneous cross-evaluation. <em>eLife</em>.</li>
+<li>Cell 2026 虚拟细胞综述（2026-09-29）</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="总结" class="level2">
+<h2 class="anchored" data-anchor-id="总结">总结</h2>
+<p>虚拟细胞代表了生物学研究的未来方向，通过整合多尺度数据、物理模型和机器学习，构建细胞的可预测、可操控的数字孪生。虚拟细胞将加速药物发现、推动合成生物学、实现个性化医疗，并最终帮助我们全面理解生命的本质。</p>
+<p>随着 AI 技术、测序技术和计算能力的飞速发展，虚拟细胞正在从科幻走向现实，成为生命科学研究不可或缺的工具。</p>
+<hr>
+</section>
+<section id="相关链接" class="level2">
+<h2 class="anchored" data-anchor-id="相关链接">相关链接</h2>
+<ul>
+<li><a href="../AI4S/index.html">AI4S 专题主页</a></li>
+<li><a href="../AI4S/foundation-models-dna.html">DNA Foundation Models</a></li>
+<li><a href="../AI4S/foundation-models-rna.html">RNA Foundation Models</a></li>
+<li><a href="../AI4S/foundation-models-protein.html">蛋白质 Foundation Models</a></li>
+<li><a href="../AI4S/ai4drug-overview.html">AI4Drug</a></li>
+</ul>
+<hr>
+<p>更新时间：2026-09-29</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/hinna0818\.github\.io\/Bioinfo-SMU\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../AI4S/ai4drug-overview.html" class="pagination-link" aria-label="AI4Drug">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">AI4Drug</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../learning-path.html" class="pagination-link" aria-label="学习路线">
+        <span class="nav-page-text">学习路线</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Bioinfo-SMU 学习资源库</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Built with Quarto</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

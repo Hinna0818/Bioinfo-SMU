@@ -1,0 +1,2141 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>foundation-models-protein – Bioinfo-SMU</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../AI4S/ai4drug-overview.html" rel="next">
+<link href="../AI4S/foundation-models-rna.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-ebb2f88ff82f7a66e9b1e4215819a99f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-a73ff9addbf92c1d16ae9639034a74ac.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-ebb2f88ff82f7a66e9b1e4215819a99f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="Bioinfo-SMU">
+<meta property="og:description" content="">
+<meta property="og:site_name" content="Bioinfo-SMU">
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Bioinfo-SMU</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
+<span class="menu-text">首页</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../Grade1/index.html"> 
+<span class="menu-text">大一课程</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../Grade2/index.html"> 
+<span class="menu-text">大二课程</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../Grade3/index.html"> 
+<span class="menu-text">大三课程</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">大四课程</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-">    
+        <li>
+    <a class="dropdown-item" href="../Grade4/index.html">
+ <span class="dropdown-text">课程总览</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../Grade4/computational_biology/index.html">
+ <span class="dropdown-text">计算生物学</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../Grade4/CADD/index.html">
+ <span class="dropdown-text">计算机辅助药物设计</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../Grade4/computational_molecular_biology/index.html">
+ <span class="dropdown-text">计算分子生物学</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../Grade4/career_guidance/index.html">
+ <span class="dropdown-text">就业指导概论</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../Grade4/graduation_paper/index.html">
+ <span class="dropdown-text">毕业论文</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../Rbase/index.html"> 
+<span class="menu-text">R 语言教程</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../BioinfoTalus/index.html"> 
+<span class="menu-text">生信流程</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../Epidemiology/UK_Biobank.html"> 
+<span class="menu-text">流行病学数据库</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-ai4science" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">AI4Science</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-ai4science">    
+        <li>
+    <a class="dropdown-item" href="../AI4S/index.html">
+ <span class="dropdown-text">AI4S 专题</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../AI4S/foundation-models-dna.html">
+ <span class="dropdown-text">DNA Foundation Models</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../AI4S/foundation-models-rna.html">
+ <span class="dropdown-text">RNA Foundation Models</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../AI4S/foundation-models-protein.html">
+ <span class="dropdown-text">蛋白质 Foundation Models</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../AI4S/ai4drug-overview.html">
+ <span class="dropdown-text">AI4Drug</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../AI4S/virtual-cell.html">
+ <span class="dropdown-text">虚拟细胞</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu--1" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">学习资源</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu--1">    
+        <li>
+    <a class="dropdown-item" href="../learning-path.html">
+ <span class="dropdown-text">学习路线</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../tools.html">
+ <span class="dropdown-text">常用工具</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../resources.html">
+ <span class="dropdown-text">参考资料</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../contributing.html"> 
+<span class="menu-text">贡献指南</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html"> 
+<span class="menu-text">关于</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://github.com/Hinna0818/Bioinfo-SMU"> 
+<span class="menu-text">GitHub</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../AI4S/index.html">AI4Science 专题</a></li><li class="breadcrumb-item"><a href="../AI4S/foundation-models-protein.html">蛋白质 Foundation Models</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">首页</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">大一课程</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Grade1/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">大一课程总览</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">大二课程</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Grade2/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">大二课程总览</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">大三课程</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Grade3/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">大三课程总览</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">大四课程</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Grade4/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">大四课程总览</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false">
+ <span class="menu-text">计算生物学</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Grade4/computational_biology/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">课程主页</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Grade4/computational_biology/exp1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">实验1 - PPI网络分析</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Grade4/computational_biology/exp2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">实验2 - WGCNA分析</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Grade4/computational_biology/exp3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">实验3 - 网络聚类与随机游走</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Grade4/computational_biology/exp4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">实验4 - qPCR数据分析</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Grade4/computational_biology/exam-materials.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">考试资料</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Grade4/CADD/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">计算机辅助药物设计</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false">
+ <span class="menu-text">计算分子生物学</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Grade4/computational_molecular_biology/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">课程主页</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Grade4/computational_molecular_biology/exam-info.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">考试说明</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Grade4/career_guidance/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">就业指导概论</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Grade4/graduation_paper/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">毕业论文</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
+ <span class="menu-text">R 语言教程</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Rbase/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">教程总览</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Rbase/L6_functions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">L6 - R 函数与包开发</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Rbase/L7_ggplot2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">L7 - ggplot2 数据可视化</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true">
+ <span class="menu-text">生信流程</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../BioinfoTalus/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">BioinfoTalus</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true">
+ <span class="menu-text">流行病学数据库</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Epidemiology/UK_Biobank.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">UK Biobank</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true">
+ <span class="menu-text">AI4Science 专题</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../AI4S/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">AI4S 概述</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../AI4S/foundation-models-dna.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">DNA Foundation Models</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../AI4S/foundation-models-rna.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">RNA Foundation Models</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../AI4S/foundation-models-protein.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">蛋白质 Foundation Models</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../AI4S/ai4drug-overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">AI4Drug</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../AI4S/virtual-cell.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">虚拟细胞</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true">
+ <span class="menu-text">学习资源</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../learning-path.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">学习路线</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tools.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">常用工具</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../resources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">参考资料</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../contributing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">贡献指南</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">关于</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#蛋白质-foundation-models" id="toc-蛋白质-foundation-models" class="nav-link active" data-scroll-target="#蛋白质-foundation-models">蛋白质 Foundation Models</a>
+  <ul class="collapse">
+  <li><a href="#蛋白质的复杂性" id="toc-蛋白质的复杂性" class="nav-link" data-scroll-target="#蛋白质的复杂性">蛋白质的复杂性</a>
+  <ul class="collapse">
+  <li><a href="#序列-结构-功能关系" id="toc-序列-结构-功能关系" class="nav-link" data-scroll-target="#序列-结构-功能关系">序列-结构-功能关系</a></li>
+  <li><a href="#anfinsen-定理" id="toc-anfinsen-定理" class="nav-link" data-scroll-target="#anfinsen-定理">Anfinsen 定理</a></li>
+  <li><a href="#为什么需要-foundation-models" id="toc-为什么需要-foundation-models" class="nav-link" data-scroll-target="#为什么需要-foundation-models">为什么需要 Foundation Models？</a></li>
+  </ul></li>
+  <li><a href="#序列模型" id="toc-序列模型" class="nav-link" data-scroll-target="#序列模型">序列模型</a>
+  <ul class="collapse">
+  <li><a href="#esmevolutionary-scale-modeling系列" id="toc-esmevolutionary-scale-modeling系列" class="nav-link" data-scroll-target="#esmevolutionary-scale-modeling系列">1. ESM（Evolutionary Scale Modeling）系列</a></li>
+  <li><a href="#protgpt22022" id="toc-protgpt22022" class="nav-link" data-scroll-target="#protgpt22022">2. ProtGPT2（2022）</a></li>
+  <li><a href="#proteinbert2022" id="toc-proteinbert2022" class="nav-link" data-scroll-target="#proteinbert2022">3. ProteinBERT（2022）</a></li>
+  <li><a href="#ankh2023" id="toc-ankh2023" class="nav-link" data-scroll-target="#ankh2023">4. Ankh（2023）</a></li>
+  <li><a href="#progen2020-2023" id="toc-progen2020-2023" class="nav-link" data-scroll-target="#progen2020-2023">5. ProGen（2020, 2023）</a></li>
+  </ul></li>
+  <li><a href="#结构模型" id="toc-结构模型" class="nav-link" data-scroll-target="#结构模型">结构模型</a>
+  <ul class="collapse">
+  <li><a href="#alphafold22021" id="toc-alphafold22021" class="nav-link" data-scroll-target="#alphafold22021">1. AlphaFold2（2021）</a></li>
+  <li><a href="#alphafold32024" id="toc-alphafold32024" class="nav-link" data-scroll-target="#alphafold32024">2. AlphaFold3（2024）</a></li>
+  <li><a href="#esmfold2022" id="toc-esmfold2022" class="nav-link" data-scroll-target="#esmfold2022">3. ESMFold（2022）</a></li>
+  <li><a href="#omegafold2022" id="toc-omegafold2022" class="nav-link" data-scroll-target="#omegafold2022">4. OmegaFold（2022）</a></li>
+  <li><a href="#rosettafold2021" id="toc-rosettafold2021" class="nav-link" data-scroll-target="#rosettafold2021">5. RoseTTAFold（2021）</a></li>
+  </ul></li>
+  <li><a href="#应用场景" id="toc-应用场景" class="nav-link" data-scroll-target="#应用场景">应用场景</a>
+  <ul class="collapse">
+  <li><a href="#突变效应预测" id="toc-突变效应预测" class="nav-link" data-scroll-target="#突变效应预测">1. 突变效应预测</a></li>
+  <li><a href="#蛋白质功能预测" id="toc-蛋白质功能预测" class="nav-link" data-scroll-target="#蛋白质功能预测">2. 蛋白质功能预测</a></li>
+  <li><a href="#蛋白质-蛋白质相互作用预测" id="toc-蛋白质-蛋白质相互作用预测" class="nav-link" data-scroll-target="#蛋白质-蛋白质相互作用预测">3. 蛋白质-蛋白质相互作用预测</a></li>
+  <li><a href="#蛋白质设计" id="toc-蛋白质设计" class="nav-link" data-scroll-target="#蛋白质设计">4. 蛋白质设计</a></li>
+  <li><a href="#抗体设计与优化" id="toc-抗体设计与优化" class="nav-link" data-scroll-target="#抗体设计与优化">5. 抗体设计与优化</a></li>
+  </ul></li>
+  <li><a href="#数据资源" id="toc-数据资源" class="nav-link" data-scroll-target="#数据资源">数据资源</a>
+  <ul class="collapse">
+  <li><a href="#序列数据库" id="toc-序列数据库" class="nav-link" data-scroll-target="#序列数据库">序列数据库</a></li>
+  <li><a href="#结构数据库" id="toc-结构数据库" class="nav-link" data-scroll-target="#结构数据库">结构数据库</a></li>
+  <li><a href="#功能注释" id="toc-功能注释" class="nav-link" data-scroll-target="#功能注释">功能注释</a></li>
+  </ul></li>
+  <li><a href="#模型比较" id="toc-模型比较" class="nav-link" data-scroll-target="#模型比较">模型比较</a>
+  <ul class="collapse">
+  <li><a href="#序列模型-1" id="toc-序列模型-1" class="nav-link" data-scroll-target="#序列模型-1">序列模型</a></li>
+  <li><a href="#结构模型-1" id="toc-结构模型-1" class="nav-link" data-scroll-target="#结构模型-1">结构模型</a></li>
+  </ul></li>
+  <li><a href="#评估指标" id="toc-评估指标" class="nav-link" data-scroll-target="#评估指标">评估指标</a>
+  <ul class="collapse">
+  <li><a href="#结构预测" id="toc-结构预测" class="nav-link" data-scroll-target="#结构预测">结构预测</a></li>
+  <li><a href="#功能预测" id="toc-功能预测" class="nav-link" data-scroll-target="#功能预测">功能预测</a></li>
+  <li><a href="#突变效应" id="toc-突变效应" class="nav-link" data-scroll-target="#突变效应">突变效应</a></li>
+  </ul></li>
+  <li><a href="#实践工具" id="toc-实践工具" class="nav-link" data-scroll-target="#实践工具">实践工具</a>
+  <ul class="collapse">
+  <li><a href="#esm" id="toc-esm" class="nav-link" data-scroll-target="#esm">ESM</a></li>
+  <li><a href="#alphafold" id="toc-alphafold" class="nav-link" data-scroll-target="#alphafold">AlphaFold</a></li>
+  <li><a href="#esmfold" id="toc-esmfold" class="nav-link" data-scroll-target="#esmfold">ESMFold</a></li>
+  </ul></li>
+  <li><a href="#前沿技术" id="toc-前沿技术" class="nav-link" data-scroll-target="#前沿技术">前沿技术</a>
+  <ul class="collapse">
+  <li><a href="#逆向折叠inverse-folding" id="toc-逆向折叠inverse-folding" class="nav-link" data-scroll-target="#逆向折叠inverse-folding">1. 逆向折叠（Inverse Folding）</a></li>
+  <li><a href="#结构扩散模型" id="toc-结构扩散模型" class="nav-link" data-scroll-target="#结构扩散模型">2. 结构扩散模型</a></li>
+  <li><a href="#多模态蛋白质模型" id="toc-多模态蛋白质模型" class="nav-link" data-scroll-target="#多模态蛋白质模型">3. 多模态蛋白质模型</a></li>
+  <li><a href="#小样本蛋白质学习" id="toc-小样本蛋白质学习" class="nav-link" data-scroll-target="#小样本蛋白质学习">4. 小样本蛋白质学习</a></li>
+  <li><a href="#蛋白质动力学建模" id="toc-蛋白质动力学建模" class="nav-link" data-scroll-target="#蛋白质动力学建模">5. 蛋白质动力学建模</a></li>
+  </ul></li>
+  <li><a href="#成功案例" id="toc-成功案例" class="nav-link" data-scroll-target="#成功案例">成功案例</a>
+  <ul class="collapse">
+  <li><a href="#alphafold-预测人类蛋白质组" id="toc-alphafold-预测人类蛋白质组" class="nav-link" data-scroll-target="#alphafold-预测人类蛋白质组">1. AlphaFold 预测人类蛋白质组</a></li>
+  <li><a href="#de-novo-蛋白质设计" id="toc-de-novo-蛋白质设计" class="nav-link" data-scroll-target="#de-novo-蛋白质设计">2. De novo 蛋白质设计</a></li>
+  <li><a href="#抗体药物设计" id="toc-抗体药物设计" class="nav-link" data-scroll-target="#抗体药物设计">3. 抗体药物设计</a></li>
+  <li><a href="#covid-19-蛋白质研究" id="toc-covid-19-蛋白质研究" class="nav-link" data-scroll-target="#covid-19-蛋白质研究">4. COVID-19 蛋白质研究</a></li>
+  </ul></li>
+  <li><a href="#挑战与未来方向" id="toc-挑战与未来方向" class="nav-link" data-scroll-target="#挑战与未来方向">挑战与未来方向</a>
+  <ul class="collapse">
+  <li><a href="#当前挑战" id="toc-当前挑战" class="nav-link" data-scroll-target="#当前挑战">当前挑战</a></li>
+  <li><a href="#未来方向" id="toc-未来方向" class="nav-link" data-scroll-target="#未来方向">未来方向</a></li>
+  </ul></li>
+  <li><a href="#学习资源" id="toc-学习资源" class="nav-link" data-scroll-target="#学习资源">学习资源</a>
+  <ul class="collapse">
+  <li><a href="#论文" id="toc-论文" class="nav-link" data-scroll-target="#论文">论文</a></li>
+  <li><a href="#在线课程" id="toc-在线课程" class="nav-link" data-scroll-target="#在线课程">在线课程</a></li>
+  <li><a href="#教程与工具" id="toc-教程与工具" class="nav-link" data-scroll-target="#教程与工具">教程与工具</a></li>
+  <li><a href="#书籍" id="toc-书籍" class="nav-link" data-scroll-target="#书籍">书籍</a></li>
+  <li><a href="#社区与竞赛" id="toc-社区与竞赛" class="nav-link" data-scroll-target="#社区与竞赛">社区与竞赛</a></li>
+  </ul></li>
+  <li><a href="#实用建议" id="toc-实用建议" class="nav-link" data-scroll-target="#实用建议">实用建议</a>
+  <ul class="collapse">
+  <li><a href="#如何选择模型" id="toc-如何选择模型" class="nav-link" data-scroll-target="#如何选择模型">如何选择模型？</a></li>
+  <li><a href="#计算资源需求" id="toc-计算资源需求" class="nav-link" data-scroll-target="#计算资源需求">计算资源需求</a></li>
+  </ul></li>
+  <li><a href="#总结" id="toc-总结" class="nav-link" data-scroll-target="#总结">总结</a></li>
+  <li><a href="#引用" id="toc-引用" class="nav-link" data-scroll-target="#引用">引用</a></li>
+  <li><a href="#相关链接" id="toc-相关链接" class="nav-link" data-scroll-target="#相关链接">相关链接</a></li>
+  <li><a href="#致谢" id="toc-致谢" class="nav-link" data-scroll-target="#致谢">致谢</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../AI4S/index.html">AI4Science 专题</a></li><li class="breadcrumb-item"><a href="../AI4S/foundation-models-protein.html">蛋白质 Foundation Models</a></li></ol></nav></header>
+
+
+
+
+
+<section id="蛋白质-foundation-models" class="level1">
+<h1>蛋白质 Foundation Models</h1>
+<p>蛋白质是生命功能的执行者，其序列、结构和功能之间存在复杂的关系。蛋白质 Foundation Models 通过在海量蛋白质序列和结构数据上预训练，学习蛋白质的语法、结构模式和功能原理，实现从结构预测到功能注释、从突变效应评估到蛋白质设计的全方位应用。</p>
+<hr>
+<section id="蛋白质的复杂性" class="level2">
+<h2 class="anchored" data-anchor-id="蛋白质的复杂性">蛋白质的复杂性</h2>
+<section id="序列-结构-功能关系" class="level3">
+<h3 class="anchored" data-anchor-id="序列-结构-功能关系">序列-结构-功能关系</h3>
+<p><strong>蛋白质的层次结构</strong>:</p>
+<ol type="1">
+<li><strong>一级结构（Primary Structure）</strong>
+<ul>
+<li>氨基酸序列</li>
+<li>20 种标准氨基酸</li>
+<li>序列长度：数十到数千个残基</li>
+</ul></li>
+<li><strong>二级结构（Secondary Structure）</strong>
+<ul>
+<li>α-螺旋（Alpha Helix）</li>
+<li>β-折叠（Beta Sheet）</li>
+<li>无规卷曲（Coil/Loop）</li>
+</ul></li>
+<li><strong>三级结构（Tertiary Structure）</strong>
+<ul>
+<li>完整的三维折叠</li>
+<li>由疏水作用、氢键、二硫键等稳定</li>
+<li>决定蛋白质功能</li>
+</ul></li>
+<li><strong>四级结构（Quaternary Structure）</strong>
+<ul>
+<li>多个亚基组装</li>
+<li>蛋白质复合物</li>
+</ul></li>
+</ol>
+<hr>
+</section>
+<section id="anfinsen-定理" class="level3">
+<h3 class="anchored" data-anchor-id="anfinsen-定理">Anfinsen 定理</h3>
+<p><strong>核心原理</strong>: 蛋白质的三维结构由其氨基酸序列唯一决定。</p>
+<p>这一定理为从序列预测结构提供了理论基础，也是 AlphaFold 等模型的科学依据。</p>
+<hr>
+</section>
+<section id="为什么需要-foundation-models" class="level3">
+<h3 class="anchored" data-anchor-id="为什么需要-foundation-models">为什么需要 Foundation Models？</h3>
+<p><strong>挑战</strong>: 1. <strong>蛋白质空间巨大</strong>: 100 个氨基酸的蛋白质有 20^100 种可能序列 2. <strong>结构预测困难</strong>: 实验方法（X-ray、Cryo-EM、NMR）耗时耗力 3. <strong>功能注释稀疏</strong>: 已知功能的蛋白质仅占很小比例 4. <strong>进化信息</strong>: 同源蛋白质的变异模式包含功能约束</p>
+<p><strong>Foundation Models 的优势</strong>: - 学习进化保守性和变异耐受性 - 从序列直接预测结构（快速、低成本） - 零样本功能预测和迁移学习 - 指导蛋白质工程和药物设计</p>
+<hr>
+</section>
+</section>
+<section id="序列模型" class="level2">
+<h2 class="anchored" data-anchor-id="序列模型">序列模型</h2>
+<section id="esmevolutionary-scale-modeling系列" class="level3">
+<h3 class="anchored" data-anchor-id="esmevolutionary-scale-modeling系列">1. ESM（Evolutionary Scale Modeling）系列</h3>
+<section id="esm-1b2021" class="level4">
+<h4 class="anchored" data-anchor-id="esm-1b2021">ESM-1b（2021）</h4>
+<p><strong>架构</strong>: Transformer encoder</p>
+<p><strong>训练数据</strong>: - UniRef50（2.5 千万蛋白质序列）</p>
+<p><strong>预训练任务</strong>: Masked Language Modeling（MLM）</p>
+<p><strong>模型规模</strong>: 650M 参数</p>
+<hr>
+</section>
+<section id="esm-22022" class="level4">
+<h4 class="anchored" data-anchor-id="esm-22022">ESM-2（2022）</h4>
+<p><strong>突破</strong>: 将模型规模扩展到 150B 参数</p>
+<p><strong>训练数据</strong>: - UniRef（2.5 亿蛋白质序列）</p>
+<p><strong>模型版本</strong>: - ESM2-8M (8M 参数) - ESM2-35M - ESM2-150M - ESM2-650M - ESM2-3B - ESM2-15B</p>
+<p><strong>关键发现</strong>: - <strong>650M 参数版本性能最优</strong>（更大模型反而性能下降） - 学习到的表示与蛋白质结构高度相关 - 零样本迁移能力强</p>
+<p><strong>下游任务</strong>: - 蛋白质结构预测（ESMFold） - 蛋白质功能预测 - 突变效应预测 - 蛋白质-蛋白质相互作用预测</p>
+<p><strong>代码示例</strong>:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> esm</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 加载 ESM-2 模型</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>model, alphabet <span class="op">=</span> esm.pretrained.esm2_t33_650M_UR50D()</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>batch_converter <span class="op">=</span> alphabet.get_batch_converter()</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>model.<span class="bu">eval</span>()</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># 蛋白质序列</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> [</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    (<span class="st">"protein1"</span>, <span class="st">"MKTAYIAKQRQISFVKSHFSRQ"</span>),</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    (<span class="st">"protein2"</span>, <span class="st">"MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGR"</span>),</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co"># 准备批次</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>batch_labels, batch_strs, batch_tokens <span class="op">=</span> batch_converter(data)</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="co"># 提取特征</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> torch.no_grad():</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    results <span class="op">=</span> model(batch_tokens, repr_layers<span class="op">=</span>[<span class="dv">33</span>], return_contacts<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Token 嵌入（每个残基）</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>token_embeddings <span class="op">=</span> results[<span class="st">"representations"</span>][<span class="dv">33</span>]</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="co"># 序列嵌入（整个蛋白质）</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>sequence_embeddings <span class="op">=</span> token_embeddings.mean(dim<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="co"># 接触图预测</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>contacts <span class="op">=</span> results[<span class="st">"contacts"</span>]</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Token 嵌入形状: </span><span class="sc">{</span>token_embeddings<span class="sc">.</span>shape<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"序列嵌入形状: </span><span class="sc">{</span>sequence_embeddings<span class="sc">.</span>shape<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"接触图形状: </span><span class="sc">{</span>contacts<span class="sc">.</span>shape<span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div>
+<p><strong>论文</strong>: Lin, Z. et al.&nbsp;(2023). Evolutionary-scale prediction of atomic-level protein structure with a language model. <em>Science</em>, 379(6637), 1123-1130.</p>
+<hr>
+</section>
+</section>
+<section id="protgpt22022" class="level3">
+<h3 class="anchored" data-anchor-id="protgpt22022">2. ProtGPT2（2022）</h3>
+<p><strong>架构</strong>: GPT-2（生成式）</p>
+<p><strong>训练数据</strong>: - UniRef50（5000 万蛋白质序列）</p>
+<p><strong>预训练任务</strong>: - 自回归语言建模（Next Token Prediction）</p>
+<p><strong>特点</strong>: - <strong>生成模型</strong>: 可以从头生成新的蛋白质序列 - 学习蛋白质序列的概率分布</p>
+<p><strong>应用</strong>: - De novo 蛋白质设计 - 序列完成与优化 - 蛋白质变体生成</p>
+<p><strong>代码示例</strong>:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> transformers <span class="im">import</span> pipeline</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 加载 ProtGPT2</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>generator <span class="op">=</span> pipeline(<span class="st">'text-generation'</span>, model<span class="op">=</span><span class="st">"nferruz/ProtGPT2"</span>)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co"># 从提示序列生成蛋白质</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>seed_sequence <span class="op">=</span> <span class="st">"MKTAYIA"</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>generated <span class="op">=</span> generator(seed_sequence, max_length<span class="op">=</span><span class="dv">100</span>, do_sample<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"生成的蛋白质序列: </span><span class="sc">{</span>generated[<span class="dv">0</span>][<span class="st">'generated_text'</span>]<span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div>
+<p><strong>论文</strong>: Ferruz, N. et al.&nbsp;(2022). ProtGPT2 is a deep unsupervised language model for protein design. <em>Nature Communications</em>, 13, 4348.</p>
+<hr>
+</section>
+<section id="proteinbert2022" class="level3">
+<h3 class="anchored" data-anchor-id="proteinbert2022">3. ProteinBERT（2022）</h3>
+<p><strong>架构</strong>: BERT</p>
+<p><strong>特点</strong>: 整合序列和 GO（Gene Ontology）注释</p>
+<p><strong>训练数据</strong>: - UniRef90 + SwissProt GO 注释</p>
+<p><strong>预训练任务</strong>: - MLM - GO 注释预测</p>
+<p><strong>优势</strong>: 明确学习功能信息</p>
+<hr>
+</section>
+<section id="ankh2023" class="level3">
+<h3 class="anchored" data-anchor-id="ankh2023">4. Ankh（2023）</h3>
+<p><strong>架构</strong>: 大规模 Transformer（最大 1.5B 参数）</p>
+<p><strong>训练数据</strong>: - UniRef100 + Pfam + 元基因组数据 - 数亿蛋白质序列</p>
+<p><strong>特点</strong>: - 多语言蛋白质模型（跨物种） - 规模化提升性能</p>
+<hr>
+</section>
+<section id="progen2020-2023" class="level3">
+<h3 class="anchored" data-anchor-id="progen2020-2023">5. ProGen（2020, 2023）</h3>
+<p><strong>架构</strong>: Transformer decoder</p>
+<p><strong>训练数据</strong>: - UniRef90 + 条件标签（蛋白质家族、物种）</p>
+<p><strong>特点</strong>: - 条件生成：根据蛋白质家族生成序列 - ProGen2: 扩展到 6.4B 参数</p>
+<p><strong>应用</strong>: - 蛋白质家族特异性设计 - 酶工程</p>
+<hr>
+</section>
+</section>
+<section id="结构模型" class="level2">
+<h2 class="anchored" data-anchor-id="结构模型">结构模型</h2>
+<section id="alphafold22021" class="level3">
+<h3 class="anchored" data-anchor-id="alphafold22021">1. AlphaFold2（2021）</h3>
+<p><strong>突破性意义</strong>: 解决了蛋白质结构预测这一 50 年难题</p>
+<p><strong>架构</strong>: - Evoformer: 处理多序列比对（MSA）和配对表示 - Structure Module: 生成三维坐标</p>
+<p><strong>输入</strong>: - 目标序列 - MSA（多序列比对，来自同源搜索） - 模板结构（可选）</p>
+<p><strong>训练数据</strong>: - PDB（约 17 万结构）</p>
+<p><strong>关键技术</strong>: 1. <strong>MSA 表示</strong>: 编码进化信息 2. <strong>配对表示</strong>: 残基-残基关系 3. <strong>Evoformer 模块</strong>: 联合更新 MSA 和配对表示 4. <strong>结构模块</strong>: 迭代细化三维结构 5. <strong>等变性</strong>: 保持旋转和平移不变性</p>
+<p><strong>性能</strong>: - CASP14: 中位 GDT 92.4（接近实验精度） - 预测时间: 数分钟到数小时</p>
+<p><strong>代码示例</strong>:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 使用 AlphaFold2 通过 ColabFold</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> colabfold <span class="im">import</span> plot_protein</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> colabfold.batch <span class="im">import</span> get_queries, run</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 序列</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>sequence <span class="op">=</span> <span class="st">"MKTAYIAKQRQISFVKSHFSRQ"</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co"># 运行预测（简化示例）</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="co"># results = run(sequence)</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="co"># 可视化</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="co"># plot_protein(results)</span></span></code></pre></div>
+<p><strong>影响</strong>: - AlphaFold Protein Structure Database: 2 亿+ 预测结构 - 加速结构生物学研究 - 推动药物设计、蛋白质工程</p>
+<p><strong>论文</strong>: Jumper, J. et al.&nbsp;(2021). Highly accurate protein structure prediction with AlphaFold. <em>Nature</em>, 596, 583–589.</p>
+<hr>
+</section>
+<section id="alphafold32024" class="level3">
+<h3 class="anchored" data-anchor-id="alphafold32024">2. AlphaFold3（2024）</h3>
+<p><strong>扩展</strong>: 预测蛋白质-配体、蛋白质-核酸复合物</p>
+<p><strong>输入</strong>: - 蛋白质序列 - 配体 SMILES - DNA/RNA 序列</p>
+<p><strong>输出</strong>: 复合物三维结构</p>
+<p><strong>应用</strong>: - 药物-靶点复合物预测 - 蛋白质-DNA 复合物（转录因子） - 蛋白质-RNA 复合物（RBP）</p>
+<p><strong>性能</strong>: - 蛋白质-配体对接精度超越传统分子对接 - 革新结构药物设计</p>
+<p><strong>论文</strong>: Abramson, J. et al.&nbsp;(2024). Accurate structure prediction of biomolecular interactions with AlphaFold 3. <em>Nature</em>, 630, 493–500.</p>
+<hr>
+</section>
+<section id="esmfold2022" class="level3">
+<h3 class="anchored" data-anchor-id="esmfold2022">3. ESMFold（2022）</h3>
+<p><strong>架构</strong>: 基于 ESM-2 语言模型 + 结构预测头</p>
+<p><strong>关键特点</strong>: - <strong>无需 MSA</strong>: 从单序列预测 - <strong>速度快</strong>: 比 AlphaFold2 快 60 倍 - <strong>端到端</strong>: 从序列直接到结构</p>
+<p><strong>训练数据</strong>: - PDB + AlphaFold Database</p>
+<p><strong>性能</strong>: - 高分辨率结构：接近 AlphaFold2 - 低同源性蛋白质：略逊于 AlphaFold2 - 适合大规模筛选</p>
+<p><strong>代码示例</strong>:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> esm</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 加载 ESMFold</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> esm.pretrained.esmfold_v1()</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> model.<span class="bu">eval</span>().cuda()</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co"># 序列</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>sequence <span class="op">=</span> <span class="st">"MKTAYIAKQRQISFVKSHFSRQ"</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="co"># 预测结构</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> torch.no_grad():</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>    output <span class="op">=</span> model.infer_pdb(sequence)</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="co"># 保存 PDB</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">"predicted_structure.pdb"</span>, <span class="st">"w"</span>) <span class="im">as</span> f:</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>    f.write(output)</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"结构已保存到 predicted_structure.pdb"</span>)</span></code></pre></div>
+<p><strong>论文</strong>: Lin, Z. et al.&nbsp;(2023). Evolutionary-scale prediction of atomic-level protein structure with a language model. <em>Science</em>, 379(6637), 1123-1130.</p>
+<hr>
+</section>
+<section id="omegafold2022" class="level3">
+<h3 class="anchored" data-anchor-id="omegafold2022">4. OmegaFold（2022）</h3>
+<p><strong>架构</strong>: Transformer</p>
+<p><strong>特点</strong>: - 端到端训练 - 无需 MSA（单序列预测） - 使用蛋白质语言模型初始化</p>
+<p><strong>性能</strong>: 与 AlphaFold2 相当，速度更快</p>
+<hr>
+</section>
+<section id="rosettafold2021" class="level3">
+<h3 class="anchored" data-anchor-id="rosettafold2021">5. RoseTTAFold（2021）</h3>
+<p><strong>来源</strong>: 华盛顿大学 David Baker 实验室</p>
+<p><strong>架构</strong>: 三轨网络（1D、2D、3D）</p>
+<p><strong>特点</strong>: - 联合处理序列、距离、坐标 - 开源实现</p>
+<p><strong>论文</strong>: Baek, M. et al.&nbsp;(2021). Accurate prediction of protein structures and interactions using a three-track neural network. <em>Science</em>, 373(6557), 871-876.</p>
+<hr>
+</section>
+</section>
+<section id="应用场景" class="level2">
+<h2 class="anchored" data-anchor-id="应用场景">应用场景</h2>
+<section id="突变效应预测" class="level3">
+<h3 class="anchored" data-anchor-id="突变效应预测">1. 突变效应预测</h3>
+<p><strong>任务</strong>: 预测氨基酸突变对蛋白质功能/稳定性的影响</p>
+<p><strong>方法</strong>: - <strong>Zero-shot</strong>: 直接使用预训练模型 - 比较野生型和突变型的对数似然 - ESM-1v: 专门针对突变效应优化</p>
+<p><strong>评估数据集</strong>: - <strong>ClinVar</strong>: 临床变异数据库 - <strong>DMS（Deep Mutational Scanning）</strong>: 高通量突变实验</p>
+<p><strong>应用</strong>: - 疾病相关突变识别 - 蛋白质工程 - 抗体亲和力优化</p>
+<p><strong>代码示例</strong>:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> esm</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 加载 ESM-1v（变异效应模型）</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>model, alphabet <span class="op">=</span> esm.pretrained.esm1v_t33_650M_UR90S_1()</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>batch_converter <span class="op">=</span> alphabet.get_batch_converter()</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>model.<span class="bu">eval</span>()</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="co"># 野生型序列</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>wt_sequence <span class="op">=</span> <span class="st">"MKTAYIAKQRQISFVKSHFSRQ"</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="co"># 突变序列（K3A 突变）</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>mut_sequence <span class="op">=</span> <span class="st">"MKTAYIAKQAQISFVKSHFSRQ"</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="co"># 准备批次</span></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> [</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>    (<span class="st">"WT"</span>, wt_sequence),</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>    (<span class="st">"MUT"</span>, mut_sequence),</span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>batch_labels, batch_strs, batch_tokens <span class="op">=</span> batch_converter(data)</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a><span class="co"># 计算对数似然</span></span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> torch.no_grad():</span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>    results <span class="op">=</span> model(batch_tokens, repr_layers<span class="op">=</span>[<span class="dv">33</span>])</span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>    logits <span class="op">=</span> results[<span class="st">"logits"</span>]</span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 计算序列对数似然</span></span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a>    log_probs <span class="op">=</span> torch.log_softmax(logits, dim<span class="op">=-</span><span class="dv">1</span>)</span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a>    wt_ll <span class="op">=</span> log_probs[<span class="dv">0</span>, <span class="dv">1</span>:<span class="bu">len</span>(wt_sequence)<span class="op">+</span><span class="dv">1</span>, :].gather(<span class="op">-</span><span class="dv">1</span>, batch_tokens[<span class="dv">0</span>, <span class="dv">1</span>:<span class="bu">len</span>(wt_sequence)<span class="op">+</span><span class="dv">1</span>].unsqueeze(<span class="op">-</span><span class="dv">1</span>)).<span class="bu">sum</span>()</span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a>    mut_ll <span class="op">=</span> log_probs[<span class="dv">1</span>, <span class="dv">1</span>:<span class="bu">len</span>(mut_sequence)<span class="op">+</span><span class="dv">1</span>, :].gather(<span class="op">-</span><span class="dv">1</span>, batch_tokens[<span class="dv">1</span>, <span class="dv">1</span>:<span class="bu">len</span>(mut_sequence)<span class="op">+</span><span class="dv">1</span>].unsqueeze(<span class="op">-</span><span class="dv">1</span>)).<span class="bu">sum</span>()</span>
+<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 突变效应评分（越负越有害）</span></span>
+<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a>    effect_score <span class="op">=</span> mut_ll <span class="op">-</span> wt_ll</span>
+<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"突变效应评分: </span><span class="sc">{</span>effect_score<span class="sc">.</span>item()<span class="sc">:.3f}</span><span class="ss">"</span>)</span></code></pre></div>
+<hr>
+</section>
+<section id="蛋白质功能预测" class="level3">
+<h3 class="anchored" data-anchor-id="蛋白质功能预测">2. 蛋白质功能预测</h3>
+<p><strong>任务</strong>: 从序列预测蛋白质功能（GO term、EC number、细胞定位）</p>
+<p><strong>方法</strong>: 1. 使用预训练模型提取特征 2. 在标注数据上训练分类器 3. 预测功能标签</p>
+<p><strong>数据集</strong>: - <strong>SwissProt</strong>: 人工审核的蛋白质数据库（含 GO 注释） - <strong>CAFA（Critical Assessment of Function Annotation）</strong>: 功能预测竞赛</p>
+<p><strong>代码示例</strong>:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> transformers <span class="im">import</span> AutoModel, AutoTokenizer</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch.nn <span class="im">as</span> nn</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 加载预训练模型</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>tokenizer <span class="op">=</span> AutoTokenizer.from_pretrained(<span class="st">"Rostlab/prot_bert"</span>)</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> AutoModel.from_pretrained(<span class="st">"Rostlab/prot_bert"</span>)</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="co"># 功能预测分类器</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> FunctionPredictor(nn.Module):</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, protein_model, num_labels):</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>        <span class="bu">super</span>().<span class="fu">__init__</span>()</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.protein_encoder <span class="op">=</span> protein_model</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.classifier <span class="op">=</span> nn.Linear(protein_model.config.hidden_size, num_labels)</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> forward(<span class="va">self</span>, input_ids):</span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>        embeddings <span class="op">=</span> <span class="va">self</span>.protein_encoder(input_ids).last_hidden_state</span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>        pooled <span class="op">=</span> embeddings[:, <span class="dv">0</span>, :]  <span class="co"># [CLS] token</span></span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>        logits <span class="op">=</span> <span class="va">self</span>.classifier(pooled)</span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> logits</span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a><span class="co"># 实例化</span></span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>predictor <span class="op">=</span> FunctionPredictor(model, num_labels<span class="op">=</span><span class="dv">1000</span>)  <span class="co"># 1000 个 GO terms</span></span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a><span class="co"># 预测（示例）</span></span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>sequence <span class="op">=</span> <span class="st">"M K T A Y I A K Q R Q I S F V K S H F S R Q"</span></span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>inputs <span class="op">=</span> tokenizer(sequence, return_tensors<span class="op">=</span><span class="st">"pt"</span>)</span>
+<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a>predictions <span class="op">=</span> predictor(inputs[<span class="st">"input_ids"</span>])</span></code></pre></div>
+<hr>
+</section>
+<section id="蛋白质-蛋白质相互作用预测" class="level3">
+<h3 class="anchored" data-anchor-id="蛋白质-蛋白质相互作用预测">3. 蛋白质-蛋白质相互作用预测</h3>
+<p><strong>任务</strong>: 预测两个蛋白质是否相互作用</p>
+<p><strong>方法</strong>: - 将两个蛋白质序列编码 - 计算相似性或使用分类器</p>
+<p><strong>应用</strong>: - 构建蛋白质互作网络（PPI Network） - 药物靶点识别 - 信号通路研究</p>
+<hr>
+</section>
+<section id="蛋白质设计" class="level3">
+<h3 class="anchored" data-anchor-id="蛋白质设计">4. 蛋白质设计</h3>
+<p><strong>任务</strong>: 从头设计新的蛋白质序列</p>
+<p><strong>方法</strong>:</p>
+<p><strong>生成式模型</strong>: - ProtGPT2, ProGen: 自回归生成 - 条件生成：指定蛋白质家族、功能</p>
+<p><strong>结构引导设计</strong>: - AlphaFold + 优化 - RFdiffusion（结构扩散模型）</p>
+<p><strong>应用</strong>: - 酶工程（提高催化活性） - 抗体设计（提高亲和力和特异性） - 新型蛋白质药物</p>
+<p><strong>代码示例</strong>:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> transformers <span class="im">import</span> pipeline</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 使用 ProtGPT2 生成蛋白质</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>generator <span class="op">=</span> pipeline(<span class="st">'text-generation'</span>, model<span class="op">=</span><span class="st">"nferruz/ProtGPT2"</span>)</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="co"># 生成属于特定家族的蛋白质</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>prompt <span class="op">=</span> <span class="st">"MKTAYIA"</span>  <span class="co"># 种子序列</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>generated_sequences <span class="op">=</span> generator(</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>    prompt, </span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>    max_length<span class="op">=</span><span class="dv">200</span>, </span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>    num_return_sequences<span class="op">=</span><span class="dv">5</span>,</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>    do_sample<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>    temperature<span class="op">=</span><span class="fl">0.8</span></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, seq <span class="kw">in</span> <span class="bu">enumerate</span>(generated_sequences):</span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"序列 </span><span class="sc">{</span>i<span class="op">+</span><span class="dv">1</span><span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>seq[<span class="st">'generated_text'</span>]<span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div>
+<hr>
+</section>
+<section id="抗体设计与优化" class="level3">
+<h3 class="anchored" data-anchor-id="抗体设计与优化">5. 抗体设计与优化</h3>
+<p><strong>任务</strong>: 优化抗体的亲和力、特异性、稳定性</p>
+<p><strong>方法</strong>: - ESM-2 编码抗体序列 - 预测抗原结合区（CDR）突变效应 - 结构预测验证</p>
+<p><strong>工具</strong>: - <strong>ABodyBuilder</strong>: 抗体结构预测 - <strong>ESM-IF</strong>: 逆向折叠（从结构生成序列）</p>
+<hr>
+</section>
+</section>
+<section id="数据资源" class="level2">
+<h2 class="anchored" data-anchor-id="数据资源">数据资源</h2>
+<section id="序列数据库" class="level3">
+<h3 class="anchored" data-anchor-id="序列数据库">序列数据库</h3>
+<ul>
+<li><strong>UniProt</strong>: 综合蛋白质数据库（2 亿+ 序列）</li>
+<li><strong>UniRef50/90/100</strong>: 聚类减少冗余</li>
+<li><strong>Pfam</strong>: 蛋白质家族数据库</li>
+<li><strong>SwissProt</strong>: 人工审核的高质量蛋白质数据</li>
+</ul>
+</section>
+<section id="结构数据库" class="level3">
+<h3 class="anchored" data-anchor-id="结构数据库">结构数据库</h3>
+<ul>
+<li><strong>PDB（Protein Data Bank）</strong>: 实验解析结构（20 万+）</li>
+<li><strong>AlphaFold Database</strong>: AI 预测结构（2 亿+）</li>
+<li><strong>CATH/SCOP</strong>: 结构分类数据库</li>
+</ul>
+</section>
+<section id="功能注释" class="level3">
+<h3 class="anchored" data-anchor-id="功能注释">功能注释</h3>
+<ul>
+<li><strong>Gene Ontology (GO)</strong>: 基因/蛋白质功能本体</li>
+<li><strong>InterPro</strong>: 蛋白质家族和域注释</li>
+<li><strong>KEGG</strong>: 代谢通路数据库</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="模型比较" class="level2">
+<h2 class="anchored" data-anchor-id="模型比较">模型比较</h2>
+<section id="序列模型-1" class="level3">
+<h3 class="anchored" data-anchor-id="序列模型-1">序列模型</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 19%">
+<col style="width: 21%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>模型</th>
+<th>架构</th>
+<th>参数量</th>
+<th>训练数据</th>
+<th>类型</th>
+<th>特点</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>ESM-1b</strong></td>
+<td>Transformer</td>
+<td>650M</td>
+<td>UniRef50 (25M)</td>
+<td>掩码预测</td>
+<td>经典，性能优秀</td>
+</tr>
+<tr class="even">
+<td><strong>ESM-2</strong></td>
+<td>Transformer</td>
+<td>8M-15B</td>
+<td>UniRef (250M)</td>
+<td>掩码预测</td>
+<td>多规模，650M 最优</td>
+</tr>
+<tr class="odd">
+<td><strong>ProtGPT2</strong></td>
+<td>GPT-2</td>
+<td>738M</td>
+<td>UniRef50 (50M)</td>
+<td>生成式</td>
+<td>可生成新序列</td>
+</tr>
+<tr class="even">
+<td><strong>ProGen2</strong></td>
+<td>Transformer</td>
+<td>6.4B</td>
+<td>UniRef90 + 条件</td>
+<td>生成式</td>
+<td>条件生成</td>
+</tr>
+<tr class="odd">
+<td><strong>Ankh</strong></td>
+<td>Transformer</td>
+<td>1.5B</td>
+<td>UniRef100 + 元基因组</td>
+<td>掩码预测</td>
+<td>大规模</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="结构模型-1" class="level3">
+<h3 class="anchored" data-anchor-id="结构模型-1">结构模型</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>模型</th>
+<th>MSA 需求</th>
+<th>速度</th>
+<th>精度</th>
+<th>特点</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>AlphaFold2</strong></td>
+<td>是</td>
+<td>慢（小时）</td>
+<td>极高</td>
+<td>SOTA，需 MSA</td>
+</tr>
+<tr class="even">
+<td><strong>AlphaFold3</strong></td>
+<td>是</td>
+<td>慢</td>
+<td>极高</td>
+<td>复合物预测</td>
+</tr>
+<tr class="odd">
+<td><strong>ESMFold</strong></td>
+<td>否</td>
+<td>快（秒-分钟）</td>
+<td>高</td>
+<td>单序列，快速</td>
+</tr>
+<tr class="even">
+<td><strong>OmegaFold</strong></td>
+<td>否</td>
+<td>快</td>
+<td>高</td>
+<td>端到端</td>
+</tr>
+<tr class="odd">
+<td><strong>RoseTTAFold</strong></td>
+<td>是</td>
+<td>中</td>
+<td>高</td>
+<td>开源</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+</section>
+<section id="评估指标" class="level2">
+<h2 class="anchored" data-anchor-id="评估指标">评估指标</h2>
+<section id="结构预测" class="level3">
+<h3 class="anchored" data-anchor-id="结构预测">结构预测</h3>
+<ul>
+<li><strong>GDT（Global Distance Test）</strong>: 结构相似度</li>
+<li><strong>TM-score</strong>: 模板建模评分（&gt;0.5 为相同折叠）</li>
+<li><strong>RMSD（Root Mean Square Deviation）</strong>: 原子位置偏差</li>
+<li><strong>lDDT（Local Distance Difference Test）</strong>: 局部结构精度</li>
+</ul>
+</section>
+<section id="功能预测" class="level3">
+<h3 class="anchored" data-anchor-id="功能预测">功能预测</h3>
+<ul>
+<li><strong>AUROC / AUPRC</strong>: 功能分类性能</li>
+<li><strong>F-max</strong>: 最大 F1 score（CAFA 评估）</li>
+</ul>
+</section>
+<section id="突变效应" class="level3">
+<h3 class="anchored" data-anchor-id="突变效应">突变效应</h3>
+<ul>
+<li><strong>Spearman 相关系数</strong>: 与实验数据相关性</li>
+<li><strong>AUC</strong>: 分类致病/良性变异</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="实践工具" class="level2">
+<h2 class="anchored" data-anchor-id="实践工具">实践工具</h2>
+<section id="esm" class="level3">
+<h3 class="anchored" data-anchor-id="esm">ESM</h3>
+<p>GitHub: <a href="https://github.com/facebookresearch/esm">ESM</a></p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 安装</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install fair-esm</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 提取嵌入</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> scripts/extract.py esm2_t33_650M_UR50D protein.fasta output <span class="at">--repr_layers</span> 33 <span class="at">--include</span> mean</span></code></pre></div>
+</section>
+<section id="alphafold" class="level3">
+<h3 class="anchored" data-anchor-id="alphafold">AlphaFold</h3>
+<ul>
+<li><strong>AlphaFold Colab</strong>: 在线预测（免费 GPU）</li>
+<li><strong>ColabFold</strong>: 加速版本，集成 MMseqs2 快速 MSA</li>
+<li><strong>LocalColabFold</strong>: 本地部署</li>
+</ul>
+</section>
+<section id="esmfold" class="level3">
+<h3 class="anchored" data-anchor-id="esmfold">ESMFold</h3>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> esm</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 加载模型</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> esm.pretrained.esmfold_v1()</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> model.<span class="bu">eval</span>().cuda()</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 预测结构</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> torch.no_grad():</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>    output <span class="op">=</span> model.infer_pdb(<span class="st">"MKTAYIAKQRQISFVKSHFSRQ"</span>)</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a><span class="co"># 保存 PDB</span></span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">"structure.pdb"</span>, <span class="st">"w"</span>) <span class="im">as</span> f:</span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>    f.write(output)</span></code></pre></div>
+<hr>
+</section>
+</section>
+<section id="前沿技术" class="level2">
+<h2 class="anchored" data-anchor-id="前沿技术">前沿技术</h2>
+<section id="逆向折叠inverse-folding" class="level3">
+<h3 class="anchored" data-anchor-id="逆向折叠inverse-folding">1. 逆向折叠（Inverse Folding）</h3>
+<p><strong>任务</strong>: 从三维结构设计氨基酸序列</p>
+<p><strong>传统流程</strong>: 序列 → 结构 <strong>逆向折叠</strong>: 结构 → 序列</p>
+<p><strong>应用</strong>: - 固定结构骨架，设计新序列 - 蛋白质稳定性优化 - 功能保持的序列多样化</p>
+<p><strong>模型</strong>:</p>
+<p><strong>ESM-IF（Inverse Folding）</strong>: - 基于 ESM 架构 - 输入：蛋白质骨架坐标 - 输出：氨基酸序列</p>
+<p><strong>ProteinMPNN</strong>: - 消息传递神经网络 - 考虑几何约束 - 高精度序列设计</p>
+<p><strong>代码示例</strong>:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ESM-IF 逆向折叠示例</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> esm.inverse_folding</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 加载模型</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>model, alphabet <span class="op">=</span> esm.pretrained.esm_if1_gvp4_t16_142M_UR50()</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>model.<span class="bu">eval</span>()</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a><span class="co"># 输入：蛋白质结构（坐标）</span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>coords, seq <span class="op">=</span> esm.inverse_folding.util.load_coords(<span class="st">"protein.pdb"</span>, <span class="st">"A"</span>)</span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a><span class="co"># 设计序列</span></span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>ll, seq <span class="op">=</span> esm.inverse_folding.util.score_sequence(</span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>    model, alphabet, coords, seq</span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"设计的序列: </span><span class="sc">{</span>seq<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"对数似然: </span><span class="sc">{</span>ll<span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div>
+<hr>
+</section>
+<section id="结构扩散模型" class="level3">
+<h3 class="anchored" data-anchor-id="结构扩散模型">2. 结构扩散模型</h3>
+<p><strong>RFdiffusion（2023）</strong>:</p>
+<p><strong>原理</strong>: - 使用扩散模型生成蛋白质骨架 - 从噪声逐步去噪得到蛋白质结构</p>
+<p><strong>应用</strong>: - De novo 蛋白质设计 - 结合位点设计（针对特定配体/抗原） - 蛋白质支架设计</p>
+<p><strong>流程</strong>: 1. RFdiffusion 生成骨架 2. ProteinMPNN 设计序列 3. AlphaFold2 验证结构</p>
+<p><strong>成果</strong>: - 设计出实验验证的新型蛋白质 - 发表于 <em>Nature</em> (2023)</p>
+<hr>
+</section>
+<section id="多模态蛋白质模型" class="level3">
+<h3 class="anchored" data-anchor-id="多模态蛋白质模型">3. 多模态蛋白质模型</h3>
+<p><strong>整合多种信息</strong>: - 序列 + 结构 - 序列 + 功能注释 - 序列 + 文本描述</p>
+<p><strong>ProtST（Protein Structure-Text）</strong>: - 蛋白质结构与文本描述对齐 - 类似 CLIP 的对比学习 - 支持文本查询蛋白质</p>
+<p><strong>应用</strong>: - “找到所有激酶结构” - “检索与免疫相关的蛋白质”</p>
+<hr>
+</section>
+<section id="小样本蛋白质学习" class="level3">
+<h3 class="anchored" data-anchor-id="小样本蛋白质学习">4. 小样本蛋白质学习</h3>
+<p><strong>挑战</strong>: 许多蛋白质家族标注数据稀少</p>
+<p><strong>方法</strong>: - <strong>元学习（Meta-Learning）</strong>: 学习快速适应新任务 - <strong>Few-shot Learning</strong>: 从少量样本学习 - <strong>迁移学习</strong>: 从大家族迁移到小家族</p>
+<hr>
+</section>
+<section id="蛋白质动力学建模" class="level3">
+<h3 class="anchored" data-anchor-id="蛋白质动力学建模">5. 蛋白质动力学建模</h3>
+<p><strong>限制</strong>: AlphaFold 预测静态结构</p>
+<p><strong>挑战</strong>: - 蛋白质结构动态变化 - 构象转换影响功能</p>
+<p><strong>方向</strong>: - 预测蛋白质构象集合 - 模拟蛋白质折叠路径 - 整合分子动力学（MD）模拟</p>
+<p><strong>AlphaFold-Multimer</strong>: 预测蛋白质复合物的多个构象</p>
+<hr>
+</section>
+</section>
+<section id="成功案例" class="level2">
+<h2 class="anchored" data-anchor-id="成功案例">成功案例</h2>
+<section id="alphafold-预测人类蛋白质组" class="level3">
+<h3 class="anchored" data-anchor-id="alphafold-预测人类蛋白质组">1. AlphaFold 预测人类蛋白质组</h3>
+<p><strong>成果</strong>: - 预测 2 亿+ 蛋白质结构 - 覆盖人类全部约 2 万个蛋白质 - 开放下载，加速全球研究</p>
+<p><strong>影响</strong>: - 结构生物学家可直接获取预测结构 - 加速药物靶点研究 - 推动罕见病研究（孤儿蛋白结构）</p>
+<hr>
+</section>
+<section id="de-novo-蛋白质设计" class="level3">
+<h3 class="anchored" data-anchor-id="de-novo-蛋白质设计">2. De novo 蛋白质设计</h3>
+<p><strong>案例</strong>: David Baker 实验室（华盛顿大学）</p>
+<p><strong>成果</strong>: - 设计出自然界不存在的蛋白质 - 实验验证结构与设计一致 - 具有预定功能（如结合特定分子）</p>
+<p><strong>应用</strong>: - 新型酶设计 - 纳米材料 - 生物传感器</p>
+<hr>
+</section>
+<section id="抗体药物设计" class="level3">
+<h3 class="anchored" data-anchor-id="抗体药物设计">3. 抗体药物设计</h3>
+<p><strong>案例</strong>: 多家生物技术公司使用 ESM/AlphaFold</p>
+<p><strong>流程</strong>: 1. ESM-2 预测抗体 CDR 区突变效应 2. AlphaFold2 预测抗体-抗原复合物结构 3. 筛选高亲和力候选抗体 4. 实验验证</p>
+<p><strong>优势</strong>: - 减少实验轮次 - 提高成功率 - 加速研发周期</p>
+<hr>
+</section>
+<section id="covid-19-蛋白质研究" class="level3">
+<h3 class="anchored" data-anchor-id="covid-19-蛋白质研究">4. COVID-19 蛋白质研究</h3>
+<p><strong>应用</strong>: - AlphaFold2 预测 SARS-CoV-2 蛋白质结构 - 辅助药物设计（主蛋白酶抑制剂） - 抗体中和机制研究</p>
+<hr>
+</section>
+</section>
+<section id="挑战与未来方向" class="level2">
+<h2 class="anchored" data-anchor-id="挑战与未来方向">挑战与未来方向</h2>
+<section id="当前挑战" class="level3">
+<h3 class="anchored" data-anchor-id="当前挑战">当前挑战</h3>
+<ol type="1">
+<li><strong>内在无序蛋白（IDPs）</strong>
+<ul>
+<li>没有固定三维结构</li>
+<li>AlphaFold 难以建模</li>
+</ul></li>
+<li><strong>蛋白质动态性</strong>
+<ul>
+<li>静态结构预测为主</li>
+<li>构象变化、蛋白质折叠路径</li>
+</ul></li>
+<li><strong>复合物预测</strong>
+<ul>
+<li>AlphaFold-Multimer 性能有限</li>
+<li>瞬时相互作用难预测</li>
+</ul></li>
+<li><strong>实验验证瓶颈</strong>
+<ul>
+<li>AI 设计的蛋白质需实验验证</li>
+<li>高通量实验成本仍高</li>
+</ul></li>
+<li><strong>可解释性</strong>
+<ul>
+<li>模型决策机制不透明</li>
+<li>难以提取生物学规律</li>
+</ul></li>
+</ol>
+<hr>
+</section>
+<section id="未来方向" class="level3">
+<h3 class="anchored" data-anchor-id="未来方向">未来方向</h3>
+<ol type="1">
+<li><strong>统一序列-结构-功能模型</strong>
+<ul>
+<li>端到端学习</li>
+<li>多任务联合训练</li>
+</ul></li>
+<li><strong>蛋白质生成模型</strong>
+<ul>
+<li>从功能需求生成序列</li>
+<li>可控生成（指定折叠、功能）</li>
+</ul></li>
+<li><strong>闭环蛋白质设计</strong>
+<ul>
+<li>AI 设计 → 高通量实验 → 反馈 → 迭代优化</li>
+<li>自动化实验室（Robot Scientist）</li>
+</ul></li>
+<li><strong>跨模态学习</strong>
+<ul>
+<li>整合序列、结构、基因表达、文献</li>
+<li>知识图谱与蛋白质模型融合</li>
+</ul></li>
+<li><strong>个性化蛋白质组学</strong>
+<ul>
+<li>整合个体变异</li>
+<li>预测疾病相关蛋白质变化</li>
+</ul></li>
+<li><strong>进化建模</strong>
+<ul>
+<li>预测蛋白质进化轨迹</li>
+<li>理解适应性变异</li>
+</ul></li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="学习资源" class="level2">
+<h2 class="anchored" data-anchor-id="学习资源">学习资源</h2>
+<section id="论文" class="level3">
+<h3 class="anchored" data-anchor-id="论文">论文</h3>
+<p><strong>经典论文</strong>: - Jumper, J. et al.&nbsp;(2021). AlphaFold. <em>Nature</em>. - Lin, Z. et al.&nbsp;(2023). ESM-2 &amp; ESMFold. <em>Science</em>. - Ferruz, N. et al.&nbsp;(2022). ProtGPT2. <em>Nature Communications</em>. - Watson, J. et al.&nbsp;(2023). De novo design by deep learning. <em>Nature</em>.</p>
+<p><strong>综述</strong>: - Pearce, R. &amp; Zhang, Y. (2021). Deep learning techniques have significantly impacted protein structure prediction. <em>Nature Methods</em>. - AlQuraishi, M. (2019). AlphaFold at CASP13. <em>Bioinformatics</em>.</p>
+<hr>
+</section>
+<section id="在线课程" class="level3">
+<h3 class="anchored" data-anchor-id="在线课程">在线课程</h3>
+<ul>
+<li><strong>Deep Learning in Life Sciences (MIT)</strong>: 深度学习在生命科学中的应用</li>
+<li><strong>Protein Structure Prediction (Coursera)</strong>: 蛋白质结构预测</li>
+<li><strong>Machine Learning for Proteins (Stanford)</strong>: 蛋白质机器学习</li>
+</ul>
+<hr>
+</section>
+<section id="教程与工具" class="level3">
+<h3 class="anchored" data-anchor-id="教程与工具">教程与工具</h3>
+<p><strong>AlphaFold</strong>: - <a href="https://colab.research.google.com/github/deepmind/alphafold/blob/main/notebooks/AlphaFold.ipynb">AlphaFold Colab</a> - <a href="https://github.com/sokrypton/ColabFold">ColabFold</a></p>
+<p><strong>ESM</strong>: - <a href="https://github.com/facebookresearch/esm">ESM GitHub</a> - <a href="https://github.com/facebookresearch/esm/tree/main/examples">ESM Tutorial</a></p>
+<p><strong>RoseTTAFold</strong>: - <a href="https://github.com/RosettaCommons/RoseTTAFold">RoseTTAFold GitHub</a></p>
+<p><strong>可视化</strong>: - <strong>PyMOL</strong>: 蛋白质结构可视化 - <strong>ChimeraX</strong>: UCSF 开发的分子可视化工具 - <strong>Mol</strong>*: 在线结构浏览器</p>
+<hr>
+</section>
+<section id="书籍" class="level3">
+<h3 class="anchored" data-anchor-id="书籍">书籍</h3>
+<ul>
+<li>《Protein Structure Prediction》（Mohammed AlQuraishi 等）</li>
+<li>《Deep Learning for Protein Science》</li>
+<li>《Bioinformatics and Functional Genomics》（Jonathan Pevsner）</li>
+</ul>
+<hr>
+</section>
+<section id="社区与竞赛" class="level3">
+<h3 class="anchored" data-anchor-id="社区与竞赛">社区与竞赛</h3>
+<p><strong>CASP（Critical Assessment of Structure Prediction）</strong>: - 两年一次的蛋白质结构预测竞赛 - 评估最新方法性能</p>
+<p><strong>CAFA（Critical Assessment of Function Annotation）</strong>: - 蛋白质功能预测竞赛</p>
+<hr>
+</section>
+</section>
+<section id="实用建议" class="level2">
+<h2 class="anchored" data-anchor-id="实用建议">实用建议</h2>
+<section id="如何选择模型" class="level3">
+<h3 class="anchored" data-anchor-id="如何选择模型">如何选择模型？</h3>
+<p><strong>场景 1: 快速结构预测</strong> - 推荐：<strong>ESMFold</strong> - 原因：无需 MSA，秒级预测</p>
+<p><strong>场景 2: 高精度结构预测</strong> - 推荐：<strong>AlphaFold2</strong>（通过 ColabFold） - 原因：精度最高，MSA 搜索优化</p>
+<p><strong>场景 3: 蛋白质复合物</strong> - 推荐：<strong>AlphaFold-Multimer</strong> 或 <strong>AlphaFold3</strong> - 原因：专门优化复合物预测</p>
+<p><strong>场景 4: 突变效应预测</strong> - 推荐：<strong>ESM-1v</strong> - 原因：专门训练，零样本预测</p>
+<p><strong>场景 5: 蛋白质设计</strong> - 推荐：<strong>ProtGPT2</strong> 或 <strong>ProGen2</strong> - 原因：生成式模型</p>
+<p><strong>场景 6: 功能预测</strong> - 推荐：<strong>ESM-2</strong> + 微调 - 原因：通用表示，迁移能力强</p>
+<hr>
+</section>
+<section id="计算资源需求" class="level3">
+<h3 class="anchored" data-anchor-id="计算资源需求">计算资源需求</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>模型</th>
+<th>GPU 需求</th>
+<th>时间（100 aa 蛋白质）</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>ESM-2 (650M)</strong></td>
+<td>单 GPU (16GB)</td>
+<td>&lt; 1 秒</td>
+</tr>
+<tr class="even">
+<td><strong>ESMFold</strong></td>
+<td>单 GPU (16GB)</td>
+<td>数秒</td>
+</tr>
+<tr class="odd">
+<td><strong>AlphaFold2</strong></td>
+<td>单 GPU (16GB)</td>
+<td>数分钟到数小时</td>
+</tr>
+<tr class="even">
+<td><strong>AlphaFold-Multimer</strong></td>
+<td>单 GPU (40GB)</td>
+<td>数小时</td>
+</tr>
+</tbody>
+</table>
+<p><strong>建议</strong>: - 本地有 GPU：安装 ESMFold 或 ColabFold - 无 GPU：使用 Google Colab（免费 T4 GPU） - 大规模预测：使用云计算（AWS, GCP）</p>
+<hr>
+</section>
+</section>
+<section id="总结" class="level2">
+<h2 class="anchored" data-anchor-id="总结">总结</h2>
+<p>蛋白质 Foundation Models 正在重塑结构生物学和蛋白质工程：</p>
+<p><strong>已实现</strong>: - 快速、高精度的结构预测（AlphaFold, ESMFold） - 零样本突变效应预测（ESM-1v） - 蛋白质序列表示学习（ESM-2） - 新蛋白质从头设计（ProtGPT2, RFdiffusion）</p>
+<p><strong>进行中</strong>: - 蛋白质复合物预测优化 - 动态结构建模 - 闭环 AI 设计与实验验证</p>
+<p><strong>未来展望</strong>: - 通用蛋白质智能：理解并设计任意蛋白质 - 个性化蛋白质组学：精准医疗应用 - 全自动蛋白质工程：AI + 机器人实验室</p>
+<p>蛋白质 Foundation Models 的成功证明了 AI 在基础科学中的巨大潜力，也为其他生物分子（DNA, RNA）的建模提供了范式。</p>
+<hr>
+</section>
+<section id="引用" class="level2">
+<h2 class="anchored" data-anchor-id="引用">引用</h2>
+<p>在学术论文中引用这些模型：</p>
+<p><strong>AlphaFold2</strong>:</p>
+<pre><code>Jumper, J., Evans, R., Pritzel, A. et al. Highly accurate protein structure 
+prediction with AlphaFold. Nature 596, 583–589 (2021).</code></pre>
+<p><strong>ESM-2</strong>:</p>
+<pre><code>Lin, Z., Akin, H., Rao, R. et al. Evolutionary-scale prediction of atomic-level 
+protein structure with a language model. Science 379, 1123-1130 (2023).</code></pre>
+<p><strong>ProtGPT2</strong>:</p>
+<pre><code>Ferruz, N., Schmidt, S. &amp; Höcker, B. ProtGPT2 is a deep unsupervised language 
+model for protein design. Nat Commun 13, 4348 (2022).</code></pre>
+<hr>
+</section>
+<section id="相关链接" class="level2">
+<h2 class="anchored" data-anchor-id="相关链接">相关链接</h2>
+<ul>
+<li><a href="../AI4S/index.html">AI4S 专题主页</a></li>
+<li><a href="../AI4S/foundation-models-dna.html">DNA Foundation Models</a></li>
+<li><a href="../AI4S/foundation-models-rna.html">RNA Foundation Models</a></li>
+<li><a href="../AI4S/ai4drug-overview.html">AI4Drug</a></li>
+<li><a href="../AI4S/virtual-cell.html">虚拟细胞</a></li>
+<li><a href="../learning-path.html">学习路线</a></li>
+</ul>
+<hr>
+</section>
+<section id="致谢" class="level2">
+<h2 class="anchored" data-anchor-id="致谢">致谢</h2>
+<p>感谢以下团队的开源贡献： - DeepMind（AlphaFold） - Meta AI（ESM） - David Baker Lab（RoseTTAFold, RFdiffusion） - 所有开源社区贡献者</p>
+<hr>
+<p>更新时间：2026-09-29</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/hinna0818\.github\.io\/Bioinfo-SMU\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../AI4S/foundation-models-rna.html" class="pagination-link" aria-label="RNA Foundation Models">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">RNA Foundation Models</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../AI4S/ai4drug-overview.html" class="pagination-link" aria-label="AI4Drug">
+        <span class="nav-page-text">AI4Drug</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Bioinfo-SMU 学习资源库</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Built with Quarto</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

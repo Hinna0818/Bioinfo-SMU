@@ -74,9 +74,9 @@
   {
     "objectID": "learning-path.html",
     "href": "learning-path.html",
-    "title": "学习路线建议",
+    "title": "生物信息学学习路线",
     "section": "",
-    "text": "本页面为生物信息学专业同学提供系统的学习路线建议，帮助大家循序渐进地掌握相关知识和技能。\n\n\n\n\n\n\n\n\n基础语法：变量、数据类型、控制结构\n数据结构：向量、矩阵、数据框、列表\n数据处理：dplyr、tidyr 包的使用\n数据可视化：ggplot2 绘图\n\n\n\n\n\n\n\nTip推荐资源\n\n\n\n\nR for Data Science\nggplot2 官方文档\n\n\n\n\n\n\n\n基础语法：变量、数据类型、控制结构\n数据结构：列表、字典、集合、元组\n常用库：NumPy、Pandas、Matplotlib\n科学计算：SciPy、Scikit-learn\n\n\n\n\n\n\n\nTip推荐资源\n\n\n\n\nPython for Biologists\nBiopython Tutorial\n\n\n\n\n\n\n\n\n分子生物学：DNA、RNA、蛋白质的结构与功能\n测序技术：Sanger测序、NGS、三代测序\n实验设计：对照实验、统计学基础\n常用技术：PCR、qPCR、Western Blot等\n\n\n\n\n\n描述性统计：均值、方差、分布\n概率论：概率分布、贝叶斯定理\n假设检验：t检验、卡方检验、方差分析\n回归分析：线性回归、逻辑回归\n\n\n\n\n\n\n\n\n\n\n\n序列比对：BLAST、Bowtie2、BWA\n变异检测：SNP calling、INDEL检测\n基因组注释：基因预测、功能注释\n进化分析：系统发育树、选择压力分析\n\n\n\n\n\nRNA-seq 分析：\n\n数据预处理（质控、比对）\n差异表达分析（DESeq2、edgeR）\n功能富集分析（GO、KEGG）\n\n单细胞测序：\n\n数据降维（PCA、t-SNE、UMAP）\n细胞聚类与注释\n轨迹推断\n\n\n\n\n\n\n\n蛋白质组：质谱数据分析、蛋白质鉴定\n代谢组：代谢物鉴定、代谢通路分析\n多组学整合：关联分析、网络构建\n\n\n\n\n\n\n\n\n\n\nNote本课程重点\n\n\n\n这是我们大四计算生物学课程的核心内容！\n\n\n\nPPI 网络：蛋白质相互作用网络构建与分析\n基因调控网络：转录因子-靶基因关系\n代谢网络：代谢通路的网络表示\nWGCNA：加权基因共表达网络分析\n网络算法：\n\n社区检测（MCL、Louvain）\n随机游走（RWR）\n中心性分析\n\n\n\n\n\n\n\n\n\n\n\n\n监督学习：\n\n分类：SVM、随机森林、XGBoost\n回归：线性回归、岭回归、Lasso\n\n无监督学习：\n\n聚类：K-means、层次聚类、DBSCAN\n降维：PCA、t-SNE、UMAP\n\n模型评估：交叉验证、ROC曲线、混淆矩阵\n\n\n\n\n\n神经网络基础：感知机、反向传播\n常用架构：\n\nCNN（卷积神经网络）\nRNN/LSTM（循环神经网络）\nTransformer\n\n生物信息应用：\n\n蛋白质结构预测（AlphaFold）\n基因组序列分析\n药物-靶点预测\n\n\n\n\n\n\n\n蛋白质结构：\n\n结构预测（同源建模、从头预测）\n结构比对与分析\n分子对接\n\n分子动力学模拟：GROMACS、AMBER\n药物设计：虚拟筛选、QSAR建模\n\n\n\n\n\n\n\n\n\n确定研究方向\n\n疾病机制研究\n药物靶点发现\n生物标志物筛选\n进化生物学\n\n文献调研\n\nPubMed 检索\n阅读综述文章\n追踪最新进展\n\n\n\n\n\n\n\n\n\n\n数据库\n用途\n网址\n\n\n\n\nGEO\n基因表达数据\nhttps://www.ncbi.nlm.nih.gov/geo/\n\n\nTCGA\n癌症基因组数据\nhttps://portal.gdc.cancer.gov/\n\n\nGTEx\n正常组织表达数据\nhttps://gtexportal.org/\n\n\nSTRING\n蛋白质相互作用\nhttps://string-db.org/\n\n\nUniProt\n蛋白质序列与功能\nhttps://www.uniprot.org/\n\n\nKEGG\n代谢通路\nhttps://www.kegg.jp/\n\n\n\n\n\n\n\n\n数据预处理\n\n质量控制\n标准化\n批次效应校正\n\n统计分析\n\n差异分析\n相关性分析\n生存分析\n\n功能分析\n\n富集分析\n通路分析\n网络分析\n\n\n\n\n\n\n计算验证：使用其他数据集验证\n实验验证：qPCR、Western Blot等\n文献支持：查找相关研究支持\n\n\n\n\n\n论文结构\n\nIntroduction（引言）\nMethods（方法）\nResults（结果）\nDiscussion（讨论）\n\n数据可视化\n\n使用 ggplot2 制作出版级图表\n注意配色和布局\n添加必要的统计信息\n\n投稿准备\n\n选择合适的期刊\n准备补充材料\n代码和数据分享\n\n\n\n\n\n\n\n\n\n\nCoursera - Bioinformatics Specialization\nedX - Data Analysis for Life Sciences\n生信技能树\n\n\n\n\n\n《生物信息学》- 李霞、雷健波\n《Bioinformatics Data Skills》- Vince Buffalo\n《An Introduction to Statistical Learning》- James et al.\n\n\n\n\n\nGalaxy：图形化分析平台\nBioconductor：R 语言生物信息学包集合\nBiopython：Python 生物信息学工具库\n\n\n\n\n\n\n\n\n\n\n\n\nTip循序渐进\n\n\n\n不要急于求成，扎实掌握每个阶段的知识再进入下一阶段。\n\n\n\n\n\n\n\n\nTip理论与实践结合\n\n\n\n学习理论知识的同时，多动手实践，完成实际项目。\n\n\n\n\n\n\n\n\nTip积极交流\n\n\n\n多与同学、老师交流，参加学术会议和研讨会。\n\n\n\n\n\n\n\n\nTip持续学习\n\n\n\n生物信息学发展迅速，保持学习的热情，关注最新技术和方法。\n\n\n\n\n\n\n\n\n\n掌握 R 和 Python 编程\n学习统计学基础\n了解分子生物学知识\n\n\n\n\n\n学习基因组学、转录组学分析\n掌握常用生物信息学工具\n完成课程项目\n\n\n\n\n\n深入学习特定方向（网络分析、机器学习等）\n参与科研项目\n准备毕业论文\n\n\n\n\n\n独立完成科研项目\n发表学术论文\n参加国际会议\n\n\n有问题欢迎在 Discussions 中讨论！",
+    "text": "本页面提供从零基础到进阶的生物信息学学习路径建议，帮助同学们系统规划学习进度。\n\n\n\n\n\nPython 编程\n\n基础语法：变量、数据类型、控制流、函数\n数据结构：列表、字典、集合、元组\n文件操作与异常处理\n常用库：NumPy、Pandas、Matplotlib\n推荐资源：\n\nPython 官方教程\n廖雪峰 Python 教程\n《Python 编程：从入门到实践》\n\n\nR 语言编程\n\n基础语法与数据结构\n数据处理：dplyr、tidyr\n数据可视化：ggplot2\n统计分析基础\n推荐资源：\n\nR for Data Science\n本站 R 语言教程\n《R 语言实战》\n\n\n\n\n\n\n分子生物学中心法则\n基因组结构与功能\n转录与翻译机制\n表观遗传学基础\n推荐资源：\n\n《分子生物学》（第五版，Robert F. Weaver）\nKhan Academy - Biology\n\n\n\n\n\n\n描述性统计\n概率分布（正态分布、泊松分布等）\n假设检验与 p 值\n多重检验校正（FDR, Bonferroni）\n线性回归与相关分析\n推荐资源：\n\n《统计学习方法》（李航）\nStatQuest 视频教程\n\n\n\n\n\n\n\n\n\n二代测序（NGS）\n\nIllumina 测序原理\nFASTQ 文件格式\n质量控制（FastQC）\n序列比对（BWA、STAR、HISAT2）\n\n三代测序\n\nPacBio 与 Oxford Nanopore 技术\n长读长数据分析\n基因组组装\n\n测序应用\n\nDNA-seq：全基因组测序、外显子组测序\nRNA-seq：转录组测序\nChIP-seq：染色质免疫沉淀测序\nATAC-seq：染色质可及性测序\n\n\n\n\n\n参考基因组与注释文件\n变异检测（SNP、InDel、CNV、SV）\n变异注释与功能预测\n群体遗传学分析\n推荐工具：\n\n比对：BWA、Bowtie2\n变异检测：GATK、SAMtools、FreeBayes\n注释：ANNOVAR、SnpEff\n\n\n\n\n\nBulk RNA-seq 分析流程\n\n数据预处理与质控\n基因表达定量（featureCounts、Salmon、Kallisto）\n差异表达分析（DESeq2、edgeR、limma）\n功能富集分析（GO、KEGG、GSEA）\n\n单细胞 RNA-seq 分析\n\n数据预处理与质控\n降维与聚类（PCA、t-SNE、UMAP）\n细胞类型注释\n拟时序分析\n细胞通讯分析\n推荐工具：Seurat、Scanpy、Monocle3\n\n空间转录组分析\n\n空间数据可视化\n空间变异基因识别\n空间域划分\n配体-受体互作分析\n推荐工具：Seurat、SpatialExperiment、Giotto\n\n\n\n\n\nChIP-seq 分析：peak calling、差异 peak 分析\nATAC-seq 分析：开放染色质识别、motif 分析\nDNA 甲基化分析：BS-seq、WGBS\n推荐工具：\n\nMACS2、Homer、deepTools\n甲基化分析：Bismark、MethylKit\n\n\n\n\n\n\n\n\n\n机器学习基础\n\n监督学习：分类与回归\n无监督学习：聚类与降维\n特征工程与模型评估\n常用算法：决策树、随机森林、SVM、XGBoost\n\n深度学习基础\n\n神经网络基础\n卷积神经网络（CNN）\n循环神经网络（RNN、LSTM）\nTransformer 架构\n推荐资源：\n\n《深度学习》（Ian Goodfellow）\n吴恩达深度学习课程\nPyTorch 与 TensorFlow 教程\n\n\n\n\n\n\n蛋白质相互作用网络（PPI）\n基因调控网络（GRN）\n加权基因共表达网络分析（WGCNA）\n网络拓扑分析与中心性指标\n社区检测算法（Louvain、MCL）\n随机游走算法（Random Walk with Restart）\n推荐资源：\n\n本站计算生物学课程\nCytoscape 网络可视化工具\nigraph、NetworkX 等网络分析包\n\n\n\n\n\n\n多组学数据整合策略\n关联分析与因果推断\n多组学网络构建\n推荐工具：\n\nMOFA+、mixOmics\nMulti-Omics Factor Analysis\n\n\n\n\n\n\n\n\n\nFoundation Models for Biology\n\nDNA 序列模型：DNABERT、Nucleotide Transformer、HyenaDNA\nRNA 序列模型：RNA-FM、RNABert\n蛋白质序列模型：ESM-2、ProtGPT2、ProtT5\n蛋白质结构预测：AlphaFold2、AlphaFold3、ESMFold、RoseTTAFold\n多模态模型：整合序列、结构、功能信息\n推荐资源：\n\n本站 AI4S 专题\nAlphaFold Protein Structure Database\n\n\nAI 驱动的药物设计（AIDD）\n\n虚拟筛选与分子对接\n分子生成模型\n药物-靶点相互作用预测\nADMET 性质预测\n推荐工具：\n\nAutoDock Vina、Glide\nDeepChem、Chemprop\n分子生成：MolGAN、GraphVAE\n\n\n虚拟细胞（Virtual Cell）\n\n细胞行为的计算建模\n多尺度生物模拟\n数字孪生技术在生物学中的应用\n参考文献：\n\nCell 2026: Virtual Cell Modeling（2026-09-29）\n\n\n\n\n\n\n蛋白质结构预测（AlphaFold2/3）\n蛋白质-配体复合物预测\n分子动力学模拟（GROMACS、AMBER）\n冷冻电镜数据分析\n推荐资源：\n\nAlphaFold Colab\nRCSB PDB 数据库\n\n\n\n\n\n\nscRNA-seq + scATAC-seq 联合分析\nCITE-seq：蛋白质与转录组联合测量\n空间多组学技术（Visium、MERFISH、seqFISH）\n细胞命运决策与分化轨迹\n推荐工具：\n\nArchR、Signac、Seurat v5\n\n\n\n\n\n\nPacBio HiFi 测序\nOxford Nanopore 测序\n全长转录本测序\n结构变异检测\n单倍型组装\n推荐工具：\n\nminimap2、Flye、Canu\nIsoSeq 全长转录本分析\n\n\n\n\n\n\n\n\n\n\n疾病基因组学（癌症、遗传病）\n免疫组学（T 细胞受体、B 细胞受体）\n微生物组学（宏基因组、宏转录组）\n药物基因组学与精准医疗\n进化基因组学\n合成生物学与代谢工程\n\n\n\n\n公共数据库\n\nGEO：基因表达综合数据库\nTCGA：癌症基因组图谱\nGTEx：基因型-组织表达\nUK Biobank：大规模流行病学数据\nCellxGene：单细胞数据\n参考：本站流行病学数据库\n\n生物信息学工具与平台\n\nUCSC Genome Browser\nEnsembl\nUniProt\nSTRING：蛋白质相互作用数据库\nKEGG、Reactome：通路数据库\n\n\n\n\n文献阅读与写作\n\n如何高效阅读文献\n科研论文写作规范\n图表制作与数据可视化\n推荐工具：\n\nZotero、Mendeley 文献管理\nInkscape、Adobe Illustrator 科研绘图\n\n\n可重复性研究\n\n版本控制（Git）\n环境管理（Conda、Docker）\n工作流管理（Snakemake、Nextflow）\nJupyter Notebook / R Markdown\n推荐资源：\n\nGit 教程\nDocker 入门\n\n\n高性能计算\n\nLinux 基础与 Shell 脚本\n任务调度系统（SLURM、PBS）\n并行计算与 GPU 加速\n云计算平台使用（AWS、Google Cloud）\n\n\n\n\n\n\n\n\n大一至大二\n\n打好编程基础（Python、R）\n学习生物学和统计学基础知识\n完成课程作业，熟悉基本工具\n\n大二至大三\n\n深入学习转录组学、基因组学分析\n参与课题组或实验室项目\n开始阅读文献，了解研究前沿\n\n大三至大四\n\n选择感兴趣的研究方向\n进行独立科研项目（毕业论文）\n学习前沿技术（AI4S、单细胞等）\n准备升学或就业\n\n\n\n\n理论与实践结合\n\n不要只看教程，要动手实践\n从简单数据集开始，逐步挑战复杂项目\n复现已发表的分析流程\n\n利用在线资源\n\nCoursera、edX、B站 等学习平台\nGitHub 上的开源项目和教程\n生信技能树、生信菜鸟团 等中文社区\n\n参与学术交流\n\n加入生信相关的学术社群\n参加学术会议和讲座\n与同学、导师讨论问题\n\n建立知识体系\n\n做好笔记和代码管理\n整理常用脚本和分析模板\n定期回顾和总结所学内容\n\n\n\n\n\n\n生物信息学入门\n\n《生物信息学》（樊龙江）\n《Bioinformatics Data Skills》（Vince Buffalo）\n\n编程与统计\n\n《Python 编程：从入门到实践》\n《R 语言实战》\n《统计学习方法》（李航）\n\n高级主题\n\n《深度学习》（Ian Goodfellow）\n《Biological Sequence Analysis》（Durbin et al.）\n《Single Cell RNA-seq》（Orchestrating Single-Cell Analysis with Bioconductor）\n\n\n\n\n\n\n常用工具\n参考资料\nR 语言教程\n生信流程\nAI4S 专题\n计算生物学课程\n\n\n如果你对学习路线有任何疑问或建议，欢迎在 GitHub Discussions 中交流讨论！",
     "crumbs": [
       "首页",
       "学习资源",
@@ -84,11 +84,11 @@
     ]
   },
   {
-    "objectID": "learning-path.html#新生入门",
-    "href": "learning-path.html#新生入门",
-    "title": "学习路线建议",
+    "objectID": "learning-path.html#阶段一基础入门",
+    "href": "learning-path.html#阶段一基础入门",
+    "title": "生物信息学学习路线",
     "section": "",
-    "text": "基础语法：变量、数据类型、控制结构\n数据结构：向量、矩阵、数据框、列表\n数据处理：dplyr、tidyr 包的使用\n数据可视化：ggplot2 绘图\n\n\n\n\n\n\n\nTip推荐资源\n\n\n\n\nR for Data Science\nggplot2 官方文档\n\n\n\n\n\n\n\n基础语法：变量、数据类型、控制结构\n数据结构：列表、字典、集合、元组\n常用库：NumPy、Pandas、Matplotlib\n科学计算：SciPy、Scikit-learn\n\n\n\n\n\n\n\nTip推荐资源\n\n\n\n\nPython for Biologists\nBiopython Tutorial\n\n\n\n\n\n\n\n\n分子生物学：DNA、RNA、蛋白质的结构与功能\n测序技术：Sanger测序、NGS、三代测序\n实验设计：对照实验、统计学基础\n常用技术：PCR、qPCR、Western Blot等\n\n\n\n\n\n描述性统计：均值、方差、分布\n概率论：概率分布、贝叶斯定理\n假设检验：t检验、卡方检验、方差分析\n回归分析：线性回归、逻辑回归",
+    "text": "Python 编程\n\n基础语法：变量、数据类型、控制流、函数\n数据结构：列表、字典、集合、元组\n文件操作与异常处理\n常用库：NumPy、Pandas、Matplotlib\n推荐资源：\n\nPython 官方教程\n廖雪峰 Python 教程\n《Python 编程：从入门到实践》\n\n\nR 语言编程\n\n基础语法与数据结构\n数据处理：dplyr、tidyr\n数据可视化：ggplot2\n统计分析基础\n推荐资源：\n\nR for Data Science\n本站 R 语言教程\n《R 语言实战》\n\n\n\n\n\n\n分子生物学中心法则\n基因组结构与功能\n转录与翻译机制\n表观遗传学基础\n推荐资源：\n\n《分子生物学》（第五版，Robert F. Weaver）\nKhan Academy - Biology\n\n\n\n\n\n\n描述性统计\n概率分布（正态分布、泊松分布等）\n假设检验与 p 值\n多重检验校正（FDR, Bonferroni）\n线性回归与相关分析\n推荐资源：\n\n《统计学习方法》（李航）\nStatQuest 视频教程",
     "crumbs": [
       "首页",
       "学习资源",
@@ -96,11 +96,11 @@
     ]
   },
   {
-    "objectID": "learning-path.html#进阶学习",
-    "href": "learning-path.html#进阶学习",
-    "title": "学习路线建议",
+    "objectID": "learning-path.html#阶段二生信核心技能",
+    "href": "learning-path.html#阶段二生信核心技能",
+    "title": "生物信息学学习路线",
     "section": "",
-    "text": "序列比对：BLAST、Bowtie2、BWA\n变异检测：SNP calling、INDEL检测\n基因组注释：基因预测、功能注释\n进化分析：系统发育树、选择压力分析\n\n\n\n\n\nRNA-seq 分析：\n\n数据预处理（质控、比对）\n差异表达分析（DESeq2、edgeR）\n功能富集分析（GO、KEGG）\n\n单细胞测序：\n\n数据降维（PCA、t-SNE、UMAP）\n细胞聚类与注释\n轨迹推断\n\n\n\n\n\n\n\n蛋白质组：质谱数据分析、蛋白质鉴定\n代谢组：代谢物鉴定、代谢通路分析\n多组学整合：关联分析、网络构建\n\n\n\n\n\n\n\n\n\n\nNote本课程重点\n\n\n\n这是我们大四计算生物学课程的核心内容！\n\n\n\nPPI 网络：蛋白质相互作用网络构建与分析\n基因调控网络：转录因子-靶基因关系\n代谢网络：代谢通路的网络表示\nWGCNA：加权基因共表达网络分析\n网络算法：\n\n社区检测（MCL、Louvain）\n随机游走（RWR）\n中心性分析",
+    "text": "二代测序（NGS）\n\nIllumina 测序原理\nFASTQ 文件格式\n质量控制（FastQC）\n序列比对（BWA、STAR、HISAT2）\n\n三代测序\n\nPacBio 与 Oxford Nanopore 技术\n长读长数据分析\n基因组组装\n\n测序应用\n\nDNA-seq：全基因组测序、外显子组测序\nRNA-seq：转录组测序\nChIP-seq：染色质免疫沉淀测序\nATAC-seq：染色质可及性测序\n\n\n\n\n\n参考基因组与注释文件\n变异检测（SNP、InDel、CNV、SV）\n变异注释与功能预测\n群体遗传学分析\n推荐工具：\n\n比对：BWA、Bowtie2\n变异检测：GATK、SAMtools、FreeBayes\n注释：ANNOVAR、SnpEff\n\n\n\n\n\nBulk RNA-seq 分析流程\n\n数据预处理与质控\n基因表达定量（featureCounts、Salmon、Kallisto）\n差异表达分析（DESeq2、edgeR、limma）\n功能富集分析（GO、KEGG、GSEA）\n\n单细胞 RNA-seq 分析\n\n数据预处理与质控\n降维与聚类（PCA、t-SNE、UMAP）\n细胞类型注释\n拟时序分析\n细胞通讯分析\n推荐工具：Seurat、Scanpy、Monocle3\n\n空间转录组分析\n\n空间数据可视化\n空间变异基因识别\n空间域划分\n配体-受体互作分析\n推荐工具：Seurat、SpatialExperiment、Giotto\n\n\n\n\n\nChIP-seq 分析：peak calling、差异 peak 分析\nATAC-seq 分析：开放染色质识别、motif 分析\nDNA 甲基化分析：BS-seq、WGBS\n推荐工具：\n\nMACS2、Homer、deepTools\n甲基化分析：Bismark、MethylKit",
     "crumbs": [
       "首页",
       "学习资源",
@@ -108,11 +108,11 @@
     ]
   },
   {
-    "objectID": "learning-path.html#高级应用",
-    "href": "learning-path.html#高级应用",
-    "title": "学习路线建议",
+    "objectID": "learning-path.html#阶段三进阶分析",
+    "href": "learning-path.html#阶段三进阶分析",
+    "title": "生物信息学学习路线",
     "section": "",
-    "text": "监督学习：\n\n分类：SVM、随机森林、XGBoost\n回归：线性回归、岭回归、Lasso\n\n无监督学习：\n\n聚类：K-means、层次聚类、DBSCAN\n降维：PCA、t-SNE、UMAP\n\n模型评估：交叉验证、ROC曲线、混淆矩阵\n\n\n\n\n\n神经网络基础：感知机、反向传播\n常用架构：\n\nCNN（卷积神经网络）\nRNN/LSTM（循环神经网络）\nTransformer\n\n生物信息应用：\n\n蛋白质结构预测（AlphaFold）\n基因组序列分析\n药物-靶点预测\n\n\n\n\n\n\n\n蛋白质结构：\n\n结构预测（同源建模、从头预测）\n结构比对与分析\n分子对接\n\n分子动力学模拟：GROMACS、AMBER\n药物设计：虚拟筛选、QSAR建模",
+    "text": "机器学习基础\n\n监督学习：分类与回归\n无监督学习：聚类与降维\n特征工程与模型评估\n常用算法：决策树、随机森林、SVM、XGBoost\n\n深度学习基础\n\n神经网络基础\n卷积神经网络（CNN）\n循环神经网络（RNN、LSTM）\nTransformer 架构\n推荐资源：\n\n《深度学习》（Ian Goodfellow）\n吴恩达深度学习课程\nPyTorch 与 TensorFlow 教程\n\n\n\n\n\n\n蛋白质相互作用网络（PPI）\n基因调控网络（GRN）\n加权基因共表达网络分析（WGCNA）\n网络拓扑分析与中心性指标\n社区检测算法（Louvain、MCL）\n随机游走算法（Random Walk with Restart）\n推荐资源：\n\n本站计算生物学课程\nCytoscape 网络可视化工具\nigraph、NetworkX 等网络分析包\n\n\n\n\n\n\n多组学数据整合策略\n关联分析与因果推断\n多组学网络构建\n推荐工具：\n\nMOFA+、mixOmics\nMulti-Omics Factor Analysis",
     "crumbs": [
       "首页",
       "学习资源",
@@ -120,11 +120,11 @@
     ]
   },
   {
-    "objectID": "learning-path.html#科研应用",
-    "href": "learning-path.html#科研应用",
-    "title": "学习路线建议",
+    "objectID": "learning-path.html#阶段四前沿技术",
+    "href": "learning-path.html#阶段四前沿技术",
+    "title": "生物信息学学习路线",
     "section": "",
-    "text": "确定研究方向\n\n疾病机制研究\n药物靶点发现\n生物标志物筛选\n进化生物学\n\n文献调研\n\nPubMed 检索\n阅读综述文章\n追踪最新进展\n\n\n\n\n\n\n\n\n\n\n数据库\n用途\n网址\n\n\n\n\nGEO\n基因表达数据\nhttps://www.ncbi.nlm.nih.gov/geo/\n\n\nTCGA\n癌症基因组数据\nhttps://portal.gdc.cancer.gov/\n\n\nGTEx\n正常组织表达数据\nhttps://gtexportal.org/\n\n\nSTRING\n蛋白质相互作用\nhttps://string-db.org/\n\n\nUniProt\n蛋白质序列与功能\nhttps://www.uniprot.org/\n\n\nKEGG\n代谢通路\nhttps://www.kegg.jp/\n\n\n\n\n\n\n\n\n数据预处理\n\n质量控制\n标准化\n批次效应校正\n\n统计分析\n\n差异分析\n相关性分析\n生存分析\n\n功能分析\n\n富集分析\n通路分析\n网络分析\n\n\n\n\n\n\n计算验证：使用其他数据集验证\n实验验证：qPCR、Western Blot等\n文献支持：查找相关研究支持\n\n\n\n\n\n论文结构\n\nIntroduction（引言）\nMethods（方法）\nResults（结果）\nDiscussion（讨论）\n\n数据可视化\n\n使用 ggplot2 制作出版级图表\n注意配色和布局\n添加必要的统计信息\n\n投稿准备\n\n选择合适的期刊\n准备补充材料\n代码和数据分享",
+    "text": "Foundation Models for Biology\n\nDNA 序列模型：DNABERT、Nucleotide Transformer、HyenaDNA\nRNA 序列模型：RNA-FM、RNABert\n蛋白质序列模型：ESM-2、ProtGPT2、ProtT5\n蛋白质结构预测：AlphaFold2、AlphaFold3、ESMFold、RoseTTAFold\n多模态模型：整合序列、结构、功能信息\n推荐资源：\n\n本站 AI4S 专题\nAlphaFold Protein Structure Database\n\n\nAI 驱动的药物设计（AIDD）\n\n虚拟筛选与分子对接\n分子生成模型\n药物-靶点相互作用预测\nADMET 性质预测\n推荐工具：\n\nAutoDock Vina、Glide\nDeepChem、Chemprop\n分子生成：MolGAN、GraphVAE\n\n\n虚拟细胞（Virtual Cell）\n\n细胞行为的计算建模\n多尺度生物模拟\n数字孪生技术在生物学中的应用\n参考文献：\n\nCell 2026: Virtual Cell Modeling（2026-09-29）\n\n\n\n\n\n\n蛋白质结构预测（AlphaFold2/3）\n蛋白质-配体复合物预测\n分子动力学模拟（GROMACS、AMBER）\n冷冻电镜数据分析\n推荐资源：\n\nAlphaFold Colab\nRCSB PDB 数据库\n\n\n\n\n\n\nscRNA-seq + scATAC-seq 联合分析\nCITE-seq：蛋白质与转录组联合测量\n空间多组学技术（Visium、MERFISH、seqFISH）\n细胞命运决策与分化轨迹\n推荐工具：\n\nArchR、Signac、Seurat v5\n\n\n\n\n\n\nPacBio HiFi 测序\nOxford Nanopore 测序\n全长转录本测序\n结构变异检测\n单倍型组装\n推荐工具：\n\nminimap2、Flye、Canu\nIsoSeq 全长转录本分析",
     "crumbs": [
       "首页",
       "学习资源",
@@ -132,11 +132,11 @@
     ]
   },
   {
-    "objectID": "learning-path.html#推荐资源",
-    "href": "learning-path.html#推荐资源",
-    "title": "学习路线建议",
+    "objectID": "learning-path.html#阶段五科研实践",
+    "href": "learning-path.html#阶段五科研实践",
+    "title": "生物信息学学习路线",
     "section": "",
-    "text": "Coursera - Bioinformatics Specialization\nedX - Data Analysis for Life Sciences\n生信技能树\n\n\n\n\n\n《生物信息学》- 李霞、雷健波\n《Bioinformatics Data Skills》- Vince Buffalo\n《An Introduction to Statistical Learning》- James et al.\n\n\n\n\n\nGalaxy：图形化分析平台\nBioconductor：R 语言生物信息学包集合\nBiopython：Python 生物信息学工具库",
+    "text": "疾病基因组学（癌症、遗传病）\n免疫组学（T 细胞受体、B 细胞受体）\n微生物组学（宏基因组、宏转录组）\n药物基因组学与精准医疗\n进化基因组学\n合成生物学与代谢工程\n\n\n\n\n公共数据库\n\nGEO：基因表达综合数据库\nTCGA：癌症基因组图谱\nGTEx：基因型-组织表达\nUK Biobank：大规模流行病学数据\nCellxGene：单细胞数据\n参考：本站流行病学数据库\n\n生物信息学工具与平台\n\nUCSC Genome Browser\nEnsembl\nUniProt\nSTRING：蛋白质相互作用数据库\nKEGG、Reactome：通路数据库\n\n\n\n\n文献阅读与写作\n\n如何高效阅读文献\n科研论文写作规范\n图表制作与数据可视化\n推荐工具：\n\nZotero、Mendeley 文献管理\nInkscape、Adobe Illustrator 科研绘图\n\n\n可重复性研究\n\n版本控制（Git）\n环境管理（Conda、Docker）\n工作流管理（Snakemake、Nextflow）\nJupyter Notebook / R Markdown\n推荐资源：\n\nGit 教程\nDocker 入门\n\n\n高性能计算\n\nLinux 基础与 Shell 脚本\n任务调度系统（SLURM、PBS）\n并行计算与 GPU 加速\n云计算平台使用（AWS、Google Cloud）",
     "crumbs": [
       "首页",
       "学习资源",
@@ -146,9 +146,9 @@
   {
     "objectID": "learning-path.html#学习建议",
     "href": "learning-path.html#学习建议",
-    "title": "学习路线建议",
+    "title": "生物信息学学习路线",
     "section": "",
-    "text": "Tip循序渐进\n\n\n\n不要急于求成，扎实掌握每个阶段的知识再进入下一阶段。\n\n\n\n\n\n\n\n\nTip理论与实践结合\n\n\n\n学习理论知识的同时，多动手实践，完成实际项目。\n\n\n\n\n\n\n\n\nTip积极交流\n\n\n\n多与同学、老师交流，参加学术会议和研讨会。\n\n\n\n\n\n\n\n\nTip持续学习\n\n\n\n生物信息学发展迅速，保持学习的热情，关注最新技术和方法。",
+    "text": "大一至大二\n\n打好编程基础（Python、R）\n学习生物学和统计学基础知识\n完成课程作业，熟悉基本工具\n\n大二至大三\n\n深入学习转录组学、基因组学分析\n参与课题组或实验室项目\n开始阅读文献，了解研究前沿\n\n大三至大四\n\n选择感兴趣的研究方向\n进行独立科研项目（毕业论文）\n学习前沿技术（AI4S、单细胞等）\n准备升学或就业\n\n\n\n\n理论与实践结合\n\n不要只看教程，要动手实践\n从简单数据集开始，逐步挑战复杂项目\n复现已发表的分析流程\n\n利用在线资源\n\nCoursera、edX、B站 等学习平台\nGitHub 上的开源项目和教程\n生信技能树、生信菜鸟团 等中文社区\n\n参与学术交流\n\n加入生信相关的学术社群\n参加学术会议和讲座\n与同学、导师讨论问题\n\n建立知识体系\n\n做好笔记和代码管理\n整理常用脚本和分析模板\n定期回顾和总结所学内容",
     "crumbs": [
       "首页",
       "学习资源",
@@ -156,11 +156,23 @@
     ]
   },
   {
-    "objectID": "learning-path.html#阶段性目标",
-    "href": "learning-path.html#阶段性目标",
-    "title": "学习路线建议",
+    "objectID": "learning-path.html#推荐书籍",
+    "href": "learning-path.html#推荐书籍",
+    "title": "生物信息学学习路线",
     "section": "",
-    "text": "掌握 R 和 Python 编程\n学习统计学基础\n了解分子生物学知识\n\n\n\n\n\n学习基因组学、转录组学分析\n掌握常用生物信息学工具\n完成课程项目\n\n\n\n\n\n深入学习特定方向（网络分析、机器学习等）\n参与科研项目\n准备毕业论文\n\n\n\n\n\n独立完成科研项目\n发表学术论文\n参加国际会议\n\n\n有问题欢迎在 Discussions 中讨论！",
+    "text": "生物信息学入门\n\n《生物信息学》（樊龙江）\n《Bioinformatics Data Skills》（Vince Buffalo）\n\n编程与统计\n\n《Python 编程：从入门到实践》\n《R 语言实战》\n《统计学习方法》（李航）\n\n高级主题\n\n《深度学习》（Ian Goodfellow）\n《Biological Sequence Analysis》（Durbin et al.）\n《Single Cell RNA-seq》（Orchestrating Single-Cell Analysis with Bioconductor）",
+    "crumbs": [
+      "首页",
+      "学习资源",
+      "学习路线"
+    ]
+  },
+  {
+    "objectID": "learning-path.html#相关链接",
+    "href": "learning-path.html#相关链接",
+    "title": "生物信息学学习路线",
+    "section": "",
+    "text": "常用工具\n参考资料\nR 语言教程\n生信流程\nAI4S 专题\n计算生物学课程\n\n\n如果你对学习路线有任何疑问或建议，欢迎在 GitHub Discussions 中交流讨论！",
     "crumbs": [
       "首页",
       "学习资源",
@@ -1175,6 +1187,834 @@
       "首页",
       "流行病学数据库",
       "UK Biobank"
+    ]
+  },
+  {
+    "objectID": "AI4S/virtual-cell.html",
+    "href": "AI4S/virtual-cell.html",
+    "title": "虚拟细胞（Virtual Cell）",
+    "section": "",
+    "text": "虚拟细胞是通过计算模型重建细胞完整行为的前沿研究方向，旨在构建细胞的”数字孪生”（Digital Twin），整合从分子到细胞器再到整个细胞的多尺度生物学数据，实现对细胞行为的预测、模拟和操控。虚拟细胞代表了系统生物学、合成生物学和计算生物学的深度融合，是 AI4Science 的重要应用领域。\n\n\n\n\n\n虚拟细胞是一个基于计算的、可预测的细胞模型，能够模拟细胞在不同条件下的行为，包括：\n\n代谢网络：物质与能量的流动\n基因调控网络：基因表达的动态变化\n信号通路：细胞对外界刺激的响应\n细胞分裂：细胞周期与增殖\n细胞分化：干细胞命运决定\n细胞-细胞互作：多细胞系统的协同行为\n\n\n\n\n\n预测能力: - 给定初始条件，预测细胞状态演化 - 预测基因敲除/过表达的表型 - 预测药物对细胞的影响\n可操控性: - 虚拟实验：在计算机中测试假设 - 优化设计：合成生物学中的最优基因回路 - 个性化医疗：基于患者细胞的治疗方案\n\n\n\n\n\n\n\n代表方法：通量平衡分析（Flux Balance Analysis, FBA）\n原理: - 假设细胞处于稳态（代谢物浓度不变） - 最大化生物量或其他目标函数 - 约束：反应化学计量、通量上下界\n数学表示:\n最大化: v_biomass\n约束:\n  S · v = 0  （稳态约束）\n  lb ≤ v ≤ ub  （通量边界）\n其中： - S: 化学计量矩阵 - v: 反应通量向量 - lb, ub: 通量下界与上界\n代码示例（使用 COBRApy）:\nimport cobra\nfrom cobra.io import load_model\n\n# 加载大肠杆菌基因组规模代谢模型\nmodel = load_model(\"iJO1366\")  # E. coli 模型\n\n# 查看模型基本信息\nprint(f\"反应数: {len(model.reactions)}\")\nprint(f\"代谢物数: {len(model.metabolites)}\")\nprint(f\"基因数: {len(model.genes)}\")\n\n# 模拟生长\nsolution = model.optimize()\nprint(f\"最大生长速率: {solution.objective_value:.3f} 1/h\")\n\n# 基因敲除实验\nwith model:\n    # 敲除 pgi 基因（葡萄糖-6-磷酸异构酶）\n    model.genes.pgi.knock_out()\n    ko_solution = model.optimize()\n    print(f\"敲除后生长速率: {ko_solution.objective_value:.3f} 1/h\")\n\n# 通量变异性分析（FVA）\nfrom cobra.flux_analysis import flux_variability_analysis\nfva_result = flux_variability_analysis(model, model.reactions[:10])\nprint(fva_result)\n应用: - 预测基因敲除效应 - 代谢工程：优化产物合成 - 致死基因识别：药物靶点发现\n\n\n\n\n适用场景: 信号通路、基因调控网络的动态模拟\n原理: 描述分子浓度随时间的变化\n示例：简单基因调控:\ndX/dt = k_on - k_off * X\n其中： - X: 蛋白质浓度 - k_on: 合成速率 - k_off: 降解速率\n代码示例（使用 SciPy）:\nimport numpy as np\nfrom scipy.integrate import odeint\nimport matplotlib.pyplot as plt\n\n# 基因调控 ODE：负反馈回路\ndef gene_regulation(y, t, k_on, k_off, k_inh, n):\n    X = y[0]\n    # Hill 函数抑制\n    dX_dt = k_on / (1 + (X / k_inh) ** n) - k_off * X\n    return [dX_dt]\n\n# 参数\nk_on = 1.0\nk_off = 0.1\nk_inh = 5.0\nn = 2\n\n# 初始条件\nX0 = [0.1]\n\n# 时间点\nt = np.linspace(0, 100, 1000)\n\n# 求解 ODE\nsol = odeint(gene_regulation, X0, t, args=(k_on, k_off, k_inh, n))\n\n# 可视化\nplt.figure(figsize=(10, 6))\nplt.plot(t, sol[:, 0], label='Protein X')\nplt.xlabel('Time')\nplt.ylabel('Concentration')\nplt.title('Gene Regulation with Negative Feedback')\nplt.legend()\nplt.grid(True)\nplt.show()\n应用: - 振荡器设计（合成生物学） - 信号通路动力学 - 细胞周期模型\n\n\n\n\n适用场景: 低拷贝数分子、基因表达噪声\nGillespie 算法（Stochastic Simulation Algorithm, SSA）: - 精确模拟化学反应的随机过程 - 适用于小体系\n代码示例:\nimport numpy as np\nimport matplotlib.pyplot as plt\n\ndef gillespie(reactions, X0, tmax):\n    \"\"\"\n    Gillespie 算法\n    \n    reactions: list of (propensity_func, change_vector)\n    X0: 初始状态\n    tmax: 最大时间\n    \"\"\"\n    X = np.array(X0, dtype=float)\n    t = 0\n    t_list = [t]\n    X_list = [X.copy()]\n    \n    while t &lt; tmax:\n        # 计算所有反应的倾向性\n        a_list = [prop(X) for prop, _ in reactions]\n        a0 = sum(a_list)\n        \n        if a0 == 0:\n            break\n        \n        # 采样时间增量\n        tau = np.random.exponential(1 / a0)\n        t += tau\n        \n        # 选择反应\n        r = np.random.uniform(0, a0)\n        cumsum = 0\n        for i, a in enumerate(a_list):\n            cumsum += a\n            if r &lt; cumsum:\n                X += reactions[i][1]\n                break\n        \n        t_list.append(t)\n        X_list.append(X.copy())\n    \n    return np.array(t_list), np.array(X_list)\n\n# 示例：mRNA 和蛋白质合成与降解\n# 状态: [mRNA, Protein]\n# 反应:\n#   1. DNA -&gt; DNA + mRNA  (rate = k1)\n#   2. mRNA -&gt; 0           (rate = k2 * mRNA)\n#   3. mRNA -&gt; mRNA + Protein (rate = k3 * mRNA)\n#   4. Protein -&gt; 0        (rate = k4 * Protein)\n\nk1, k2, k3, k4 = 10, 0.1, 10, 0.01\n\nreactions = [\n    (lambda X: k1, np.array([1, 0])),           # mRNA 合成\n    (lambda X: k2 * X[0], np.array([-1, 0])),   # mRNA 降解\n    (lambda X: k3 * X[0], np.array([0, 1])),    # 蛋白质合成\n    (lambda X: k4 * X[1], np.array([0, -1])),   # 蛋白质降解\n]\n\nX0 = [0, 0]\ntmax = 100\n\n# 运行多次模拟\nn_sim = 10\nplt.figure(figsize=(12, 5))\n\nfor _ in range(n_sim):\n    t_list, X_list = gillespie(reactions, X0, tmax)\n    plt.subplot(1, 2, 1)\n    plt.plot(t_list, X_list[:, 0], alpha=0.5)\n    plt.subplot(1, 2, 2)\n    plt.plot(t_list, X_list[:, 1], alpha=0.5)\n\nplt.subplot(1, 2, 1)\nplt.xlabel('Time')\nplt.ylabel('mRNA count')\nplt.title('mRNA dynamics')\nplt.grid(True)\n\nplt.subplot(1, 2, 2)\nplt.xlabel('Time')\nplt.ylabel('Protein count')\nplt.title('Protein dynamics')\nplt.grid(True)\n\nplt.tight_layout()\nplt.show()\n应用: - 基因表达噪声 - 小分子数动力学 - 细胞命运决策\n\n\n\n\n挑战: 细胞行为跨越多个时间尺度和空间尺度\n尺度: - 原子级（纳秒、纳米）：分子动力学 - 分子级（秒、纳米-微米）：生化反应 - 细胞器级（分钟、微米）：线粒体、核糖体 - 细胞级（小时、微米-毫米）：细胞分裂、迁移 - 组织级（天、毫米）：器官发育\n多尺度整合方法: - 分层建模：不同尺度使用不同模型 - 耦合模拟：跨尺度信息传递\n工具: - E-Cell: 多尺度细胞模拟 - Virtual Cell (VCell): 空间细胞建模\n\n\n\n\n从数据学习细胞动力学\n单细胞 RNA-seq → 细胞状态转换: - 学习细胞状态的潜在空间 - 预测扰动效应\n代表工具:\nCellOracle: - 从单细胞数据推断基因调控网络 - 模拟基因扰动引起的细胞命运变化\n代码示例（CellOracle）:\nimport celloracle as co\nimport scanpy as sc\n\n# 加载单细胞数据\nadata = sc.read_h5ad(\"scRNA_data.h5ad\")\n\n# 构建基因调控网络（GRN）\noracle = co.Oracle()\noracle.import_anndata_as_raw_count(adata)\noracle.perform_PCA()\noracle.knn_imputation()\n\n# 推断 GRN\noracle.fit_GRN()\n\n# 模拟基因敲除\noracle.simulate_shift(gene=\"Gata1\", n_propagation=3)\n\n# 可视化细胞命运变化\noracle.visualize_development()\n\nGeneformer: - Transformer 模型学习基因表达 - 预测基因扰动和细胞状态\n\nscGPT: - 生成式预训练 Transformer - 单细胞数据的通用表示\n\n\n\n\n\n\n\n背景: - 最简单的自由生活生物 - 基因组仅 525 个基因\n模型: - Karr et al. (2012) 在 Cell 发表 - 整合 28 个子模块 - 模拟细胞周期全过程\n成果: - 预测基因敲除表型 - 预测细胞分裂时间\n论文: Karr, J. R. et al. (2012). A whole-cell computational model predicts phenotype from genotype. Cell, 150(2), 389-401.\n\n\n\n\niJO1366 模型: - 1366 个基因 - 2583 个反应 - 1805 个代谢物\n应用: - 预测营养缺陷 - 代谢工程设计 - 合成生物学\n\n\n\n\nRecon3D: - 全面的人类代谢重建 - 整合组织特异性数据\n应用: - 癌症代谢研究 - 遗传代谢病 - 药物-代谢互作\n\n\n\n\n\n\n\n参考文献: Cell 2026: Virtual Cell Modeling\n关键进展:\n1. AI 与物理模型的混合建模 - 深度学习学习数据驱动的规律 - 物理模型提供机制约束 - 神经常微分方程（Neural ODE）\n\n2. 单细胞多模态虚拟细胞 - 整合 scRNA-seq、scATAC-seq、蛋白质组、代谢组 - 构建细胞状态的高维表示 - 预测细胞对扰动的响应\n\n3. 空间虚拟细胞 - 空间转录组技术（Visium、MERFISH） - 模拟空间微环境对细胞的影响 - 细胞-细胞互作与组织结构\n\n4. 个性化虚拟细胞 - 基于患者组学数据构建个性化模型 - 预测个体化药物响应 - 精准医疗应用\n\n5. 自动化模型构建 - 从文献自动提取生物学知识 - 知识图谱 + 机器学习 - 加速模型迭代\n\n\n\n\n计算能力提升: - GPU 加速模拟 - 云计算平台 - 量子计算潜力\n数据爆炸: - 单细胞技术成熟 - 空间组学数据增长 - 多模态数据整合\nAI 赋能: - Foundation Models 学习生物规律 - 生成模型模拟细胞行为 - 强化学习优化细胞设计\n\n\n\n\n\n\n\n目标: 优化微生物生产有价值化合物\n流程: 1. 构建代谢网络模型 2. FBA 预测基因改造策略 3. 实验验证 4. 迭代优化\n案例: - 大肠杆菌生产生物燃料 - 酵母合成青蒿素（抗疟药）\n代码示例:\nimport cobra\n\nmodel = cobra.io.load_model(\"iJO1366\")\n\n# 添加异源代谢途径（示例：生产琥珀酸）\nwith model:\n    # 最大化琥珀酸生产\n    model.objective = \"EX_succ_e\"\n    solution = model.optimize()\n    print(f\"琥珀酸产量: {solution.objective_value:.3f} mmol/gDW/h\")\n    \n    # 识别提升产量的基因过表达靶点\n    from cobra.flux_analysis import single_gene_deletion\n    deletion_results = single_gene_deletion(model)\n    # 找到敲除后产量下降最大的基因（过表达候选）\n\n\n\n\n虚拟敲除实验: - 在虚拟细胞中逐个敲除基因 - 预测致死基因 - 优先级排序药物靶点\n示例:\nimport cobra\n\nmodel = cobra.io.load_model(\"iJO1366\")\n\n# 单基因敲除分析\nfrom cobra.flux_analysis import single_gene_deletion\n\ndeletion_results = single_gene_deletion(model)\n\n# 识别致死基因（敲除后生长速率接近 0）\nessential_genes = deletion_results[deletion_results[\"growth\"] &lt; 0.01]\nprint(f\"致死基因数: {len(essential_genes)}\")\nprint(essential_genes.head())\n\n\n\n\n从单细胞数据推断细胞分化轨迹\n工具: CellOracle, RNA Velocity, Waddington-OT\n应用: - 干细胞分化控制 - 癌症细胞可塑性 - 发育生物学\n\n\n\n\n设计基因回路: - 振荡器 - 开关 - 逻辑门\n最小基因组设计: - JCVI-syn3.0: 仅 473 个基因的合成细菌 - 虚拟细胞指导基因选择\n\n\n\n\n癌症虚拟细胞: - 整合患者基因组、转录组数据 - 预测癌细胞对治疗的响应 - 个性化治疗方案\n神经退行性疾病: - 模拟神经元代谢失调 - 预测保护性干预\n\n\n\n\n\n\n\n代谢网络约束建模\npip install cobra\n文档: COBRApy\n\n\n\n\n多尺度细胞建模平台\n特点: - 图形化界面 - ODE、PDE、随机模拟 - 空间细胞建模\n网站: VCell\n\n\n\n\n基因调控网络与细胞命运预测\npip install celloracle\nGitHub: CellOracle\n\n\n\n\n多细胞系统 Agent-based 建模\n特点: - 模拟细胞群体 - 细胞-微环境互作 - 3D 可视化\n网站: PhysiCell\n\n\n\n\n多尺度细胞模拟\nGitHub: E-Cell\n\n\n\n\n\n\n\n1. 模型复杂性 - 生物系统极其复杂 - 参数众多，难以全部实验测定 - 不确定性量化困难\n2. 数据整合 - 多模态数据格式不统一 - 数据质量参差不齐 - 缺失数据插补\n3. 计算成本 - 全细胞模拟计算密集 - 高通量虚拟筛选需大量资源\n4. 验证困难 - 虚拟预测需实验验证 - 细胞行为复杂，难以完全验证\n5. 泛化能力 - 模型往往针对特定细胞类型 - 跨物种、跨细胞类型泛化困难\n\n\n\n\n1. AI + 物理混合建模 - 深度学习捕捉复杂模式 - 物理模型提供可解释性 - 神经 ODE、物理信息神经网络（PINN）\n2. 数字孪生细胞 - 实时追踪真实细胞 - 虚拟细胞同步更新 - 预测细胞未来状态\n3. 全人类虚拟细胞 - 整合 Human Cell Atlas 数据 - 覆盖所有细胞类型 - 个性化医疗基础设施\n4. 闭环设计-实验-学习 - 虚拟设计 → 自动化实验 → 模型更新 - 加速科学发现\n5. 多细胞虚拟生物 - 从单细胞到组织、器官 - 虚拟器官（Virtual Organ） - 虚拟人体（Virtual Human）\n\n\n\n\n\n\n\n\nSystems Biology (MIT OpenCourseWare): 系统生物学基础\nComputational Systems Biology (Coursera): 计算系统生物学\n\n\n\n\n\n\n《Systems Biology: A Textbook》（Edda Klipp 等）\n《Computational Modeling of Signaling Networks》（Springer）\n\n\n\n\n\n\nCOBRApy Tutorial\nCellOracle Tutorials\n\n\n\n\n\n\nKarr, J. R. et al. (2012). A whole-cell computational model. Cell.\nMacklin, D. N. et al. (2020). Simultaneous cross-evaluation. eLife.\nCell 2026 虚拟细胞综述（2026-09-29）\n\n\n\n\n\n\n虚拟细胞代表了生物学研究的未来方向，通过整合多尺度数据、物理模型和机器学习，构建细胞的可预测、可操控的数字孪生。虚拟细胞将加速药物发现、推动合成生物学、实现个性化医疗，并最终帮助我们全面理解生命的本质。\n随着 AI 技术、测序技术和计算能力的飞速发展，虚拟细胞正在从科幻走向现实，成为生命科学研究不可或缺的工具。\n\n\n\n\n\nAI4S 专题主页\nDNA Foundation Models\nRNA Foundation Models\n蛋白质 Foundation Models\nAI4Drug\n\n\n更新时间：2026-09-29",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "虚拟细胞"
+    ]
+  },
+  {
+    "objectID": "AI4S/virtual-cell.html#什么是虚拟细胞",
+    "href": "AI4S/virtual-cell.html#什么是虚拟细胞",
+    "title": "虚拟细胞（Virtual Cell）",
+    "section": "",
+    "text": "虚拟细胞是一个基于计算的、可预测的细胞模型，能够模拟细胞在不同条件下的行为，包括：\n\n代谢网络：物质与能量的流动\n基因调控网络：基因表达的动态变化\n信号通路：细胞对外界刺激的响应\n细胞分裂：细胞周期与增殖\n细胞分化：干细胞命运决定\n细胞-细胞互作：多细胞系统的协同行为\n\n\n\n\n\n预测能力: - 给定初始条件，预测细胞状态演化 - 预测基因敲除/过表达的表型 - 预测药物对细胞的影响\n可操控性: - 虚拟实验：在计算机中测试假设 - 优化设计：合成生物学中的最优基因回路 - 个性化医疗：基于患者细胞的治疗方案",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "虚拟细胞"
+    ]
+  },
+  {
+    "objectID": "AI4S/virtual-cell.html#核心技术",
+    "href": "AI4S/virtual-cell.html#核心技术",
+    "title": "虚拟细胞（Virtual Cell）",
+    "section": "",
+    "text": "代表方法：通量平衡分析（Flux Balance Analysis, FBA）\n原理: - 假设细胞处于稳态（代谢物浓度不变） - 最大化生物量或其他目标函数 - 约束：反应化学计量、通量上下界\n数学表示:\n最大化: v_biomass\n约束:\n  S · v = 0  （稳态约束）\n  lb ≤ v ≤ ub  （通量边界）\n其中： - S: 化学计量矩阵 - v: 反应通量向量 - lb, ub: 通量下界与上界\n代码示例（使用 COBRApy）:\nimport cobra\nfrom cobra.io import load_model\n\n# 加载大肠杆菌基因组规模代谢模型\nmodel = load_model(\"iJO1366\")  # E. coli 模型\n\n# 查看模型基本信息\nprint(f\"反应数: {len(model.reactions)}\")\nprint(f\"代谢物数: {len(model.metabolites)}\")\nprint(f\"基因数: {len(model.genes)}\")\n\n# 模拟生长\nsolution = model.optimize()\nprint(f\"最大生长速率: {solution.objective_value:.3f} 1/h\")\n\n# 基因敲除实验\nwith model:\n    # 敲除 pgi 基因（葡萄糖-6-磷酸异构酶）\n    model.genes.pgi.knock_out()\n    ko_solution = model.optimize()\n    print(f\"敲除后生长速率: {ko_solution.objective_value:.3f} 1/h\")\n\n# 通量变异性分析（FVA）\nfrom cobra.flux_analysis import flux_variability_analysis\nfva_result = flux_variability_analysis(model, model.reactions[:10])\nprint(fva_result)\n应用: - 预测基因敲除效应 - 代谢工程：优化产物合成 - 致死基因识别：药物靶点发现\n\n\n\n\n适用场景: 信号通路、基因调控网络的动态模拟\n原理: 描述分子浓度随时间的变化\n示例：简单基因调控:\ndX/dt = k_on - k_off * X\n其中： - X: 蛋白质浓度 - k_on: 合成速率 - k_off: 降解速率\n代码示例（使用 SciPy）:\nimport numpy as np\nfrom scipy.integrate import odeint\nimport matplotlib.pyplot as plt\n\n# 基因调控 ODE：负反馈回路\ndef gene_regulation(y, t, k_on, k_off, k_inh, n):\n    X = y[0]\n    # Hill 函数抑制\n    dX_dt = k_on / (1 + (X / k_inh) ** n) - k_off * X\n    return [dX_dt]\n\n# 参数\nk_on = 1.0\nk_off = 0.1\nk_inh = 5.0\nn = 2\n\n# 初始条件\nX0 = [0.1]\n\n# 时间点\nt = np.linspace(0, 100, 1000)\n\n# 求解 ODE\nsol = odeint(gene_regulation, X0, t, args=(k_on, k_off, k_inh, n))\n\n# 可视化\nplt.figure(figsize=(10, 6))\nplt.plot(t, sol[:, 0], label='Protein X')\nplt.xlabel('Time')\nplt.ylabel('Concentration')\nplt.title('Gene Regulation with Negative Feedback')\nplt.legend()\nplt.grid(True)\nplt.show()\n应用: - 振荡器设计（合成生物学） - 信号通路动力学 - 细胞周期模型\n\n\n\n\n适用场景: 低拷贝数分子、基因表达噪声\nGillespie 算法（Stochastic Simulation Algorithm, SSA）: - 精确模拟化学反应的随机过程 - 适用于小体系\n代码示例:\nimport numpy as np\nimport matplotlib.pyplot as plt\n\ndef gillespie(reactions, X0, tmax):\n    \"\"\"\n    Gillespie 算法\n    \n    reactions: list of (propensity_func, change_vector)\n    X0: 初始状态\n    tmax: 最大时间\n    \"\"\"\n    X = np.array(X0, dtype=float)\n    t = 0\n    t_list = [t]\n    X_list = [X.copy()]\n    \n    while t &lt; tmax:\n        # 计算所有反应的倾向性\n        a_list = [prop(X) for prop, _ in reactions]\n        a0 = sum(a_list)\n        \n        if a0 == 0:\n            break\n        \n        # 采样时间增量\n        tau = np.random.exponential(1 / a0)\n        t += tau\n        \n        # 选择反应\n        r = np.random.uniform(0, a0)\n        cumsum = 0\n        for i, a in enumerate(a_list):\n            cumsum += a\n            if r &lt; cumsum:\n                X += reactions[i][1]\n                break\n        \n        t_list.append(t)\n        X_list.append(X.copy())\n    \n    return np.array(t_list), np.array(X_list)\n\n# 示例：mRNA 和蛋白质合成与降解\n# 状态: [mRNA, Protein]\n# 反应:\n#   1. DNA -&gt; DNA + mRNA  (rate = k1)\n#   2. mRNA -&gt; 0           (rate = k2 * mRNA)\n#   3. mRNA -&gt; mRNA + Protein (rate = k3 * mRNA)\n#   4. Protein -&gt; 0        (rate = k4 * Protein)\n\nk1, k2, k3, k4 = 10, 0.1, 10, 0.01\n\nreactions = [\n    (lambda X: k1, np.array([1, 0])),           # mRNA 合成\n    (lambda X: k2 * X[0], np.array([-1, 0])),   # mRNA 降解\n    (lambda X: k3 * X[0], np.array([0, 1])),    # 蛋白质合成\n    (lambda X: k4 * X[1], np.array([0, -1])),   # 蛋白质降解\n]\n\nX0 = [0, 0]\ntmax = 100\n\n# 运行多次模拟\nn_sim = 10\nplt.figure(figsize=(12, 5))\n\nfor _ in range(n_sim):\n    t_list, X_list = gillespie(reactions, X0, tmax)\n    plt.subplot(1, 2, 1)\n    plt.plot(t_list, X_list[:, 0], alpha=0.5)\n    plt.subplot(1, 2, 2)\n    plt.plot(t_list, X_list[:, 1], alpha=0.5)\n\nplt.subplot(1, 2, 1)\nplt.xlabel('Time')\nplt.ylabel('mRNA count')\nplt.title('mRNA dynamics')\nplt.grid(True)\n\nplt.subplot(1, 2, 2)\nplt.xlabel('Time')\nplt.ylabel('Protein count')\nplt.title('Protein dynamics')\nplt.grid(True)\n\nplt.tight_layout()\nplt.show()\n应用: - 基因表达噪声 - 小分子数动力学 - 细胞命运决策\n\n\n\n\n挑战: 细胞行为跨越多个时间尺度和空间尺度\n尺度: - 原子级（纳秒、纳米）：分子动力学 - 分子级（秒、纳米-微米）：生化反应 - 细胞器级（分钟、微米）：线粒体、核糖体 - 细胞级（小时、微米-毫米）：细胞分裂、迁移 - 组织级（天、毫米）：器官发育\n多尺度整合方法: - 分层建模：不同尺度使用不同模型 - 耦合模拟：跨尺度信息传递\n工具: - E-Cell: 多尺度细胞模拟 - Virtual Cell (VCell): 空间细胞建模\n\n\n\n\n从数据学习细胞动力学\n单细胞 RNA-seq → 细胞状态转换: - 学习细胞状态的潜在空间 - 预测扰动效应\n代表工具:\nCellOracle: - 从单细胞数据推断基因调控网络 - 模拟基因扰动引起的细胞命运变化\n代码示例（CellOracle）:\nimport celloracle as co\nimport scanpy as sc\n\n# 加载单细胞数据\nadata = sc.read_h5ad(\"scRNA_data.h5ad\")\n\n# 构建基因调控网络（GRN）\noracle = co.Oracle()\noracle.import_anndata_as_raw_count(adata)\noracle.perform_PCA()\noracle.knn_imputation()\n\n# 推断 GRN\noracle.fit_GRN()\n\n# 模拟基因敲除\noracle.simulate_shift(gene=\"Gata1\", n_propagation=3)\n\n# 可视化细胞命运变化\noracle.visualize_development()\n\nGeneformer: - Transformer 模型学习基因表达 - 预测基因扰动和细胞状态\n\nscGPT: - 生成式预训练 Transformer - 单细胞数据的通用表示",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "虚拟细胞"
+    ]
+  },
+  {
+    "objectID": "AI4S/virtual-cell.html#代表性虚拟细胞模型",
+    "href": "AI4S/virtual-cell.html#代表性虚拟细胞模型",
+    "title": "虚拟细胞（Virtual Cell）",
+    "section": "",
+    "text": "背景: - 最简单的自由生活生物 - 基因组仅 525 个基因\n模型: - Karr et al. (2012) 在 Cell 发表 - 整合 28 个子模块 - 模拟细胞周期全过程\n成果: - 预测基因敲除表型 - 预测细胞分裂时间\n论文: Karr, J. R. et al. (2012). A whole-cell computational model predicts phenotype from genotype. Cell, 150(2), 389-401.\n\n\n\n\niJO1366 模型: - 1366 个基因 - 2583 个反应 - 1805 个代谢物\n应用: - 预测营养缺陷 - 代谢工程设计 - 合成生物学\n\n\n\n\nRecon3D: - 全面的人类代谢重建 - 整合组织特异性数据\n应用: - 癌症代谢研究 - 遗传代谢病 - 药物-代谢互作",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "虚拟细胞"
+    ]
+  },
+  {
+    "objectID": "AI4S/virtual-cell.html#前沿进展2026-年",
+    "href": "AI4S/virtual-cell.html#前沿进展2026-年",
+    "title": "虚拟细胞（Virtual Cell）",
+    "section": "",
+    "text": "参考文献: Cell 2026: Virtual Cell Modeling\n关键进展:\n1. AI 与物理模型的混合建模 - 深度学习学习数据驱动的规律 - 物理模型提供机制约束 - 神经常微分方程（Neural ODE）\n\n2. 单细胞多模态虚拟细胞 - 整合 scRNA-seq、scATAC-seq、蛋白质组、代谢组 - 构建细胞状态的高维表示 - 预测细胞对扰动的响应\n\n3. 空间虚拟细胞 - 空间转录组技术（Visium、MERFISH） - 模拟空间微环境对细胞的影响 - 细胞-细胞互作与组织结构\n\n4. 个性化虚拟细胞 - 基于患者组学数据构建个性化模型 - 预测个体化药物响应 - 精准医疗应用\n\n5. 自动化模型构建 - 从文献自动提取生物学知识 - 知识图谱 + 机器学习 - 加速模型迭代\n\n\n\n\n计算能力提升: - GPU 加速模拟 - 云计算平台 - 量子计算潜力\n数据爆炸: - 单细胞技术成熟 - 空间组学数据增长 - 多模态数据整合\nAI 赋能: - Foundation Models 学习生物规律 - 生成模型模拟细胞行为 - 强化学习优化细胞设计",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "虚拟细胞"
+    ]
+  },
+  {
+    "objectID": "AI4S/virtual-cell.html#应用场景",
+    "href": "AI4S/virtual-cell.html#应用场景",
+    "title": "虚拟细胞（Virtual Cell）",
+    "section": "",
+    "text": "目标: 优化微生物生产有价值化合物\n流程: 1. 构建代谢网络模型 2. FBA 预测基因改造策略 3. 实验验证 4. 迭代优化\n案例: - 大肠杆菌生产生物燃料 - 酵母合成青蒿素（抗疟药）\n代码示例:\nimport cobra\n\nmodel = cobra.io.load_model(\"iJO1366\")\n\n# 添加异源代谢途径（示例：生产琥珀酸）\nwith model:\n    # 最大化琥珀酸生产\n    model.objective = \"EX_succ_e\"\n    solution = model.optimize()\n    print(f\"琥珀酸产量: {solution.objective_value:.3f} mmol/gDW/h\")\n    \n    # 识别提升产量的基因过表达靶点\n    from cobra.flux_analysis import single_gene_deletion\n    deletion_results = single_gene_deletion(model)\n    # 找到敲除后产量下降最大的基因（过表达候选）\n\n\n\n\n虚拟敲除实验: - 在虚拟细胞中逐个敲除基因 - 预测致死基因 - 优先级排序药物靶点\n示例:\nimport cobra\n\nmodel = cobra.io.load_model(\"iJO1366\")\n\n# 单基因敲除分析\nfrom cobra.flux_analysis import single_gene_deletion\n\ndeletion_results = single_gene_deletion(model)\n\n# 识别致死基因（敲除后生长速率接近 0）\nessential_genes = deletion_results[deletion_results[\"growth\"] &lt; 0.01]\nprint(f\"致死基因数: {len(essential_genes)}\")\nprint(essential_genes.head())\n\n\n\n\n从单细胞数据推断细胞分化轨迹\n工具: CellOracle, RNA Velocity, Waddington-OT\n应用: - 干细胞分化控制 - 癌症细胞可塑性 - 发育生物学\n\n\n\n\n设计基因回路: - 振荡器 - 开关 - 逻辑门\n最小基因组设计: - JCVI-syn3.0: 仅 473 个基因的合成细菌 - 虚拟细胞指导基因选择\n\n\n\n\n癌症虚拟细胞: - 整合患者基因组、转录组数据 - 预测癌细胞对治疗的响应 - 个性化治疗方案\n神经退行性疾病: - 模拟神经元代谢失调 - 预测保护性干预",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "虚拟细胞"
+    ]
+  },
+  {
+    "objectID": "AI4S/virtual-cell.html#工具与平台",
+    "href": "AI4S/virtual-cell.html#工具与平台",
+    "title": "虚拟细胞（Virtual Cell）",
+    "section": "",
+    "text": "代谢网络约束建模\npip install cobra\n文档: COBRApy\n\n\n\n\n多尺度细胞建模平台\n特点: - 图形化界面 - ODE、PDE、随机模拟 - 空间细胞建模\n网站: VCell\n\n\n\n\n基因调控网络与细胞命运预测\npip install celloracle\nGitHub: CellOracle\n\n\n\n\n多细胞系统 Agent-based 建模\n特点: - 模拟细胞群体 - 细胞-微环境互作 - 3D 可视化\n网站: PhysiCell\n\n\n\n\n多尺度细胞模拟\nGitHub: E-Cell",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "虚拟细胞"
+    ]
+  },
+  {
+    "objectID": "AI4S/virtual-cell.html#挑战与未来",
+    "href": "AI4S/virtual-cell.html#挑战与未来",
+    "title": "虚拟细胞（Virtual Cell）",
+    "section": "",
+    "text": "1. 模型复杂性 - 生物系统极其复杂 - 参数众多，难以全部实验测定 - 不确定性量化困难\n2. 数据整合 - 多模态数据格式不统一 - 数据质量参差不齐 - 缺失数据插补\n3. 计算成本 - 全细胞模拟计算密集 - 高通量虚拟筛选需大量资源\n4. 验证困难 - 虚拟预测需实验验证 - 细胞行为复杂，难以完全验证\n5. 泛化能力 - 模型往往针对特定细胞类型 - 跨物种、跨细胞类型泛化困难\n\n\n\n\n1. AI + 物理混合建模 - 深度学习捕捉复杂模式 - 物理模型提供可解释性 - 神经 ODE、物理信息神经网络（PINN）\n2. 数字孪生细胞 - 实时追踪真实细胞 - 虚拟细胞同步更新 - 预测细胞未来状态\n3. 全人类虚拟细胞 - 整合 Human Cell Atlas 数据 - 覆盖所有细胞类型 - 个性化医疗基础设施\n4. 闭环设计-实验-学习 - 虚拟设计 → 自动化实验 → 模型更新 - 加速科学发现\n5. 多细胞虚拟生物 - 从单细胞到组织、器官 - 虚拟器官（Virtual Organ） - 虚拟人体（Virtual Human）",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "虚拟细胞"
+    ]
+  },
+  {
+    "objectID": "AI4S/virtual-cell.html#学习资源",
+    "href": "AI4S/virtual-cell.html#学习资源",
+    "title": "虚拟细胞（Virtual Cell）",
+    "section": "",
+    "text": "Systems Biology (MIT OpenCourseWare): 系统生物学基础\nComputational Systems Biology (Coursera): 计算系统生物学\n\n\n\n\n\n\n《Systems Biology: A Textbook》（Edda Klipp 等）\n《Computational Modeling of Signaling Networks》（Springer）\n\n\n\n\n\n\nCOBRApy Tutorial\nCellOracle Tutorials\n\n\n\n\n\n\nKarr, J. R. et al. (2012). A whole-cell computational model. Cell.\nMacklin, D. N. et al. (2020). Simultaneous cross-evaluation. eLife.\nCell 2026 虚拟细胞综述（2026-09-29）",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "虚拟细胞"
+    ]
+  },
+  {
+    "objectID": "AI4S/virtual-cell.html#总结",
+    "href": "AI4S/virtual-cell.html#总结",
+    "title": "虚拟细胞（Virtual Cell）",
+    "section": "",
+    "text": "虚拟细胞代表了生物学研究的未来方向，通过整合多尺度数据、物理模型和机器学习，构建细胞的可预测、可操控的数字孪生。虚拟细胞将加速药物发现、推动合成生物学、实现个性化医疗，并最终帮助我们全面理解生命的本质。\n随着 AI 技术、测序技术和计算能力的飞速发展，虚拟细胞正在从科幻走向现实，成为生命科学研究不可或缺的工具。",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "虚拟细胞"
+    ]
+  },
+  {
+    "objectID": "AI4S/virtual-cell.html#相关链接",
+    "href": "AI4S/virtual-cell.html#相关链接",
+    "title": "虚拟细胞（Virtual Cell）",
+    "section": "",
+    "text": "AI4S 专题主页\nDNA Foundation Models\nRNA Foundation Models\n蛋白质 Foundation Models\nAI4Drug\n\n\n更新时间：2026-09-29",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "虚拟细胞"
+    ]
+  },
+  {
+    "objectID": "AI4S/foundation-models-rna.html",
+    "href": "AI4S/foundation-models-rna.html",
+    "title": "RNA Foundation Models",
+    "section": "",
+    "text": "RNA 在基因表达调控中扮演核心角色，从转录、剪接、翻译到降解的每个环节都受到精密调控。RNA Foundation Models 通过学习大规模 RNA 序列数据，捕捉序列-结构-功能关系，能够预测 RNA 稳定性、剪接模式、二级结构、蛋白质相互作用等关键特性。\n\n\n\n\n\n功能多样性: - DNA: 主要负责信息存储 - RNA: - mRNA: 蛋白质编码 - tRNA: 翻译适配器 - rRNA: 核糖体组成 - ncRNA: 调控功能（miRNA, lncRNA, circRNA）\n结构复杂性: - DNA: 双链螺旋，结构相对稳定 - RNA: 单链，形成复杂二级/三级结构（发夹、假结、茎环）\n化学差异: - RNA 含核糖（ribose），DNA 含脱氧核糖 - RNA 使用尿嘧啶（U）代替胸腺嘧啶（T） - RNA 更易降解\n\n\n\n\n挑战: 1. 序列-结构耦合: RNA 功能依赖于二级/三级结构 2. 剪接复杂性: 一个基因可产生多个 mRNA 异构体 3. 表达调控: mRNA 稳定性、定位、翻译效率 4. RNA 修饰: m6A, pseudouridine 等化学修饰影响功能\nFoundation Models 的优势: - 整合序列和结构信息 - 学习跨物种保守模式 - 迁移到低资源 RNA 类型 - 预测修饰位点和功能效应\n\n\n\n\n\n\n\n全称: RNA Foundation Model\n架构: BERT-like Transformer\n训练数据: - RNAcentral 数据库 - 23.7M RNA 序列 - 涵盖多种 RNA 类型（mRNA, rRNA, tRNA, ncRNA）\n预训练任务: - Masked Language Modeling（MLM）\n输入表示: 单核苷酸 token（A, U, G, C）\n模型规模: - 约 100M 参数 - 12 层 Transformer\n下游任务: - RNA 二级结构预测 - ncRNA 分类 - RNA-蛋白质相互作用预测 - RNA 修饰位点预测\n性能: - 在多个 RNA 任务上超越从头训练的模型 - 零样本迁移到新 RNA 类型\n代码示例:\nimport torch\nimport fm\n\n# 加载 RNA-FM\nmodel, alphabet = fm.pretrained.rna_fm_t12()\nbatch_converter = alphabet.get_batch_converter()\nmodel.eval()\n\n# RNA 序列\ndata = [\n    (\"RNA1\", \"GGGAAACCC\"),\n    (\"RNA2\", \"UCGAUCGAUCGAU\"),\n]\n\n# 准备批次\nbatch_labels, batch_strs, batch_tokens = batch_converter(data)\n\n# 提取特征\nwith torch.no_grad():\n    results = model(batch_tokens, repr_layers=[12])\n    token_embeddings = results[\"representations\"][12]\n\nprint(f\"嵌入形状: {token_embeddings.shape}\")\n# 输出: (batch_size, seq_len, hidden_dim)\n论文: Chen, J. et al. (2022). Interpretable RNA Foundation Model from Unannotated Data for Highly Accurate RNA Structure and Function Predictions. arXiv:2204.00300.\n\n\n\n\n架构: BERT\n训练数据: - RNAcentral + Rfam - 约 30M RNA 序列\n特点: - 专注于 ncRNA（非编码 RNA） - 学习 RNA 家族特征 - 支持 RNA 功能预测\n输入表示: k-mer（类似 DNABERT）\n下游任务: - RNA 家族分类 - ncRNA 功能注释 - RNA 相互作用预测\n\n\n\n\n专门化: 专注于 mRNA 剪接\n架构: BERT\n训练数据: - 人类外显子-内含子边界序列 - GENCODE 注释\n预训练任务: - MLM - 剪接位点分类（供体/受体/非剪接位点）\n下游任务: - 剪接位点预测 - 可变剪接事件检测 - 剪接因子结合预测\n性能: - 在剪接位点预测上达到 SOTA - 预测罕见/隐性剪接位点\n代码示例:\nfrom transformers import AutoTokenizer, AutoModel\n\n# 加载 SpliceBERT\ntokenizer = AutoTokenizer.from_pretrained(\"biomed-ai/splicebert-510nt\")\nmodel = AutoModel.from_pretrained(\"biomed-ai/splicebert-510nt\")\n\n# mRNA 序列（外显子-内含子边界）\nsequence = \"AGGUAAGU...CAGGU\"  # 供体位点附近序列\n\n# Tokenize\ninputs = tokenizer(sequence, return_tensors=\"pt\")\n\n# 提取嵌入\nwith torch.no_grad():\n    outputs = model(**inputs)\n    embeddings = outputs.last_hidden_state\n\nprint(f\"嵌入: {embeddings.shape}\")\n论文: Chen, K. et al. (2023). SpliceBERT: A pre-trained model for splice site prediction. bioRxiv.\n\n\n\n\n特点: 跨物种 RNA 预训练\n训练数据: - 多物种 RNA 序列（细菌、古菌、真核生物） - 学习进化保守特征\n应用: - 跨物种功能预测 - 比较转录组学\n\n\n\n\n专门化: 5’ 和 3’ UTR（非翻译区）\n训练数据: - 人类 5’UTR 和 3’UTR 序列 - eCLIP 数据（RBP 结合）\n下游任务: - mRNA 稳定性预测 - 翻译效率预测 - RBP（RNA 结合蛋白）结合位点预测 - miRNA 靶标预测\n应用: - mRNA 疫苗设计（优化 UTR 提高稳定性） - 基因治疗载体优化\n\n\n\n\n\n\n\n任务: 预测 RNA 的二级结构（碱基配对模式）\n传统方法: - ViennaRNA: 基于热力学自由能最小化 - RNAfold: 动态规划算法\n深度学习方法: - SPOT-RNA: CNN + LSTM - E2Efold: 端到端学习 - RNA-FM + 结构预测头: 预训练 + 微调\n评估指标: - F1 score（碱基配对预测） - Matthews Correlation Coefficient（MCC）\n代码示例:\n# 使用 RNA-FM 预测二级结构\nimport fm\nimport torch\n\n# 加载模型\nmodel, alphabet = fm.pretrained.rna_fm_t12()\nmodel.eval()\n\n# RNA 序列\nsequence = \"GGGAAACCCUUUGGGUUUCCC\"\n\n# 编码\nbatch_converter = alphabet.get_batch_converter()\ndata = [(\"RNA\", sequence)]\n_, _, batch_tokens = batch_converter(data)\n\n# 预测接触图\nwith torch.no_grad():\n    results = model(batch_tokens, need_head_weights=True)\n    attention = results[\"attentions\"]  # 注意力权重可用于接触预测\n\n# 解析二级结构（简化示例）\n# 实际需要后处理将注意力转换为配对概率\n\n\n\n\n任务: 预测 mRNA 的半衰期\n重要性: - mRNA 疫苗设计（提高稳定性） - 基因表达调控理解 - 治疗性 mRNA 优化\n特征: - 5’ UTR 序列 - 3’ UTR 序列（ARE 元件） - Poly(A) 尾长度 - 密码子优化\n数据集: - Saluki dataset（人类 mRNA 半衰期） - 高通量测序实验数据\n代码示例:\nfrom transformers import AutoModelForSequenceClassification\n\n# 假设已微调的 mRNA 稳定性预测模型\nmodel = AutoModelForSequenceClassification.from_pretrained(\n    \"rna-stability-model\",\n    num_labels=1  # 回归：预测半衰期\n)\n\n# mRNA 序列（5'UTR + CDS + 3'UTR）\nmrna_sequence = \"AGCUAGCU...AAAAAA\"\n\n# Tokenize\ninputs = tokenizer(mrna_sequence, return_tensors=\"pt\")\n\n# 预测半衰期\nwith torch.no_grad():\n    outputs = model(**inputs)\n    predicted_half_life = outputs.logits.item()\n\nprint(f\"预测半衰期: {predicted_half_life} 小时\")\n\n\n\n\n任务: 预测可变剪接事件\n剪接类型: - 外显子跳跃（Exon Skipping, SE） - 可变 5’ 剪接位点（A5SS） - 可变 3’ 剪接位点（A3SS） - 内含子保留（Intron Retention, IR） - 互斥外显子（Mutually Exclusive Exons, MXE）\n工具: - SpliceAI: 深度学习剪接预测（CNN） - SpliceBERT: 基于 Transformer - MMSplice: 模块化剪接模型\n应用: - 疾病相关剪接变异识别 - 剪接调控机制研究\n代码示例:\n# 使用 SpliceAI 预测剪接效应\nfrom spliceai import predict_splice\n\nsequence = \"AGGTAAGT...TGCAG\"  # 包含剪接位点的序列\nposition = 100  # 变异位置\n\n# 预测\nscores = predict_splice(sequence, position)\nprint(f\"供体位点增益: {scores['donor_gain']}\")\nprint(f\"受体位点损失: {scores['acceptor_loss']}\")\n\n\n\n\n常见 RNA 修饰: - m6A（N6-甲基腺苷）: 最常见的 mRNA 修饰 - pseudouridine（Ψ）: 假尿苷 - m5C（5-甲基胞嘧啶） - m1A（N1-甲基腺苷）\n功能: - 影响 mRNA 稳定性 - 调控翻译效率 - 影响 RNA 结构\n预测方法: - 基于序列 motif（DRACH 为 m6A motif） - 深度学习模型（CNN, RNN, Transformer）\n数据集: - MeRIP-seq / m6A-seq 数据 - 高通量修饰检测数据\n代码示例:\n# 预测 m6A 修饰位点\ndef predict_m6a(sequence, model, tokenizer):\n    \"\"\"\n    预测序列中的 m6A 修饰位点\n    \"\"\"\n    inputs = tokenizer(sequence, return_tensors=\"pt\")\n    \n    with torch.no_grad():\n        outputs = model(**inputs)\n        probs = torch.sigmoid(outputs.logits)\n    \n    # 找到高概率位点\n    m6a_sites = (probs &gt; 0.5).nonzero(as_tuple=True)[1]\n    \n    return m6a_sites.tolist()\n\n# 示例\nrna_seq = \"AGACUGGACUUAAA\"\nsites = predict_m6a(rna_seq, model, tokenizer)\nprint(f\"预测 m6A 位点: {sites}\")\n\n\n\n\n任务: 预测 RNA 结合蛋白（RBP）的结合位点\n重要性: - 理解转录后调控 - 识别 RBP 靶标 - 设计 RNA 干扰工具\n方法: - CLIP-seq 数据: 交联免疫沉淀测序 - 深度学习: 学习 RBP 结合 motif\n数据集: - ENCODE eCLIP 数据 - 数百个 RBP 的结合谱\n代码示例:\n# RBP 结合预测\nclass RBPBindingPredictor(nn.Module):\n    def __init__(self, rna_model):\n        super().__init__()\n        self.rna_encoder = rna_model\n        self.classifier = nn.Linear(rna_model.config.hidden_size, 1)\n    \n    def forward(self, input_ids):\n        embeddings = self.rna_encoder(input_ids).last_hidden_state\n        pooled = embeddings.mean(dim=1)  # 平均池化\n        logits = self.classifier(pooled)\n        return logits\n\n# 预测\nmodel = RBPBindingPredictor(rna_fm_model)\nsequence = \"AGCUAGCU\"\nprediction = model(tokenizer(sequence, return_tensors=\"pt\")[\"input_ids\"])\nprint(f\"RBP 结合概率: {torch.sigmoid(prediction).item()}\")\n\n\n\n\n任务: 从单细胞 RNA-seq 数据中识别细胞类型、状态、轨迹\n传统工具: - Scanpy, Seurat（基于统计方法）\nFoundation Model 增强: - scGPT: 单细胞基因表达 Transformer - Geneformer: 单细胞基因表达基础模型 - scBERT: 单细胞 BERT\n应用: - 细胞类型注释 - 细胞轨迹推断 - 基因扰动预测 - 细胞-细胞通讯\n\n\n\n\n\n\n\n单核苷酸 tokenization:\nsequence = \"AUCGAUCG\"\ntokens = [\"A\", \"U\", \"C\", \"G\", \"A\", \"U\", \"C\", \"G\"]\nk-mer tokenization:\nsequence = \"AUCGAUCG\"\nk = 3\nkmers = [\"AUC\", \"UCG\", \"CGA\", \"GAU\", \"AUC\", \"UCG\"]\n结构感知编码: - 同时编码序列和二级结构 - 使用括号记号表示配对：(((...)))\n\n\n\n\nMasked Language Modeling（MLM）:\n原始序列:  A U C G A U C G\n遮盖序列:  A [MASK] C G [MASK] U C G\n预测目标:  U, A\n结构预测任务: - 预测碱基配对 - 预测接触图\n对比学习: - 学习相似 RNA 的表示相近 - 区分不同功能的 RNA\n\n\n\n\n\n\n\n\nRNAcentral: 非编码 RNA 综合数据库\nRfam: RNA 家族数据库\nGENCODE: 人类和小鼠基因注释\nmiRBase: miRNA 数据库\n\n\n\n\n\nENCODE: 表观基因组和转录组数据\nGTEx: 人类组织基因表达\nGEO: 基因表达数据库\n\n\n\n\n\nPDB: RNA 三维结构\nRNA Strand: RNA 二级结构数据库\nbpRNA: 大规模 RNA 二级结构数据集\n\n\n\n\n\n\n\n\n\n准确率（Accuracy）\nAUROC / AUPRC\nF1 Score\n\n\n\n\n\nF1 Score: 碱基配对预测\nPPV / Sensitivity: 阳性预测值 / 灵敏度\nMCC: Matthews 相关系数\n\n\n\n\n\nPearson / Spearman 相关系数\nRMSE / MAE\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n模型\n架构\n训练数据\n参数量\n专门化\n特点\n\n\n\n\nRNA-FM\nBERT\nRNAcentral (23.7M)\n100M\n通用\n多 RNA 类型\n\n\nRNABert\nBERT\nRNAcentral + Rfam\n未公开\nncRNA\n家族分类\n\n\nSpliceBERT\nBERT\n人类剪接位点\n未公开\n剪接\n高精度剪接预测\n\n\nUTR-LM\nBERT\n人类 UTR\n未公开\nUTR\n稳定性/翻译\n\n\nRNA-MSM\nTransformer\n多物种\n未公开\n跨物种\n进化保守性\n\n\n\n\n\n\n\n\n\nGitHub: RNA-FM\n# 安装\npip install rna-fm\n\n# 提取特征\npython scripts/extract_features.py \\\n    --model rna_fm_t12 \\\n    --fasta input.fasta \\\n    --output embeddings.pt\n\n\n\n\nimport RNA\n\n# 序列\nsequence = \"GGGAAACCC\"\n\n# 预测最小自由能结构\nstructure, mfe = RNA.fold(sequence)\nprint(f\"结构: {structure}\")\nprint(f\"MFE: {mfe} kcal/mol\")\n\n# 配对概率\nfc = RNA.fold_compound(sequence)\nfc.pf()\nbp_prob = fc.bpp()\n\n\n\n\n\n\n\n\n结构复杂性\n\n三级结构预测困难\n假结（pseudoknot）难以建模\n\n数据稀缺\n\n实验标注数据少\n某些 RNA 类型研究不足\n\n长序列建模\n\nlncRNA 可达数万碱基\n上下文窗口限制\n\n动态性\n\nRNA 结构动态变化\n细胞环境影响\n\n\n\n\n\n\n\n序列-结构联合建模\n\n同时预测序列和结构\n学习结构-功能关系\n\n多模态 RNA 模型\n\n整合序列、结构、表达、修饰数据\n全面理解 RNA 功能\n\n可解释 RNA 模型\n\n识别功能 motif\n理解调控机制\n\nRNA 设计\n\n从功能到序列的逆向设计\nmRNA 疫苗、治疗性 RNA 优化\n\n动态建模\n\n捕捉 RNA 结构动态\n模拟折叠路径\n\n\n\n\n\n\n\n\n\n\nChen, J. et al. (2022). RNA-FM. arXiv:2204.00300.\nJaganathan, K. et al. (2019). SpliceAI. Cell.\nChen, K. et al. (2023). SpliceBERT. bioRxiv.\n\n\n\n\n\nRNA-FM GitHub\nViennaRNA Package\nRNAcentral\n\n\n\n\n\nRNA Biology (MIT OpenCourseWare)\nComputational RNA Biology (Coursera)\n\n\n\n\n\n\n\nAI4S 专题主页\nDNA Foundation Models\n蛋白质 Foundation Models\nAI4Drug\n虚拟细胞\n\n\n更新时间：2026-09-29",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "RNA Foundation Models"
+    ]
+  },
+  {
+    "objectID": "AI4S/foundation-models-rna.html#rna-的独特性",
+    "href": "AI4S/foundation-models-rna.html#rna-的独特性",
+    "title": "RNA Foundation Models",
+    "section": "",
+    "text": "功能多样性: - DNA: 主要负责信息存储 - RNA: - mRNA: 蛋白质编码 - tRNA: 翻译适配器 - rRNA: 核糖体组成 - ncRNA: 调控功能（miRNA, lncRNA, circRNA）\n结构复杂性: - DNA: 双链螺旋，结构相对稳定 - RNA: 单链，形成复杂二级/三级结构（发夹、假结、茎环）\n化学差异: - RNA 含核糖（ribose），DNA 含脱氧核糖 - RNA 使用尿嘧啶（U）代替胸腺嘧啶（T） - RNA 更易降解\n\n\n\n\n挑战: 1. 序列-结构耦合: RNA 功能依赖于二级/三级结构 2. 剪接复杂性: 一个基因可产生多个 mRNA 异构体 3. 表达调控: mRNA 稳定性、定位、翻译效率 4. RNA 修饰: m6A, pseudouridine 等化学修饰影响功能\nFoundation Models 的优势: - 整合序列和结构信息 - 学习跨物种保守模式 - 迁移到低资源 RNA 类型 - 预测修饰位点和功能效应",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "RNA Foundation Models"
+    ]
+  },
+  {
+    "objectID": "AI4S/foundation-models-rna.html#经典模型",
+    "href": "AI4S/foundation-models-rna.html#经典模型",
+    "title": "RNA Foundation Models",
+    "section": "",
+    "text": "全称: RNA Foundation Model\n架构: BERT-like Transformer\n训练数据: - RNAcentral 数据库 - 23.7M RNA 序列 - 涵盖多种 RNA 类型（mRNA, rRNA, tRNA, ncRNA）\n预训练任务: - Masked Language Modeling（MLM）\n输入表示: 单核苷酸 token（A, U, G, C）\n模型规模: - 约 100M 参数 - 12 层 Transformer\n下游任务: - RNA 二级结构预测 - ncRNA 分类 - RNA-蛋白质相互作用预测 - RNA 修饰位点预测\n性能: - 在多个 RNA 任务上超越从头训练的模型 - 零样本迁移到新 RNA 类型\n代码示例:\nimport torch\nimport fm\n\n# 加载 RNA-FM\nmodel, alphabet = fm.pretrained.rna_fm_t12()\nbatch_converter = alphabet.get_batch_converter()\nmodel.eval()\n\n# RNA 序列\ndata = [\n    (\"RNA1\", \"GGGAAACCC\"),\n    (\"RNA2\", \"UCGAUCGAUCGAU\"),\n]\n\n# 准备批次\nbatch_labels, batch_strs, batch_tokens = batch_converter(data)\n\n# 提取特征\nwith torch.no_grad():\n    results = model(batch_tokens, repr_layers=[12])\n    token_embeddings = results[\"representations\"][12]\n\nprint(f\"嵌入形状: {token_embeddings.shape}\")\n# 输出: (batch_size, seq_len, hidden_dim)\n论文: Chen, J. et al. (2022). Interpretable RNA Foundation Model from Unannotated Data for Highly Accurate RNA Structure and Function Predictions. arXiv:2204.00300.\n\n\n\n\n架构: BERT\n训练数据: - RNAcentral + Rfam - 约 30M RNA 序列\n特点: - 专注于 ncRNA（非编码 RNA） - 学习 RNA 家族特征 - 支持 RNA 功能预测\n输入表示: k-mer（类似 DNABERT）\n下游任务: - RNA 家族分类 - ncRNA 功能注释 - RNA 相互作用预测\n\n\n\n\n专门化: 专注于 mRNA 剪接\n架构: BERT\n训练数据: - 人类外显子-内含子边界序列 - GENCODE 注释\n预训练任务: - MLM - 剪接位点分类（供体/受体/非剪接位点）\n下游任务: - 剪接位点预测 - 可变剪接事件检测 - 剪接因子结合预测\n性能: - 在剪接位点预测上达到 SOTA - 预测罕见/隐性剪接位点\n代码示例:\nfrom transformers import AutoTokenizer, AutoModel\n\n# 加载 SpliceBERT\ntokenizer = AutoTokenizer.from_pretrained(\"biomed-ai/splicebert-510nt\")\nmodel = AutoModel.from_pretrained(\"biomed-ai/splicebert-510nt\")\n\n# mRNA 序列（外显子-内含子边界）\nsequence = \"AGGUAAGU...CAGGU\"  # 供体位点附近序列\n\n# Tokenize\ninputs = tokenizer(sequence, return_tensors=\"pt\")\n\n# 提取嵌入\nwith torch.no_grad():\n    outputs = model(**inputs)\n    embeddings = outputs.last_hidden_state\n\nprint(f\"嵌入: {embeddings.shape}\")\n论文: Chen, K. et al. (2023). SpliceBERT: A pre-trained model for splice site prediction. bioRxiv.\n\n\n\n\n特点: 跨物种 RNA 预训练\n训练数据: - 多物种 RNA 序列（细菌、古菌、真核生物） - 学习进化保守特征\n应用: - 跨物种功能预测 - 比较转录组学\n\n\n\n\n专门化: 5’ 和 3’ UTR（非翻译区）\n训练数据: - 人类 5’UTR 和 3’UTR 序列 - eCLIP 数据（RBP 结合）\n下游任务: - mRNA 稳定性预测 - 翻译效率预测 - RBP（RNA 结合蛋白）结合位点预测 - miRNA 靶标预测\n应用: - mRNA 疫苗设计（优化 UTR 提高稳定性） - 基因治疗载体优化",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "RNA Foundation Models"
+    ]
+  },
+  {
+    "objectID": "AI4S/foundation-models-rna.html#应用场景",
+    "href": "AI4S/foundation-models-rna.html#应用场景",
+    "title": "RNA Foundation Models",
+    "section": "",
+    "text": "任务: 预测 RNA 的二级结构（碱基配对模式）\n传统方法: - ViennaRNA: 基于热力学自由能最小化 - RNAfold: 动态规划算法\n深度学习方法: - SPOT-RNA: CNN + LSTM - E2Efold: 端到端学习 - RNA-FM + 结构预测头: 预训练 + 微调\n评估指标: - F1 score（碱基配对预测） - Matthews Correlation Coefficient（MCC）\n代码示例:\n# 使用 RNA-FM 预测二级结构\nimport fm\nimport torch\n\n# 加载模型\nmodel, alphabet = fm.pretrained.rna_fm_t12()\nmodel.eval()\n\n# RNA 序列\nsequence = \"GGGAAACCCUUUGGGUUUCCC\"\n\n# 编码\nbatch_converter = alphabet.get_batch_converter()\ndata = [(\"RNA\", sequence)]\n_, _, batch_tokens = batch_converter(data)\n\n# 预测接触图\nwith torch.no_grad():\n    results = model(batch_tokens, need_head_weights=True)\n    attention = results[\"attentions\"]  # 注意力权重可用于接触预测\n\n# 解析二级结构（简化示例）\n# 实际需要后处理将注意力转换为配对概率\n\n\n\n\n任务: 预测 mRNA 的半衰期\n重要性: - mRNA 疫苗设计（提高稳定性） - 基因表达调控理解 - 治疗性 mRNA 优化\n特征: - 5’ UTR 序列 - 3’ UTR 序列（ARE 元件） - Poly(A) 尾长度 - 密码子优化\n数据集: - Saluki dataset（人类 mRNA 半衰期） - 高通量测序实验数据\n代码示例:\nfrom transformers import AutoModelForSequenceClassification\n\n# 假设已微调的 mRNA 稳定性预测模型\nmodel = AutoModelForSequenceClassification.from_pretrained(\n    \"rna-stability-model\",\n    num_labels=1  # 回归：预测半衰期\n)\n\n# mRNA 序列（5'UTR + CDS + 3'UTR）\nmrna_sequence = \"AGCUAGCU...AAAAAA\"\n\n# Tokenize\ninputs = tokenizer(mrna_sequence, return_tensors=\"pt\")\n\n# 预测半衰期\nwith torch.no_grad():\n    outputs = model(**inputs)\n    predicted_half_life = outputs.logits.item()\n\nprint(f\"预测半衰期: {predicted_half_life} 小时\")\n\n\n\n\n任务: 预测可变剪接事件\n剪接类型: - 外显子跳跃（Exon Skipping, SE） - 可变 5’ 剪接位点（A5SS） - 可变 3’ 剪接位点（A3SS） - 内含子保留（Intron Retention, IR） - 互斥外显子（Mutually Exclusive Exons, MXE）\n工具: - SpliceAI: 深度学习剪接预测（CNN） - SpliceBERT: 基于 Transformer - MMSplice: 模块化剪接模型\n应用: - 疾病相关剪接变异识别 - 剪接调控机制研究\n代码示例:\n# 使用 SpliceAI 预测剪接效应\nfrom spliceai import predict_splice\n\nsequence = \"AGGTAAGT...TGCAG\"  # 包含剪接位点的序列\nposition = 100  # 变异位置\n\n# 预测\nscores = predict_splice(sequence, position)\nprint(f\"供体位点增益: {scores['donor_gain']}\")\nprint(f\"受体位点损失: {scores['acceptor_loss']}\")\n\n\n\n\n常见 RNA 修饰: - m6A（N6-甲基腺苷）: 最常见的 mRNA 修饰 - pseudouridine（Ψ）: 假尿苷 - m5C（5-甲基胞嘧啶） - m1A（N1-甲基腺苷）\n功能: - 影响 mRNA 稳定性 - 调控翻译效率 - 影响 RNA 结构\n预测方法: - 基于序列 motif（DRACH 为 m6A motif） - 深度学习模型（CNN, RNN, Transformer）\n数据集: - MeRIP-seq / m6A-seq 数据 - 高通量修饰检测数据\n代码示例:\n# 预测 m6A 修饰位点\ndef predict_m6a(sequence, model, tokenizer):\n    \"\"\"\n    预测序列中的 m6A 修饰位点\n    \"\"\"\n    inputs = tokenizer(sequence, return_tensors=\"pt\")\n    \n    with torch.no_grad():\n        outputs = model(**inputs)\n        probs = torch.sigmoid(outputs.logits)\n    \n    # 找到高概率位点\n    m6a_sites = (probs &gt; 0.5).nonzero(as_tuple=True)[1]\n    \n    return m6a_sites.tolist()\n\n# 示例\nrna_seq = \"AGACUGGACUUAAA\"\nsites = predict_m6a(rna_seq, model, tokenizer)\nprint(f\"预测 m6A 位点: {sites}\")\n\n\n\n\n任务: 预测 RNA 结合蛋白（RBP）的结合位点\n重要性: - 理解转录后调控 - 识别 RBP 靶标 - 设计 RNA 干扰工具\n方法: - CLIP-seq 数据: 交联免疫沉淀测序 - 深度学习: 学习 RBP 结合 motif\n数据集: - ENCODE eCLIP 数据 - 数百个 RBP 的结合谱\n代码示例:\n# RBP 结合预测\nclass RBPBindingPredictor(nn.Module):\n    def __init__(self, rna_model):\n        super().__init__()\n        self.rna_encoder = rna_model\n        self.classifier = nn.Linear(rna_model.config.hidden_size, 1)\n    \n    def forward(self, input_ids):\n        embeddings = self.rna_encoder(input_ids).last_hidden_state\n        pooled = embeddings.mean(dim=1)  # 平均池化\n        logits = self.classifier(pooled)\n        return logits\n\n# 预测\nmodel = RBPBindingPredictor(rna_fm_model)\nsequence = \"AGCUAGCU\"\nprediction = model(tokenizer(sequence, return_tensors=\"pt\")[\"input_ids\"])\nprint(f\"RBP 结合概率: {torch.sigmoid(prediction).item()}\")\n\n\n\n\n任务: 从单细胞 RNA-seq 数据中识别细胞类型、状态、轨迹\n传统工具: - Scanpy, Seurat（基于统计方法）\nFoundation Model 增强: - scGPT: 单细胞基因表达 Transformer - Geneformer: 单细胞基因表达基础模型 - scBERT: 单细胞 BERT\n应用: - 细胞类型注释 - 细胞轨迹推断 - 基因扰动预测 - 细胞-细胞通讯",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "RNA Foundation Models"
+    ]
+  },
+  {
+    "objectID": "AI4S/foundation-models-rna.html#技术细节",
+    "href": "AI4S/foundation-models-rna.html#技术细节",
+    "title": "RNA Foundation Models",
+    "section": "",
+    "text": "单核苷酸 tokenization:\nsequence = \"AUCGAUCG\"\ntokens = [\"A\", \"U\", \"C\", \"G\", \"A\", \"U\", \"C\", \"G\"]\nk-mer tokenization:\nsequence = \"AUCGAUCG\"\nk = 3\nkmers = [\"AUC\", \"UCG\", \"CGA\", \"GAU\", \"AUC\", \"UCG\"]\n结构感知编码: - 同时编码序列和二级结构 - 使用括号记号表示配对：(((...)))\n\n\n\n\nMasked Language Modeling（MLM）:\n原始序列:  A U C G A U C G\n遮盖序列:  A [MASK] C G [MASK] U C G\n预测目标:  U, A\n结构预测任务: - 预测碱基配对 - 预测接触图\n对比学习: - 学习相似 RNA 的表示相近 - 区分不同功能的 RNA",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "RNA Foundation Models"
+    ]
+  },
+  {
+    "objectID": "AI4S/foundation-models-rna.html#数据资源",
+    "href": "AI4S/foundation-models-rna.html#数据资源",
+    "title": "RNA Foundation Models",
+    "section": "",
+    "text": "RNAcentral: 非编码 RNA 综合数据库\nRfam: RNA 家族数据库\nGENCODE: 人类和小鼠基因注释\nmiRBase: miRNA 数据库\n\n\n\n\n\nENCODE: 表观基因组和转录组数据\nGTEx: 人类组织基因表达\nGEO: 基因表达数据库\n\n\n\n\n\nPDB: RNA 三维结构\nRNA Strand: RNA 二级结构数据库\nbpRNA: 大规模 RNA 二级结构数据集",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "RNA Foundation Models"
+    ]
+  },
+  {
+    "objectID": "AI4S/foundation-models-rna.html#评估指标",
+    "href": "AI4S/foundation-models-rna.html#评估指标",
+    "title": "RNA Foundation Models",
+    "section": "",
+    "text": "准确率（Accuracy）\nAUROC / AUPRC\nF1 Score\n\n\n\n\n\nF1 Score: 碱基配对预测\nPPV / Sensitivity: 阳性预测值 / 灵敏度\nMCC: Matthews 相关系数\n\n\n\n\n\nPearson / Spearman 相关系数\nRMSE / MAE",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "RNA Foundation Models"
+    ]
+  },
+  {
+    "objectID": "AI4S/foundation-models-rna.html#模型比较",
+    "href": "AI4S/foundation-models-rna.html#模型比较",
+    "title": "RNA Foundation Models",
+    "section": "",
+    "text": "模型\n架构\n训练数据\n参数量\n专门化\n特点\n\n\n\n\nRNA-FM\nBERT\nRNAcentral (23.7M)\n100M\n通用\n多 RNA 类型\n\n\nRNABert\nBERT\nRNAcentral + Rfam\n未公开\nncRNA\n家族分类\n\n\nSpliceBERT\nBERT\n人类剪接位点\n未公开\n剪接\n高精度剪接预测\n\n\nUTR-LM\nBERT\n人类 UTR\n未公开\nUTR\n稳定性/翻译\n\n\nRNA-MSM\nTransformer\n多物种\n未公开\n跨物种\n进化保守性",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "RNA Foundation Models"
+    ]
+  },
+  {
+    "objectID": "AI4S/foundation-models-rna.html#实践工具",
+    "href": "AI4S/foundation-models-rna.html#实践工具",
+    "title": "RNA Foundation Models",
+    "section": "",
+    "text": "GitHub: RNA-FM\n# 安装\npip install rna-fm\n\n# 提取特征\npython scripts/extract_features.py \\\n    --model rna_fm_t12 \\\n    --fasta input.fasta \\\n    --output embeddings.pt\n\n\n\n\nimport RNA\n\n# 序列\nsequence = \"GGGAAACCC\"\n\n# 预测最小自由能结构\nstructure, mfe = RNA.fold(sequence)\nprint(f\"结构: {structure}\")\nprint(f\"MFE: {mfe} kcal/mol\")\n\n# 配对概率\nfc = RNA.fold_compound(sequence)\nfc.pf()\nbp_prob = fc.bpp()",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "RNA Foundation Models"
+    ]
+  },
+  {
+    "objectID": "AI4S/foundation-models-rna.html#挑战与未来方向",
+    "href": "AI4S/foundation-models-rna.html#挑战与未来方向",
+    "title": "RNA Foundation Models",
+    "section": "",
+    "text": "结构复杂性\n\n三级结构预测困难\n假结（pseudoknot）难以建模\n\n数据稀缺\n\n实验标注数据少\n某些 RNA 类型研究不足\n\n长序列建模\n\nlncRNA 可达数万碱基\n上下文窗口限制\n\n动态性\n\nRNA 结构动态变化\n细胞环境影响\n\n\n\n\n\n\n\n序列-结构联合建模\n\n同时预测序列和结构\n学习结构-功能关系\n\n多模态 RNA 模型\n\n整合序列、结构、表达、修饰数据\n全面理解 RNA 功能\n\n可解释 RNA 模型\n\n识别功能 motif\n理解调控机制\n\nRNA 设计\n\n从功能到序列的逆向设计\nmRNA 疫苗、治疗性 RNA 优化\n\n动态建模\n\n捕捉 RNA 结构动态\n模拟折叠路径",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "RNA Foundation Models"
+    ]
+  },
+  {
+    "objectID": "AI4S/foundation-models-rna.html#学习资源",
+    "href": "AI4S/foundation-models-rna.html#学习资源",
+    "title": "RNA Foundation Models",
+    "section": "",
+    "text": "Chen, J. et al. (2022). RNA-FM. arXiv:2204.00300.\nJaganathan, K. et al. (2019). SpliceAI. Cell.\nChen, K. et al. (2023). SpliceBERT. bioRxiv.\n\n\n\n\n\nRNA-FM GitHub\nViennaRNA Package\nRNAcentral\n\n\n\n\n\nRNA Biology (MIT OpenCourseWare)\nComputational RNA Biology (Coursera)",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "RNA Foundation Models"
+    ]
+  },
+  {
+    "objectID": "AI4S/foundation-models-rna.html#相关链接",
+    "href": "AI4S/foundation-models-rna.html#相关链接",
+    "title": "RNA Foundation Models",
+    "section": "",
+    "text": "AI4S 专题主页\nDNA Foundation Models\n蛋白质 Foundation Models\nAI4Drug\n虚拟细胞\n\n\n更新时间：2026-09-29",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "RNA Foundation Models"
+    ]
+  },
+  {
+    "objectID": "AI4S/foundation-models-dna.html",
+    "href": "AI4S/foundation-models-dna.html",
+    "title": "DNA Foundation Models",
+    "section": "",
+    "text": "DNA 序列编码了生命的遗传信息，包含基因编码区、调控元件、非编码区等复杂结构。DNA Foundation Models 通过在大规模基因组数据上进行预训练，学习 DNA 序列中的语法规则、功能模式和进化约束，能够预测基因功能、调控元件、变异效应等多种下游任务。\n\n\n\n\n\n多层次信息编码:\n\n编码区（Coding Regions）\n\n基因外显子：编码蛋白质\n密码子偏好性\n剪接位点信号\n\n调控元件（Regulatory Elements）\n\n启动子（Promoter）\n增强子（Enhancer）\n沉默子（Silencer）\n绝缘子（Insulator）\n\n非编码区（Non-coding Regions）\n\n内含子\n基因间区\n非编码 RNA 基因\n\n表观遗传信号\n\nCpG 岛\n转录因子结合位点（TFBS）\n染色质可及性区域\n\n\n序列特征: - 长程依赖关系（可达数十万碱基） - 位置依赖性（上下文敏感） - 物种特异性与保守性共存\n\n\n\n\n传统方法的局限: - 基于规则的方法: 难以捕捉复杂模式 - k-mer 特征: 维度爆炸，缺乏泛化能力 - 单任务模型: 每个任务需要独立训练，数据效率低\nFoundation Models 的优势: - 迁移学习: 预训练捕捉通用序列特征，适应多种下游任务 - 长程依赖: Transformer 等架构捕捉远距离相互作用 - 无监督学习: 利用海量未标注基因组数据 - 零样本学习: 预测训练时未见过的序列功能\n\n\n\n\n\n\n\n架构: 基于 BERT（Bidirectional Encoder Representations from Transformers）\n训练数据: 人类基因组参考序列（GRCh38）\n输入表示: k-mer tokenization（k=3, 4, 5, 6） - 例如：ATCGAT → ATC, TCG, CGA, GAT\n预训练任务: - Masked Language Modeling（MLM）：随机遮盖 15% 的 k-mer，预测被遮盖的 token\n模型规模: - 12 层 Transformer - 隐藏维度 768 - 12 个注意力头 - 约 110M 参数\n下游任务: - 启动子预测 - 转录因子结合位点预测 - 剪接位点预测 - 变异效应预测\n性能: - 在多个基因组预测任务上超越传统 CNN 和 RNN 模型 - 微调后在少样本场景下表现优异\n代码示例:\nfrom transformers import AutoTokenizer, AutoModel\nimport torch\n\n# 加载预训练 DNABERT\ntokenizer = AutoTokenizer.from_pretrained(\"zhihan1996/DNA_bert_6\")\nmodel = AutoModel.from_pretrained(\"zhihan1996/DNA_bert_6\")\n\n# DNA 序列\nsequence = \"ATCGATCGATCG\"\n\n# k-mer 转换（k=6）\ndef seq_to_kmer(seq, k=6):\n    return \" \".join([seq[i:i+k] for i in range(len(seq) - k + 1)])\n\nkmer_seq = seq_to_kmer(sequence, k=6)\nprint(f\"k-mer 序列: {kmer_seq}\")\n\n# Tokenize\ninputs = tokenizer(kmer_seq, return_tensors=\"pt\")\n\n# 获取嵌入\nwith torch.no_grad():\n    outputs = model(**inputs)\n    embeddings = outputs.last_hidden_state\n\nprint(f\"嵌入形状: {embeddings.shape}\")\n论文: Ji, Y. et al. (2021). DNABERT: pre-trained Bidirectional Encoder Representations from Transformers model for DNA-language in genome. Bioinformatics, 37(15), 2112-2120.\n\n\n\n\n架构: Transformer encoder\n训练数据: - 多物种基因组（3,202 个物种） - 包含原核生物、真核生物、病毒 - 总共约 300B tokens\n输入表示: 单核苷酸 tokenization（A, T, C, G）\n预训练任务: - Masked Language Modeling\n模型规模: - 多个版本：500M, 1B, 2.5B 参数 - 最大上下文窗口：6kb\n特点: - 跨物种预训练，学习进化保守特征 - 支持零样本跨物种迁移 - 性能随模型规模增长而提升\n下游任务: - 基因预测 - 调控元件预测 - 变异效应预测 - 表观遗传修饰预测\n代码示例:\nfrom transformers import AutoTokenizer, AutoModelForMaskedLM\n\n# 加载模型\nmodel_name = \"InstaDeepAI/nucleotide-transformer-500m-human-ref\"\ntokenizer = AutoTokenizer.from_pretrained(model_name)\nmodel = AutoModelForMaskedLM.from_pretrained(model_name)\n\n# DNA 序列\nsequence = \"ATCGATCGATCGATCG\"\n\n# Tokenize（单核苷酸）\ninputs = tokenizer(sequence, return_tensors=\"pt\")\n\n# 前向传播\noutputs = model(**inputs)\nlogits = outputs.logits\n\nprint(f\"Logits 形状: {logits.shape}\")\n论文: Dalla-Torre, H. et al. (2023). The Nucleotide Transformer: Building and Evaluating Robust Foundation Models for Human Genomics. bioRxiv.\n\n\n\n\n架构: Hyena operator（长程卷积的高效实现）\n训练数据: 人类参考基因组\n关键创新: - 替代 Transformer 的自注意力机制 - 线性复杂度，支持超长上下文 - 最长上下文：1M bp（百万碱基对）\n模型规模: - 多个版本：1M, 32k, 160k, 450k, 1M 上下文长度 - 参数量从数百万到数千万\n优势: - 训练和推理速度快 - 内存效率高 - 适合全基因组级别的序列建模\n应用: - 染色体级别的调控预测 - 长程增强子-启动子互作 - 结构变异效应预测\n代码示例:\n# HyenaDNA 使用示例（需要安装 hyena-dna 包）\nfrom hyenadna import HyenaDNAModel\n\n# 加载预训练模型\nmodel = HyenaDNAModel.from_pretrained(\"hyenadna-large-1m\")\n\n# 超长 DNA 序列（可达 1M bp）\nlong_sequence = \"A\" * 100000 + \"TATA\" * 1000 + \"C\" * 100000\n\n# 嵌入\nembeddings = model.encode(long_sequence)\n\nprint(f\"嵌入形状: {embeddings.shape}\")\n论文: Nguyen, E. et al. (2023). HyenaDNA: Long-Range Genomic Sequence Modeling at Single Nucleotide Resolution. NeurIPS 2023.\n\n\n\n\n架构: Transformer + 卷积\n任务: 预测染色质状态和基因表达\n训练数据: - ENCODE、Roadmap Epigenomics 数据 - ChIP-seq, ATAC-seq, DNase-seq, RNA-seq\n输入: 200kb DNA 序列\n输出: - 5,313 个表观遗传和转录特征 - 在 128 个 bin 上的预测（每个 bin 128bp）\n关键特点: - 远程依赖建模（200kb 上下文） - 预测增强子-启动子互作 - 变异效应量化\n应用: - GWAS 变异功能注释 - 疾病相关变异优先级排序 - 调控机制解析\n代码示例:\nimport tensorflow as tf\nimport tensorflow_hub as hub\n\n# 加载 Enformer\nmodel = hub.load(\"https://tfhub.dev/deepmind/enformer/1\").model\n\n# 输入：200kb 序列 one-hot 编码\n# 形状: (batch, 196608, 4)\nsequence = tf.random.uniform((1, 196608, 4))\n\n# 预测\npredictions = model.predict_on_batch(sequence)\n\n# 输出形状: (batch, 896, 5313)\n# 896 bins × 5313 tracks\nprint(f\"预测形状: {predictions['human'].shape}\")\n论文: Avsec, Ž. et al. (2021). Effective gene expression prediction from sequence by integrating long-range interactions. Nature Methods, 18, 1196–1203.\n\n\n\n\n架构: BERT-based\n训练数据: - T2T（Telomere-to-Telomere）完整人类基因组 - 包含着丝粒、端粒等传统方法难以组装的区域\n特点: - 首个基于完整人类基因组的模型 - 覆盖之前参考基因组缺失的区域\n论文: Fishman, D. et al. (2023). GENA-LM: A Family of Open-Source Foundational DNA Language Models for Long Sequences. bioRxiv.\n\n\n\n\n\n\n\n任务: 预测单核苷酸变异（SNV）、插入/删除（Indel）对基因功能或表达的影响\n方法: 1. 输入参考序列和变异序列 2. 获取两者的模型预测 3. 计算预测差异作为变异效应评分\n应用: - 致病性变异识别 - GWAS 功能注释 - 个性化医疗\n代码示例:\ndef predict_variant_effect(model, tokenizer, ref_seq, alt_seq):\n    \"\"\"\n    预测变异效应\n    \n    Args:\n        model: 预训练 DNA 模型\n        tokenizer: tokenizer\n        ref_seq: 参考序列\n        alt_seq: 变异序列\n    \n    Returns:\n        effect_score: 变异效应评分\n    \"\"\"\n    # Tokenize\n    ref_inputs = tokenizer(ref_seq, return_tensors=\"pt\")\n    alt_inputs = tokenizer(alt_seq, return_tensors=\"pt\")\n    \n    # 预测\n    with torch.no_grad():\n        ref_outputs = model(**ref_inputs)\n        alt_outputs = model(**alt_inputs)\n    \n    # 计算差异（示例：使用 logits 的 L2 距离）\n    ref_logits = ref_outputs.logits\n    alt_logits = alt_outputs.logits\n    effect_score = torch.norm(ref_logits - alt_logits).item()\n    \n    return effect_score\n\n# 示例\nref_seq = \"ATCGATCG\"\nalt_seq = \"ATCTATCG\"  # C-&gt;T 变异\nscore = predict_variant_effect(model, tokenizer, ref_seq, alt_seq)\nprint(f\"变异效应评分: {score}\")\n\n\n\n\n任务: 识别 DNA 序列中的启动子区域\n方法: 1. 在启动子/非启动子数据上微调 2. 对新序列进行分类\n数据集: - EPDnew: 真核启动子数据库 - FANTOM5: CAGE 数据\n代码示例:\nfrom transformers import AutoModelForSequenceClassification, Trainer, TrainingArguments\nimport torch\n\n# 加载预训练模型并添加分类头\nmodel = AutoModelForSequenceClassification.from_pretrained(\n    \"zhihan1996/DNA_bert_6\",\n    num_labels=2  # 二分类：启动子/非启动子\n)\n\n# 准备数据（示例）\ntrain_sequences = [\"ATCG...\", \"GCTA...\"]  # 启动子序列\ntrain_labels = [1, 0]  # 1=启动子, 0=非启动子\n\n# 微调（省略数据处理细节）\ntraining_args = TrainingArguments(\n    output_dir=\"./promoter_model\",\n    num_train_epochs=3,\n    per_device_train_batch_size=16,\n    learning_rate=5e-5\n)\n\ntrainer = Trainer(\n    model=model,\n    args=training_args,\n    # train_dataset=train_dataset,\n    # eval_dataset=eval_dataset,\n)\n\n# trainer.train()\n\n\n\n\n任务: 预测转录因子（TF）在基因组上的结合位点\n方法: - 输入：DNA 序列 + TF 信息 - 输出：结合概率\n应用: - 调控网络构建 - 增强子-启动子互作预测\n\n\n\n\n任务: 预测 mRNA 前体的剪接供体/受体位点\n经典位点信号: - 供体位点（Donor）: GT（保守） - 受体位点（Acceptor）: AG（保守）\n挑战: - 隐性剪接位点 - 可变剪接\n代码示例:\n# 使用 DNABERT 预测剪接位点\ndef predict_splice_site(sequence, model, tokenizer):\n    \"\"\"\n    预测序列中的剪接位点\n    \"\"\"\n    inputs = tokenizer(sequence, return_tensors=\"pt\")\n    outputs = model(**inputs)\n    \n    # 获取每个位置的预测\n    logits = outputs.logits\n    predictions = torch.argmax(logits, dim=-1)\n    \n    return predictions\n\n\n\n\n任务: 预测 DNA 甲基化、组蛋白修饰等表观遗传标记\n输入: DNA 序列\n输出: 修饰概率\n应用: - 癌症表观遗传标志识别 - 发育调控研究\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n模型\n架构\n上下文长度\n参数量\n训练数据\n特点\n\n\n\n\nDNABERT\nBERT\n512 bp\n110M\n人类基因组\nk-mer tokenization，经典\n\n\nNucleotide Transformer\nTransformer\n6 kb\n500M-2.5B\n3,202 物种\n跨物种，大规模\n\n\nHyenaDNA\nHyena operator\n1M bp\n数千万\n人类基因组\n超长上下文，高效\n\n\nEnformer\nTransformer + CNN\n200 kb\n未公开\nENCODE 数据\n预测表观遗传特征\n\n\nGENA-LM\nBERT\n数 kb\n未公开\nT2T 基因组\n完整基因组覆盖\n\n\n\n\n\n\n\n\n\n\n准确率（Accuracy）: 分类任务\nAUROC / AUPRC: 二分类性能\nF1 Score: 平衡精确率与召回率\n\n\n\n\n\n困惑度（Perplexity）: 语言模型质量\n序列似然: 生成序列的合理性\n\n\n\n\n\nSpearman 相关系数: 预测评分与实验数据相关性\n分类准确率: 致病/良性变异分类\n\n\n\n\n\n\n\n\nfrom transformers import AutoTokenizer, AutoModel\n\n# 加载任意 DNA 模型\ntokenizer = AutoTokenizer.from_pretrained(\"model_name\")\nmodel = AutoModel.from_pretrained(\"model_name\")\n\n\n\nGitHub: DNABERT\n包含预训练模型、微调脚本、评估工具。\n\n\n\nTensorFlow Hub: Enformer\n\n\n\nGitHub: HyenaDNA\n\n\n\n\n\n\n\n\n上下文长度限制\n\n人类基因组 3Gb，现有模型最长 1M bp\n染色体级调控互作难以建模\n\n物种泛化\n\n多数模型专注人类基因组\n跨物种迁移效果有限\n\n可解释性\n\n模型决策机制不透明\n难以提取生物学洞见\n\n数据偏差\n\n训练数据多来自欧洲人群\n对其他人群的泛化能力弱\n\n\n\n\n\n\n\n更长上下文\n\n全染色体级模型\n高效长程注意力机制\n\n多模态整合\n\nDNA 序列 + 表观遗传数据\n序列 + 3D 染色质结构\n\n跨物种统一模型\n\n学习进化保守特征\n提升少样本物种的预测\n\n因果推断\n\n从相关性到因果关系\n理解调控机制\n\n个性化基因组建模\n\n整合个体变异信息\n精准医疗应用\n\n\n\n\n\n\n\n\n\n\nJi, Y. et al. (2021). DNABERT. Bioinformatics.\nAvsec, Ž. et al. (2021). Enformer. Nature Methods.\nNguyen, E. et al. (2023). HyenaDNA. NeurIPS 2023.\n\n\n\n\n\nDNABERT Tutorial\nHugging Face Genomics Models\n\n\n\n\n\nDeep Learning in Genomics (Stanford)\nComputational Genomics (MIT OpenCourseWare)\n\n\n\n\n\n\n\nAI4S 专题主页\nRNA Foundation Models\n蛋白质 Foundation Models\nAI4Drug\n虚拟细胞\n\n\n更新时间：2026-09-29",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "DNA Foundation Models"
+    ]
+  },
+  {
+    "objectID": "AI4S/foundation-models-dna.html#核心概念",
+    "href": "AI4S/foundation-models-dna.html#核心概念",
+    "title": "DNA Foundation Models",
+    "section": "",
+    "text": "多层次信息编码:\n\n编码区（Coding Regions）\n\n基因外显子：编码蛋白质\n密码子偏好性\n剪接位点信号\n\n调控元件（Regulatory Elements）\n\n启动子（Promoter）\n增强子（Enhancer）\n沉默子（Silencer）\n绝缘子（Insulator）\n\n非编码区（Non-coding Regions）\n\n内含子\n基因间区\n非编码 RNA 基因\n\n表观遗传信号\n\nCpG 岛\n转录因子结合位点（TFBS）\n染色质可及性区域\n\n\n序列特征: - 长程依赖关系（可达数十万碱基） - 位置依赖性（上下文敏感） - 物种特异性与保守性共存\n\n\n\n\n传统方法的局限: - 基于规则的方法: 难以捕捉复杂模式 - k-mer 特征: 维度爆炸，缺乏泛化能力 - 单任务模型: 每个任务需要独立训练，数据效率低\nFoundation Models 的优势: - 迁移学习: 预训练捕捉通用序列特征，适应多种下游任务 - 长程依赖: Transformer 等架构捕捉远距离相互作用 - 无监督学习: 利用海量未标注基因组数据 - 零样本学习: 预测训练时未见过的序列功能",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "DNA Foundation Models"
+    ]
+  },
+  {
+    "objectID": "AI4S/foundation-models-dna.html#经典模型",
+    "href": "AI4S/foundation-models-dna.html#经典模型",
+    "title": "DNA Foundation Models",
+    "section": "",
+    "text": "架构: 基于 BERT（Bidirectional Encoder Representations from Transformers）\n训练数据: 人类基因组参考序列（GRCh38）\n输入表示: k-mer tokenization（k=3, 4, 5, 6） - 例如：ATCGAT → ATC, TCG, CGA, GAT\n预训练任务: - Masked Language Modeling（MLM）：随机遮盖 15% 的 k-mer，预测被遮盖的 token\n模型规模: - 12 层 Transformer - 隐藏维度 768 - 12 个注意力头 - 约 110M 参数\n下游任务: - 启动子预测 - 转录因子结合位点预测 - 剪接位点预测 - 变异效应预测\n性能: - 在多个基因组预测任务上超越传统 CNN 和 RNN 模型 - 微调后在少样本场景下表现优异\n代码示例:\nfrom transformers import AutoTokenizer, AutoModel\nimport torch\n\n# 加载预训练 DNABERT\ntokenizer = AutoTokenizer.from_pretrained(\"zhihan1996/DNA_bert_6\")\nmodel = AutoModel.from_pretrained(\"zhihan1996/DNA_bert_6\")\n\n# DNA 序列\nsequence = \"ATCGATCGATCG\"\n\n# k-mer 转换（k=6）\ndef seq_to_kmer(seq, k=6):\n    return \" \".join([seq[i:i+k] for i in range(len(seq) - k + 1)])\n\nkmer_seq = seq_to_kmer(sequence, k=6)\nprint(f\"k-mer 序列: {kmer_seq}\")\n\n# Tokenize\ninputs = tokenizer(kmer_seq, return_tensors=\"pt\")\n\n# 获取嵌入\nwith torch.no_grad():\n    outputs = model(**inputs)\n    embeddings = outputs.last_hidden_state\n\nprint(f\"嵌入形状: {embeddings.shape}\")\n论文: Ji, Y. et al. (2021). DNABERT: pre-trained Bidirectional Encoder Representations from Transformers model for DNA-language in genome. Bioinformatics, 37(15), 2112-2120.\n\n\n\n\n架构: Transformer encoder\n训练数据: - 多物种基因组（3,202 个物种） - 包含原核生物、真核生物、病毒 - 总共约 300B tokens\n输入表示: 单核苷酸 tokenization（A, T, C, G）\n预训练任务: - Masked Language Modeling\n模型规模: - 多个版本：500M, 1B, 2.5B 参数 - 最大上下文窗口：6kb\n特点: - 跨物种预训练，学习进化保守特征 - 支持零样本跨物种迁移 - 性能随模型规模增长而提升\n下游任务: - 基因预测 - 调控元件预测 - 变异效应预测 - 表观遗传修饰预测\n代码示例:\nfrom transformers import AutoTokenizer, AutoModelForMaskedLM\n\n# 加载模型\nmodel_name = \"InstaDeepAI/nucleotide-transformer-500m-human-ref\"\ntokenizer = AutoTokenizer.from_pretrained(model_name)\nmodel = AutoModelForMaskedLM.from_pretrained(model_name)\n\n# DNA 序列\nsequence = \"ATCGATCGATCGATCG\"\n\n# Tokenize（单核苷酸）\ninputs = tokenizer(sequence, return_tensors=\"pt\")\n\n# 前向传播\noutputs = model(**inputs)\nlogits = outputs.logits\n\nprint(f\"Logits 形状: {logits.shape}\")\n论文: Dalla-Torre, H. et al. (2023). The Nucleotide Transformer: Building and Evaluating Robust Foundation Models for Human Genomics. bioRxiv.\n\n\n\n\n架构: Hyena operator（长程卷积的高效实现）\n训练数据: 人类参考基因组\n关键创新: - 替代 Transformer 的自注意力机制 - 线性复杂度，支持超长上下文 - 最长上下文：1M bp（百万碱基对）\n模型规模: - 多个版本：1M, 32k, 160k, 450k, 1M 上下文长度 - 参数量从数百万到数千万\n优势: - 训练和推理速度快 - 内存效率高 - 适合全基因组级别的序列建模\n应用: - 染色体级别的调控预测 - 长程增强子-启动子互作 - 结构变异效应预测\n代码示例:\n# HyenaDNA 使用示例（需要安装 hyena-dna 包）\nfrom hyenadna import HyenaDNAModel\n\n# 加载预训练模型\nmodel = HyenaDNAModel.from_pretrained(\"hyenadna-large-1m\")\n\n# 超长 DNA 序列（可达 1M bp）\nlong_sequence = \"A\" * 100000 + \"TATA\" * 1000 + \"C\" * 100000\n\n# 嵌入\nembeddings = model.encode(long_sequence)\n\nprint(f\"嵌入形状: {embeddings.shape}\")\n论文: Nguyen, E. et al. (2023). HyenaDNA: Long-Range Genomic Sequence Modeling at Single Nucleotide Resolution. NeurIPS 2023.\n\n\n\n\n架构: Transformer + 卷积\n任务: 预测染色质状态和基因表达\n训练数据: - ENCODE、Roadmap Epigenomics 数据 - ChIP-seq, ATAC-seq, DNase-seq, RNA-seq\n输入: 200kb DNA 序列\n输出: - 5,313 个表观遗传和转录特征 - 在 128 个 bin 上的预测（每个 bin 128bp）\n关键特点: - 远程依赖建模（200kb 上下文） - 预测增强子-启动子互作 - 变异效应量化\n应用: - GWAS 变异功能注释 - 疾病相关变异优先级排序 - 调控机制解析\n代码示例:\nimport tensorflow as tf\nimport tensorflow_hub as hub\n\n# 加载 Enformer\nmodel = hub.load(\"https://tfhub.dev/deepmind/enformer/1\").model\n\n# 输入：200kb 序列 one-hot 编码\n# 形状: (batch, 196608, 4)\nsequence = tf.random.uniform((1, 196608, 4))\n\n# 预测\npredictions = model.predict_on_batch(sequence)\n\n# 输出形状: (batch, 896, 5313)\n# 896 bins × 5313 tracks\nprint(f\"预测形状: {predictions['human'].shape}\")\n论文: Avsec, Ž. et al. (2021). Effective gene expression prediction from sequence by integrating long-range interactions. Nature Methods, 18, 1196–1203.\n\n\n\n\n架构: BERT-based\n训练数据: - T2T（Telomere-to-Telomere）完整人类基因组 - 包含着丝粒、端粒等传统方法难以组装的区域\n特点: - 首个基于完整人类基因组的模型 - 覆盖之前参考基因组缺失的区域\n论文: Fishman, D. et al. (2023). GENA-LM: A Family of Open-Source Foundational DNA Language Models for Long Sequences. bioRxiv.",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "DNA Foundation Models"
+    ]
+  },
+  {
+    "objectID": "AI4S/foundation-models-dna.html#应用场景",
+    "href": "AI4S/foundation-models-dna.html#应用场景",
+    "title": "DNA Foundation Models",
+    "section": "",
+    "text": "任务: 预测单核苷酸变异（SNV）、插入/删除（Indel）对基因功能或表达的影响\n方法: 1. 输入参考序列和变异序列 2. 获取两者的模型预测 3. 计算预测差异作为变异效应评分\n应用: - 致病性变异识别 - GWAS 功能注释 - 个性化医疗\n代码示例:\ndef predict_variant_effect(model, tokenizer, ref_seq, alt_seq):\n    \"\"\"\n    预测变异效应\n    \n    Args:\n        model: 预训练 DNA 模型\n        tokenizer: tokenizer\n        ref_seq: 参考序列\n        alt_seq: 变异序列\n    \n    Returns:\n        effect_score: 变异效应评分\n    \"\"\"\n    # Tokenize\n    ref_inputs = tokenizer(ref_seq, return_tensors=\"pt\")\n    alt_inputs = tokenizer(alt_seq, return_tensors=\"pt\")\n    \n    # 预测\n    with torch.no_grad():\n        ref_outputs = model(**ref_inputs)\n        alt_outputs = model(**alt_inputs)\n    \n    # 计算差异（示例：使用 logits 的 L2 距离）\n    ref_logits = ref_outputs.logits\n    alt_logits = alt_outputs.logits\n    effect_score = torch.norm(ref_logits - alt_logits).item()\n    \n    return effect_score\n\n# 示例\nref_seq = \"ATCGATCG\"\nalt_seq = \"ATCTATCG\"  # C-&gt;T 变异\nscore = predict_variant_effect(model, tokenizer, ref_seq, alt_seq)\nprint(f\"变异效应评分: {score}\")\n\n\n\n\n任务: 识别 DNA 序列中的启动子区域\n方法: 1. 在启动子/非启动子数据上微调 2. 对新序列进行分类\n数据集: - EPDnew: 真核启动子数据库 - FANTOM5: CAGE 数据\n代码示例:\nfrom transformers import AutoModelForSequenceClassification, Trainer, TrainingArguments\nimport torch\n\n# 加载预训练模型并添加分类头\nmodel = AutoModelForSequenceClassification.from_pretrained(\n    \"zhihan1996/DNA_bert_6\",\n    num_labels=2  # 二分类：启动子/非启动子\n)\n\n# 准备数据（示例）\ntrain_sequences = [\"ATCG...\", \"GCTA...\"]  # 启动子序列\ntrain_labels = [1, 0]  # 1=启动子, 0=非启动子\n\n# 微调（省略数据处理细节）\ntraining_args = TrainingArguments(\n    output_dir=\"./promoter_model\",\n    num_train_epochs=3,\n    per_device_train_batch_size=16,\n    learning_rate=5e-5\n)\n\ntrainer = Trainer(\n    model=model,\n    args=training_args,\n    # train_dataset=train_dataset,\n    # eval_dataset=eval_dataset,\n)\n\n# trainer.train()\n\n\n\n\n任务: 预测转录因子（TF）在基因组上的结合位点\n方法: - 输入：DNA 序列 + TF 信息 - 输出：结合概率\n应用: - 调控网络构建 - 增强子-启动子互作预测\n\n\n\n\n任务: 预测 mRNA 前体的剪接供体/受体位点\n经典位点信号: - 供体位点（Donor）: GT（保守） - 受体位点（Acceptor）: AG（保守）\n挑战: - 隐性剪接位点 - 可变剪接\n代码示例:\n# 使用 DNABERT 预测剪接位点\ndef predict_splice_site(sequence, model, tokenizer):\n    \"\"\"\n    预测序列中的剪接位点\n    \"\"\"\n    inputs = tokenizer(sequence, return_tensors=\"pt\")\n    outputs = model(**inputs)\n    \n    # 获取每个位置的预测\n    logits = outputs.logits\n    predictions = torch.argmax(logits, dim=-1)\n    \n    return predictions\n\n\n\n\n任务: 预测 DNA 甲基化、组蛋白修饰等表观遗传标记\n输入: DNA 序列\n输出: 修饰概率\n应用: - 癌症表观遗传标志识别 - 发育调控研究",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "DNA Foundation Models"
+    ]
+  },
+  {
+    "objectID": "AI4S/foundation-models-dna.html#模型比较",
+    "href": "AI4S/foundation-models-dna.html#模型比较",
+    "title": "DNA Foundation Models",
+    "section": "",
+    "text": "模型\n架构\n上下文长度\n参数量\n训练数据\n特点\n\n\n\n\nDNABERT\nBERT\n512 bp\n110M\n人类基因组\nk-mer tokenization，经典\n\n\nNucleotide Transformer\nTransformer\n6 kb\n500M-2.5B\n3,202 物种\n跨物种，大规模\n\n\nHyenaDNA\nHyena operator\n1M bp\n数千万\n人类基因组\n超长上下文，高效\n\n\nEnformer\nTransformer + CNN\n200 kb\n未公开\nENCODE 数据\n预测表观遗传特征\n\n\nGENA-LM\nBERT\n数 kb\n未公开\nT2T 基因组\n完整基因组覆盖",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "DNA Foundation Models"
+    ]
+  },
+  {
+    "objectID": "AI4S/foundation-models-dna.html#评估指标",
+    "href": "AI4S/foundation-models-dna.html#评估指标",
+    "title": "DNA Foundation Models",
+    "section": "",
+    "text": "准确率（Accuracy）: 分类任务\nAUROC / AUPRC: 二分类性能\nF1 Score: 平衡精确率与召回率\n\n\n\n\n\n困惑度（Perplexity）: 语言模型质量\n序列似然: 生成序列的合理性\n\n\n\n\n\nSpearman 相关系数: 预测评分与实验数据相关性\n分类准确率: 致病/良性变异分类",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "DNA Foundation Models"
+    ]
+  },
+  {
+    "objectID": "AI4S/foundation-models-dna.html#实践工具",
+    "href": "AI4S/foundation-models-dna.html#实践工具",
+    "title": "DNA Foundation Models",
+    "section": "",
+    "text": "from transformers import AutoTokenizer, AutoModel\n\n# 加载任意 DNA 模型\ntokenizer = AutoTokenizer.from_pretrained(\"model_name\")\nmodel = AutoModel.from_pretrained(\"model_name\")\n\n\n\nGitHub: DNABERT\n包含预训练模型、微调脚本、评估工具。\n\n\n\nTensorFlow Hub: Enformer\n\n\n\nGitHub: HyenaDNA",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "DNA Foundation Models"
+    ]
+  },
+  {
+    "objectID": "AI4S/foundation-models-dna.html#挑战与未来方向",
+    "href": "AI4S/foundation-models-dna.html#挑战与未来方向",
+    "title": "DNA Foundation Models",
+    "section": "",
+    "text": "上下文长度限制\n\n人类基因组 3Gb，现有模型最长 1M bp\n染色体级调控互作难以建模\n\n物种泛化\n\n多数模型专注人类基因组\n跨物种迁移效果有限\n\n可解释性\n\n模型决策机制不透明\n难以提取生物学洞见\n\n数据偏差\n\n训练数据多来自欧洲人群\n对其他人群的泛化能力弱\n\n\n\n\n\n\n\n更长上下文\n\n全染色体级模型\n高效长程注意力机制\n\n多模态整合\n\nDNA 序列 + 表观遗传数据\n序列 + 3D 染色质结构\n\n跨物种统一模型\n\n学习进化保守特征\n提升少样本物种的预测\n\n因果推断\n\n从相关性到因果关系\n理解调控机制\n\n个性化基因组建模\n\n整合个体变异信息\n精准医疗应用",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "DNA Foundation Models"
+    ]
+  },
+  {
+    "objectID": "AI4S/foundation-models-dna.html#学习资源",
+    "href": "AI4S/foundation-models-dna.html#学习资源",
+    "title": "DNA Foundation Models",
+    "section": "",
+    "text": "Ji, Y. et al. (2021). DNABERT. Bioinformatics.\nAvsec, Ž. et al. (2021). Enformer. Nature Methods.\nNguyen, E. et al. (2023). HyenaDNA. NeurIPS 2023.\n\n\n\n\n\nDNABERT Tutorial\nHugging Face Genomics Models\n\n\n\n\n\nDeep Learning in Genomics (Stanford)\nComputational Genomics (MIT OpenCourseWare)",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "DNA Foundation Models"
+    ]
+  },
+  {
+    "objectID": "AI4S/foundation-models-dna.html#相关链接",
+    "href": "AI4S/foundation-models-dna.html#相关链接",
+    "title": "DNA Foundation Models",
+    "section": "",
+    "text": "AI4S 专题主页\nRNA Foundation Models\n蛋白质 Foundation Models\nAI4Drug\n虚拟细胞\n\n\n更新时间：2026-09-29",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "DNA Foundation Models"
+    ]
+  },
+  {
+    "objectID": "AI4S/ai4drug-overview.html",
+    "href": "AI4S/ai4drug-overview.html",
+    "title": "AI4Drug：AI 驱动的药物设计",
+    "section": "",
+    "text": "AI4Drug（AI for Drug Discovery，AI 驱动的药物发现）利用人工智能技术加速药物研发的各个环节，从靶点识别、虚拟筛选、分子生成到临床试验优化，全面提升研发效率并降低成本。传统药物研发周期长达 10-15 年，成本超过 10 亿美元，而 AI 技术正在从根本上改变这一现状。\n\n\n\n\n\n1. 靶点发现与验证（2-3 年） - 识别疾病相关蛋白质或基因 - 验证靶点的成药性\n2. 先导化合物发现（1-2 年） - 高通量筛选（HTS）：测试数十万化合物 - 基于片段的药物设计（FBDD）\n3. 先导化合物优化（1-2 年） - 提高活性、选择性 - 优化 ADMET 性质（吸收、分布、代谢、排泄、毒性）\n4. 临床前研究（1-2 年） - 体外和体内药效学研究 - 毒理学研究\n5. 临床试验（5-7 年） - I 期：安全性（健康志愿者） - II 期：初步疗效（小规模患者） - III 期：大规模验证\n6. 上市审批（1-2 年） - FDA/EMA 审查\n挑战: - 成功率低：仅 10% 的候选药物能最终上市 - 成本高：平均 26 亿美元（包括失败项目） - 周期长：平均 10-15 年\n\n\n\n\nAI 技术可在多个环节提升效率：\n靶点发现: - 从组学数据识别疾病相关靶点 - 预测靶点-药物相互作用 - 节省时间：30-50%\n虚拟筛选: - 从数百万化合物中快速筛选 - 预测结合亲和力 - 成本降低：90%+\n分子生成: - 从头设计新分子 - 基于已知药物优化 - 效率提升：10-100 倍\nADMET 预测: - 早期预测药代动力学性质 - 减少后期失败 - 成功率提升：20-30%\n临床试验优化: - 患者招募与分层 - 剂量优化 - 周期缩短：20-40%\n\n\n\n\n\n\n\nSMILES（Simplified Molecular Input Line Entry System）\n字符串表示分子结构：\n# 示例：阿司匹林\nCC(=O)Oc1ccccc1C(=O)O\n\n# 咖啡因\nCN1C=NC2=C1C(=O)N(C(=O)N2C)C\n优点: 简洁，易于处理 缺点: 同一分子可有多个 SMILES 表示\n\n分子图（Molecular Graph）\n将分子表示为图： - 节点：原子 - 边：化学键\n图神经网络（GNN） 处理分子图： - 消息传递：节点之间交换信息 - 聚合：汇总邻居信息 - 更新：生成新的节点表示\n代码示例:\nimport torch\nfrom torch_geometric.data import Data\nfrom rdkit import Chem\n\n# 从 SMILES 构建分子图\nsmiles = \"CC(=O)Oc1ccccc1C(=O)O\"  # 阿司匹林\nmol = Chem.MolFromSmiles(smiles)\n\n# 提取原子特征\natom_features = []\nfor atom in mol.GetAtoms():\n    features = [\n        atom.GetAtomicNum(),  # 原子序数\n        atom.GetDegree(),     # 度\n        atom.GetFormalCharge(), # 电荷\n        atom.GetHybridization().real,  # 杂化类型\n    ]\n    atom_features.append(features)\n\nx = torch.tensor(atom_features, dtype=torch.float)\n\n# 提取边（化学键）\nedge_index = []\nfor bond in mol.GetBonds():\n    i = bond.GetBeginAtomIdx()\n    j = bond.GetEndAtomIdx()\n    edge_index.append([i, j])\n    edge_index.append([j, i])  # 无向图\n\nedge_index = torch.tensor(edge_index, dtype=torch.long).t()\n\n# 构建 PyTorch Geometric 数据对象\ndata = Data(x=x, edge_index=edge_index)\nprint(data)\n\n分子指纹（Molecular Fingerprints）\n将分子编码为固定长度的二进制向量：\nECFP（Extended Connectivity Fingerprints）: - 基于原子邻域的结构特征 - 常用长度：1024、2048 位\nMACCS Keys: - 166 位，基于结构片段\n代码示例:\nfrom rdkit import Chem\nfrom rdkit.Chem import AllChem\n\nsmiles = \"CC(=O)Oc1ccccc1C(=O)O\"\nmol = Chem.MolFromSmiles(smiles)\n\n# 生成 ECFP4 指纹（半径=2）\nfp = AllChem.GetMorganFingerprintAsBitVect(mol, radius=2, nBits=2048)\n\n# 转换为 NumPy 数组\nimport numpy as np\nfp_array = np.zeros((1,))\nAllChem.DataStructs.ConvertToNumpyArray(fp, fp_array)\nprint(f\"指纹: {fp_array[:20]}...\")  # 显示前 20 位\n\n\n\n\n任务: 从大规模化合物库中筛选出与靶蛋白结合的候选分子\n方法:\n基于结构的虚拟筛选（SBVS）: - 前提：已知靶蛋白三维结构 - 分子对接（Molecular Docking）：预测小分子与蛋白质的结合模式和亲和力\n经典工具: - AutoDock Vina: 开源，快速 - Glide: 商业软件，精度高 - GOLD: 遗传算法对接\n深度学习方法: - DiffDock: 基于扩散模型的盲对接 - DeepDock: 端到端学习结合亲和力\n代码示例（AutoDock Vina）:\n# 准备受体（蛋白质）\nprepare_receptor4.py -r protein.pdb -o protein.pdbqt\n\n# 准备配体（小分子）\nprepare_ligand4.py -l ligand.mol2 -o ligand.pdbqt\n\n# 运行对接\nvina --receptor protein.pdbqt \\\n     --ligand ligand.pdbqt \\\n     --center_x 25.0 --center_y 30.0 --center_z 10.0 \\\n     --size_x 20.0 --size_y 20.0 --size_z 20.0 \\\n     --out ligand_docked.pdbqt\n\n基于配体的虚拟筛选（LBVS）: - 前提：已知活性化合物 - 相似性搜索：找到结构相似的分子\n方法: - Tanimoto 相似度: 比较分子指纹 - 形状匹配: 3D 形状叠合\n\n深度学习虚拟筛选:\n代表模型: - Chemprop: 图神经网络预测分子性质 - DeepPurpose: 药物-靶点相互作用预测 - AttentiveFP: 注意力增强的分子指纹\n代码示例（Chemprop）:\n# 安装 Chemprop\n# pip install chemprop\n\nfrom chemprop import train, predict\n\n# 训练模型\ntrain_args = [\n    '--data_path', 'train.csv',\n    '--dataset_type', 'regression',\n    '--save_dir', 'model_checkpoint'\n]\ntrain.chemprop_train(args=train_args)\n\n# 预测\npredict_args = [\n    '--test_path', 'test.csv',\n    '--checkpoint_dir', 'model_checkpoint',\n    '--preds_path', 'predictions.csv'\n]\npredict.chemprop_predict(args=predict_args)\n\n\n\n\n任务: 从头设计新分子或优化已有分子\n方法:\n基于规则的方法: - 从片段组装分子 - 遵循化学规则（价键、环状结构等）\n深度生成模型:\nVAE（Variational Autoencoder）: - 编码器：SMILES → 连续潜在空间 - 解码器：潜在空间 → SMILES - 优化：在潜在空间中搜索\n代码示例（简化）:\nimport torch\nimport torch.nn as nn\n\nclass MolecularVAE(nn.Module):\n    def __init__(self, vocab_size, latent_dim):\n        super().__init__()\n        self.encoder = nn.LSTM(vocab_size, 256, batch_first=True)\n        self.fc_mu = nn.Linear(256, latent_dim)\n        self.fc_logvar = nn.Linear(256, latent_dim)\n        \n        self.decoder = nn.LSTM(latent_dim, 256, batch_first=True)\n        self.fc_out = nn.Linear(256, vocab_size)\n    \n    def encode(self, x):\n        _, (h, _) = self.encoder(x)\n        mu = self.fc_mu(h.squeeze(0))\n        logvar = self.fc_logvar(h.squeeze(0))\n        return mu, logvar\n    \n    def reparameterize(self, mu, logvar):\n        std = torch.exp(0.5 * logvar)\n        eps = torch.randn_like(std)\n        return mu + eps * std\n    \n    def decode(self, z, seq_len):\n        z = z.unsqueeze(1).repeat(1, seq_len, 1)\n        output, _ = self.decoder(z)\n        return self.fc_out(output)\n    \n    def forward(self, x):\n        mu, logvar = self.encode(x)\n        z = self.reparameterize(mu, logvar)\n        return self.decode(z, x.size(1)), mu, logvar\n\nGAN（Generative Adversarial Network）: - 生成器：生成分子 - 判别器：区分真实/生成分子\nMolGAN: 分子图生成 GAN\n\n强化学习（Reinforcement Learning）: - 智能体：生成分子 - 奖励：基于目标性质（活性、合成可行性等） - 优化：最大化奖励\n\n扩散模型（Diffusion Models）: - 前向过程：逐步添加噪声 - 反向过程：从噪声恢复分子 - 代表：Equivariant Diffusion\n\n基于 Transformer 的生成: - 类似 GPT，自回归生成 SMILES - 条件生成：给定靶点或性质生成分子\n\n\n\n\nADMET: Absorption, Distribution, Metabolism, Excretion, Toxicity\n任务: 预测候选药物的药代动力学性质和毒性\n关键指标:\n吸收（Absorption）: - 口服生物利用度 - Caco-2 细胞渗透性\n分布（Distribution）: - 血浆蛋白结合率 - 血脑屏障（BBB）渗透性\n代谢（Metabolism）: - CYP450 酶底物/抑制剂 - 代谢稳定性\n排泄（Excretion）: - 肾清除率 - 半衰期\n毒性（Toxicity）: - hERG 抑制（心脏毒性） - 肝毒性 - 遗传毒性\n\n深度学习 ADMET 模型:\n代表工具: - ADMETlab: 集成多个 ADMET 预测模型 - SwissADME: 在线工具 - pkCSM: 药代动力学预测\n代码示例（使用 DeepChem）:\nimport deepchem as dc\n\n# 加载数据集（示例：Tox21）\ntasks, datasets, transformers = dc.molnet.load_tox21()\ntrain_dataset, valid_dataset, test_dataset = datasets\n\n# 构建图卷积模型\nmodel = dc.models.GraphConvModel(\n    n_tasks=len(tasks),\n    mode='classification',\n    batch_size=50\n)\n\n# 训练\nmodel.fit(train_dataset, nb_epoch=50)\n\n# 评估\nmetric = dc.metrics.Metric(dc.metrics.roc_auc_score)\ntrain_score = model.evaluate(train_dataset, [metric])\ntest_score = model.evaluate(test_dataset, [metric])\n\nprint(f\"训练集 AUC: {train_score['roc_auc_score']:.3f}\")\nprint(f\"测试集 AUC: {test_score['roc_auc_score']:.3f}\")\n\n\n\n\n任务: 给定目标分子，规划合成路线\n传统方法: 依赖化学家经验\nAI 方法: - 序列到序列（Seq2Seq）模型 - 蒙特卡洛树搜索（MCTS） - Transformer 模型\n代表工具: - IBM RXN: 基于 Transformer 的逆合成预测 - AiZynthFinder: 基于 MCTS 的合成路线规划\n\n\n\n\n\n\n\nRDKit: - Python 化学信息学核心库 - 分子操作、指纹生成、性质计算\nfrom rdkit import Chem\nfrom rdkit.Chem import Descriptors\n\nsmiles = \"CC(=O)Oc1ccccc1C(=O)O\"\nmol = Chem.MolFromSmiles(smiles)\n\n# 计算分子性质\nmw = Descriptors.MolWt(mol)\nlogp = Descriptors.MolLogP(mol)\ntpsa = Descriptors.TPSA(mol)\n\nprint(f\"分子量: {mw:.2f}\")\nprint(f\"LogP: {logp:.2f}\")\nprint(f\"TPSA: {tpsa:.2f}\")\n\nDeepChem: - 深度学习化学工具箱 - 包含预训练模型和数据集\nimport deepchem as dc\n\n# 加载 MoleculeNet 数据集\ntasks, datasets, transformers = dc.molnet.load_delaney()\ntrain, valid, test = datasets\n\n# 构建图卷积模型\nmodel = dc.models.GraphConvModel(n_tasks=1, mode='regression')\nmodel.fit(train, nb_epoch=50)\n\nPyTorch Geometric（PyG）: - 图神经网络库 - 处理分子图\n\nOpenMM: - 分子动力学模拟 - GPU 加速\n\n\n\n\nSchrödinger: - 完整药物设计套件 - Maestro、Glide、Desmond\nBenevolentAI: - AI 驱动的药物发现平台 - 成功案例：巴瑞替尼治疗 COVID-19\nInsilico Medicine: - 生成化学引擎 - 成功案例：18 个月设计出 IPF 候选药物\nExscientia: - AI 主导的药物设计 - 首个 AI 设计药物进入临床（2020）\n\n\n\n\n\n\n\n时间线: - 2019 年 1 月：启动项目 - 2019 年 7 月：发现先导化合物 - 2020 年 6 月：候选药物进入临床前\n成果: - 仅 18 个月完成（传统方法需 3-5 年） - 成本大幅降低\n技术: - 生成化学引擎（GAN） - 深度学习 ADMET 预测\n\n\n\n\n背景: COVID-19 疫情爆发\n过程: - AI 平台筛选已上市药物 - 识别巴瑞替尼（JAK 抑制剂）\n结果: - 临床试验证明疗效 - 获 FDA 紧急使用授权\n\n\n\n\n过程: - 虚拟筛选 700 万化合物 - 识别出两个候选化合物\n结果: - 实验验证有效 - 展示 AI 快速响应新兴疾病的能力\n\n\n\n\n应用: - 预测靶蛋白结构 - 辅助基于结构的药物设计\n影响: - 加速靶点结构解析 - 降低实验成本\n\n\n\n\n\n\n\n1. 数据质量与可用性 - 高质量标注数据稀缺 - 数据偏差（已知药物空间有限） - 专利保护限制数据共享\n2. 模型泛化能力 - 分布外泛化困难 - 新靶点、新化学空间预测不准\n3. 实验验证瓶颈 - AI 设计的分子仍需实验验证 - 合成可行性 - 高通量实验成本\n4. 多目标优化 - 活性、选择性、ADMET、合成难度等多目标平衡 - 帕累托最优难以达到\n5. 可解释性 - 黑盒模型难以提供化学洞见 - 药物设计需要机制理解\n\n\n\n\n1. 闭环药物设计 - AI 设计 → 高通量实验 → 反馈 → 迭代优化 - 自动化实验室（Robot Lab）\n2. 多模态整合 - 整合结构、组学、文献、临床数据 - 知识图谱 + 深度学习\n3. 少样本学习 - 利用迁移学习、元学习 - 应对新靶点数据稀缺问题\n4. 可解释 AI - 注意力机制可视化 - 提取药效团（Pharmacophore）\n5. 个性化药物设计 - 基于患者基因组的精准药物 - 考虑个体差异\n6. 临床试验优化 - 患者招募与分层 - 剂量优化 - 预测临床结果\n\n\n\n\n\n\n\n\nDrug Discovery (Coursera): 药物发现基础\nDeep Learning for Drug Discovery (MIT): 深度学习在药物设计中的应用\nCheminformatics (edX): 化学信息学\n\n\n\n\n\n\n《Artificial Intelligence in Drug Design》（Springer）\n《Deep Learning for the Life Sciences》（O’Reilly）\n《Drug Design: Structure- and Ligand-Based Approaches》\n\n\n\n\n\nRDKit: - RDKit Documentation - RDKit Cookbook\nDeepChem: - DeepChem Tutorials - GitHub\nPyTorch Geometric: - PyG Documentation\n\n\n\n\n化合物数据库: - ChEMBL: 生物活性化合物（200 万+） - PubChem: 化学结构数据库（1 亿+） - ZINC: 商业化合物库（数亿） - DrugBank: FDA 批准药物\n蛋白质-配体复合物: - PDB: 蛋白质结构与配体 - PDBbind: 蛋白质-配体结合亲和力数据\nADMET 数据: - Tox21: 毒性数据 - ADMET Predictor: 商业 ADMET 数据集\n\n\n\n\n\n\n\n1. 基础知识 - 化学基础：有机化学、药物化学 - 编程：Python、PyTorch - 机器学习：监督学习、神经网络\n2. 化学信息学 - 学习 RDKit - 理解分子表示（SMILES、指纹、图） - 计算分子性质\n3. 深度学习应用 - 图神经网络（GNN） - 生成模型（VAE、GAN） - 从 DeepChem 教程开始\n4. 实践项目 - 复现已发表模型 - 参加 Kaggle 药物发现竞赛 - 贡献开源项目\n\n\n\n\n分子相似性搜索:\nfrom rdkit import Chem, DataStructs\nfrom rdkit.Chem import AllChem\n\n# 查询分子\nquery_smiles = \"CC(=O)Oc1ccccc1C(=O)O\"\nquery_mol = Chem.MolFromSmiles(query_smiles)\nquery_fp = AllChem.GetMorganFingerprintAsBitVect(query_mol, 2, 2048)\n\n# 化合物库\nlibrary_smiles = [\"CC(C)Cc1ccc(cc1)C(C)C(=O)O\", \"CC1=CC=C(C=C1)C(=O)O\"]\n\n# 计算相似度\nfor smiles in library_smiles:\n    mol = Chem.MolFromSmiles(smiles)\n    fp = AllChem.GetMorganFingerprintAsBitVect(mol, 2, 2048)\n    similarity = DataStructs.TanimotoSimilarity(query_fp, fp)\n    print(f\"{smiles}: {similarity:.3f}\")\n\n\n\n\n\n\nAI4S 专题主页\nDNA Foundation Models\nRNA Foundation Models\n蛋白质 Foundation Models\n虚拟细胞\n\n\n更新时间：2026-09-29",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "AI4Drug"
+    ]
+  },
+  {
+    "objectID": "AI4S/ai4drug-overview.html#药物研发流程",
+    "href": "AI4S/ai4drug-overview.html#药物研发流程",
+    "title": "AI4Drug：AI 驱动的药物设计",
+    "section": "",
+    "text": "1. 靶点发现与验证（2-3 年） - 识别疾病相关蛋白质或基因 - 验证靶点的成药性\n2. 先导化合物发现（1-2 年） - 高通量筛选（HTS）：测试数十万化合物 - 基于片段的药物设计（FBDD）\n3. 先导化合物优化（1-2 年） - 提高活性、选择性 - 优化 ADMET 性质（吸收、分布、代谢、排泄、毒性）\n4. 临床前研究（1-2 年） - 体外和体内药效学研究 - 毒理学研究\n5. 临床试验（5-7 年） - I 期：安全性（健康志愿者） - II 期：初步疗效（小规模患者） - III 期：大规模验证\n6. 上市审批（1-2 年） - FDA/EMA 审查\n挑战: - 成功率低：仅 10% 的候选药物能最终上市 - 成本高：平均 26 亿美元（包括失败项目） - 周期长：平均 10-15 年\n\n\n\n\nAI 技术可在多个环节提升效率：\n靶点发现: - 从组学数据识别疾病相关靶点 - 预测靶点-药物相互作用 - 节省时间：30-50%\n虚拟筛选: - 从数百万化合物中快速筛选 - 预测结合亲和力 - 成本降低：90%+\n分子生成: - 从头设计新分子 - 基于已知药物优化 - 效率提升：10-100 倍\nADMET 预测: - 早期预测药代动力学性质 - 减少后期失败 - 成功率提升：20-30%\n临床试验优化: - 患者招募与分层 - 剂量优化 - 周期缩短：20-40%",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "AI4Drug"
+    ]
+  },
+  {
+    "objectID": "AI4S/ai4drug-overview.html#核心技术",
+    "href": "AI4S/ai4drug-overview.html#核心技术",
+    "title": "AI4Drug：AI 驱动的药物设计",
+    "section": "",
+    "text": "SMILES（Simplified Molecular Input Line Entry System）\n字符串表示分子结构：\n# 示例：阿司匹林\nCC(=O)Oc1ccccc1C(=O)O\n\n# 咖啡因\nCN1C=NC2=C1C(=O)N(C(=O)N2C)C\n优点: 简洁，易于处理 缺点: 同一分子可有多个 SMILES 表示\n\n分子图（Molecular Graph）\n将分子表示为图： - 节点：原子 - 边：化学键\n图神经网络（GNN） 处理分子图： - 消息传递：节点之间交换信息 - 聚合：汇总邻居信息 - 更新：生成新的节点表示\n代码示例:\nimport torch\nfrom torch_geometric.data import Data\nfrom rdkit import Chem\n\n# 从 SMILES 构建分子图\nsmiles = \"CC(=O)Oc1ccccc1C(=O)O\"  # 阿司匹林\nmol = Chem.MolFromSmiles(smiles)\n\n# 提取原子特征\natom_features = []\nfor atom in mol.GetAtoms():\n    features = [\n        atom.GetAtomicNum(),  # 原子序数\n        atom.GetDegree(),     # 度\n        atom.GetFormalCharge(), # 电荷\n        atom.GetHybridization().real,  # 杂化类型\n    ]\n    atom_features.append(features)\n\nx = torch.tensor(atom_features, dtype=torch.float)\n\n# 提取边（化学键）\nedge_index = []\nfor bond in mol.GetBonds():\n    i = bond.GetBeginAtomIdx()\n    j = bond.GetEndAtomIdx()\n    edge_index.append([i, j])\n    edge_index.append([j, i])  # 无向图\n\nedge_index = torch.tensor(edge_index, dtype=torch.long).t()\n\n# 构建 PyTorch Geometric 数据对象\ndata = Data(x=x, edge_index=edge_index)\nprint(data)\n\n分子指纹（Molecular Fingerprints）\n将分子编码为固定长度的二进制向量：\nECFP（Extended Connectivity Fingerprints）: - 基于原子邻域的结构特征 - 常用长度：1024、2048 位\nMACCS Keys: - 166 位，基于结构片段\n代码示例:\nfrom rdkit import Chem\nfrom rdkit.Chem import AllChem\n\nsmiles = \"CC(=O)Oc1ccccc1C(=O)O\"\nmol = Chem.MolFromSmiles(smiles)\n\n# 生成 ECFP4 指纹（半径=2）\nfp = AllChem.GetMorganFingerprintAsBitVect(mol, radius=2, nBits=2048)\n\n# 转换为 NumPy 数组\nimport numpy as np\nfp_array = np.zeros((1,))\nAllChem.DataStructs.ConvertToNumpyArray(fp, fp_array)\nprint(f\"指纹: {fp_array[:20]}...\")  # 显示前 20 位\n\n\n\n\n任务: 从大规模化合物库中筛选出与靶蛋白结合的候选分子\n方法:\n基于结构的虚拟筛选（SBVS）: - 前提：已知靶蛋白三维结构 - 分子对接（Molecular Docking）：预测小分子与蛋白质的结合模式和亲和力\n经典工具: - AutoDock Vina: 开源，快速 - Glide: 商业软件，精度高 - GOLD: 遗传算法对接\n深度学习方法: - DiffDock: 基于扩散模型的盲对接 - DeepDock: 端到端学习结合亲和力\n代码示例（AutoDock Vina）:\n# 准备受体（蛋白质）\nprepare_receptor4.py -r protein.pdb -o protein.pdbqt\n\n# 准备配体（小分子）\nprepare_ligand4.py -l ligand.mol2 -o ligand.pdbqt\n\n# 运行对接\nvina --receptor protein.pdbqt \\\n     --ligand ligand.pdbqt \\\n     --center_x 25.0 --center_y 30.0 --center_z 10.0 \\\n     --size_x 20.0 --size_y 20.0 --size_z 20.0 \\\n     --out ligand_docked.pdbqt\n\n基于配体的虚拟筛选（LBVS）: - 前提：已知活性化合物 - 相似性搜索：找到结构相似的分子\n方法: - Tanimoto 相似度: 比较分子指纹 - 形状匹配: 3D 形状叠合\n\n深度学习虚拟筛选:\n代表模型: - Chemprop: 图神经网络预测分子性质 - DeepPurpose: 药物-靶点相互作用预测 - AttentiveFP: 注意力增强的分子指纹\n代码示例（Chemprop）:\n# 安装 Chemprop\n# pip install chemprop\n\nfrom chemprop import train, predict\n\n# 训练模型\ntrain_args = [\n    '--data_path', 'train.csv',\n    '--dataset_type', 'regression',\n    '--save_dir', 'model_checkpoint'\n]\ntrain.chemprop_train(args=train_args)\n\n# 预测\npredict_args = [\n    '--test_path', 'test.csv',\n    '--checkpoint_dir', 'model_checkpoint',\n    '--preds_path', 'predictions.csv'\n]\npredict.chemprop_predict(args=predict_args)\n\n\n\n\n任务: 从头设计新分子或优化已有分子\n方法:\n基于规则的方法: - 从片段组装分子 - 遵循化学规则（价键、环状结构等）\n深度生成模型:\nVAE（Variational Autoencoder）: - 编码器：SMILES → 连续潜在空间 - 解码器：潜在空间 → SMILES - 优化：在潜在空间中搜索\n代码示例（简化）:\nimport torch\nimport torch.nn as nn\n\nclass MolecularVAE(nn.Module):\n    def __init__(self, vocab_size, latent_dim):\n        super().__init__()\n        self.encoder = nn.LSTM(vocab_size, 256, batch_first=True)\n        self.fc_mu = nn.Linear(256, latent_dim)\n        self.fc_logvar = nn.Linear(256, latent_dim)\n        \n        self.decoder = nn.LSTM(latent_dim, 256, batch_first=True)\n        self.fc_out = nn.Linear(256, vocab_size)\n    \n    def encode(self, x):\n        _, (h, _) = self.encoder(x)\n        mu = self.fc_mu(h.squeeze(0))\n        logvar = self.fc_logvar(h.squeeze(0))\n        return mu, logvar\n    \n    def reparameterize(self, mu, logvar):\n        std = torch.exp(0.5 * logvar)\n        eps = torch.randn_like(std)\n        return mu + eps * std\n    \n    def decode(self, z, seq_len):\n        z = z.unsqueeze(1).repeat(1, seq_len, 1)\n        output, _ = self.decoder(z)\n        return self.fc_out(output)\n    \n    def forward(self, x):\n        mu, logvar = self.encode(x)\n        z = self.reparameterize(mu, logvar)\n        return self.decode(z, x.size(1)), mu, logvar\n\nGAN（Generative Adversarial Network）: - 生成器：生成分子 - 判别器：区分真实/生成分子\nMolGAN: 分子图生成 GAN\n\n强化学习（Reinforcement Learning）: - 智能体：生成分子 - 奖励：基于目标性质（活性、合成可行性等） - 优化：最大化奖励\n\n扩散模型（Diffusion Models）: - 前向过程：逐步添加噪声 - 反向过程：从噪声恢复分子 - 代表：Equivariant Diffusion\n\n基于 Transformer 的生成: - 类似 GPT，自回归生成 SMILES - 条件生成：给定靶点或性质生成分子\n\n\n\n\nADMET: Absorption, Distribution, Metabolism, Excretion, Toxicity\n任务: 预测候选药物的药代动力学性质和毒性\n关键指标:\n吸收（Absorption）: - 口服生物利用度 - Caco-2 细胞渗透性\n分布（Distribution）: - 血浆蛋白结合率 - 血脑屏障（BBB）渗透性\n代谢（Metabolism）: - CYP450 酶底物/抑制剂 - 代谢稳定性\n排泄（Excretion）: - 肾清除率 - 半衰期\n毒性（Toxicity）: - hERG 抑制（心脏毒性） - 肝毒性 - 遗传毒性\n\n深度学习 ADMET 模型:\n代表工具: - ADMETlab: 集成多个 ADMET 预测模型 - SwissADME: 在线工具 - pkCSM: 药代动力学预测\n代码示例（使用 DeepChem）:\nimport deepchem as dc\n\n# 加载数据集（示例：Tox21）\ntasks, datasets, transformers = dc.molnet.load_tox21()\ntrain_dataset, valid_dataset, test_dataset = datasets\n\n# 构建图卷积模型\nmodel = dc.models.GraphConvModel(\n    n_tasks=len(tasks),\n    mode='classification',\n    batch_size=50\n)\n\n# 训练\nmodel.fit(train_dataset, nb_epoch=50)\n\n# 评估\nmetric = dc.metrics.Metric(dc.metrics.roc_auc_score)\ntrain_score = model.evaluate(train_dataset, [metric])\ntest_score = model.evaluate(test_dataset, [metric])\n\nprint(f\"训练集 AUC: {train_score['roc_auc_score']:.3f}\")\nprint(f\"测试集 AUC: {test_score['roc_auc_score']:.3f}\")\n\n\n\n\n任务: 给定目标分子，规划合成路线\n传统方法: 依赖化学家经验\nAI 方法: - 序列到序列（Seq2Seq）模型 - 蒙特卡洛树搜索（MCTS） - Transformer 模型\n代表工具: - IBM RXN: 基于 Transformer 的逆合成预测 - AiZynthFinder: 基于 MCTS 的合成路线规划",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "AI4Drug"
+    ]
+  },
+  {
+    "objectID": "AI4S/ai4drug-overview.html#代表性工具与平台",
+    "href": "AI4S/ai4drug-overview.html#代表性工具与平台",
+    "title": "AI4Drug：AI 驱动的药物设计",
+    "section": "",
+    "text": "RDKit: - Python 化学信息学核心库 - 分子操作、指纹生成、性质计算\nfrom rdkit import Chem\nfrom rdkit.Chem import Descriptors\n\nsmiles = \"CC(=O)Oc1ccccc1C(=O)O\"\nmol = Chem.MolFromSmiles(smiles)\n\n# 计算分子性质\nmw = Descriptors.MolWt(mol)\nlogp = Descriptors.MolLogP(mol)\ntpsa = Descriptors.TPSA(mol)\n\nprint(f\"分子量: {mw:.2f}\")\nprint(f\"LogP: {logp:.2f}\")\nprint(f\"TPSA: {tpsa:.2f}\")\n\nDeepChem: - 深度学习化学工具箱 - 包含预训练模型和数据集\nimport deepchem as dc\n\n# 加载 MoleculeNet 数据集\ntasks, datasets, transformers = dc.molnet.load_delaney()\ntrain, valid, test = datasets\n\n# 构建图卷积模型\nmodel = dc.models.GraphConvModel(n_tasks=1, mode='regression')\nmodel.fit(train, nb_epoch=50)\n\nPyTorch Geometric（PyG）: - 图神经网络库 - 处理分子图\n\nOpenMM: - 分子动力学模拟 - GPU 加速\n\n\n\n\nSchrödinger: - 完整药物设计套件 - Maestro、Glide、Desmond\nBenevolentAI: - AI 驱动的药物发现平台 - 成功案例：巴瑞替尼治疗 COVID-19\nInsilico Medicine: - 生成化学引擎 - 成功案例：18 个月设计出 IPF 候选药物\nExscientia: - AI 主导的药物设计 - 首个 AI 设计药物进入临床（2020）",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "AI4Drug"
+    ]
+  },
+  {
+    "objectID": "AI4S/ai4drug-overview.html#成功案例",
+    "href": "AI4S/ai4drug-overview.html#成功案例",
+    "title": "AI4Drug：AI 驱动的药物设计",
+    "section": "",
+    "text": "时间线: - 2019 年 1 月：启动项目 - 2019 年 7 月：发现先导化合物 - 2020 年 6 月：候选药物进入临床前\n成果: - 仅 18 个月完成（传统方法需 3-5 年） - 成本大幅降低\n技术: - 生成化学引擎（GAN） - 深度学习 ADMET 预测\n\n\n\n\n背景: COVID-19 疫情爆发\n过程: - AI 平台筛选已上市药物 - 识别巴瑞替尼（JAK 抑制剂）\n结果: - 临床试验证明疗效 - 获 FDA 紧急使用授权\n\n\n\n\n过程: - 虚拟筛选 700 万化合物 - 识别出两个候选化合物\n结果: - 实验验证有效 - 展示 AI 快速响应新兴疾病的能力\n\n\n\n\n应用: - 预测靶蛋白结构 - 辅助基于结构的药物设计\n影响: - 加速靶点结构解析 - 降低实验成本",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "AI4Drug"
+    ]
+  },
+  {
+    "objectID": "AI4S/ai4drug-overview.html#挑战与未来方向",
+    "href": "AI4S/ai4drug-overview.html#挑战与未来方向",
+    "title": "AI4Drug：AI 驱动的药物设计",
+    "section": "",
+    "text": "1. 数据质量与可用性 - 高质量标注数据稀缺 - 数据偏差（已知药物空间有限） - 专利保护限制数据共享\n2. 模型泛化能力 - 分布外泛化困难 - 新靶点、新化学空间预测不准\n3. 实验验证瓶颈 - AI 设计的分子仍需实验验证 - 合成可行性 - 高通量实验成本\n4. 多目标优化 - 活性、选择性、ADMET、合成难度等多目标平衡 - 帕累托最优难以达到\n5. 可解释性 - 黑盒模型难以提供化学洞见 - 药物设计需要机制理解\n\n\n\n\n1. 闭环药物设计 - AI 设计 → 高通量实验 → 反馈 → 迭代优化 - 自动化实验室（Robot Lab）\n2. 多模态整合 - 整合结构、组学、文献、临床数据 - 知识图谱 + 深度学习\n3. 少样本学习 - 利用迁移学习、元学习 - 应对新靶点数据稀缺问题\n4. 可解释 AI - 注意力机制可视化 - 提取药效团（Pharmacophore）\n5. 个性化药物设计 - 基于患者基因组的精准药物 - 考虑个体差异\n6. 临床试验优化 - 患者招募与分层 - 剂量优化 - 预测临床结果",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "AI4Drug"
+    ]
+  },
+  {
+    "objectID": "AI4S/ai4drug-overview.html#学习资源",
+    "href": "AI4S/ai4drug-overview.html#学习资源",
+    "title": "AI4Drug：AI 驱动的药物设计",
+    "section": "",
+    "text": "Drug Discovery (Coursera): 药物发现基础\nDeep Learning for Drug Discovery (MIT): 深度学习在药物设计中的应用\nCheminformatics (edX): 化学信息学\n\n\n\n\n\n\n《Artificial Intelligence in Drug Design》（Springer）\n《Deep Learning for the Life Sciences》（O’Reilly）\n《Drug Design: Structure- and Ligand-Based Approaches》\n\n\n\n\n\nRDKit: - RDKit Documentation - RDKit Cookbook\nDeepChem: - DeepChem Tutorials - GitHub\nPyTorch Geometric: - PyG Documentation\n\n\n\n\n化合物数据库: - ChEMBL: 生物活性化合物（200 万+） - PubChem: 化学结构数据库（1 亿+） - ZINC: 商业化合物库（数亿） - DrugBank: FDA 批准药物\n蛋白质-配体复合物: - PDB: 蛋白质结构与配体 - PDBbind: 蛋白质-配体结合亲和力数据\nADMET 数据: - Tox21: 毒性数据 - ADMET Predictor: 商业 ADMET 数据集",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "AI4Drug"
+    ]
+  },
+  {
+    "objectID": "AI4S/ai4drug-overview.html#实用建议",
+    "href": "AI4S/ai4drug-overview.html#实用建议",
+    "title": "AI4Drug：AI 驱动的药物设计",
+    "section": "",
+    "text": "1. 基础知识 - 化学基础：有机化学、药物化学 - 编程：Python、PyTorch - 机器学习：监督学习、神经网络\n2. 化学信息学 - 学习 RDKit - 理解分子表示（SMILES、指纹、图） - 计算分子性质\n3. 深度学习应用 - 图神经网络（GNN） - 生成模型（VAE、GAN） - 从 DeepChem 教程开始\n4. 实践项目 - 复现已发表模型 - 参加 Kaggle 药物发现竞赛 - 贡献开源项目\n\n\n\n\n分子相似性搜索:\nfrom rdkit import Chem, DataStructs\nfrom rdkit.Chem import AllChem\n\n# 查询分子\nquery_smiles = \"CC(=O)Oc1ccccc1C(=O)O\"\nquery_mol = Chem.MolFromSmiles(query_smiles)\nquery_fp = AllChem.GetMorganFingerprintAsBitVect(query_mol, 2, 2048)\n\n# 化合物库\nlibrary_smiles = [\"CC(C)Cc1ccc(cc1)C(C)C(=O)O\", \"CC1=CC=C(C=C1)C(=O)O\"]\n\n# 计算相似度\nfor smiles in library_smiles:\n    mol = Chem.MolFromSmiles(smiles)\n    fp = AllChem.GetMorganFingerprintAsBitVect(mol, 2, 2048)\n    similarity = DataStructs.TanimotoSimilarity(query_fp, fp)\n    print(f\"{smiles}: {similarity:.3f}\")",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "AI4Drug"
+    ]
+  },
+  {
+    "objectID": "AI4S/ai4drug-overview.html#相关链接",
+    "href": "AI4S/ai4drug-overview.html#相关链接",
+    "title": "AI4Drug：AI 驱动的药物设计",
+    "section": "",
+    "text": "AI4S 专题主页\nDNA Foundation Models\nRNA Foundation Models\n蛋白质 Foundation Models\n虚拟细胞\n\n\n更新时间：2026-09-29",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "AI4Drug"
+    ]
+  },
+  {
+    "objectID": "AI4S/foundation-models-protein.html",
+    "href": "AI4S/foundation-models-protein.html",
+    "title": "蛋白质 Foundation Models",
+    "section": "",
+    "text": "蛋白质是生命功能的执行者，其序列、结构和功能之间存在复杂的关系。蛋白质 Foundation Models 通过在海量蛋白质序列和结构数据上预训练，学习蛋白质的语法、结构模式和功能原理，实现从结构预测到功能注释、从突变效应评估到蛋白质设计的全方位应用。\n\n\n\n\n\n蛋白质的层次结构:\n\n一级结构（Primary Structure）\n\n氨基酸序列\n20 种标准氨基酸\n序列长度：数十到数千个残基\n\n二级结构（Secondary Structure）\n\nα-螺旋（Alpha Helix）\nβ-折叠（Beta Sheet）\n无规卷曲（Coil/Loop）\n\n三级结构（Tertiary Structure）\n\n完整的三维折叠\n由疏水作用、氢键、二硫键等稳定\n决定蛋白质功能\n\n四级结构（Quaternary Structure）\n\n多个亚基组装\n蛋白质复合物\n\n\n\n\n\n\n核心原理: 蛋白质的三维结构由其氨基酸序列唯一决定。\n这一定理为从序列预测结构提供了理论基础，也是 AlphaFold 等模型的科学依据。\n\n\n\n\n挑战: 1. 蛋白质空间巨大: 100 个氨基酸的蛋白质有 20^100 种可能序列 2. 结构预测困难: 实验方法（X-ray、Cryo-EM、NMR）耗时耗力 3. 功能注释稀疏: 已知功能的蛋白质仅占很小比例 4. 进化信息: 同源蛋白质的变异模式包含功能约束\nFoundation Models 的优势: - 学习进化保守性和变异耐受性 - 从序列直接预测结构（快速、低成本） - 零样本功能预测和迁移学习 - 指导蛋白质工程和药物设计\n\n\n\n\n\n\n\n\n\n架构: Transformer encoder\n训练数据: - UniRef50（2.5 千万蛋白质序列）\n预训练任务: Masked Language Modeling（MLM）\n模型规模: 650M 参数\n\n\n\n\n突破: 将模型规模扩展到 150B 参数\n训练数据: - UniRef（2.5 亿蛋白质序列）\n模型版本: - ESM2-8M (8M 参数) - ESM2-35M - ESM2-150M - ESM2-650M - ESM2-3B - ESM2-15B\n关键发现: - 650M 参数版本性能最优（更大模型反而性能下降） - 学习到的表示与蛋白质结构高度相关 - 零样本迁移能力强\n下游任务: - 蛋白质结构预测（ESMFold） - 蛋白质功能预测 - 突变效应预测 - 蛋白质-蛋白质相互作用预测\n代码示例:\nimport torch\nimport esm\n\n# 加载 ESM-2 模型\nmodel, alphabet = esm.pretrained.esm2_t33_650M_UR50D()\nbatch_converter = alphabet.get_batch_converter()\nmodel.eval()\n\n# 蛋白质序列\ndata = [\n    (\"protein1\", \"MKTAYIAKQRQISFVKSHFSRQ\"),\n    (\"protein2\", \"MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGR\"),\n]\n\n# 准备批次\nbatch_labels, batch_strs, batch_tokens = batch_converter(data)\n\n# 提取特征\nwith torch.no_grad():\n    results = model(batch_tokens, repr_layers=[33], return_contacts=True)\n\n# Token 嵌入（每个残基）\ntoken_embeddings = results[\"representations\"][33]\n\n# 序列嵌入（整个蛋白质）\nsequence_embeddings = token_embeddings.mean(dim=1)\n\n# 接触图预测\ncontacts = results[\"contacts\"]\n\nprint(f\"Token 嵌入形状: {token_embeddings.shape}\")\nprint(f\"序列嵌入形状: {sequence_embeddings.shape}\")\nprint(f\"接触图形状: {contacts.shape}\")\n论文: Lin, Z. et al. (2023). Evolutionary-scale prediction of atomic-level protein structure with a language model. Science, 379(6637), 1123-1130.\n\n\n\n\n\n架构: GPT-2（生成式）\n训练数据: - UniRef50（5000 万蛋白质序列）\n预训练任务: - 自回归语言建模（Next Token Prediction）\n特点: - 生成模型: 可以从头生成新的蛋白质序列 - 学习蛋白质序列的概率分布\n应用: - De novo 蛋白质设计 - 序列完成与优化 - 蛋白质变体生成\n代码示例:\nfrom transformers import pipeline\n\n# 加载 ProtGPT2\ngenerator = pipeline('text-generation', model=\"nferruz/ProtGPT2\")\n\n# 从提示序列生成蛋白质\nseed_sequence = \"MKTAYIA\"\ngenerated = generator(seed_sequence, max_length=100, do_sample=True)\n\nprint(f\"生成的蛋白质序列: {generated[0]['generated_text']}\")\n论文: Ferruz, N. et al. (2022). ProtGPT2 is a deep unsupervised language model for protein design. Nature Communications, 13, 4348.\n\n\n\n\n架构: BERT\n特点: 整合序列和 GO（Gene Ontology）注释\n训练数据: - UniRef90 + SwissProt GO 注释\n预训练任务: - MLM - GO 注释预测\n优势: 明确学习功能信息\n\n\n\n\n架构: 大规模 Transformer（最大 1.5B 参数）\n训练数据: - UniRef100 + Pfam + 元基因组数据 - 数亿蛋白质序列\n特点: - 多语言蛋白质模型（跨物种） - 规模化提升性能\n\n\n\n\n架构: Transformer decoder\n训练数据: - UniRef90 + 条件标签（蛋白质家族、物种）\n特点: - 条件生成：根据蛋白质家族生成序列 - ProGen2: 扩展到 6.4B 参数\n应用: - 蛋白质家族特异性设计 - 酶工程\n\n\n\n\n\n\n\n突破性意义: 解决了蛋白质结构预测这一 50 年难题\n架构: - Evoformer: 处理多序列比对（MSA）和配对表示 - Structure Module: 生成三维坐标\n输入: - 目标序列 - MSA（多序列比对，来自同源搜索） - 模板结构（可选）\n训练数据: - PDB（约 17 万结构）\n关键技术: 1. MSA 表示: 编码进化信息 2. 配对表示: 残基-残基关系 3. Evoformer 模块: 联合更新 MSA 和配对表示 4. 结构模块: 迭代细化三维结构 5. 等变性: 保持旋转和平移不变性\n性能: - CASP14: 中位 GDT 92.4（接近实验精度） - 预测时间: 数分钟到数小时\n代码示例:\n# 使用 AlphaFold2 通过 ColabFold\nfrom colabfold import plot_protein\nfrom colabfold.batch import get_queries, run\n\n# 序列\nsequence = \"MKTAYIAKQRQISFVKSHFSRQ\"\n\n# 运行预测（简化示例）\n# results = run(sequence)\n\n# 可视化\n# plot_protein(results)\n影响: - AlphaFold Protein Structure Database: 2 亿+ 预测结构 - 加速结构生物学研究 - 推动药物设计、蛋白质工程\n论文: Jumper, J. et al. (2021). Highly accurate protein structure prediction with AlphaFold. Nature, 596, 583–589.\n\n\n\n\n扩展: 预测蛋白质-配体、蛋白质-核酸复合物\n输入: - 蛋白质序列 - 配体 SMILES - DNA/RNA 序列\n输出: 复合物三维结构\n应用: - 药物-靶点复合物预测 - 蛋白质-DNA 复合物（转录因子） - 蛋白质-RNA 复合物（RBP）\n性能: - 蛋白质-配体对接精度超越传统分子对接 - 革新结构药物设计\n论文: Abramson, J. et al. (2024). Accurate structure prediction of biomolecular interactions with AlphaFold 3. Nature, 630, 493–500.\n\n\n\n\n架构: 基于 ESM-2 语言模型 + 结构预测头\n关键特点: - 无需 MSA: 从单序列预测 - 速度快: 比 AlphaFold2 快 60 倍 - 端到端: 从序列直接到结构\n训练数据: - PDB + AlphaFold Database\n性能: - 高分辨率结构：接近 AlphaFold2 - 低同源性蛋白质：略逊于 AlphaFold2 - 适合大规模筛选\n代码示例:\nimport torch\nimport esm\n\n# 加载 ESMFold\nmodel = esm.pretrained.esmfold_v1()\nmodel = model.eval().cuda()\n\n# 序列\nsequence = \"MKTAYIAKQRQISFVKSHFSRQ\"\n\n# 预测结构\nwith torch.no_grad():\n    output = model.infer_pdb(sequence)\n\n# 保存 PDB\nwith open(\"predicted_structure.pdb\", \"w\") as f:\n    f.write(output)\n\nprint(\"结构已保存到 predicted_structure.pdb\")\n论文: Lin, Z. et al. (2023). Evolutionary-scale prediction of atomic-level protein structure with a language model. Science, 379(6637), 1123-1130.\n\n\n\n\n架构: Transformer\n特点: - 端到端训练 - 无需 MSA（单序列预测） - 使用蛋白质语言模型初始化\n性能: 与 AlphaFold2 相当，速度更快\n\n\n\n\n来源: 华盛顿大学 David Baker 实验室\n架构: 三轨网络（1D、2D、3D）\n特点: - 联合处理序列、距离、坐标 - 开源实现\n论文: Baek, M. et al. (2021). Accurate prediction of protein structures and interactions using a three-track neural network. Science, 373(6557), 871-876.\n\n\n\n\n\n\n\n任务: 预测氨基酸突变对蛋白质功能/稳定性的影响\n方法: - Zero-shot: 直接使用预训练模型 - 比较野生型和突变型的对数似然 - ESM-1v: 专门针对突变效应优化\n评估数据集: - ClinVar: 临床变异数据库 - DMS（Deep Mutational Scanning）: 高通量突变实验\n应用: - 疾病相关突变识别 - 蛋白质工程 - 抗体亲和力优化\n代码示例:\nimport torch\nimport esm\n\n# 加载 ESM-1v（变异效应模型）\nmodel, alphabet = esm.pretrained.esm1v_t33_650M_UR90S_1()\nbatch_converter = alphabet.get_batch_converter()\nmodel.eval()\n\n# 野生型序列\nwt_sequence = \"MKTAYIAKQRQISFVKSHFSRQ\"\n\n# 突变序列（K3A 突变）\nmut_sequence = \"MKTAYIAKQAQISFVKSHFSRQ\"\n\n# 准备批次\ndata = [\n    (\"WT\", wt_sequence),\n    (\"MUT\", mut_sequence),\n]\nbatch_labels, batch_strs, batch_tokens = batch_converter(data)\n\n# 计算对数似然\nwith torch.no_grad():\n    results = model(batch_tokens, repr_layers=[33])\n    logits = results[\"logits\"]\n    \n    # 计算序列对数似然\n    log_probs = torch.log_softmax(logits, dim=-1)\n    wt_ll = log_probs[0, 1:len(wt_sequence)+1, :].gather(-1, batch_tokens[0, 1:len(wt_sequence)+1].unsqueeze(-1)).sum()\n    mut_ll = log_probs[1, 1:len(mut_sequence)+1, :].gather(-1, batch_tokens[1, 1:len(mut_sequence)+1].unsqueeze(-1)).sum()\n    \n    # 突变效应评分（越负越有害）\n    effect_score = mut_ll - wt_ll\n\nprint(f\"突变效应评分: {effect_score.item():.3f}\")\n\n\n\n\n任务: 从序列预测蛋白质功能（GO term、EC number、细胞定位）\n方法: 1. 使用预训练模型提取特征 2. 在标注数据上训练分类器 3. 预测功能标签\n数据集: - SwissProt: 人工审核的蛋白质数据库（含 GO 注释） - CAFA（Critical Assessment of Function Annotation）: 功能预测竞赛\n代码示例:\nfrom transformers import AutoModel, AutoTokenizer\nimport torch.nn as nn\n\n# 加载预训练模型\ntokenizer = AutoTokenizer.from_pretrained(\"Rostlab/prot_bert\")\nmodel = AutoModel.from_pretrained(\"Rostlab/prot_bert\")\n\n# 功能预测分类器\nclass FunctionPredictor(nn.Module):\n    def __init__(self, protein_model, num_labels):\n        super().__init__()\n        self.protein_encoder = protein_model\n        self.classifier = nn.Linear(protein_model.config.hidden_size, num_labels)\n    \n    def forward(self, input_ids):\n        embeddings = self.protein_encoder(input_ids).last_hidden_state\n        pooled = embeddings[:, 0, :]  # [CLS] token\n        logits = self.classifier(pooled)\n        return logits\n\n# 实例化\npredictor = FunctionPredictor(model, num_labels=1000)  # 1000 个 GO terms\n\n# 预测（示例）\nsequence = \"M K T A Y I A K Q R Q I S F V K S H F S R Q\"\ninputs = tokenizer(sequence, return_tensors=\"pt\")\npredictions = predictor(inputs[\"input_ids\"])\n\n\n\n\n任务: 预测两个蛋白质是否相互作用\n方法: - 将两个蛋白质序列编码 - 计算相似性或使用分类器\n应用: - 构建蛋白质互作网络（PPI Network） - 药物靶点识别 - 信号通路研究\n\n\n\n\n任务: 从头设计新的蛋白质序列\n方法:\n生成式模型: - ProtGPT2, ProGen: 自回归生成 - 条件生成：指定蛋白质家族、功能\n结构引导设计: - AlphaFold + 优化 - RFdiffusion（结构扩散模型）\n应用: - 酶工程（提高催化活性） - 抗体设计（提高亲和力和特异性） - 新型蛋白质药物\n代码示例:\nfrom transformers import pipeline\n\n# 使用 ProtGPT2 生成蛋白质\ngenerator = pipeline('text-generation', model=\"nferruz/ProtGPT2\")\n\n# 生成属于特定家族的蛋白质\nprompt = \"MKTAYIA\"  # 种子序列\ngenerated_sequences = generator(\n    prompt, \n    max_length=200, \n    num_return_sequences=5,\n    do_sample=True,\n    temperature=0.8\n)\n\nfor i, seq in enumerate(generated_sequences):\n    print(f\"序列 {i+1}: {seq['generated_text']}\")\n\n\n\n\n任务: 优化抗体的亲和力、特异性、稳定性\n方法: - ESM-2 编码抗体序列 - 预测抗原结合区（CDR）突变效应 - 结构预测验证\n工具: - ABodyBuilder: 抗体结构预测 - ESM-IF: 逆向折叠（从结构生成序列）\n\n\n\n\n\n\n\n\nUniProt: 综合蛋白质数据库（2 亿+ 序列）\nUniRef50/90/100: 聚类减少冗余\nPfam: 蛋白质家族数据库\nSwissProt: 人工审核的高质量蛋白质数据\n\n\n\n\n\nPDB（Protein Data Bank）: 实验解析结构（20 万+）\nAlphaFold Database: AI 预测结构（2 亿+）\nCATH/SCOP: 结构分类数据库\n\n\n\n\n\nGene Ontology (GO): 基因/蛋白质功能本体\nInterPro: 蛋白质家族和域注释\nKEGG: 代谢通路数据库\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n模型\n架构\n参数量\n训练数据\n类型\n特点\n\n\n\n\nESM-1b\nTransformer\n650M\nUniRef50 (25M)\n掩码预测\n经典，性能优秀\n\n\nESM-2\nTransformer\n8M-15B\nUniRef (250M)\n掩码预测\n多规模，650M 最优\n\n\nProtGPT2\nGPT-2\n738M\nUniRef50 (50M)\n生成式\n可生成新序列\n\n\nProGen2\nTransformer\n6.4B\nUniRef90 + 条件\n生成式\n条件生成\n\n\nAnkh\nTransformer\n1.5B\nUniRef100 + 元基因组\n掩码预测\n大规模\n\n\n\n\n\n\n\n\n\n模型\nMSA 需求\n速度\n精度\n特点\n\n\n\n\nAlphaFold2\n是\n慢（小时）\n极高\nSOTA，需 MSA\n\n\nAlphaFold3\n是\n慢\n极高\n复合物预测\n\n\nESMFold\n否\n快（秒-分钟）\n高\n单序列，快速\n\n\nOmegaFold\n否\n快\n高\n端到端\n\n\nRoseTTAFold\n是\n中\n高\n开源\n\n\n\n\n\n\n\n\n\n\n\nGDT（Global Distance Test）: 结构相似度\nTM-score: 模板建模评分（&gt;0.5 为相同折叠）\nRMSD（Root Mean Square Deviation）: 原子位置偏差\nlDDT（Local Distance Difference Test）: 局部结构精度\n\n\n\n\n\nAUROC / AUPRC: 功能分类性能\nF-max: 最大 F1 score（CAFA 评估）\n\n\n\n\n\nSpearman 相关系数: 与实验数据相关性\nAUC: 分类致病/良性变异\n\n\n\n\n\n\n\n\nGitHub: ESM\n# 安装\npip install fair-esm\n\n# 提取嵌入\npython scripts/extract.py esm2_t33_650M_UR50D protein.fasta output --repr_layers 33 --include mean\n\n\n\n\nAlphaFold Colab: 在线预测（免费 GPU）\nColabFold: 加速版本，集成 MMseqs2 快速 MSA\nLocalColabFold: 本地部署\n\n\n\n\nimport esm\n\n# 加载模型\nmodel = esm.pretrained.esmfold_v1()\nmodel = model.eval().cuda()\n\n# 预测结构\nwith torch.no_grad():\n    output = model.infer_pdb(\"MKTAYIAKQRQISFVKSHFSRQ\")\n\n# 保存 PDB\nwith open(\"structure.pdb\", \"w\") as f:\n    f.write(output)\n\n\n\n\n\n\n\n任务: 从三维结构设计氨基酸序列\n传统流程: 序列 → 结构 逆向折叠: 结构 → 序列\n应用: - 固定结构骨架，设计新序列 - 蛋白质稳定性优化 - 功能保持的序列多样化\n模型:\nESM-IF（Inverse Folding）: - 基于 ESM 架构 - 输入：蛋白质骨架坐标 - 输出：氨基酸序列\nProteinMPNN: - 消息传递神经网络 - 考虑几何约束 - 高精度序列设计\n代码示例:\n# ESM-IF 逆向折叠示例\nimport esm.inverse_folding\n\n# 加载模型\nmodel, alphabet = esm.pretrained.esm_if1_gvp4_t16_142M_UR50()\nmodel.eval()\n\n# 输入：蛋白质结构（坐标）\ncoords, seq = esm.inverse_folding.util.load_coords(\"protein.pdb\", \"A\")\n\n# 设计序列\nll, seq = esm.inverse_folding.util.score_sequence(\n    model, alphabet, coords, seq\n)\n\nprint(f\"设计的序列: {seq}\")\nprint(f\"对数似然: {ll}\")\n\n\n\n\nRFdiffusion（2023）:\n原理: - 使用扩散模型生成蛋白质骨架 - 从噪声逐步去噪得到蛋白质结构\n应用: - De novo 蛋白质设计 - 结合位点设计（针对特定配体/抗原） - 蛋白质支架设计\n流程: 1. RFdiffusion 生成骨架 2. ProteinMPNN 设计序列 3. AlphaFold2 验证结构\n成果: - 设计出实验验证的新型蛋白质 - 发表于 Nature (2023)\n\n\n\n\n整合多种信息: - 序列 + 结构 - 序列 + 功能注释 - 序列 + 文本描述\nProtST（Protein Structure-Text）: - 蛋白质结构与文本描述对齐 - 类似 CLIP 的对比学习 - 支持文本查询蛋白质\n应用: - “找到所有激酶结构” - “检索与免疫相关的蛋白质”\n\n\n\n\n挑战: 许多蛋白质家族标注数据稀少\n方法: - 元学习（Meta-Learning）: 学习快速适应新任务 - Few-shot Learning: 从少量样本学习 - 迁移学习: 从大家族迁移到小家族\n\n\n\n\n限制: AlphaFold 预测静态结构\n挑战: - 蛋白质结构动态变化 - 构象转换影响功能\n方向: - 预测蛋白质构象集合 - 模拟蛋白质折叠路径 - 整合分子动力学（MD）模拟\nAlphaFold-Multimer: 预测蛋白质复合物的多个构象\n\n\n\n\n\n\n\n成果: - 预测 2 亿+ 蛋白质结构 - 覆盖人类全部约 2 万个蛋白质 - 开放下载，加速全球研究\n影响: - 结构生物学家可直接获取预测结构 - 加速药物靶点研究 - 推动罕见病研究（孤儿蛋白结构）\n\n\n\n\n案例: David Baker 实验室（华盛顿大学）\n成果: - 设计出自然界不存在的蛋白质 - 实验验证结构与设计一致 - 具有预定功能（如结合特定分子）\n应用: - 新型酶设计 - 纳米材料 - 生物传感器\n\n\n\n\n案例: 多家生物技术公司使用 ESM/AlphaFold\n流程: 1. ESM-2 预测抗体 CDR 区突变效应 2. AlphaFold2 预测抗体-抗原复合物结构 3. 筛选高亲和力候选抗体 4. 实验验证\n优势: - 减少实验轮次 - 提高成功率 - 加速研发周期\n\n\n\n\n应用: - AlphaFold2 预测 SARS-CoV-2 蛋白质结构 - 辅助药物设计（主蛋白酶抑制剂） - 抗体中和机制研究\n\n\n\n\n\n\n\n\n内在无序蛋白（IDPs）\n\n没有固定三维结构\nAlphaFold 难以建模\n\n蛋白质动态性\n\n静态结构预测为主\n构象变化、蛋白质折叠路径\n\n复合物预测\n\nAlphaFold-Multimer 性能有限\n瞬时相互作用难预测\n\n实验验证瓶颈\n\nAI 设计的蛋白质需实验验证\n高通量实验成本仍高\n\n可解释性\n\n模型决策机制不透明\n难以提取生物学规律\n\n\n\n\n\n\n\n统一序列-结构-功能模型\n\n端到端学习\n多任务联合训练\n\n蛋白质生成模型\n\n从功能需求生成序列\n可控生成（指定折叠、功能）\n\n闭环蛋白质设计\n\nAI 设计 → 高通量实验 → 反馈 → 迭代优化\n自动化实验室（Robot Scientist）\n\n跨模态学习\n\n整合序列、结构、基因表达、文献\n知识图谱与蛋白质模型融合\n\n个性化蛋白质组学\n\n整合个体变异\n预测疾病相关蛋白质变化\n\n进化建模\n\n预测蛋白质进化轨迹\n理解适应性变异\n\n\n\n\n\n\n\n\n\n经典论文: - Jumper, J. et al. (2021). AlphaFold. Nature. - Lin, Z. et al. (2023). ESM-2 & ESMFold. Science. - Ferruz, N. et al. (2022). ProtGPT2. Nature Communications. - Watson, J. et al. (2023). De novo design by deep learning. Nature.\n综述: - Pearce, R. & Zhang, Y. (2021). Deep learning techniques have significantly impacted protein structure prediction. Nature Methods. - AlQuraishi, M. (2019). AlphaFold at CASP13. Bioinformatics.\n\n\n\n\n\nDeep Learning in Life Sciences (MIT): 深度学习在生命科学中的应用\nProtein Structure Prediction (Coursera): 蛋白质结构预测\nMachine Learning for Proteins (Stanford): 蛋白质机器学习\n\n\n\n\n\nAlphaFold: - AlphaFold Colab - ColabFold\nESM: - ESM GitHub - ESM Tutorial\nRoseTTAFold: - RoseTTAFold GitHub\n可视化: - PyMOL: 蛋白质结构可视化 - ChimeraX: UCSF 开发的分子可视化工具 - Mol*: 在线结构浏览器\n\n\n\n\n\n《Protein Structure Prediction》（Mohammed AlQuraishi 等）\n《Deep Learning for Protein Science》\n《Bioinformatics and Functional Genomics》（Jonathan Pevsner）\n\n\n\n\n\nCASP（Critical Assessment of Structure Prediction）: - 两年一次的蛋白质结构预测竞赛 - 评估最新方法性能\nCAFA（Critical Assessment of Function Annotation）: - 蛋白质功能预测竞赛\n\n\n\n\n\n\n\n场景 1: 快速结构预测 - 推荐：ESMFold - 原因：无需 MSA，秒级预测\n场景 2: 高精度结构预测 - 推荐：AlphaFold2（通过 ColabFold） - 原因：精度最高，MSA 搜索优化\n场景 3: 蛋白质复合物 - 推荐：AlphaFold-Multimer 或 AlphaFold3 - 原因：专门优化复合物预测\n场景 4: 突变效应预测 - 推荐：ESM-1v - 原因：专门训练，零样本预测\n场景 5: 蛋白质设计 - 推荐：ProtGPT2 或 ProGen2 - 原因：生成式模型\n场景 6: 功能预测 - 推荐：ESM-2 + 微调 - 原因：通用表示，迁移能力强\n\n\n\n\n\n\n\n模型\nGPU 需求\n时间（100 aa 蛋白质）\n\n\n\n\nESM-2 (650M)\n单 GPU (16GB)\n&lt; 1 秒\n\n\nESMFold\n单 GPU (16GB)\n数秒\n\n\nAlphaFold2\n单 GPU (16GB)\n数分钟到数小时\n\n\nAlphaFold-Multimer\n单 GPU (40GB)\n数小时\n\n\n\n建议: - 本地有 GPU：安装 ESMFold 或 ColabFold - 无 GPU：使用 Google Colab（免费 T4 GPU） - 大规模预测：使用云计算（AWS, GCP）\n\n\n\n\n\n蛋白质 Foundation Models 正在重塑结构生物学和蛋白质工程：\n已实现: - 快速、高精度的结构预测（AlphaFold, ESMFold） - 零样本突变效应预测（ESM-1v） - 蛋白质序列表示学习（ESM-2） - 新蛋白质从头设计（ProtGPT2, RFdiffusion）\n进行中: - 蛋白质复合物预测优化 - 动态结构建模 - 闭环 AI 设计与实验验证\n未来展望: - 通用蛋白质智能：理解并设计任意蛋白质 - 个性化蛋白质组学：精准医疗应用 - 全自动蛋白质工程：AI + 机器人实验室\n蛋白质 Foundation Models 的成功证明了 AI 在基础科学中的巨大潜力，也为其他生物分子（DNA, RNA）的建模提供了范式。\n\n\n\n\n在学术论文中引用这些模型：\nAlphaFold2:\nJumper, J., Evans, R., Pritzel, A. et al. Highly accurate protein structure \nprediction with AlphaFold. Nature 596, 583–589 (2021).\nESM-2:\nLin, Z., Akin, H., Rao, R. et al. Evolutionary-scale prediction of atomic-level \nprotein structure with a language model. Science 379, 1123-1130 (2023).\nProtGPT2:\nFerruz, N., Schmidt, S. & Höcker, B. ProtGPT2 is a deep unsupervised language \nmodel for protein design. Nat Commun 13, 4348 (2022).\n\n\n\n\n\nAI4S 专题主页\nDNA Foundation Models\nRNA Foundation Models\nAI4Drug\n虚拟细胞\n学习路线\n\n\n\n\n\n感谢以下团队的开源贡献： - DeepMind（AlphaFold） - Meta AI（ESM） - David Baker Lab（RoseTTAFold, RFdiffusion） - 所有开源社区贡献者\n\n更新时间：2026-09-29",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "蛋白质 Foundation Models"
+    ]
+  },
+  {
+    "objectID": "AI4S/foundation-models-protein.html#蛋白质的复杂性",
+    "href": "AI4S/foundation-models-protein.html#蛋白质的复杂性",
+    "title": "蛋白质 Foundation Models",
+    "section": "",
+    "text": "蛋白质的层次结构:\n\n一级结构（Primary Structure）\n\n氨基酸序列\n20 种标准氨基酸\n序列长度：数十到数千个残基\n\n二级结构（Secondary Structure）\n\nα-螺旋（Alpha Helix）\nβ-折叠（Beta Sheet）\n无规卷曲（Coil/Loop）\n\n三级结构（Tertiary Structure）\n\n完整的三维折叠\n由疏水作用、氢键、二硫键等稳定\n决定蛋白质功能\n\n四级结构（Quaternary Structure）\n\n多个亚基组装\n蛋白质复合物\n\n\n\n\n\n\n核心原理: 蛋白质的三维结构由其氨基酸序列唯一决定。\n这一定理为从序列预测结构提供了理论基础，也是 AlphaFold 等模型的科学依据。\n\n\n\n\n挑战: 1. 蛋白质空间巨大: 100 个氨基酸的蛋白质有 20^100 种可能序列 2. 结构预测困难: 实验方法（X-ray、Cryo-EM、NMR）耗时耗力 3. 功能注释稀疏: 已知功能的蛋白质仅占很小比例 4. 进化信息: 同源蛋白质的变异模式包含功能约束\nFoundation Models 的优势: - 学习进化保守性和变异耐受性 - 从序列直接预测结构（快速、低成本） - 零样本功能预测和迁移学习 - 指导蛋白质工程和药物设计",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "蛋白质 Foundation Models"
+    ]
+  },
+  {
+    "objectID": "AI4S/foundation-models-protein.html#序列模型",
+    "href": "AI4S/foundation-models-protein.html#序列模型",
+    "title": "蛋白质 Foundation Models",
+    "section": "",
+    "text": "架构: Transformer encoder\n训练数据: - UniRef50（2.5 千万蛋白质序列）\n预训练任务: Masked Language Modeling（MLM）\n模型规模: 650M 参数\n\n\n\n\n突破: 将模型规模扩展到 150B 参数\n训练数据: - UniRef（2.5 亿蛋白质序列）\n模型版本: - ESM2-8M (8M 参数) - ESM2-35M - ESM2-150M - ESM2-650M - ESM2-3B - ESM2-15B\n关键发现: - 650M 参数版本性能最优（更大模型反而性能下降） - 学习到的表示与蛋白质结构高度相关 - 零样本迁移能力强\n下游任务: - 蛋白质结构预测（ESMFold） - 蛋白质功能预测 - 突变效应预测 - 蛋白质-蛋白质相互作用预测\n代码示例:\nimport torch\nimport esm\n\n# 加载 ESM-2 模型\nmodel, alphabet = esm.pretrained.esm2_t33_650M_UR50D()\nbatch_converter = alphabet.get_batch_converter()\nmodel.eval()\n\n# 蛋白质序列\ndata = [\n    (\"protein1\", \"MKTAYIAKQRQISFVKSHFSRQ\"),\n    (\"protein2\", \"MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGR\"),\n]\n\n# 准备批次\nbatch_labels, batch_strs, batch_tokens = batch_converter(data)\n\n# 提取特征\nwith torch.no_grad():\n    results = model(batch_tokens, repr_layers=[33], return_contacts=True)\n\n# Token 嵌入（每个残基）\ntoken_embeddings = results[\"representations\"][33]\n\n# 序列嵌入（整个蛋白质）\nsequence_embeddings = token_embeddings.mean(dim=1)\n\n# 接触图预测\ncontacts = results[\"contacts\"]\n\nprint(f\"Token 嵌入形状: {token_embeddings.shape}\")\nprint(f\"序列嵌入形状: {sequence_embeddings.shape}\")\nprint(f\"接触图形状: {contacts.shape}\")\n论文: Lin, Z. et al. (2023). Evolutionary-scale prediction of atomic-level protein structure with a language model. Science, 379(6637), 1123-1130.\n\n\n\n\n\n架构: GPT-2（生成式）\n训练数据: - UniRef50（5000 万蛋白质序列）\n预训练任务: - 自回归语言建模（Next Token Prediction）\n特点: - 生成模型: 可以从头生成新的蛋白质序列 - 学习蛋白质序列的概率分布\n应用: - De novo 蛋白质设计 - 序列完成与优化 - 蛋白质变体生成\n代码示例:\nfrom transformers import pipeline\n\n# 加载 ProtGPT2\ngenerator = pipeline('text-generation', model=\"nferruz/ProtGPT2\")\n\n# 从提示序列生成蛋白质\nseed_sequence = \"MKTAYIA\"\ngenerated = generator(seed_sequence, max_length=100, do_sample=True)\n\nprint(f\"生成的蛋白质序列: {generated[0]['generated_text']}\")\n论文: Ferruz, N. et al. (2022). ProtGPT2 is a deep unsupervised language model for protein design. Nature Communications, 13, 4348.\n\n\n\n\n架构: BERT\n特点: 整合序列和 GO（Gene Ontology）注释\n训练数据: - UniRef90 + SwissProt GO 注释\n预训练任务: - MLM - GO 注释预测\n优势: 明确学习功能信息\n\n\n\n\n架构: 大规模 Transformer（最大 1.5B 参数）\n训练数据: - UniRef100 + Pfam + 元基因组数据 - 数亿蛋白质序列\n特点: - 多语言蛋白质模型（跨物种） - 规模化提升性能\n\n\n\n\n架构: Transformer decoder\n训练数据: - UniRef90 + 条件标签（蛋白质家族、物种）\n特点: - 条件生成：根据蛋白质家族生成序列 - ProGen2: 扩展到 6.4B 参数\n应用: - 蛋白质家族特异性设计 - 酶工程",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "蛋白质 Foundation Models"
+    ]
+  },
+  {
+    "objectID": "AI4S/foundation-models-protein.html#结构模型",
+    "href": "AI4S/foundation-models-protein.html#结构模型",
+    "title": "蛋白质 Foundation Models",
+    "section": "",
+    "text": "突破性意义: 解决了蛋白质结构预测这一 50 年难题\n架构: - Evoformer: 处理多序列比对（MSA）和配对表示 - Structure Module: 生成三维坐标\n输入: - 目标序列 - MSA（多序列比对，来自同源搜索） - 模板结构（可选）\n训练数据: - PDB（约 17 万结构）\n关键技术: 1. MSA 表示: 编码进化信息 2. 配对表示: 残基-残基关系 3. Evoformer 模块: 联合更新 MSA 和配对表示 4. 结构模块: 迭代细化三维结构 5. 等变性: 保持旋转和平移不变性\n性能: - CASP14: 中位 GDT 92.4（接近实验精度） - 预测时间: 数分钟到数小时\n代码示例:\n# 使用 AlphaFold2 通过 ColabFold\nfrom colabfold import plot_protein\nfrom colabfold.batch import get_queries, run\n\n# 序列\nsequence = \"MKTAYIAKQRQISFVKSHFSRQ\"\n\n# 运行预测（简化示例）\n# results = run(sequence)\n\n# 可视化\n# plot_protein(results)\n影响: - AlphaFold Protein Structure Database: 2 亿+ 预测结构 - 加速结构生物学研究 - 推动药物设计、蛋白质工程\n论文: Jumper, J. et al. (2021). Highly accurate protein structure prediction with AlphaFold. Nature, 596, 583–589.\n\n\n\n\n扩展: 预测蛋白质-配体、蛋白质-核酸复合物\n输入: - 蛋白质序列 - 配体 SMILES - DNA/RNA 序列\n输出: 复合物三维结构\n应用: - 药物-靶点复合物预测 - 蛋白质-DNA 复合物（转录因子） - 蛋白质-RNA 复合物（RBP）\n性能: - 蛋白质-配体对接精度超越传统分子对接 - 革新结构药物设计\n论文: Abramson, J. et al. (2024). Accurate structure prediction of biomolecular interactions with AlphaFold 3. Nature, 630, 493–500.\n\n\n\n\n架构: 基于 ESM-2 语言模型 + 结构预测头\n关键特点: - 无需 MSA: 从单序列预测 - 速度快: 比 AlphaFold2 快 60 倍 - 端到端: 从序列直接到结构\n训练数据: - PDB + AlphaFold Database\n性能: - 高分辨率结构：接近 AlphaFold2 - 低同源性蛋白质：略逊于 AlphaFold2 - 适合大规模筛选\n代码示例:\nimport torch\nimport esm\n\n# 加载 ESMFold\nmodel = esm.pretrained.esmfold_v1()\nmodel = model.eval().cuda()\n\n# 序列\nsequence = \"MKTAYIAKQRQISFVKSHFSRQ\"\n\n# 预测结构\nwith torch.no_grad():\n    output = model.infer_pdb(sequence)\n\n# 保存 PDB\nwith open(\"predicted_structure.pdb\", \"w\") as f:\n    f.write(output)\n\nprint(\"结构已保存到 predicted_structure.pdb\")\n论文: Lin, Z. et al. (2023). Evolutionary-scale prediction of atomic-level protein structure with a language model. Science, 379(6637), 1123-1130.\n\n\n\n\n架构: Transformer\n特点: - 端到端训练 - 无需 MSA（单序列预测） - 使用蛋白质语言模型初始化\n性能: 与 AlphaFold2 相当，速度更快\n\n\n\n\n来源: 华盛顿大学 David Baker 实验室\n架构: 三轨网络（1D、2D、3D）\n特点: - 联合处理序列、距离、坐标 - 开源实现\n论文: Baek, M. et al. (2021). Accurate prediction of protein structures and interactions using a three-track neural network. Science, 373(6557), 871-876.",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "蛋白质 Foundation Models"
+    ]
+  },
+  {
+    "objectID": "AI4S/foundation-models-protein.html#应用场景",
+    "href": "AI4S/foundation-models-protein.html#应用场景",
+    "title": "蛋白质 Foundation Models",
+    "section": "",
+    "text": "任务: 预测氨基酸突变对蛋白质功能/稳定性的影响\n方法: - Zero-shot: 直接使用预训练模型 - 比较野生型和突变型的对数似然 - ESM-1v: 专门针对突变效应优化\n评估数据集: - ClinVar: 临床变异数据库 - DMS（Deep Mutational Scanning）: 高通量突变实验\n应用: - 疾病相关突变识别 - 蛋白质工程 - 抗体亲和力优化\n代码示例:\nimport torch\nimport esm\n\n# 加载 ESM-1v（变异效应模型）\nmodel, alphabet = esm.pretrained.esm1v_t33_650M_UR90S_1()\nbatch_converter = alphabet.get_batch_converter()\nmodel.eval()\n\n# 野生型序列\nwt_sequence = \"MKTAYIAKQRQISFVKSHFSRQ\"\n\n# 突变序列（K3A 突变）\nmut_sequence = \"MKTAYIAKQAQISFVKSHFSRQ\"\n\n# 准备批次\ndata = [\n    (\"WT\", wt_sequence),\n    (\"MUT\", mut_sequence),\n]\nbatch_labels, batch_strs, batch_tokens = batch_converter(data)\n\n# 计算对数似然\nwith torch.no_grad():\n    results = model(batch_tokens, repr_layers=[33])\n    logits = results[\"logits\"]\n    \n    # 计算序列对数似然\n    log_probs = torch.log_softmax(logits, dim=-1)\n    wt_ll = log_probs[0, 1:len(wt_sequence)+1, :].gather(-1, batch_tokens[0, 1:len(wt_sequence)+1].unsqueeze(-1)).sum()\n    mut_ll = log_probs[1, 1:len(mut_sequence)+1, :].gather(-1, batch_tokens[1, 1:len(mut_sequence)+1].unsqueeze(-1)).sum()\n    \n    # 突变效应评分（越负越有害）\n    effect_score = mut_ll - wt_ll\n\nprint(f\"突变效应评分: {effect_score.item():.3f}\")\n\n\n\n\n任务: 从序列预测蛋白质功能（GO term、EC number、细胞定位）\n方法: 1. 使用预训练模型提取特征 2. 在标注数据上训练分类器 3. 预测功能标签\n数据集: - SwissProt: 人工审核的蛋白质数据库（含 GO 注释） - CAFA（Critical Assessment of Function Annotation）: 功能预测竞赛\n代码示例:\nfrom transformers import AutoModel, AutoTokenizer\nimport torch.nn as nn\n\n# 加载预训练模型\ntokenizer = AutoTokenizer.from_pretrained(\"Rostlab/prot_bert\")\nmodel = AutoModel.from_pretrained(\"Rostlab/prot_bert\")\n\n# 功能预测分类器\nclass FunctionPredictor(nn.Module):\n    def __init__(self, protein_model, num_labels):\n        super().__init__()\n        self.protein_encoder = protein_model\n        self.classifier = nn.Linear(protein_model.config.hidden_size, num_labels)\n    \n    def forward(self, input_ids):\n        embeddings = self.protein_encoder(input_ids).last_hidden_state\n        pooled = embeddings[:, 0, :]  # [CLS] token\n        logits = self.classifier(pooled)\n        return logits\n\n# 实例化\npredictor = FunctionPredictor(model, num_labels=1000)  # 1000 个 GO terms\n\n# 预测（示例）\nsequence = \"M K T A Y I A K Q R Q I S F V K S H F S R Q\"\ninputs = tokenizer(sequence, return_tensors=\"pt\")\npredictions = predictor(inputs[\"input_ids\"])\n\n\n\n\n任务: 预测两个蛋白质是否相互作用\n方法: - 将两个蛋白质序列编码 - 计算相似性或使用分类器\n应用: - 构建蛋白质互作网络（PPI Network） - 药物靶点识别 - 信号通路研究\n\n\n\n\n任务: 从头设计新的蛋白质序列\n方法:\n生成式模型: - ProtGPT2, ProGen: 自回归生成 - 条件生成：指定蛋白质家族、功能\n结构引导设计: - AlphaFold + 优化 - RFdiffusion（结构扩散模型）\n应用: - 酶工程（提高催化活性） - 抗体设计（提高亲和力和特异性） - 新型蛋白质药物\n代码示例:\nfrom transformers import pipeline\n\n# 使用 ProtGPT2 生成蛋白质\ngenerator = pipeline('text-generation', model=\"nferruz/ProtGPT2\")\n\n# 生成属于特定家族的蛋白质\nprompt = \"MKTAYIA\"  # 种子序列\ngenerated_sequences = generator(\n    prompt, \n    max_length=200, \n    num_return_sequences=5,\n    do_sample=True,\n    temperature=0.8\n)\n\nfor i, seq in enumerate(generated_sequences):\n    print(f\"序列 {i+1}: {seq['generated_text']}\")\n\n\n\n\n任务: 优化抗体的亲和力、特异性、稳定性\n方法: - ESM-2 编码抗体序列 - 预测抗原结合区（CDR）突变效应 - 结构预测验证\n工具: - ABodyBuilder: 抗体结构预测 - ESM-IF: 逆向折叠（从结构生成序列）",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "蛋白质 Foundation Models"
+    ]
+  },
+  {
+    "objectID": "AI4S/foundation-models-protein.html#数据资源",
+    "href": "AI4S/foundation-models-protein.html#数据资源",
+    "title": "蛋白质 Foundation Models",
+    "section": "",
+    "text": "UniProt: 综合蛋白质数据库（2 亿+ 序列）\nUniRef50/90/100: 聚类减少冗余\nPfam: 蛋白质家族数据库\nSwissProt: 人工审核的高质量蛋白质数据\n\n\n\n\n\nPDB（Protein Data Bank）: 实验解析结构（20 万+）\nAlphaFold Database: AI 预测结构（2 亿+）\nCATH/SCOP: 结构分类数据库\n\n\n\n\n\nGene Ontology (GO): 基因/蛋白质功能本体\nInterPro: 蛋白质家族和域注释\nKEGG: 代谢通路数据库",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "蛋白质 Foundation Models"
+    ]
+  },
+  {
+    "objectID": "AI4S/foundation-models-protein.html#模型比较",
+    "href": "AI4S/foundation-models-protein.html#模型比较",
+    "title": "蛋白质 Foundation Models",
+    "section": "",
+    "text": "模型\n架构\n参数量\n训练数据\n类型\n特点\n\n\n\n\nESM-1b\nTransformer\n650M\nUniRef50 (25M)\n掩码预测\n经典，性能优秀\n\n\nESM-2\nTransformer\n8M-15B\nUniRef (250M)\n掩码预测\n多规模，650M 最优\n\n\nProtGPT2\nGPT-2\n738M\nUniRef50 (50M)\n生成式\n可生成新序列\n\n\nProGen2\nTransformer\n6.4B\nUniRef90 + 条件\n生成式\n条件生成\n\n\nAnkh\nTransformer\n1.5B\nUniRef100 + 元基因组\n掩码预测\n大规模\n\n\n\n\n\n\n\n\n\n模型\nMSA 需求\n速度\n精度\n特点\n\n\n\n\nAlphaFold2\n是\n慢（小时）\n极高\nSOTA，需 MSA\n\n\nAlphaFold3\n是\n慢\n极高\n复合物预测\n\n\nESMFold\n否\n快（秒-分钟）\n高\n单序列，快速\n\n\nOmegaFold\n否\n快\n高\n端到端\n\n\nRoseTTAFold\n是\n中\n高\n开源",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "蛋白质 Foundation Models"
+    ]
+  },
+  {
+    "objectID": "AI4S/foundation-models-protein.html#评估指标",
+    "href": "AI4S/foundation-models-protein.html#评估指标",
+    "title": "蛋白质 Foundation Models",
+    "section": "",
+    "text": "GDT（Global Distance Test）: 结构相似度\nTM-score: 模板建模评分（&gt;0.5 为相同折叠）\nRMSD（Root Mean Square Deviation）: 原子位置偏差\nlDDT（Local Distance Difference Test）: 局部结构精度\n\n\n\n\n\nAUROC / AUPRC: 功能分类性能\nF-max: 最大 F1 score（CAFA 评估）\n\n\n\n\n\nSpearman 相关系数: 与实验数据相关性\nAUC: 分类致病/良性变异",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "蛋白质 Foundation Models"
+    ]
+  },
+  {
+    "objectID": "AI4S/foundation-models-protein.html#实践工具",
+    "href": "AI4S/foundation-models-protein.html#实践工具",
+    "title": "蛋白质 Foundation Models",
+    "section": "",
+    "text": "GitHub: ESM\n# 安装\npip install fair-esm\n\n# 提取嵌入\npython scripts/extract.py esm2_t33_650M_UR50D protein.fasta output --repr_layers 33 --include mean\n\n\n\n\nAlphaFold Colab: 在线预测（免费 GPU）\nColabFold: 加速版本，集成 MMseqs2 快速 MSA\nLocalColabFold: 本地部署\n\n\n\n\nimport esm\n\n# 加载模型\nmodel = esm.pretrained.esmfold_v1()\nmodel = model.eval().cuda()\n\n# 预测结构\nwith torch.no_grad():\n    output = model.infer_pdb(\"MKTAYIAKQRQISFVKSHFSRQ\")\n\n# 保存 PDB\nwith open(\"structure.pdb\", \"w\") as f:\n    f.write(output)",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "蛋白质 Foundation Models"
+    ]
+  },
+  {
+    "objectID": "AI4S/foundation-models-protein.html#前沿技术",
+    "href": "AI4S/foundation-models-protein.html#前沿技术",
+    "title": "蛋白质 Foundation Models",
+    "section": "",
+    "text": "任务: 从三维结构设计氨基酸序列\n传统流程: 序列 → 结构 逆向折叠: 结构 → 序列\n应用: - 固定结构骨架，设计新序列 - 蛋白质稳定性优化 - 功能保持的序列多样化\n模型:\nESM-IF（Inverse Folding）: - 基于 ESM 架构 - 输入：蛋白质骨架坐标 - 输出：氨基酸序列\nProteinMPNN: - 消息传递神经网络 - 考虑几何约束 - 高精度序列设计\n代码示例:\n# ESM-IF 逆向折叠示例\nimport esm.inverse_folding\n\n# 加载模型\nmodel, alphabet = esm.pretrained.esm_if1_gvp4_t16_142M_UR50()\nmodel.eval()\n\n# 输入：蛋白质结构（坐标）\ncoords, seq = esm.inverse_folding.util.load_coords(\"protein.pdb\", \"A\")\n\n# 设计序列\nll, seq = esm.inverse_folding.util.score_sequence(\n    model, alphabet, coords, seq\n)\n\nprint(f\"设计的序列: {seq}\")\nprint(f\"对数似然: {ll}\")\n\n\n\n\nRFdiffusion（2023）:\n原理: - 使用扩散模型生成蛋白质骨架 - 从噪声逐步去噪得到蛋白质结构\n应用: - De novo 蛋白质设计 - 结合位点设计（针对特定配体/抗原） - 蛋白质支架设计\n流程: 1. RFdiffusion 生成骨架 2. ProteinMPNN 设计序列 3. AlphaFold2 验证结构\n成果: - 设计出实验验证的新型蛋白质 - 发表于 Nature (2023)\n\n\n\n\n整合多种信息: - 序列 + 结构 - 序列 + 功能注释 - 序列 + 文本描述\nProtST（Protein Structure-Text）: - 蛋白质结构与文本描述对齐 - 类似 CLIP 的对比学习 - 支持文本查询蛋白质\n应用: - “找到所有激酶结构” - “检索与免疫相关的蛋白质”\n\n\n\n\n挑战: 许多蛋白质家族标注数据稀少\n方法: - 元学习（Meta-Learning）: 学习快速适应新任务 - Few-shot Learning: 从少量样本学习 - 迁移学习: 从大家族迁移到小家族\n\n\n\n\n限制: AlphaFold 预测静态结构\n挑战: - 蛋白质结构动态变化 - 构象转换影响功能\n方向: - 预测蛋白质构象集合 - 模拟蛋白质折叠路径 - 整合分子动力学（MD）模拟\nAlphaFold-Multimer: 预测蛋白质复合物的多个构象",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "蛋白质 Foundation Models"
+    ]
+  },
+  {
+    "objectID": "AI4S/foundation-models-protein.html#成功案例",
+    "href": "AI4S/foundation-models-protein.html#成功案例",
+    "title": "蛋白质 Foundation Models",
+    "section": "",
+    "text": "成果: - 预测 2 亿+ 蛋白质结构 - 覆盖人类全部约 2 万个蛋白质 - 开放下载，加速全球研究\n影响: - 结构生物学家可直接获取预测结构 - 加速药物靶点研究 - 推动罕见病研究（孤儿蛋白结构）\n\n\n\n\n案例: David Baker 实验室（华盛顿大学）\n成果: - 设计出自然界不存在的蛋白质 - 实验验证结构与设计一致 - 具有预定功能（如结合特定分子）\n应用: - 新型酶设计 - 纳米材料 - 生物传感器\n\n\n\n\n案例: 多家生物技术公司使用 ESM/AlphaFold\n流程: 1. ESM-2 预测抗体 CDR 区突变效应 2. AlphaFold2 预测抗体-抗原复合物结构 3. 筛选高亲和力候选抗体 4. 实验验证\n优势: - 减少实验轮次 - 提高成功率 - 加速研发周期\n\n\n\n\n应用: - AlphaFold2 预测 SARS-CoV-2 蛋白质结构 - 辅助药物设计（主蛋白酶抑制剂） - 抗体中和机制研究",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "蛋白质 Foundation Models"
+    ]
+  },
+  {
+    "objectID": "AI4S/foundation-models-protein.html#挑战与未来方向",
+    "href": "AI4S/foundation-models-protein.html#挑战与未来方向",
+    "title": "蛋白质 Foundation Models",
+    "section": "",
+    "text": "内在无序蛋白（IDPs）\n\n没有固定三维结构\nAlphaFold 难以建模\n\n蛋白质动态性\n\n静态结构预测为主\n构象变化、蛋白质折叠路径\n\n复合物预测\n\nAlphaFold-Multimer 性能有限\n瞬时相互作用难预测\n\n实验验证瓶颈\n\nAI 设计的蛋白质需实验验证\n高通量实验成本仍高\n\n可解释性\n\n模型决策机制不透明\n难以提取生物学规律\n\n\n\n\n\n\n\n统一序列-结构-功能模型\n\n端到端学习\n多任务联合训练\n\n蛋白质生成模型\n\n从功能需求生成序列\n可控生成（指定折叠、功能）\n\n闭环蛋白质设计\n\nAI 设计 → 高通量实验 → 反馈 → 迭代优化\n自动化实验室（Robot Scientist）\n\n跨模态学习\n\n整合序列、结构、基因表达、文献\n知识图谱与蛋白质模型融合\n\n个性化蛋白质组学\n\n整合个体变异\n预测疾病相关蛋白质变化\n\n进化建模\n\n预测蛋白质进化轨迹\n理解适应性变异",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "蛋白质 Foundation Models"
+    ]
+  },
+  {
+    "objectID": "AI4S/foundation-models-protein.html#学习资源",
+    "href": "AI4S/foundation-models-protein.html#学习资源",
+    "title": "蛋白质 Foundation Models",
+    "section": "",
+    "text": "经典论文: - Jumper, J. et al. (2021). AlphaFold. Nature. - Lin, Z. et al. (2023). ESM-2 & ESMFold. Science. - Ferruz, N. et al. (2022). ProtGPT2. Nature Communications. - Watson, J. et al. (2023). De novo design by deep learning. Nature.\n综述: - Pearce, R. & Zhang, Y. (2021). Deep learning techniques have significantly impacted protein structure prediction. Nature Methods. - AlQuraishi, M. (2019). AlphaFold at CASP13. Bioinformatics.\n\n\n\n\n\nDeep Learning in Life Sciences (MIT): 深度学习在生命科学中的应用\nProtein Structure Prediction (Coursera): 蛋白质结构预测\nMachine Learning for Proteins (Stanford): 蛋白质机器学习\n\n\n\n\n\nAlphaFold: - AlphaFold Colab - ColabFold\nESM: - ESM GitHub - ESM Tutorial\nRoseTTAFold: - RoseTTAFold GitHub\n可视化: - PyMOL: 蛋白质结构可视化 - ChimeraX: UCSF 开发的分子可视化工具 - Mol*: 在线结构浏览器\n\n\n\n\n\n《Protein Structure Prediction》（Mohammed AlQuraishi 等）\n《Deep Learning for Protein Science》\n《Bioinformatics and Functional Genomics》（Jonathan Pevsner）\n\n\n\n\n\nCASP（Critical Assessment of Structure Prediction）: - 两年一次的蛋白质结构预测竞赛 - 评估最新方法性能\nCAFA（Critical Assessment of Function Annotation）: - 蛋白质功能预测竞赛",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "蛋白质 Foundation Models"
+    ]
+  },
+  {
+    "objectID": "AI4S/foundation-models-protein.html#实用建议",
+    "href": "AI4S/foundation-models-protein.html#实用建议",
+    "title": "蛋白质 Foundation Models",
+    "section": "",
+    "text": "场景 1: 快速结构预测 - 推荐：ESMFold - 原因：无需 MSA，秒级预测\n场景 2: 高精度结构预测 - 推荐：AlphaFold2（通过 ColabFold） - 原因：精度最高，MSA 搜索优化\n场景 3: 蛋白质复合物 - 推荐：AlphaFold-Multimer 或 AlphaFold3 - 原因：专门优化复合物预测\n场景 4: 突变效应预测 - 推荐：ESM-1v - 原因：专门训练，零样本预测\n场景 5: 蛋白质设计 - 推荐：ProtGPT2 或 ProGen2 - 原因：生成式模型\n场景 6: 功能预测 - 推荐：ESM-2 + 微调 - 原因：通用表示，迁移能力强\n\n\n\n\n\n\n\n模型\nGPU 需求\n时间（100 aa 蛋白质）\n\n\n\n\nESM-2 (650M)\n单 GPU (16GB)\n&lt; 1 秒\n\n\nESMFold\n单 GPU (16GB)\n数秒\n\n\nAlphaFold2\n单 GPU (16GB)\n数分钟到数小时\n\n\nAlphaFold-Multimer\n单 GPU (40GB)\n数小时\n\n\n\n建议: - 本地有 GPU：安装 ESMFold 或 ColabFold - 无 GPU：使用 Google Colab（免费 T4 GPU） - 大规模预测：使用云计算（AWS, GCP）",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "蛋白质 Foundation Models"
+    ]
+  },
+  {
+    "objectID": "AI4S/foundation-models-protein.html#总结",
+    "href": "AI4S/foundation-models-protein.html#总结",
+    "title": "蛋白质 Foundation Models",
+    "section": "",
+    "text": "蛋白质 Foundation Models 正在重塑结构生物学和蛋白质工程：\n已实现: - 快速、高精度的结构预测（AlphaFold, ESMFold） - 零样本突变效应预测（ESM-1v） - 蛋白质序列表示学习（ESM-2） - 新蛋白质从头设计（ProtGPT2, RFdiffusion）\n进行中: - 蛋白质复合物预测优化 - 动态结构建模 - 闭环 AI 设计与实验验证\n未来展望: - 通用蛋白质智能：理解并设计任意蛋白质 - 个性化蛋白质组学：精准医疗应用 - 全自动蛋白质工程：AI + 机器人实验室\n蛋白质 Foundation Models 的成功证明了 AI 在基础科学中的巨大潜力，也为其他生物分子（DNA, RNA）的建模提供了范式。",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "蛋白质 Foundation Models"
+    ]
+  },
+  {
+    "objectID": "AI4S/foundation-models-protein.html#引用",
+    "href": "AI4S/foundation-models-protein.html#引用",
+    "title": "蛋白质 Foundation Models",
+    "section": "",
+    "text": "在学术论文中引用这些模型：\nAlphaFold2:\nJumper, J., Evans, R., Pritzel, A. et al. Highly accurate protein structure \nprediction with AlphaFold. Nature 596, 583–589 (2021).\nESM-2:\nLin, Z., Akin, H., Rao, R. et al. Evolutionary-scale prediction of atomic-level \nprotein structure with a language model. Science 379, 1123-1130 (2023).\nProtGPT2:\nFerruz, N., Schmidt, S. & Höcker, B. ProtGPT2 is a deep unsupervised language \nmodel for protein design. Nat Commun 13, 4348 (2022).",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "蛋白质 Foundation Models"
+    ]
+  },
+  {
+    "objectID": "AI4S/foundation-models-protein.html#相关链接",
+    "href": "AI4S/foundation-models-protein.html#相关链接",
+    "title": "蛋白质 Foundation Models",
+    "section": "",
+    "text": "AI4S 专题主页\nDNA Foundation Models\nRNA Foundation Models\nAI4Drug\n虚拟细胞\n学习路线",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "蛋白质 Foundation Models"
+    ]
+  },
+  {
+    "objectID": "AI4S/foundation-models-protein.html#致谢",
+    "href": "AI4S/foundation-models-protein.html#致谢",
+    "title": "蛋白质 Foundation Models",
+    "section": "",
+    "text": "感谢以下团队的开源贡献： - DeepMind（AlphaFold） - Meta AI（ESM） - David Baker Lab（RoseTTAFold, RFdiffusion） - 所有开源社区贡献者\n\n更新时间：2026-09-29",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "蛋白质 Foundation Models"
+    ]
+  },
+  {
+    "objectID": "AI4S/index.html",
+    "href": "AI4S/index.html",
+    "title": "AI4Science 专题",
+    "section": "",
+    "text": "AI4Science（AI for Science）代表人工智能技术在科学研究中的深度应用，正在从根本上改变科学发现的范式。在生物信息学领域，AI 技术已经从辅助工具发展为核心驱动力，推动着从基因组学、蛋白质组学到药物设计、疾病预测的全方位创新。\n\n\n\n\n\n基础模型是在大规模数据上预训练的深度学习模型，能够迁移到多种下游任务。在生物信息学中，针对不同生物分子层次已经涌现出一系列强大的基础模型。\n\n\nDNA 是生命的遗传蓝图，包含基因编码、调控元件、非编码区等复杂信息。DNA 基础模型学习序列中的语法和语义，能够预测基因功能、调控元件、变异效应等。\n代表性模型: - DNABERT: 基于 BERT 架构的 DNA 序列预训练模型 - Nucleotide Transformer: 多物种基因组预训练的 Transformer 模型 - HyenaDNA: 基于长程卷积的超长 DNA 序列模型（最长 100 万 bp） - Enformer: 预测染色质可及性和基因表达的序列模型\n应用场景: - 启动子、增强子等调控元件识别 - 剪接位点预测 - 变异致病性评估 - 表观遗传修饰预测\n\n\n\n\nRNA 在转录调控、剪接、翻译等过程中发挥关键作用。RNA 基础模型捕捉序列和结构特征，预测 RNA 功能、稳定性、相互作用等。\n代表性模型: - RNA-FM: 通用 RNA 序列预训练模型 - RNABert: RNA 序列的 BERT 模型 - SpliceBERT: 专注于剪接预测的预训练模型 - RNA-MSM: 多物种 RNA 序列模型\n应用场景: - mRNA 稳定性预测 - 剪接模式预测 - RNA 二级结构预测 - RNA-蛋白质相互作用预测 - 单细胞 RNA 测序数据分析\n\n\n\n\n蛋白质是生命功能的执行者，其序列-结构-功能关系极其复杂。蛋白质基础模型在序列和结构层面学习蛋白质的表示，实现了从结构预测到功能注释的多种任务。\n代表性模型:\n序列模型: - ESM-2: Meta 的蛋白质语言模型（650M 参数版本性能最强） - ProtGPT2: 生成式蛋白质语言模型 - ProteinBERT: 整合序列和 GO 注释的预训练模型 - Ankh: 大规模蛋白质语言模型\n结构模型: - AlphaFold2: 革命性的蛋白质结构预测模型 - AlphaFold3: 预测蛋白质-配体、蛋白质-核酸复合物结构 - ESMFold: 基于 ESM-2 的快速结构预测（比 AlphaFold2 快 60 倍） - OmegaFold: 端到端结构预测，无需 MSA\n应用场景: - 蛋白质结构预测 - 蛋白质功能注释 - 突变效应预测 - 蛋白质-蛋白质相互作用预测 - 抗体设计 - 酶工程\n\n\n\n\n\nAI4Drug 利用机器学习和深度学习技术加速药物研发的各个环节，从靶点发现、虚拟筛选、分子生成到临床试验优化，全面提升研发效率并降低成本。\n核心技术: - 分子表示学习: SMILES、分子图、3D 构象 - 虚拟筛选: 分子对接、深度学习亲和力预测 - 分子生成: VAE、GAN、强化学习、扩散模型 - ADMET 预测: 药代动力学和毒性预测 - 逆合成分析: AI 规划合成路线\n代表性工具: - AlphaFold3: 预测蛋白质-配体复合物结构 - DiffDock: 基于扩散模型的分子对接 - Chemprop: 分子性质预测 - DeepChem: 深度学习化学工具箱 - RDKit: 化学信息学核心库\n成功案例: - Insilico Medicine 在 18 个月内设计出 IPF 候选药物（传统方法需 3-5 年） - BenevolentAI 发现巴瑞替尼治疗 COVID-19 - Atomwise 快速筛选埃博拉病毒抑制剂\n\n\n\n\n虚拟细胞是通过计算模型重建细胞完整行为的前沿研究方向，整合多尺度生物学数据（从分子到细胞器再到整个细胞），构建可预测、可模拟的细胞”数字孪生”。\n核心技术: - 基于约束的建模: 通量平衡分析（FBA）用于代谢网络 - 常微分方程建模: 信号通路动力学模拟 - 随机模拟: Gillespie 算法模拟基因表达噪声 - 多尺度建模: 整合原子级到细胞级的多层次模型 - 机器学习驱动: 从单细胞数据学习细胞状态转换\n主要应用: - 代谢工程：优化微生物生产有价值化合物 - 药物靶点识别：虚拟敲除实验预测基因功能 - 细胞命运预测：从干细胞分化轨迹推断 - 合成生物学：设计基因回路和最小基因组 - 疾病建模：整合患者数据模拟疾病机制\n重要工具: - COBRApy: 代谢网络约束建模 - VCell: 多尺度细胞建模平台 - CellOracle: 基因调控网络与细胞命运预测 - PhysiCell: 多细胞系统 Agent-based 建模\n前沿进展: - AI + 物理模型混合建模 - 单细胞多模态虚拟细胞 - 细胞群体与微环境互作 - 个性化虚拟细胞用于精准医疗\n\n\n\n\n\n\n\n生物医学数据以指数级速度增长：\n\n人类基因组计划（2003）：13 年，30 亿美元\n现在测序一个人类基因组：数小时，数百美元\n单细胞测序可在一次实验中产生数百万细胞的数据\n蛋白质结构数据库（PDB）：20 万+ 结构\nAlphaFold 预测：2 亿+ 蛋白质结构\n\n传统方法无法处理如此规模的数据，AI 成为必需。\n\n\n\n\n生物系统具有多层次、非线性、动态的复杂性：\n\n基因组包含复杂的调控语法\n蛋白质结构由序列决定但预测困难\n细胞是高度互联的分子网络\n疾病由多基因、多环境因素共同作用\n\nAI 能够学习高维数据中的复杂模式，发现隐藏规律。\n\n\n\n\nAI 极大缩短从假设到验证的周期：\n\nAlphaFold2 在几分钟内预测结构（实验方法需数月至数年）\n虚拟筛选在数天内评估数百万化合物（实验筛选不可行）\n单细胞数据分析从数周缩短到数小时\nAI 辅助实验设计减少试错次数\n\n\n\n\n\nAI 正在改变科学研究的方式：\n\n数据驱动发现: 从数据中挖掘未知模式\n假设生成: AI 提出人类未想到的假设\n闭环优化: AI 设计实验、分析结果、迭代优化\n跨学科融合: 计算机科学、数学、生物学深度交叉\n\n\n\n\n\n\n\n\n数学与统计: - 线性代数、概率论、统计推断 - 信息论、优化理论\n编程能力: - Python（NumPy, Pandas, Matplotlib） - R（生物信息学统计分析） - Linux 基础与命令行工具\n生物学基础: - 分子生物学中心法则 - 基因组学、转录组学基础 - 蛋白质结构与功能\n\n\n\n\n机器学习: - 监督学习（分类、回归） - 无监督学习（聚类、降维） - 特征工程与模型评估\n深度学习: - 神经网络基础（MLP、CNN、RNN） - PyTorch 或 TensorFlow - Transformer 架构\n生物信息学工具: - 序列比对（BLAST, BWA） - 基因组注释（ANNOVAR） - 单细胞分析（Scanpy, Seurat） - 结构预测（AlphaFold）\n\n\n\n\n专业方向选择: - 基因组学 AI：变异解读、调控元件预测 - 蛋白质组学 AI：结构预测、功能注释 - 药物设计 AI：虚拟筛选、分子生成 - 单细胞分析：轨迹推断、细胞类型注释 - 系统生物学：网络建模、通路分析\n前沿技术: - 图神经网络（GNN） - 注意力机制与 Transformer - 生成模型（VAE、GAN、扩散模型） - 强化学习 - 迁移学习与预训练模型\n\n\n\n\n\n\n\n蛋白质: - UniProt: 蛋白质序列与功能注释 - PDB: 蛋白质结构 - AlphaFold Protein Structure Database: 2 亿+ 预测结构\n基因组: - ENCODE: 人类基因组功能元件 - gnomAD: 人群变异数据库 - 1000 Genomes: 人类基因组多样性\n单细胞: - Human Cell Atlas: 人类细胞图谱 - CZ CELLxGENE: 单细胞数据集合\n药物: - ChEMBL: 生物活性化合物 - PubChem: 化学结构数据库 - DrugBank: 药物信息\n\n\n\n\n深度学习: - PyTorch: 研究首选深度学习框架 - TensorFlow: 工业部署优势 - Hugging Face Transformers: 预训练模型库\n生物信息学: - Biopython: Python 生物信息学工具 - Scanpy: 单细胞数据分析 - DeepChem: 深度学习化学 - PyTorch Geometric: 图神经网络\n可视化: - Matplotlib / Seaborn: Python 绘图 - PyMOL: 分子结构可视化 - UMAP / t-SNE: 高维数据可视化\n\n\n\n\n\nDeep Learning Specialization (Coursera, Andrew Ng): 深度学习入门\nCS229: Machine Learning (Stanford): 机器学习经典课程\nDeep Learning for the Life Sciences (MIT): 生命科学深度学习\nBioinformatics Specialization (UCSD, Coursera): 生物信息学系统课程\n\n\n\n\n\n\n《Deep Learning》（Ian Goodfellow）：深度学习圣经\n《Bioinformatics and Functional Genomics》（Jonathan Pevsner）：生物信息学教科书\n《Deep Learning for the Life Sciences》（O’Reilly）：AI4Science 专著\n《Artificial Intelligence in Drug Design》（Springer）：AI 药物设计\n\n\n\n\n\n\n\n\n\nFoundation Models 在更多组学数据上的应用\n多模态模型整合序列、结构、功能数据\nAI 辅助实验设计成为标准流程\n虚拟筛选与分子生成工具成熟商业化\n\n\n\n\n\n\n全细胞模拟达到实用水平\nAI 驱动的药物进入临床后期\n个性化医疗中的 AI 诊断与治疗方案\n自动化实验室与 AI 闭环优化\n\n\n\n\n\n\n通用生物学 AI：跨物种、跨组学的统一模型\n完全计算机设计的生物系统（合成生物学）\nAI 科学家：自主提出假设、设计实验、发现新知识\n生物-计算接口：将生物系统与 AI 深度融合\n\n\n\n\n\n\n\n\n\n基因组数据的敏感性\n患者数据保护\n知情同意与数据共享\n\n\n\n\n\n\n黑盒模型难以解释\n生物学机制的可解读性\n监管机构对 AI 模型的认证\n\n\n\n\n\n\n训练数据的种族、性别偏见\n模型在不同人群中的泛化能力\n医疗资源的公平获取\n\n\n\n\n\n\n生物安全风险（病原体设计）\n双重用途技术的监管\nAI 生成生物制剂的管控\n\n\n\n\n\n\n\nDNA Foundation Models\nRNA Foundation Models\n蛋白质 Foundation Models\nAI4Drug 概述\n虚拟细胞\n学习路线\n学习资源\n常用工具\n\n\n\n\n\n\nJumper, J. et al. (2021). Highly accurate protein structure prediction with AlphaFold. Nature, 596, 583–589.\nLin, Z. et al. (2023). Evolutionary-scale prediction of atomic-level protein structure with a language model. Science, 379(6637), 1123-1130.\nZhou, G. et al. (2023). Structure-informed language models are protein designers. ICML 2023.\nSchneider, P. et al. (2020). Rethinking drug design in the artificial intelligence era. Nature Reviews Drug Discovery, 19, 353–364.\nKarr, J. R. et al. (2012). A whole-cell computational model predicts phenotype from genotype. Cell, 150(2), 389-401.\n\n\n更新日期: 2026-09-29\n欢迎通过 GitHub Issues 提出问题或建议！",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "AI4S 概述"
+    ]
+  },
+  {
+    "objectID": "AI4S/index.html#专题内容",
+    "href": "AI4S/index.html#专题内容",
+    "title": "AI4Science 专题",
+    "section": "",
+    "text": "基础模型是在大规模数据上预训练的深度学习模型，能够迁移到多种下游任务。在生物信息学中，针对不同生物分子层次已经涌现出一系列强大的基础模型。\n\n\nDNA 是生命的遗传蓝图，包含基因编码、调控元件、非编码区等复杂信息。DNA 基础模型学习序列中的语法和语义，能够预测基因功能、调控元件、变异效应等。\n代表性模型: - DNABERT: 基于 BERT 架构的 DNA 序列预训练模型 - Nucleotide Transformer: 多物种基因组预训练的 Transformer 模型 - HyenaDNA: 基于长程卷积的超长 DNA 序列模型（最长 100 万 bp） - Enformer: 预测染色质可及性和基因表达的序列模型\n应用场景: - 启动子、增强子等调控元件识别 - 剪接位点预测 - 变异致病性评估 - 表观遗传修饰预测\n\n\n\n\nRNA 在转录调控、剪接、翻译等过程中发挥关键作用。RNA 基础模型捕捉序列和结构特征，预测 RNA 功能、稳定性、相互作用等。\n代表性模型: - RNA-FM: 通用 RNA 序列预训练模型 - RNABert: RNA 序列的 BERT 模型 - SpliceBERT: 专注于剪接预测的预训练模型 - RNA-MSM: 多物种 RNA 序列模型\n应用场景: - mRNA 稳定性预测 - 剪接模式预测 - RNA 二级结构预测 - RNA-蛋白质相互作用预测 - 单细胞 RNA 测序数据分析\n\n\n\n\n蛋白质是生命功能的执行者，其序列-结构-功能关系极其复杂。蛋白质基础模型在序列和结构层面学习蛋白质的表示，实现了从结构预测到功能注释的多种任务。\n代表性模型:\n序列模型: - ESM-2: Meta 的蛋白质语言模型（650M 参数版本性能最强） - ProtGPT2: 生成式蛋白质语言模型 - ProteinBERT: 整合序列和 GO 注释的预训练模型 - Ankh: 大规模蛋白质语言模型\n结构模型: - AlphaFold2: 革命性的蛋白质结构预测模型 - AlphaFold3: 预测蛋白质-配体、蛋白质-核酸复合物结构 - ESMFold: 基于 ESM-2 的快速结构预测（比 AlphaFold2 快 60 倍） - OmegaFold: 端到端结构预测，无需 MSA\n应用场景: - 蛋白质结构预测 - 蛋白质功能注释 - 突变效应预测 - 蛋白质-蛋白质相互作用预测 - 抗体设计 - 酶工程\n\n\n\n\n\nAI4Drug 利用机器学习和深度学习技术加速药物研发的各个环节，从靶点发现、虚拟筛选、分子生成到临床试验优化，全面提升研发效率并降低成本。\n核心技术: - 分子表示学习: SMILES、分子图、3D 构象 - 虚拟筛选: 分子对接、深度学习亲和力预测 - 分子生成: VAE、GAN、强化学习、扩散模型 - ADMET 预测: 药代动力学和毒性预测 - 逆合成分析: AI 规划合成路线\n代表性工具: - AlphaFold3: 预测蛋白质-配体复合物结构 - DiffDock: 基于扩散模型的分子对接 - Chemprop: 分子性质预测 - DeepChem: 深度学习化学工具箱 - RDKit: 化学信息学核心库\n成功案例: - Insilico Medicine 在 18 个月内设计出 IPF 候选药物（传统方法需 3-5 年） - BenevolentAI 发现巴瑞替尼治疗 COVID-19 - Atomwise 快速筛选埃博拉病毒抑制剂\n\n\n\n\n虚拟细胞是通过计算模型重建细胞完整行为的前沿研究方向，整合多尺度生物学数据（从分子到细胞器再到整个细胞），构建可预测、可模拟的细胞”数字孪生”。\n核心技术: - 基于约束的建模: 通量平衡分析（FBA）用于代谢网络 - 常微分方程建模: 信号通路动力学模拟 - 随机模拟: Gillespie 算法模拟基因表达噪声 - 多尺度建模: 整合原子级到细胞级的多层次模型 - 机器学习驱动: 从单细胞数据学习细胞状态转换\n主要应用: - 代谢工程：优化微生物生产有价值化合物 - 药物靶点识别：虚拟敲除实验预测基因功能 - 细胞命运预测：从干细胞分化轨迹推断 - 合成生物学：设计基因回路和最小基因组 - 疾病建模：整合患者数据模拟疾病机制\n重要工具: - COBRApy: 代谢网络约束建模 - VCell: 多尺度细胞建模平台 - CellOracle: 基因调控网络与细胞命运预测 - PhysiCell: 多细胞系统 Agent-based 建模\n前沿进展: - AI + 物理模型混合建模 - 单细胞多模态虚拟细胞 - 细胞群体与微环境互作 - 个性化虚拟细胞用于精准医疗",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "AI4S 概述"
+    ]
+  },
+  {
+    "objectID": "AI4S/index.html#为什么-ai4science-重要",
+    "href": "AI4S/index.html#为什么-ai4science-重要",
+    "title": "AI4Science 专题",
+    "section": "",
+    "text": "生物医学数据以指数级速度增长：\n\n人类基因组计划（2003）：13 年，30 亿美元\n现在测序一个人类基因组：数小时，数百美元\n单细胞测序可在一次实验中产生数百万细胞的数据\n蛋白质结构数据库（PDB）：20 万+ 结构\nAlphaFold 预测：2 亿+ 蛋白质结构\n\n传统方法无法处理如此规模的数据，AI 成为必需。\n\n\n\n\n生物系统具有多层次、非线性、动态的复杂性：\n\n基因组包含复杂的调控语法\n蛋白质结构由序列决定但预测困难\n细胞是高度互联的分子网络\n疾病由多基因、多环境因素共同作用\n\nAI 能够学习高维数据中的复杂模式，发现隐藏规律。\n\n\n\n\nAI 极大缩短从假设到验证的周期：\n\nAlphaFold2 在几分钟内预测结构（实验方法需数月至数年）\n虚拟筛选在数天内评估数百万化合物（实验筛选不可行）\n单细胞数据分析从数周缩短到数小时\nAI 辅助实验设计减少试错次数\n\n\n\n\n\nAI 正在改变科学研究的方式：\n\n数据驱动发现: 从数据中挖掘未知模式\n假设生成: AI 提出人类未想到的假设\n闭环优化: AI 设计实验、分析结果、迭代优化\n跨学科融合: 计算机科学、数学、生物学深度交叉",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "AI4S 概述"
+    ]
+  },
+  {
+    "objectID": "AI4S/index.html#学习路径建议",
+    "href": "AI4S/index.html#学习路径建议",
+    "title": "AI4Science 专题",
+    "section": "",
+    "text": "数学与统计: - 线性代数、概率论、统计推断 - 信息论、优化理论\n编程能力: - Python（NumPy, Pandas, Matplotlib） - R（生物信息学统计分析） - Linux 基础与命令行工具\n生物学基础: - 分子生物学中心法则 - 基因组学、转录组学基础 - 蛋白质结构与功能\n\n\n\n\n机器学习: - 监督学习（分类、回归） - 无监督学习（聚类、降维） - 特征工程与模型评估\n深度学习: - 神经网络基础（MLP、CNN、RNN） - PyTorch 或 TensorFlow - Transformer 架构\n生物信息学工具: - 序列比对（BLAST, BWA） - 基因组注释（ANNOVAR） - 单细胞分析（Scanpy, Seurat） - 结构预测（AlphaFold）\n\n\n\n\n专业方向选择: - 基因组学 AI：变异解读、调控元件预测 - 蛋白质组学 AI：结构预测、功能注释 - 药物设计 AI：虚拟筛选、分子生成 - 单细胞分析：轨迹推断、细胞类型注释 - 系统生物学：网络建模、通路分析\n前沿技术: - 图神经网络（GNN） - 注意力机制与 Transformer - 生成模型（VAE、GAN、扩散模型） - 强化学习 - 迁移学习与预训练模型",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "AI4S 概述"
+    ]
+  },
+  {
+    "objectID": "AI4S/index.html#实践资源",
+    "href": "AI4S/index.html#实践资源",
+    "title": "AI4Science 专题",
+    "section": "",
+    "text": "蛋白质: - UniProt: 蛋白质序列与功能注释 - PDB: 蛋白质结构 - AlphaFold Protein Structure Database: 2 亿+ 预测结构\n基因组: - ENCODE: 人类基因组功能元件 - gnomAD: 人群变异数据库 - 1000 Genomes: 人类基因组多样性\n单细胞: - Human Cell Atlas: 人类细胞图谱 - CZ CELLxGENE: 单细胞数据集合\n药物: - ChEMBL: 生物活性化合物 - PubChem: 化学结构数据库 - DrugBank: 药物信息\n\n\n\n\n深度学习: - PyTorch: 研究首选深度学习框架 - TensorFlow: 工业部署优势 - Hugging Face Transformers: 预训练模型库\n生物信息学: - Biopython: Python 生物信息学工具 - Scanpy: 单细胞数据分析 - DeepChem: 深度学习化学 - PyTorch Geometric: 图神经网络\n可视化: - Matplotlib / Seaborn: Python 绘图 - PyMOL: 分子结构可视化 - UMAP / t-SNE: 高维数据可视化\n\n\n\n\n\nDeep Learning Specialization (Coursera, Andrew Ng): 深度学习入门\nCS229: Machine Learning (Stanford): 机器学习经典课程\nDeep Learning for the Life Sciences (MIT): 生命科学深度学习\nBioinformatics Specialization (UCSD, Coursera): 生物信息学系统课程\n\n\n\n\n\n\n《Deep Learning》（Ian Goodfellow）：深度学习圣经\n《Bioinformatics and Functional Genomics》（Jonathan Pevsner）：生物信息学教科书\n《Deep Learning for the Life Sciences》（O’Reilly）：AI4Science 专著\n《Artificial Intelligence in Drug Design》（Springer）：AI 药物设计",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "AI4S 概述"
+    ]
+  },
+  {
+    "objectID": "AI4S/index.html#未来展望",
+    "href": "AI4S/index.html#未来展望",
+    "title": "AI4Science 专题",
+    "section": "",
+    "text": "Foundation Models 在更多组学数据上的应用\n多模态模型整合序列、结构、功能数据\nAI 辅助实验设计成为标准流程\n虚拟筛选与分子生成工具成熟商业化\n\n\n\n\n\n\n全细胞模拟达到实用水平\nAI 驱动的药物进入临床后期\n个性化医疗中的 AI 诊断与治疗方案\n自动化实验室与 AI 闭环优化\n\n\n\n\n\n\n通用生物学 AI：跨物种、跨组学的统一模型\n完全计算机设计的生物系统（合成生物学）\nAI 科学家：自主提出假设、设计实验、发现新知识\n生物-计算接口：将生物系统与 AI 深度融合",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "AI4S 概述"
+    ]
+  },
+  {
+    "objectID": "AI4S/index.html#伦理与挑战",
+    "href": "AI4S/index.html#伦理与挑战",
+    "title": "AI4Science 专题",
+    "section": "",
+    "text": "基因组数据的敏感性\n患者数据保护\n知情同意与数据共享\n\n\n\n\n\n\n黑盒模型难以解释\n生物学机制的可解读性\n监管机构对 AI 模型的认证\n\n\n\n\n\n\n训练数据的种族、性别偏见\n模型在不同人群中的泛化能力\n医疗资源的公平获取\n\n\n\n\n\n\n生物安全风险（病原体设计）\n双重用途技术的监管\nAI 生成生物制剂的管控",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "AI4S 概述"
+    ]
+  },
+  {
+    "objectID": "AI4S/index.html#相关链接",
+    "href": "AI4S/index.html#相关链接",
+    "title": "AI4Science 专题",
+    "section": "",
+    "text": "DNA Foundation Models\nRNA Foundation Models\n蛋白质 Foundation Models\nAI4Drug 概述\n虚拟细胞\n学习路线\n学习资源\n常用工具",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "AI4S 概述"
+    ]
+  },
+  {
+    "objectID": "AI4S/index.html#参考资献",
+    "href": "AI4S/index.html#参考资献",
+    "title": "AI4Science 专题",
+    "section": "",
+    "text": "Jumper, J. et al. (2021). Highly accurate protein structure prediction with AlphaFold. Nature, 596, 583–589.\nLin, Z. et al. (2023). Evolutionary-scale prediction of atomic-level protein structure with a language model. Science, 379(6637), 1123-1130.\nZhou, G. et al. (2023). Structure-informed language models are protein designers. ICML 2023.\nSchneider, P. et al. (2020). Rethinking drug design in the artificial intelligence era. Nature Reviews Drug Discovery, 19, 353–364.\nKarr, J. R. et al. (2012). A whole-cell computational model predicts phenotype from genotype. Cell, 150(2), 389-401.\n\n\n更新日期: 2026-09-29\n欢迎通过 GitHub Issues 提出问题或建议！",
+    "crumbs": [
+      "首页",
+      "AI4Science 专题",
+      "AI4S 概述"
     ]
   },
   {
@@ -2346,7 +3186,7 @@
     "href": "index.html",
     "title": "Bioinfo-SMU",
     "section": "",
-    "text": "南方医科大学生物信息学专业学习资源库\n\n面向课程学习、实验代码、考试复习和科研入门的开放资料库，帮助生物信息学同学更系统地管理学习路径与实践材料。\n\n\n开始学习 查看课程 参与贡献",
+    "text": "南方医科大学生物信息学专业学习资源库\n\n面向课程学习、实验代码、考试复习和科研入门的开放资料库，帮助生物信息学同学更系统地管理学习路径与实践材料。\n\n\n开始学习 查看课程 AI4S 专题 参与贡献",
     "crumbs": [
       "首页"
     ]
@@ -2356,7 +3196,7 @@
     "href": "index.html#主要内容",
     "title": "Bioinfo-SMU",
     "section": "主要内容",
-    "text": "主要内容\n\n\n课程资料\n各门专业课程的实验报告、作业、笔记和复习材料。\n\n\n实验代码\n整理生物信息学课程和分析流程中常用的 R/Python 代码。\n\n\n考试资料\n收集往届考试重点、题型经验和复习建议。\n\n\n科研工具\n汇总常用数据库、分析工具和可复用脚本。\n\n\n\n\n\n\n\n\nTip宗旨\n\n\n\n帮助生信专业的同学们更好地学习和科研，共同进步。",
+    "text": "主要内容\n\n\n课程资料\n各门专业课程的实验报告、作业、笔记和复习材料。\n\n\n实验代码\n整理生物信息学课程和分析流程中常用的 R/Python 代码。\n\n\n考试资料\n收集往届考试重点、题型经验和复习建议。\n\n\n科研工具\n汇总常用数据库、分析工具和可复用脚本。\n\n\nAI4Science\nFoundation Models、AI 驱动的药物设计、虚拟细胞等前沿方向。\n\n\n前沿技术\n结构预测、单细胞多组学、空间转录组等最新进展。\n\n\n\n\n\n\n\n\nTip宗旨\n\n\n\n帮助生信专业的同学们更好地学习和科研，共同进步。",
     "crumbs": [
       "首页"
     ]
@@ -2376,7 +3216,7 @@
     "href": "index.html#项目统计",
     "title": "Bioinfo-SMU",
     "section": "项目统计",
-    "text": "项目统计\n\n\n课程层级\n4 覆盖大一到大四课程资料\n\n\nR 教程\n7 从基础语法到数据可视化\n\n\n分析流程\n3 Bulk、单细胞和空间转录组",
+    "text": "项目统计\n\n\n课程层级\n4 覆盖大一到大四课程资料\n\n\nR 教程\n7+ 从基础语法到数据可视化\n\n\n分析流程\n3 Bulk、单细胞和空间转录组\n\n\nAI4S 专题\n新增 Foundation Models 与前沿技术",
     "crumbs": [
       "首页"
     ]
@@ -2386,7 +3226,7 @@
     "href": "index.html#课程概览",
     "title": "Bioinfo-SMU",
     "section": "课程概览",
-    "text": "课程概览\n\n\n大一课程\n收录大一公共基础课程资料，目前包含高等数学（下）真题。\n查看课程\n\n\nR 语言教程\n系统学习 R 语言基础知识和生物信息学数据分析方法。\n进入教程\n\n\n生信流程\n面向转录组数据分析的 R 脚本集合，覆盖 Bulk、单细胞与空间转录组。\n查看流程\n\n\n计算生物学\n涵盖 PPI 网络分析、WGCNA、网络聚类、随机游走和 qPCR 数据分析。\n查看课程\n\n\n计算机辅助药物设计\n学习使用计算方法进行药物设计、虚拟筛选和 QSAR 建模。\n查看课程\n\n\n计算分子生物学\n整理序列比对、概率模型和分子层面计算方法相关内容。\n查看课程\n\n\n学习资源\n整理学习路线、常用工具、数据库和参考书目。\n查看资源",
+    "text": "课程概览\n\n\n大一课程\n收录大一公共基础课程资料，目前包含高等数学（下）真题。\n查看课程\n\n\nR 语言教程\n系统学习 R 语言基础知识和生物信息学数据分析方法。\n进入教程\n\n\n生信流程\n面向转录组数据分析的 R 脚本集合，覆盖 Bulk、单细胞与空间转录组。\n查看流程\n\n\n计算生物学\n涵盖 PPI 网络分析、WGCNA、网络聚类、随机游走和 qPCR 数据分析。\n查看课程\n\n\n计算机辅助药物设计\n学习使用计算方法进行药物设计、虚拟筛选和 QSAR 建模。\n查看课程\n\n\n计算分子生物学\n整理序列比对、概率模型和分子层面计算方法相关内容。\n查看课程\n\n\nAI4Science 专题\nFoundation Models（DNA/RNA/蛋白）、AI4Drug、虚拟细胞等前沿方向。\n查看专题\n\n\n学习资源\n整理学习路线、常用工具、数据库和参考书目。\n查看资源",
     "crumbs": [
       "首页"
     ]

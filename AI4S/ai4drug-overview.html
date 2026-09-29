@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>l6_functions – Bioinfo-SMU</title>
+<title>ai4drug-overview – Bioinfo-SMU</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -70,8 +70,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../Rbase/L7_ggplot2.html" rel="next">
-<link href="../Rbase/index.html" rel="prev">
+<link href="../AI4S/virtual-cell.html" rel="next">
+<link href="../AI4S/foundation-models-protein.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -440,7 +440,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Rbase/index.html">R 语言教程</a></li><li class="breadcrumb-item"><a href="../Rbase/L6_functions.html">L6 - R 函数与包开发</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../AI4S/index.html">AI4Science 专题</a></li><li class="breadcrumb-item"><a href="../AI4S/ai4drug-overview.html">AI4Drug</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -639,7 +639,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Rbase/L6_functions.html" class="sidebar-item-text sidebar-link active">
+  <a href="../Rbase/L6_functions.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">L6 - R 函数与包开发</span></a>
   </div>
 </li>
@@ -720,7 +720,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../AI4S/ai4drug-overview.html" class="sidebar-item-text sidebar-link">
+  <a href="../AI4S/ai4drug-overview.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">AI4Drug</span></a>
   </div>
 </li>
@@ -783,347 +783,487 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#r-中的函数function与包内函数编写规范" id="toc-r-中的函数function与包内函数编写规范" class="nav-link active" data-scroll-target="#r-中的函数function与包内函数编写规范">R 中的函数（function）与包内函数编写规范</a>
+  <li><a href="#ai4drugai-驱动的药物设计" id="toc-ai4drugai-驱动的药物设计" class="nav-link active" data-scroll-target="#ai4drugai-驱动的药物设计">AI4Drug：AI 驱动的药物设计</a>
   <ul class="collapse">
-  <li><a href="#函数的基本形式" id="toc-函数的基本形式" class="nav-link" data-scroll-target="#函数的基本形式">1. 函数的基本形式</a></li>
-  <li><a href="#参数设计与默认值" id="toc-参数设计与默认值" class="nav-link" data-scroll-target="#参数设计与默认值">2. 参数设计与默认值</a></li>
-  <li><a href="#返回值设计" id="toc-返回值设计" class="nav-link" data-scroll-target="#返回值设计">3. 返回值设计</a></li>
-  <li><a href="#作用域scope与副作用" id="toc-作用域scope与副作用" class="nav-link" data-scroll-target="#作用域scope与副作用">4. 作用域（Scope）与副作用</a></li>
-  <li><a href="#编写可测试可读的函数最佳实践" id="toc-编写可测试可读的函数最佳实践" class="nav-link" data-scroll-target="#编写可测试可读的函数最佳实践">5. 编写可测试、可读的函数（最佳实践）</a></li>
-  <li><a href="#在-r-脚本中组织函数并用-source-调试" id="toc-在-r-脚本中组织函数并用-source-调试" class="nav-link" data-scroll-target="#在-r-脚本中组织函数并用-source-调试">6. 在 R 脚本中组织函数并用 <code>source()</code> 调试</a></li>
-  <li><a href="#在-r-包中撰写函数的标准与-roxygen2-注释" id="toc-在-r-包中撰写函数的标准与-roxygen2-注释" class="nav-link" data-scroll-target="#在-r-包中撰写函数的标准与-roxygen2-注释">7. 在 R 包中撰写函数的标准与 roxygen2 注释</a></li>
-  <li><a href="#实战把函数写在脚本中并转为包函数的最小实践" id="toc-实战把函数写在脚本中并转为包函数的最小实践" class="nav-link" data-scroll-target="#实战把函数写在脚本中并转为包函数的最小实践">8. 实战：把函数写在脚本中并转为包函数的最小实践</a></li>
-  <li><a href="#常见陷阱与调试建议" id="toc-常见陷阱与调试建议" class="nav-link" data-scroll-target="#常见陷阱与调试建议">9. 常见陷阱与调试建议</a></li>
-  <li><a href="#小结" id="toc-小结" class="nav-link" data-scroll-target="#小结">10. 小结</a></li>
+  <li><a href="#药物研发流程" id="toc-药物研发流程" class="nav-link" data-scroll-target="#药物研发流程">药物研发流程</a>
+  <ul class="collapse">
+  <li><a href="#传统药物研发管线" id="toc-传统药物研发管线" class="nav-link" data-scroll-target="#传统药物研发管线">传统药物研发管线</a></li>
+  <li><a href="#ai-加速的药物研发" id="toc-ai-加速的药物研发" class="nav-link" data-scroll-target="#ai-加速的药物研发">AI 加速的药物研发</a></li>
+  </ul></li>
+  <li><a href="#核心技术" id="toc-核心技术" class="nav-link" data-scroll-target="#核心技术">核心技术</a>
+  <ul class="collapse">
+  <li><a href="#分子表示学习" id="toc-分子表示学习" class="nav-link" data-scroll-target="#分子表示学习">1. 分子表示学习</a></li>
+  <li><a href="#虚拟筛选" id="toc-虚拟筛选" class="nav-link" data-scroll-target="#虚拟筛选">2. 虚拟筛选</a></li>
+  <li><a href="#分子生成" id="toc-分子生成" class="nav-link" data-scroll-target="#分子生成">3. 分子生成</a></li>
+  <li><a href="#admet-预测" id="toc-admet-预测" class="nav-link" data-scroll-target="#admet-预测">4. ADMET 预测</a></li>
+  <li><a href="#逆合成分析" id="toc-逆合成分析" class="nav-link" data-scroll-target="#逆合成分析">5. 逆合成分析</a></li>
+  </ul></li>
+  <li><a href="#代表性工具与平台" id="toc-代表性工具与平台" class="nav-link" data-scroll-target="#代表性工具与平台">代表性工具与平台</a>
+  <ul class="collapse">
+  <li><a href="#开源工具" id="toc-开源工具" class="nav-link" data-scroll-target="#开源工具">开源工具</a></li>
+  <li><a href="#商业平台" id="toc-商业平台" class="nav-link" data-scroll-target="#商业平台">商业平台</a></li>
+  </ul></li>
+  <li><a href="#成功案例" id="toc-成功案例" class="nav-link" data-scroll-target="#成功案例">成功案例</a>
+  <ul class="collapse">
+  <li><a href="#insilico-medicineipf-候选药物" id="toc-insilico-medicineipf-候选药物" class="nav-link" data-scroll-target="#insilico-medicineipf-候选药物">1. Insilico Medicine：IPF 候选药物</a></li>
+  <li><a href="#benevolentai巴瑞替尼治疗-covid-19" id="toc-benevolentai巴瑞替尼治疗-covid-19" class="nav-link" data-scroll-target="#benevolentai巴瑞替尼治疗-covid-19">2. BenevolentAI：巴瑞替尼治疗 COVID-19</a></li>
+  <li><a href="#atomwise埃博拉病毒抑制剂" id="toc-atomwise埃博拉病毒抑制剂" class="nav-link" data-scroll-target="#atomwise埃博拉病毒抑制剂">3. Atomwise：埃博拉病毒抑制剂</a></li>
+  <li><a href="#alphafold-加速药物设计" id="toc-alphafold-加速药物设计" class="nav-link" data-scroll-target="#alphafold-加速药物设计">4. AlphaFold 加速药物设计</a></li>
+  </ul></li>
+  <li><a href="#挑战与未来方向" id="toc-挑战与未来方向" class="nav-link" data-scroll-target="#挑战与未来方向">挑战与未来方向</a>
+  <ul class="collapse">
+  <li><a href="#当前挑战" id="toc-当前挑战" class="nav-link" data-scroll-target="#当前挑战">当前挑战</a></li>
+  <li><a href="#未来方向" id="toc-未来方向" class="nav-link" data-scroll-target="#未来方向">未来方向</a></li>
+  </ul></li>
+  <li><a href="#学习资源" id="toc-学习资源" class="nav-link" data-scroll-target="#学习资源">学习资源</a>
+  <ul class="collapse">
+  <li><a href="#在线课程" id="toc-在线课程" class="nav-link" data-scroll-target="#在线课程">在线课程</a></li>
+  <li><a href="#书籍" id="toc-书籍" class="nav-link" data-scroll-target="#书籍">书籍</a></li>
+  <li><a href="#教程与工具" id="toc-教程与工具" class="nav-link" data-scroll-target="#教程与工具">教程与工具</a></li>
+  <li><a href="#数据资源" id="toc-数据资源" class="nav-link" data-scroll-target="#数据资源">数据资源</a></li>
+  </ul></li>
+  <li><a href="#实用建议" id="toc-实用建议" class="nav-link" data-scroll-target="#实用建议">实用建议</a>
+  <ul class="collapse">
+  <li><a href="#入门路径" id="toc-入门路径" class="nav-link" data-scroll-target="#入门路径">入门路径</a></li>
+  <li><a href="#常用代码模板" id="toc-常用代码模板" class="nav-link" data-scroll-target="#常用代码模板">常用代码模板</a></li>
+  </ul></li>
+  <li><a href="#相关链接" id="toc-相关链接" class="nav-link" data-scroll-target="#相关链接">相关链接</a></li>
   </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Rbase/index.html">R 语言教程</a></li><li class="breadcrumb-item"><a href="../Rbase/L6_functions.html">L6 - R 函数与包开发</a></li></ol></nav></header>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../AI4S/index.html">AI4Science 专题</a></li><li class="breadcrumb-item"><a href="../AI4S/ai4drug-overview.html">AI4Drug</a></li></ol></nav></header>
 
 
 
 
 
-<section id="r-中的函数function与包内函数编写规范" class="level1">
-<h1>R 中的函数（function）与包内函数编写规范</h1>
-<p>本节我们将系统介绍如何在 R 中定义和使用函数、函数参数与返回值的设计、作用域（scope）问题；随后介绍在 R 包中撰写函数的规范（使用 roxygen2 注释生成文档、<span class="citation" data-cites="export">@export</span> 等），并给出用 <code>source()</code> 和调试工具单步调试函数的实用流程。</p>
-<p><br></p>
-<section id="函数的基本形式" class="level2">
-<h2 class="anchored" data-anchor-id="函数的基本形式">1. 函数的基本形式</h2>
-<p>R 中最基本的函数定义形式：</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>fn_name <span class="ot">&lt;-</span> <span class="cf">function</span>(arg1, <span class="at">arg2 =</span> <span class="dv">1</span>, ...) {</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># 函数体</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  result <span class="ot">&lt;-</span> arg1 <span class="sc">+</span> arg2</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(result)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<p>要点：</p>
-<ul>
-<li>函数由 <code>function()</code> 创建，参数可以有默认值；</li>
-<li><code>...</code> 用于接收额外可变参数，常用于透传给其它函数（例如绘图或 <code>read_*</code> 系列）；</li>
-<li>如果没有显式 <code>return()</code>，函数会返回最后一个求值表达式的值。</li>
-</ul>
-<p>下面用一个生信常见的小函数举例：计算 TPM（Transcripts Per Million）从基因计数和基因长度（单位 bp）得到 TPM 值。</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>compute_tpm <span class="ot">&lt;-</span> <span class="cf">function</span>(counts, length_bp) {</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># counts: 命名向量或数值向量，表示原始计数</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># length_bp: 与 counts 对应的基因长度，单位 bp</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">length</span>(counts) <span class="sc">!=</span> <span class="fu">length</span>(length_bp)) <span class="fu">stop</span>(<span class="st">"counts 与 length_bp 长度不一致"</span>)</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  length_kb <span class="ot">&lt;-</span> length_bp <span class="sc">/</span> <span class="dv">1000</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  rpk <span class="ot">&lt;-</span> counts <span class="sc">/</span> length_kb</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  tpm <span class="ot">&lt;-</span> rpk <span class="sc">/</span> <span class="fu">sum</span>(rpk, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">*</span> <span class="fl">1e6</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(tpm)</span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="co"># 测试</span></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>counts <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="at">GeneA =</span> <span class="dv">500</span>, <span class="at">GeneB =</span> <span class="dv">1000</span>, <span class="at">GeneC =</span> <span class="dv">50</span>)</span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>length_bp <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="at">GeneA =</span> <span class="dv">2000</span>, <span class="at">GeneB =</span> <span class="dv">1000</span>, <span class="at">GeneC =</span> <span class="dv">1500</span>)</span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="fu">compute_tpm</span>(counts, length_bp)</span></code></pre></div>
-<p>这段代码展示了常见的参数检查（长度一致性）、单位转换、以及向量化操作（避免循环）。</p>
-<p><br></p>
+<section id="ai4drugai-驱动的药物设计" class="level1">
+<h1>AI4Drug：AI 驱动的药物设计</h1>
+<p>AI4Drug（AI for Drug Discovery，AI 驱动的药物发现）利用人工智能技术加速药物研发的各个环节，从靶点识别、虚拟筛选、分子生成到临床试验优化，全面提升研发效率并降低成本。传统药物研发周期长达 10-15 年，成本超过 10 亿美元，而 AI 技术正在从根本上改变这一现状。</p>
+<hr>
+<section id="药物研发流程" class="level2">
+<h2 class="anchored" data-anchor-id="药物研发流程">药物研发流程</h2>
+<section id="传统药物研发管线" class="level3">
+<h3 class="anchored" data-anchor-id="传统药物研发管线">传统药物研发管线</h3>
+<p><strong>1. 靶点发现与验证（2-3 年）</strong> - 识别疾病相关蛋白质或基因 - 验证靶点的成药性</p>
+<p><strong>2. 先导化合物发现（1-2 年）</strong> - 高通量筛选（HTS）：测试数十万化合物 - 基于片段的药物设计（FBDD）</p>
+<p><strong>3. 先导化合物优化（1-2 年）</strong> - 提高活性、选择性 - 优化 ADMET 性质（吸收、分布、代谢、排泄、毒性）</p>
+<p><strong>4. 临床前研究（1-2 年）</strong> - 体外和体内药效学研究 - 毒理学研究</p>
+<p><strong>5. 临床试验（5-7 年）</strong> - I 期：安全性（健康志愿者） - II 期：初步疗效（小规模患者） - III 期：大规模验证</p>
+<p><strong>6. 上市审批（1-2 年）</strong> - FDA/EMA 审查</p>
+<p><strong>挑战</strong>: - 成功率低：仅 10% 的候选药物能最终上市 - 成本高：平均 26 亿美元（包括失败项目） - 周期长：平均 10-15 年</p>
+<hr>
 </section>
-<section id="参数设计与默认值" class="level2">
-<h2 class="anchored" data-anchor-id="参数设计与默认值">2. 参数设计与默认值</h2>
-<p>良好的参数设计可以提高函数的可用性与可维护性。</p>
-<p>建议：</p>
-<ul>
-<li>把必须提供的参数放在最前面；带有合理默认值的参数放后面；</li>
-<li>使用具说明性的参数名（如 <code>counts</code>, <code>length_bp</code>, <code>method</code>）；</li>
-<li>对可能为 <code>NULL</code> 或 NA 的参数，要在函数内部处理或给出明确定义；</li>
-<li>使用 <code>...</code> 以支持可扩展性，但在文档中明确说明 <code>...</code> 会传递给哪个底层函数。</li>
-</ul>
-<p>示例：为 <code>compute_tpm</code> 添加 <code>na.rm</code> 与 <code>min_counts</code> 两个参数。</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>compute_tpm2 <span class="ot">&lt;-</span> <span class="cf">function</span>(counts, length_bp, <span class="at">na.rm =</span> <span class="cn">TRUE</span>, <span class="at">min_counts =</span> <span class="dv">0</span>) {</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">length</span>(counts) <span class="sc">!=</span> <span class="fu">length</span>(length_bp)) <span class="fu">stop</span>(<span class="st">"counts 与 length_bp 长度不一致"</span>)</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (na.rm) {</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    keep <span class="ot">&lt;-</span> <span class="sc">!</span><span class="fu">is.na</span>(counts) <span class="sc">&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(length_bp)</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    counts <span class="ot">&lt;-</span> counts[keep]</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    length_bp <span class="ot">&lt;-</span> length_bp[keep]</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  counts[counts <span class="sc">&lt;</span> min_counts] <span class="ot">&lt;-</span> <span class="dv">0</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  length_kb <span class="ot">&lt;-</span> length_bp <span class="sc">/</span> <span class="dv">1000</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>  rpk <span class="ot">&lt;-</span> counts <span class="sc">/</span> length_kb</span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  tpm <span class="ot">&lt;-</span> rpk <span class="sc">/</span> <span class="fu">sum</span>(rpk, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">*</span> <span class="fl">1e6</span></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(tpm)</span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="fu">compute_tpm2</span>(counts, length_bp, <span class="at">min_counts =</span> <span class="dv">10</span>)</span></code></pre></div>
-<p><br></p>
+<section id="ai-加速的药物研发" class="level3">
+<h3 class="anchored" data-anchor-id="ai-加速的药物研发">AI 加速的药物研发</h3>
+<p>AI 技术可在多个环节提升效率：</p>
+<p><strong>靶点发现</strong>: - 从组学数据识别疾病相关靶点 - 预测靶点-药物相互作用 - 节省时间：30-50%</p>
+<p><strong>虚拟筛选</strong>: - 从数百万化合物中快速筛选 - 预测结合亲和力 - 成本降低：90%+</p>
+<p><strong>分子生成</strong>: - 从头设计新分子 - 基于已知药物优化 - 效率提升：10-100 倍</p>
+<p><strong>ADMET 预测</strong>: - 早期预测药代动力学性质 - 减少后期失败 - 成功率提升：20-30%</p>
+<p><strong>临床试验优化</strong>: - 患者招募与分层 - 剂量优化 - 周期缩短：20-40%</p>
+<hr>
 </section>
-<section id="返回值设计" class="level2">
-<h2 class="anchored" data-anchor-id="返回值设计">3. 返回值设计</h2>
-<p>函数应尽量返回明确且易用的数据结构：</p>
-<ul>
-<li>简单计算返回向量或标量；</li>
-<li>复杂处理返回 <code>list</code> 或 <code>data.frame</code>，并在文档中说明每个字段含义；</li>
-<li>如果函数会改变全局变量，尽量避免——优先返回结果并让调用者决定是否赋值。</li>
-</ul>
-<p>示例：一个返回多个结果的统计函数。</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>summary_stats <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(x)</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  res <span class="ot">&lt;-</span> <span class="fu">list</span>(</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">n =</span> <span class="fu">length</span>(x),</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">mean =</span> <span class="fu">mean</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">sd =</span> <span class="fu">sd</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(res)</span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="fu">summary_stats</span>(<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="cn">NA</span>,<span class="dv">5</span>))</span></code></pre></div>
-<p><br></p>
 </section>
-<section id="作用域scope与副作用" class="level2">
-<h2 class="anchored" data-anchor-id="作用域scope与副作用">4. 作用域（Scope）与副作用</h2>
-<p>R 中的变量作用域遵循词法作用域（lexical scope）。函数内部创建的变量默认是局部的；若想修改外部变量，需显式使用 <code>&lt;&lt;-</code> 或 <code>assign()</code>，一般不推荐。</p>
-<p>示例：局部变量与修改全局变量对比</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>global_var <span class="ot">&lt;-</span> <span class="dv">0</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>fn_local <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  y <span class="ot">&lt;-</span> x <span class="sc">+</span> <span class="dv">1</span>  <span class="co"># 局部变量 y</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(y)</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>fn_modify_global <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>  global_var <span class="ot">&lt;&lt;-</span> x  <span class="co"># 修改外部变量（不推荐）</span></span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="fu">fn_local</span>(<span class="dv">2</span>)</span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>global_var</span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="fu">fn_modify_global</span>(<span class="dv">5</span>)</span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>global_var</span></code></pre></div>
-<p>说明：除非确有必要，否则不要让函数产生副作用（修改外部状态）。函数应当是”纯函数”（相对纯粹）：相同输入应返回相同输出。</p>
-<p>闭包（closure）是 R 的一个重要特性：函数返回另一个函数，并保留创建时的环境。举例：创建一个带默认正则化参数的 scaler。</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>make_scaler <span class="ot">&lt;-</span> <span class="cf">function</span>(<span class="at">center =</span> <span class="cn">TRUE</span>, <span class="at">scale =</span> <span class="cn">TRUE</span>) {</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">function</span>(x) {</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    x <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(x)</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (center) x <span class="ot">&lt;-</span> x <span class="sc">-</span> <span class="fu">mean</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (scale) x <span class="ot">&lt;-</span> x <span class="sc">/</span> <span class="fu">sd</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    x</span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>sc <span class="ot">&lt;-</span> <span class="fu">make_scaler</span>(<span class="at">center =</span> <span class="cn">TRUE</span>, <span class="at">scale =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="fu">sc</span>(<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>))</span></code></pre></div>
-<p><br></p>
+<section id="核心技术" class="level2">
+<h2 class="anchored" data-anchor-id="核心技术">核心技术</h2>
+<section id="分子表示学习" class="level3">
+<h3 class="anchored" data-anchor-id="分子表示学习">1. 分子表示学习</h3>
+<p><strong>SMILES（Simplified Molecular Input Line Entry System）</strong></p>
+<p>字符串表示分子结构：</p>
+<pre><code># 示例：阿司匹林
+CC(=O)Oc1ccccc1C(=O)O
+
+# 咖啡因
+CN1C=NC2=C1C(=O)N(C(=O)N2C)C</code></pre>
+<p><strong>优点</strong>: 简洁，易于处理 <strong>缺点</strong>: 同一分子可有多个 SMILES 表示</p>
+<hr>
+<p><strong>分子图（Molecular Graph）</strong></p>
+<p>将分子表示为图： - 节点：原子 - 边：化学键</p>
+<p><strong>图神经网络（GNN）</strong> 处理分子图： - 消息传递：节点之间交换信息 - 聚合：汇总邻居信息 - 更新：生成新的节点表示</p>
+<p><strong>代码示例</strong>:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> torch_geometric.data <span class="im">import</span> Data</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> rdkit <span class="im">import</span> Chem</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 从 SMILES 构建分子图</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>smiles <span class="op">=</span> <span class="st">"CC(=O)Oc1ccccc1C(=O)O"</span>  <span class="co"># 阿司匹林</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>mol <span class="op">=</span> Chem.MolFromSmiles(smiles)</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co"># 提取原子特征</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>atom_features <span class="op">=</span> []</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> atom <span class="kw">in</span> mol.GetAtoms():</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    features <span class="op">=</span> [</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>        atom.GetAtomicNum(),  <span class="co"># 原子序数</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>        atom.GetDegree(),     <span class="co"># 度</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>        atom.GetFormalCharge(), <span class="co"># 电荷</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>        atom.GetHybridization().real,  <span class="co"># 杂化类型</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>    ]</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>    atom_features.append(features)</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> torch.tensor(atom_features, dtype<span class="op">=</span>torch.<span class="bu">float</span>)</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="co"># 提取边（化学键）</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>edge_index <span class="op">=</span> []</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> bond <span class="kw">in</span> mol.GetBonds():</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>    i <span class="op">=</span> bond.GetBeginAtomIdx()</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>    j <span class="op">=</span> bond.GetEndAtomIdx()</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>    edge_index.append([i, j])</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>    edge_index.append([j, i])  <span class="co"># 无向图</span></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>edge_index <span class="op">=</span> torch.tensor(edge_index, dtype<span class="op">=</span>torch.<span class="bu">long</span>).t()</span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a><span class="co"># 构建 PyTorch Geometric 数据对象</span></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> Data(x<span class="op">=</span>x, edge_index<span class="op">=</span>edge_index)</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(data)</span></code></pre></div>
+<hr>
+<p><strong>分子指纹（Molecular Fingerprints）</strong></p>
+<p>将分子编码为固定长度的二进制向量：</p>
+<p><strong>ECFP（Extended Connectivity Fingerprints）</strong>: - 基于原子邻域的结构特征 - 常用长度：1024、2048 位</p>
+<p><strong>MACCS Keys</strong>: - 166 位，基于结构片段</p>
+<p><strong>代码示例</strong>:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> rdkit <span class="im">import</span> Chem</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> rdkit.Chem <span class="im">import</span> AllChem</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>smiles <span class="op">=</span> <span class="st">"CC(=O)Oc1ccccc1C(=O)O"</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>mol <span class="op">=</span> Chem.MolFromSmiles(smiles)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 生成 ECFP4 指纹（半径=2）</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>fp <span class="op">=</span> AllChem.GetMorganFingerprintAsBitVect(mol, radius<span class="op">=</span><span class="dv">2</span>, nBits<span class="op">=</span><span class="dv">2048</span>)</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="co"># 转换为 NumPy 数组</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>fp_array <span class="op">=</span> np.zeros((<span class="dv">1</span>,))</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>AllChem.DataStructs.ConvertToNumpyArray(fp, fp_array)</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"指纹: </span><span class="sc">{</span>fp_array[:<span class="dv">20</span>]<span class="sc">}</span><span class="ss">..."</span>)  <span class="co"># 显示前 20 位</span></span></code></pre></div>
+<hr>
 </section>
-<section id="编写可测试可读的函数最佳实践" class="level2">
-<h2 class="anchored" data-anchor-id="编写可测试可读的函数最佳实践">5. 编写可测试、可读的函数（最佳实践）</h2>
-<p>小结性的建议：</p>
-<ol type="1">
-<li>单一职责：函数只做一件事；</li>
-<li>输入验证：对输入类型、长度、NA 等进行检查并给出明确错误信息；</li>
-<li>明确返回值类型和结构；</li>
-<li>写示例与单元测试（测试框架如 <code>testthat</code>）；</li>
-<li>注释清楚但不要冗余；函数复杂时拆分为小函数。</li>
-</ol>
-<p>示例：改写一个更健壮的 TPM 计算函数（带参数检查与文档示例）。</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>compute_tpm_safe <span class="ot">&lt;-</span> <span class="cf">function</span>(counts, length_bp, <span class="at">min_counts =</span> <span class="dv">0</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) {</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.numeric</span>(counts)) <span class="fu">stop</span>(<span class="st">"counts 必须为数值向量"</span>)</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.numeric</span>(length_bp)) <span class="fu">stop</span>(<span class="st">"length_bp 必须为数值向量"</span>)</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">length</span>(counts) <span class="sc">!=</span> <span class="fu">length</span>(length_bp)) <span class="fu">stop</span>(<span class="st">"counts 与 length_bp 长度不一致"</span>)</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (na.rm) {</span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>    keep <span class="ot">&lt;-</span> <span class="sc">!</span><span class="fu">is.na</span>(counts) <span class="sc">&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(length_bp)</span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>    counts <span class="ot">&lt;-</span> counts[keep]</span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>    length_bp <span class="ot">&lt;-</span> length_bp[keep]</span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>  counts[counts <span class="sc">&lt;</span> min_counts] <span class="ot">&lt;-</span> <span class="dv">0</span></span>
-<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>  length_kb <span class="ot">&lt;-</span> length_bp <span class="sc">/</span> <span class="dv">1000</span></span>
-<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">any</span>(length_kb <span class="sc">==</span> <span class="dv">0</span>)) <span class="fu">stop</span>(<span class="st">"基因长度不能为 0"</span>)</span>
-<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>  rpk <span class="ot">&lt;-</span> counts <span class="sc">/</span> length_kb</span>
-<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>  denom <span class="ot">&lt;-</span> <span class="fu">sum</span>(rpk, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (denom <span class="sc">==</span> <span class="dv">0</span>) <span class="fu">return</span>(<span class="fu">rep</span>(<span class="dv">0</span>, <span class="fu">length</span>(rpk)))</span>
-<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>  tpm <span class="ot">&lt;-</span> rpk <span class="sc">/</span> denom <span class="sc">*</span> <span class="fl">1e6</span></span>
-<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">names</span>(tpm) <span class="ot">&lt;-</span> <span class="fu">names</span>(counts)</span>
-<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(tpm)</span>
-<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a><span class="fu">compute_tpm_safe</span>(counts, length_bp)</span></code></pre></div>
-<p><br></p>
+<section id="虚拟筛选" class="level3">
+<h3 class="anchored" data-anchor-id="虚拟筛选">2. 虚拟筛选</h3>
+<p><strong>任务</strong>: 从大规模化合物库中筛选出与靶蛋白结合的候选分子</p>
+<p><strong>方法</strong>:</p>
+<p><strong>基于结构的虚拟筛选（SBVS）</strong>: - 前提：已知靶蛋白三维结构 - 分子对接（Molecular Docking）：预测小分子与蛋白质的结合模式和亲和力</p>
+<p><strong>经典工具</strong>: - <strong>AutoDock Vina</strong>: 开源，快速 - <strong>Glide</strong>: 商业软件，精度高 - <strong>GOLD</strong>: 遗传算法对接</p>
+<p><strong>深度学习方法</strong>: - <strong>DiffDock</strong>: 基于扩散模型的盲对接 - <strong>DeepDock</strong>: 端到端学习结合亲和力</p>
+<p><strong>代码示例（AutoDock Vina）</strong>:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 准备受体（蛋白质）</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">prepare_receptor4.py</span> <span class="at">-r</span> protein.pdb <span class="at">-o</span> protein.pdbqt</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 准备配体（小分子）</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="ex">prepare_ligand4.py</span> <span class="at">-l</span> ligand.mol2 <span class="at">-o</span> ligand.pdbqt</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 运行对接</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="ex">vina</span> <span class="at">--receptor</span> protein.pdbqt <span class="dt">\</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>     <span class="at">--ligand</span> ligand.pdbqt <span class="dt">\</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>     <span class="at">--center_x</span> 25.0 <span class="at">--center_y</span> 30.0 <span class="at">--center_z</span> 10.0 <span class="dt">\</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>     <span class="at">--size_x</span> 20.0 <span class="at">--size_y</span> 20.0 <span class="at">--size_z</span> 20.0 <span class="dt">\</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>     <span class="at">--out</span> ligand_docked.pdbqt</span></code></pre></div>
+<hr>
+<p><strong>基于配体的虚拟筛选（LBVS）</strong>: - 前提：已知活性化合物 - 相似性搜索：找到结构相似的分子</p>
+<p><strong>方法</strong>: - <strong>Tanimoto 相似度</strong>: 比较分子指纹 - <strong>形状匹配</strong>: 3D 形状叠合</p>
+<hr>
+<p><strong>深度学习虚拟筛选</strong>:</p>
+<p><strong>代表模型</strong>: - <strong>Chemprop</strong>: 图神经网络预测分子性质 - <strong>DeepPurpose</strong>: 药物-靶点相互作用预测 - <strong>AttentiveFP</strong>: 注意力增强的分子指纹</p>
+<p><strong>代码示例（Chemprop）</strong>:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 安装 Chemprop</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co"># pip install chemprop</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> chemprop <span class="im">import</span> train, predict</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="co"># 训练模型</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>train_args <span class="op">=</span> [</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">'--data_path'</span>, <span class="st">'train.csv'</span>,</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">'--dataset_type'</span>, <span class="st">'regression'</span>,</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">'--save_dir'</span>, <span class="st">'model_checkpoint'</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>train.chemprop_train(args<span class="op">=</span>train_args)</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="co"># 预测</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>predict_args <span class="op">=</span> [</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>    <span class="st">'--test_path'</span>, <span class="st">'test.csv'</span>,</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>    <span class="st">'--checkpoint_dir'</span>, <span class="st">'model_checkpoint'</span>,</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>    <span class="st">'--preds_path'</span>, <span class="st">'predictions.csv'</span></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>predict.chemprop_predict(args<span class="op">=</span>predict_args)</span></code></pre></div>
+<hr>
 </section>
-<section id="在-r-脚本中组织函数并用-source-调试" class="level2">
-<h2 class="anchored" data-anchor-id="在-r-脚本中组织函数并用-source-调试">6. 在 R 脚本中组织函数并用 <code>source()</code> 调试</h2>
-<p>在日常分析中，我们通常把一组相关函数放在单独的脚本文件，如 <code>R/functions_tpm.R</code>，然后在主脚本中 <code>source()</code> 加载：</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 在主脚本中</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">'R/functions_tpm.R'</span>)</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>res <span class="ot">&lt;-</span> <span class="fu">compute_tpm_safe</span>(my_counts, my_lengths)</span></code></pre></div>
-<p>调试技巧：</p>
-<ul>
-<li><code>debug(func)</code>：在下一次调用 <code>func()</code> 时进入交互调试，可以单步执行；</li>
-<li><code>debugonce(func)</code>：仅调试下一次调用；</li>
-<li>在函数内部插入 <code>browser()</code>：运行到这里会进入交互式调试；</li>
-<li><code>traceback()</code>：当出错后查看调用栈；</li>
-<li><code>trace()</code>：在函数运行时插入临时代码（如打印变量）；</li>
-</ul>
-<p>示例：演示 <code>debug()</code> 与 <code>browser()</code>。</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>tmp_fn <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  a <span class="ot">&lt;-</span> <span class="fu">sqrt</span>(x)</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  b <span class="ot">&lt;-</span> <span class="fu">log</span>(a)</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(b)</span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>}</span>
+<section id="分子生成" class="level3">
+<h3 class="anchored" data-anchor-id="分子生成">3. 分子生成</h3>
+<p><strong>任务</strong>: 从头设计新分子或优化已有分子</p>
+<p><strong>方法</strong>:</p>
+<p><strong>基于规则的方法</strong>: - 从片段组装分子 - 遵循化学规则（价键、环状结构等）</p>
+<p><strong>深度生成模型</strong>:</p>
+<p><strong>VAE（Variational Autoencoder）</strong>: - 编码器：SMILES → 连续潜在空间 - 解码器：潜在空间 → SMILES - 优化：在潜在空间中搜索</p>
+<p><strong>代码示例（简化）</strong>:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch.nn <span class="im">as</span> nn</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> MolecularVAE(nn.Module):</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, vocab_size, latent_dim):</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>        <span class="bu">super</span>().<span class="fu">__init__</span>()</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.encoder <span class="op">=</span> nn.LSTM(vocab_size, <span class="dv">256</span>, batch_first<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.fc_mu <span class="op">=</span> nn.Linear(<span class="dv">256</span>, latent_dim)</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.fc_logvar <span class="op">=</span> nn.Linear(<span class="dv">256</span>, latent_dim)</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.decoder <span class="op">=</span> nn.LSTM(latent_dim, <span class="dv">256</span>, batch_first<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.fc_out <span class="op">=</span> nn.Linear(<span class="dv">256</span>, vocab_size)</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> encode(<span class="va">self</span>, x):</span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>        _, (h, _) <span class="op">=</span> <span class="va">self</span>.encoder(x)</span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>        mu <span class="op">=</span> <span class="va">self</span>.fc_mu(h.squeeze(<span class="dv">0</span>))</span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>        logvar <span class="op">=</span> <span class="va">self</span>.fc_logvar(h.squeeze(<span class="dv">0</span>))</span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> mu, logvar</span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> reparameterize(<span class="va">self</span>, mu, logvar):</span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>        std <span class="op">=</span> torch.exp(<span class="fl">0.5</span> <span class="op">*</span> logvar)</span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>        eps <span class="op">=</span> torch.randn_like(std)</span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> mu <span class="op">+</span> eps <span class="op">*</span> std</span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> decode(<span class="va">self</span>, z, seq_len):</span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>        z <span class="op">=</span> z.unsqueeze(<span class="dv">1</span>).repeat(<span class="dv">1</span>, seq_len, <span class="dv">1</span>)</span>
+<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a>        output, _ <span class="op">=</span> <span class="va">self</span>.decoder(z)</span>
+<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">self</span>.fc_out(output)</span>
+<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> forward(<span class="va">self</span>, x):</span>
+<span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a>        mu, logvar <span class="op">=</span> <span class="va">self</span>.encode(x)</span>
+<span id="cb6-32"><a href="#cb6-32" aria-hidden="true" tabindex="-1"></a>        z <span class="op">=</span> <span class="va">self</span>.reparameterize(mu, logvar)</span>
+<span id="cb6-33"><a href="#cb6-33" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">self</span>.decode(z, x.size(<span class="dv">1</span>)), mu, logvar</span></code></pre></div>
+<hr>
+<p><strong>GAN（Generative Adversarial Network）</strong>: - 生成器：生成分子 - 判别器：区分真实/生成分子</p>
+<p><strong>MolGAN</strong>: 分子图生成 GAN</p>
+<hr>
+<p><strong>强化学习（Reinforcement Learning）</strong>: - 智能体：生成分子 - 奖励：基于目标性质（活性、合成可行性等） - 优化：最大化奖励</p>
+<hr>
+<p><strong>扩散模型（Diffusion Models）</strong>: - 前向过程：逐步添加噪声 - 反向过程：从噪声恢复分子 - 代表：<strong>Equivariant Diffusion</strong></p>
+<hr>
+<p><strong>基于 Transformer 的生成</strong>: - 类似 GPT，自回归生成 SMILES - 条件生成：给定靶点或性质生成分子</p>
+<hr>
+</section>
+<section id="admet-预测" class="level3">
+<h3 class="anchored" data-anchor-id="admet-预测">4. ADMET 预测</h3>
+<p><strong>ADMET</strong>: Absorption, Distribution, Metabolism, Excretion, Toxicity</p>
+<p><strong>任务</strong>: 预测候选药物的药代动力学性质和毒性</p>
+<p><strong>关键指标</strong>:</p>
+<p><strong>吸收（Absorption）</strong>: - 口服生物利用度 - Caco-2 细胞渗透性</p>
+<p><strong>分布（Distribution）</strong>: - 血浆蛋白结合率 - 血脑屏障（BBB）渗透性</p>
+<p><strong>代谢（Metabolism）</strong>: - CYP450 酶底物/抑制剂 - 代谢稳定性</p>
+<p><strong>排泄（Excretion）</strong>: - 肾清除率 - 半衰期</p>
+<p><strong>毒性（Toxicity）</strong>: - hERG 抑制（心脏毒性） - 肝毒性 - 遗传毒性</p>
+<hr>
+<p><strong>深度学习 ADMET 模型</strong>:</p>
+<p><strong>代表工具</strong>: - <strong>ADMETlab</strong>: 集成多个 ADMET 预测模型 - <strong>SwissADME</strong>: 在线工具 - <strong>pkCSM</strong>: 药代动力学预测</p>
+<p><strong>代码示例（使用 DeepChem）</strong>:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> deepchem <span class="im">as</span> dc</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 加载数据集（示例：Tox21）</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>tasks, datasets, transformers <span class="op">=</span> dc.molnet.load_tox21()</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>train_dataset, valid_dataset, test_dataset <span class="op">=</span> datasets</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 构建图卷积模型</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> dc.models.GraphConvModel(</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>    n_tasks<span class="op">=</span><span class="bu">len</span>(tasks),</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>    mode<span class="op">=</span><span class="st">'classification'</span>,</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>    batch_size<span class="op">=</span><span class="dv">50</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a><span class="co"># 训练</span></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>model.fit(train_dataset, nb_epoch<span class="op">=</span><span class="dv">50</span>)</span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a><span class="co"># 评估</span></span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>metric <span class="op">=</span> dc.metrics.Metric(dc.metrics.roc_auc_score)</span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>train_score <span class="op">=</span> model.evaluate(train_dataset, [metric])</span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>test_score <span class="op">=</span> model.evaluate(test_dataset, [metric])</span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"训练集 AUC: </span><span class="sc">{</span>train_score[<span class="st">'roc_auc_score'</span>]<span class="sc">:.3f}</span><span class="ss">"</span>)</span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"测试集 AUC: </span><span class="sc">{</span>test_score[<span class="st">'roc_auc_score'</span>]<span class="sc">:.3f}</span><span class="ss">"</span>)</span></code></pre></div>
+<hr>
+</section>
+<section id="逆合成分析" class="level3">
+<h3 class="anchored" data-anchor-id="逆合成分析">5. 逆合成分析</h3>
+<p><strong>任务</strong>: 给定目标分子，规划合成路线</p>
+<p><strong>传统方法</strong>: 依赖化学家经验</p>
+<p><strong>AI 方法</strong>: - 序列到序列（Seq2Seq）模型 - 蒙特卡洛树搜索（MCTS） - Transformer 模型</p>
+<p><strong>代表工具</strong>: - <strong>IBM RXN</strong>: 基于 Transformer 的逆合成预测 - <strong>AiZynthFinder</strong>: 基于 MCTS 的合成路线规划</p>
+<hr>
+</section>
+</section>
+<section id="代表性工具与平台" class="level2">
+<h2 class="anchored" data-anchor-id="代表性工具与平台">代表性工具与平台</h2>
+<section id="开源工具" class="level3">
+<h3 class="anchored" data-anchor-id="开源工具">开源工具</h3>
+<p><strong>RDKit</strong>: - Python 化学信息学核心库 - 分子操作、指纹生成、性质计算</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> rdkit <span class="im">import</span> Chem</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> rdkit.Chem <span class="im">import</span> Descriptors</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>smiles <span class="op">=</span> <span class="st">"CC(=O)Oc1ccccc1C(=O)O"</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>mol <span class="op">=</span> Chem.MolFromSmiles(smiles)</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 计算分子性质</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>mw <span class="op">=</span> Descriptors.MolWt(mol)</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>logp <span class="op">=</span> Descriptors.MolLogP(mol)</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>tpsa <span class="op">=</span> Descriptors.TPSA(mol)</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"分子量: </span><span class="sc">{</span>mw<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"LogP: </span><span class="sc">{</span>logp<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"TPSA: </span><span class="sc">{</span>tpsa<span class="sc">:.2f}</span><span class="ss">"</span>)</span></code></pre></div>
+<hr>
+<p><strong>DeepChem</strong>: - 深度学习化学工具箱 - 包含预训练模型和数据集</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> deepchem <span class="im">as</span> dc</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 加载 MoleculeNet 数据集</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>tasks, datasets, transformers <span class="op">=</span> dc.molnet.load_delaney()</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>train, valid, test <span class="op">=</span> datasets</span>
 <span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 使用 debug()：下次调用时会进入调试模式</span></span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="fu">debug</span>(tmp_fn)</span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="fu">tmp_fn</span>(<span class="dv">10</span>)</span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a><span class="fu">undebug</span>(tmp_fn)</span>
-<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a><span class="co"># 在函数中插入 browser()</span></span>
-<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>tmp_fn2 <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
-<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>  a <span class="ot">&lt;-</span> <span class="fu">sqrt</span>(x)</span>
-<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">browser</span>()</span>
-<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>  b <span class="ot">&lt;-</span> <span class="fu">log</span>(a)</span>
-<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(b)</span>
-<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a><span class="fu">try</span>(<span class="fu">tmp_fn2</span>(<span class="dv">10</span>))</span>
-<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a><span class="co"># 出错后的 traceback()</span></span>
-<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a>bad_fn <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
-<span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stop</span>(<span class="st">"故意出错"</span>)</span>
-<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a><span class="fu">tryCatch</span>(<span class="fu">bad_fn</span>(<span class="dv">1</span>), <span class="at">error =</span> <span class="cf">function</span>(e) <span class="fu">message</span>(<span class="st">"出错: "</span>, e<span class="sc">$</span>message))</span>
-<span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a><span class="co"># 如果没有 catch，运行后可用 traceback() 查看</span></span></code></pre></div>
-<p>在 <code>source()</code> 调试时常见问题：</p>
-<ul>
-<li><code>source()</code> 默认为全局环境执行（<code>local = FALSE</code>），如果想把函数载入某个环境可以设置 <code>local = TRUE</code> 或指定环境；</li>
-<li>推荐把函数脚本放到项目 <code>R/</code> 目录并使用 <code>devtools::load_all()</code> 进行开发加载，模拟包加载环境。</li>
-</ul>
-<p>示例：使用 <code>devtools</code>（开发包时）</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 在包开发目录下</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">load_all</span>()</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">document</span>()  <span class="co"># 生成 roxygen 文档</span></span></code></pre></div>
-<p><br></p>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 构建图卷积模型</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> dc.models.GraphConvModel(n_tasks<span class="op">=</span><span class="dv">1</span>, mode<span class="op">=</span><span class="st">'regression'</span>)</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>model.fit(train, nb_epoch<span class="op">=</span><span class="dv">50</span>)</span></code></pre></div>
+<hr>
+<p><strong>PyTorch Geometric（PyG）</strong>: - 图神经网络库 - 处理分子图</p>
+<hr>
+<p><strong>OpenMM</strong>: - 分子动力学模拟 - GPU 加速</p>
+<hr>
 </section>
-<section id="在-r-包中撰写函数的标准与-roxygen2-注释" class="level2">
-<h2 class="anchored" data-anchor-id="在-r-包中撰写函数的标准与-roxygen2-注释">7. 在 R 包中撰写函数的标准与 roxygen2 注释</h2>
-<p>当需要把函数分发或重复复用时，建议把函数放入 R 包中。R 包中的函数放在 <code>R/</code> 目录中，每个函数文件应尽量小而聚焦。使用 <code>roxygen2</code> 注释可以直接在源代码上方写注释，随后用 <code>devtools::document()</code> 自动生成 <code>NAMESPACE</code> 和 Rd 文档。</p>
-<p>roxygen2 注释模板示例：</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">#' 计算 TPM</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="co">#'</span></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="co">#' 读取原始计数与基因长度，返回 TPM 向量。</span></span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="co">#'</span></span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="co">#' @param counts 数值向量或命名向量，原始计数</span></span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="co">#' @param length_bp 数值向量，与 counts 对应，单位 bp</span></span>
-<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a><span class="co">#' @param na.rm 布尔，是否移除 NA</span></span>
-<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a><span class="co">#' @param min_counts 数值，小于该值的计数将视为 0</span></span>
-<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a><span class="co">#' @return 命名数值向量，TPM</span></span>
-<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a><span class="co">#' @examples</span></span>
-<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a><span class="co">#' counts &lt;- c(G1 = 100, G2 = 50)</span></span>
-<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a><span class="co">#' length_bp &lt;- c(G1 = 2000, G2 = 1000)</span></span>
-<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a><span class="co">#' compute_tpm_safe(counts, length_bp)</span></span>
-<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a><span class="co">#' @export</span></span>
-<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a>compute_tpm_safe <span class="ot">&lt;-</span> <span class="cf">function</span>(counts, length_bp, <span class="at">min_counts =</span> <span class="dv">0</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) {</span>
-<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a>  <span class="co"># 函数体同上（为示例重复定义）</span></span>
-<span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.numeric</span>(counts)) <span class="fu">stop</span>(<span class="st">"counts 必须为数值向量"</span>)</span>
-<span id="cb11-18"><a href="#cb11-18" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.numeric</span>(length_bp)) <span class="fu">stop</span>(<span class="st">"length_bp 必须为数值向量"</span>)</span>
-<span id="cb11-19"><a href="#cb11-19" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">length</span>(counts) <span class="sc">!=</span> <span class="fu">length</span>(length_bp)) <span class="fu">stop</span>(<span class="st">"counts 与 length_bp 长度不一致"</span>)</span>
-<span id="cb11-20"><a href="#cb11-20" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (na.rm) {</span>
-<span id="cb11-21"><a href="#cb11-21" aria-hidden="true" tabindex="-1"></a>    keep <span class="ot">&lt;-</span> <span class="sc">!</span><span class="fu">is.na</span>(counts) <span class="sc">&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(length_bp)</span>
-<span id="cb11-22"><a href="#cb11-22" aria-hidden="true" tabindex="-1"></a>    counts <span class="ot">&lt;-</span> counts[keep]</span>
-<span id="cb11-23"><a href="#cb11-23" aria-hidden="true" tabindex="-1"></a>    length_bp <span class="ot">&lt;-</span> length_bp[keep]</span>
-<span id="cb11-24"><a href="#cb11-24" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb11-25"><a href="#cb11-25" aria-hidden="true" tabindex="-1"></a>  counts[counts <span class="sc">&lt;</span> min_counts] <span class="ot">&lt;-</span> <span class="dv">0</span></span>
-<span id="cb11-26"><a href="#cb11-26" aria-hidden="true" tabindex="-1"></a>  length_kb <span class="ot">&lt;-</span> length_bp <span class="sc">/</span> <span class="dv">1000</span></span>
-<span id="cb11-27"><a href="#cb11-27" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">any</span>(length_kb <span class="sc">==</span> <span class="dv">0</span>)) <span class="fu">stop</span>(<span class="st">"基因长度不能为 0"</span>)</span>
-<span id="cb11-28"><a href="#cb11-28" aria-hidden="true" tabindex="-1"></a>  rpk <span class="ot">&lt;-</span> counts <span class="sc">/</span> length_kb</span>
-<span id="cb11-29"><a href="#cb11-29" aria-hidden="true" tabindex="-1"></a>  denom <span class="ot">&lt;-</span> <span class="fu">sum</span>(rpk, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb11-30"><a href="#cb11-30" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (denom <span class="sc">==</span> <span class="dv">0</span>) <span class="fu">return</span>(<span class="fu">rep</span>(<span class="dv">0</span>, <span class="fu">length</span>(rpk)))</span>
-<span id="cb11-31"><a href="#cb11-31" aria-hidden="true" tabindex="-1"></a>  tpm <span class="ot">&lt;-</span> rpk <span class="sc">/</span> denom <span class="sc">*</span> <span class="fl">1e6</span></span>
-<span id="cb11-32"><a href="#cb11-32" aria-hidden="true" tabindex="-1"></a>  <span class="fu">names</span>(tpm) <span class="ot">&lt;-</span> <span class="fu">names</span>(counts)</span>
-<span id="cb11-33"><a href="#cb11-33" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(tpm)</span>
-<span id="cb11-34"><a href="#cb11-34" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<p>关键点：</p>
-<ul>
-<li><code>#'</code> 开头的注释会被 roxygen2 解析；</li>
-<li>常用标签：<code>@title</code>（可选）、<code>@description</code>、<code>@param</code>、<code>@return</code>、<code>@examples</code>、<code>@export</code>、<code>@importFrom</code>；</li>
-<li><code>@export</code> 会在 <code>NAMESPACE</code> 中添加 <code>export()</code>，使函数对包用户可见；</li>
-<li><code>@importFrom pkg fun</code> 可用于在 NAMESPACE 中声明函数依赖，避免在运行时使用 <code>pkg::fun</code>。但在包内部代码中推荐使用 <code>pkg::fun</code> 或在 DESCRIPTION 中 Declare Imports。</li>
-</ul>
-<p>生成文档与安装流程（简要）：</p>
-<ol type="1">
-<li>在包工程根目录下，编辑 <code>DESCRIPTION</code>（填写 Package, Title, Version, Authors@R, Depends/Imports）；</li>
-<li>把函数放到 <code>R/</code> 目录；</li>
-<li>运行 <code>devtools::document()</code> 自动生成 <code>man/</code> 下的 Rd 文件和 <code>NAMESPACE</code>；</li>
-<li>运行 <code>devtools::check()</code> 检查包规范；</li>
-<li><code>devtools::install()</code> 或 <code>remotes::install_local()</code> 安装包。</li>
-</ol>
-<p>示例命令（开发者机器上执行）：</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">document</span>()</span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">check</span>()</span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install</span>()</span></code></pre></div>
-<p><br></p>
+<section id="商业平台" class="level3">
+<h3 class="anchored" data-anchor-id="商业平台">商业平台</h3>
+<p><strong>Schrödinger</strong>: - 完整药物设计套件 - Maestro、Glide、Desmond</p>
+<p><strong>BenevolentAI</strong>: - AI 驱动的药物发现平台 - 成功案例：巴瑞替尼治疗 COVID-19</p>
+<p><strong>Insilico Medicine</strong>: - 生成化学引擎 - 成功案例：18 个月设计出 IPF 候选药物</p>
+<p><strong>Exscientia</strong>: - AI 主导的药物设计 - 首个 AI 设计药物进入临床（2020）</p>
+<hr>
 </section>
-<section id="实战把函数写在脚本中并转为包函数的最小实践" class="level2">
-<h2 class="anchored" data-anchor-id="实战把函数写在脚本中并转为包函数的最小实践">8. 实战：把函数写在脚本中并转为包函数的最小实践</h2>
-<p>步骤演示（本地项目）：</p>
-<ol type="1">
-<li>在项目 <code>R/</code> 下创建 <code>tpm.R</code>，把 <code>compute_tpm_safe()</code> 与 roxygen 注释放入其中；</li>
-<li>在 <code>DESCRIPTION</code> 中写明包名和依赖（如 <code>Imports: dplyr</code>）；</li>
-<li>使用 <code>devtools::load_all()</code> 调试并在交互中测试；</li>
-<li>写 <code>tests/testthat/test-tpm.R</code> 做单元测试。</li>
-</ol>
-<p>示例 <code>tests</code>（简要）:</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># tests/testthat/test-tpm.R</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(testthat)</span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="fu">test_that</span>(<span class="st">"TPM 计算基本正确"</span>, {</span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  counts <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="at">G1 =</span> <span class="dv">10</span>, <span class="at">G2 =</span> <span class="dv">0</span>)</span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  lengths <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="at">G1 =</span> <span class="dv">1000</span>, <span class="at">G2 =</span> <span class="dv">1000</span>)</span>
-<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>  t <span class="ot">&lt;-</span> <span class="fu">compute_tpm_safe</span>(counts, lengths)</span>
-<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">expect_equal</span>(<span class="fu">sum</span>(t), <span class="fl">1e6</span>)</span>
-<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div>
-<p><br></p>
 </section>
-<section id="常见陷阱与调试建议" class="level2">
-<h2 class="anchored" data-anchor-id="常见陷阱与调试建议">9. 常见陷阱与调试建议</h2>
-<ul>
-<li>注意参数向量的命名和对齐（<code>names()</code>），不要依赖顺序匹配；</li>
-<li>小心 <code>...</code> 的透传导致参数被错误地传给下游函数；</li>
-<li>写示例时要包含边界条件（零向量、全 NA、长度不匹配）；</li>
-<li>使用 <code>testthat</code> 保持回归稳定性；</li>
-<li><code>devtools::check()</code> 会捕捉到文档错误、未导出的符号等问题，务必在发布前运行。</li>
-</ul>
-<p>调试流程建议：</p>
-<ol type="1">
-<li>在交互式环境用 <code>source()</code> 或 <code>devtools::load_all()</code> 加载函数；</li>
-<li>使用 <code>debugonce()</code> 或在函数中插入 <code>browser()</code> 单步调试；</li>
-<li>出错后用 <code>traceback()</code> 查找调用栈，并使用 <code>rlang::last_error()</code> 获取更详细信息（若使用 <code>rlang</code>）；</li>
-<li>写最小可复现示例，方便定位问题并写测试。</li>
-</ol>
-<p><br></p>
+<section id="成功案例" class="level2">
+<h2 class="anchored" data-anchor-id="成功案例">成功案例</h2>
+<section id="insilico-medicineipf-候选药物" class="level3">
+<h3 class="anchored" data-anchor-id="insilico-medicineipf-候选药物">1. Insilico Medicine：IPF 候选药物</h3>
+<p><strong>时间线</strong>: - 2019 年 1 月：启动项目 - 2019 年 7 月：发现先导化合物 - 2020 年 6 月：候选药物进入临床前</p>
+<p><strong>成果</strong>: - 仅 18 个月完成（传统方法需 3-5 年） - 成本大幅降低</p>
+<p><strong>技术</strong>: - 生成化学引擎（GAN） - 深度学习 ADMET 预测</p>
+<hr>
 </section>
-<section id="小结" class="level2">
-<h2 class="anchored" data-anchor-id="小结">10. 小结</h2>
-<p>本节覆盖了：</p>
+<section id="benevolentai巴瑞替尼治疗-covid-19" class="level3">
+<h3 class="anchored" data-anchor-id="benevolentai巴瑞替尼治疗-covid-19">2. BenevolentAI：巴瑞替尼治疗 COVID-19</h3>
+<p><strong>背景</strong>: COVID-19 疫情爆发</p>
+<p><strong>过程</strong>: - AI 平台筛选已上市药物 - 识别巴瑞替尼（JAK 抑制剂）</p>
+<p><strong>结果</strong>: - 临床试验证明疗效 - 获 FDA 紧急使用授权</p>
+<hr>
+</section>
+<section id="atomwise埃博拉病毒抑制剂" class="level3">
+<h3 class="anchored" data-anchor-id="atomwise埃博拉病毒抑制剂">3. Atomwise：埃博拉病毒抑制剂</h3>
+<p><strong>过程</strong>: - 虚拟筛选 700 万化合物 - 识别出两个候选化合物</p>
+<p><strong>结果</strong>: - 实验验证有效 - 展示 AI 快速响应新兴疾病的能力</p>
+<hr>
+</section>
+<section id="alphafold-加速药物设计" class="level3">
+<h3 class="anchored" data-anchor-id="alphafold-加速药物设计">4. AlphaFold 加速药物设计</h3>
+<p><strong>应用</strong>: - 预测靶蛋白结构 - 辅助基于结构的药物设计</p>
+<p><strong>影响</strong>: - 加速靶点结构解析 - 降低实验成本</p>
+<hr>
+</section>
+</section>
+<section id="挑战与未来方向" class="level2">
+<h2 class="anchored" data-anchor-id="挑战与未来方向">挑战与未来方向</h2>
+<section id="当前挑战" class="level3">
+<h3 class="anchored" data-anchor-id="当前挑战">当前挑战</h3>
+<p><strong>1. 数据质量与可用性</strong> - 高质量标注数据稀缺 - 数据偏差（已知药物空间有限） - 专利保护限制数据共享</p>
+<p><strong>2. 模型泛化能力</strong> - 分布外泛化困难 - 新靶点、新化学空间预测不准</p>
+<p><strong>3. 实验验证瓶颈</strong> - AI 设计的分子仍需实验验证 - 合成可行性 - 高通量实验成本</p>
+<p><strong>4. 多目标优化</strong> - 活性、选择性、ADMET、合成难度等多目标平衡 - 帕累托最优难以达到</p>
+<p><strong>5. 可解释性</strong> - 黑盒模型难以提供化学洞见 - 药物设计需要机制理解</p>
+<hr>
+</section>
+<section id="未来方向" class="level3">
+<h3 class="anchored" data-anchor-id="未来方向">未来方向</h3>
+<p><strong>1. 闭环药物设计</strong> - AI 设计 → 高通量实验 → 反馈 → 迭代优化 - 自动化实验室（Robot Lab）</p>
+<p><strong>2. 多模态整合</strong> - 整合结构、组学、文献、临床数据 - 知识图谱 + 深度学习</p>
+<p><strong>3. 少样本学习</strong> - 利用迁移学习、元学习 - 应对新靶点数据稀缺问题</p>
+<p><strong>4. 可解释 AI</strong> - 注意力机制可视化 - 提取药效团（Pharmacophore）</p>
+<p><strong>5. 个性化药物设计</strong> - 基于患者基因组的精准药物 - 考虑个体差异</p>
+<p><strong>6. 临床试验优化</strong> - 患者招募与分层 - 剂量优化 - 预测临床结果</p>
+<hr>
+</section>
+</section>
+<section id="学习资源" class="level2">
+<h2 class="anchored" data-anchor-id="学习资源">学习资源</h2>
+<section id="在线课程" class="level3">
+<h3 class="anchored" data-anchor-id="在线课程">在线课程</h3>
 <ul>
-<li>R 函数定义与参数设计；</li>
-<li>返回值与作用域（避免副作用）；</li>
-<li>闭包与高阶函数的简单示例；</li>
-<li>在脚本中组织函数并用 <code>source()</code>/<code>debug()</code> 调试；</li>
-<li>将函数写入 R 包、roxygen2 注释与文档自动生成；</li>
-<li>单元测试与 <code>devtools</code> 流程建议。</li>
+<li><strong>Drug Discovery (Coursera)</strong>: 药物发现基础</li>
+<li><strong>Deep Learning for Drug Discovery (MIT)</strong>: 深度学习在药物设计中的应用</li>
+<li><strong>Cheminformatics (edX)</strong>: 化学信息学</li>
 </ul>
+<hr>
+</section>
+<section id="书籍" class="level3">
+<h3 class="anchored" data-anchor-id="书籍">书籍</h3>
+<ul>
+<li>《Artificial Intelligence in Drug Design》（Springer）</li>
+<li>《Deep Learning for the Life Sciences》（O’Reilly）</li>
+<li>《Drug Design: Structure- and Ligand-Based Approaches》</li>
+</ul>
+<hr>
+</section>
+<section id="教程与工具" class="level3">
+<h3 class="anchored" data-anchor-id="教程与工具">教程与工具</h3>
+<p><strong>RDKit</strong>: - <a href="https://www.rdkit.org/docs/">RDKit Documentation</a> - <a href="https://github.com/rdkit/rdkit">RDKit Cookbook</a></p>
+<p><strong>DeepChem</strong>: - <a href="https://deepchem.io/">DeepChem Tutorials</a> - <a href="https://github.com/deepchem/deepchem">GitHub</a></p>
+<p><strong>PyTorch Geometric</strong>: - <a href="https://pytorch-geometric.readthedocs.io/">PyG Documentation</a></p>
+<hr>
+</section>
+<section id="数据资源" class="level3">
+<h3 class="anchored" data-anchor-id="数据资源">数据资源</h3>
+<p><strong>化合物数据库</strong>: - <strong>ChEMBL</strong>: 生物活性化合物（200 万+） - <strong>PubChem</strong>: 化学结构数据库（1 亿+） - <strong>ZINC</strong>: 商业化合物库（数亿） - <strong>DrugBank</strong>: FDA 批准药物</p>
+<p><strong>蛋白质-配体复合物</strong>: - <strong>PDB</strong>: 蛋白质结构与配体 - <strong>PDBbind</strong>: 蛋白质-配体结合亲和力数据</p>
+<p><strong>ADMET 数据</strong>: - <strong>Tox21</strong>: 毒性数据 - <strong>ADMET Predictor</strong>: 商业 ADMET 数据集</p>
+<hr>
+</section>
+</section>
+<section id="实用建议" class="level2">
+<h2 class="anchored" data-anchor-id="实用建议">实用建议</h2>
+<section id="入门路径" class="level3">
+<h3 class="anchored" data-anchor-id="入门路径">入门路径</h3>
+<p><strong>1. 基础知识</strong> - 化学基础：有机化学、药物化学 - 编程：Python、PyTorch - 机器学习：监督学习、神经网络</p>
+<p><strong>2. 化学信息学</strong> - 学习 RDKit - 理解分子表示（SMILES、指纹、图） - 计算分子性质</p>
+<p><strong>3. 深度学习应用</strong> - 图神经网络（GNN） - 生成模型（VAE、GAN） - 从 DeepChem 教程开始</p>
+<p><strong>4. 实践项目</strong> - 复现已发表模型 - 参加 Kaggle 药物发现竞赛 - 贡献开源项目</p>
+<hr>
+</section>
+<section id="常用代码模板" class="level3">
+<h3 class="anchored" data-anchor-id="常用代码模板">常用代码模板</h3>
+<p><strong>分子相似性搜索</strong>:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> rdkit <span class="im">import</span> Chem, DataStructs</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> rdkit.Chem <span class="im">import</span> AllChem</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 查询分子</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>query_smiles <span class="op">=</span> <span class="st">"CC(=O)Oc1ccccc1C(=O)O"</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>query_mol <span class="op">=</span> Chem.MolFromSmiles(query_smiles)</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>query_fp <span class="op">=</span> AllChem.GetMorganFingerprintAsBitVect(query_mol, <span class="dv">2</span>, <span class="dv">2048</span>)</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="co"># 化合物库</span></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>library_smiles <span class="op">=</span> [<span class="st">"CC(C)Cc1ccc(cc1)C(C)C(=O)O"</span>, <span class="st">"CC1=CC=C(C=C1)C(=O)O"</span>]</span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a><span class="co"># 计算相似度</span></span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> smiles <span class="kw">in</span> library_smiles:</span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>    mol <span class="op">=</span> Chem.MolFromSmiles(smiles)</span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>    fp <span class="op">=</span> AllChem.GetMorganFingerprintAsBitVect(mol, <span class="dv">2</span>, <span class="dv">2048</span>)</span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>    similarity <span class="op">=</span> DataStructs.TanimotoSimilarity(query_fp, fp)</span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>smiles<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>similarity<span class="sc">:.3f}</span><span class="ss">"</span>)</span></code></pre></div>
+<hr>
+</section>
+</section>
+<section id="相关链接" class="level2">
+<h2 class="anchored" data-anchor-id="相关链接">相关链接</h2>
+<ul>
+<li><a href="../AI4S/index.html">AI4S 专题主页</a></li>
+<li><a href="../AI4S/foundation-models-dna.html">DNA Foundation Models</a></li>
+<li><a href="../AI4S/foundation-models-rna.html">RNA Foundation Models</a></li>
+<li><a href="../AI4S/foundation-models-protein.html">蛋白质 Foundation Models</a></li>
+<li><a href="../AI4S/virtual-cell.html">虚拟细胞</a></li>
+</ul>
+<hr>
+<p>更新时间：2026-09-29</p>
 
 
 </section>
@@ -1488,13 +1628,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../Rbase/index.html" class="pagination-link" aria-label="教程总览">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">教程总览</span>
+      <a href="../AI4S/foundation-models-protein.html" class="pagination-link" aria-label="蛋白质 Foundation Models">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">蛋白质 Foundation Models</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../Rbase/L7_ggplot2.html" class="pagination-link" aria-label="L7 - ggplot2 数据可视化">
-        <span class="nav-page-text">L7 - ggplot2 数据可视化</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../AI4S/virtual-cell.html" class="pagination-link" aria-label="虚拟细胞">
+        <span class="nav-page-text">虚拟细胞</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
