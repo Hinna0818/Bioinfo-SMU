@@ -10,6 +10,7 @@ project:
     - "Grade3/*.md"
     - "Grade4/**/*.md"
     - "Rbase/*.md"
+    - "AI4S/*.md"
 
 website:
   title: "Bioinfo-SMU"
@@ -52,6 +53,20 @@ website:
         href: BioinfoTalus/index.md
       - text: "流行病学数据库"
         href: Epidemiology/UK_Biobank.md
+      - text: "AI4Science"
+        menu:
+          - text: "AI4S 专题"
+            href: AI4S/index.md
+          - text: "DNA Foundation Models"
+            href: AI4S/foundation-models-dna.md
+          - text: "RNA Foundation Models"
+            href: AI4S/foundation-models-rna.md
+          - text: "蛋白质 Foundation Models"
+            href: AI4S/foundation-models-protein.md
+          - text: "AI4Drug"
+            href: AI4S/ai4drug-overview.md
+          - text: "虚拟细胞"
+            href: AI4S/virtual-cell.md
       - text: "学习资源"
         menu:
           - text: "学习路线"
@@ -132,6 +147,20 @@ website:
         contents:
           - text: "UK Biobank"
             href: Epidemiology/UK_Biobank.md
+      - section: "AI4Science 专题"
+        contents:
+          - text: "AI4S 概述"
+            href: AI4S/index.md
+          - text: "DNA Foundation Models"
+            href: AI4S/foundation-models-dna.md
+          - text: "RNA Foundation Models"
+            href: AI4S/foundation-models-rna.md
+          - text: "蛋白质 Foundation Models"
+            href: AI4S/foundation-models-protein.md
+          - text: "AI4Drug"
+            href: AI4S/ai4drug-overview.md
+          - text: "虚拟细胞"
+            href: AI4S/virtual-cell.md
       - section: "学习资源"
         contents:
           - text: "学习路线"

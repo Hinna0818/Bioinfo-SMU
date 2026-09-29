@@ -11,6 +11,7 @@
 ::: {.hero-actions}
 [开始学习](learning-path.md){.button .primary}
 [查看课程](Grade4/index.md){.button}
+[AI4S 专题](AI4S/index.md){.button}
 [参与贡献](contributing.md){.button}
 :::
 
@@ -38,6 +39,16 @@
 ::: {.feature-card}
 ### 科研工具
 汇总常用数据库、分析工具和可复用脚本。
+:::
+
+::: {.feature-card}
+### AI4Science
+Foundation Models、AI 驱动的药物设计、虚拟细胞等前沿方向。
+:::
+
+::: {.feature-card}
+### 前沿技术
+结构预测、单细胞多组学、空间转录组等最新进展。
 :::
 
 :::
@@ -83,7 +94,7 @@ cd Bioinfo-SMU
 
 ::: {.stat-card}
 ### R 教程
-**7**
+**7+**
 <span>从基础语法到数据可视化</span>
 :::
 
@@ -91,6 +102,12 @@ cd Bioinfo-SMU
 ### 分析流程
 **3**
 <span>Bulk、单细胞和空间转录组</span>
+:::
+
+::: {.stat-card}
+### AI4S 专题
+**新增**
+<span>Foundation Models 与前沿技术</span>
 :::
 
 :::
@@ -139,6 +156,13 @@ cd Bioinfo-SMU
 整理序列比对、概率模型和分子层面计算方法相关内容。
 
 [查看课程](Grade4/computational_molecular_biology/index.md)
+:::
+
+::: {.course-card}
+### AI4Science 专题
+Foundation Models（DNA/RNA/蛋白）、AI4Drug、虚拟细胞等前沿方向。
+
+[查看专题](AI4S/index.md)
 :::
 
 ::: {.course-card}
