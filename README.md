@@ -1,15 +1,10 @@
 <div align="center">
 
-# 🧬 Bioinfo-SMU
+# Bioinfo-SMU
 
 **南方医科大学生物信息学专业学习资源库**
 
 _Bioinformatics Learning Resources for Southern Medical University_
-
-![GitHub watchers](https://img.shields.io/github/watchers/Hinna0818/Bioinfo-SMU?style=flat-square)
-![GitHub repo size](https://img.shields.io/github/repo-size/Hinna0818/Bioinfo-SMU?style=flat-square)
-![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/Hinna0818/Bioinfo-SMU?style=flat-square)
-![Profile views](https://komarev.com/ghpvc/?username=Hinna0818&repo=Bioinfo-SMU&style=flat-square)
 
 [![GitHub stars](https://img.shields.io/github/stars/Hinna0818/Bioinfo-SMU?style=social)](https://github.com/Hinna0818/Bioinfo-SMU/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/Hinna0818/Bioinfo-SMU?style=social)](https://github.com/Hinna0818/Bioinfo-SMU/network/members)
@@ -21,113 +16,100 @@ _Bioinformatics Learning Resources for Southern Medical University_
 
 ---
 
-## 📚 项目简介
+## 项目简介
 
-本仓库收集整理了南方医科大学生物信息学专业学习过程中的各类资源，包括：
+南方医科大学生物信息学专业学习资源库，收录课程资料、考试重点、分析流程和前沿技术，为生信学生提供完整的学习路径。
 
-- 📖 **课程资料**：各门专业课程的实验报告框架、作业和笔记
-- 📝 **考试资料**：历年考试重点和复习资料
-- 🧪 **科研工具**：常用的生物信息学分析方法和脚本
+**在线访问**: [https://hinna0818.github.io/Bioinfo-SMU/](https://hinna0818.github.io/Bioinfo-SMU/)
 
-> 💡 **宗旨**：帮助生信专业的同学们更好地学习和科研，共同进步！
+### 主要内容
 
-### 🙏 感谢对本项目贡献的同学
+- **课程与考试**: 专业课笔记、实验报告模板、历年考试资料
+- **编程教程**: R 语言、Python、Linux 基础与生信应用
+- **分析流程**: RNA-seq、单细胞、空间转录组完整 pipeline
+- **AI4Science**: DNA/RNA/蛋白质 Foundation Models、AI4Drug、虚拟细胞
+- **工具资源**: 常用数据库、软件工具、学习资源推荐
+
+### 贡献者
 
 <a href="https://github.com/Hinna0818/Bioinfo-SMU/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Hinna0818/Bioinfo-SMU" />
 </a>
 
-#### 特别感谢
-
-- [@BioConvolutionyt](https://github.com/BioConvolutionyt) - 贡献生信流程 (BioinfoTalus) 模块，包含 Bulk/单细胞/空间转录组分析 pipeline
+特别感谢 [@BioConvolutionyt](https://github.com/BioConvolutionyt) 贡献 BioinfoTalus 模块（Bulk/单细胞/空间转录组分析 pipeline）。
 
 ---
 
-## 🚀 快速开始
+## 快速开始
 
-**克隆仓库**
+### 在线浏览
+
+访问 [https://hinna0818.github.io/Bioinfo-SMU/](https://hinna0818.github.io/Bioinfo-SMU/) 查看完整文档。
+
+### 本地克隆
+
 ```bash
 git clone https://github.com/Hinna0818/Bioinfo-SMU.git
 cd Bioinfo-SMU
 ```
 
-浏览文件夹查看各类学习资料。
+---
+
+## 学习路线
+
+### 基础阶段
+- R 语言和 Python 编程基础
+- Linux 命令行操作
+- 生物信息学基础概念
+- 统计学与数据可视化
+
+### 进阶阶段
+- 转录组学分析（Bulk RNA-seq）
+- 基因组学与变异分析
+- 单细胞与空间转录组分析
+- 机器学习与深度学习应用
+
+### 前沿方向
+- **AI4Science**: DNA/RNA/蛋白质 Foundation Models
+- **AI4Drug**: 分子生成、虚拟筛选、ADMET 预测
+- **结构生物学**: AlphaFold2/3、ESMFold、RFdiffusion
+- **虚拟细胞**: 代谢网络建模、细胞命运预测
+
+### 科研实践
+- 选择研究课题与数据获取（GEO、TCGA、CZ CELLxGENE）
+- 数据分析与可视化
+- 结果解读与论文撰写
+
+详细学习路线见 [在线文档](https://hinna0818.github.io/Bioinfo-SMU/learning-path.html)。
 
 ---
 
-## 📖 学习路线建议
+## 贡献指南
 
-### 新生入门
-1. 掌握 R 语言和 Python基础
-2. 学习生信基础测序技术
-3. 了解基本的统计学概念
-
-### 进阶学习
-1. 转录组学分析（建议从bulk RNA-seq开始）
-2. 基因组学数据分析
-3. 流行病学建模
-4. 机器学习与深度学习
-
-### 科研应用
-1. 选择感兴趣的疾病或生物学问题
-2. 结合公共数据库（GEO, TCGA等）
-3. 应用学到的分析方法
-4. 撰写科研论文
+欢迎贡献课程笔记、实验代码、考试资料、学习心得等内容。通过 Fork 本仓库并提交 Pull Request 来参与贡献。
 
 ---
 
-## 🤝 贡献指南
+## 联系方式
 
-欢迎所有南医大生信专业的同学们贡献资料！包括但不限于：
-
-- ✅ 课程笔记和总结
-- ✅ 实验代码和报告
-- ✅ 考试重点和复习资料
-- ✅ 学习心得和经验分享
-- ✅ Bug 修复和代码优化
-- ✅ 文档改进
-
-可以通过 Fork 本仓库并提交 Pull Request 来贡献内容。
+- **作者**: Nan He
+- **邮箱**: hinna01@163.com
+- **Issues**: [提交问题或建议](https://github.com/Hinna0818/Bioinfo-SMU/issues)
+- **Discussions**: [参与讨论](https://github.com/Hinna0818/Bioinfo-SMU/discussions)
 
 ---
 
-## ⚠️ 注意事项
-
-- 📌 本仓库资料仅供学习参考，请勿直接抄袭
-- 📌 尊重知识产权，注明资料来源
-- 📌 欢迎讨论交流，共同进步
-- 📌 如有侵权，请联系删除
-
----
-
-## 📮 联系方式
-
-- **作者**：Nan He
-- **邮箱**：📧 hinna01@163.com
-- **Issues**：[提交问题或建议](https://github.com/Hinna0818/Bioinfo-SMU/issues)
-- **Discussions**：[参与讨论](https://github.com/Hinna0818/Bioinfo-SMU/discussions)
-
----
-
-## 📄 许可证
+## 许可证
 
 本项目采用 [MIT License](LICENSE) 开源协议。
 
 ---
 
-## 🌟 致谢
-
-感谢所有为本仓库贡献资料的同学们！
-
-如果这个仓库对你有帮助，请给个 ⭐️ Star 支持一下！
-
----
-
 <div align="center">
 
-### 💪 一起加油，共同进步！
+**Made by SMU Bioinformatics Students**
 
-**Made with ❤️ by SMU Bioinformatics Students**
+如果这个仓库对你有帮助，请给个 Star 支持！
 
 </div>
 
@@ -135,110 +117,45 @@ cd Bioinfo-SMU
 
 ## English Version
 
-### 📚 Introduction
+### About
 
-This repository contains learning materials for Bioinformatics students at Southern Medical University, including:
+Learning resources for Bioinformatics students at Southern Medical University, including course materials, exam resources, analysis pipelines, and AI4Science topics.
 
-- 📖 **Course Materials**: Lab report templates, assignments, and notes
-- 📝 **Exam Resources**: Key points and review materials
-- 🧪 **Research Tools**: Bioinformatics analysis methods and scripts
+**Website**: [https://hinna0818.github.io/Bioinfo-SMU/](https://hinna0818.github.io/Bioinfo-SMU/)
 
-> 💡 **Mission**: Help bioinformatics students learn better and make progress together!
+### Contents
 
-### 🙏 Thanks to Contributors
+- **Courses & Exams**: Notes, lab reports, review materials
+- **Programming**: R, Python, Linux for bioinformatics
+- **Analysis Pipelines**: RNA-seq, single-cell, spatial transcriptomics
+- **AI4Science**: Foundation Models (DNA/RNA/Protein), AI4Drug, Virtual Cells
+- **Resources**: Databases, tools, learning materials
 
-<a href="https://github.com/Hinna0818/Bioinfo-SMU/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Hinna0818/Bioinfo-SMU" />
-</a>
+### Learning Path
 
----
+**Basics**: R/Python programming, Linux, statistics  
+**Intermediate**: RNA-seq, genomics, single-cell analysis  
+**Advanced**: AI4Science, AlphaFold, molecular generation, virtual cells  
+**Research**: Data analysis, visualization, publication
 
-### 🚀 Quick Start
+### Contributing
 
-Clone the repository:
-```bash
-git clone https://github.com/Hinna0818/Bioinfo-SMU.git
-cd Bioinfo-SMU
-```
+Contributions welcome! Fork and submit Pull Requests.
 
-Browse the folders to explore learning materials.
-
----
-
-### 📖 Learning Path
-
-#### For Beginners
-1. Master R and Python basics
-2. Learn fundamental sequencing technologies
-3. Understand basic statistical concepts
-
-#### Intermediate Level
-1. Transcriptomics analysis (start with bulk RNA-seq)
-2. Genomics data analysis
-3. Epidemiological modeling
-4. Machine learning & Deep learning
-
-#### Research Applications
-1. Choose a disease or biological problem of interest
-2. Utilize public databases (GEO, TCGA, etc.)
-3. Apply learned analysis methods
-4. Write research papers
-
----
-
-### 🤝 Contributing
-
-Contributions from all SMU bioinformatics students are welcome! Including:
-
-- ✅ Course notes and summaries
-- ✅ Lab code and reports
-- ✅ Exam key points and review materials
-- ✅ Learning experiences and tips
-- ✅ Bug fixes and code optimization
-- ✅ Documentation improvements
-
-Feel free to Fork this repository and submit a Pull Request.
-
----
-
-### ⚠️ Disclaimer
-
-- 📌 Materials are for reference only, please do not plagiarize
-- 📌 Respect intellectual property rights and cite sources
-- 📌 Discussion and communication are welcome
-- 📌 Contact us for any copyright concerns
-
----
-
-### � Contact
+### Contact
 
 - **Author**: Nan He
-- **Email**: 📧 hinna01@163.com
-- **Issues**: [Submit issues or suggestions](https://github.com/Hinna0818/Bioinfo-SMU/issues)
-- **Discussions**: [Join discussions](https://github.com/Hinna0818/Bioinfo-SMU/discussions)
+- **Email**: hinna01@163.com
+- **Issues**: [Submit here](https://github.com/Hinna0818/Bioinfo-SMU/issues)
 
----
+### License
 
-### �📄 License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-### 🌟 Acknowledgments
-
-Thanks to all students who contributed to this repository!
-
-If this repository helps you, please give it a ⭐️ Star!
+[MIT License](LICENSE)
 
 ---
 
 <div align="center">
 
-### 💪 Let's work hard and make progress together!
-
-**Made with ❤️ by SMU Bioinformatics Students**
-
-**[⬆ Back to Top](#-bioinfo-smu)**
+**[⬆ Back to Top](#bioinfo-smu)**
 
 </div>
